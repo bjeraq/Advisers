@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رحلة فلاي دبي FZ1073 · رسوم توضيحية | الجريدة الموثّقة</title>
+<meta name="description" content="فيديو توضيحي قصير (نحو دقيقتين ونصف) لرحلة فلاي دبي FZ1073 في 30 سبتمبر 2026 على خريطة حقيقية، بالاعتماد على بيانات فلاي دبي وبيانات النائب العام الإماراتي وتقارير موثوقة.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#0d1417;overflow:hidden;font-family:Tajawal,"Segoe UI",Tahoma,sans-serif}
+#frame{width:100vw;aspect-ratio:16/9;position:relative;overflow:hidden;background:#0d1417}
+#wrap{width:1280px;height:720px;position:absolute;left:0;top:0;transform-origin:top left;transform:scale(var(--s,1))}
+#map{position:absolute;inset:0;z-index:1}
+.shade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.45),transparent 22%,transparent 62%,rgba(0,0,0,.6))}
+.box{position:absolute;z-index:5;background:rgba(13,20,23,.86);color:#e8eef1;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+#hud{bottom:168px;left:18px;padding:12px 18px;min-width:230px;direction:ltr;text-align:left}
+#hud .row{display:flex;justify-content:space-between;gap:18px;font-size:22px;font-weight:700;line-height:1.7}
+#hud .row span:first-child{color:#9fb0ba;font-size:16px;font-weight:500;align-self:center}
+#hud .warn{color:#f0a070}
+#cap{bottom:58px;left:50%;transform:translateX(-50%);width:min(1040px,92%);padding:16px 26px;text-align:center;font-size:27px;line-height:1.6;min-height:86px;display:flex;align-items:center;justify-content:center;font-weight:500}
+#cap.fade{animation:f .6s ease}
+@keyframes f{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+#src{position:absolute;z-index:5;bottom:14px;left:0;right:0;text-align:center;color:#9fb0ba;font-size:15px}
+#title{inset:0;top:0;left:0;right:0;bottom:0;width:auto;height:auto;border-radius:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;background:rgba(13,20,23,.9)}
+#title h1{margin:0 0 10px;font-size:50px;font-weight:800;line-height:1.3}
+#title p{margin:0;font-size:22px;color:#c9d6dc;line-height:1.7}
+#title .small{margin-top:18px;font-size:16px;color:#9fb0ba}
+#ag{top:18px;right:18px;width:520px;padding:18px 22px;line-height:1.7}
+#ag h3{margin:0 0 8px;font-size:20px;color:#5cc4c4}
+#ag .ln{font-size:19px;opacity:0;transform:translateY(6px);transition:opacity .6s,transform .6s;margin:8px 0;padding-right:12px;border-right:3px solid #5cc4c4}
+#ag .ln.on{opacity:1;transform:none}
+#cock{top:18px;right:18px;width:360px;padding:12px 14px;opacity:0;transition:opacity .6s}
+#cock.on{opacity:1}
+#cock h3{margin:0 0 6px;font-size:17px;color:#9fb0ba;font-weight:500}
+#end{inset:0;left:0;right:0;top:0;bottom:0;width:auto;height:auto;border-radius:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;background:rgba(13,20,23,.92);opacity:0;transition:opacity .8s;pointer-events:none}
+#end.on{opacity:1}
+#end h2{font-size:38px;margin:0 0 14px}
+#end ul{list-style:none;padding:0;margin:0;font-size:22px;line-height:1.9}
+#end .small{margin-top:18px;font-size:16px;color:#9fb0ba}
+#replay{position:absolute;z-index:6;bottom:90px;left:18px;display:none;font-family:inherit;font-size:16px;padding:8px 18px;border-radius:999px;border:1px solid #5cc4c4;background:#5cc4c4;color:#0d1417;cursor:pointer;font-weight:700}
+.lbl{position:absolute;width:max-content;left:0;top:0;background:rgba(13,20,23,.85);color:#fff;padding:3px 9px;border-radius:8px;font-size:15px;white-space:nowrap;font-family:Tajawal,sans-serif;font-weight:700;transform:translate(-50%,-160%)}
+.lbl.w{color:#f0a070}
+.leaflet-control-attribution{font-size:10px!important;opacity:.7}
+#planeEl svg{width:34px;height:34px;filter:drop-shadow(0 0 4px rgba(0,0,0,.6))}
+.cap *{animation:none!important;transition:none!important}
+</style>
+</head>
+<body>
+<div id="frame">
+<div id="wrap">
+  <div id="map"></div>
+  <div class="shade"></div>
+
+  <div id="hud" class="box">
+    <div class="row"><span>الارتفاع (قدم)</span><span id="alt">0</span></div>
+    <div class="row"><span>رمز الإرسال</span><span id="sq">—</span></div>
+  </div>
+
+  <div id="cock" class="box">
+    <h3>داخل القمرة (رسم توضيحي، بلا تفاصيل مروعة)</h3>
+    <svg viewBox="0 0 330 160" width="100%" height="160" aria-hidden="true">
+      <rect x="6" y="6" width="318" height="148" rx="10" fill="none" stroke="#2b373e" stroke-width="2"/>
+      <rect x="30" y="26" width="110" height="34" rx="6" fill="#1a2227" stroke="#2b373e"/>
+      <rect x="190" y="26" width="110" height="34" rx="6" fill="#1a2227" stroke="#2b373e"/>
+      <text x="85" y="20" font-size="13" fill="#9fb0ba" font-family="Tajawal" text-anchor="middle">القائد</text>
+      <text x="245" y="20" font-size="13" fill="#9fb0ba" font-family="Tajawal" text-anchor="middle">مساعد الطيار</text>
+      <g id="cp1" opacity="0">
+        <circle cx="85" cy="82" r="12" fill="#5cc4c4"/><path d="M62,128 Q62,100 85,100 Q108,100 108,128 Z" fill="#5cc4c4"/>
+      </g>
+      <g id="cp2" opacity="0">
+        <circle cx="245" cy="82" r="12" fill="#9fb0ba"/><path d="M222,128 Q222,100 245,100 Q268,100 268,128 Z" fill="#9fb0ba"/>
+      </g>
+      <g id="crew" opacity="0">
+        <circle cx="150" cy="104" r="9" fill="#7fd29d"/><path d="M138,130 Q138,116 150,116 Q162,116 162,130 Z" fill="#7fd29d"/>
+      </g>
+      <g id="pax" opacity="0">
+        <circle cx="180" cy="108" r="9" fill="#e3c75a"/><path d="M168,134 Q168,120 180,120 Q192,120 192,134 Z" fill="#e3c75a"/>
+      </g>
+      <text x="165" y="152" font-size="13" fill="#e3c75a" font-family="Tajawal" text-anchor="middle">ركاب وطاقم من الرحلة العائدة</text>
+    </svg>
+  </div>
+
+  <div id="ag" class="box" style="opacity:0;transition:opacity .6s">
+    <h3>بيان النائب العام الإماراتي · 9 أكتوبر 2026</h3>
+    <div class="ln" data-t="106">مخطط مدبّر: محاولة السيطرة على الطائرة وتنفيذ هجوم انتحاري على مبنى المسافرين في مطار بن غوريون، لإيقاع أكبر عدد من الضحايا.</div>
+    <div class="ln" data-t="112">قال إن الفكرة مستوحاة من هجمات 11 سبتمبر، وإنه أجرى رحلتين سابقتين إلى تل أبيب للتعرّف على المسار.</div>
+    <div class="ln" data-t="118">قال إنه تصرّف وحده، والتحقيق مستمر للتحقق من احتمال وجود آخرين.</div>
+    <div class="ln" data-t="124">قال النائب العام إن إجراءات التوظيف لم تكشف مؤشرات على التطرف أو على نية الهجوم.</div>
+  </div>
+
+  <div id="cap" class="box">&nbsp;</div>
+  <div id="src">المصادر: بيانات فلاي دبي (30 سبتمبر) · بيانات النائب العام الإماراتي (3 و9 أكتوبر) · تقارير CBS وCNN وAP وخليج تايمز</div>
+
+  <div id="title" class="box">
+    <h1>رحلة فلاي دبي FZ1073</h1>
+    <p>30 سبتمبر 2026 · من دبي إلى تل أبيب، وهبوط في تبوك</p>
+    <p class="small">رسوم توضيحية بحسب البيانات الرسمية والتقارير الموثوقة. ليست تصويراً حقيقياً. المسار والمواقع تقريبية.</p>
+  </div>
+
+  <div id="end" class="box">
+    <h2>ما لا نعرفه بعد</h2>
+    <ul>
+      <li>هل ساعده أحد؟ (التحقيق مستمر)</li>
+      <li>كيف اجتاز الفحص الأمني للتوظيف؟</li>
+      <li>متى تُعلن النتائج النهائية للتحقيق؟</li>
+    </ul>
+    <p class="small">التفاصيل والمصادر الكاملة في صفحة الملف. الفيديو توضيحي ولا يغني عن المصادر.</p>
+  </div>
+
+  <button id="replay" type="button">إعادة التشغيل</button>
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+  var END = 140;
+  var replayEl=null;
+  var DXB=[25.2532,55.3657], TLV=[32.0114,34.8867], TUU=[28.3652,36.6188];
+  var MID=[27.3,45.0], APP=[29.5,39.2], INC=[30.1,37.8], JOR=[30.7,36.3], BACK=[29.7,37.4];
+
+  // Schematic track (approximate waypoints from reported description)
+  var track=[[0,DXB],[12,DXB],[26,MID],[34,APP],[44,INC],[58,JOR],[76,BACK],[100,TUU],[104,TUU]];
+  var alts=[[0,0],[12,0],[15,34000],[34,34000],[46,17000],[56,21750],[62,15000],[88,15000],[100,0],[106,0]];
+  var jetTrack=[[62,TLV],[72,[31.2,36.0]],[80,[31.2,36.0]],[92,TLV]];
+
+  function bearing(a,b){
+    var r=Math.PI/180, f1=a[0]*r, f2=b[0]*r, dl=(b[1]-a[1])*r;
+    var y=Math.sin(dl)*Math.cos(f2), x=Math.cos(f1)*Math.sin(f2)-Math.sin(f1)*Math.cos(f2)*Math.cos(dl);
+    return Math.atan2(y,x)/r;
+  }
+  function interpTrack(tr,T){
+    if(T<=tr[0][0]) return tr[0][1];
+    for(var i=1;i<tr.length;i++){
+      var t1=tr[i-1][0], p1=tr[i-1][1], t2=tr[i][0], p2=tr[i][1];
+      if(T<=t2){ var f=(T-t1)/(t2-t1); return [p1[0]+(p2[0]-p1[0])*f, p1[1]+(p2[1]-p1[1])*f]; }
+    }
+    return tr[tr.length-1][1];
+  }
+  function planeAt(T){
+    for(var i=1;i<track.length;i++){
+      var t1=track[i-1][0], p1=track[i-1][1], t2=track[i][0], p2=track[i][1];
+      if(T<=t2){
+        var f=Math.max(0,(T-t1)/(t2-t1));
+        var pos=[p1[0]+(p2[0]-p1[0])*f, p1[1]+(p2[1]-p1[1])*f];
+        var same = p1[0]===p2[0] && p1[1]===p2[1];
+        return {pos:pos, hd: same ? bearing(DXB,MID) : bearing(p1,p2)};
+      }
+    }
+    return {pos:TUU, hd:0};
+  }
+  function altAt(T){
+    if(T<=alts[0][0]) return alts[0][1];
+    for(var i=1;i<alts.length;i++){
+      if(T<=alts[i][0]){
+        var t1=alts[i-1][0], a1=alts[i-1][1], t2=alts[i][0], a2=alts[i][1];
+        return a1+(a2-a1)*((T-t1)/(t2-t1));
+      }
+    }
+    return 0;
+  }
+
+  var caps=[
+    [6,'7:05 صباحاً بتوقيت الخليج: إقلاع الرحلة FZ1073 من دبي متجهة إلى تل أبيب'],
+    [18,'رحلة اعتيادية فوق السعودية على ارتفاع نحو 34,000 قدم'],
+    [36,'نحو 9:21 صباحاً: هجوم داخل قمرة القيادة بفأس الطوارئ، بحسب النائب العام الإماراتي'],
+    [44,'هبوط حاد في أقل من دقيقتين، وبثّ الرمز 7700 ثم 7500، بحسب بيانات التتبع وتقارير صحفية'],
+    [48,'تدخّل قائد الرحلة العائدة وركاب وأفراد من الطاقم وسيطروا على الموقف، بحسب النائب العام'],
+    [60,'استعادة السيطرة على الطائرة، وتحويل مسارها نحو مطار تبوك في السعودية'],
+    [62,'بعد نحو 30 دقيقة دون رد من القمرة، أرسل سلاح الجو الإسرائيلي مقاتلات (بحسب تقارير إسرائيلية)'],
+    [76,'استُدعيت المقاتلات بعد أن استدارت الطائرة نحو السعودية. لم نجد في المصادر ما يثبت أن الطائرة دخلت المجال الجوي الإسرائيلي'],
+    [88,'هبوط في مطار تبوك نحو 10:45 صباحاً (توقيت الخليج)'],
+    [98,'اعتقلت السلطات السعودية مساعد الطيار عند الهبوط بحسب التقارير، ونُقل القائد المصاب للعلاج'],
+    [106,'']
+  ];
+  var camSteps=[[6,[[24,33],[33,57]]],[36,[[27.0,34.4],[32.4,45.5]]],[84,[[27.3,35.6],[31.4,38.6]]]];
+  var camStart=[[20,30],[36,60]];
+  var camTargets=[];
+  function camFor(b){ var bb=L.latLngBounds(b); return {c:bb.getCenter(), z:map.getBoundsZoom(bb,false)}; }
+  function camAt(T){
+    var prev=camFor(camStart), out=prev;
+    for(var i=0;i<camSteps.length;i++){
+      var st=camSteps[i][0], tg=camTargets[i];
+      if(T<st) return prev;
+      if(T<st+1.8){ var f=(T-st)/1.8; f=f*f*(3-2*f); return {c:L.latLng(prev.c.lat+(tg.c.lat-prev.c.lat)*f, prev.c.lng+(tg.c.lng-prev.c.lng)*f), z:prev.z+(tg.z-prev.z)*f}; }
+      prev=tg;
+    }
+    return prev;
+  }
+
+  var map=L.map('map',{zoomControl:false,attributionControl:true}).setView([29,45],5);
+  var tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:9,attribution:'© OpenStreetMap'}).addTo(map);
+  window.__tilesIdle=true; tiles.on('loading',function(){window.__tilesIdle=false;}); tiles.on('load',function(){window.__tilesIdle=true;});
+  var CAPTURE=/[?&]capture=1/.test(location.search); if(CAPTURE) document.body.classList.add('cap');
+
+  function lbl(text,cls){return L.divIcon({className:'',html:'<div class="lbl '+(cls||'')+'">'+text+'</div>',iconSize:[0,0]});}
+  L.marker(DXB,{icon:lbl('دبي (DXB)')}).addTo(map);
+  L.marker(TLV,{icon:lbl('تل أبيب (TLV)')}).addTo(map);
+  L.marker(TUU,{icon:lbl('تبوك (TUU)')}).addTo(map);
+  var incLbl=L.marker(INC,{icon:lbl('موقع الهجوم (تقريبي)','w')}).addTo(map);
+  var jorLbl=L.marker(JOR,{icon:lbl('اتجاه الأردن (تقريبي)')}).addTo(map);
+  var pulse=L.circleMarker(INC,{radius:6,color:'#f0a070',weight:3,fill:false,opacity:0}).addTo(map);
+
+  var flown=L.polyline([DXB],{color:'#f0a070',weight:4,opacity:.95}).addTo(map);
+  L.polyline([DXB,MID,APP,INC,JOR,BACK,TUU],{color:'#9fb0ba',weight:2,dashArray:'6 8',opacity:.7}).addTo(map);
+
+  var planeMarker=L.marker(DXB,{icon:L.divIcon({className:'',html:'<div id="planeEl"><svg viewBox="-12 -12 24 24"><path d="M0,-11 L6,8 L0,4 L-6,8 Z" fill="#ffffff" stroke="#0b1d24" stroke-width="1.5"/></svg></div>',iconSize:[34,34],iconAnchor:[17,17]}),zIndexOffset:900}).addTo(map);
+  var jet=L.circleMarker(TLV,{radius:6,color:'#f0a070',fillColor:'#f0a070',fillOpacity:1,opacity:0}).addTo(map);
+  var jetLbl=L.marker(TLV,{icon:lbl('مقاتلة (تقديري)','w')}).addTo(map);
+
+  var sqEl=document.getElementById('sq'), altEl=document.getElementById('alt');
+  var capEl=document.getElementById('cap'), lastCap='';
+  var cock={cp1:document.getElementById('cp1'),cp2:document.getElementById('cp2'),pax:document.getElementById('pax'),crew:document.getElementById('crew')};
+  var cockBox=document.getElementById('cock'), agBox=document.getElementById('ag'), endBox=document.getElementById('end'), titleBox=document.getElementById('title'), replay=document.getElementById('replay');
+  var lines=[].slice.call(document.querySelectorAll('#ag .ln'));
+
+  function update(T){
+    var p=planeAt(T);
+    planeMarker.setLatLng(p.pos);
+    var svg=planeMarker.getElement() && planeMarker.getElement().querySelector('svg');
+    if(svg) svg.style.transform='rotate('+p.hd+'deg)';
+
+    var pts=[]; for(var t=12;t<=Math.min(T,100);t+=0.5){ pts.push(interpTrack(track,t)); }
+    if(pts.length>1) flown.setLatLngs(pts);
+
+    var a=Math.round(altAt(T)/50)*50;
+    altEl.textContent=a.toLocaleString('en');
+    var sq = (T>=44 && T<46) ? '7700' : (T>=46 && T<120 ? '7500' : '—');
+    sqEl.textContent=sq; sqEl.className = sq==='—' ? '' : 'warn';
+
+    var pre = T<6 || T>=128;
+    document.getElementById('hud').style.opacity = pre?0:1;
+    capEl.style.opacity = pre?0:1;
+    var c=caps[0][1]; for(var i=0;i<caps.length;i++){ if(T>=caps[i][0]) c=caps[i][1]; }
+    if(T<6) c='';
+    if(c!==lastCap){ lastCap=c; capEl.textContent=c||' '; capEl.classList.remove('fade'); void capEl.offsetWidth; capEl.classList.add('fade'); }
+
+    var pulseOn = T>=36 && T<60;
+    if(pulseOn){ var k=(T%1.2)/1.2; pulse.setRadius(8+k*26); pulse.setStyle({opacity:1-k}); } else pulse.setStyle({opacity:0});
+    if(incLbl._icon) incLbl._icon.style.display = (T>=36 && T<100)?'':'none';
+    if(jorLbl._icon) jorLbl._icon.style.display = (T>=56 && T<100)?'':'none';
+
+    var inCock = T>=46 && T<70;
+    cockBox.classList.toggle('on', inCock);
+    cock.cp1.setAttribute('opacity', T>=44 && T<70 ? 1:0);
+    cock.cp2.setAttribute('opacity', T>=44 && T<70 ? 1:0);
+    cock.pax.setAttribute('opacity', T>=50 && T<70 ? 1:0);
+    cock.crew.setAttribute('opacity', T>=52 && T<70 ? 1:0);
+
+    if(T>=62 && T<92){
+      var j=interpTrack(jetTrack,T);
+      jet.setLatLng(j); jetLbl.setLatLng(j);
+      jet.setStyle({opacity:1,fillOpacity:1}); if(jetLbl._icon) jetLbl._icon.style.display='';
+    } else { jet.setStyle({opacity:0,fillOpacity:0}); if(jetLbl._icon) jetLbl._icon.style.display='none'; }
+
+    agBox.style.opacity = (T>=104 && T<128) ? 1 : 0;
+    lines.forEach(function(el){ el.classList.toggle('on', T>=parseFloat(el.getAttribute('data-t'))); });
+
+    titleBox.style.opacity = T<6 ? 1 : (T<7 ? 1-(T-6) : 0);
+    titleBox.style.pointerEvents='none';
+    endBox.classList.toggle('on', T>=128);
+
+    var cam=camAt(T);
+    map.setView(cam.c, cam.z, {animate:false});
+  }
+
+  window.__renderAt=function(T){ update(T); };
+  var startTs=null, finished=false;
+  function frame(ts){
+    if(startTs===null) startTs=ts;
+    var T=(ts-startTs)/1000;
+    if(T<END){ update(T); requestAnimationFrame(frame); }
+    else { update(END); finish(); }
+  }
+  function finish(){
+    if(finished) return; finished=true;
+    replay.style.display='block';
+    window.__done=true;
+  }
+  replay.addEventListener('click',function(){ location.reload(); });
+
+  function fit(){
+    var f=document.getElementById('frame');
+    var s=f.clientWidth/1280;
+    document.documentElement.style.setProperty('--s', s);
+  }
+  window.addEventListener('resize',function(){ fit(); map.invalidateSize(); });
+  fit();
+
+  map.invalidateSize();
+  map.setView(L.latLngBounds(camStart).getCenter(), map.getBoundsZoom(L.latLngBounds(camStart),false), {animate:false});
+  camTargets=camSteps.map(function(st){ return camFor(st[1]); });
+  window.__start=function(){ requestAnimationFrame(frame); };
+  if(!CAPTURE) window.addEventListener('load',function(){ setTimeout(function(){ window.__start(); }, 1200); });
+})();
+</script>
+</body>
+</html>

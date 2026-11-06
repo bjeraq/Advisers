@@ -196,8 +196,85 @@ def news_section(payload, limit: int = 12) -> list[str]:
     return lines
 
 
-def build(ticker: str, bars_path, fin_path, news_path, universe_path) -> str:
+def congress_section(ticker: str, payload, limit: int = 8) -> list[str]:
+    if payload is None:
+        return ["لا توجد بيانات كونغرس محمّلة (تُجمع أسبوعياً من مصادر عامة)."]
+    entries = payload.get("trades", payload) if isinstance(payload, dict) else payload
+    if not isinstance(entries, list):
+        return ["صيغة بيانات الكونغرس غير مفهومة."]
+    hits = [e for e in entries if str(e.get("ticker", "")).upper() == ticker]
+    if not hits:
+        return ["لا إفصاحات كونغرس حديثة على هذا السهم في البيانات المحمّلة."]
+    hits.sort(key=lambda e: e.get("date", ""), reverse=True)
+    side_ar = {"buy": "شراء", "sell": "بيع"}
+    lines = []
+    for e in hits[:limit]:
+        side = side_ar.get(str(e.get("side", "")).lower(), e.get("side", ""))
+        lines.append(
+            f"- {e.get('date', '؟')} — {e.get('politician', '؟')}"
+            f" ({e.get('chamber', '')}): {side} {e.get('amount', '')}"
+            + (f" — المصدر: {e['source']}" if e.get("source") else "")
+        )
+    buys = sum(1 for e in hits if str(e.get("side", "")).lower() == "buy")
+    lines.append(f"- الخلاصة: {buys} شراء مقابل {len(hits) - buys} بيع في البيانات المتاحة")
+    lines.append("- تنبيه: الإفصاح يصدر متأخراً (حتى 45 يوماً بعد الصفقة)")
+    return lines
+
+
+def whales_section(ticker: str, company: str, payload) -> list[str]:
+    if payload is None:
+        return ["لا توجد بيانات حيتان محمّلة (تُحدّث من ملفات 13F الرسمية)."]
+    try:
+        from .whales import names_match
+    except Exception:  # pragma: no cover - import safety
+        return ["وحدة الحيتان غير متاحة."]
+    target = company or ticker
+    lines: list[str] = []
+    for w in payload.get("whales", []):
+        mentions: list[str] = []
+        for i, h in enumerate(w.get("top", []), 1):
+            if names_match(h.get("name", ""), target):
+                mentions.append(
+                    f"ضمن أكبر مراكزه (#{i} — {h.get('pct', 0):.1f}% من المحفظة، "
+                    f"بقيمة {_compact(h.get('value'))}$)"
+                )
+                break
+        for kind, label in (
+            ("new", "مركز جديد هذا الربع 🟢"),
+            ("exited", "خرج منه بالكامل هذا الربع 🔴"),
+            ("increased", "زاد مركزه"),
+            ("decreased", "قلّص مركزه"),
+        ):
+            for h in w.get("changes", {}).get(kind, []):
+                if names_match(h.get("name", ""), target):
+                    pct = h.get("change_pct")
+                    mentions.append(label + (f" ({pct:+.0f}%)" if pct else ""))
+        if mentions:
+            lines.append(f"- {w['name']} (ملف {w.get('filed', '؟')}): "
+                         + "؛ ".join(mentions))
+    if not lines:
+        return ["لا يظهر السهم في أحدث ملفات الحيتان المتابَعين."]
+    lines.append("- تنبيه: ملفات 13F ربع سنوية وتصدر متأخرة حتى 45 يوماً")
+    return lines
+
+
+def build(ticker: str, bars_path, fin_path, news_path, universe_path,
+          congress_path=None, whales_path=None) -> str:
     bars = _bars(_load_json(bars_path))
+    company = ""
+    if universe_path:
+        try:
+            row = load_universe(universe_path).get(ticker)
+            company = (row or {}).get("company", "")
+        except OSError:
+            pass
+
+    def _opt_json(path):
+        try:
+            return _load_json(path)
+        except OSError:
+            return None
+
     parts = [
         f"# ملف الحقائق — {ticker}",
         f"تاريخ الإعداد: {datetime.now(tz=timezone.utc).date().isoformat()}",
@@ -214,6 +291,12 @@ def build(ticker: str, bars_path, fin_path, news_path, universe_path) -> str:
         "## آخر الأخبار",
         *news_section(_load_json(news_path)),
         "",
+        "## تداولات الكونغرس على السهم",
+        *congress_section(ticker, _opt_json(congress_path)),
+        "",
+        "## مواقف الحيتان (كبار المستثمرين)",
+        *whales_section(ticker, company, _opt_json(whales_path)),
+        "",
         "> كل نقاش المجلس يستند حصراً للأرقام أعلاه. أي رقم غير مذكور هنا لا يُحتج به.",
     ]
     return "\n".join(parts)
@@ -226,11 +309,13 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--financials", default=None, help="JSON من أداة الماليات")
     p.add_argument("--news", default=None, help="JSON من أداة الأخبار")
     p.add_argument("--universe", default="data/universe_us.csv")
+    p.add_argument("--congress", default="data/congress_trades.json")
+    p.add_argument("--whales", default="data/whales_13f.json")
     p.add_argument("--out", required=True)
     args = p.parse_args(argv)
 
     text = build(args.ticker.upper(), args.bars, args.financials, args.news,
-                 args.universe)
+                 args.universe, args.congress, args.whales)
     with open(args.out, "w") as f:
         f.write(text)
     print(f"جُهّز ملف الحقائق: {args.out} ({len(text)} حرف)")

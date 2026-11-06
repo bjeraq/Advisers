@@ -1,9 +1,30 @@
 {
   "_comment": "تشكيلة المجلس: عطّل عضواً بحذفه من الوضع، أو أضف عضواً جديداً بإنشاء ملفه في ‎.claude/agents/‎ وإضافته هنا.",
   "modes": {
-    "quick": ["fanni", "asasi", "thawr", "dubb", "haris", "raqib"],
-    "full": ["fanni", "asasi", "thawr", "dubb", "raqib", "haris",
-             "rassad", "macro", "mudharib", "saboor", "suyula", "qita"]
+    "quick": [
+      "fanni",
+      "asasi",
+      "thawr",
+      "dubb",
+      "haris",
+      "raqib"
+    ],
+    "full": [
+      "fanni",
+      "asasi",
+      "thawr",
+      "dubb",
+      "raqib",
+      "haris",
+      "rassad",
+      "macro",
+      "mudharib",
+      "saboor",
+      "suyula",
+      "qita",
+      "congress",
+      "whales"
+    ]
   },
   "default_mode": "full",
   "judge": "qadhi",

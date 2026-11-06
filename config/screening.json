@@ -1,0 +1,52 @@
+{
+  "_comment": "عتبات الفحص الشرعي وقوائم الأنشطة — عدّلها متى ما تبي. النسب تُحسب على القيمة السوقية الحالية بأسلوب المعايير الشرعية الشائعة.",
+  "min_market_cap_usd": 2000000000,
+  "max_debt_to_market_cap": 0.30,
+  "max_cash_to_market_cap": 0.30,
+  "excluded_industries": [
+    "Major Banks",
+    "Regional Banks",
+    "Savings Banks",
+    "Investment Banks/Brokers",
+    "Investment Managers",
+    "Investment Trusts/Mutual Funds",
+    "Financial Conglomerates",
+    "Life/Health Insurance",
+    "Multi-Line Insurance",
+    "Property/Casualty Insurance",
+    "Specialty Insurance",
+    "Insurance Brokers/Services",
+    "Alcoholic Beverages",
+    "Tobacco",
+    "Casinos/Gaming"
+  ],
+  "review_industries": [
+    "Finance/Rental/Leasing",
+    "Real Estate Investment Trusts",
+    "Movies/Entertainment",
+    "Broadcasting",
+    "Cable/Satellite TV",
+    "Media Conglomerates",
+    "Restaurants",
+    "Hotels/Resorts/Cruise lines",
+    "Hotels/Resorts/Cruise Lines",
+    "Aerospace & Defense",
+    "Food: Meat/Fish/Dairy",
+    "Publishing: Books/Magazines",
+    "Publishing: Newspapers"
+  ],
+  "excluded_keywords": [
+    "Bank", "Bancorp", "Bancshares", "Bankshares", "Insurance",
+    "Casino", "Tobacco", "Cannabis", "Brewing", "Brewers", "Distillery"
+  ],
+  "review_keywords": [
+    "Hotel", "Hotels", "Resort", "Resorts", "Cruise",
+    "Defense", "Defence", "Entertainment"
+  ],
+  "_overrides_comment": "قرارات يدوية منك تتجاوز الفحص الآلي: حط رمز السهم في الفئة اللي تعتمدها أنت أو مرجعك الشرعي.",
+  "overrides": {
+    "compliant": [],
+    "non_compliant": [],
+    "review": []
+  }
+}

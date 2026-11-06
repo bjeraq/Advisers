@@ -59,7 +59,9 @@ def build_message(
 
 def main(argv: Optional[list[str]] = None) -> int:
     p = argparse.ArgumentParser(description="راصد الصباح: رسالة الرابحين والخاسرين")
-    p.add_argument("--rows", action="append", required=True)
+    p.add_argument("--rows", action="append", default=[])
+    p.add_argument("--fail-reason", default=None,
+                   help="أرسل رسالة اعتذار بهذا السبب بدل التقرير")
     p.add_argument("--universe", default="data/universe_us.csv")
     p.add_argument("--top", type=int, default=5)
     p.add_argument("--min-dollar-volume", type=float, default=10e6)
@@ -72,6 +74,18 @@ def main(argv: Optional[list[str]] = None) -> int:
     if not args.force and not is_trading_day(today):
         print(f"{today} يوم عطلة بالسوق الأمريكي — ما فيه رسالة اليوم.")
         return 0
+
+    if args.fail_reason:
+        message = format_failure_message(args.fail_reason)
+        if args.send:
+            send_message(message)
+            print("أُرسلت رسالة الاعتذار.")
+        else:
+            print(message)
+        return 1
+
+    if not args.rows:
+        p.error("حدد --rows أو --fail-reason")
 
     try:
         message = build_message(

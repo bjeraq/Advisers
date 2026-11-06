@@ -73,8 +73,13 @@ def discover_chats() -> dict[str, str]:
     """List chats the bot can currently see (send a message in the group first)."""
     seen: dict[str, str] = {}
     for update in _call("getUpdates", {"timeout": 0}):
-        msg = update.get("message") or update.get("channel_post") or {}
-        chat = msg.get("chat") or {}
+        holder = (
+            update.get("message")
+            or update.get("channel_post")
+            or update.get("my_chat_member")
+            or {}
+        )
+        chat = holder.get("chat") or {}
         if chat.get("id") is not None:
             title = chat.get("title") or chat.get("username") or chat.get("first_name") or ""
             seen[str(chat["id"])] = f"{title} ({chat.get('type', '')})"

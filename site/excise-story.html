@@ -45,6 +45,12 @@ html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe
 #outro .logo span{display:block;color:#5cc4c4;font-size:54px;font-weight:800;margin-top:10px}
 #outro .src{margin-top:40px;background:rgba(255,253,248,.94);color:#13232b;border-radius:30px;padding:26px 40px;font-size:36px;font-weight:700;line-height:1.6;max-width:900px}
 #outro .src small{display:block;color:#5b6b75;font-size:30px;margin-top:8px}
+#inserts{position:absolute;inset:0;z-index:18;pointer-events:none}
+.irow{position:absolute;left:24px;right:24px;display:flex;justify-content:center;gap:22px}
+.icard{background:rgba(255,253,248,.97);border-radius:32px;box-shadow:0 14px 34px rgba(0,0,0,.30);padding:12px 12px 10px;display:flex;flex-direction:column;align-items:center;opacity:0;border-bottom:8px solid #5cc4c4;box-sizing:border-box}
+.icard svg{display:block}
+.ilab{font-size:30px;font-weight:800;color:#13232b;margin-top:2px;white-space:nowrap}
+.irow.bare .icard{background:none;box-shadow:none;border:none}
 .cap *{animation:none!important;transition:none!important}
 .layer{position:absolute;left:0;top:0;width:1152px;height:2048px;transform-origin:0 0}
 .layer img.full{width:1152px;height:2048px;display:block}
@@ -61,6 +67,7 @@ html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe
   <div id="top"><div id="bar"></div></div>
   <div id="brand"><i></i>الجريدة الموثّقة</div>
   <div id="tag">اقتصاد · الكويت</div>
+  <div id="inserts"></div>
   <div id="upper"><div id="head"></div>
   <div id="chips"></div></div>
   <div id="badge"><span></span></div>
@@ -72,6 +79,82 @@ html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe
   <div id="disc">رسوم توضيحية</div>
 </div></div>
 <script>
+// Flat vector "sticker" art for the explainer. Each function returns inner SVG for a 200x200 viewBox.
+// No brands, logos or wordmarks: colours only hint at familiar product categories.
+var ART = (function(){
+  var uid=0;
+  function lid(cx,y,rx){ return '<ellipse cx="'+cx+'" cy="'+y+'" rx="'+rx+'" ry="'+(rx*0.22)+'" fill="#d5dbde" stroke="#9aa5ab" stroke-width="3"/><rect x="'+(cx-8)+'" y="'+(y-5)+'" width="16" height="6" rx="3" fill="#9aa5ab"/>'; }
+  function can(x,y,w,h,body,deco){
+    return '<g><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="'+(w*0.18)+'" fill="'+body+'" stroke="#13232b" stroke-width="3"/>'+(deco||'')+
+      '<rect x="'+(x+w*0.14)+'" y="'+(y+10)+'" width="'+(w*0.12)+'" height="'+(h-20)+'" rx="4" fill="#fff" opacity=".28"/>'+lid(x+w/2,y+2,w/2)+
+      '<ellipse cx="'+(x+w/2)+'" cy="'+(y+h-1)+'" rx="'+(w/2-2)+'" ry="'+(w*0.1)+'" fill="#000" opacity=".18"/></g>'; }
+  function bolt(cx,cy,s,col){ return '<path transform="translate('+cx+','+cy+') scale('+s+')" d="M4,-30 L-14,4 L-1,4 L-8,30 L16,-6 L3,-6 L10,-30 Z" fill="'+col+'" stroke="#13232b" stroke-width="2"/>'; }
+  function txt(x,y,s,c,t,w){ return '<text x="'+x+'" y="'+y+'" text-anchor="middle" font-family="Tajawal" font-weight="'+(w||900)+'" font-size="'+s+'" fill="'+c+'">'+t+'</text>'; }
+  var A={
+    can_energy:function(){ return can(70,26,60,156,'#1c2530',bolt(100,104,1.25,'#b8ff3c')); },
+    can_red:function(){ return can(60,36,80,146,'#c8102e','<path d="M61,98 C86,80 112,122 139,98 L139,114 C112,138 86,96 61,116 Z" fill="#fff"/>'); },
+    can_blue:function(){ return can(60,36,80,146,'#1f4fbf','<rect x="61" y="96" width="78" height="20" fill="#e03131"/><rect x="61" y="116" width="78" height="7" fill="#fff"/>'); },
+    can_green:function(){ return can(60,36,80,146,'#2b9348','<path d="M61,120 L139,84 L139,100 L61,136 Z" fill="#ffd43b"/>'); },
+    cans_energy:function(){ return '<g transform="translate(-34,10) scale(.82)">'+can(70,26,60,156,'#e9ecef',bolt(100,104,1.2,'#1f4fbf'))+'</g>'+
+      '<g transform="translate(52,10) scale(.82)">'+can(70,26,60,156,'#ff7f11',bolt(100,104,1.2,'#13232b'))+'</g>'+can(70,22,60,156,'#1c2530',bolt(100,100,1.25,'#b8ff3c')); },
+    cans_soda:function(){ return '<g transform="translate(-40,14) scale(.8)">'+A.can_blue()+'</g><g transform="translate(60,14) scale(.8)">'+A.can_green()+'</g>'+A.can_red(); },
+    cigpack:function(){ return '<rect x="68" y="30" width="16" height="50" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="68" y="30" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="90" y="22" width="16" height="58" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="90" y="22" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="112" y="34" width="16" height="46" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="112" y="34" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="52" y="66" width="96" height="118" rx="10" fill="#f8f9fa" stroke="#13232b" stroke-width="3"/><rect x="52" y="66" width="96" height="36" rx="10" fill="#d62828" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="66" y="122" width="68" height="40" rx="6" fill="#e9ecef"/>'; },
+    vape:function(){ return '<circle cx="138" cy="44" r="16" fill="#dee2e6" opacity=".9"/><circle cx="156" cy="30" r="12" fill="#dee2e6" opacity=".75"/><circle cx="168" cy="16" r="8" fill="#dee2e6" opacity=".6"/>'+
+      '<g transform="rotate(28 100 110)"><rect x="88" y="44" width="24" height="132" rx="11" fill="#343a40" stroke="#13232b" stroke-width="3"/><rect x="92" y="28" width="16" height="22" rx="6" fill="#adb5bd" stroke="#13232b" stroke-width="2"/>'+
+      '<rect x="92" y="96" width="16" height="34" rx="6" fill="#5cc4c4"/><circle cx="100" cy="156" r="5" fill="#4dabf7"/></g>'; },
+    shisha:function(){ return '<path d="M80,30 L120,30 L112,52 L88,52 Z" fill="#c0703a" stroke="#13232b" stroke-width="3"/><ellipse cx="100" cy="58" rx="36" ry="7" fill="#868e96" stroke="#13232b" stroke-width="2"/>'+
+      '<rect x="95" y="60" width="10" height="66" fill="#adb5bd" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="148" r="36" fill="#5cc4c4" opacity=".85" stroke="#13232b" stroke-width="3"/>'+
+      '<path d="M112,120 C150,118 168,150 168,182" fill="none" stroke="#495057" stroke-width="7" stroke-linecap="round"/><circle cx="92" cy="26" r="4" fill="#ff6b3d"/><circle cx="106" cy="24" r="4" fill="#ff6b3d"/>'; },
+    heartcrack:function(){ return '<path d="M100,176 C38,130 26,88 52,62 C74,40 96,52 100,70 C104,52 126,40 148,62 C174,88 162,130 100,176 Z" fill="#e8665c" stroke="#13232b" stroke-width="3"/>'+
+      '<polyline points="100,72 90,98 106,114 94,142" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>'; },
+    pricetag:function(){ var b=''; for(var i=0;i<9;i++) b+='<rect x="'+(60+i*7)+'" y="82" width="'+(i%3?3:5)+'" height="40" fill="#13232b"/>';
+      return '<path d="M38,58 H138 L178,100 L138,142 H38 Z" fill="#f6cf55" stroke="#b8860b" stroke-width="4"/><circle cx="150" cy="100" r="9" fill="#fff" stroke="#b8860b" stroke-width="3"/>'+b; },
+    pricetag_up:function(){ return '<g transform="translate(-10,16) scale(.9)">'+A.pricetag()+'</g><path d="M160,20 L190,58 L172,58 L172,92 L148,92 L148,58 L130,58 Z" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'; },
+    building:function(){ var c=''; for(var i=0;i<5;i++) c+='<rect x="'+(44+i*25)+'" y="106" width="12" height="58" fill="#fff" stroke="#c9b48f" stroke-width="2"/>';
+      return '<path d="M100,30 C126,30 140,52 140,70 L60,70 C60,52 74,30 100,30 Z" fill="#5cc4c4" stroke="#13232b" stroke-width="3"/><rect x="96" y="14" width="8" height="18" fill="#13232b"/>'+
+      '<rect x="28" y="70" width="144" height="26" fill="#f1e6d0" stroke="#13232b" stroke-width="3"/><rect x="34" y="96" width="132" height="70" fill="#f1e6d0" stroke="#13232b" stroke-width="3"/>'+c+'<rect x="20" y="164" width="160" height="16" rx="4" fill="#c9b48f" stroke="#13232b" stroke-width="3"/>'; },
+    gcc:function(){ var cols=['#5cc4c4','#e0703f','#d9a54a','#0f6b6b','#e8665c','#7fb069'], g='';
+      for(var i=0;i<6;i++){ var a=-Math.PI/2+i*Math.PI/3, x=100+62*Math.cos(a), y=100+62*Math.sin(a); g+='<line x1="100" y1="100" x2="'+x.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#c9d2d6" stroke-width="5"/>'; }
+      for(var j=0;j<6;j++){ var b=-Math.PI/2+j*Math.PI/3, xx=100+62*Math.cos(b), yy=100+62*Math.sin(b); g+='<circle cx="'+xx.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="22" fill="'+cols[j]+'" stroke="#13232b" stroke-width="3"/>'; }
+      return g+'<circle cx="100" cy="100" r="26" fill="#fff" stroke="#13232b" stroke-width="3"/>'+txt(100,114,40,'#13232b','6'); },
+    calendar:function(arg){ var big=arg||'?', small=big.length>2?'40':'60';
+      return '<rect x="34" y="40" width="132" height="132" rx="16" fill="#fff" stroke="#13232b" stroke-width="3"/><rect x="34" y="40" width="132" height="38" rx="16" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="62" y="26" width="10" height="28" rx="5" fill="#13232b"/><rect x="128" y="26" width="10" height="28" rx="5" fill="#13232b"/>'+txt(100,146,small,'#13232b',big); },
+    towers:function(){ var id='tw'+(uid++);
+      return '<defs><pattern id="'+id+'" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#1f6f8b"/><circle cx="4.5" cy="4.5" r="2.6" fill="#8fd3c8"/></pattern></defs>'+
+      '<ellipse cx="100" cy="186" rx="86" ry="10" fill="#5cc4c4" opacity=".55"/>'+
+      '<polygon points="96,186 104,186 102,12 98,12" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="110" r="31" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<circle cx="100" cy="60" r="17" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<polygon points="56,186 63,186 61,88 58,88" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/><circle cx="59.5" cy="132" r="22" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<polygon points="140,186 146,186 143,64" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/>'; },
+    kwflag:function(){ return '<rect x="30" y="26" width="6" height="160" rx="3" fill="#868e96"/><g transform="skewY(-3)"><rect x="36" y="38" width="138" height="30" fill="#007a3d"/><rect x="36" y="68" width="138" height="30" fill="#fff"/><rect x="36" y="98" width="138" height="30" fill="#ce1126"/>'+
+      '<polygon points="36,38 76,68 76,98 36,128" fill="#000"/><rect x="36" y="38" width="138" height="90" fill="none" stroke="#13232b" stroke-width="3"/></g>'; },
+    sugar:function(){ var g='', hs=[1,2,3]; for(var s=0;s<3;s++) for(var k=0;k<hs[s];k++) g+='<rect x="'+(34+s*50)+'" y="'+(150-k*34)+'" width="32" height="32" rx="6" fill="#fff" stroke="#9aa5ab" stroke-width="3"/>';
+      return g+'<path d="M170,40 L194,70 L180,70 L180,100 L160,100 L160,70 L146,70 Z" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'; },
+    juice:function(){ return '<rect x="58" y="52" width="84" height="128" rx="8" fill="#ffb703" stroke="#13232b" stroke-width="3"/><path d="M58,52 L74,34 L126,34 L142,52 Z" fill="#ffd166" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="112" y="10" width="8" height="40" rx="3" fill="#e8665c" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="118" r="26" fill="#fb8500" stroke="#13232b" stroke-width="3"/><path d="M100,92 C108,84 116,86 118,92" fill="none" stroke="#2b9348" stroke-width="5"/>'; },
+    zerocan:function(){ return can(60,36,80,146,'#dee2e6','<rect x="61" y="86" width="78" height="44" fill="#13232b"/>'+txt(100,116,34,'#fff','0')+txt(100,128,13,'#fff','سكر',800))+
+      '<circle cx="152" cy="150" r="26" fill="#3fbf6f" stroke="#13232b" stroke-width="3"/><polyline points="140,150 149,160 166,140" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'; },
+    banknote:function(){ return '<rect x="14" y="56" width="172" height="92" rx="10" fill="#7ccfb0" stroke="#2d6a4f" stroke-width="4"/><rect x="24" y="66" width="152" height="72" rx="6" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-dasharray="6 4"/>'+
+      '<circle cx="142" cy="102" r="26" fill="#b7e4c7" stroke="#2d6a4f" stroke-width="3"/><circle cx="142" cy="102" r="12" fill="#7ccfb0"/>'+txt(66,106,46,'#1b4332','1')+txt(66,127,18,'#1b4332','دينار',800); },
+    barrel:function(){ return '<rect x="58" y="34" width="84" height="146" rx="14" fill="#1d3557" stroke="#13232b" stroke-width="3"/><rect x="58" y="70" width="84" height="8" fill="#457b9d"/><rect x="58" y="136" width="84" height="8" fill="#457b9d"/>'+
+      '<ellipse cx="100" cy="36" rx="42" ry="9" fill="#457b9d" stroke="#13232b" stroke-width="3"/><path d="M100,88 C112,104 118,114 118,122 C118,132 110,140 100,140 C90,140 82,132 82,122 C82,114 88,104 100,88 Z" fill="#ffd43b"/>'; },
+    money:function(){ var g=''; for(var k=0;k<4;k++) g+='<rect x="'+(24+k*4)+'" y="'+(120-k*18)+'" width="140" height="56" rx="8" fill="#7ccfb0" stroke="#2d6a4f" stroke-width="3"/><rect x="'+(84+k*4)+'" y="'+(120-k*18)+'" width="18" height="56" fill="#f6cf55"/>';
+      return g+'<ellipse cx="160" cy="168" rx="26" ry="10" fill="#d9a520" stroke="#b8860b" stroke-width="3"/><ellipse cx="160" cy="156" rx="26" ry="10" fill="#f6cf55" stroke="#b8860b" stroke-width="3"/>'; },
+    cansdown:function(){ return '<g transform="translate(-24,4) scale(.86)">'+A.can_red()+'</g><path d="M150,40 L174,40 L174,108 L192,108 L162,146 L132,108 L150,108 Z" fill="#3fbf6f" stroke="#13232b" stroke-width="3"/>'; },
+    law:function(){ return '<rect x="40" y="30" width="120" height="150" rx="10" fill="#0f6b6b" stroke="#13232b" stroke-width="3"/><rect x="46" y="36" width="10" height="138" fill="#0b4f4f"/>'+
+      '<line x1="104" y1="62" x2="104" y2="142" stroke="#f6cf55" stroke-width="6"/><line x1="72" y1="78" x2="136" y2="78" stroke="#f6cf55" stroke-width="6"/>'+
+      '<path d="M62,112 L72,80 L82,112 Z" fill="#f6cf55"/><path d="M126,112 L136,80 L146,112 Z" fill="#f6cf55"/><rect x="88" y="140" width="32" height="8" rx="3" fill="#f6cf55"/>'; },
+    gears:function(){ return '<circle cx="82" cy="110" r="44" fill="none" stroke="#5cc4c4" stroke-width="22" stroke-dasharray="14 10"/><circle cx="82" cy="110" r="36" fill="#5cc4c4" stroke="#13232b" stroke-width="3"/><circle cx="82" cy="110" r="12" fill="#fff" stroke="#13232b" stroke-width="3"/>'+
+      '<circle cx="144" cy="62" r="28" fill="none" stroke="#e0703f" stroke-width="16" stroke-dasharray="10 8"/><circle cx="144" cy="62" r="22" fill="#e0703f" stroke="#13232b" stroke-width="3"/><circle cx="144" cy="62" r="8" fill="#fff" stroke="#13232b" stroke-width="3"/>'; }
+  };
+  return function(name){ var p=name.split(':'); var f=A[p[0]]; return f?f(p[1]):''; };
+})();
+
 var CFG = {
  "total": 118.0,
  "scenes": [
@@ -123,7 +206,32 @@ var CFG = {
     ]
    },
    "fx": {},
-   "trans": "none"
+   "trans": "none",
+   "inserts": {
+    "top": 1180,
+    "items": [
+     {
+      "t": 0.81,
+      "art": "can_energy",
+      "label": "مشروب طاقة"
+     },
+     {
+      "t": 1.76,
+      "art": "can_red",
+      "label": "مشروب غازي"
+     },
+     {
+      "t": 2.883,
+      "art": "cigpack",
+      "label": "سجائر"
+     },
+     {
+      "t": 5.948,
+      "art": "towers",
+      "label": "الكويت"
+     }
+    ]
+   }
   },
   {
    "n": 2,
@@ -159,7 +267,27 @@ var CFG = {
    ],
    "layers": null,
    "fx": {},
-   "trans": "slide"
+   "trans": "slide",
+   "inserts": {
+    "top": 1330,
+    "items": [
+     {
+      "t": 8.026,
+      "art": "can_energy",
+      "label": ""
+     },
+     {
+      "t": 8.699,
+      "art": "can_red",
+      "label": ""
+     },
+     {
+      "t": 9.623,
+      "art": "cigpack",
+      "label": ""
+     }
+    ]
+   }
   },
   {
    "n": 3,
@@ -226,7 +354,22 @@ var CFG = {
    "trans": "zoom",
    "shake": [
     24.285
-   ]
+   ],
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 17.11,
+      "art": "building",
+      "label": "مجلس الوزراء"
+     },
+     {
+      "t": 20.193,
+      "art": "gcc",
+      "label": "اتفاقية خليجية"
+     }
+    ]
+   }
   },
   {
    "n": 4,
@@ -286,7 +429,32 @@ var CFG = {
      ]
     }
    },
-   "trans": "circle"
+   "trans": "circle",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 27.695,
+      "art": "gcc",
+      "label": "دول الخليج"
+     },
+     {
+      "t": 31.717,
+      "art": "calendar:2017",
+      "label": "منذ 2017"
+     },
+     {
+      "t": 33.085,
+      "art": "towers",
+      "label": "الكويت"
+     },
+     {
+      "t": 34.335,
+      "art": "kwflag",
+      "label": "لم تطبّق بعد"
+     }
+    ]
+   }
   },
   {
    "n": 5,
@@ -338,7 +506,22 @@ var CFG = {
      "y1": 1560
     }
    },
-   "trans": "slide"
+   "trans": "slide",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 38.753,
+      "art": "heartcrack",
+      "label": "الصحة"
+     },
+     {
+      "t": 41.166,
+      "art": "pricetag",
+      "label": "سعر التجزئة"
+     }
+    ]
+   }
   },
   {
    "n": 6,
@@ -416,7 +599,27 @@ var CFG = {
    "trans": "zoom",
    "shake": [
     50.155
-   ]
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 46.016,
+      "art": "cigpack",
+      "label": "سجائر"
+     },
+     {
+      "t": 46.366,
+      "art": "shisha",
+      "label": "معسّل"
+     },
+     {
+      "t": 47.876,
+      "art": "vape",
+      "label": "سجائر إلكترونية"
+     }
+    ]
+   }
   },
   {
    "n": 7,
@@ -483,7 +686,17 @@ var CFG = {
    "trans": "circle",
    "shake": [
     54.861
-   ]
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 52.665,
+      "art": "cans_energy",
+      "label": "مشروبات الطاقة"
+     }
+    ]
+   }
   },
   {
    "n": 8,
@@ -549,7 +762,17 @@ var CFG = {
    "trans": "slide",
    "shake": [
     59.297
-   ]
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 57.191,
+      "art": "cans_soda",
+      "label": "مشروبات غازية"
+     }
+    ]
+   }
   },
   {
    "n": 9,
@@ -636,7 +859,27 @@ var CFG = {
      "y": 1070
     }
    },
-   "trans": "zoom"
+   "trans": "zoom",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 61.627,
+      "art": "juice",
+      "label": "مشروبات محلّاة"
+     },
+     {
+      "t": 65.951,
+      "art": "sugar",
+      "label": "حسب السكر"
+     },
+     {
+      "t": 68.094,
+      "art": "zerocan",
+      "label": "دايت: معفاة"
+     }
+    ]
+   }
   },
   {
    "n": 10,
@@ -674,22 +917,10 @@ var CFG = {
      "y": 0.42
     },
     {
-     "t": 79.75,
-     "z": 1.1,
-     "x": 0.47,
-     "y": 0.4
-    },
-    {
-     "t": 80.05,
-     "z": 1.7,
-     "x": 0.599,
-     "y": 0.2539
-    },
-    {
      "t": 81.45,
-     "z": 1.78,
-     "x": 0.599,
-     "y": 0.2539
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.4
     }
    ],
    "layers": {
@@ -711,7 +942,22 @@ var CFG = {
    "trans": "circle",
    "shake": [
     80.14999999999999
-   ]
+   ],
+   "inserts": {
+    "top": 1000,
+    "items": [
+     {
+      "t": 75.784,
+      "art": "can_energy",
+      "label": "500 فلس"
+     },
+     {
+      "t": 79.097,
+      "art": "banknote",
+      "label": "1 دينار"
+     }
+    ]
+   }
   },
   {
    "n": 11,
@@ -799,7 +1045,27 @@ var CFG = {
      "t1": 85.64800000000001
     }
    },
-   "trans": "slide"
+   "trans": "slide",
+   "inserts": {
+    "top": 720,
+    "items": [
+     {
+      "t": 81.22,
+      "art": "cansdown",
+      "label": "استهلاك أقل"
+     },
+     {
+      "t": 85.416,
+      "art": "barrel",
+      "label": "بعيداً عن النفط"
+     },
+     {
+      "t": 90.453,
+      "art": "money",
+      "label": "~200 مليون د.ك"
+     }
+    ]
+   }
   },
   {
    "n": 12,
@@ -862,7 +1128,22 @@ var CFG = {
      "t": 93.643
     }
    },
-   "trans": "zoom"
+   "trans": "zoom",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 98.494,
+      "art": "law",
+      "label": "قانون محلي"
+     },
+     {
+      "t": 100.194,
+      "art": "gears",
+      "label": "الإجراءات"
+     }
+    ]
+   }
   },
   {
    "n": 13,
@@ -935,7 +1216,27 @@ var CFG = {
      ]
     }
    },
-   "trans": "circle"
+   "trans": "circle",
+   "inserts": {
+    "top": 720,
+    "items": [
+     {
+      "t": 104.375,
+      "art": "calendar:؟",
+      "label": "الموعد"
+     },
+     {
+      "t": 106.918,
+      "art": "towers",
+      "label": "النسب في الكويت"
+     },
+     {
+      "t": 108.2,
+      "art": "pricetag_up",
+      "label": "الأسعار"
+     }
+    ]
+   }
   },
   {
    "n": 14,
@@ -978,7 +1279,18 @@ var CFG = {
      "h": 330
     }
    },
-   "trans": "slide"
+   "trans": "slide",
+   "inserts": {
+    "top": 860,
+    "bare": true,
+    "items": [
+     {
+      "t": 111.485,
+      "art": "towers",
+      "label": ""
+     }
+    ]
+   }
   }
  ]
 };
@@ -1074,6 +1386,12 @@ var CFG = {
     root.appendChild(d); return {el:d,bg:bg,fg:fg,parts:parts,ups:ups,s:s};
   });
 
+  var insRoot=document.getElementById('inserts');
+  var insRows=CFG.scenes.map(function(s){ if(!s.inserts) return null; var row=document.createElement('div'); row.className='irow'+(s.inserts.bare?' bare':''); row.style.top=s.inserts.top+'px';
+    var n=s.inserts.items.length, size=s.inserts.bare?560:(n>=4?210:(n===3?250:280));
+    var items=s.inserts.items.map(function(it,k){ var c=document.createElement('div'); c.className='icard'; c.style.width=size+'px';
+      c.innerHTML='<svg viewBox="0 0 200 200" width="'+(size-24)+'" height="'+(size-24)+'">'+ART(it.art)+'</svg>'+(it.label?'<div class="ilab">'+it.label+'</div>':''); row.appendChild(c); return {el:c,t:it.t,k:k}; });
+    insRoot.appendChild(row); return {row:row,items:items}; });
   var head=document.getElementById('head'), chips=document.getElementById('chips'), badge=document.getElementById('badge'),
       counter=document.getElementById('counter'), sub=document.getElementById('sub'), title=document.getElementById('title'),
       outro=document.getElementById('outro'), bar=document.getElementById('bar'), disc=document.getElementById('disc'), grain=document.getElementById('grain');
@@ -1117,6 +1435,9 @@ var CFG = {
       sub.textContent=s.sub;
     }
     var hp=ease((t-s.start-0.15)/0.45), hout=1-ease((t-(s.end-0.25))/0.3);
+    insRows.forEach(function(R,j){ if(!R) return; var on=(j===i); R.row.style.display=on?'flex':'none'; if(!on) return;
+      R.items.forEach(function(it){ var k=(t-it.t)/0.42; it.el.style.opacity=(clamp(k*2.2,0,1)*hout).toFixed(3); var fl=6*Math.sin(2*Math.PI*0.5*t+it.k*1.3);
+        it.el.style.transform='translateY('+((1-ease(k))*50+fl).toFixed(1)+'px) scale('+(0.55+0.45*easeOutBack(k)).toFixed(3)+') rotate('+((k<1?(1-clamp(k,0,1))*(it.k%2?8:-8):0)+1.2*Math.sin(1.7*t+it.k)).toFixed(2)+'deg)'; }); });
     head.style.opacity = s.head ? Math.min(hp,hout) : 0;
     head.style.transform='translateY('+((1-hp)*40).toFixed(1)+'px) scale('+(0.92+0.08*easeOutBack(hp)).toFixed(3)+')';
     chipEls.forEach(function(c){ var k=(t-c.t)/0.32; var o=clamp(k,0,1)*hout; c.el.style.opacity=o; c.el.style.transform='scale('+(0.8+0.2*easeOutBack(k)).toFixed(3)+')'; });

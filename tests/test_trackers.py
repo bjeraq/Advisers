@@ -92,3 +92,44 @@ class DossierTrackerSectionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+from advisers.bargains import find_candidates
+
+
+class BargainTests(unittest.TestCase):
+    def _row(self, ticker, **over):
+        base = {
+            "ticker": ticker, "symbol": f"NASDAQ:{ticker}",
+            "company": f"{ticker} Inc.", "close": 100.0, "volume": 1e6,
+            "perf_1w": -2.0, "perf_1m": -20.0, "net_margin": 20.0,
+            "roe": 30.0,
+        }
+        base.update(over)
+        return base
+
+    UNI = {
+        "GOOD": {"status": "compliant", "debt_ratio": "0.05"},
+        "DEBT": {"status": "compliant", "debt_ratio": "0.60"},
+        "HARAM": {"status": "non_compliant", "debt_ratio": "0.05"},
+        "WEAK": {"status": "compliant", "debt_ratio": "0.05"},
+        "UP": {"status": "compliant", "debt_ratio": "0.05"},
+    }
+
+    def test_filters_and_ranking(self):
+        rows = [
+            self._row("GOOD"),
+            self._row("DEBT"),                      # too much debt
+            self._row("HARAM"),                     # not compliant
+            self._row("WEAK", net_margin=1.0),      # weak business
+            self._row("UP", perf_1m=5.0, perf_1w=1.0),  # no drop
+        ]
+        cands = find_candidates(rows, self.UNI)
+        self.assertEqual([c["ticker"] for c in cands], ["GOOD"])
+        self.assertIn("هبوط", cands[0]["why_ar"])
+
+    def test_deeper_drop_ranks_higher(self):
+        uni = {"A": {"status": "compliant", "debt_ratio": "0.05"},
+               "B": {"status": "compliant", "debt_ratio": "0.05"}}
+        rows = [self._row("A", perf_1m=-15.0), self._row("B", perf_1m=-30.0)]
+        cands = find_candidates(rows, uni)
+        self.assertEqual([c["ticker"] for c in cands], ["B", "A"])

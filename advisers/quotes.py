@@ -22,6 +22,7 @@ SCAN_COLUMNS = [
     "name", "description", "exchange", "is_primary", "sector", "industry",
     "market_cap_basic", "total_debt_fq", "cash_n_short_term_invest_fq",
     "close", "change", "volume",
+    "Perf.W", "Perf.1M", "net_margin", "return_on_equity",
 ]
 
 
@@ -49,6 +50,10 @@ def normalize(row: dict) -> dict:
         "close": _num(row, "close"),
         "change_pct": _num(row, "change"),
         "volume": _num(row, "volume"),
+        "perf_1w": _num(row, "Perf.W"),
+        "perf_1m": _num(row, "Perf.1M"),
+        "net_margin": _num(row, "net_margin"),
+        "roe": _num(row, "return_on_equity"),
     }
 
 

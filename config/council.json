@@ -23,7 +23,8 @@
       "suyula",
       "qita",
       "congress",
-      "whales"
+      "whales",
+      "mazloum"
     ]
   },
   "default_mode": "full",
@@ -44,6 +45,7 @@
     "qita": "محلل القطاع",
     "congress": "متتبع السياسيين",
     "whales": "متتبع الحيتان",
-    "qadhi": "القاضي"
+    "qadhi": "القاضي",
+    "mazloum": "صائد المظلومات"
   }
 }

@@ -1,0 +1,1565 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>الضريبة الانتقائية · فيديو | الجريدة الموثّقة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe UI",Tahoma,sans-serif}
+#frame{height:100vh;aspect-ratio:9/16;margin:0 auto;position:relative;overflow:hidden}
+#stage{width:1080px;height:1920px;position:absolute;left:0;top:0;transform-origin:top left;transform:scale(var(--s,1));overflow:hidden;background:#0b1216}
+.scene{position:absolute;inset:0;opacity:0;overflow:hidden}
+.img{position:absolute;left:0;top:0;width:1152px;height:2048px;transform-origin:0 0}
+.img img{width:1152px;height:2048px;display:block}
+.shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,14,18,.72) 0%,rgba(8,14,18,0) 26%,rgba(8,14,18,0) 62%,rgba(8,14,18,.82) 100%)}
+.pending{position:absolute;width:250px;height:250px;border-radius:50%;background:#f3e3c3;border:10px solid #0f6b6b;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:900;color:#0f6b6b;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+#top{position:absolute;top:0;left:0;right:0;height:10px;background:rgba(255,255,255,.15);z-index:30}
+#bar{height:100%;width:0;background:linear-gradient(90deg,#f0a070,#5cc4c4)}
+#brand{position:absolute;top:44px;right:44px;z-index:30;display:flex;align-items:center;gap:14px;background:rgba(10,18,22,.72);padding:12px 24px;border-radius:999px;color:#fff;font-size:34px;font-weight:800}
+#brand i{width:18px;height:18px;border-radius:50%;background:#5cc4c4;display:inline-block}
+#tag{position:absolute;top:56px;left:44px;z-index:30;background:#f0a070;color:#1b1206;font-size:28px;font-weight:800;padding:8px 20px;border-radius:999px}
+#upper{position:absolute;top:160px;left:56px;right:56px;z-index:20;display:flex;flex-direction:column;align-items:center;gap:26px}
+#head{text-align:center;color:#fff;font-size:76px;font-weight:900;line-height:1.22;text-shadow:0 6px 30px rgba(0,0,0,.6);opacity:0}
+#chips{display:flex;flex-direction:column;align-items:center;gap:20px}
+.chip{background:rgba(255,253,248,.95);color:#13232b;font-size:46px;font-weight:800;padding:18px 34px;border-radius:26px;box-shadow:0 10px 30px rgba(0,0,0,.28);border-right:12px solid #0f6b6b;opacity:0;max-width:940px;text-align:center}
+.chip.warn{border-right-color:#e0703f}
+#badge{position:absolute;top:640px;left:0;right:0;z-index:21;text-align:center;opacity:0}
+#badge span{display:inline-block;background:#e0703f;color:#fff;font-size:230px;font-weight:900;line-height:1;padding:30px 70px 40px;border-radius:60px;box-shadow:0 20px 60px rgba(0,0,0,.35);direction:ltr}
+#counter{position:absolute;top:620px;left:0;right:0;z-index:21;text-align:center;opacity:0}
+#counter .box{display:inline-block;background:rgba(255,253,248,.96);border-radius:48px;padding:30px 60px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+#counter .num{font-size:190px;font-weight:900;color:#0f6b6b;line-height:1;direction:ltr;display:inline-block}
+#counter .unit{font-size:64px;font-weight:800;color:#13232b;margin-right:18px}
+#counter .note{font-size:36px;color:#5b6b75;margin-top:10px}
+#sub{position:absolute;left:50px;right:50px;bottom:120px;z-index:20;background:rgba(10,18,22,.78);color:#fff;font-size:50px;font-weight:700;line-height:1.55;padding:30px 40px;border-radius:32px;text-align:center;opacity:0}
+#disc{position:absolute;bottom:52px;left:0;right:0;text-align:center;z-index:20;color:rgba(255,255,255,.75);font-size:28px;font-weight:600}
+#title{position:absolute;inset:0;z-index:22;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;pointer-events:none}
+#title .k{background:#f0a070;color:#1b1206;font-size:44px;font-weight:900;padding:10px 30px;border-radius:999px;margin-bottom:30px}
+#title .panel{background:rgba(10,18,22,.84);border-radius:48px;padding:56px 50px 60px;margin:0 50px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+#title h1{margin:0;color:#fff;font-size:108px;font-weight:900;line-height:1.22}
+#title h2{margin:28px 0 0;color:#ffe6d2;font-size:64px;font-weight:800}
+#outro{position:absolute;inset:0;z-index:22;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:300px;text-align:center;opacity:0;pointer-events:none}
+#outro .logo{background:rgba(10,18,22,.82);border-radius:40px;padding:40px 60px}
+#outro .logo b{display:block;color:#fff;font-size:104px;font-weight:900}
+#outro .logo span{display:block;color:#5cc4c4;font-size:54px;font-weight:800;margin-top:10px}
+#outro .src{margin-top:40px;background:rgba(255,253,248,.94);color:#13232b;border-radius:30px;padding:26px 40px;font-size:36px;font-weight:700;line-height:1.6;max-width:900px}
+#outro .src small{display:block;color:#5b6b75;font-size:30px;margin-top:8px}
+#inserts{position:absolute;inset:0;z-index:18;pointer-events:none}
+.irow{position:absolute;left:24px;right:24px;display:flex;justify-content:center;gap:22px}
+.icard{background:rgba(255,253,248,.97);border-radius:32px;box-shadow:0 14px 34px rgba(0,0,0,.30);padding:12px 12px 10px;display:flex;flex-direction:column;align-items:center;opacity:0;border-bottom:8px solid #5cc4c4;box-sizing:border-box}
+.icard svg{display:block}
+.ilab{font-size:30px;font-weight:800;color:#13232b;margin-top:2px;white-space:nowrap}
+.irow.bare .icard{background:none;box-shadow:none;border:none}
+#gmap{position:absolute;left:40px;top:420px;width:1000px;z-index:17;opacity:0;background:rgba(255,253,248,.97);border-radius:36px;box-shadow:0 18px 40px rgba(0,0,0,.32);padding:20px 20px 18px;box-sizing:border-box;border-bottom:8px solid #5cc4c4;display:none}
+#gmap .mv{position:relative;width:960px;height:727px;border-radius:22px;overflow:hidden;background:#bfe3e6}
+#gmap svg{position:absolute;left:0;top:0}
+#gmap .gl{position:absolute;transform:translate(-50%,-50%);background:rgba(255,253,248,.93);color:#13232b;font-weight:800;border-radius:16px;padding:4px 14px;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.18);opacity:0}
+#gmap .gl.kw{font-size:36px;padding:6px 18px}
+#gmap .gl.tag{background:#e0703f;color:#fff;font-size:38px;padding:8px 22px}
+#gmap .leg{display:flex;justify-content:center;margin-top:18px;height:64px}
+#gmap .lg{display:flex;align-items:center;gap:14px;font-size:34px;font-weight:800;color:#13232b;background:#f3efe6;border-radius:20px;padding:8px 24px;opacity:0}
+#gmap .lg i{width:32px;height:32px;border-radius:9px;display:inline-block;border:3px solid #13232b;background:#5cc4c4}
+.cap *{animation:none!important;transition:none!important}
+.layer{position:absolute;left:0;top:0;width:1152px;height:2048px;transform-origin:0 0}
+.layer img.full{width:1152px;height:2048px;display:block}
+.part{position:absolute;transform-origin:50% 100%;will-change:transform}
+.fx{position:absolute;left:0;top:0;overflow:visible}
+#vig{position:absolute;inset:0;z-index:15;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.38) 100%)}
+#grain{position:absolute;inset:-64px;z-index:16;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url(media/excise/layers/grain.png)}
+</style>
+</head>
+<body>
+<div id="frame"><div id="stage">
+  <div id="scenes"></div>
+  <div id="vig"></div><div id="grain"></div>
+  <div id="top"><div id="bar"></div></div>
+  <div id="brand"><i></i>الجريدة الموثّقة</div>
+  <div id="tag">اقتصاد · الكويت</div>
+  <div id="inserts"></div>
+  <div id="gmap"><div class="mv"></div><div class="leg"><div class="lg"><i></i>دول طبّقت الضريبة منذ 2017</div></div></div>
+  <div id="upper"><div id="head"></div>
+  <div id="chips"></div></div>
+  <div id="badge"><span></span></div>
+  <div id="counter"><div class="box"><span class="num">0</span><span class="unit">فلس</span><div class="note">مثال افتراضي للتوضيح</div></div></div>
+  <div id="title"><div class="panel"><div class="k" style="display:inline-block">خبر · اقتصاد</div><h1>الضريبة الانتقائية<br>الخليجية</h1><h2>ماذا قرر مجلس الوزراء؟</h2></div></div>
+  <div id="outro"><div class="logo"><b>الجريدة الموثّقة</b><span>أخبارٌ بمصادرها</span></div>
+    <div class="src">المصادر: الجريدة · الأنباء · الراي · Gulf News · Times Kuwait<small>رسوم كرتونية بالذكاء الاصطناعي · النسب وفق الإطار الخليجي · النسب النهائية في الكويت لم تُعلن</small></div></div>
+  <div id="sub"></div>
+  <div id="disc">رسوم توضيحية</div>
+</div></div>
+<script>
+// Flat vector "sticker" art for the explainer. Each function returns inner SVG for a 200x200 viewBox.
+// No brands, logos or wordmarks: colours only hint at familiar product categories.
+var ART = (function(){
+  var uid=0;
+  function lid(cx,y,rx){ return '<ellipse cx="'+cx+'" cy="'+y+'" rx="'+rx+'" ry="'+(rx*0.22)+'" fill="#d5dbde" stroke="#9aa5ab" stroke-width="3"/><rect x="'+(cx-8)+'" y="'+(y-5)+'" width="16" height="6" rx="3" fill="#9aa5ab"/>'; }
+  function can(x,y,w,h,body,deco){
+    return '<g><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="'+(w*0.18)+'" fill="'+body+'" stroke="#13232b" stroke-width="3"/>'+(deco||'')+
+      '<rect x="'+(x+w*0.14)+'" y="'+(y+10)+'" width="'+(w*0.12)+'" height="'+(h-20)+'" rx="4" fill="#fff" opacity=".28"/>'+lid(x+w/2,y+2,w/2)+
+      '<ellipse cx="'+(x+w/2)+'" cy="'+(y+h-1)+'" rx="'+(w/2-2)+'" ry="'+(w*0.1)+'" fill="#000" opacity=".18"/></g>'; }
+  function bolt(cx,cy,s,col){ return '<path transform="translate('+cx+','+cy+') scale('+s+')" d="M4,-30 L-14,4 L-1,4 L-8,30 L16,-6 L3,-6 L10,-30 Z" fill="'+col+'" stroke="#13232b" stroke-width="2"/>'; }
+  function txt(x,y,s,c,t,w){ return '<text x="'+x+'" y="'+y+'" text-anchor="middle" font-family="Tajawal" font-weight="'+(w||900)+'" font-size="'+s+'" fill="'+c+'">'+t+'</text>'; }
+  var A={
+    can_energy:function(){ return can(70,26,60,156,'#1c2530',bolt(100,104,1.25,'#b8ff3c')); },
+    can_red:function(){ return can(60,36,80,146,'#c8102e','<path d="M61,98 C86,80 112,122 139,98 L139,114 C112,138 86,96 61,116 Z" fill="#fff"/>'); },
+    can_blue:function(){ return can(60,36,80,146,'#1f4fbf','<rect x="61" y="96" width="78" height="20" fill="#e03131"/><rect x="61" y="116" width="78" height="7" fill="#fff"/>'); },
+    can_green:function(){ return can(60,36,80,146,'#2b9348','<path d="M61,120 L139,84 L139,100 L61,136 Z" fill="#ffd43b"/>'); },
+    cans_energy:function(){ return '<g transform="translate(-34,10) scale(.82)">'+can(70,26,60,156,'#e9ecef',bolt(100,104,1.2,'#1f4fbf'))+'</g>'+
+      '<g transform="translate(52,10) scale(.82)">'+can(70,26,60,156,'#ff7f11',bolt(100,104,1.2,'#13232b'))+'</g>'+can(70,22,60,156,'#1c2530',bolt(100,100,1.25,'#b8ff3c')); },
+    cans_soda:function(){ return '<g transform="translate(-40,14) scale(.8)">'+A.can_blue()+'</g><g transform="translate(60,14) scale(.8)">'+A.can_green()+'</g>'+A.can_red(); },
+    cigpack:function(){ return '<rect x="68" y="30" width="16" height="50" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="68" y="30" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="90" y="22" width="16" height="58" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="90" y="22" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="112" y="34" width="16" height="46" rx="4" fill="#fff" stroke="#13232b" stroke-width="2"/><rect x="112" y="34" width="16" height="15" fill="#e9a14b"/>'+
+      '<rect x="52" y="66" width="96" height="118" rx="10" fill="#f8f9fa" stroke="#13232b" stroke-width="3"/><rect x="52" y="66" width="96" height="36" rx="10" fill="#d62828" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="66" y="122" width="68" height="40" rx="6" fill="#e9ecef"/>'; },
+    vape:function(){ return '<circle cx="138" cy="44" r="16" fill="#dee2e6" opacity=".9"/><circle cx="156" cy="30" r="12" fill="#dee2e6" opacity=".75"/><circle cx="168" cy="16" r="8" fill="#dee2e6" opacity=".6"/>'+
+      '<g transform="rotate(28 100 110)"><rect x="88" y="44" width="24" height="132" rx="11" fill="#343a40" stroke="#13232b" stroke-width="3"/><rect x="92" y="28" width="16" height="22" rx="6" fill="#adb5bd" stroke="#13232b" stroke-width="2"/>'+
+      '<rect x="92" y="96" width="16" height="34" rx="6" fill="#5cc4c4"/><circle cx="100" cy="156" r="5" fill="#4dabf7"/></g>'; },
+    shisha:function(){ return '<path d="M80,30 L120,30 L112,52 L88,52 Z" fill="#c0703a" stroke="#13232b" stroke-width="3"/><ellipse cx="100" cy="58" rx="36" ry="7" fill="#868e96" stroke="#13232b" stroke-width="2"/>'+
+      '<rect x="95" y="60" width="10" height="66" fill="#adb5bd" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="148" r="36" fill="#5cc4c4" opacity=".85" stroke="#13232b" stroke-width="3"/>'+
+      '<path d="M112,120 C150,118 168,150 168,182" fill="none" stroke="#495057" stroke-width="7" stroke-linecap="round"/><circle cx="92" cy="26" r="4" fill="#ff6b3d"/><circle cx="106" cy="24" r="4" fill="#ff6b3d"/>'; },
+    heartcrack:function(){ return '<path d="M100,176 C38,130 26,88 52,62 C74,40 96,52 100,70 C104,52 126,40 148,62 C174,88 162,130 100,176 Z" fill="#e8665c" stroke="#13232b" stroke-width="3"/>'+
+      '<polyline points="100,72 90,98 106,114 94,142" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>'; },
+    pricetag:function(){ var b=''; for(var i=0;i<9;i++) b+='<rect x="'+(60+i*7)+'" y="82" width="'+(i%3?3:5)+'" height="40" fill="#13232b"/>';
+      return '<path d="M38,58 H138 L178,100 L138,142 H38 Z" fill="#f6cf55" stroke="#b8860b" stroke-width="4"/><circle cx="150" cy="100" r="9" fill="#fff" stroke="#b8860b" stroke-width="3"/>'+b; },
+    pricetag_up:function(){ return '<g transform="translate(-10,16) scale(.9)">'+A.pricetag()+'</g><path d="M160,20 L190,58 L172,58 L172,92 L148,92 L148,58 L130,58 Z" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'; },
+    building:function(){ var c=''; for(var i=0;i<5;i++) c+='<rect x="'+(44+i*25)+'" y="106" width="12" height="58" fill="#fff" stroke="#c9b48f" stroke-width="2"/>';
+      return '<path d="M100,30 C126,30 140,52 140,70 L60,70 C60,52 74,30 100,30 Z" fill="#5cc4c4" stroke="#13232b" stroke-width="3"/><rect x="96" y="14" width="8" height="18" fill="#13232b"/>'+
+      '<rect x="28" y="70" width="144" height="26" fill="#f1e6d0" stroke="#13232b" stroke-width="3"/><rect x="34" y="96" width="132" height="70" fill="#f1e6d0" stroke="#13232b" stroke-width="3"/>'+c+'<rect x="20" y="164" width="160" height="16" rx="4" fill="#c9b48f" stroke="#13232b" stroke-width="3"/>'; },
+    gcc:function(){ var cols=['#5cc4c4','#e0703f','#d9a54a','#0f6b6b','#e8665c','#7fb069'], g='';
+      for(var i=0;i<6;i++){ var a=-Math.PI/2+i*Math.PI/3, x=100+62*Math.cos(a), y=100+62*Math.sin(a); g+='<line x1="100" y1="100" x2="'+x.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#c9d2d6" stroke-width="5"/>'; }
+      for(var j=0;j<6;j++){ var b=-Math.PI/2+j*Math.PI/3, xx=100+62*Math.cos(b), yy=100+62*Math.sin(b); g+='<circle cx="'+xx.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="22" fill="'+cols[j]+'" stroke="#13232b" stroke-width="3"/>'; }
+      return g+'<circle cx="100" cy="100" r="26" fill="#fff" stroke="#13232b" stroke-width="3"/>'+txt(100,114,40,'#13232b','6'); },
+    calendar:function(arg){ var big=arg||'?', small=big.length>2?'40':'60';
+      return '<rect x="34" y="40" width="132" height="132" rx="16" fill="#fff" stroke="#13232b" stroke-width="3"/><rect x="34" y="40" width="132" height="38" rx="16" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="62" y="26" width="10" height="28" rx="5" fill="#13232b"/><rect x="128" y="26" width="10" height="28" rx="5" fill="#13232b"/>'+txt(100,146,small,'#13232b',big); },
+    towers:function(){ var id='tw'+(uid++);
+      return '<defs><pattern id="'+id+'" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#1f6f8b"/><circle cx="4.5" cy="4.5" r="2.6" fill="#8fd3c8"/></pattern></defs>'+
+      '<ellipse cx="100" cy="186" rx="86" ry="10" fill="#5cc4c4" opacity=".55"/>'+
+      '<polygon points="96,186 104,186 102,12 98,12" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="110" r="31" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<circle cx="100" cy="60" r="17" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<polygon points="56,186 63,186 61,88 58,88" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/><circle cx="59.5" cy="132" r="22" fill="url(#'+id+')" stroke="#13232b" stroke-width="3"/>'+
+      '<polygon points="140,186 146,186 143,64" fill="#2b4c5c" stroke="#13232b" stroke-width="2"/>'; },
+    kwskyline:function(){ var g='';
+      g+='<circle cx="156" cy="44" r="16" fill="#ffd166" opacity=".9"/>';
+      // background blocks
+      [[18,118,22,52,'#a8dadc'],[44,104,18,66,'#cfe8e6'],[150,112,20,58,'#a8dadc'],[172,126,16,44,'#cfe8e6']].forEach(function(b){
+        g+='<rect x="'+b[0]+'" y="'+b[1]+'" width="'+b[2]+'" height="'+b[3]+'" rx="2" fill="'+b[4]+'" stroke="#13232b" stroke-width="2.5"/>';
+        for(var yy=b[1]+8; yy<b[1]+b[3]-6; yy+=10) g+='<line x1="'+(b[0]+4)+'" y1="'+yy+'" x2="'+(b[0]+b[2]-4)+'" y2="'+yy+'" stroke="#13232b" stroke-width="1.5" opacity=".35"/>'; });
+      // Liberation Tower: slim shaft, observation pod, spire
+      g+='<polygon points="70,170 88,170 85,74 73,74" fill="#e9ecef" stroke="#13232b" stroke-width="2.5"/>';
+      g+='<rect x="64" y="58" width="30" height="18" rx="7" fill="#5cc4c4" stroke="#13232b" stroke-width="2.5"/><rect x="69" y="48" width="20" height="11" rx="4" fill="#e9ecef" stroke="#13232b" stroke-width="2.5"/>';
+      g+='<polygon points="77,48 81,48 79.5,8 78.5,8" fill="#2b4c5c" stroke="#13232b" stroke-width="1.5"/>';
+      // Al Hamra-style sculpted tower: straight back, carved curved face
+      g+='<path d="M104,170 L104,30 L132,22 C126,60 140,96 138,170 Z" fill="#e9d8b4" stroke="#13232b" stroke-width="2.5" stroke-linejoin="round"/>';
+      g+='<path d="M132,22 C126,60 140,96 138,170 L126,170 C130,110 118,70 124,26 Z" fill="#c9a66b" stroke="#13232b" stroke-width="2" stroke-linejoin="round"/>';
+      for(var yy=42; yy<164; yy+=12) g+='<line x1="107" y1="'+yy+'" x2="'+(122-(yy>100?0:2))+'" y2="'+yy+'" stroke="#13232b" stroke-width="1.5" opacity=".3"/>';
+      // waterfront + sea
+      g+='<rect x="8" y="168" width="184" height="6" rx="3" fill="#2b4c5c"/>';
+      g+='<path d="M8,180 Q22,174 36,180 T64,180 T92,180 T120,180 T148,180 T176,180 T192,180 L192,194 L8,194 Z" fill="#5cc4c4" stroke="#13232b" stroke-width="2.5"/>';
+      return g; },
+    kwflag:function(){ return '<rect x="30" y="26" width="6" height="160" rx="3" fill="#868e96"/><g transform="skewY(-3)"><rect x="36" y="38" width="138" height="30" fill="#007a3d"/><rect x="36" y="68" width="138" height="30" fill="#fff"/><rect x="36" y="98" width="138" height="30" fill="#ce1126"/>'+
+      '<polygon points="36,38 76,68 76,98 36,128" fill="#000"/><rect x="36" y="38" width="138" height="90" fill="none" stroke="#13232b" stroke-width="3"/></g>'; },
+    sugar:function(){ var g='', hs=[1,2,3]; for(var s=0;s<3;s++) for(var k=0;k<hs[s];k++) g+='<rect x="'+(34+s*50)+'" y="'+(150-k*34)+'" width="32" height="32" rx="6" fill="#fff" stroke="#9aa5ab" stroke-width="3"/>';
+      return g+'<path d="M170,40 L194,70 L180,70 L180,100 L160,100 L160,70 L146,70 Z" fill="#e0703f" stroke="#13232b" stroke-width="3"/>'; },
+    juice:function(){ return '<rect x="58" y="52" width="84" height="128" rx="8" fill="#ffb703" stroke="#13232b" stroke-width="3"/><path d="M58,52 L74,34 L126,34 L142,52 Z" fill="#ffd166" stroke="#13232b" stroke-width="3"/>'+
+      '<rect x="112" y="10" width="8" height="40" rx="3" fill="#e8665c" stroke="#13232b" stroke-width="2"/><circle cx="100" cy="118" r="26" fill="#fb8500" stroke="#13232b" stroke-width="3"/><path d="M100,92 C108,84 116,86 118,92" fill="none" stroke="#2b9348" stroke-width="5"/>'; },
+    zerocan:function(){ return can(60,36,80,146,'#dee2e6','<rect x="61" y="86" width="78" height="44" fill="#13232b"/>'+txt(100,116,34,'#fff','0')+txt(100,128,13,'#fff','سكر',800))+
+      '<circle cx="152" cy="150" r="26" fill="#3fbf6f" stroke="#13232b" stroke-width="3"/><polyline points="140,150 149,160 166,140" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'; },
+    banknote:function(){ return '<rect x="14" y="56" width="172" height="92" rx="10" fill="#7ccfb0" stroke="#2d6a4f" stroke-width="4"/><rect x="24" y="66" width="152" height="72" rx="6" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-dasharray="6 4"/>'+
+      '<circle cx="142" cy="102" r="26" fill="#b7e4c7" stroke="#2d6a4f" stroke-width="3"/><circle cx="142" cy="102" r="12" fill="#7ccfb0"/>'+txt(66,106,46,'#1b4332','1')+txt(66,127,18,'#1b4332','دينار',800); },
+    barrel:function(){ return '<rect x="58" y="34" width="84" height="146" rx="14" fill="#1d3557" stroke="#13232b" stroke-width="3"/><rect x="58" y="70" width="84" height="8" fill="#457b9d"/><rect x="58" y="136" width="84" height="8" fill="#457b9d"/>'+
+      '<ellipse cx="100" cy="36" rx="42" ry="9" fill="#457b9d" stroke="#13232b" stroke-width="3"/><path d="M100,88 C112,104 118,114 118,122 C118,132 110,140 100,140 C90,140 82,132 82,122 C82,114 88,104 100,88 Z" fill="#ffd43b"/>'; },
+    money:function(){ var g=''; for(var k=0;k<4;k++) g+='<rect x="'+(24+k*4)+'" y="'+(120-k*18)+'" width="140" height="56" rx="8" fill="#7ccfb0" stroke="#2d6a4f" stroke-width="3"/><rect x="'+(84+k*4)+'" y="'+(120-k*18)+'" width="18" height="56" fill="#f6cf55"/>';
+      return g+'<ellipse cx="160" cy="168" rx="26" ry="10" fill="#d9a520" stroke="#b8860b" stroke-width="3"/><ellipse cx="160" cy="156" rx="26" ry="10" fill="#f6cf55" stroke="#b8860b" stroke-width="3"/>'; },
+    cansdown:function(){ return '<g transform="translate(-24,4) scale(.86)">'+A.can_red()+'</g><path d="M150,40 L174,40 L174,108 L192,108 L162,146 L132,108 L150,108 Z" fill="#3fbf6f" stroke="#13232b" stroke-width="3"/>'; },
+    law:function(){ return '<rect x="40" y="30" width="120" height="150" rx="10" fill="#0f6b6b" stroke="#13232b" stroke-width="3"/><rect x="46" y="36" width="10" height="138" fill="#0b4f4f"/>'+
+      '<line x1="104" y1="62" x2="104" y2="142" stroke="#f6cf55" stroke-width="6"/><line x1="72" y1="78" x2="136" y2="78" stroke="#f6cf55" stroke-width="6"/>'+
+      '<path d="M62,112 L72,80 L82,112 Z" fill="#f6cf55"/><path d="M126,112 L136,80 L146,112 Z" fill="#f6cf55"/><rect x="88" y="140" width="32" height="8" rx="3" fill="#f6cf55"/>'; },
+    gears:function(){ return '<circle cx="82" cy="110" r="44" fill="none" stroke="#5cc4c4" stroke-width="22" stroke-dasharray="14 10"/><circle cx="82" cy="110" r="36" fill="#5cc4c4" stroke="#13232b" stroke-width="3"/><circle cx="82" cy="110" r="12" fill="#fff" stroke="#13232b" stroke-width="3"/>'+
+      '<circle cx="144" cy="62" r="28" fill="none" stroke="#e0703f" stroke-width="16" stroke-dasharray="10 8"/><circle cx="144" cy="62" r="22" fill="#e0703f" stroke="#13232b" stroke-width="3"/><circle cx="144" cy="62" r="8" fill="#fff" stroke="#13232b" stroke-width="3"/>'; }
+  };
+  return function(name){ var p=name.split(':'); var f=A[p[0]]; return f?f(p[1]):''; };
+})();
+
+var CFG = {
+ "total": 108.01,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0.0,
+   "end": 7.044,
+   "voice": 0.9,
+   "voice_end": 6.544,
+   "img": "media/excise/s01.jpg",
+   "kb": [
+    1.0,
+    1.1,
+    0.5,
+    0.55
+   ],
+   "head": "هل ترتفع الأسعار؟",
+   "sub": "علبة طاقة، ومشروب غازي، وعلبة سجائر... هل سترتفع أسعارها في الكويت؟",
+   "chips": [],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 0.0,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.55
+    },
+    {
+     "t": 7.544,
+     "z": 1.1,
+     "x": 0.5,
+     "y": 0.55
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s01_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s01_fg0.webp",
+      "x": 0,
+      "y": 446,
+      "w": 1101,
+      "h": 1429,
+      "area": 0.5069,
+      "amp": 0.45,
+      "ph": 0.7
+     }
+    ]
+   },
+   "fx": {},
+   "trans": "none",
+   "inserts": {
+    "top": 1180,
+    "items": [
+     {
+      "t": 0.81,
+      "art": "can_energy",
+      "label": "مشروب طاقة"
+     },
+     {
+      "t": 1.645,
+      "art": "can_red",
+      "label": "مشروب غازي"
+     },
+     {
+      "t": 2.633,
+      "art": "cigpack",
+      "label": "سجائر"
+     },
+     {
+      "t": 5.444,
+      "art": "towers",
+      "label": "الكويت"
+     }
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "start": 7.044,
+   "end": 11.938,
+   "voice": 7.494,
+   "voice_end": 11.438,
+   "img": "media/excise/s05.jpg",
+   "kb": [
+    1.12,
+    1.18,
+    0.5,
+    0.45
+   ],
+   "head": "",
+   "sub": "الضريبة الانتقائية الخليجية. ماذا قرر مجلس الوزراء؟",
+   "chips": [],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 7.044,
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "t": 12.438,
+     "z": 1.18,
+     "x": 0.5,
+     "y": 0.45
+    }
+   ],
+   "layers": null,
+   "fx": {},
+   "trans": "slide",
+   "inserts": {
+    "top": 1330,
+    "items": [
+     {
+      "t": 7.434,
+      "art": "can_energy",
+      "label": ""
+     },
+     {
+      "t": 8.041,
+      "art": "can_red",
+      "label": ""
+     },
+     {
+      "t": 8.877,
+      "art": "cigpack",
+      "label": ""
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "start": 11.938,
+   "end": 25.057,
+   "voice": 12.288,
+   "voice_end": 24.557,
+   "img": "media/excise/s03.jpg",
+   "kb": [
+    1.0,
+    1.09,
+    0.5,
+    0.7
+   ],
+   "head": "موافقة على مشروع مرسوم",
+   "sub": "يوم الثلاثاء السابع والعشرين من أكتوبر، وافق مجلس الوزراء على مشروع مرسوم بقانون للاتفاقية الخليجية الموحدة للضريبة الانتقائية، ورفعه إلى سمو أمير البلاد.",
+   "chips": [
+    {
+     "t": 12.688,
+     "text": "الثلاثاء 27 أكتوبر 2026"
+    },
+    {
+     "t": 21.957,
+     "text": "رُفع إلى سمو أمير البلاد"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 11.938,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.62
+    },
+    {
+     "t": 20.707,
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.64
+    },
+    {
+     "t": 21.007,
+     "z": 1.5,
+     "x": 0.408,
+     "y": 0.7617
+    },
+    {
+     "t": 25.557,
+     "z": 1.58,
+     "x": 0.408,
+     "y": 0.7617
+    }
+   ],
+   "layers": null,
+   "fx": {
+    "stamp": {
+     "t": 21.957,
+     "x": 470,
+     "y": 1565,
+     "r": 120
+    }
+   },
+   "trans": "zoom",
+   "shake": [
+    21.957
+   ],
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 15.715,
+      "art": "building",
+      "label": "مجلس الوزراء"
+     },
+     {
+      "t": 18.496,
+      "art": "gcc",
+      "label": "اتفاقية خليجية"
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "start": 25.057,
+   "end": 33.402,
+   "voice": 25.407,
+   "voice_end": 32.902,
+   "img": "media/excise/s04.jpg",
+   "kb": [
+    1.08,
+    1.0,
+    0.5,
+    0.6
+   ],
+   "head": "الخليج سبق الكويت",
+   "sub": "دول الخليج بدأت تطبيق هذه الضريبة على مراحل منذ عام 2017، أما الكويت فلم تطبقها حتى الآن.",
+   "chips": [],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 25.057,
+     "z": 1.08,
+     "x": 0.5,
+     "y": 0.6
+    },
+    {
+     "t": 33.902,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "layers": null,
+   "fx": {},
+   "trans": "circle",
+   "shake": [],
+   "gmap": {
+    "t_in": 25.307,
+    "lit": [
+     {
+      "c": "SAU",
+      "t": 26.247
+     },
+     {
+      "c": "ARE",
+      "t": 26.825
+     },
+     {
+      "c": "BHR",
+      "t": 27.402
+     },
+     {
+      "c": "QAT",
+      "t": 27.979
+     },
+     {
+      "c": "OMN",
+      "t": 28.557
+     }
+    ],
+    "t_leg": 29.117,
+    "t_zoom": 30.207,
+    "zoom": 4.0,
+    "kw": [
+     47.55,
+     29.3
+    ],
+    "t_kw": 30.807,
+    "t_tag": 31.477
+   }
+  },
+  {
+   "n": 5,
+   "start": 33.402,
+   "end": 39.981,
+   "voice": 33.752,
+   "voice_end": 39.481,
+   "img": "media/excise/s05.jpg",
+   "kb": [
+    1.0,
+    1.08,
+    0.5,
+    0.35
+   ],
+   "head": "ما هي الضريبة الانتقائية؟",
+   "sub": "هي ضريبة على سلع تُعدّ ضارة بالصحة، وتُحسب على سعر البيع بالتجزئة.",
+   "chips": [
+    {
+     "t": 34.252,
+     "text": "سلع تُعدّ ضارة بالصحة"
+    },
+    {
+     "t": 36.903,
+     "text": "تُحسب على سعر البيع بالتجزئة"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 33.402,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.35
+    },
+    {
+     "t": 40.481,
+     "z": 1.08,
+     "x": 0.5,
+     "y": 0.35
+    }
+   ],
+   "layers": null,
+   "fx": {
+    "scan": {
+     "t0": 33.752,
+     "t1": 39.481,
+     "y0": 560,
+     "y1": 1560
+    }
+   },
+   "trans": "slide",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 35.443,
+      "art": "heartcrack",
+      "label": "الصحة"
+     },
+     {
+      "t": 37.603,
+      "art": "pricetag",
+      "label": "سعر التجزئة"
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "start": 39.981,
+   "end": 47.832,
+   "voice": 40.331,
+   "voice_end": 47.332,
+   "img": "media/excise/s06.jpg",
+   "kb": [
+    1.0,
+    1.1,
+    0.5,
+    0.5
+   ],
+   "head": "التبغ ومشتقاته",
+   "sub": "وفق الإطار الخليجي: التبغ ومشتقاته، ومنها السجائر الإلكترونية، بنسبة 100%.",
+   "chips": [
+    {
+     "t": 43.481,
+     "text": "ومنها السجائر الإلكترونية"
+    }
+   ],
+   "badge": {
+    "t": 45.632,
+    "text": "100%"
+   },
+   "counter": null,
+   "cam": [
+    {
+     "t": 39.981,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "t": 48.332,
+     "z": 1.1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s06_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s06_fg0.webp",
+      "x": 0,
+      "y": 642,
+      "w": 1029,
+      "h": 1341,
+      "area": 0.2571,
+      "amp": 0.8,
+      "ph": 4.2
+     }
+    ]
+   },
+   "fx": {
+    "smoke": {
+     "x": 640,
+     "y": 640
+    },
+    "coinstack": {
+     "t": 45.681999999999995,
+     "x": 880,
+     "y": 1030,
+     "n": 6
+    },
+    "sticker": {
+     "t": 45.982,
+     "x": 1000,
+     "y": 1180,
+     "text": "×2"
+    }
+   },
+   "trans": "zoom",
+   "shake": [
+    45.632
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 42.051,
+      "art": "cigpack",
+      "label": "سجائر"
+     },
+     {
+      "t": 42.401,
+      "art": "shisha",
+      "label": "معسّل"
+     },
+     {
+      "t": 43.751,
+      "art": "vape",
+      "label": "سجائر إلكترونية"
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "start": 47.832,
+   "end": 51.984,
+   "voice": 48.182,
+   "voice_end": 51.484,
+   "img": "media/excise/s07.jpg",
+   "kb": [
+    1.06,
+    1.0,
+    0.5,
+    0.3
+   ],
+   "head": "مشروبات الطاقة",
+   "sub": "ومشروبات الطاقة أيضاً، بنسبة 100%.",
+   "chips": [],
+   "badge": {
+    "t": 49.984,
+    "text": "100%"
+   },
+   "counter": null,
+   "cam": [
+    {
+     "t": 47.832,
+     "z": 1.06,
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "t": 52.484,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s07_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s07_fg0.webp",
+      "x": 456,
+      "y": 878,
+      "w": 415,
+      "h": 1060,
+      "area": 0.0975,
+      "amp": 1.0,
+      "ph": 4.9
+     }
+    ]
+   },
+   "fx": {
+    "sparks": {
+     "t": 48.082,
+     "x": 575,
+     "y": 1050
+    },
+    "bang": {
+     "t": 49.984,
+     "x": 760,
+     "y": 860
+    }
+   },
+   "trans": "circle",
+   "shake": [
+    49.984
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 48.062,
+      "art": "cans_energy",
+      "label": "مشروبات الطاقة"
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "start": 51.984,
+   "end": 56.075,
+   "voice": 52.334,
+   "voice_end": 55.575,
+   "img": "media/excise/s08.jpg",
+   "kb": [
+    1.0,
+    1.08,
+    0.55,
+    0.45
+   ],
+   "head": "المشروبات الغازية",
+   "sub": "والمشروبات الغازية، بنسبة 50%.",
+   "chips": [],
+   "badge": {
+    "t": 54.075,
+    "text": "50%"
+   },
+   "counter": null,
+   "cam": [
+    {
+     "t": 51.984,
+     "z": 1.0,
+     "x": 0.55,
+     "y": 0.45
+    },
+    {
+     "t": 56.575,
+     "z": 1.08,
+     "x": 0.55,
+     "y": 0.45
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s08_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s08_fg0.webp",
+      "x": 286,
+      "y": 433,
+      "w": 616,
+      "h": 1546,
+      "area": 0.252,
+      "amp": 1.0,
+      "ph": 5.6
+     }
+    ]
+   },
+   "fx": {
+    "bubbles": {
+     "x": 335,
+     "y": 600
+    },
+    "arrow": {
+     "t": 54.075,
+     "x": 470,
+     "y": 520
+    }
+   },
+   "trans": "slide",
+   "shake": [
+    54.075
+   ],
+   "inserts": {
+    "top": 980,
+    "items": [
+     {
+      "t": 52.314,
+      "art": "cans_soda",
+      "label": "مشروبات غازية"
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "start": 56.075,
+   "end": 64.161,
+   "voice": 56.425,
+   "voice_end": 63.661,
+   "img": "media/excise/s09.jpg",
+   "kb": [
+    1.0,
+    1.1,
+    0.5,
+    0.55
+   ],
+   "head": "المشروبات المحلّاة",
+   "sub": "أما المشروبات المحلّاة، فبنسب متدرجة حسب كمية السكر، ومشروبات الدايت معفاة.",
+   "chips": [
+    {
+     "t": 56.925,
+     "text": "نسب متدرجة حسب كمية السكر"
+    },
+    {
+     "t": 61.761,
+     "text": "مشروبات الدايت: معفاة ✓"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 56.075,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.55
+    },
+    {
+     "t": 64.661,
+     "z": 1.1,
+     "x": 0.5,
+     "y": 0.55
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s09_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s09_fg0.webp",
+      "x": 49,
+      "y": 670,
+      "w": 1103,
+      "h": 676,
+      "area": 0.2108,
+      "amp": 0.35,
+      "ph": 6.3
+     }
+    ]
+   },
+   "fx": {
+    "cubes": [
+     {
+      "t": 57.325,
+      "x": 175,
+      "y": 1300
+     },
+     {
+      "t": 57.675,
+      "x": 420,
+      "y": 1300
+     },
+     {
+      "t": 58.025,
+      "x": 665,
+      "y": 1300
+     },
+     {
+      "t": 58.375,
+      "x": 905,
+      "y": 1300
+     }
+    ],
+    "ring": {
+     "t": 61.761,
+     "x": 1015,
+     "y": 1070
+    }
+   },
+   "trans": "zoom",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 56.405,
+      "art": "juice",
+      "label": "مشروبات محلّاة"
+     },
+     {
+      "t": 59.971,
+      "art": "sugar",
+      "label": "حسب السكر"
+     },
+     {
+      "t": 62.076,
+      "art": "zerocan",
+      "label": "دايت: معفاة"
+     }
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "start": 64.161,
+   "end": 73.992,
+   "voice": 64.511,
+   "voice_end": 73.492,
+   "img": "media/excise/s10.jpg",
+   "kb": [
+    1.0,
+    1.1,
+    0.45,
+    0.4
+   ],
+   "head": "مثال افتراضي",
+   "sub": "مثال افتراضي: إذا انتقلت الضريبة كاملةً إلى المستهلك، فعلبة طاقة بـ500 فلس قد تصبح بدينار كامل.",
+   "chips": [
+    {
+     "t": 64.911,
+     "text": "إذا انتقلت الضريبة كاملةً للمستهلك"
+    }
+   ],
+   "badge": null,
+   "counter": {
+    "t0": 69.451,
+    "t1": 73.142,
+    "a": 500,
+    "b": 1000
+   },
+   "cam": [
+    {
+     "t": 64.161,
+     "z": 1.0,
+     "x": 0.45,
+     "y": 0.42
+    },
+    {
+     "t": 74.492,
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.4
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s10_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s10_fg0.webp",
+      "x": 0,
+      "y": 405,
+      "w": 977,
+      "h": 1637,
+      "area": 0.4997,
+      "amp": 0.5,
+      "ph": 7.0
+     }
+    ]
+   },
+   "fx": {},
+   "trans": "circle",
+   "shake": [
+    73.192
+   ],
+   "inserts": {
+    "top": 1000,
+    "items": [
+     {
+      "t": 69.261,
+      "art": "can_energy",
+      "label": "500 فلس"
+     },
+     {
+      "t": 72.268,
+      "art": "banknote",
+      "label": "1 دينار"
+     }
+    ]
+   }
+  },
+  {
+   "n": 11,
+   "start": 73.992,
+   "end": 85.215,
+   "voice": 74.342,
+   "voice_end": 84.715,
+   "img": "media/excise/s11.jpg",
+   "kb": [
+    1.04,
+    1.0,
+    0.5,
+    0.5
+   ],
+   "head": "لماذا؟",
+   "sub": "الهدف تقليل استهلاك هذه السلع، وتنويع الإيرادات بعيداً عن النفط. وقدّرت وزيرة المالية السابقة العائد بنحو 200 مليون دينار سنوياً.",
+   "chips": [
+    {
+     "t": 74.742,
+     "text": "تقليل الاستهلاك"
+    },
+    {
+     "t": 77.454,
+     "text": "تنويع الإيرادات"
+    },
+    {
+     "t": 80.773,
+     "text": "نحو 200 مليون د.ك سنوياً (تقدير)"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 73.992,
+     "z": 1.32,
+     "x": 0.5,
+     "y": 0.26
+    },
+    {
+     "t": 77.25399999999999,
+     "z": 1.36,
+     "x": 0.5,
+     "y": 0.26
+    },
+    {
+     "t": 78.354,
+     "z": 1.3,
+     "x": 0.5,
+     "y": 0.76
+    },
+    {
+     "t": 85.715,
+     "z": 1.24,
+     "x": 0.5,
+     "y": 0.74
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s11_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s11_fg0.webp",
+      "x": 134,
+      "y": 1338,
+      "w": 493,
+      "h": 563,
+      "area": 0.0696,
+      "amp": 0.9,
+      "ph": 7.7
+     }
+    ]
+   },
+   "fx": {
+    "coinrain": {
+     "t0": 77.954,
+     "t1": 85.715,
+     "burst": 80.773,
+     "x": 380,
+     "y": 1430
+    },
+    "hearts": {
+     "x": 560,
+     "y": 330,
+     "t1": 78.354
+    }
+   },
+   "trans": "slide",
+   "inserts": {
+    "top": 720,
+    "items": [
+     {
+      "t": 74.262,
+      "art": "cansdown",
+      "label": "استهلاك أقل"
+     },
+     {
+      "t": 78.05,
+      "art": "barrel",
+      "label": "بعيداً عن النفط"
+     },
+     {
+      "t": 82.6,
+      "art": "money",
+      "label": "~200 مليون د.ك"
+     }
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "start": 85.215,
+   "end": 93.697,
+   "voice": 85.565,
+   "voice_end": 93.197,
+   "img": "media/excise/s12.jpg",
+   "kb": [
+    1.0,
+    1.08,
+    0.5,
+    0.45
+   ],
+   "head": "متى التطبيق؟",
+   "sub": "متى يبدأ التطبيق؟ لم يُعلن موعد بعد. فالتطبيق يحتاج قانوناً محلياً يحدد الآلية والإجراءات.",
+   "chips": [
+    {
+     "t": 87.265,
+     "text": "الموعد: لم يُعلن بعد"
+    },
+    {
+     "t": 89.763,
+     "text": "يحتاج قانوناً محلياً"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 85.215,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "t": 94.197,
+     "z": 1.08,
+     "x": 0.5,
+     "y": 0.45
+    }
+   ],
+   "layers": null,
+   "fx": {
+    "pages": {
+     "x": 470,
+     "y": 380
+    },
+    "sand": [
+     {
+      "x": 400,
+      "y": 1000
+     },
+     {
+      "x": 840,
+      "y": 870
+     }
+    ],
+    "pending": {
+     "t": 85.565
+    }
+   },
+   "trans": "zoom",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 89.915,
+      "art": "law",
+      "label": "قانون محلي"
+     },
+     {
+      "t": 91.474,
+      "art": "gears",
+      "label": "الإجراءات"
+     }
+    ]
+   }
+  },
+  {
+   "n": 13,
+   "start": 93.697,
+   "end": 101.329,
+   "voice": 94.047,
+   "voice_end": 100.829,
+   "img": "media/excise/s13.jpg",
+   "kb": [
+    1.0,
+    1.07,
+    0.5,
+    0.5
+   ],
+   "head": "ما لا نعرفه بعد",
+   "sub": "ما لا نعرفه بعد: موعد التطبيق، والنسب النهائية في الكويت، وكم سترتفع الأسعار فعلياً.",
+   "chips": [
+    {
+     "t": 96.082,
+     "text": "١. موعد التطبيق"
+    },
+    {
+     "t": 97.777,
+     "text": "٢. النسب النهائية في الكويت"
+    },
+    {
+     "t": 99.608,
+     "text": "٣. الأثر الفعلي على الأسعار"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 93.697,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "t": 101.829,
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s13_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s13_fg0.webp",
+      "x": 152,
+      "y": 700,
+      "w": 897,
+      "h": 1163,
+      "area": 0.3212,
+      "amp": 0.8,
+      "ph": 9.1
+     }
+    ]
+   },
+   "fx": {
+    "qmarks": {
+     "n": 6,
+     "box": [
+      140,
+      300,
+      1010,
+      1100
+     ]
+    }
+   },
+   "trans": "circle",
+   "inserts": {
+    "top": 1110,
+    "items": [
+     {
+      "t": 95.327,
+      "art": "calendar:؟",
+      "label": "الموعد"
+     },
+     {
+      "t": 97.616,
+      "art": "kwskyline",
+      "label": "النسب في الكويت"
+     },
+     {
+      "t": 98.723,
+      "art": "pricetag_up",
+      "label": "الأسعار"
+     }
+    ]
+   }
+  },
+  {
+   "n": 14,
+   "start": 101.329,
+   "end": 108.005,
+   "voice": 101.679,
+   "voice_end": 105.005,
+   "img": "media/excise/s14.jpg",
+   "kb": [
+    1.0,
+    1.08,
+    0.5,
+    0.4
+   ],
+   "head": "",
+   "sub": "الجريدة الموثّقة. أخبارٌ بمصادرها.",
+   "chips": [],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 101.329,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "t": 108.505,
+     "z": 1.08,
+     "x": 0.5,
+     "y": 0.4
+    }
+   ],
+   "layers": null,
+   "fx": {
+    "tvglow": {
+     "x": 845,
+     "y": 560,
+     "w": 520,
+     "h": 330
+    }
+   },
+   "trans": "slide"
+  }
+ ],
+ "geo": {
+  "w": 960,
+  "h": 727,
+  "k": 41.0489,
+  "lon0": 34.4,
+  "lat1": 33.6,
+  "cos": 0.913545,
+  "gcc": {
+   "OMN": "M819.8,339.4L823.1,341.0L822.9,342.1L818.8,344.4L817.8,342.5ZM812.9,309.5L817.8,301.2L818.0,303.4L825.2,303.2L823.8,302.0L821.6,302.9L821.8,300.0L823.6,300.5L822.1,299.3L823.6,296.1L827.3,298.3L828.8,297.2L829.1,298.7L827.0,298.9L824.9,300.9L828.3,302.3L827.2,303.7L826.2,302.9L828.0,306.0L824.2,304.8L824.7,303.7L822.3,304.9L822.6,307.4L823.6,306.0L823.6,307.7L827.7,307.9L824.3,310.4L825.9,311.0L825.0,312.4L827.0,314.1L824.4,315.0L823.6,319.9L820.3,323.9L820.5,327.3L817.7,327.7L815.4,325.5L816.5,321.6L815.2,319.2L816.9,311.4L816.1,309.0ZM824.4,353.9L832.9,373.7L845.2,389.3L853.2,396.0L871.7,402.7L877.3,403.0L880.8,405.5L889.9,405.8L896.9,409.6L906.9,408.6L909.7,412.0L912.3,413.4L913.6,412.9L915.3,417.8L919.9,422.1L925.8,433.1L931.2,437.5L933.7,443.6L942.6,452.2L941.8,453.1L946.0,452.4L949.5,453.9L950.2,455.7L951.1,455.7L950.5,454.1L953.4,455.3L954.2,457.9L952.9,466.4L948.3,472.8L946.7,479.2L941.2,486.2L935.4,499.0L924.5,505.8L917.0,514.5L912.7,522.9L910.5,524.3L910.0,526.6L912.4,526.0L912.3,526.8L910.0,527.6L907.2,531.8L904.4,541.2L901.7,543.5L895.3,543.1L892.6,541.7L893.0,539.2L893.8,540.9L894.9,534.1L892.7,533.1L888.4,535.0L887.8,538.6L883.3,541.9L883.7,544.7L879.6,547.6L878.4,550.0L879.3,553.7L878.0,559.2L873.3,569.4L874.5,572.5L873.9,576.8L876.5,582.5L875.6,588.3L879.0,598.1L878.1,599.7L874.1,601.6L866.3,601.2L855.3,603.0L840.3,609.8L834.0,617.4L831.0,634.2L827.3,636.9L823.4,642.8L811.2,642.7L789.2,646.9L786.4,652.8L781.1,659.3L781.1,661.4L783.8,664.3L782.3,671.8L773.5,681.0L764.7,683.4L761.2,682.6L760.3,680.6L757.2,679.8L738.2,681.0L735.5,682.3L734.3,685.2L725.7,686.8L720.6,691.3L710.2,692.3L700.9,696.1L690.1,670.4L687.1,669.2L659.2,599.5L771.7,558.5L796.4,477.0L779.5,447.3L779.7,435.3L781.0,430.1L792.7,403.5L792.4,399.2L789.6,395.6L796.8,393.0L802.8,393.8L809.9,390.7L807.5,385.0L800.8,384.6L802.8,380.1L801.0,371.1L803.2,367.7L802.1,359.0L803.6,356.3L807.6,353.9L810.2,354.8L811.1,358.7L808.4,358.4L811.2,363.1L813.7,364.1L816.4,360.2L821.6,357.3L822.3,354.1ZM919.0,532.6L920.6,537.4L916.7,540.3L914.4,546.8L909.5,551.3L909.3,543.1L914.3,539.1L918.4,529.8L919.4,530.3Z",
+   "ARE": "M820.5,327.3L822.8,328.2L823.9,331.4L824.4,353.9L822.3,354.1L821.6,357.3L816.4,360.2L813.7,364.1L811.2,363.1L808.7,359.0L809.2,357.7L811.1,358.7L809.2,354.2L806.1,354.3L802.5,357.7L803.2,367.7L801.0,371.1L801.5,376.6L802.9,378.1L800.8,384.6L807.5,385.0L809.9,390.7L802.8,393.8L796.8,393.0L789.6,395.6L792.4,399.2L792.7,403.5L781.0,430.1L779.7,435.3L779.5,447.3L777.0,450.6L680.9,437.6L644.2,389.9L644.8,378.3L646.3,384.8L647.7,382.7L648.8,385.0L651.0,382.1L651.7,383.3L652.9,394.0L657.3,395.5L658.2,394.4L665.8,395.4L672.8,393.8L681.5,387.8L682.5,385.5L685.5,388.3L695.5,388.4L697.7,387.3L700.0,389.1L703.0,389.1L703.7,387.1L707.0,390.0L714.2,389.2L719.6,392.1L730.5,391.4L739.6,388.1L747.1,383.0L749.3,383.6L751.0,382.1L753.2,375.7L755.3,376.3L754.3,374.6L756.5,375.7L756.4,374.6L750.6,372.1L751.9,371.2L752.4,372.1L753.2,370.7L755.2,373.6L756.8,373.2L758.9,369.5L758.1,368.6L760.1,366.7L759.1,363.3L761.5,361.1L763.3,361.5L763.5,360.0L775.6,352.3L783.1,342.3L784.4,343.8L783.8,345.1L784.8,344.7L783.9,341.4L786.2,338.3L790.2,336.1L793.2,329.3L793.1,331.3L796.0,331.0L801.0,325.1L804.1,323.7L808.5,319.2L808.2,321.3L812.9,309.5L816.1,309.0L816.9,311.4L815.2,319.2L816.5,321.6L815.4,325.5L817.7,327.7ZM819.8,339.4L817.8,342.5L818.8,344.4L822.9,342.1L823.1,341.0ZM722.1,387.6L721.1,387.3L721.6,386.4L729.3,382.8L729.9,384.4L733.7,387.0L730.7,388.3L728.9,386.8L726.6,388.7ZM681.5,380.0L682.9,378.7L684.4,380.7L682.2,383.7L680.9,381.5ZM709.6,383.3L707.9,382.2L704.5,382.7L704.7,381.7L709.9,380.3L711.3,381.0L713.1,377.1L714.0,380.1Z",
+   "QAT": "M615.3,363.4L617.0,362.5L617.2,361.4L616.9,357.5L614.9,352.9L615.3,350.2L614.1,349.2L613.4,345.4L613.7,339.7L613.2,335.8L613.6,333.2L613.2,332.7L614.2,331.4L614.9,331.3L615.8,333.7L616.8,333.8L616.0,331.5L616.2,329.3L614.4,328.2L617.1,326.3L617.9,327.1L617.6,330.1L618.1,331.1L618.7,331.2L619.1,328.5L619.5,328.0L620.6,328.5L621.7,326.5L619.7,327.1L618.9,326.7L618.3,325.1L619.1,322.4L618.8,320.6L619.3,320.7L620.0,319.7L620.6,321.2L621.5,320.3L621.4,318.9L621.1,319.2L620.6,318.6L621.9,312.7L622.7,313.3L624.3,309.8L627.8,308.4L629.1,306.2L629.8,306.5L631.9,305.4L635.5,307.7L635.5,310.4L636.6,311.0L637.1,313.3L637.6,313.9L641.7,314.2L643.5,315.5L644.2,316.9L644.8,321.9L644.4,322.6L643.6,321.7L642.9,322.8L643.3,323.4L644.0,322.9L644.6,323.8L643.4,325.0L643.2,324.0L641.4,324.8L643.0,325.8L643.1,327.1L641.4,327.9L640.9,327.6L640.9,330.5L640.2,331.6L641.9,335.0L642.0,340.8L644.6,341.4L645.3,342.5L645.4,352.1L644.5,354.9L641.3,359.0L639.1,366.2L636.8,368.0L635.3,370.7L634.8,370.1L635.5,368.0L635.2,367.5L633.2,367.6L632.9,366.9L630.8,367.6L630.6,368.4L628.0,370.4L626.1,371.1L621.7,370.8L619.8,370.0L618.0,367.9Z",
+   "SAU": "M615.3,363.4L618.0,367.9L621.7,370.8L626.1,371.1L630.6,368.4L632.6,368.4L634.0,369.0L633.8,372.8L637.3,368.2L641.2,370.1L635.1,375.7L633.0,381.4L638.0,380.8L643.9,383.6L644.8,390.9L680.9,437.6L776.4,450.7L779.5,447.3L796.4,477.0L771.7,558.5L659.2,599.5L548.8,616.6L516.1,634.2L494.6,662.4L488.5,677.6L478.6,683.6L471.4,683.2L461.6,670.1L447.1,672.2L413.6,668.6L403.7,663.8L365.6,664.8L363.2,667.3L360.1,666.3L356.8,669.0L355.8,666.9L349.9,666.9L344.1,661.6L338.0,660.1L328.7,668.0L332.0,670.2L328.4,672.8L326.9,677.9L326.7,685.1L328.0,688.2L330.4,689.7L328.8,692.2L329.2,695.2L325.7,694.9L323.9,700.4L319.0,702.8L318.7,705.3L314.6,707.2L314.8,703.9L312.2,699.2L312.6,694.9L311.5,692.1L305.3,686.4L305.4,681.2L301.8,679.4L300.4,675.0L298.4,673.9L299.4,676.4L298.6,680.4L296.3,662.8L280.1,647.7L277.0,647.2L272.9,642.0L268.5,632.6L266.0,631.2L266.5,629.2L265.2,628.9L263.8,621.1L260.8,617.0L257.8,616.1L255.4,611.7L256.8,606.1L253.9,604.6L252.6,601.9L254.1,596.5L250.1,594.2L248.9,588.5L245.8,585.2L245.4,578.6L238.5,574.3L239.8,574.6L239.9,570.9L237.9,567.4L234.5,566.7L234.6,568.1L229.8,561.9L230.0,559.8L221.8,554.5L213.1,546.8L209.7,547.3L206.4,545.6L207.8,547.6L201.0,543.9L193.8,535.0L194.8,534.1L191.0,529.3L191.5,527.6L188.4,526.6L188.4,524.8L189.7,525.7L189.3,524.3L186.0,522.9L185.7,520.5L183.6,520.3L181.4,514.6L179.0,512.7L178.9,509.4L175.5,504.3L178.9,500.6L178.5,496.4L177.9,495.0L177.0,496.0L176.0,493.5L175.4,488.8L176.6,486.5L175.0,487.4L169.9,475.9L171.0,474.8L172.7,476.1L174.0,466.5L177.9,459.6L176.8,459.0L175.1,461.1L175.6,453.7L172.0,446.4L173.0,444.7L170.5,442.0L171.4,445.5L168.8,441.6L166.9,437.4L169.2,440.8L171.2,440.4L168.5,436.5L165.0,435.2L164.9,429.0L164.2,429.4L160.9,423.9L157.5,411.8L156.0,412.0L157.3,413.7L155.3,412.8L152.0,402.9L138.0,391.2L132.6,388.4L134.4,387.3L132.7,387.4L133.0,385.6L131.7,386.2L131.9,387.9L130.0,387.9L122.9,382.1L121.0,382.5L121.1,383.9L117.1,383.1L113.6,379.0L113.2,377.6L114.6,377.4L114.6,376.0L106.1,363.8L106.0,361.2L104.2,361.3L103.1,359.1L107.1,358.3L108.0,354.5L106.6,345.8L101.4,339.8L100.4,335.3L95.1,326.5L90.7,321.9L89.7,323.4L86.3,321.0L84.8,316.9L86.5,314.3L86.1,311.1L79.2,307.4L71.6,291.5L63.7,281.0L61.2,274.7L56.7,270.9L52.6,265.1L51.9,261.3L43.5,252.2L41.3,245.5L34.6,235.0L28.6,229.5L31.0,228.5L30.6,227.6L24.4,225.0L16.7,227.0L17.5,225.2L16.4,225.1L15.2,227.0L15.7,225.2L13.9,226.1L11.6,224.1L8.0,228.6L7.7,225.9L6.5,225.2L8.5,222.6L9.7,222.9L10.3,218.5L15.1,208.2L14.2,202.6L20.6,174.4L62.6,180.6L77.9,168.5L87.3,153.8L115.1,148.0L121.8,134.2L134.3,127.3L96.0,86.6L171.1,65.9L178.4,60.7L223.9,68.2L287.8,103.4L385.9,180.5L448.4,186.2L455.0,184.9L488.8,189.0L493.1,198.2L494.3,204.0L497.6,208.0L526.2,207.7L528.5,209.3L529.0,212.8L527.6,214.0L530.1,213.1L529.6,216.8L533.2,221.0L532.5,223.8L534.5,228.0L539.7,229.6L537.9,231.5L543.1,237.0L541.5,241.0L542.2,237.9L540.2,239.9L540.5,236.9L539.2,241.4L540.4,240.4L540.6,242.7L541.5,241.9L542.2,243.7L543.0,242.7L542.7,245.8L541.2,245.8L543.8,244.9L544.3,247.5L544.3,245.9L546.3,245.5L549.7,248.8L556.5,248.5L559.2,252.5L558.2,251.4L552.0,252.8L555.3,254.7L556.5,253.4L557.4,253.9L555.9,257.3L559.2,256.8L559.6,262.5L560.4,263.4L561.4,261.9L563.0,262.5L561.6,264.8L562.8,265.5L563.8,264.1L563.7,265.1L567.2,265.5L565.8,263.7L569.0,263.0L568.9,266.7L573.7,272.6L580.2,276.6L584.0,277.4L590.9,284.7L591.1,285.7L585.9,283.3L585.2,281.3L584.4,282.9L586.1,291.7L592.2,295.4L593.1,298.7L593.0,304.1L590.8,305.1L590.3,310.5L586.2,303.7L584.1,306.2L585.4,308.8L584.6,311.9L585.9,310.5L588.8,312.4L589.4,317.4L594.7,327.1L591.0,323.0L590.6,324.3L592.4,324.8L598.0,333.2L599.0,334.1L599.3,332.0L602.7,335.1L606.1,350.8L607.7,351.3L612.2,357.9L613.5,363.8ZM292.0,693.5L291.7,698.5L287.7,696.4L289.4,695.4L288.2,694.0L283.3,695.0L276.7,689.1L275.9,685.7L278.6,687.2L281.4,691.8L286.3,693.1L287.4,692.6L285.8,691.4L287.3,689.0ZM282.0,690.0L278.8,685.9L282.3,683.3L279.2,681.5L279.8,680.9L282.7,682.5L282.9,686.2L284.4,687.4L282.5,688.0L285.1,691.2ZM568.7,256.5L573.3,257.9L568.7,258.7L567.4,256.7L564.6,259.0L566.3,256.1ZM95.3,335.8L93.7,338.2L89.1,332.6L94.3,335.5L93.9,336.8ZM85.6,329.5L85.0,330.5L79.9,328.6L78.7,325.8L80.4,324.2L79.9,326.6Z",
+   "KWT": "M508.1,148.0L509.1,150.1L509.8,154.8L512.0,158.3L513.0,158.3L516.8,165.7L516.6,166.6L515.8,166.7L513.2,165.2L510.9,164.8L508.7,165.2L502.8,169.6L501.1,171.9L499.4,172.6L498.9,173.9L503.9,172.9L504.4,173.2L503.3,173.9L503.1,175.0L504.7,175.6L506.2,175.1L506.5,174.1L507.7,174.1L509.5,172.7L510.9,174.3L512.4,174.7L513.8,174.5L513.6,178.2L515.0,182.5L515.9,188.1L518.5,192.2L520.5,193.2L520.4,195.4L522.3,198.7L524.8,199.4L524.2,200.7L524.5,202.2L523.7,201.6L524.2,202.5L523.2,202.7L523.2,203.6L524.5,203.0L524.9,205.9L526.2,207.7L497.6,208.0L497.2,206.9L494.3,204.0L493.4,201.5L493.1,198.2L491.0,192.8L488.8,189.0L455.0,184.9L461.7,177.7L464.0,173.9L467.0,170.6L468.1,167.8L470.9,163.4L472.1,159.6L476.6,149.4L477.9,147.6L485.9,144.0L497.8,143.7L499.9,144.1ZM522.7,169.8L524.6,171.4L524.9,172.9L521.9,171.3L520.1,171.2L520.5,169.5ZM523.2,159.7L521.4,162.3L518.6,164.2L517.0,164.0L516.1,163.0L513.2,157.3L511.7,156.0L514.2,154.4L514.5,153.0L513.2,152.7L513.6,152.1L516.0,152.7L516.0,151.8L517.4,150.8L515.5,150.4L515.3,149.0L514.6,149.0L514.5,148.5L516.1,148.0L517.1,148.5L522.9,156.4L523.5,157.9ZM513.0,147.6L511.2,149.0L510.4,148.6L512.1,146.8L514.1,146.6Z",
+   "BHR": "M605.7,304.0L607.3,305.4L608.2,304.4L608.7,305.9L609.2,306.0L608.8,307.2L608.1,307.4L608.2,313.4L607.6,317.9L606.2,320.6L604.9,316.7L602.5,313.7L602.3,312.6L603.4,310.0L601.8,305.3L602.3,302.7L603.1,302.0L605.5,302.6L607.2,302.2L607.6,303.9ZM599.9,304.8L600.7,305.2L600.9,307.0L599.5,306.9L599.4,305.4ZM607.6,300.5L608.7,300.2L609.6,300.6L609.6,301.8L610.7,302.9L610.3,303.7L609.3,302.2L608.0,302.1ZM614.0,323.4L615.0,323.3L614.4,324.4L614.8,324.9L613.6,325.6L614.1,326.8L613.4,329.2L612.7,328.6L613.1,327.5L612.8,325.3ZM614.7,326.3L615.6,326.6L615.4,327.1L614.7,327.1Z"
+  },
+  "land": [
+   "M-23.2,-56.5L-26.2,-56.4L-27.0,-59.8L-25.7,-60.2L-26.0,-58.7L-23.8,-58.8L-20.0,-60.2L-19.1,-62.4L-18.2,-60.5L-22.5,-59.1L-20.3,-57.1L-21.1,-56.0L-19.1,-55.8L-20.2,-54.9Z",
+   "M-26.1,-57.0L-29.8,-50.2L-37.5,-48.2L-37.5,-47.0L-42.7,-45.2L-49.3,-44.9L-53.9,-42.1L-53.0,-44.1L-55.7,-43.5L-57.8,-45.2L-63.5,-42.9L-72.8,-46.1L-77.6,-52.8L-79.8,-60.5L-79.3,-61.5L-74.5,-59.2L-69.4,-64.7L-66.7,-63.7L-65.3,-65.1L-59.0,-59.9L-46.0,-64.1L-41.2,-62.1L-39.4,-63.8L-36.9,-64.1L-35.3,-61.4L-35.3,-56.6L-33.0,-59.3L-32.0,-57.3L-30.7,-58.3ZM-18.8,-60.0L-14.2,-59.8L-11.3,-56.0L-14.6,-57.0L-20.8,-55.8L-20.3,-57.1L-22.3,-59.5Z",
+   "M-5.7,98.0L-1.8,94.9L-1.2,90.6L5.9,84.6L3.0,82.8L11.7,67.7L16.4,54.2L20.5,32.3L24.9,30.4L26.2,21.0L33.1,20.5L35.4,22.3L40.5,21.0L43.1,13.1L45.1,14.8L53.3,7.9L51.1,10.9L52.6,11.8L51.3,13.4L53.6,16.8L52.9,20.0L54.3,20.6L55.8,26.9L50.9,35.1L43.5,39.4L43.5,49.9L37.8,48.7L36.1,44.7L29.7,43.4L24.2,47.9L22.4,52.4L22.8,55.6L21.1,57.4L22.8,64.8L22.0,67.0L24.0,69.4L23.8,71.4L21.7,72.5L25.4,71.7L29.5,73.5L30.6,73.1L30.8,70.6L32.4,72.8L32.4,76.0L31.4,77.6L27.2,76.6L21.5,80.9L17.5,90.5L18.0,91.8L28.7,91.9L37.1,86.7L39.7,86.5L37.3,96.1L38.9,102.5L27.8,130.1L27.9,142.7L25.7,146.4L20.7,166.4L18.9,168.7L17.1,166.4L12.5,147.3L7.5,133.6L4.8,131.0L5.1,128.0L3.0,121.0Z",
+   "M3.0,82.8L5.9,84.6L-1.2,90.6L-1.8,94.9L-5.7,98.0L-7.5,93.8ZM22.0,67.0L22.8,64.8L20.9,58.0L22.8,55.6L22.4,52.4L24.9,46.7L30.3,43.4L37.2,45.4L37.8,48.7L43.5,49.9L44.0,55.9L42.1,63.3L43.5,75.3L40.5,80.4L39.7,86.5L37.1,86.7L28.7,91.9L18.0,91.8L17.5,90.5L21.5,80.9L27.2,76.6L31.4,77.6L32.4,76.0L32.4,72.8L30.8,70.6L30.6,73.1L29.5,73.5L25.4,71.7L21.7,72.5L23.8,71.4L24.0,69.4Z",
+   "M26.4,21.0L30.2,15.4L29.6,13.1L32.7,5.8L35.6,3.5L38.9,-4.6L40.5,-9.2L40.1,-12.4L44.0,-12.7L46.5,-16.4L46.0,-24.7L47.4,-29.2L52.7,-33.5L52.7,-35.5L56.4,-36.0L59.4,-38.5L58.9,-43.1L69.8,-42.2L71.6,-44.6L73.8,-42.2L76.5,-42.3L72.0,-37.5L76.3,-36.7L79.7,-33.8L79.4,-30.9L81.8,-28.7L81.1,-27.2L82.7,-24.6L77.8,-18.6L74.7,-18.3L70.8,-14.2L70.3,-12.2L73.9,-9.7L65.2,-10.3L61.9,-8.9L57.1,-1.7L61.1,0.1L61.3,1.3L57.5,3.0L57.0,5.7L45.1,14.8L43.1,13.1L40.5,21.0L35.4,22.3L33.1,20.5Z",
+   "M-12.3,807.0L77.2,807.0L76.2,806.8L76.4,804.9L79.7,793.7L81.2,792.5L90.6,790.9L97.7,793.8L100.6,792.3L101.5,788.2L103.1,786.4L108.5,785.8L118.3,800.2L130.9,768.5L135.3,774.8L139.3,776.6L143.6,776.7L146.8,783.2L151.0,787.4L167.5,784.3L171.7,781.3L172.9,777.8L177.3,779.8L180.3,786.5L182.6,784.6L189.3,783.8L191.8,781.2L196.9,784.2L202.4,784.2L206.0,787.0L213.9,785.4L220.4,788.0L228.0,794.5L239.0,798.5L245.2,805.0L249.1,807.0L509.2,807.0Z",
+   "M50.9,35.1L55.8,26.9L54.3,20.6L52.9,20.0L53.6,16.8L51.3,13.4L52.6,11.8L51.1,10.9L57.0,5.7L57.5,3.0L61.3,1.3L61.1,0.1L57.1,-1.7L58.1,-4.5L61.9,-8.9L65.2,-10.3L73.4,-9.2L73.8,-10.6L70.1,-12.6L70.8,-14.2L74.7,-18.3L77.8,-18.6L82.7,-24.6L81.1,-27.2L81.8,-28.7L79.4,-30.9L79.7,-33.8L76.3,-36.7L72.0,-37.5L76.5,-42.3L73.8,-42.2L71.6,-44.6L69.8,-42.2L58.9,-43.1L55.0,-54.4L56.3,-58.4L55.8,-62.0L58.6,-65.6L56.8,-69.3L57.0,-74.6L53.2,-78.4L51.4,-78.2L51.4,-79.9L49.6,-80.0L299.1,-80.0L256.4,-80.0L261.1,-80.0L259.1,-80.0L257.3,-77.8L255.1,-67.4L255.2,-49.0L246.2,-32.9L235.9,-30.0L164.0,9.4L90.7,52.7L74.5,50.1L66.7,44.0L62.5,44.4L60.1,38.8L58.3,38.7L57.9,37.3Z",
+   "M-80.0,807.0L-80.0,466.9L-80.0,476.4L-45.7,476.4L-31.5,488.1L-15.0,485.7L-11.8,476.4L93.1,476.3L91.5,477.6L92.8,478.8L93.3,490.5L101.8,505.8L109.2,514.8L108.4,516.7L106.3,516.4L104.6,513.2L107.6,514.6L105.7,511.4L103.5,511.1L103.5,508.7L102.1,508.0L101.2,509.8L101.9,513.7L100.7,515.5L103.0,519.6L106.1,535.1L104.1,543.9L105.9,553.4L104.6,557.7L107.4,567.0L106.6,575.7L113.8,605.0L117.7,611.0L122.8,609.9L125.3,611.3L125.9,614.6L132.2,616.3L139.6,623.4L137.9,626.1L140.7,630.1L144.2,630.4L144.4,628.8L146.5,627.8L145.4,630.4L143.1,631.4L149.1,632.5L149.7,631.2L151.3,634.5L153.4,634.6L154.2,637.3L155.4,635.5L157.6,639.8L152.2,644.8L148.9,652.7L144.6,656.7L143.8,659.8L139.5,659.0L137.9,661.7L137.7,659.3L136.5,658.9L131.1,663.2L127.5,661.8L124.5,665.7L116.1,668.6L116.1,674.2L112.6,680.2L109.1,679.1L102.5,680.7L96.5,678.8L97.5,687.9L96.0,693.5L93.5,696.3L92.9,701.4L95.0,705.3L95.8,711.0L93.2,714.9L88.5,729.1L85.2,733.8L83.1,741.7L83.5,745.2L81.6,747.4L79.7,753.3L75.9,758.0L79.7,793.7L76.4,804.9L76.2,806.8L77.2,807.0Z",
+   "M326.9,807.0L249.1,807.0L245.2,805.0L239.0,798.5L228.0,794.5L220.4,788.0L213.9,785.4L206.0,787.0L202.4,784.2L196.9,784.2L191.8,781.2L189.3,783.8L182.6,784.6L180.3,786.5L177.3,779.8L172.9,777.8L171.7,781.3L167.5,784.3L151.0,787.4L146.8,783.2L143.6,776.7L139.3,776.6L135.3,774.8L130.9,768.5L118.3,800.2L108.5,785.8L102.0,787.3L99.8,793.2L97.3,793.7L95.5,792.0L88.1,790.9L79.7,793.7L75.9,758.0L79.7,753.3L81.6,747.4L83.5,745.2L83.1,741.7L85.2,733.8L88.5,729.1L93.2,714.9L95.8,711.0L95.0,705.3L92.9,701.4L93.5,696.3L96.0,693.5L97.5,687.9L96.5,678.8L102.5,680.7L109.1,679.1L112.6,680.2L116.1,674.2L116.1,668.6L124.5,665.7L127.5,661.8L131.1,663.2L136.5,658.9L137.7,659.3L137.9,661.7L139.5,659.0L143.8,659.8L144.6,656.7L148.9,652.7L152.2,644.8L157.6,640.2L169.8,665.1L170.7,671.0L173.0,674.6L178.1,693.0L178.2,700.7L179.1,701.1L179.9,710.2L183.5,725.4L188.9,730.2L188.5,732.5L190.4,736.4L189.2,737.4L190.7,737.5L188.6,738.8L189.7,742.0L193.2,741.2L195.4,743.0L199.4,752.7L199.3,759.6L202.9,760.3L204.5,756.4L203.2,752.0L202.1,752.9L201.8,752.1L201.5,747.5L202.8,744.7L205.3,742.8L213.0,749.5L211.0,753.8L216.0,764.2L220.8,767.1L224.6,763.4L225.1,764.9L227.0,763.3L228.7,765.1L229.2,762.8L231.0,765.3L233.1,765.6L233.5,767.9L236.0,767.8L235.2,768.4L237.5,770.7L237.1,773.5L238.7,776.0L240.3,774.9L243.2,775.2L246.5,777.1L253.8,778.4L259.0,784.5L260.1,788.1L266.5,795.8L267.8,799.4L270.8,801.9L272.9,807.0ZM224.5,737.2L225.5,738.9L224.8,740.0L209.2,738.6L207.7,734.7L208.9,736.4L213.0,736.4L210.3,733.3L207.4,733.2L207.5,731.2L209.6,731.9L209.1,730.0L211.4,729.1L208.2,726.8L213.4,728.6L213.6,731.3L215.1,730.4L216.1,737.1L218.7,737.8L219.8,736.3L218.2,735.4L220.0,734.6ZM213.6,720.5L212.9,721.7L214.3,723.0L209.6,721.7L211.8,719.9L211.9,718.1L214.2,719.4Z",
+   "M388.7,-80.0L447.3,-80.0L433.5,-80.0L434.1,-76.6L439.5,-70.5L438.8,-67.1L441.3,-66.3L439.9,-62.9L440.7,-62.0L435.3,-60.0L431.7,-61.1L429.6,-58.3L429.4,-53.6L425.8,-53.8L425.5,-50.9L422.5,-49.5L421.0,-46.0L423.3,-43.2L423.8,-39.0L416.3,-40.7L416.4,-36.7L413.1,-34.7L414.8,-30.4L418.4,-29.2L417.9,-22.1L411.8,-15.3L415.7,-13.9L421.7,-4.0L424.5,-1.7L425.0,0.7L430.7,-1.3L432.3,2.0L429.5,4.3L434.0,4.5L436.4,9.5L440.8,13.9L441.3,17.7L436.1,20.3L439.5,22.1L437.8,24.9L438.6,26.5L445.3,26.3L453.0,29.1L461.8,34.6L475.9,46.2L478.2,47.0L482.4,45.8L487.9,49.5L487.6,52.4L491.6,56.9L490.9,59.6L494.2,61.3L503.8,73.7L498.0,90.0L497.7,106.9L510.5,107.2L510.5,128.7L514.9,129.4L517.5,134.5L521.5,134.9L525.3,139.5L524.3,141.8L527.0,147.7L531.0,150.0L525.4,150.3L514.5,145.9L508.8,147.6L507.6,143.4L508.1,148.0L497.8,143.7L485.9,144.0L479.9,146.4L476.6,149.4L467.0,170.6L455.0,184.9L448.4,186.2L385.9,180.5L287.8,103.4L225.9,68.9L178.0,60.8L183.4,55.6L182.7,52.9L181.3,51.2L173.9,52.8L171.7,46.2L174.6,45.3L164.0,9.4L235.9,-30.0L246.2,-32.9L255.2,-49.0L255.1,-67.4L257.3,-77.8L259.1,-80.0L261.1,-80.0L256.4,-80.0Z",
+   "M390.3,-80.0L1008.4,-80.0L1004.8,-73.5L1004.5,-69.8L1001.6,-68.9L1001.1,-65.4L1003.0,-61.7L1000.3,-54.7L1000.0,-49.9L996.0,-46.1L995.5,-42.6L986.2,-37.6L993.4,-29.5L984.1,-29.0L978.5,-22.1L979.8,-9.9L978.3,-4.6L979.2,-1.6L981.6,0.5L993.0,2.1L994.5,3.5L991.2,4.7L991.1,7.5L981.1,19.0L981.7,24.9L991.1,55.5L990.6,62.1L989.1,64.6L990.8,86.4L1023.3,91.4L1025.3,93.6L1025.4,96.9L1028.5,105.3L1027.6,113.0L991.7,153.6L1010.2,173.5L1010.3,178.4L1015.8,185.5L1015.1,187.4L1022.0,198.8L1031.0,207.6L1040.0,210.4L1040.0,297.6L1039.6,296.6L1038.5,299.0L1029.6,302.0L1028.2,303.8L1025.8,319.4L1022.3,321.4L1022.8,326.0L1021.6,327.8L1019.6,344.7L1017.9,342.8L1018.4,344.8L1015.6,345.1L1017.2,345.9L1012.9,350.6L1004.4,348.0L1003.9,346.3L998.6,344.4L983.8,341.7L982.6,336.4L980.6,334.7L976.7,335.4L974.8,337.5L977.5,341.1L972.0,339.5L970.9,337.5L967.6,337.8L967.8,339.9L963.1,338.0L956.4,339.5L951.6,337.0L942.7,336.6L939.5,334.1L924.1,336.6L919.6,331.9L915.5,329.9L901.1,328.9L900.7,327.9L891.4,330.7L886.7,329.4L883.6,324.6L880.7,324.6L876.4,326.9L875.8,322.5L859.7,321.1L853.8,308.6L855.5,305.1L852.5,301.1L850.5,294.9L850.9,286.6L848.4,277.0L844.7,272.8L846.5,272.2L846.5,270.8L842.5,270.4L841.7,269.3L843.2,267.7L840.3,265.2L838.4,265.8L836.9,264.6L823.2,262.6L814.6,264.3L807.7,269.8L797.5,271.1L793.3,275.0L794.3,274.5L794.5,275.5L793.3,278.7L790.7,280.5L782.7,279.4L780.2,282.2L776.4,283.2L765.1,291.5L758.2,291.1L756.0,288.0L749.6,287.1L746.6,282.6L740.6,282.9L735.6,281.2L729.1,283.2L724.4,282.9L715.9,276.9L714.2,271.9L698.6,266.7L687.5,258.6L682.5,256.4L681.7,254.8L685.0,253.9L685.1,252.5L677.2,245.0L669.2,243.0L660.4,236.7L648.1,236.8L641.1,234.3L638.6,231.5L637.5,232.7L632.6,224.1L633.2,220.0L627.8,213.4L625.5,208.0L624.7,199.7L621.7,196.4L617.9,195.7L615.2,191.6L615.9,189.0L618.7,190.9L619.9,186.6L616.5,183.1L609.1,182.9L608.8,180.3L610.9,176.9L609.8,175.7L609.6,170.4L602.1,162.8L599.9,161.9L594.1,153.2L590.4,150.3L589.8,142.8L587.8,139.7L584.6,138.7L581.8,139.4L570.0,146.5L567.5,146.8L565.5,141.4L556.7,141.4L555.8,136.9L553.6,138.6L544.5,132.1L549.8,131.0L555.1,133.5L557.4,129.3L556.1,129.1L555.4,127.0L553.8,128.2L553.8,126.9L546.8,126.6L545.5,128.1L548.9,130.0L545.1,130.6L542.3,133.6L545.1,139.2L544.3,146.0L539.7,146.8L534.1,145.5L534.7,148.4L532.9,149.5L527.4,148.2L524.4,142.1L524.9,138.7L521.1,134.7L517.5,134.5L515.3,129.6L510.5,128.7L510.5,107.2L497.7,106.9L498.0,90.0L503.8,73.7L494.2,61.3L490.9,59.6L491.6,56.9L487.6,52.4L487.9,49.5L482.4,45.8L478.2,47.0L475.9,46.2L461.8,34.6L453.0,29.1L445.3,26.3L438.6,26.5L437.8,24.9L439.5,22.1L436.1,20.3L441.3,17.7L440.8,13.9L436.4,9.5L434.0,4.5L429.5,4.3L432.3,2.0L430.7,-1.3L425.0,0.7L424.5,-1.7L421.7,-4.0L415.7,-13.9L411.8,-15.3L417.9,-22.1L418.4,-29.2L414.8,-30.4L413.1,-34.7L416.4,-36.7L416.3,-40.7L423.8,-39.0L423.3,-43.2L421.0,-46.0L422.5,-49.5L425.5,-50.9L425.8,-53.8L429.4,-53.6L429.6,-58.3L431.7,-61.1L435.3,-60.0L440.7,-62.0L439.9,-62.9L441.3,-66.3L438.8,-67.1L439.5,-70.5L434.1,-76.6L433.5,-80.0L447.3,-80.0ZM736.4,291.9L733.3,291.8L731.4,290.0L733.0,288.8L735.7,289.2ZM709.4,279.1L705.9,279.2L703.1,277.2L710.2,278.0L711.8,279.0ZM818.0,270.8L820.8,272.8L817.3,274.0L813.0,279.7L808.0,283.4L805.4,281.5L801.5,283.7L798.2,283.6L791.4,287.6L783.4,289.5L783.2,284.9L785.7,285.4L801.5,279.3L801.8,275.5L800.0,273.3L800.9,272.8L806.2,274.7L811.5,271.9Z",
+   "M1040.0,-80.0L1040.0,406.6L1040.0,327.3L1040.0,349.4L1040.0,344.0L1037.2,346.4L1038.6,348.6L1030.5,348.8L1029.3,351.5L1025.8,352.5L1024.5,351.5L1026.9,345.3L1019.6,344.7L1021.6,327.8L1022.8,326.0L1022.3,321.4L1025.8,319.4L1028.2,303.8L1029.6,302.0L1038.5,299.0L1039.6,296.6L1040.0,297.6L1040.0,210.4L1031.0,207.6L1022.0,198.8L1015.1,187.4L1015.8,185.5L1010.3,178.4L1010.2,173.5L991.7,153.6L1039.2,168.4L1040.0,172.1L1040.0,168.4L1040.0,173.0Z",
+   "M1040.0,-80.0L1040.0,173.0L1040.0,168.4L1040.0,172.1L1039.2,168.4L991.7,153.6L1027.6,113.0L1028.5,105.3L1025.4,96.9L1025.3,93.6L1023.3,91.4L990.8,86.4L989.1,64.6L990.6,62.1L991.1,55.5L981.7,24.9L981.1,19.0L991.1,7.5L991.2,4.7L994.5,3.5L991.7,1.8L984.6,1.6L979.2,-1.6L978.3,-4.6L979.8,-9.9L978.3,-20.3L979.5,-24.1L984.1,-29.0L993.4,-29.5L986.2,-37.6L995.5,-42.6L996.0,-46.1L1000.0,-49.9L1000.3,-54.7L1003.0,-61.7L1001.1,-65.4L1001.6,-68.9L1004.5,-69.8L1007.6,-80.0L1013.0,-80.0L1020.2,-75.1L1025.2,-74.5L1032.0,-76.0L1035.3,-75.5L1040.0,-71.5L1040.0,-63.2Z",
+   "M1007.6,-80.0L676.4,-80.0L1040.0,-80.0L1040.0,-63.2L1040.0,-71.5L1035.3,-75.5L1032.0,-76.0L1025.2,-74.5L1020.2,-75.1L1013.0,-80.0Z",
+   "M45.4,37.7L51.4,35.0L56.1,36.4L58.3,38.7L60.1,38.8L62.5,44.4L66.7,44.0L74.5,50.1L90.2,52.8L164.0,9.4L174.6,45.3L171.7,46.2L173.6,52.2L174.2,53.0L181.3,51.2L183.4,55.6L171.1,65.9L96.0,86.6L134.3,127.3L121.8,134.2L115.1,148.0L87.3,153.8L77.9,168.5L61.6,181.0L20.6,174.4L22.4,167.6L21.0,164.8L25.7,146.4L27.9,142.7L27.8,130.1L38.9,102.5L37.3,96.1L39.5,90.3L40.5,80.4L43.5,75.3L42.1,63.3L44.0,55.9L42.9,48.9L44.2,45.5L43.2,44.4L44.2,42.7L43.5,39.4Z",
+   "M-5.7,98.0L3.0,121.0L5.1,128.0L4.8,131.0L7.5,133.6L12.5,147.3L18.3,168.7L12.6,176.0L12.3,180.7L10.3,184.5L10.7,189.3L9.0,190.9L8.4,199.7L0.4,216.7L0.5,220.3L2.1,222.7L1.3,230.9L-2.6,233.4L-5.3,238.0L-7.0,238.4L-5.3,239.3L-5.3,241.0L-7.9,238.6L-13.0,237.5L-23.9,228.9L-31.3,217.7L-36.2,214.8L-42.9,207.5L-42.6,206.2L-43.6,206.6L-42.9,207.2L-43.9,206.5L-45.2,202.2L-43.9,198.5L-46.0,195.5L-45.8,189.3L-56.8,178.8L-59.4,171.8L-62.4,169.0L-63.2,170.1L-62.8,166.7L-64.5,164.2L-64.1,158.7L-67.3,155.0L-66.5,152.9L-68.6,150.7L-68.3,147.3L-68.6,150.1L-70.7,149.4L-72.1,150.6L-72.3,152.6L-70.9,153.2L-75.3,158.7L-77.3,164.5L-68.2,173.7L-65.3,184.3L-66.5,189.9L-61.9,196.8L-59.7,197.9L-57.4,206.1L-52.4,209.8L-43.1,224.0L-39.8,226.4L-39.6,227.8L-35.9,229.2L-31.7,234.1L-30.3,238.4L-34.2,236.2L-34.7,237.1L-32.9,240.1L-31.6,239.7L-32.4,241.9L-30.3,244.4L-31.6,243.0L-33.9,244.4L-31.3,247.5L-31.6,248.9L-28.8,250.6L-26.6,256.9L-21.1,261.0L-21.1,266.0L-15.1,275.2L-15.1,277.6L-16.9,277.9L-17.2,285.1L-14.5,286.9L-2.3,311.9L5.5,323.3L10.6,335.4L22.1,356.9L22.6,360.6L24.9,362.7L28.5,370.5L27.9,373.5L37.2,382.5L41.0,389.6L41.4,388.3L44.6,391.0L45.2,393.3L50.2,394.8L52.2,398.1L50.6,396.8L48.2,397.7L44.9,397.0L41.8,395.0L40.9,396.2L40.9,414.7L45.8,429.4L30.5,443.9L45.8,429.4L48.6,437.9L51.1,440.4L49.6,437.9L50.8,438.3L54.3,444.8L58.9,447.5L68.5,450.1L71.8,456.0L76.1,458.7L76.5,461.5L81.1,464.0L86.8,469.2L89.3,469.4L93.6,473.5L93.1,476.3L-80.0,476.4L-80.0,466.9L-80.0,476.4L-80.0,79.8L-80.0,113.8L-80.0,81.8L-80.0,104.6L-78.9,98.0L-80.0,94.6L-67.4,104.2L-61.4,103.4L-55.2,100.3L-65.0,104.6L-63.7,105.1L-56.5,102.6L-55.6,103.3L-55.2,102.1L-52.1,104.4L-50.1,101.2L-51.4,102.6L-54.2,102.3L-48.4,98.7L-46.6,101.9L-48.0,102.3L-47.5,104.9L-44.2,104.3L-45.2,103.7L-42.7,102.6L-41.1,103.5L-40.6,102.6L-42.1,102.3L-38.0,102.0L-37.3,100.3L-30.3,102.0L-20.5,100.0L-7.5,93.8Z",
+   "M659.2,599.5L687.1,669.2L690.1,670.4L700.9,696.1L696.9,696.7L680.0,704.1L671.0,711.6L665.8,723.1L666.6,727.5L668.4,728.8L668.6,738.2L656.7,742.4L655.1,745.0L653.6,744.3L648.0,746.9L647.9,749.5L642.4,750.5L636.3,754.1L605.8,761.5L591.7,769.9L586.6,771.0L586.1,769.7L582.8,770.1L561.5,777.9L554.6,782.0L554.3,783.4L552.6,782.7L550.4,783.8L547.9,788.1L547.6,791.2L543.3,794.3L542.0,797.7L537.7,801.8L531.2,802.7L527.6,805.0L522.7,803.9L517.1,805.8L515.3,803.3L510.6,802.2L507.4,803.3L503.3,807.0L328.6,806.4L321.0,783.5L321.9,783.2L323.3,786.4L323.6,782.5L322.5,777.3L318.1,768.3L318.4,767.0L320.5,771.2L320.7,769.3L320.0,765.1L318.0,762.5L317.9,758.6L312.5,754.9L308.9,755.7L307.9,753.5L310.6,753.4L311.7,748.5L311.2,750.7L314.0,752.8L314.3,754.7L315.3,752.5L314.2,743.8L312.0,740.1L310.9,734.7L316.3,725.9L316.5,718.4L314.6,707.2L318.7,705.3L319.0,702.8L323.9,700.4L325.7,694.9L329.2,695.2L328.8,692.2L330.4,689.7L328.0,688.2L326.7,685.1L326.9,677.9L328.4,672.8L332.0,670.2L328.7,668.0L337.2,660.4L341.4,660.3L345.7,662.6L349.9,666.9L355.8,666.9L356.8,669.0L360.1,666.3L363.2,667.3L365.6,664.8L403.7,663.8L413.6,668.6L447.1,672.2L461.6,670.1L471.4,683.2L478.6,683.6L488.5,677.6L494.6,662.4L516.1,634.2L548.8,616.6ZM313.5,801.9L315.1,803.6L314.6,807.0L313.3,807.0L310.9,804.0ZM308.8,745.2L306.8,747.4L308.6,747.6L308.0,750.9L306.3,752.5L306.0,747.4Z",
+   "M-14.5,-60.1L-18.3,-60.2L-19.6,-62.4L-20.0,-60.2L-23.8,-58.8L-26.0,-58.7L-25.7,-60.2L-27.3,-58.7L-30.8,-58.9L-32.2,-60.5L-34.0,-59.8L-34.6,-57.6L-34.6,-61.4L-37.0,-65.7L-40.7,-64.1L-46.6,-65.1L-57.9,-60.7L-63.4,-64.7L-58.9,-63.6L-56.5,-64.7L-54.9,-68.6L-55.5,-73.8L-36.5,-71.0L-19.2,-74.9L-8.2,-80.0L7.2,-80.0L-1.8,-78.8L-9.8,-74.5L-13.4,-70.4L-16.8,-70.3L-18.8,-64.2Z",
+   "M-27.0,-58.9L-25.8,-56.9L-30.7,-58.3L-32.0,-57.3L-33.0,-59.3L-35.3,-56.6L-35.3,-61.4L-36.9,-64.1L-39.4,-63.8L-41.2,-62.1L-46.0,-64.1L-59.0,-59.9L-63.3,-63.0L-64.1,-65.0L-57.9,-60.7L-46.6,-65.1L-40.7,-64.1L-37.0,-65.7L-34.6,-61.4L-35.0,-57.7L-32.2,-60.5L-30.8,-58.9Z",
+   "M-51.9,-42.5L-51.4,-39.8L-54.7,-39.8L-55.7,-43.4L-61.5,-43.9L-57.8,-45.2L-55.7,-43.5L-53.0,-44.1L-53.9,-42.1Z",
+   "M-45.7,476.4L-11.8,476.4L-15.0,485.7L-31.6,488.0Z"
+  ]
+ }
+};
+(function(){
+  var CAPTURE=/[?&]capture=1/.test(location.search); if(CAPTURE) document.body.classList.add('cap');
+  var W=1080,H=1920,IW=1152,IH=2048,BASE=W/IW, FADE=0.5, SVGNS='http://www.w3.org/2000/svg';
+  function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+  function ease(x){x=clamp(x,0,1);return x*x*(3-2*x);}
+  function easeIn(x){x=clamp(x,0,1);return x*x*x;}
+  function easeOutBack(x){x=clamp(x,0,1);var c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);}
+  function rnd(s){var x=Math.sin(s*127.1+311.7)*43758.5453;return x-Math.floor(x);}
+  function frac(x){return x-Math.floor(x);}
+  function el(tag,attrs,parent){var e=document.createElementNS(SVGNS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+  function camAt(keys,t){
+    if(t<=keys[0].t) return keys[0];
+    for(var i=1;i<keys.length;i++){ var a=keys[i-1],b=keys[i]; if(t<=b.t){ var f=ease((t-a.t)/Math.max(1e-3,b.t-a.t)); return {z:a.z+(b.z-a.z)*f,x:a.x+(b.x-a.x)*f,y:a.y+(b.y-a.y)*f}; } }
+    return keys[keys.length-1];
+  }
+  function cover(z,fx,fy){ var sc=BASE*z, tx=W/2-fx*IW*sc, ty=H/2-fy*IH*sc; tx=clamp(tx,W-IW*sc,0); ty=clamp(ty,H-IH*sc,0); return 'translate('+tx.toFixed(2)+'px,'+ty.toFixed(2)+'px) scale('+sc.toFixed(5)+')'; }
+
+  // ---------- FX builders: each returns update(t) ----------
+  var FX={
+    stamp:function(g,p){ var grp=el('g',{},g);
+      el('circle',{cx:0,cy:0,r:p.r,fill:'rgba(192,57,43,.10)',stroke:'#c0392b','stroke-width':14},grp);
+      el('circle',{cx:0,cy:0,r:p.r-22,fill:'none',stroke:'#c0392b','stroke-width':5},grp);
+      var tx=el('text',{x:0,y:18,'text-anchor':'middle','font-size':Math.round(p.r*.5),'font-weight':900,fill:'#c0392b','font-family':'Tajawal'},grp); tx.textContent='موافقة';
+      return function(t){ var k=(t-(p.t-0.22))/0.22; if(k<0){grp.setAttribute('opacity',0);return;}
+        var s = k<1 ? 2.4-1.4*easeIn(k) : 1+0.06*Math.exp(-8*(t-p.t))*Math.sin(30*(t-p.t));
+        grp.setAttribute('opacity', k<1? (0.3+0.65*k):0.93);
+        grp.setAttribute('transform','translate('+p.x+','+p.y+') rotate(-14) scale('+s.toFixed(3)+')'); }; },
+    rings:function(g,p){ var rs=[0,1,2].map(function(){return el('circle',{fill:'none',stroke:'#f0a070','stroke-width':10},g);});
+      var dot=el('circle',{cx:p.x,cy:p.y,r:16,fill:'#f0a070'},g);
+      return function(t){ var on=t>=p.t; dot.setAttribute('opacity',on?1:0);
+        rs.forEach(function(r,k){ if(!on){r.setAttribute('opacity',0);return;} var ph=frac((t-p.t)/1.6+k/3); r.setAttribute('cx',p.x); r.setAttribute('cy',p.y); r.setAttribute('r',(30+260*ph).toFixed(1)); r.setAttribute('opacity',((1-ph)*.85).toFixed(3)); }); }; },
+    sparkles:function(g,p){ var b=p.box, ss=[]; for(var i=0;i<p.n;i++){ ss.push({e:el('path',{d:'M0,-26 L6,-6 L26,0 L6,6 L0,26 L-6,6 L-26,0 L-6,-6 Z',fill:'#fff6cf'},g),x:b[0]+rnd(i+1)*(b[2]-b[0]),y:b[1]+rnd(i+7)*(b[3]-b[1]),o:rnd(i+13)}); }
+      return function(t){ ss.forEach(function(s){ var v=Math.pow(Math.max(0,Math.sin(2*Math.PI*(0.55*t+s.o))),3); s.e.setAttribute('transform','translate('+s.x.toFixed(1)+','+s.y.toFixed(1)+') scale('+(0.3+0.9*v).toFixed(3)+')'); s.e.setAttribute('opacity',v.toFixed(3)); }); }; },
+    scan:function(g,p){ var d=el('defs',{},g), lg=el('linearGradient',{id:'scg',x1:0,y1:0,x2:0,y2:1},d);
+      el('stop',{offset:0,'stop-color':'#5cc4c4','stop-opacity':0},lg); el('stop',{offset:.5,'stop-color':'#5cc4c4','stop-opacity':.55},lg); el('stop',{offset:1,'stop-color':'#5cc4c4','stop-opacity':0},lg);
+      var r=el('rect',{x:0,width:1152,height:180,fill:'url(#scg)'},g);
+      return function(t){ var on=t>p.t0-0.3&&t<p.t1+0.4; r.setAttribute('opacity',on?1:0); var u=0.5-0.5*Math.cos(Math.PI*2*(t-p.t0)/3.2); r.setAttribute('y',(p.y0+(p.y1-p.y0)*u-90).toFixed(1)); }; },
+    smoke:function(g,p){ var pf=[0,1,2,3,4].map(function(){return el('circle',{fill:'#dfe3e6'},g);});
+      return function(t){ pf.forEach(function(c,k){ var ph=frac(t/2.6+k/5); c.setAttribute('cx',(p.x+34*Math.sin(ph*5+k)).toFixed(1)); c.setAttribute('cy',(p.y-300*ph).toFixed(1)); c.setAttribute('r',(16+46*ph).toFixed(1)); c.setAttribute('opacity',(0.42*(1-ph)*Math.min(1,ph*6)).toFixed(3)); }); }; },
+    coinstack:function(g,p){ var cs=[]; for(var k=0;k<p.n;k++){ var c=el('g',{},g); el('rect',{x:-70,y:0,width:140,height:22,fill:'#d9a520'},c); el('ellipse',{cx:0,cy:22,rx:70,ry:20,fill:'#d9a520'},c); el('ellipse',{cx:0,cy:0,rx:70,ry:20,fill:'#f6cf55',stroke:'#b8860b','stroke-width':4},c); cs.push(c);}
+      return function(t){ cs.forEach(function(c,k){ var t0=p.t+k*0.09; var f=(t-t0)/0.18; if(f<0){c.setAttribute('opacity',0);return;} var y=p.y-k*26-(1-ease(f))*90; c.setAttribute('opacity',1); c.setAttribute('transform','translate('+p.x+','+y.toFixed(1)+')'); }); }; },
+    sticker:function(g,p){ var grp=el('g',{},g); el('rect',{x:-110,y:-80,width:220,height:150,rx:34,fill:'#e0703f'},grp); var tx=el('text',{x:0,y:30,'text-anchor':'middle','font-size':110,'font-weight':900,fill:'#fff','font-family':'Tajawal'},grp); tx.textContent=p.text;
+      return function(t){ var k=(t-p.t)/0.4; if(k<0){grp.setAttribute('opacity',0);return;} grp.setAttribute('opacity',1); grp.setAttribute('transform','translate('+p.x+','+p.y+') rotate('+(-8+3*Math.sin(3*(t-p.t)))+') scale('+(0.2+0.8*easeOutBack(k)).toFixed(3)+')'); }; },
+    sparks:function(g,p){ var ls=[]; for(var i=0;i<12;i++){ ls.push({e:el('path',{fill:'none',stroke:i%2?'#ffd23f':'#ffffff','stroke-width':9,'stroke-linecap':'round','stroke-linejoin':'round'},g),a:i/12*Math.PI*2+rnd(i)*0.3}); }
+      return function(t){ var u=(t-p.t); ls.forEach(function(l,i){ var cyc=u<0?-1:(u<1.1?u/1.1:frac((u-1.1)/1.6)*0.6); if(u<0){l.e.setAttribute('opacity',0);return;} var r0=70+120*ease(cyc), r1=r0+50, a=l.a; var x0=p.x+r0*Math.cos(a), y0=p.y+r0*Math.sin(a), x1=p.x+r1*Math.cos(a), y1=p.y+r1*Math.sin(a), mx=(x0+x1)/2+12*Math.sin(a+1), my=(y0+y1)/2+12*Math.cos(a+1);
+        l.e.setAttribute('d','M'+x0.toFixed(1)+','+y0.toFixed(1)+' L'+mx.toFixed(1)+','+my.toFixed(1)+' L'+x1.toFixed(1)+','+y1.toFixed(1)); l.e.setAttribute('opacity',(u<1.1?(1-cyc):0.35*(1-cyc/0.6)).toFixed(3)); }); }; },
+    bang:function(g,p){ var grp=el('g',{},g); el('circle',{cx:0,cy:0,r:70,fill:'#ffd23f',stroke:'#13232b','stroke-width':8},grp); var tx=el('text',{x:0,y:34,'text-anchor':'middle','font-size':100,'font-weight':900,fill:'#13232b','font-family':'Tajawal'},grp); tx.textContent='!';
+      return function(t){ var k=(t-p.t)/0.35; if(k<0){grp.setAttribute('opacity',0);return;} grp.setAttribute('opacity',1); grp.setAttribute('transform','translate('+p.x+','+(p.y-8*Math.sin(6*(t-p.t))).toFixed(1)+') scale('+(0.2+0.8*easeOutBack(k)).toFixed(3)+')'); }; },
+    bubbles:function(g,p){ var bs=[]; for(var i=0;i<14;i++){ bs.push({e:el('circle',{fill:'none',stroke:'#ffffff','stroke-width':4},g),o:rnd(i+3),dx:(rnd(i+9)-.5)*60,r:6+10*rnd(i+5)}); }
+      return function(t){ bs.forEach(function(b){ var ph=frac(t/1.9+b.o); b.e.setAttribute('cx',(p.x+b.dx+14*Math.sin(ph*9)).toFixed(1)); b.e.setAttribute('cy',(p.y-340*ph).toFixed(1)); b.e.setAttribute('r',b.r.toFixed(1)); b.e.setAttribute('opacity',(0.85*(1-ph)*Math.min(1,ph*8)).toFixed(3)); }); }; },
+    arrow:function(g,p){ var grp=el('g',{},g); el('path',{d:'M0,-90 L70,0 L28,0 L28,90 L-28,90 L-28,0 L-70,0 Z',fill:'#e0703f',stroke:'#fff','stroke-width':8},grp);
+      return function(t){ var k=(t-p.t)/0.35; if(k<0){grp.setAttribute('opacity',0);return;} grp.setAttribute('opacity',1); grp.setAttribute('transform','translate('+p.x+','+(p.y-16*Math.abs(Math.sin(4*(t-p.t)))).toFixed(1)+') scale('+(0.2+0.8*easeOutBack(k)).toFixed(3)+')'); }; },
+    cubes:function(g,list){ var cs=list.map(function(c){ var e=el('g',{},g); el('rect',{x:-26,y:-26,width:52,height:52,rx:8,fill:'#ffffff',stroke:'#b8c3c9','stroke-width':4},e); el('rect',{x:-16,y:-18,width:16,height:10,rx:4,fill:'#e9eef0'},e); return {e:e,c:c}; });
+      return function(t){ cs.forEach(function(o,i){ var c=o.c, f=(t-(c.t-0.32))/0.32; if(f<0){o.e.setAttribute('opacity',0);return;} var y; if(f<1) y=c.y-80-640*(1-easeIn(f)); else { var d=t-c.t; y=c.y-80-26*Math.abs(Math.sin(12*d))*Math.exp(-7*d); }
+        o.e.setAttribute('opacity',1); o.e.setAttribute('transform','translate('+c.x+','+y.toFixed(1)+') rotate('+(f<1?(1-f)*180*(i%2?1:-1):0).toFixed(1)+')'); }); }; },
+    ring:function(g,p){ var rs=[0,1].map(function(){return el('circle',{fill:'none',stroke:'#3fbf6f','stroke-width':12},g);});
+      return function(t){ rs.forEach(function(r,k){ var u=(t-p.t-k*0.25)/1.1; if(u<0||u>1){r.setAttribute('opacity',0);return;} r.setAttribute('cx',p.x); r.setAttribute('cy',p.y); r.setAttribute('r',(60+170*ease(u)).toFixed(1)); r.setAttribute('opacity',(1-u).toFixed(3)); }); }; },
+    coinrain:function(g,p){ var N=18, cs=[]; for(var i=0;i<N;i++){ var c=el('ellipse',{rx:30,ry:30,fill:'#f6cf55',stroke:'#b8860b','stroke-width':5},g); cs.push(c); }
+      return function(t){ cs.forEach(function(c,i){ var t0 = i<10 ? p.t0+i*0.45 : p.burst-0.45+(i-10)*0.07; var f=(t-t0)/0.55; if(f<0||f>1||t>p.t1){c.setAttribute('opacity',0);return;}
+        var x=p.x+(rnd(i)-.5)*60*(1-f), y=p.y-520*(1-easeIn(f)); c.setAttribute('opacity',f<0.92?1:(1-f)/0.08); c.setAttribute('cx',x.toFixed(1)); c.setAttribute('cy',y.toFixed(1)); c.setAttribute('ry',(30*Math.abs(Math.cos(10*f+i))+4).toFixed(1)); }); }; },
+    hearts:function(g,p){ var hs=[]; for(var i=0;i<5;i++){ hs.push({e:el('path',{d:'M0,12 C-30,-14 -18,-40 0,-24 C18,-40 30,-14 0,12 Z',fill:'#e8665c'},g),o:i/5}); }
+      return function(t){ hs.forEach(function(h,i){ if(t>p.t1){h.e.setAttribute('opacity',0);return;} var ph=frac(t/2.4+h.o); h.e.setAttribute('transform','translate('+(p.x+(i-2)*70+20*Math.sin(ph*6+i)).toFixed(1)+','+(p.y-220*ph).toFixed(1)+') scale('+(0.8+0.6*ph).toFixed(2)+')'); h.e.setAttribute('opacity',(0.85*(1-ph)*Math.min(1,ph*6)).toFixed(3)); }); }; },
+    pages:function(g,p){ var ps=[]; for(var i=0;i<4;i++){ var e=el('g',{},g); el('rect',{x:-60,y:-75,width:120,height:150,rx:10,fill:'#ffffff',stroke:'#c9d2d6','stroke-width':4},e); for(var l=0;l<4;l++) el('rect',{x:-40,y:-45+l*26,width:80,height:8,rx:4,fill:'#d7dee2'},e); ps.push({e:e,o:i/4}); }
+      return function(t){ ps.forEach(function(q,i){ var ph=frac(t/2.6+q.o); q.e.setAttribute('transform','translate('+(p.x+520*ph).toFixed(1)+','+(p.y-160*Math.sin(ph*Math.PI)+120*ph).toFixed(1)+') rotate('+(ph*260*(i%2?1:-1)).toFixed(1)+') scale('+(1-0.4*ph).toFixed(2)+')'); q.e.setAttribute('opacity',(Math.min(1,ph*8)*(1-ph)).toFixed(3)); }); }; },
+    sand:function(g,list){ var gs=[]; list.forEach(function(s,j){ for(var i=0;i<9;i++) gs.push({e:el('circle',{r:5,fill:'#d9a54a'},g),s:s,o:i/9}); });
+      return function(t){ gs.forEach(function(q){ var ph=frac(t/0.8+q.o); q.e.setAttribute('cx',q.s.x); q.e.setAttribute('cy',(q.s.y+70*ph).toFixed(1)); q.e.setAttribute('opacity',(1-ph*.6).toFixed(2)); }); }; },
+    pending:function(g,p){ var grp=el('g',{},g); el('circle',{cx:0,cy:0,r:125,fill:'#f3e3c3',stroke:'#0f6b6b','stroke-width':10},grp); var tx=el('text',{x:0,y:18,'text-anchor':'middle','font-size':52,'font-weight':900,fill:'#0f6b6b','font-family':'Tajawal'},grp); tx.textContent='بانتظار';
+      return function(t){ var k=(t-p.t)/0.3; var s=k<0?1.5:(k<1?1.5-0.5*easeIn(k):1+0.04*Math.exp(-6*(t-p.t-0.3))*Math.sin(25*(t-p.t))); grp.setAttribute('opacity',k<0?0:1); grp.setAttribute('transform','translate(688,1440) rotate('+(3*Math.sin(1.4*t)).toFixed(2)+') scale('+s.toFixed(3)+')'); }; },
+    qmarks:function(g,p){ var b=p.box, qs=[], cols=['#5cc4c4','#e0703f','#d9a54a']; for(var i=0;i<p.n;i++){ var e=el('text',{'text-anchor':'middle','font-size':Math.round(70+50*rnd(i+2)),'font-weight':900,fill:cols[i%3],'font-family':'Tajawal'},g); e.textContent='؟'; qs.push({e:e,x:b[0]+rnd(i+11)*(b[2]-b[0]),y:b[1]+rnd(i+17)*(b[3]-b[1]),o:rnd(i+23)}); }
+      return function(t){ qs.forEach(function(q){ var ph=frac(t/3.2+q.o); q.e.setAttribute('x',(q.x+18*Math.sin(ph*6)).toFixed(1)); q.e.setAttribute('y',(q.y-180*ph).toFixed(1)); q.e.setAttribute('opacity',(0.85*Math.min(1,ph*5)*(1-ph)).toFixed(3)); }); }; },
+    tvglow:function(g,p){ var d=el('defs',{},g), rg=el('radialGradient',{id:'tvg'},d); var s0=el('stop',{offset:0,'stop-color':'#9ee6e6','stop-opacity':.9},rg); el('stop',{offset:1,'stop-color':'#9ee6e6','stop-opacity':0},rg);
+      var spill=el('ellipse',{cx:p.x,cy:p.y+120,rx:p.w,ry:p.h*1.4,fill:'url(#tvg)'},g);
+      var cols=['#9ee6e6','#ffc1a1','#ffe7a8'];
+      return function(t){ var c=cols[Math.floor(t/1.3)%3]; s0.setAttribute('stop-color',c); spill.setAttribute('opacity',(0.28+0.1*Math.sin(9*t)+0.06*Math.sin(23*t)).toFixed(3)); }; }
+  };
+
+  // ---------- build scene DOM ----------
+  var root=document.getElementById('scenes');
+  var scenes=CFG.scenes.map(function(s){
+    var d=document.createElement('div'); d.className='scene';
+    var bg=document.createElement('div'); bg.className='layer';
+    var fg=document.createElement('div'); fg.className='layer';
+    var parts=[];
+    if(s.layers){ bg.innerHTML='<img class="full" src="'+s.layers.bg+'" alt="">';
+      s.layers.parts.forEach(function(p){ var im=document.createElement('img'); im.className='part'; im.src=p.src; im.style.left=p.x+'px'; im.style.top=p.y+'px'; im.style.width=p.w+'px'; im.style.height=p.h+'px'; fg.appendChild(im); parts.push({e:im,p:p}); });
+    } else { fg.innerHTML='<img class="full" src="'+s.img+'" alt="">'; }
+    var svg=document.createElementNS(SVGNS,'svg'); svg.setAttribute('class','fx'); svg.setAttribute('width',IW); svg.setAttribute('height',IH); svg.setAttribute('viewBox','0 0 '+IW+' '+IH); fg.appendChild(svg);
+    var ups=[]; Object.keys(s.fx||{}).forEach(function(k){ if(FX[k]) ups.push(FX[k](el('g',{},svg), s.fx[k])); });
+    d.appendChild(bg); d.appendChild(fg); var sh=document.createElement('div'); sh.className='shade'; d.appendChild(sh);
+    root.appendChild(d); return {el:d,bg:bg,fg:fg,parts:parts,ups:ups,s:s};
+  });
+
+  var insRoot=document.getElementById('inserts');
+  var insRows=CFG.scenes.map(function(s){ if(!s.inserts) return null; var row=document.createElement('div'); row.className='irow'+(s.inserts.bare?' bare':''); row.style.top=s.inserts.top+'px';
+    var n=s.inserts.items.length, size=s.inserts.bare?560:(n>=4?210:(n===3?250:280));
+    var items=s.inserts.items.map(function(it,k){ var c=document.createElement('div'); c.className='icard'; c.style.width=size+'px';
+      c.innerHTML='<svg viewBox="0 0 200 200" width="'+(size-24)+'" height="'+(size-24)+'">'+ART(it.art)+'</svg>'+(it.label?'<div class="ilab">'+it.label+'</div>':''); row.appendChild(c); return {el:c,t:it.t,k:k}; });
+    insRoot.appendChild(row); return {row:row,items:items}; });
+
+  // ---- animated GCC map (scene with s.gmap) ----
+  var GM=null;
+  (function(){
+    var gi=-1; CFG.scenes.forEach(function(s,i){ if(s.gmap) gi=i; }); if(gi<0||!CFG.geo) return;
+    var G=CFG.geo, box=document.getElementById('gmap'), mv=box.querySelector('.mv');
+    function P(lon,lat){ return [(lon-G.lon0)*G.cos*G.k, (G.lat1-lat)*G.k]; }
+    var svg=document.createElementNS(SVGNS,'svg'); svg.setAttribute('width',G.w); svg.setAttribute('height',G.h); svg.setAttribute('viewBox','0 0 '+G.w+' '+G.h); mv.appendChild(svg);
+    var zg=el('g',{},svg);
+    G.land.forEach(function(d){ el('path',{d:d,fill:'#efe7d8',stroke:'#c9bfae','stroke-width':1.5,'vector-effect':'non-scaling-stroke'},zg); });
+    var glow=el('path',{d:G.gcc.KWT,fill:'none',stroke:'#e0703f','stroke-width':16,'stroke-opacity':0,'stroke-linejoin':'round','vector-effect':'non-scaling-stroke'},zg);
+    var cs={}; Object.keys(G.gcc).forEach(function(c){ cs[c]=el('path',{d:G.gcc[c],fill:'#c8ccce',stroke:'#13232b','stroke-width':2,'stroke-linejoin':'round','vector-effect':'non-scaling-stroke'},zg); });
+    var ov=document.createElementNS(SVGNS,'svg'); ov.setAttribute('width',G.w); ov.setAttribute('height',G.h); mv.appendChild(ov);
+    var LBL={SAU:['السعودية',44.6,23.9,40],ARE:['الإمارات',54.25,23.35,26],OMN:['عُمان',56.9,20.6,30],QAT:['قطر',52.35,25.7,26,51.2,25.35],BHR:['البحرين',50.6,27.15,26,50.55,26.05]};
+    var labs={}; Object.keys(LBL).forEach(function(c){ var L=LBL[c], e=document.createElement('div'); e.className='gl'; e.textContent=L[0]; e.style.fontSize=L[3]+'px'; mv.appendChild(e);
+      var line=L.length>4? el('line',{stroke:'#13232b','stroke-width':2.5,'stroke-dasharray':'5 4',opacity:0},ov):null; labs[c]={e:e,p:P(L[1],L[2]),a:L.length>4?P(L[4],L[5]):null,line:line}; });
+    var kwl=document.createElement('div'); kwl.className='gl kw'; kwl.textContent='الكويت'; mv.appendChild(kwl);
+    var tag=document.createElement('div'); tag.className='gl tag'; tag.textContent='لم تطبّق بعد'; mv.appendChild(tag);
+    var pin=document.createElementNS(SVGNS,'svg'); pin.setAttribute('viewBox','0 0 200 200'); pin.setAttribute('width',170); pin.setAttribute('height',170); pin.style.position='absolute'; pin.style.opacity=0; pin.innerHTML=ART('kwflag'); mv.appendChild(pin);
+    GM={i:gi,box:box,zg:zg,cs:cs,glow:glow,labs:labs,kwl:kwl,tag:tag,pin:pin,leg:box.querySelector('.lg'),P:P,G:G};
+  })();
+  function mixc(a,b,u){ var pa=[parseInt(a.substr(1,2),16),parseInt(a.substr(3,2),16),parseInt(a.substr(5,2),16)], pb=[parseInt(b.substr(1,2),16),parseInt(b.substr(3,2),16),parseInt(b.substr(5,2),16)];
+    return 'rgb('+pa.map(function(v,k){return Math.round(v+(pb[k]-v)*u);}).join(',')+')'; }
+  function renderMap(t,i,hout){
+    if(!GM) return; var on=(i===GM.i); GM.box.style.display=on?'block':'none'; if(!on) return;
+    var m=CFG.scenes[i].gmap, G=GM.G, k=(t-m.t_in)/0.5;
+    GM.box.style.opacity=(clamp(k*1.6,0,1)*hout).toFixed(3);
+    GM.box.style.transform='translateY('+((1-ease(k))*60).toFixed(1)+'px) scale('+(0.94+0.06*easeOutBack(k)).toFixed(4)+')';
+    // zoom towards Kuwait
+    var ze=ease((t-m.t_zoom)/0.9), Z=1+(m.zoom-1)*ze, kc=GM.P(m.kw[0],m.kw[1]);
+    // Kuwait glides linearly to the centre on screen while the map scales up around it (no overshoot)
+    var cx=kc[0]-(1-ze)*(kc[0]-G.w/2)/Z, cy=kc[1]-(1-ze)*(kc[1]-G.h/2)/Z;
+    GM.zg.setAttribute('transform','translate('+(G.w/2)+','+(G.h/2)+') scale('+Z.toFixed(4)+') translate('+(-cx).toFixed(2)+','+(-cy).toFixed(2)+')');
+    function scr(p){ return [(p[0]-cx)*Z+G.w/2, (p[1]-cy)*Z+G.h/2]; }
+    m.lit.forEach(function(L){ var u=clamp((t-L.t)/0.35,0,1), c=GM.cs[L.c]; if(!c) return;
+      var col = u<0.5 ? mixc('#c8ccce','#9ff0ea',u*2) : mixc('#9ff0ea','#5cc4c4',(u-0.5)*2); c.setAttribute('fill',col);
+      var lb=GM.labs[L.c]; if(lb){ var o=clamp((t-L.t)/0.3,0,1)*(1-ze), sp=scr(lb.p); lb.e.style.opacity=o.toFixed(3); lb.e.style.left=sp[0].toFixed(1)+'px'; lb.e.style.top=sp[1].toFixed(1)+'px';
+        lb.e.style.transform='translate(-50%,-50%) scale('+(0.7+0.3*easeOutBack(clamp((t-L.t)/0.35,0,1))).toFixed(3)+')';
+        if(lb.line){ var ap=scr(lb.a); lb.line.setAttribute('x1',sp[0]); lb.line.setAttribute('y1',sp[1]); lb.line.setAttribute('x2',ap[0]); lb.line.setAttribute('y2',ap[1]); lb.line.setAttribute('opacity',(o*0.8).toFixed(3)); } } });
+    // Kuwait: grey, then pulses orange with the flag pin
+    var kk=clamp((t-m.t_kw)/0.4,0,1), pulse=t>m.t_kw? 0.5+0.5*Math.sin(2*Math.PI*1.4*(t-m.t_kw)) : 0;
+    GM.cs.KWT.setAttribute('fill',mixc('#c8ccce','#f6c9a9',kk)); GM.cs.KWT.setAttribute('stroke',kk>0?'#e0703f':'#13232b'); GM.cs.KWT.setAttribute('stroke-width',(2+3*kk).toFixed(2));
+    GM.glow.setAttribute('stroke-opacity',(kk*(0.18+0.32*pulse)).toFixed(3)); GM.glow.setAttribute('stroke-width',(10+14*pulse).toFixed(1));
+    var ks=scr(kc), lo=m.t_in+0.6, ko=clamp((t-lo)/0.35,0,1);
+    GM.kwl.style.opacity=ko.toFixed(3); GM.kwl.style.left=ks[0].toFixed(1)+'px'; GM.kwl.style.top=(ks[1]-52-(150*ze)).toFixed(1)+'px';
+    GM.kwl.style.transform='translate(-50%,-50%) scale('+(1+0.15*ze).toFixed(3)+')';
+    var pk=clamp((t-m.t_kw)/0.45,0,1); GM.pin.style.opacity=clamp(pk*3,0,1).toFixed(3);
+    GM.pin.style.left=(ks[0]-28).toFixed(1)+'px'; GM.pin.style.top=(ks[1]-158-140*(1-easeOutBack(pk))).toFixed(1)+'px';
+    var tk=clamp((t-m.t_tag)/0.35,0,1); GM.tag.style.opacity=tk.toFixed(3); GM.tag.style.left=ks[0].toFixed(1)+'px'; GM.tag.style.top=(ks[1]+150).toFixed(1)+'px';
+    GM.tag.style.transform='translate(-50%,-50%) scale('+(0.6+0.4*easeOutBack(tk)).toFixed(3)+') rotate('+(tk<1?(1-tk)*-8:0).toFixed(2)+'deg)';
+    var lg=clamp((t-m.t_leg)/0.35,0,1); GM.leg.style.opacity=lg.toFixed(3); GM.leg.style.transform='scale('+(0.8+0.2*easeOutBack(lg)).toFixed(3)+')';
+  }
+  var head=document.getElementById('head'), chips=document.getElementById('chips'), badge=document.getElementById('badge'),
+      counter=document.getElementById('counter'), sub=document.getElementById('sub'), title=document.getElementById('title'),
+      outro=document.getElementById('outro'), bar=document.getElementById('bar'), disc=document.getElementById('disc'), grain=document.getElementById('grain');
+  var cur=-1, chipEls=[];
+  function sceneAt(t){ for(var i=CFG.scenes.length-1;i>=0;i--){ if(t>=CFG.scenes[i].start) return i; } return 0; }
+  function shakeAt(s,t){ var dx=0,dy=0; (s.shake||[]).forEach(function(te){ var u=t-te; if(u>=0&&u<0.5){ var A=20*Math.exp(-8*u); dx+=A*Math.sin(70*u); dy+=A*Math.cos(53*u); } }); return [dx,dy]; }
+
+  function render(t){
+    scenes.forEach(function(S,i){
+      var s=S.s, nextStart=(i<scenes.length-1)?scenes[i+1].s.start:1e9;
+      var vis = t>=s.start-0.001 && t<=nextStart+FADE;
+      if(!vis){ S.el.style.opacity=0; S.el.style.visibility='hidden'; return; }
+      S.el.style.visibility='visible'; S.el.style.zIndex=i+1;
+      // transition in
+      var e=i===0?1:ease((t-s.start)/FADE), op=1, extra='';
+      S.el.style.clipPath='none';
+      if(s.trans==='circle'){ S.el.style.clipPath= e<1 ? 'circle('+(e*120).toFixed(2)+'% at 50% 45%)' : 'none'; }
+      else if(s.trans==='slide'){ extra='translateX('+(-(1-e)*W).toFixed(1)+'px)'; }
+      else if(s.trans==='zoom'){ op=e; extra='scale('+(1+0.12*(1-e)).toFixed(4)+')'; }
+      var sk=shakeAt(s,t);
+      S.el.style.opacity=op;
+      S.el.style.transformOrigin='50% 50%';
+      S.el.style.transform=(extra?extra+' ':'')+'translate('+sk[0].toFixed(1)+'px,'+sk[1].toFixed(1)+'px)';
+      // camera with parallax
+      var c=camAt(s.cam,t);
+      S.fg.style.transform=cover(c.z,c.x,c.y);
+      S.bg.style.transform=s.layers? cover(1+(c.z-1)*0.55,c.x,c.y) : 'none';
+      // living characters
+      var pop=0.95+0.05*easeOutBack((t-s.start-0.05)/0.55);
+      S.parts.forEach(function(P){ var a=P.p.amp, ph=P.p.ph;
+        var br=1+0.011*a*Math.sin(2*Math.PI*0.33*t+ph), sx=1-0.004*a*Math.sin(2*Math.PI*0.33*t+ph);
+        var rot=0.55*a*Math.sin(2*Math.PI*0.19*t+ph*1.7), bob=-5*a*(0.5+0.5*Math.sin(2*Math.PI*0.42*t+ph*0.9));
+        P.e.style.transform='translateY('+bob.toFixed(2)+'px) rotate('+rot.toFixed(3)+'deg) scale('+(sx*pop).toFixed(4)+','+(br*pop).toFixed(4)+')'; });
+      S.ups.forEach(function(u){ u(t); });
+    });
+    var i=sceneAt(t), s=CFG.scenes[i];
+    if(i!==cur){
+      cur=i; head.textContent=s.head||''; chips.innerHTML='';
+      chipEls=s.chips.map(function(c){ var e=document.createElement('div'); e.className='chip'+(/لم|معفاة/.test(c.text)?' warn':''); e.textContent=c.text; chips.appendChild(e); return {el:e,t:c.t}; });
+      if(s.badge) badge.firstChild.textContent=s.badge.text;
+      sub.textContent=s.sub;
+    }
+    var hp=ease((t-s.start-0.15)/0.45), hout=1-ease((t-(s.end-0.25))/0.3);
+    insRows.forEach(function(R,j){ if(!R) return; var on=(j===i); R.row.style.display=on?'flex':'none'; if(!on) return;
+      R.items.forEach(function(it){ var k=(t-it.t)/0.42; it.el.style.opacity=(clamp(k*2.2,0,1)*hout).toFixed(3); var fl=6*Math.sin(2*Math.PI*0.5*t+it.k*1.3);
+        it.el.style.transform='translateY('+((1-ease(k))*50+fl).toFixed(1)+'px) scale('+(0.55+0.45*easeOutBack(k)).toFixed(3)+') rotate('+((k<1?(1-clamp(k,0,1))*(it.k%2?8:-8):0)+1.2*Math.sin(1.7*t+it.k)).toFixed(2)+'deg)'; }); });
+    renderMap(t,i,hout);
+    head.style.opacity = s.head ? Math.min(hp,hout) : 0;
+    head.style.transform='translateY('+((1-hp)*40).toFixed(1)+'px) scale('+(0.92+0.08*easeOutBack(hp)).toFixed(3)+')';
+    chipEls.forEach(function(c){ var k=(t-c.t)/0.32; var o=clamp(k,0,1)*hout; c.el.style.opacity=o; c.el.style.transform='scale('+(0.8+0.2*easeOutBack(k)).toFixed(3)+')'; });
+    if(s.badge){ var k=(t-s.badge.t)/0.45; badge.style.opacity=clamp(k*2,0,1)*hout; badge.style.transform='scale('+(0.4+0.6*easeOutBack(k)).toFixed(3)+') rotate('+(k<1?(1-k)*-10:0).toFixed(2)+'deg)'; } else badge.style.opacity=0;
+    if(s.counter){ var cc=s.counter, kk=ease((t-cc.t0)/(cc.t1-cc.t0)); var v=Math.round((cc.a+(cc.b-cc.a)*kk)/10)*10;
+      counter.querySelector('.num').textContent= v>=1000 ? (v/1000).toFixed(3).replace(/\.?0+$/,'') : String(v);
+      counter.querySelector('.unit').textContent= v>=1000 ? 'دينار' : 'فلس';
+      var ck=(t-(cc.t0-0.6))/0.4; counter.style.opacity=clamp(ck,0,1)*hout; counter.style.transform='scale('+(0.85+0.15*easeOutBack(ck)+(kk>=1?0.08*Math.exp(-6*(t-cc.t1))*Math.sin(25*(t-cc.t1)):0)).toFixed(3)+')';
+      counter.querySelector('.num').style.color = kk>=1 ? '#e0703f' : '#0f6b6b';
+    } else counter.style.opacity=0;
+    var so=Math.min(ease((t-s.voice+0.15)/0.3), 1-ease((t-(s.voice_end+0.35))/0.3));
+    sub.style.opacity = (s.n===2||s.n===14) ? 0 : so;
+    title.style.opacity = (s.n===2) ? Math.min(ease((t-s.start-0.1)/0.4), 1-ease((t-(s.end-0.3))/0.3)) : 0;
+    title.style.transform='scale('+(0.94+0.06*ease((t-s.start)/0.6)).toFixed(3)+')';
+    outro.style.opacity = (s.n===14) ? ease((t-s.start-0.2)/0.6) : 0;
+    disc.style.opacity = (s.n===1) ? 1 : 0;
+    bar.style.width=(100*t/CFG.total).toFixed(2)+'%';
+    var gi=Math.floor(t*25); grain.style.transform='translate('+Math.round(rnd(gi)*64-32)+'px,'+Math.round(rnd(gi+999)*64-32)+'px)';
+  }
+  window.__renderOut=function(t){ render(t); };
+  window.__ready=false;
+  Promise.all([document.fonts.ready].concat(Array.prototype.map.call(document.images,function(img){return img.complete?1:new Promise(function(r){img.onload=img.onerror=r;});}))).then(function(){ window.__ready=true; });
+  function fit(){ var f=document.getElementById('frame'); document.documentElement.style.setProperty('--s', f.clientHeight/1920); }
+  window.addEventListener('resize',fit); fit();
+  if(!CAPTURE){ var st=null; function fr(ts){ if(st===null) st=ts; var t=(ts-st)/1000; render(Math.min(t,CFG.total)); if(t<CFG.total) requestAnimationFrame(fr);} requestAnimationFrame(fr); }
+  else render(0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رحلة فلاي دبي FZ1073 · فيديو توضيحي | الجريدة الموثّقة</title>
+<meta name="description" content="فيديو توضيحي لرحلة فلاي دبي FZ1073 في 30 سبتمبر 2026: مشاهد متحركة، وخريطة حقيقية، وتعليق صوتي، ومؤثرات، بالاعتماد على بيانات فلاي دبي وبيان النائب العام الإماراتي وتقارير موثوقة.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#070b0e;overflow:hidden;font-family:Tajawal,"Segoe UI",Tahoma,sans-serif;color:#e8eef1}
+#frame{width:100vw;aspect-ratio:16/9;position:relative;overflow:hidden;background:#070b0e}
+#wrap{width:1280px;height:720px;position:absolute;left:0;top:0;transform-origin:top left;transform:scale(var(--s,1));overflow:hidden;background:#070b0e}
+.layer{position:absolute;inset:0;opacity:0}
+.box{position:absolute;background:rgba(10,16,20,.86);border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+#map{position:absolute;inset:0;opacity:0;z-index:2}
+.shade{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.5),transparent 22%,transparent 62%,rgba(0,0,0,.7))}
+#cap{z-index:20;left:50%;bottom:52px;transform:translateX(-50%);width:min(1060px,92%);padding:16px 26px;text-align:center;font-size:27px;line-height:1.6;min-height:88px;display:flex;align-items:center;justify-content:center;font-weight:500}
+#cap.fade{animation:f .5s ease}
+@keyframes f{from{opacity:0;transform:translate(-50%,6px)}to{opacity:1;transform:translate(-50%,0)}}
+#src{position:absolute;z-index:20;bottom:12px;left:0;right:0;text-align:center;color:#8aa0ab;font-size:14px}
+#spd{z-index:21;top:18px;left:50%;transform:translateX(-50%);padding:6px 18px;font-size:20px;font-weight:800;color:#f0a070;opacity:0}
+#hud{z-index:21;top:18px;left:18px;padding:12px 18px;min-width:230px;direction:ltr;text-align:left;opacity:0}
+#hud .row{display:flex;justify-content:space-between;gap:18px;font-size:24px;font-weight:700;line-height:1.7}
+#hud .row span:first-child{color:#8aa0ab;font-size:15px;font-weight:500;align-self:center;direction:rtl}
+#hud .warn{color:#f0a070}
+#jetcard{z-index:21;top:18px;right:18px;width:340px;padding:10px;opacity:0}
+#jetcard img{width:100%;border-radius:10px;display:block}
+#jetcard .cr{font-size:12.5px;color:#8aa0ab;line-height:1.6;margin-top:6px}
+#title{z-index:10;background:radial-gradient(ellipse at 50% 40%,#17303b 0%,#070b0e 70%)}
+#title h1{position:absolute;top:250px;left:0;right:0;text-align:center;margin:0;font-size:64px;font-weight:800;letter-spacing:.5px;text-shadow:0 4px 30px rgba(92,196,196,.35)}
+#title p{position:absolute;top:340px;left:0;right:0;text-align:center;margin:0;font-size:24px;color:#c9d6dc}
+#title .small{top:620px;font-size:16px;color:#8aa0ab}
+#press{z-index:10;background:radial-gradient(ellipse at 50% 30%,#1b2a33 0%,#05080a 75%)}
+.qcard{position:absolute;right:60px;width:560px;padding:16px 22px;opacity:0;border-right:4px solid #5cc4c4;font-size:21px;line-height:1.75;background:rgba(10,16,20,.8);border-radius:12px}
+#unk{z-index:10;background:#070b0e}
+#unk .q{position:absolute;left:0;right:0;text-align:center;font-size:44px;font-weight:800;opacity:0;transition:none}
+#endc{z-index:10;background:#070b0e;padding:50px 80px;box-sizing:border-box}
+#endc h2{margin:0 0 16px;font-size:34px;color:#5cc4c4}
+#endc p{margin:8px 0;font-size:19px;line-height:1.8;color:#d6e1e6}
+#endc .s{font-size:15px;color:#8aa0ab}
+.lbl{position:absolute;width:max-content;left:0;top:0;background:rgba(10,16,20,.85);color:#fff;padding:3px 9px;border-radius:8px;font-size:15px;white-space:nowrap;font-weight:700;transform:translate(-50%,-160%)}
+.lbl.w{color:#f0a070}
+#planeEl svg{width:34px;height:34px;filter:drop-shadow(0 0 4px rgba(0,0,0,.6))}
+.leaflet-control-attribution{font-size:10px!important;opacity:.7}
+.cap *{animation:none!important;transition:none!important}
+</style>
+</head>
+<body>
+<div id="frame"><div id="wrap">
+
+  <!-- TITLE -->
+  <div id="title" class="layer">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <g id="titlePlane" transform="translate(-200,170) scale(1.6)" fill="#c9d6dc" opacity=".9">
+        <path d="M0,0 L-30,-6 L-130,-10 L-120,-20 L-150,-20 L-170,-6 L-190,-4 L-190,6 L-170,4 L-150,8 L-120,14 L-130,22 L-100,22 L-30,6 Z"/>
+        <path d="M-150,-4 L-190,-22 L-180,-22 L-140,-4 Z" opacity=".7"/>
+      </g>
+      <path d="M0,520 Q640,430 1280,520 L1280,720 L0,720Z" fill="#0b1820" opacity=".9"/>
+    </svg>
+    <h1>رحلة فلاي دبي FZ1073</h1>
+    <p>30 سبتمبر 2026 · من دبي إلى تل أبيب · هبوط في تبوك</p>
+    <p class="small">رسوم توضيحية بحسب البيانات الرسمية والتقارير الموثوقة. ليست تصويراً حقيقياً. المسار والمواقع تقريبية.</p>
+  </div>
+
+  <!-- CABIN (departure, shown at 2x) -->
+  <div id="cabin" class="layer" style="background:#0c1318">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <defs>
+        <linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1d3a63"/><stop offset=".55" stop-color="#7fa6c9"/><stop offset="1" stop-color="#f4b27f"/>
+        </linearGradient>
+        <clipPath id="winClip"><rect x="70" y="60" width="640" height="400" rx="70"/></clipPath>
+      </defs>
+      <rect x="62" y="52" width="656" height="416" rx="78" fill="#20303a"/>
+      <rect x="70" y="60" width="640" height="400" rx="70" fill="url(#skyD)"/>
+      <g clip-path="url(#winClip)"><g id="clouds" fill="#ffffff" opacity=".85">
+        <ellipse cx="150" cy="330" rx="130" ry="26"/><ellipse cx="260" cy="310" rx="110" ry="22"/>
+        <ellipse cx="520" cy="360" rx="160" ry="30"/><ellipse cx="640" cy="330" rx="120" ry="22"/>
+        <ellipse cx="860" cy="340" rx="150" ry="28"/><ellipse cx="980" cy="310" rx="120" ry="22"/>
+      </g></g>
+      <!-- seats (backs) -->
+      <g fill="#14202a">
+        <rect x="760" y="300" width="150" height="260" rx="30"/><rect x="940" y="300" width="150" height="260" rx="30"/>
+        <rect x="90" y="520" width="200" height="180" rx="30"/><rect x="330" y="520" width="200" height="180" rx="30"/>
+        <rect x="570" y="520" width="200" height="180" rx="30"/><rect x="810" y="520" width="200" height="180" rx="30"/>
+      </g>
+      <!-- passengers -->
+      <g id="pax1"></g>
+      <!-- flight attendant + trolley -->
+      <g id="attendant"></g>
+      <g id="trolley" fill="#3b4c57"><rect x="0" y="0" width="90" height="60" rx="8"/><rect x="10" y="60" width="16" height="16" rx="6"/><rect x="66" y="60" width="16" height="16" rx="6"/></g>
+      <!-- aisle floor -->
+      <rect x="0" y="690" width="1280" height="30" fill="#0a1014"/>
+    </svg>
+  </div>
+
+  <!-- MAP (route, shown in two parts) -->
+  <div id="map"></div>
+
+  <!-- COCKPIT -->
+  <div id="cockpit" class="layer" style="background:#05090c">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <defs>
+        <linearGradient id="wind" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#050b14"/><stop offset=".6" stop-color="#1b2c44"/><stop offset="1" stop-color="#e8a26c"/>
+        </linearGradient>
+      </defs>
+      <path d="M0,0 L1280,0 L1280,330 Q640,370 0,330 Z" fill="url(#wind)"/>
+      <path d="M0,330 Q640,370 1280,330" fill="none" stroke="#2b373e" stroke-width="10"/>
+      <!-- instrument panel -->
+      <path d="M0,420 L1280,420 L1280,720 L0,720 Z" fill="#0c1419"/>
+      <g fill="#122029" stroke="#25343d" stroke-width="3">
+        <rect x="400" y="440" width="230" height="150" rx="14"/><rect x="650" y="440" width="230" height="150" rx="14"/>
+      </g>
+      <!-- seats & pilots -->
+      <g id="captain" transform="translate(170,540)"><rect x="-120" y="-40" width="240" height="220" rx="60" fill="#14202a"/><circle cx="0" cy="-10" r="28" fill="#5cc4c4"/><path d="M-60,40 Q0,10 60,40 L60,200 L-60,200Z" fill="#5cc4c4" opacity=".9"/></g>
+      <g id="copilot" transform="translate(1110,540)"><rect x="-120" y="-40" width="240" height="220" rx="60" fill="#14202a"/><circle id="cpHead" cx="0" cy="-10" r="28" fill="#9fb0ba"/><path d="M-60,40 Q0,10 60,40 L60,200 L-60,200Z" fill="#9fb0ba" opacity=".9"/></g>
+      <!-- warning light -->
+      <circle id="warnLight" cx="640" cy="200" r="60" fill="#ff5a4a" opacity="0"/>
+      <rect id="redTint" x="0" y="0" width="1280" height="720" fill="#ff3b2a" opacity="0"/>
+    </svg>
+    <div id="cockDisp" style="position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none">
+      <div style="position:absolute;left:400px;top:470px;width:230px;direction:ltr;font-size:38px;font-weight:800;color:#8fe3c1;text-align:center" id="altD">34,000</div>
+      <div style="position:absolute;left:650px;top:452px;width:230px;font-size:18px;color:#8aa0ab;text-align:center">رمز الإرسال</div>
+      <div style="position:absolute;left:650px;top:480px;width:230px;direction:ltr;font-size:44px;font-weight:800;color:#f0a070;text-align:center" id="sqD">----</div>
+      <div style="position:absolute;left:400px;top:552px;width:480px;font-size:20px;color:#8aa0ab;text-align:center">نوع الرمز</div>
+      <div style="position:absolute;left:400px;top:578px;width:480px;font-size:28px;font-weight:800;color:#ff8a7a;text-align:center" id="warnD">—</div>
+    </div>
+  </div>
+
+  <!-- RUSH (cabin to cockpit) -->
+  <div id="rush" class="layer" style="background:#0b1217">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <rect x="0" y="0" width="1280" height="720" fill="#0b1217"/>
+      <path d="M0,560 L1280,560 L1280,720 L0,720Z" fill="#131d24"/>
+      <path d="M0,0 L1280,0 L1280,70 L0,70Z" fill="#101b22"/>
+      <g fill="#18262f"><rect x="0" y="180" width="300" height="380" rx="20"/><rect x="980" y="180" width="300" height="380" rx="20"/></g>
+      <!-- cockpit door -->
+      <rect x="1040" y="170" width="160" height="390" rx="8" fill="#20303a"/>
+      <rect id="doorLight" x="1040" y="170" width="160" height="390" rx="8" fill="#e9c98f" opacity="0"/><rect id="doorLeaf" x="1040" y="170" width="160" height="390" rx="8" fill="#2d4655" stroke="#5a7786" stroke-width="3"/>
+      <g id="passRush"></g>
+      <g id="crewRush"></g>
+    </svg>
+  </div>
+
+  <!-- JETS -->
+  <div id="jets" class="layer" style="background:#0a1620">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <defs><linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1b2e"/><stop offset=".7" stop-color="#4c6b8a"/><stop offset="1" stop-color="#f1b07a"/></linearGradient></defs>
+      <rect x="0" y="0" width="1280" height="720" fill="url(#dawn)"/>
+      <path d="M0,520 Q300,470 620,500 T1280,480 L1280,720 L0,720Z" fill="#0d1a23"/>
+      <g id="jetG"></g>
+    </svg>
+  </div>
+
+  <!-- LANDING -->
+  <div id="landing" class="layer" style="background:#0a1620">
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <defs><linearGradient id="morn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f3d5c"/><stop offset=".6" stop-color="#f2b58a"/><stop offset="1" stop-color="#c77b50"/></linearGradient></defs>
+      <rect x="0" y="0" width="1280" height="460" fill="url(#morn)"/>
+      <path d="M0,430 Q320,380 640,420 T1280,410 L1280,470 L0,470Z" fill="#8a5a3c" opacity=".7"/>
+      <rect x="0" y="455" width="1280" height="60" fill="#1d2930"/>
+      <g id="runwayDash" fill="#e9e1cf"></g>
+      <g id="dust" fill="#d9c4a6" opacity="0"></g>
+      <g id="landPlane"><g fill="#e6edf0"><rect x="-120" y="-16" width="240" height="32" rx="16"/><path d="M-20,0 L30,42 L52,42 L24,0 Z"/><path d="M-100,-6 L-128,-44 L-112,-44 L-86,-6 Z"/><path d="M-10,0 L12,30 L26,30 L10,0 Z" opacity=".8"/></g><g fill="#3a5a6e"><rect x="-70" y="-8" width="16" height="10" rx="3"/><rect x="-44" y="-8" width="16" height="10" rx="3"/><rect x="-18" y="-8" width="16" height="10" rx="3"/><rect x="8" y="-8" width="16" height="10" rx="3"/><rect x="34" y="-8" width="16" height="10" rx="3"/></g></g>
+    </svg>
+  </div>
+
+  <!-- PRESS CONFERENCE -->
+  <div id="press" class="layer">
+    <div style="position:absolute;left:0;right:0;top:40px;text-align:center;font-size:24px;color:#5cc4c4;font-weight:700" id="pressHead">بيان النائب العام الإماراتي · 9 أكتوبر 2026</div>
+    <svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;inset:0">
+      <ellipse cx="420" cy="300" rx="260" ry="330" fill="#15242c" opacity=".5"/>
+      <!-- speaker silhouette (generic, no identity) -->
+      <g transform="translate(420,250)"><circle cx="0" cy="-40" r="44" fill="#0d171d"/><path d="M-110,40 Q0,0 110,40 L140,400 L-140,400 Z" fill="#0d171d"/></g>
+      <!-- podium -->
+      <rect x="300" y="420" width="240" height="210" rx="10" fill="#1b2a33"/>
+      <rect x="290" y="410" width="260" height="16" rx="8" fill="#2e4553"/>
+      <rect x="400" y="350" width="6" height="66" fill="#5b7380"/><circle cx="403" cy="346" r="11" fill="#5b7380"/>
+    </svg>
+    <div class="qcard" id="q1" style="top:150px">مخطط مدبّر لهجوم انتحاري على مبنى المسافرين في مطار بن غوريون، بهدف إيقاع أكبر عدد من الضحايا.</div>
+    <div class="qcard" id="q2" style="top:310px">استُلهم المخطط من هجمات 11 سبتمبر، وأجرى المشتبه به رحلتين تمهيديتين إلى تل أبيب للتعرّف على المسار.</div>
+    <div class="qcard" id="q3" style="top:470px">قال إنه تصرّف وحده، والتحقيق مستمر للتحقق من احتمال وجود آخرين.</div>
+  </div>
+
+  <!-- UNKNOWN -->
+  <div id="unk" class="layer">
+    <div class="q" id="uq0" style="top:170px">هل ساعده أحد؟</div>
+    <div class="q" id="uq1" style="top:300px">كيف اجتاز الفحص الأمني؟</div>
+    <div class="q" id="uq2" style="top:430px">متى تُعلن النتائج النهائية؟</div>
+    <div style="position:absolute;left:0;right:0;top:60px;text-align:center;font-size:28px;color:#5cc4c4;font-weight:700">ما لا نعرفه بعد</div>
+  </div>
+
+  <!-- CREDITS -->
+  <div id="endc" class="layer">
+    <h2>المصادر</h2>
+    <p>بيانات فلاي دبي (30 سبتمبر 2026) · بيانات النائب العام الإماراتي (3 و9 أكتوبر) · تقارير CBS وCNN وAP وخليج تايمز والجزيرة نت.</p>
+    <h2 style="margin-top:26px">الصوت والصورة</h2>
+    <p class="s">أصوات من Freesound بترخيص CC0: صراخ جماعي، أجواء داخل طائرة، طيران في الجو، موسيقى توتر، مؤثرات تركيب. صورة F-16 من ويكيميديا كومنز بترخيص CC0. التعليق الصوتي آلي.</p>
+    <p class="s" style="margin-top:24px">رسوم توضيحية وليست تصويراً حقيقياً. المسار والمواقع تقريبية. التفاصيل الكاملة في صفحة الملف.</p>
+  </div>
+
+  <!-- overlays -->
+  <div class="shade" style="z-index:4"></div>
+  <div id="hud" class="box" style="z-index:21"><div class="row"><span>الارتفاع (قدم)</span><span id="altV">0</span></div><div class="row"><span>رمز الإرسال</span><span id="sqV">—</span></div></div>
+  <div id="spd" class="box">×2 · تسريع</div>
+  <div id="jetcard" class="box"><img src="media/f16.jpg" alt="مقاتلة F-16 (صورة توضيحية)"><div class="cr">صورة توضيحية لمقاتلة F-16 من ويكيميديا كومنز (CC0). ليست المقاتلات التي اعترضت الطائرة، وعددها غير معلن في المصادر.</div></div>
+  <div id="cap" class="box">&nbsp;</div>
+  <div id="src">رسوم توضيحية · المصادر في آخر الفيديو</div>
+
+</div></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+  var END = 130;
+  var CAPTURE = /[?&]capture=1/.test(location.search); if(CAPTURE) document.body.classList.add('cap');
+  function el(id){return document.getElementById(id);}
+  function op(o,a,b,fi,fo){ fi=fi===undefined?0.4:fi; fo=fo===undefined?0.4:fo; if(o<a||o>b) return 0; var x=1; if(o<a+fi) x=(o-a)/fi; if(o>b-fo) x=Math.min(x,(b-o)/fo); return Math.max(0,Math.min(1,x)); }
+  function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+  function lerp(a,b,f){return a+(b-a)*f;}
+  function ease(f){f=clamp(f,0,1);return f*f*(3-2*f);}
+  function piece(x, pts){ // pts: [[x,y],...] piecewise linear
+    if(x<=pts[0][0]) return pts[0][1];
+    for(var i=1;i<pts.length;i++){ if(x<=pts[i][0]){ var f=(x-pts[i-1][0])/(pts[i][0]-pts[i-1][0]); return lerp(pts[i-1][1],pts[i][1],f);} }
+    return pts[pts.length-1][1];
+  }
+
+  function person(x,y,c,s){ s=s||1; return '<g transform="translate('+x+','+y+') scale('+s+')"><circle cx="0" cy="-44" r="17" fill="'+c+'"/><path d="M-24,-22 Q0,-32 24,-22 L28,34 L-28,34 Z" fill="'+c+'"/></g>'; }
+  // cabin: passengers in seats + attendant
+  var cols=['#5cc4c4','#e3c75a','#9fb0ba','#f0a070','#7fd29d','#8aa0ab'];
+  var paxHtml=''; var paxAnim=[];
+  var seatsX=[150,390,630,870,1010];
+  for(var r=0;r<2;r++){ for(var i=0;i<seatsX.length;i++){ var gx=seatsX[i], gy=(r===0?470:560);
+      paxHtml+='<g class="pax" data-i="'+(r*10+i)+'">'+person(gx,gy,cols[(r*5+i)%cols.length],1.0)+'</g>'; } }
+  el('pax1').innerHTML=paxHtml;
+  el('attendant').innerHTML='<g id="attG">'+person(0,0,'#f2c9a0',1.15)+'</g>';
+  var cloudsG=el('clouds'), trolley=el('trolley');
+  // cockpit: captain/copilot static, copilot head tilts during struggle
+
+  // rush: passengers & crew
+  var rushHtml=''; for(var k=0;k<5;k++){ rushHtml+='<g class="rp" data-k="'+k+'">'+person(0,0,cols[k%cols.length],1.6)+'</g>'; }
+  el('passRush').innerHTML=rushHtml;
+  el('crewRush').innerHTML='<g id="crew1">'+person(0,0,'#1e3550',1.15)+'</g><g id="crew2">'+person(0,0,'#1e3550',1.15)+'</g>';
+
+  // jets
+  var jetPath="M80,0 L30,-6 L-40,-10 L-60,-26 L-72,-26 L-58,-6 L-80,-4 L-88,-14 L-96,-14 L-92,0 L-96,10 L-88,14 L-80,4 L-58,6 L-72,26 L-60,26 L-40,10 L30,6 Z";
+  var jetDefs=[{y:230,s:1.4,d:0,sp:14},{y:300,s:1.1,d:0.4,sp:15},{y:190,s:0.9,d:0.9,sp:16}];
+  el('jetG').innerHTML=jetDefs.map(function(j,k){return '<g id="jet'+k+'" fill="#0a131b" opacity="0"><path d="'+jetPath+'"/></g>';}).join('');
+
+  // landing: runway dashes
+  var dh=''; for(var x=0;x<1280;x+=120){ dh+='<rect x="'+x+'" y="482" width="60" height="6" rx="3"/>'; } el('runwayDash').innerHTML=dh;
+
+  // map
+  var DXB=[25.2532,55.3657], TLV=[32.0114,34.8867], TUU=[28.3652,36.6188];
+  var MID=[27.3,45.0], APP=[29.5,39.2], INC=[30.1,37.8], JOR=[30.7,36.3], BACK=[29.7,37.4];
+  var track=[[0,DXB],[12,DXB],[26,MID],[34,APP],[44,INC],[58,JOR],[76,BACK],[100,TUU],[104,TUU]];
+  function trackAt(T){ for(var i=1;i<track.length;i++){ var t1=track[i-1][0],p1=track[i-1][1],t2=track[i][0],p2=track[i][1]; if(T<=t2){ var f=Math.max(0,(T-t1)/(t2-t1)); var same=p1[0]===p2[0]&&p1[1]===p2[1]; return {pos:[lerp(p1[0],p2[0],f),lerp(p1[1],p2[1],f)], hd: same?bearing(DXB,MID):bearing(p1,p2)}; } } return {pos:TUU,hd:0}; }
+  function bearing(a,b){var r=Math.PI/180,f1=a[0]*r,f2=b[0]*r,dl=(b[1]-a[1])*r;var y=Math.sin(dl)*Math.cos(f2),x=Math.cos(f1)*Math.sin(f2)-Math.sin(f1)*Math.cos(f2)*Math.cos(dl);return Math.atan2(y,x)/r;}
+  var alts=[[0,0],[12,0],[15,34000],[34,34000],[46,17000],[56,21750],[62,15000],[88,15000],[100,0],[106,0]];
+  function altT(T){ return piece(T,alts); }
+  var map=L.map('map',{zoomControl:false,attributionControl:true,fadeAnimation:false,zoomAnimation:false});
+  var tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:9,attribution:'© OpenStreetMap'}).addTo(map);
+  window.__tilesIdle=true; tiles.on('loading',function(){window.__tilesIdle=false;}); tiles.on('load',function(){window.__tilesIdle=true;});
+  function lbl(text,cls){return L.divIcon({className:'',html:'<div class="lbl '+(cls||'')+'">'+text+'</div>',iconSize:[0,0]});}
+  L.marker(DXB,{icon:lbl('دبي (DXB)')}).addTo(map);
+  L.marker(TLV,{icon:lbl('تل أبيب (TLV)')}).addTo(map);
+  L.marker(TUU,{icon:lbl('تبوك (TUU)')}).addTo(map);
+  var incL=L.marker(INC,{icon:lbl('موقع الهجوم (تقريبي)','w')}).addTo(map);
+  var jorL=L.marker(JOR,{icon:lbl('اتجاه الأردن (تقريبي)')}).addTo(map);
+  var pulse=L.circleMarker(INC,{radius:6,color:'#f0a070',weight:3,fill:false,opacity:0}).addTo(map);
+  var flown=L.polyline([DXB],{color:'#f0a070',weight:4,opacity:.95}).addTo(map);
+  L.polyline([DXB,MID,APP,INC,JOR,BACK,TUU],{color:'#8aa0ab',weight:2,dashArray:'6 8',opacity:.6}).addTo(map);
+  var planeMarker=L.marker(DXB,{icon:L.divIcon({className:'',html:'<div id="planeEl"><svg viewBox="-12 -12 24 24"><path d="M0,-11 L6,8 L0,4 L-6,8 Z" fill="#ffffff" stroke="#0b1d24" stroke-width="1.5"/></svg></div>',iconSize:[34,34],iconAnchor:[17,17]}),zIndexOffset:900}).addTo(map);
+  var jetsMap=[]; // jets flying on the map are not used in v3
+
+  var camMap1={c:null,z:null}, camMap2={c:null,z:null}; var camsReady=false;
+  function setupCams(){
+    map.invalidateSize();
+    var b1=L.latLngBounds([[24,33],[33,57]]), b2=L.latLngBounds([[27,34.4],[32.4,45.5]]);
+    camMap1={c:b1.getCenter(), z:map.getBoundsZoom(b1,false)};
+    camMap2={c:b2.getCenter(), z:map.getBoundsZoom(b2,false)};
+    camsReady=true;
+  }
+  var lastCamKey='';
+
+  // captions and timing (output seconds)
+  var caps=[
+    [0,''],
+    [6.6,'تقلع الرحلة FZ1073 من دبي الساعة 7:05 صباحاً بتوقيت الخليج، متجهة إلى تل أبيب'],
+    [16,'رحلة اعتيادية فوق السعودية، على ارتفاع نحو 34,000 قدم'],
+    [25,'نحو 9:21 صباحاً، قرب الحدود السعودية الأردنية: هجوم داخل قمرة القيادة بفأس الطوارئ، بحسب النائب العام الإماراتي'],
+    [27.5,'هبوط حاد في أقل من دقيقتين، وبثّ الرمز 7700 ثم 7500، بحسب بيانات التتبع'],
+    [38.5,'يدخل قائد الرحلة العائدة وركاب وأفراد من الطاقم القمرة، ويسيطرون على الموقف (بحسب النائب العام)'],
+    [50.5,'استعادة السيطرة على الطائرة، وتحويل مسارها نحو مطار تبوك'],
+    [60,'بعد نحو 30 دقيقة دون رد من القمرة، أرسل سلاح الجو الإسرائيلي عدداً من المقاتلات. المصادر لم تحدد عددها'],
+    [67,'استُدعيت المقاتلات بعد استدارة الطائرة نحو السعودية. لم نجد ما يثبت أن الطائرة دخلت المجال الجوي الإسرائيلي'],
+    [74.5,'هبوط في مطار تبوك نحو 10:45 صباحاً بتوقيت الخليج'],
+    [80,'اعتقلت السلطات السعودية مساعد الطيار عند الهبوط، بحسب التقارير'],
+    [86.5,'بيان النائب العام الإماراتي (9 أكتوبر): أبرز ما جاء فيه'],
+    [106.5,'ما لا نعرفه بعد: هل ساعده أحد؟ ومتى تُعلن النتائج النهائية؟'],
+    [116.5,'']
+  ];
+  var lastCap=null;
+  function capAt(o){ var c=''; for(var i=0;i<caps.length;i++){ if(o>=caps[i][0]) c=caps[i][1]; } return c; }
+
+  var cards=[[87,'q1'],[94,'q2'],[100.5,'q3']];
+  var uq=[[106,'uq0'],[109,'uq1'],[112,'uq2']];
+
+  function update(o){
+    // title
+    el('title').style.opacity = op(o,0,6.6,0.1,0.8);
+    el('titlePlane').setAttribute('transform','translate('+lerp(-220,1500,clamp(o/6,0,1))+',170) scale(1.6)');
+    // cabin (2x: local clock runs twice as fast)
+    var cab=op(o,6,16.5,0.5,0.6); el('cabin').style.opacity=cab;
+    var tc=(o-6)*2;
+    cloudsG.setAttribute('transform','translate('+(-((tc*45)%520))+',0)');
+    var pax=document.querySelectorAll('#pax1 .pax');
+    for(var i=0;i<pax.length;i++){ var b=Math.sin(tc*1.6+i*1.3)*1.6; pax[i].setAttribute('transform','translate(0,'+b.toFixed(2)+')'); }
+    trolley.setAttribute('transform','translate('+lerp(620,1080,clamp((tc)/20,0,1))+',600)');
+    el('attG').setAttribute('transform','translate('+lerp(540,700,clamp(tc/20,0,1))+',470)');
+
+    // map 1: departure to incident (2x), then map 2: return toward Jordan/Saudi (real time-ish)
+    var mapOn1=op(o,16,29.5,0.5,0.5), mapOn2=op(o,50,60.5,0.5,0.5);
+    el('map').style.opacity = Math.max(mapOn1,mapOn2);
+    var T=null;
+    if(o>=16 && o<=29.5) T=26+(o-16)*2;
+    if(o>=50 && o<=60.5) T=46+(o-50)*2.2;
+    if(T!==null){
+      if(!camsReady) setupCams();
+      var key = (o<40)?'m1':'m2';
+      if(key!==lastCamKey){ var cm=(key==='m1')?camMap1:camMap2; map.setView(cm.c,cm.z,{animate:false}); lastCamKey=key; }
+      var p=trackAt(T); planeMarker.setLatLng(p.pos);
+      var svg=planeMarker.getElement()&&planeMarker.getElement().querySelector('svg'); if(svg) svg.style.transform='rotate('+p.hd+'deg)';
+      var pts=[]; for(var t=12;t<=Math.min(T,100);t+=0.5){ pts.push(trackAt(t).pos); } if(pts.length>1) flown.setLatLngs(pts);
+      var pulseOn = T>=44 && T<56; if(pulseOn){ var kk=((T*2)%1.2)/1.2; pulse.setRadius(8+kk*26); pulse.setStyle({opacity:1-kk}); } else pulse.setStyle({opacity:0});
+      if(incL._icon) incL._icon.style.display=(T>=40)?'':'none';
+      if(jorL._icon) jorL._icon.style.display=(T>=54)?'':'none';
+    }
+
+    // cockpit
+    var ck=op(o,29,38.5,0.3,0.5); el('cockpit').style.opacity=ck;
+    if(ck>0){
+      var tl=o-29;
+      var alt=piece(tl,[[0,34000],[3.5,17000],[6,21000],[9,15000],[12,15000]]);
+      el('altD').textContent=Math.round(alt).toLocaleString('en');
+      el('sqD').textContent = tl>=1.8 ? (tl<3.6?'7700':'7500') : '----';
+      el('warnD').textContent = tl<1.8 ? '—' : (tl<3.6 ? 'طوارئ عامة' : 'تدخّل غير مشروع');
+      var wl=el('warnLight'); wl.setAttribute('opacity', (tl>0.6&&tl<8)? (0.25+0.35*(0.5+0.5*Math.sin(tl*9))):0);
+      el('redTint').setAttribute('opacity', (tl>0.6&&tl<8)? 0.05+0.05*(0.5+0.5*Math.sin(tl*9)) : 0);
+      var ch=el('copilot'); ch.setAttribute('transform','translate(1110,540) rotate('+(tl>1&&tl<4?(Math.sin(tl*6)*5):0).toFixed(2)+')');
+    }
+    // rush: cabin to cockpit door
+    var rs=op(o,38,50.5,0.4,0.5); el('rush').style.opacity=rs;
+    if(rs>0){
+      var tr=o-38;
+      var rps=document.querySelectorAll('#passRush .rp');
+      for(var k=0;k<rps.length;k++){
+        var st=0.2*k; var f=ease(clamp((tr-st)/4.2,0,1));
+        var x=lerp(160+k*40, 1000-k*34, f); var y=lerp(560,520,f)+Math.sin(tr*12+k)*(f<1?3:0);
+        rps[k].setAttribute('transform','translate('+x.toFixed(1)+','+y.toFixed(1)+')');
+        rps[k].setAttribute('opacity', (tr>=0.2)?1:0);
+      }
+      var fd=ease(clamp((tr-4.6)/1.2,0,1));
+      el('doorLight').setAttribute('opacity', (fd*0.9).toFixed(2));
+      el('doorLeaf').setAttribute('x', (1040+fd*120).toFixed(1)); el('doorLeaf').setAttribute('width',(160-fd*120).toFixed(1));
+      var c1=ease(clamp((tr-6.2)/1.4,0,1)), c2=ease(clamp((tr-6.8)/1.4,0,1));
+      el('crew1').setAttribute('transform','translate('+lerp(-120,1060,c1).toFixed(1)+',560)'); el('crew1').setAttribute('opacity', tr>6.2?1:0);
+      el('crew2').setAttribute('transform','translate('+lerp(-160,1040,c2).toFixed(1)+',560)'); el('crew2').setAttribute('opacity', tr>6.8?1:0);
+    }
+
+    // jets (sky)
+    var js=op(o,60,74.5,0.5,0.6); el('jets').style.opacity=js;
+    for(var j=0;j<jetDefs.length;j++){
+      var jd=jetDefs[j], jt=o-60-jd.d*0; var jx=lerp(-160, 1400, clamp((o-60-jd.d)/jd.sp,0,1)); var jo=(o>60+jd.d && o<74.5)?1:0;
+      var g=el('jet'+j); g.setAttribute('transform','translate('+jx.toFixed(1)+','+jd.y+') scale('+jd.s+') rotate('+(-4)+')'); g.setAttribute('opacity',jo);
+    }
+    el('jetcard').style.opacity = op(o,64,74.5,0.5,0.5);
+
+    // landing
+    var ls=op(o,74.5,86.5,0.5,0.6); el('landing').style.opacity=ls;
+    if(ls>0){
+      var tg=o-74.5;
+      var lx = tg<7.2 ? lerp(-240, 560, tg/7.2) : lerp(560, 1080, clamp((tg-7.2)/5,0,1));
+      var ly = tg<7.2 ? lerp(120, 470, ease(tg/7.2)) : 470;
+      el('landPlane').setAttribute('transform','translate('+lx.toFixed(1)+','+ly.toFixed(1)+') rotate('+(tg<7.2? lerp(-6,0,clamp(tg/7.2,0,1)) : 0)+')');
+      var dustO = (tg>7.0 && tg<9.5)? (1-(tg-7.0)/2.5)*0.7 : 0;
+      el('dust').setAttribute('opacity', dustO.toFixed(2));
+      el('dust').innerHTML = (dustO>0)? '<circle cx="520" cy="470" r="'+(20+(tg-7)*40).toFixed(1)+'" fill="#d9c4a6" opacity=".6"/><circle cx="560" cy="468" r="'+(14+(tg-7)*32).toFixed(1)+'" fill="#d9c4a6" opacity=".5"/>' : '';
+    }
+
+    // press conference
+    el('press').style.opacity = op(o,85.5,106,0.5,0.5);
+    el('pressHead').style.opacity = op(o,85.5,106,0.5,0.5);
+    for(var c=0;c<cards.length;c++){ el(cards[c][1]).style.opacity = op(o,cards[c][0],106,0.5,0.5); }
+
+    // unknown
+    el('unk').style.opacity = op(o,105.5,117,0.5,0.6);
+    for(var u=0;u<uq.length;u++){ el(uq[u][1]).style.opacity = op(o,uq[u][0],117,0.5,0.6); }
+
+    // credits
+    el('endc').style.opacity = op(o,116.5,END,0.8,0.1);
+
+    // HUD
+    var hudOn = Math.max(op(o,16,29.5,0.5,0.5), op(o,29,38.5,0.4,0.4), op(o,50,60.5,0.5,0.5));
+    el('hud').style.opacity = hudOn;
+    if(hudOn>0){
+      var aV = (o>=29 && o<=38.5) ? Math.round(piece(o-29,[[0,34000],[3.5,17000],[6,21000],[9,15000],[12,15000]])) : Math.round(altT(o>=50?46+(o-50)*2.2:26+(o-16)*2));
+      el('altV').textContent = aV.toLocaleString('en');
+      el('sqV').textContent = (o>=29&&o<38.5) ? ((o-29)>=1.8?((o-29)<3.6?'7700':'7500'):'—') : '—';
+    }
+    // speed badge
+    el('spd').style.opacity = Math.max(op(o,6.6,16,0.3,0.3), op(o,16,29.5,0.3,0.3));
+
+    // jet card visible flag handled above
+    // caption
+    var txt=capAt(o); if(o<6) txt='';
+    if(txt!==lastCap){ lastCap=txt; var cap=el('cap'); cap.textContent = txt||' '; cap.classList.remove('fade'); void cap.offsetWidth; cap.classList.add('fade'); }
+    el('cap').style.opacity = (o>=116.5)?0:1;
+    el('src').style.opacity = (o>=116.5)?0:1;
+  }
+
+  window.__renderOut=function(o){ update(o); window.__outDuration=END; };
+  if(!CAPTURE){
+    var startTs=null;
+    function frame(ts){ if(startTs===null) startTs=ts; var o=(ts-startTs)/1000; if(o<END){ update(o); requestAnimationFrame(frame);} else update(END); }
+    window.addEventListener('load',function(){ setTimeout(function(){ requestAnimationFrame(frame); },800); });
+  }
+  function fit(){ var f=document.getElementById('frame'); var s=f.clientWidth/1280; document.documentElement.style.setProperty('--s', s); }
+  window.addEventListener('resize',fit); fit();
+  setupCams(); map.setView(camMap1.c, camMap1.z, {animate:false});
+})();
+</script>
+</body>
+</html>

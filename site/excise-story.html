@@ -60,6 +60,7 @@ html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe
 #gmap .leg{display:flex;justify-content:center;margin-top:18px;height:64px}
 #gmap .lg{display:flex;align-items:center;gap:14px;font-size:34px;font-weight:800;color:#13232b;background:#f3efe6;border-radius:20px;padding:8px 24px;opacity:0}
 #gmap .lg i{width:32px;height:32px;border-radius:9px;display:inline-block;border:3px solid #13232b;background:#5cc4c4}
+#opb{background:#e0703f;color:#fff;font-size:36px;font-weight:800;border-radius:30px;padding:8px 30px;opacity:0;box-shadow:0 6px 16px rgba(0,0,0,.25)}
 .cap *{animation:none!important;transition:none!important}
 .layer{position:absolute;left:0;top:0;width:1152px;height:2048px;transform-origin:0 0}
 .layer img.full{width:1152px;height:2048px;display:block}
@@ -78,7 +79,7 @@ html,body{margin:0;background:#0b1216;overflow:hidden;font-family:Tajawal,"Segoe
   <div id="tag">اقتصاد · الكويت</div>
   <div id="inserts"></div>
   <div id="gmap"><div class="mv"></div><div class="leg"><div class="lg"><i></i>دول طبّقت الضريبة منذ 2017</div></div></div>
-  <div id="upper"><div id="head"></div>
+  <div id="upper"><div id="opb">رأي · تحليل</div><div id="head"></div>
   <div id="chips"></div></div>
   <div id="badge"><span></span></div>
   <div id="counter"><div class="box"><span class="num">0</span><span class="unit">فلس</span><div class="note">مثال افتراضي للتوضيح</div></div></div>
@@ -159,6 +160,28 @@ var ART = (function(){
       g+='<rect x="8" y="168" width="184" height="6" rx="3" fill="#2b4c5c"/>';
       g+='<path d="M8,180 Q22,174 36,180 T64,180 T92,180 T120,180 T148,180 T176,180 T192,180 L192,194 L8,194 Z" fill="#5cc4c4" stroke="#13232b" stroke-width="2.5"/>';
       return g; },
+    globehealth:function(){ var g='';
+      g+='<circle cx="92" cy="108" r="60" fill="#bfe3e6" stroke="#13232b" stroke-width="3"/>';
+      g+='<path d="M62,82 C72,70 90,68 98,78 C106,86 94,96 84,94 C72,100 56,94 62,82 Z" fill="#7fb069" stroke="#13232b" stroke-width="2"/>';
+      g+='<path d="M98,116 C112,108 126,116 122,130 C118,144 102,148 94,138 C88,130 90,122 98,116 Z" fill="#7fb069" stroke="#13232b" stroke-width="2"/>';
+      g+='<path d="M64,124 C72,120 80,126 76,136 C72,144 60,142 58,134 Z" fill="#7fb069" stroke="#13232b" stroke-width="2"/>';
+      g+='<ellipse cx="92" cy="108" rx="60" ry="19" fill="none" stroke="#13232b" stroke-width="1.5" opacity=".3"/>';
+      g+='<path d="M148,42 C141,31 122,33 120,48 C118,62 136,74 148,84 C160,74 178,62 176,48 C174,33 155,31 148,42 Z" fill="#e8665c" stroke="#13232b" stroke-width="3"/>';
+      g+='<polyline points="128,58 138,58 143,48 150,68 156,58 168,58" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>';
+      return g; },
+    scalecheck:function(){ var g='';
+      g+='<rect x="92" y="148" width="16" height="24" fill="#9a7b4f" stroke="#13232b" stroke-width="3"/>';
+      g+='<rect x="54" y="170" width="92" height="12" rx="6" fill="#6f5436" stroke="#13232b" stroke-width="3"/>';
+      g+='<rect x="96" y="54" width="8" height="100" rx="4" fill="#c9a66b" stroke="#13232b" stroke-width="3"/>';
+      g+='<g transform="rotate(9 100 58)">'+
+         '<rect x="26" y="52" width="148" height="10" rx="5" fill="#c9a66b" stroke="#13232b" stroke-width="3"/>'+
+         '<line x1="40" y1="62" x2="40" y2="94" stroke="#13232b" stroke-width="3"/><line x1="160" y1="62" x2="160" y2="94" stroke="#13232b" stroke-width="3"/>'+
+         '<path d="M16,94 A24,24 0 0 0 64,94 Z" fill="#dee2e6" stroke="#13232b" stroke-width="3"/>'+
+         '<path d="M136,94 A24,24 0 0 0 184,94 Z" fill="#9ff0ea" stroke="#13232b" stroke-width="3"/>'+
+         txt(40,90,26,'#5b6b75','؟')+
+         '<circle cx="160" cy="80" r="15" fill="#3fbf6f" stroke="#13232b" stroke-width="3"/><polyline points="152,80 158,87 169,72" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'+
+         '<circle cx="100" cy="57" r="7" fill="#13232b"/></g>';
+      return g; },
     kwflag:function(){ return '<rect x="30" y="26" width="6" height="160" rx="3" fill="#868e96"/><g transform="skewY(-3)"><rect x="36" y="38" width="138" height="30" fill="#007a3d"/><rect x="36" y="68" width="138" height="30" fill="#fff"/><rect x="36" y="98" width="138" height="30" fill="#ce1126"/>'+
       '<polygon points="36,38 76,68 76,98 36,128" fill="#000"/><rect x="36" y="38" width="138" height="90" fill="none" stroke="#13232b" stroke-width="3"/></g>'; },
     sugar:function(){ var g='', hs=[1,2,3]; for(var s=0;s<3;s++) for(var k=0;k<hs[s];k++) g+='<rect x="'+(34+s*50)+'" y="'+(150-k*34)+'" width="32" height="32" rx="6" fill="#fff" stroke="#9aa5ab" stroke-width="3"/>';
@@ -184,14 +207,14 @@ var ART = (function(){
 })();
 
 var CFG = {
- "total": 108.01,
+ "total": 135.42,
  "scenes": [
   {
    "n": 1,
    "start": 0.0,
-   "end": 7.044,
+   "end": 6.423,
    "voice": 0.9,
-   "voice_end": 6.544,
+   "voice_end": 5.923,
    "img": "media/excise/s01.jpg",
    "kb": [
     1.0,
@@ -212,7 +235,7 @@ var CFG = {
      "y": 0.55
     },
     {
-     "t": 7.544,
+     "t": 6.923,
      "z": 1.1,
      "x": 0.5,
      "y": 0.55
@@ -239,22 +262,22 @@ var CFG = {
     "top": 1180,
     "items": [
      {
-      "t": 0.81,
+      "t": 0.83,
       "art": "can_energy",
       "label": "مشروب طاقة"
      },
      {
-      "t": 1.645,
+      "t": 1.529,
       "art": "can_red",
       "label": "مشروب غازي"
      },
      {
-      "t": 2.633,
+      "t": 2.354,
       "art": "cigpack",
       "label": "سجائر"
      },
      {
-      "t": 5.444,
+      "t": 4.796,
       "art": "towers",
       "label": "الكويت"
      }
@@ -263,10 +286,10 @@ var CFG = {
   },
   {
    "n": 2,
-   "start": 7.044,
-   "end": 11.938,
-   "voice": 7.494,
-   "voice_end": 11.438,
+   "start": 6.423,
+   "end": 11.067,
+   "voice": 6.873,
+   "voice_end": 10.567,
    "img": "media/excise/s05.jpg",
    "kb": [
     1.12,
@@ -281,13 +304,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 7.044,
+     "t": 6.423,
      "z": 1.12,
      "x": 0.5,
      "y": 0.45
     },
     {
-     "t": 12.438,
+     "t": 11.567,
      "z": 1.18,
      "x": 0.5,
      "y": 0.45
@@ -300,17 +323,17 @@ var CFG = {
     "top": 1330,
     "items": [
      {
-      "t": 7.434,
+      "t": 6.803,
       "art": "can_energy",
       "label": ""
      },
      {
-      "t": 8.041,
+      "t": 7.366,
       "art": "can_red",
       "label": ""
      },
      {
-      "t": 8.877,
+      "t": 8.14,
       "art": "cigpack",
       "label": ""
      }
@@ -319,10 +342,10 @@ var CFG = {
   },
   {
    "n": 3,
-   "start": 11.938,
-   "end": 25.057,
-   "voice": 12.288,
-   "voice_end": 24.557,
+   "start": 11.067,
+   "end": 23.574,
+   "voice": 11.417,
+   "voice_end": 23.074,
    "img": "media/excise/s03.jpg",
    "kb": [
     1.0,
@@ -334,11 +357,11 @@ var CFG = {
    "sub": "يوم الثلاثاء السابع والعشرين من أكتوبر، وافق مجلس الوزراء على مشروع مرسوم بقانون للاتفاقية الخليجية الموحدة للضريبة الانتقائية، ورفعه إلى سمو أمير البلاد.",
    "chips": [
     {
-     "t": 12.688,
+     "t": 11.817,
      "text": "الثلاثاء 27 أكتوبر 2026"
     },
     {
-     "t": 21.957,
+     "t": 20.474,
      "text": "رُفع إلى سمو أمير البلاد"
     }
    ],
@@ -346,25 +369,25 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 11.938,
+     "t": 11.067,
      "z": 1.0,
      "x": 0.5,
      "y": 0.62
     },
     {
-     "t": 20.707,
+     "t": 19.224,
      "z": 1.07,
      "x": 0.5,
      "y": 0.64
     },
     {
-     "t": 21.007,
+     "t": 19.524,
      "z": 1.5,
      "x": 0.408,
      "y": 0.7617
     },
     {
-     "t": 25.557,
+     "t": 24.074,
      "z": 1.58,
      "x": 0.408,
      "y": 0.7617
@@ -373,7 +396,7 @@ var CFG = {
    "layers": null,
    "fx": {
     "stamp": {
-     "t": 21.957,
+     "t": 20.474,
      "x": 470,
      "y": 1565,
      "r": 120
@@ -381,18 +404,18 @@ var CFG = {
    },
    "trans": "zoom",
    "shake": [
-    21.957
+    20.474
    ],
    "inserts": {
     "top": 600,
     "items": [
      {
-      "t": 15.715,
+      "t": 14.596,
       "art": "building",
       "label": "مجلس الوزراء"
      },
      {
-      "t": 18.496,
+      "t": 17.203,
       "art": "gcc",
       "label": "اتفاقية خليجية"
      }
@@ -401,10 +424,10 @@ var CFG = {
   },
   {
    "n": 4,
-   "start": 25.057,
-   "end": 33.402,
-   "voice": 25.407,
-   "voice_end": 32.902,
+   "start": 23.574,
+   "end": 31.682,
+   "voice": 23.924,
+   "voice_end": 31.182,
    "img": "media/excise/s04.jpg",
    "kb": [
     1.08,
@@ -419,13 +442,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 25.057,
+     "t": 23.574,
      "z": 1.08,
      "x": 0.5,
      "y": 0.6
     },
     {
-     "t": 33.902,
+     "t": 32.182,
      "z": 1.0,
      "x": 0.5,
      "y": 0.6
@@ -436,46 +459,46 @@ var CFG = {
    "trans": "circle",
    "shake": [],
    "gmap": {
-    "t_in": 25.307,
+    "t_in": 23.824,
     "lit": [
      {
       "c": "SAU",
-      "t": 26.247
+      "t": 24.719
      },
      {
       "c": "ARE",
-      "t": 26.825
+      "t": 25.292
      },
      {
       "c": "BHR",
-      "t": 27.402
+      "t": 25.866
      },
      {
       "c": "QAT",
-      "t": 27.979
+      "t": 26.44
      },
      {
       "c": "OMN",
-      "t": 28.557
+      "t": 27.013
      }
     ],
-    "t_leg": 29.117,
-    "t_zoom": 30.207,
+    "t_leg": 27.57,
+    "t_zoom": 28.364,
     "zoom": 4.0,
     "kw": [
      47.55,
      29.3
     ],
-    "t_kw": 30.807,
-    "t_tag": 31.477
+    "t_kw": 28.964,
+    "t_tag": 29.59
    }
   },
   {
    "n": 5,
-   "start": 33.402,
-   "end": 39.981,
-   "voice": 33.752,
-   "voice_end": 39.481,
+   "start": 31.682,
+   "end": 38.504,
+   "voice": 32.032,
+   "voice_end": 38.004,
    "img": "media/excise/s05.jpg",
    "kb": [
     1.0,
@@ -487,11 +510,11 @@ var CFG = {
    "sub": "هي ضريبة على سلع تُعدّ ضارة بالصحة، وتُحسب على سعر البيع بالتجزئة.",
    "chips": [
     {
-     "t": 34.252,
+     "t": 32.532,
      "text": "سلع تُعدّ ضارة بالصحة"
     },
     {
-     "t": 36.903,
+     "t": 35.317,
      "text": "تُحسب على سعر البيع بالتجزئة"
     }
    ],
@@ -499,13 +522,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 33.402,
+     "t": 31.682,
      "z": 1.0,
      "x": 0.5,
      "y": 0.35
     },
     {
-     "t": 40.481,
+     "t": 39.004,
      "z": 1.08,
      "x": 0.5,
      "y": 0.35
@@ -514,8 +537,8 @@ var CFG = {
    "layers": null,
    "fx": {
     "scan": {
-     "t0": 33.752,
-     "t1": 39.481,
+     "t0": 32.032,
+     "t1": 38.004,
      "y0": 560,
      "y1": 1560
     }
@@ -525,12 +548,12 @@ var CFG = {
     "top": 600,
     "items": [
      {
-      "t": 35.443,
+      "t": 33.802,
       "art": "heartcrack",
       "label": "الصحة"
      },
      {
-      "t": 37.603,
+      "t": 35.966,
       "art": "pricetag",
       "label": "سعر التجزئة"
      }
@@ -539,10 +562,10 @@ var CFG = {
   },
   {
    "n": 6,
-   "start": 39.981,
-   "end": 47.832,
-   "voice": 40.331,
-   "voice_end": 47.332,
+   "start": 38.504,
+   "end": 45.293,
+   "voice": 38.854,
+   "voice_end": 44.793,
    "img": "media/excise/s06.jpg",
    "kb": [
     1.0,
@@ -554,24 +577,24 @@ var CFG = {
    "sub": "وفق الإطار الخليجي: التبغ ومشتقاته، ومنها السجائر الإلكترونية، بنسبة 100%.",
    "chips": [
     {
-     "t": 43.481,
+     "t": 41.527,
      "text": "ومنها السجائر الإلكترونية"
     }
    ],
    "badge": {
-    "t": 45.632,
+    "t": 43.093,
     "text": "100%"
    },
    "counter": null,
    "cam": [
     {
-     "t": 39.981,
+     "t": 38.504,
      "z": 1.0,
      "x": 0.5,
      "y": 0.5
     },
     {
-     "t": 48.332,
+     "t": 45.793,
      "z": 1.1,
      "x": 0.5,
      "y": 0.5
@@ -598,13 +621,13 @@ var CFG = {
      "y": 640
     },
     "coinstack": {
-     "t": 45.681999999999995,
+     "t": 43.143,
      "x": 880,
      "y": 1030,
      "n": 6
     },
     "sticker": {
-     "t": 45.982,
+     "t": 43.443000000000005,
      "x": 1000,
      "y": 1180,
      "text": "×2"
@@ -612,23 +635,23 @@ var CFG = {
    },
    "trans": "zoom",
    "shake": [
-    45.632
+    43.093
    ],
    "inserts": {
     "top": 980,
     "items": [
      {
-      "t": 42.051,
+      "t": 40.184,
       "art": "cigpack",
       "label": "سجائر"
      },
      {
-      "t": 42.401,
+      "t": 40.534,
       "art": "shisha",
       "label": "معسّل"
      },
      {
-      "t": 43.751,
+      "t": 41.484,
       "art": "vape",
       "label": "سجائر إلكترونية"
      }
@@ -637,10 +660,10 @@ var CFG = {
   },
   {
    "n": 7,
-   "start": 47.832,
-   "end": 51.984,
-   "voice": 48.182,
-   "voice_end": 51.484,
+   "start": 45.293,
+   "end": 49.869,
+   "voice": 45.643,
+   "voice_end": 49.369,
    "img": "media/excise/s07.jpg",
    "kb": [
     1.06,
@@ -652,19 +675,19 @@ var CFG = {
    "sub": "ومشروبات الطاقة أيضاً، بنسبة 100%.",
    "chips": [],
    "badge": {
-    "t": 49.984,
+    "t": 47.869,
     "text": "100%"
    },
    "counter": null,
    "cam": [
     {
-     "t": 47.832,
+     "t": 45.293,
      "z": 1.06,
      "x": 0.5,
      "y": 0.3
     },
     {
-     "t": 52.484,
+     "t": 50.369,
      "z": 1.0,
      "x": 0.5,
      "y": 0.3
@@ -687,25 +710,25 @@ var CFG = {
    },
    "fx": {
     "sparks": {
-     "t": 48.082,
+     "t": 45.543,
      "x": 575,
      "y": 1050
     },
     "bang": {
-     "t": 49.984,
+     "t": 47.869,
      "x": 760,
      "y": 860
     }
    },
    "trans": "circle",
    "shake": [
-    49.984
+    47.869
    ],
    "inserts": {
     "top": 980,
     "items": [
      {
-      "t": 48.062,
+      "t": 45.563,
       "art": "cans_energy",
       "label": "مشروبات الطاقة"
      }
@@ -714,10 +737,10 @@ var CFG = {
   },
   {
    "n": 8,
-   "start": 51.984,
-   "end": 56.075,
-   "voice": 52.334,
-   "voice_end": 55.575,
+   "start": 49.869,
+   "end": 53.752,
+   "voice": 50.219,
+   "voice_end": 53.252,
    "img": "media/excise/s08.jpg",
    "kb": [
     1.0,
@@ -729,19 +752,19 @@ var CFG = {
    "sub": "والمشروبات الغازية، بنسبة 50%.",
    "chips": [],
    "badge": {
-    "t": 54.075,
+    "t": 51.752,
     "text": "50%"
    },
    "counter": null,
    "cam": [
     {
-     "t": 51.984,
+     "t": 49.869,
      "z": 1.0,
      "x": 0.55,
      "y": 0.45
     },
     {
-     "t": 56.575,
+     "t": 54.252,
      "z": 1.08,
      "x": 0.55,
      "y": 0.45
@@ -768,20 +791,20 @@ var CFG = {
      "y": 600
     },
     "arrow": {
-     "t": 54.075,
+     "t": 51.752,
      "x": 470,
      "y": 520
     }
    },
    "trans": "slide",
    "shake": [
-    54.075
+    51.752
    ],
    "inserts": {
     "top": 980,
     "items": [
      {
-      "t": 52.314,
+      "t": 50.139,
       "art": "cans_soda",
       "label": "مشروبات غازية"
      }
@@ -790,10 +813,10 @@ var CFG = {
   },
   {
    "n": 9,
-   "start": 56.075,
-   "end": 64.161,
-   "voice": 56.425,
-   "voice_end": 63.661,
+   "start": 53.752,
+   "end": 60.881,
+   "voice": 54.102,
+   "voice_end": 60.381,
    "img": "media/excise/s09.jpg",
    "kb": [
     1.0,
@@ -805,11 +828,11 @@ var CFG = {
    "sub": "أما المشروبات المحلّاة، فبنسب متدرجة حسب كمية السكر، ومشروبات الدايت معفاة.",
    "chips": [
     {
-     "t": 56.925,
+     "t": 54.602,
      "text": "نسب متدرجة حسب كمية السكر"
     },
     {
-     "t": 61.761,
+     "t": 58.481,
      "text": "مشروبات الدايت: معفاة ✓"
     }
    ],
@@ -817,13 +840,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 56.075,
+     "t": 53.752,
      "z": 1.0,
      "x": 0.5,
      "y": 0.55
     },
     {
-     "t": 64.661,
+     "t": 61.381,
      "z": 1.1,
      "x": 0.5,
      "y": 0.55
@@ -847,28 +870,28 @@ var CFG = {
    "fx": {
     "cubes": [
      {
-      "t": 57.325,
+      "t": 55.002,
       "x": 175,
       "y": 1300
      },
      {
-      "t": 57.675,
+      "t": 55.352,
       "x": 420,
       "y": 1300
      },
      {
-      "t": 58.025,
+      "t": 55.702,
       "x": 665,
       "y": 1300
      },
      {
-      "t": 58.375,
+      "t": 56.052,
       "x": 905,
       "y": 1300
      }
     ],
     "ring": {
-     "t": 61.761,
+     "t": 58.481,
      "x": 1015,
      "y": 1070
     }
@@ -878,17 +901,17 @@ var CFG = {
     "top": 600,
     "items": [
      {
-      "t": 56.405,
+      "t": 54.082,
       "art": "juice",
       "label": "مشروبات محلّاة"
      },
      {
-      "t": 59.971,
+      "t": 57.337,
       "art": "sugar",
       "label": "حسب السكر"
      },
      {
-      "t": 62.076,
+      "t": 59.209,
       "art": "zerocan",
       "label": "دايت: معفاة"
      }
@@ -897,10 +920,10 @@ var CFG = {
   },
   {
    "n": 10,
-   "start": 64.161,
-   "end": 73.992,
-   "voice": 64.511,
-   "voice_end": 73.492,
+   "start": 60.881,
+   "end": 70.143,
+   "voice": 61.231,
+   "voice_end": 69.643,
    "img": "media/excise/s10.jpg",
    "kb": [
     1.0,
@@ -912,26 +935,26 @@ var CFG = {
    "sub": "مثال افتراضي: إذا انتقلت الضريبة كاملةً إلى المستهلك، فعلبة طاقة بـ500 فلس قد تصبح بدينار كامل.",
    "chips": [
     {
-     "t": 64.911,
+     "t": 61.631,
      "text": "إذا انتقلت الضريبة كاملةً للمستهلك"
     }
    ],
    "badge": null,
    "counter": {
-    "t0": 69.451,
-    "t1": 73.142,
+    "t0": 65.858,
+    "t1": 69.293,
     "a": 500,
     "b": 1000
    },
    "cam": [
     {
-     "t": 64.161,
+     "t": 60.881,
      "z": 1.0,
      "x": 0.45,
      "y": 0.42
     },
     {
-     "t": 74.492,
+     "t": 70.643,
      "z": 1.12,
      "x": 0.5,
      "y": 0.4
@@ -955,18 +978,18 @@ var CFG = {
    "fx": {},
    "trans": "circle",
    "shake": [
-    73.192
+    69.343
    ],
    "inserts": {
     "top": 1000,
     "items": [
      {
-      "t": 69.261,
+      "t": 65.501,
       "art": "can_energy",
       "label": "500 فلس"
      },
      {
-      "t": 72.268,
+      "t": 68.493,
       "art": "banknote",
       "label": "1 دينار"
      }
@@ -975,10 +998,10 @@ var CFG = {
   },
   {
    "n": 11,
-   "start": 73.992,
-   "end": 85.215,
-   "voice": 74.342,
-   "voice_end": 84.715,
+   "start": 70.143,
+   "end": 79.601,
+   "voice": 70.493,
+   "voice_end": 79.101,
    "img": "media/excise/s11.jpg",
    "kb": [
     1.04,
@@ -990,15 +1013,15 @@ var CFG = {
    "sub": "الهدف تقليل استهلاك هذه السلع، وتنويع الإيرادات بعيداً عن النفط. وقدّرت وزيرة المالية السابقة العائد بنحو 200 مليون دينار سنوياً.",
    "chips": [
     {
-     "t": 74.742,
+     "t": 70.893,
      "text": "تقليل الاستهلاك"
     },
     {
-     "t": 77.454,
+     "t": 73.075,
      "text": "تنويع الإيرادات"
     },
     {
-     "t": 80.773,
+     "t": 75.83,
      "text": "نحو 200 مليون د.ك سنوياً (تقدير)"
     }
    ],
@@ -1006,25 +1029,25 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 73.992,
+     "t": 70.143,
      "z": 1.32,
      "x": 0.5,
      "y": 0.26
     },
     {
-     "t": 77.25399999999999,
+     "t": 72.875,
      "z": 1.36,
      "x": 0.5,
      "y": 0.26
     },
     {
-     "t": 78.354,
+     "t": 73.97500000000001,
      "z": 1.3,
      "x": 0.5,
      "y": 0.76
     },
     {
-     "t": 85.715,
+     "t": 80.101,
      "z": 1.24,
      "x": 0.5,
      "y": 0.74
@@ -1047,16 +1070,16 @@ var CFG = {
    },
    "fx": {
     "coinrain": {
-     "t0": 77.954,
-     "t1": 85.715,
-     "burst": 80.773,
+     "t0": 73.575,
+     "t1": 80.101,
+     "burst": 75.83,
      "x": 380,
      "y": 1430
     },
     "hearts": {
      "x": 560,
      "y": 330,
-     "t1": 78.354
+     "t1": 73.97500000000001
     }
    },
    "trans": "slide",
@@ -1064,17 +1087,17 @@ var CFG = {
     "top": 720,
     "items": [
      {
-      "t": 74.262,
+      "t": 70.413,
       "art": "cansdown",
       "label": "استهلاك أقل"
      },
      {
-      "t": 78.05,
+      "t": 73.97,
       "art": "barrel",
       "label": "بعيداً عن النفط"
      },
      {
-      "t": 82.6,
+      "t": 77.331,
       "art": "money",
       "label": "~200 مليون د.ك"
      }
@@ -1083,10 +1106,10 @@ var CFG = {
   },
   {
    "n": 12,
-   "start": 85.215,
-   "end": 93.697,
-   "voice": 85.565,
-   "voice_end": 93.197,
+   "start": 79.601,
+   "end": 87.948,
+   "voice": 79.951,
+   "voice_end": 87.448,
    "img": "media/excise/s12.jpg",
    "kb": [
     1.0,
@@ -1098,11 +1121,11 @@ var CFG = {
    "sub": "متى يبدأ التطبيق؟ لم يُعلن موعد بعد. فالتطبيق يحتاج قانوناً محلياً يحدد الآلية والإجراءات.",
    "chips": [
     {
-     "t": 87.265,
+     "t": 81.651,
      "text": "الموعد: لم يُعلن بعد"
     },
     {
-     "t": 89.763,
+     "t": 84.074,
      "text": "يحتاج قانوناً محلياً"
     }
    ],
@@ -1110,13 +1133,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 85.215,
+     "t": 79.601,
      "z": 1.0,
      "x": 0.5,
      "y": 0.45
     },
     {
-     "t": 94.197,
+     "t": 88.448,
      "z": 1.08,
      "x": 0.5,
      "y": 0.45
@@ -1139,7 +1162,7 @@ var CFG = {
      }
     ],
     "pending": {
-     "t": 85.565
+     "t": 79.951
     }
    },
    "trans": "zoom",
@@ -1147,12 +1170,12 @@ var CFG = {
     "top": 600,
     "items": [
      {
-      "t": 89.915,
+      "t": 84.331,
       "art": "law",
       "label": "قانون محلي"
      },
      {
-      "t": 91.474,
+      "t": 85.731,
       "art": "gears",
       "label": "الإجراءات"
      }
@@ -1161,10 +1184,10 @@ var CFG = {
   },
   {
    "n": 13,
-   "start": 93.697,
-   "end": 101.329,
-   "voice": 94.047,
-   "voice_end": 100.829,
+   "start": 87.948,
+   "end": 95.565,
+   "voice": 88.298,
+   "voice_end": 95.065,
    "img": "media/excise/s13.jpg",
    "kb": [
     1.0,
@@ -1176,15 +1199,15 @@ var CFG = {
    "sub": "ما لا نعرفه بعد: موعد التطبيق، والنسب النهائية في الكويت، وكم سترتفع الأسعار فعلياً.",
    "chips": [
     {
-     "t": 96.082,
+     "t": 90.328,
      "text": "١. موعد التطبيق"
     },
     {
-     "t": 97.777,
+     "t": 92.02,
      "text": "٢. النسب النهائية في الكويت"
     },
     {
-     "t": 99.608,
+     "t": 93.847,
      "text": "٣. الأثر الفعلي على الأسعار"
     }
    ],
@@ -1192,13 +1215,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 93.697,
+     "t": 87.948,
      "z": 1.0,
      "x": 0.5,
      "y": 0.5
     },
     {
-     "t": 101.829,
+     "t": 96.065,
      "z": 1.07,
      "x": 0.5,
      "y": 0.5
@@ -1235,17 +1258,17 @@ var CFG = {
     "top": 1110,
     "items": [
      {
-      "t": 95.327,
+      "t": 89.758,
       "art": "calendar:؟",
       "label": "الموعد"
      },
      {
-      "t": 97.616,
+      "t": 92.468,
       "art": "kwskyline",
       "label": "النسب في الكويت"
      },
      {
-      "t": 98.723,
+      "t": 93.354,
       "art": "pricetag_up",
       "label": "الأسعار"
      }
@@ -1254,10 +1277,140 @@ var CFG = {
   },
   {
    "n": 14,
-   "start": 101.329,
-   "end": 108.005,
-   "voice": 101.679,
-   "voice_end": 105.005,
+   "start": 95.565,
+   "end": 112.959,
+   "voice": 95.915,
+   "voice_end": 112.459,
+   "img": "media/excise/s03.jpg",
+   "kb": [
+    1.0,
+    1.08,
+    0.5,
+    0.62
+   ],
+   "head": "هل هي خطوة إيجابية؟",
+   "sub": "هل هي خطوة إيجابية؟ منظمة الصحة العالمية توصي بمثل هذه الضرائب، والسعودية والإمارات تطبقانها منذ 2017، وفي المكسيك انخفض شراء المشروبات المحلّاة بعد فرض الضريبة.",
+   "chips": [],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 95.565,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.62
+    },
+    {
+     "t": 113.459,
+     "z": 1.08,
+     "x": 0.5,
+     "y": 0.62
+    }
+   ],
+   "layers": null,
+   "fx": {},
+   "trans": "slide",
+   "inserts": {
+    "top": 600,
+    "items": [
+     {
+      "t": 97.355,
+      "art": "globehealth",
+      "label": "توصية أممية"
+     },
+     {
+      "t": 103.695,
+      "art": "calendar:2017",
+      "label": "منذ 2017"
+     },
+     {
+      "t": 108.345,
+      "art": "cansdown",
+      "label": "شراء أقل"
+     }
+    ]
+   }
+  },
+  {
+   "n": 15,
+   "start": 112.959,
+   "end": 128.412,
+   "voice": 113.309,
+   "voice_end": 127.912,
+   "img": "media/excise/s11.jpg",
+   "kb": [
+    1.0,
+    1.1,
+    0.5,
+    0.5
+   ],
+   "head": "تقييم الجريدة",
+   "sub": "تقدير الجريدة: الخطوة إيجابية من حيث المبدأ — صحة أفضل وإيرادات غير نفطية — بشرط قانون محلي واضح وتطبيق متدرج ومراعاة أصحاب الدخل المحدود.",
+   "chips": [
+    {
+     "t": 113.659,
+     "text": "صحة أفضل"
+    },
+    {
+     "t": 117.69,
+     "text": "إيرادات غير نفطية"
+    },
+    {
+     "t": 121.487,
+     "text": "لم يصدر القانون المحلي بعد"
+    }
+   ],
+   "badge": null,
+   "counter": null,
+   "cam": [
+    {
+     "t": 112.959,
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "t": 128.912,
+     "z": 1.1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "layers": {
+    "bg": "media/excise/layers/s11_bg.jpg",
+    "parts": [
+     {
+      "src": "media/excise/layers/s11_fg0.webp",
+      "x": 134,
+      "y": 1338,
+      "w": 493,
+      "h": 563,
+      "area": 0.0696,
+      "amp": 0.9,
+      "ph": 10.5
+     }
+    ]
+   },
+   "fx": {},
+   "trans": "zoom",
+   "inserts": {
+    "top": 1060,
+    "items": [
+     {
+      "t": 115.123,
+      "art": "scalecheck",
+      "label": "إيجابية بشروط"
+     }
+    ]
+   },
+   "op": true
+  },
+  {
+   "n": 16,
+   "start": 128.412,
+   "end": 135.42,
+   "voice": 128.762,
+   "voice_end": 132.42,
    "img": "media/excise/s14.jpg",
    "kb": [
     1.0,
@@ -1272,13 +1425,13 @@ var CFG = {
    "counter": null,
    "cam": [
     {
-     "t": 101.329,
+     "t": 128.412,
      "z": 1.0,
      "x": 0.5,
      "y": 0.4
     },
     {
-     "t": 108.505,
+     "t": 135.92,
      "z": 1.08,
      "x": 0.5,
      "y": 0.4
@@ -1293,7 +1446,7 @@ var CFG = {
      "h": 330
     }
    },
-   "trans": "slide"
+   "trans": "circle"
   }
  ],
  "geo": {
@@ -1489,6 +1642,7 @@ var CFG = {
   var head=document.getElementById('head'), chips=document.getElementById('chips'), badge=document.getElementById('badge'),
       counter=document.getElementById('counter'), sub=document.getElementById('sub'), title=document.getElementById('title'),
       outro=document.getElementById('outro'), bar=document.getElementById('bar'), disc=document.getElementById('disc'), grain=document.getElementById('grain');
+  var opb=document.getElementById('opb');
   var cur=-1, chipEls=[];
   function sceneAt(t){ for(var i=CFG.scenes.length-1;i>=0;i--){ if(t>=CFG.scenes[i].start) return i; } return 0; }
   function shakeAt(s,t){ var dx=0,dy=0; (s.shake||[]).forEach(function(te){ var u=t-te; if(u>=0&&u<0.5){ var A=20*Math.exp(-8*u); dx+=A*Math.sin(70*u); dy+=A*Math.cos(53*u); } }); return [dx,dy]; }
@@ -1533,6 +1687,7 @@ var CFG = {
       R.items.forEach(function(it){ var k=(t-it.t)/0.42; it.el.style.opacity=(clamp(k*2.2,0,1)*hout).toFixed(3); var fl=6*Math.sin(2*Math.PI*0.5*t+it.k*1.3);
         it.el.style.transform='translateY('+((1-ease(k))*50+fl).toFixed(1)+'px) scale('+(0.55+0.45*easeOutBack(k)).toFixed(3)+') rotate('+((k<1?(1-clamp(k,0,1))*(it.k%2?8:-8):0)+1.2*Math.sin(1.7*t+it.k)).toFixed(2)+'deg)'; }); });
     renderMap(t,i,hout);
+    opb.style.opacity = s.op ? Math.min(hp,hout) : 0;
     head.style.opacity = s.head ? Math.min(hp,hout) : 0;
     head.style.transform='translateY('+((1-hp)*40).toFixed(1)+'px) scale('+(0.92+0.08*easeOutBack(hp)).toFixed(3)+')';
     chipEls.forEach(function(c){ var k=(t-c.t)/0.32; var o=clamp(k,0,1)*hout; c.el.style.opacity=o; c.el.style.transform='scale('+(0.8+0.2*easeOutBack(k)).toFixed(3)+')'; });
@@ -1544,10 +1699,10 @@ var CFG = {
       counter.querySelector('.num').style.color = kk>=1 ? '#e0703f' : '#0f6b6b';
     } else counter.style.opacity=0;
     var so=Math.min(ease((t-s.voice+0.15)/0.3), 1-ease((t-(s.voice_end+0.35))/0.3));
-    sub.style.opacity = (s.n===2||s.n===14) ? 0 : so;
+    sub.style.opacity = (s.n===2||s.n===16) ? 0 : so;
     title.style.opacity = (s.n===2) ? Math.min(ease((t-s.start-0.1)/0.4), 1-ease((t-(s.end-0.3))/0.3)) : 0;
     title.style.transform='scale('+(0.94+0.06*ease((t-s.start)/0.6)).toFixed(3)+')';
-    outro.style.opacity = (s.n===14) ? ease((t-s.start-0.2)/0.6) : 0;
+    outro.style.opacity = (s.n===16) ? ease((t-s.start-0.2)/0.6) : 0;
     disc.style.opacity = (s.n===1) ? 1 : 0;
     bar.style.width=(100*t/CFG.total).toFixed(2)+'%';
     var gi=Math.floor(t*25); grain.style.transform='translate('+Math.round(rnd(gi)*64-32)+'px,'+Math.round(rnd(gi+999)*64-32)+'px)';

@@ -1,0 +1,197 @@
+<title>منظومة المستشارين</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+/* تخطيط: وثيقة مرجعية عمود واحد RTL، بطاقات فريق شبكية، وجداول مهام */
+:root{
+  --bg:#f6f8f7; --surface:#ffffff; --ink:#1c2522; --muted:#5c6b66;
+  --line:#dde5e2; --accent:#0e6b5c; --accent-soft:#e3f0ec;
+  --up:#177245; --down:#b3362c; --warn:#9a6a00; --chip:#eef3f1;
+  --display:"Changa","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#101613; --surface:#18201c; --ink:#e8efec; --muted:#9bada6;
+  --line:#2a3530; --accent:#46bda3; --accent-soft:#1c2f2a;
+  --up:#4cc47e; --down:#e07a6e; --warn:#d9a93f; --chip:#1f2a26;
+  color-scheme: dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#101613; --surface:#18201c; --ink:#e8efec; --muted:#9bada6;
+  --line:#2a3530; --accent:#46bda3; --accent-soft:#1c2f2a;
+  --up:#4cc47e; --down:#e07a6e; --warn:#d9a93f; --chip:#1f2a26;
+  color-scheme: dark;
+}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body);
+  line-height:1.75; font-size:16px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 48px;
+}
+.wrap{max-width:900px; margin-inline:auto; direction:rtl; text-align:right}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--display); line-height:1.3; text-wrap:balance; margin:0}
+h1{font-size:clamp(30px,6vw,44px); font-weight:800}
+h2{font-size:clamp(21px,3.5vw,26px); font-weight:700; margin-block:40px 14px;
+   padding-top:28px; border-top:1px solid var(--line)}
+h2 .sec{color:var(--accent); font-weight:600; font-size:.6em; display:block; letter-spacing:.08em}
+p{margin:.4em 0}
+header.hero{padding-block:40px 8px}
+.kicker{color:var(--accent); font-family:var(--display); font-weight:600; letter-spacing:.05em}
+.lede{color:var(--muted); max-width:62ch; font-size:17px}
+.status{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; padding:0; list-style:none}
+.status li{background:var(--surface); border:1px solid var(--line); border-radius:999px;
+  padding:4px 14px; font-size:13.5px; color:var(--muted)}
+.status b{color:var(--ink); font-weight:700}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:10px; margin-top:16px}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:14px 16px; min-width:0; display:flex; flex-direction:column; gap:4px}
+.card .name{font-family:var(--display); font-weight:700; font-size:17.5px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+.card .role{color:var(--muted); font-size:13.5px; line-height:1.65}
+.tag{font-size:11px; font-weight:500; color:var(--accent); background:var(--accent-soft);
+  border-radius:4px; padding:1px 7px; white-space:nowrap}
+.tag.veto{color:var(--down); background:transparent; border:1px solid currentColor}
+.mgmt{border-inline-start:3px solid var(--accent)}
+ol.proto{margin:14px 0 0; padding-inline-start:0; list-style:none; counter-reset:step; display:grid; gap:10px}
+ol.proto li{counter-increment:step; background:var(--surface); border:1px solid var(--line);
+  border-radius:10px; padding:12px 16px; display:grid; grid-template-columns:auto 1fr; gap:14px; min-width:0}
+ol.proto li::before{content:counter(step,arabic-indic); font-family:var(--display); font-weight:800;
+  font-size:22px; color:var(--accent); line-height:1.2}
+ol.proto b{font-family:var(--display); font-weight:700}
+ol.proto span{display:block; color:var(--muted); font-size:14px}
+table{width:100%; border-collapse:collapse; font-size:14.5px; background:var(--surface);
+  border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.tblwrap{overflow-x:auto; margin-top:16px; border-radius:10px}
+th{font-family:var(--display); font-weight:700; text-align:right; background:var(--chip);
+  padding:9px 14px; border-bottom:1px solid var(--line); white-space:nowrap}
+td{padding:9px 14px; border-bottom:1px solid var(--line); vertical-align:top}
+tr:last-child td{border-bottom:0}
+td .en{direction:ltr; unicode-bidi:isolate; font-variant-numeric:tabular-nums}
+.pill{display:inline-block; font-size:12px; font-weight:500; border-radius:999px; padding:1px 10px; white-space:nowrap}
+.pill.on{color:var(--up); background:color-mix(in srgb, var(--up) 12%, transparent)}
+.pill.wait{color:var(--warn); background:color-mix(in srgb, var(--warn) 14%, transparent)}
+ul.clean{margin:10px 0 0; padding-inline-start:22px}
+ul.clean li{margin-block:6px}
+.check{list-style:none; padding:0; margin:14px 0 0; display:grid; gap:8px}
+.check li{background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:11px 14px; display:flex; gap:10px; align-items:baseline; min-width:0; flex-wrap:wrap}
+.check .st{font-size:12.5px; font-weight:700; width:72px; flex:none}
+.done .st{color:var(--up)} .todo .st{color:var(--warn)}
+code,.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:.92em;
+  direction:ltr; unicode-bidi:isolate; background:var(--chip); border-radius:5px; padding:1px 7px}
+.note{background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius:10px; padding:12px 16px; margin-top:16px; font-size:14.5px}
+.warnbox{border-color:color-mix(in srgb, var(--warn) 45%, transparent);
+  background:color-mix(in srgb, var(--warn) 9%, var(--surface))}
+footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+  color:var(--muted); font-size:13px}
+@media (prefers-reduced-motion: no-preference){
+  .card{transition:border-color .15s} .card:hover{border-color:var(--accent)}
+}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">أدفايزرز · السوق الأمريكي</div>
+  <h1>منظومة المستشارين</h1>
+  <p class="lede">سبعة عشر مستشاراً لكل واحد اسمه ودوره: يتناظرون على السهم من كل زاوية، والقاضي يزن الحجج ويرتب لك الخيارات — والقرار الأخير لك وحدك. ومعهم مهام مجدولة ترسل خلاصاتها إلى قروب تيليجرام «Invest».</p>
+  <ul class="status">
+    <li><b>٧٦٥</b> سهماً متوافقاً اليوم من أصل ١٧٠٧</li>
+    <li><b>٣</b> مهام مجدولة حية</li>
+    <li><b>٦٣</b> اختباراً برمجياً ناجحاً</li>
+    <li>متبقي خطوة تيليجرام الأخيرة</li>
+  </ul>
+</header>
+
+<h2><span class="sec">١</span> فريق المناظرة — ١٥ مستشاراً</h2>
+<p class="lede">الجلسة الكاملة تجمعهم كلهم، والجلسة السريعة تكتفي بالموسومين «سريع». كل مستشار ملف مستقل في المستودع تقدر تطلب تعديل شخصيته أو عزله.</p>
+<div class="grid">
+  <div class="card"><div class="name">الفنّي <span class="tag">سريع</span></div><div class="role">الرسوم والمؤشرات: الاتجاه والزخم والتشبع والدعوم — يستند لأرقام حزمة المؤشرات نفسها.</div></div>
+  <div class="card"><div class="name">الأساسي <span class="tag">سريع</span></div><div class="role">القوائم المالية: الأرباح والمكررات والنمو والديون والتقييم العادل.</div></div>
+  <div class="card"><div class="name">الثور <span class="tag">سريع</span></div><div class="role">محامي الشراء: يبني أقوى قضية صعود ويدافع عنها حتى النهاية.</div></div>
+  <div class="card"><div class="name">الدب <span class="tag">سريع</span></div><div class="role">محامي الحذر: يفكك قضية الشراء ويسأل دائماً «كم نخسر لو أخطأنا؟».</div></div>
+  <div class="card"><div class="name">الرقيب الشرعي <span class="tag">سريع</span> <span class="tag veto">فيتو</span></div><div class="role">يفحص توافق السهم مع النسب الشرعية، ورأيه يتصدر الحكم إذا السهم غير متوافق.</div></div>
+  <div class="card"><div class="name">حارس المحفظة <span class="tag">سريع</span></div><div class="role">إدارة المخاطر: حجم الصفقة ووقف الخسارة والتركز وأسوأ سيناريو.</div></div>
+  <div class="card"><div class="name">رصّاد الأخبار</div><div class="role">آخر الأخبار والمحفزات: نتائج وعقود وترقيات وتخفيضات وما هضمه السوق منها.</div></div>
+  <div class="card"><div class="name">الاستراتيجي الكلي</div><div class="role">الصورة الكبيرة: الفائدة والتضخم والنفط ودورة القطاعات وشهية المخاطرة.</div></div>
+  <div class="card"><div class="name">المضارب السريع</div><div class="role">فرص الأيام والأسابيع: زخم واختراقات ومستويات دخول وخروج بالأرقام.</div></div>
+  <div class="card"><div class="name">المستثمر الصبور</div><div class="role">نظرة السنوات: جودة الشركة وخندقها التنافسي وهامش الأمان لمن يحتفظ طويلاً.</div></div>
+  <div class="card"><div class="name">قارئ السيولة</div><div class="role">الأحجام والتدفقات: هل الحركة مدعومة بسيولة حقيقية وهل الخروج سهل؟</div></div>
+  <div class="card"><div class="name">محلل القطاع</div><div class="role">يقارن السهم بمنافسيه: إذا أعجبنا القطاع، هل هذا أفضل اسم فيه؟</div></div>
+  <div class="card"><div class="name">متتبع السياسيين</div><div class="role">إفصاحات تداولات الكونغرس: الأنشط والمبالغ الكبيرة والتجمع على قطاع — مع التذكير أن الإفصاح يتأخر حتى ٤٥ يوماً.</div></div>
+  <div class="card"><div class="name">متتبع الحيتان</div><div class="role">محافظ كبار المستثمرين من ملفاتهم الرسمية ربع السنوية: من دخل جديداً ومن خرج ومن زاد.</div></div>
+  <div class="card"><div class="name">صائد المظلومات</div><div class="role">شركات قوية انضرب سهمها بإشاعة أو خبر عابر: يفرز المظلوم من المذنب بالأدلة.</div></div>
+</div>
+<h3 style="margin-top:22px; font-size:18px">الإدارة</h3>
+<div class="grid">
+  <div class="card mgmt"><div class="name">القاضي</div><div class="role">بلا رأي مسبق: يزن الحجج بعد المناظرة، يبرز الإجماع والخلاف، ويرتب لك خيارين أو ثلاثة بشروطها ومخاطرها ودرجة الثقة.</div></div>
+  <div class="card mgmt"><div class="name">أمين السجل</div><div class="role">يوثق كل جلسة وتوصية في سجل دائم، ولاحقاً نقيس: من صدقت توقعاته يكسب وزناً أكبر.</div></div>
+</div>
+
+<h2><span class="sec">٢</span> بروتوكول المجلس</h2>
+<p class="lede">تناديه بجملة مثل «شغّل المجلس على سهم إنفيديا» أو بالأمر <code>/majlis NVDA</code>، وتضيف «سريع» إذا تبي جلسة مختصرة.</p>
+<ol class="proto">
+  <li><div><b>ملف الحقائق</b><span>قبل أي نقاش تنجمع بيانات السهم: الأسعار والمؤشرات والماليات والأخبار وحالة الشرعية وتداولات الكونغرس ومواقف الحيتان — في ملف واحد يوزع على الجميع، وممنوع الاستشهاد برقم من خارجه.</span></div></li>
+  <li><div><b>جولة الأطروحات</b><span>كل مستشار بالتوازي: رأيه (شراء / انتظار / بيع)، درجة من −١٠ إلى +١٠، ثلاث حجج بالأرقام، وأكبر خطر يعترف به، ومتى يثبت خطؤه.</span></div></li>
+  <li><div><b>جولة المناظرة</b><span>كل واحد يقرأ آراء الباقين، يدافع عن موقفه، ويهاجم أضعف حجة مخالفة باسمها — وله أن يعدل درجته إذا أقنعه خصمه.</span></div></li>
+  <li><div><b>حكم القاضي</b><span>لوحة الآراء، أقوى حجة مع وأقوى حجة ضد، نقاط الإجماع والخلاف، ثم خيارات عملية مرتبة بثقة كل منها — بلا قرار نهائي: القرار لك.</span></div></li>
+  <li><div><b>التوثيق</b><span>التقرير الكامل يُحفظ في المستودع، وسطر ملخص في سجل التوصيات لمتابعة دقة كل مستشار مع الوقت.</span></div></li>
+</ol>
+
+<h2><span class="sec">٣</span> الفحص الشرعي الآلي</h2>
+<ul class="clean">
+  <li><b>فلتر النشاط:</b> استبعاد البنوك والتأمين التقليدي والخمور والتبغ والقمار، وتحويل الأنشطة المختلطة (إعلام، فنادق، مطاعم، دفاع...) إلى خانة المراجعة.</li>
+  <li><b>فلتر النسب:</b> الديون ÷ القيمة السوقية أقل من ٣٠٪، والنقد والاستثمارات القصيرة ÷ القيمة السوقية أقل من ٣٠٪ — والعتبات كلها في ملف إعدادات تعدلها متى شئت.</li>
+  <li><b>تصنيف ثلاثي:</b> متوافق / غير متوافق / يحتاج مراجعة، ولك «استثناءات يدوية» تفرض بها قرارك أو قرار مرجعك الشرعي على أي سهم.</li>
+  <li><b>طازج دائماً:</b> راصد الصباح وصائد المظلومات يعيدان حساب القائمة من بيانات اليوم نفسه في كل تشغيل.</li>
+</ul>
+<div class="note warnbox">أمانة: نسبة الإيراد المحرم الدقيقة غير متاحة من المصادر المجانية، فالفحص اجتهاد تقني تقريبي — الأنشطة المختلطة توضع في «يحتاج مراجعة» بدل ادعاء دقة غير موجودة، والقرار الشرعي النهائي لك ولمن تثق به.</div>
+
+<h2><span class="sec">٤</span> المهام المجدولة</h2>
+<div class="tblwrap"><table>
+  <tr><th>المهمة</th><th>موعدها</th><th>ماذا تفعل</th><th>الحالة</th></tr>
+  <tr>
+    <td><b>راصد الصباح</b></td>
+    <td>كل يوم تداول · ٩:٣٧ صباحاً نيويورك<br>(٥:٣٧ مساءً الكويت شتاءً)</td>
+    <td>أعلى ٥ رابحين و٥ خاسرين من الأسهم المتوافقة → رسالة للقروب. يتخطى العطل، ويعتذر برسالة إذا تعطل المصدر.</td>
+    <td><span class="pill wait">بانتظار تيليجرام</span></td>
+  </tr>
+  <tr>
+    <td><b>الحارس العاجل</b></td>
+    <td>كل ساعة · ٧ص–٨م نيويورك<br>أيام التداول</td>
+    <td>يفحص أخبار محفظتك وقائمة متابعتك: خبر سلبي جوهري على سهم تملكه → إنذار فوري؛ وخبر إيجابي قوي → فرصة. بحد ٣ رسائل بالساعة.</td>
+    <td><span class="pill wait">بانتظار تعبئة المحفظة</span></td>
+  </tr>
+  <tr>
+    <td><b>صائد المظلومات</b></td>
+    <td>كل جمعة · ٤:٤١ عصراً نيويورك<br>(بعد إغلاق السوق)</td>
+    <td>مسح كامل: هبوط حاد + أساسيات قوية + تحقيق إخباري يفرز سبب الهبوط → تقرير أسبوعي للقروب بمصادره.</td>
+    <td><span class="pill on">مجدول</span></td>
+  </tr>
+  <tr>
+    <td><b>المجلس</b></td>
+    <td>عند طلبك</td>
+    <td>مناظرة كاملة على أي سهم تسميه، بوضع سريع أو كامل، وتقريرها يُحفظ في المستودع.</td>
+    <td><span class="pill on">جاهز</span></td>
+  </tr>
+</table></div>
+
+<h2><span class="sec">٥</span> تشغيل تيليجرام — وين وصلنا</h2>
+<ul class="check">
+  <li class="done"><span class="st">✓ تم</span><span>حفظ توكن البوت في متغيرات البيئة باسم <code>TELEGRAM_BOT_TOKEN</code></span></li>
+  <li class="todo"><span class="st">⏳ باقي</span><span><b>الطريق الأسهل:</b> افتح محادثة البوت <span class="mono">@B_Investbot</span> نفسها (نفس مكان رسائل بورتفوليو ٣) وأرسل فيها أي كلمة — وتوصلك التقارير هناك مباشرة بلا قروب. <b>أو</b> أنشئ قروباً جديداً وأضف البوت عضواً فيه وأرسل رسالة.</span></li>
+  <li class="todo"><span class="st">⏳ باقي</span><span>بعد جولة التفعيل بتوصلك رسالة في القروب فيها سطر <code>TELEGRAM_CHAT_ID=...</code> — انسخه سطراً ثانياً في نفس نافذة المتغيرات واحفظ، وينثبت الربط نهائياً</span></li>
+</ul>
+<div class="note">بوتك نفسه يخدم مشروع «بورتفوليو ٣» في نفس القروب؟ لا بأس — الإرسال من نظامين عبر بوت واحد يعمل بلا تعارض.</div>
+
+<h2><span class="sec">٦</span> حدود المنظومة</h2>
+<ul class="clean">
+  <li>لا تنفذ المنظومة أي صفقة تلقائياً، ولا تملك صلاحية أمر تداول — هي تحليل وتنبيه فقط.</li>
+  <li>إفصاحات السياسيين وملفات الحيتان تصدر متأخرة بطبيعتها القانونية (حتى ٤٥ يوماً) — إشارات اتجاه لا توقيت.</li>
+  <li>التنبيهات العاجلة دورية (كل ساعة) لا لحظية بالثواني، وأسعار المصادر المجانية قد تتأخر دقائق.</li>
+  <li>كل ما يصدر عن المستشارين آراء تحليلية للمعلومة، وليست نصيحة مالية — القرار قرارك.</li>
+</ul>
+
+<footer>تعدّل أي شيء في هذه الصفحة أو المنظومة بجملة واحدة لكلود: أضف مستشاراً، غيّر وقتاً، شدد عتبة، أو بدّل قروباً. · فرع التطوير: <span class="mono">claude/vibrant-mayer-mu1ifg</span></footer>
+</div>

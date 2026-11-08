@@ -1,0 +1,164 @@
+<title>نتائج المستشارين</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+/* تخطيط: لوحة نتائج RTL — الصباح ثم المظلومون ثم أحكام المجلس */
+:root{
+  --bg:#f6f8f7; --surface:#ffffff; --ink:#1c2522; --muted:#5c6b66;
+  --line:#dde5e2; --accent:#0e6b5c; --accent-soft:#e3f0ec;
+  --up:#177245; --down:#b3362c; --warn:#9a6a00; --chip:#eef3f1;
+  --display:"Changa","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#101613; --surface:#18201c; --ink:#e8efec; --muted:#9bada6;
+  --line:#2a3530; --accent:#46bda3; --accent-soft:#1c2f2a;
+  --up:#4cc47e; --down:#e07a6e; --warn:#d9a93f; --chip:#1f2a26;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#101613; --surface:#18201c; --ink:#e8efec; --muted:#9bada6;
+  --line:#2a3530; --accent:#46bda3; --accent-soft:#1c2f2a;
+  --up:#4cc47e; --down:#e07a6e; --warn:#d9a93f; --chip:#1f2a26;
+  color-scheme:dark;
+}
+body{background:var(--bg); color:var(--ink); font-family:var(--body); line-height:1.75;
+  font-size:16px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 48px}
+.wrap{max-width:920px; margin-inline:auto; direction:rtl; text-align:right}
+h1,h2,h3{font-family:var(--display); line-height:1.3; text-wrap:balance; margin:0}
+h1{font-size:clamp(28px,6vw,42px); font-weight:800}
+h2{font-size:clamp(20px,3.5vw,25px); font-weight:700; margin-block:38px 6px}
+h2 small{color:var(--muted); font-weight:500; font-size:.58em; display:block}
+p{margin:.4em 0}
+header{padding-block:36px 6px; border-bottom:1px solid var(--line); margin-bottom:4px}
+.kicker{color:var(--accent); font-family:var(--display); font-weight:600}
+.updated{color:var(--muted); font-size:13.5px; margin-top:6px}
+.disclaimer{font-size:12.5px; color:var(--muted); background:var(--chip);
+  border-radius:8px; padding:7px 12px; display:inline-block; margin-top:10px}
+.cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:12px; margin-top:12px}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; min-width:0}
+.panel h3{font-size:15.5px; padding:10px 16px; border-bottom:1px solid var(--line); background:var(--chip)}
+.row{display:flex; align-items:baseline; gap:10px; padding:9px 16px; border-bottom:1px solid var(--line); min-width:0}
+.row:last-child{border-bottom:0}
+.tkr{font-family:var(--mono); font-weight:700; font-size:15px; direction:ltr; unicode-bidi:isolate; width:58px; flex:none}
+.co{color:var(--muted); font-size:12.5px; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.chg{font-family:var(--mono); font-weight:700; font-size:14px; direction:ltr; unicode-bidi:isolate; flex:none; font-variant-numeric:tabular-nums}
+.chg.up{color:var(--up)} .chg.down{color:var(--down)}
+.px{color:var(--muted); font-family:var(--mono); font-size:12.5px; direction:ltr; unicode-bidi:isolate; flex:none; font-variant-numeric:tabular-nums}
+.cards{display:grid; gap:12px; margin-top:14px}
+.mcard{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px; min-width:0}
+.mhead{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px}
+.mhead .tkr{width:auto; font-size:18px}
+.mhead .nm{font-weight:700}
+.badge{font-size:12px; font-weight:700; border-radius:999px; padding:2px 12px; white-space:nowrap}
+.badge.go{color:var(--accent); background:var(--accent-soft)}
+.badge.mid{color:var(--warn); background:color-mix(in srgb,var(--warn) 13%,transparent)}
+.stats{display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:8px; font-size:13px; color:var(--muted)}
+.stats b{color:var(--ink); font-variant-numeric:tabular-nums}
+.drop{color:var(--down); font-weight:700}
+.why{margin-top:10px; font-size:14.5px; border-top:1px dashed var(--line); padding-top:10px}
+.why .src{color:var(--muted); font-size:12.5px}
+.excluded{font-size:13.5px; color:var(--muted); background:var(--chip); border-radius:10px; padding:10px 16px; margin-top:12px}
+.empty{background:var(--surface); border:1px dashed var(--line); border-radius:12px;
+  padding:26px 20px; text-align:center; color:var(--muted); margin-top:14px}
+.empty b{color:var(--ink); font-family:var(--display)}
+.cta{display:inline-block; margin-top:10px; background:var(--accent-soft); color:var(--accent);
+  border-radius:999px; padding:5px 16px; font-weight:700; font-size:14px}
+code{font-family:var(--mono); font-size:.9em; direction:ltr; unicode-bidi:isolate;
+  background:var(--chip); border-radius:5px; padding:1px 7px}
+footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:13px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="kicker">أدفايزرز · السوق الأمريكي · أسهم متوافقة فقط</div>
+  <h1>نتائج المستشارين</h1>
+  <!--DATA:updated:start-->
+  <div class="updated">آخر تحديث: الأحد ٨ نوفمبر ٢٠٢٦ · الأسعار والتغيرات من إغلاق جلسة الجمعة ٦ نوفمبر</div>
+  <!--DATA:updated:end-->
+  <div class="disclaimer">⚠️ آراء تحليلية للمعلومة وليست توصية بيع أو شراء — القرار قرارك.</div>
+</header>
+
+<h2>📊 حركة آخر جلسة <small>أعلى الرابحين والخاسرين من ٧٦٥ سهماً متوافقاً — يحدَّث كل يوم تداول بعد الافتتاح</small></h2>
+<!--DATA:morning:start-->
+<div class="cols">
+  <div class="panel">
+    <h3>🟢 أعلى الرابحين</h3>
+    <div class="row"><span class="tkr">FROG</span><span class="co">JFrog — برمجيات مؤسسات</span><span class="chg up">+35.3%</span><span class="px">$61.4</span></div>
+    <div class="row"><span class="tkr">LASR</span><span class="co">nLIGHT — ليزر صناعي</span><span class="chg up">+29.6%</span><span class="px">$42.8</span></div>
+    <div class="row"><span class="tkr">TMDX</span><span class="co">TransMedics — أجهزة طبية</span><span class="chg up">+27.9%</span><span class="px">$147.1</span></div>
+    <div class="row"><span class="tkr">QNT</span><span class="co">Quantinuum — حوسبة كمية</span><span class="chg up">+26.0%</span><span class="px">$44.2</span></div>
+    <div class="row"><span class="tkr">IONQ</span><span class="co">IonQ — حوسبة كمية</span><span class="chg up">+23.4%</span><span class="px">$71.3</span></div>
+  </div>
+  <div class="panel">
+    <h3>🔴 أكبر الخاسرين</h3>
+    <div class="row"><span class="tkr">IRTC</span><span class="co">iRhythm — تقنية صحية</span><span class="chg down">-30.7%</span><span class="px">$121.5</span></div>
+    <div class="row"><span class="tkr">TEAM</span><span class="co">Atlassian — برمجيات</span><span class="chg down">-16.2%</span><span class="px">$128.0</span></div>
+    <div class="row"><span class="tkr">HALO</span><span class="co">Halozyme — أدوية</span><span class="chg down">-15.7%</span><span class="px">$54.3</span></div>
+    <div class="row"><span class="tkr">WK</span><span class="co">Workiva — برمجيات</span><span class="chg down">-14.9%</span><span class="px">$48.3</span></div>
+    <div class="row"><span class="tkr">NTRA</span><span class="co">Natera — تشخيص جيني</span><span class="chg down">-14.6%</span><span class="px">$102.6</span></div>
+  </div>
+</div>
+<!--DATA:morning:end-->
+
+<h2>🕵️ المظلومون المحتملون <small>شركات قوية الأساسيات انضرب سهمها — التحقيق الإخباري يحدد هل السبب عابر أم جوهري · يحدَّث كل جمعة</small></h2>
+<!--DATA:mazloum:start-->
+<p style="font-size:14px; color:var(--muted)">خلفية هذا الأسبوع: العناوين تُجمع أن موجة البيع سببها سياسي بالدرجة الأولى — فوز الديمقراطيين الكاسح أشعل مخاوف تنظيم مراكز البيانات، فانهارت أسهم الذاكرة والرقائق رغم نتائج أرباح قياسية، وزاد الطين بلة تفكيك صناديق الرافعة المالية.</p>
+<div class="cards">
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">WDC</span><span class="nm">Western Digital</span><span class="badge go">مظلوم محتمل — قوي</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−34%</b> بشهر</span><span>هامش صافٍ <b>69%</b></span><span>ديون <b>1%</b> فقط</span><span>السعر <b>$263.8</b></span></div>
+    <div class="why">العناوين تقولها حرفياً: «وول ستريت تراهن أن طلب تخزين الذكاء الاصطناعي سيتجاوز موجة بيع الانتخابات» — الهبوط سياسي/قطاعي، والشركة نفسها في ذروة هوامشها. <span class="src">المصدر: بنزينغا، داو جونز</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">STX</span><span class="nm">Seagate</span><span class="badge go">مظلوم محتمل — قوي</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−41%</b> بشهر</span><span>هامش صافٍ <b>32%</b></span><span>ديون <b>3%</b></span><span>السعر <b>$461.0</b></span></div>
+    <div class="why">إيرادات الربع قفزت <b>+61%</b> وسددت <b>1.2 مليار دولار</b> من ديونها — أرقام قياسية بينما السهم ينهار مع قطاعه. فجوة واضحة بين الشركة وسعرها. <span class="src">المصدر: زاكس، PR نيوزواير</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">SNDK</span><span class="nm">SanDisk</span><span class="badge go">مظلوم محتمل</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−48%</b> بشهر</span><span>هامش صافٍ <b>67%</b></span><span>ديون <b>0%</b></span><span>السعر <b>$835.1</b></span></div>
+    <div class="why">«مجزرة أسهم الرقائق» و«انهيار هوس الذاكرة» مع خسائر 7 مليارات في صناديق الرافعة — ذعر قطاع لا خبر شركة، وارتد +5.8% مع اقتراب تجزئة السهم 8 مقابل 1. انتبه: تذبذبه عنيف. <span class="src">المصدر: بنزينغا، غورو فوكس، بارونز</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">ALAB</span><span class="nm">Astera Labs</span><span class="badge go">مظلوم محتمل</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−49%</b> بشهر</span><span>هامش صافٍ <b>30%</b></span><span>ديون <b>0%</b></span><span>السعر <b>$190.7</b></span></div>
+    <div class="why">الهبوط مربوط بـ«مخاوف تنظيم مراكز البيانات» بينما مبيعات الرقائق العالمية +146.8% سنوياً، وبنك BMO بدأ تغطيته للتو بتوصية إيجابية كبيرة. <span class="src">المصدر: داو جونز، BMO عبر غورو فوكس</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">TER</span><span class="nm">Teradyne</span><span class="badge go">مظلوم محتمل</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−47%</b> بشهر</span><span>هامش صافٍ <b>27%</b></span><span>ديون <b>0%</b></span><span>السعر <b>$218.2</b></span></div>
+    <div class="why">انزلق مع القطاع بلا خبر سلبي خاص، والأقوى: كاثي وود أعلنت أنها <b>تشتريه بعد نتائج قوية</b> — حوت يلتقط ما يرميه السوق. <span class="src">المصدر: سيكينغ ألفا، ستوك تويتس</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">NTNX</span><span class="nm">Nutanix</span><span class="badge go">مظلوم محتمل</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−21%</b> بشهر</span><span>هامش صافٍ <b>53%</b></span><span>ديون <b>10%</b></span><span>السعر <b>$58.4</b></span></div>
+    <div class="why">صفر أخبار سلبية خلال أسبوعين — جوائز وشراكات فقط، وغوغنهايم حددت هدفاً عند <b>$100</b> (أعلى بـ71% من السعر الحالي). نزل مع موجة بيع البرمجيات العامة. <span class="src">المصدر: داو جونز، غلوب نيوزواير</span></div>
+  </div>
+  <div class="mcard">
+    <div class="mhead"><span class="tkr">FTNT</span><span class="nm">Fortinet</span><span class="badge mid">غير واضح — يحتاج نظرة</span></div>
+    <div class="stats"><span>الهبوط <b class="drop">−38%</b> بشهر</span><span>هامش صافٍ <b>29%</b></span><span>ديون <b>1%</b></span><span>السعر <b>$118.8</b></span></div>
+    <div class="why">جزء من «انهيار برمجيات المؤسسات» العام ومنتجات ذكاء اصطناعي جديدة مع إيكوينكس، لكن فيه إشارة لفجوة أرباح بعد النتائج — ما حسمت هل السوق يعاقب توجيهاتها أم القطاع كله. اطلب مجلساً عليه لو يهمك. <span class="src">المصدر: سيكينغ ألفا، زاكس</span></div>
+  </div>
+</div>
+<div class="excluded">🚫 <b>استُبعد بعد التحقيق:</b> STRL ‏(Sterling −54%) — التغطية تذكر صراحة «ضغوطاً على الهوامش ومخاطر تدفق نقدي» رغم رفع التوقعات، فالسبب جوهري لا إشاعة. <span style="opacity:.8">(المصدر: زاكس)</span></div>
+<!--DATA:mazloum:end-->
+
+<h2>⚖️ أحكام المجلس <small>خلاصة مناظرة المستشارين الـ15 وحكم القاضي بخياراته — تُضاف هنا جلسة بجلسة</small></h2>
+<!--DATA:majlis:start-->
+<div class="empty">
+  <b>ما انعقد المجلس بعد</b>
+  <p>أول جلسة بانتظار اختيارك للسهم. اقتراحات جاهزة من نتائج الأعلى: WDC أو STX (مظلوما التخزين) أو NVDA (حديث السوق كله).</p>
+  <span class="cta">قل لكلود: «شغّل المجلس على ...»</span>
+</div>
+<!--DATA:majlis:end-->
+
+<footer>
+  تتحدث هذه الصفحة تلقائياً: حركة السوق كل يوم تداول، والمظلومون كل جمعة، وأحكام المجلس فور انعقاده — ونسخة من كل تحديث تصلك على تيليجرام.
+  <br>المنهجية: فحص شرعي آلي (نشاط + ديون ونقد أقل من ٣٠٪ من القيمة السوقية) ثم تحليل متعدد المستشارين. لا تنفذ المنظومة أي صفقة.
+</footer>
+</div>

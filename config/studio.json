@@ -1,0 +1,39 @@
+{
+  "_comment": "استوديو المحتوى — طاقم شخصيات مجلس المستشارين على هيغزفيلد. job_id يُمرر كمرجع medias في التوليد للحفاظ على ثبات الشخصية عبر الحلقات.",
+  "style": {
+    "render": "stylized 3D character render in the style of a premium family animated feature film, appealing proportions, soft global illumination, three-point studio lighting, gentle rim light, high-end 3D animation studio quality",
+    "brand_accent": "deep teal-green",
+    "sheet_background": "warm ivory seamless studio background",
+    "image_model": "gpt_image_2_6",
+    "reel_aspect": "9:16",
+    "sheet_aspect": "16:9"
+  },
+  "cast": {
+    "thawr": {
+      "name_ar": "الثور",
+      "job_id": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
+      "identity": "cheerful charismatic cartoon bull, caramel-brown short fur, short polished upward-curving horns, warm amber eyes, big optimistic smile, tailored deep teal-green three-piece business suit, crisp white shirt, gold necktie with small gold upward-arrow lapel pin, dark leather oxford shoes"
+    },
+    "dubb": {
+      "name_ar": "الدب",
+      "job_id": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
+      "identity": "heavyset skeptical adult bear, thick charcoal-grey fur, round silver-rimmed glasses, raised skeptical eyebrow, slight unimpressed frown, tailored burgundy waistcoat over ivory shirt with rolled sleeves, dark grey trousers, small red downward-arrow lapel pin, brown leather brogues"
+    },
+    "qadhi": {
+      "name_ar": "القاضي",
+      "job_id": "2eca681d-ff13-4e5b-aa91-de119c245559",
+      "identity": "dignified wise elderly Arab Gulf judge in his late sixties, warm olive skin, neatly trimmed full white beard, kind but stern deep brown eyes, crisp white thobe, white ghutra with black agal, elegant black bisht cloak with gold trim, small golden balance scales, deep teal-green prayer beads"
+    },
+    "rassad": {
+      "name_ar": "رصّاد الأخبار",
+      "job_id": "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d",
+      "identity": "sleek sharp-eyed anthropomorphic peregrine falcon journalist, slate-grey and white barred feathers, piercing golden eyes, small black earpiece, khaki field press vest with many pockets over deep teal-green shirt, small tablet in hand"
+    }
+  },
+  "episode_template": {
+    "name_ar": "مجلس اليوم",
+    "duration_seconds": [60, 90],
+    "beats": ["افتتاحية السهم وأرقامه (رصّاد الأخبار)", "حجة الثور", "حجة الدب", "حكم القاضي وخياراته", "سؤال الجمهور: من أقنعك؟ 🐂🐻⚖️"],
+    "disclaimer_ar": "تحليل للمعلومة وليس توصية مالية — القرار قرارك"
+  }
+}

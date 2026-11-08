@@ -53,7 +53,8 @@ def find_candidates(
             continue
         roe = q.get("roe")
         drop = min(v for v in (p1m, p1w) if v is not None)
-        quality = margin + (roe or 0) / 2
+        # Cap ROE's contribution: near-zero equity makes ROE meaningless.
+        quality = margin + min(roe or 0, 100) / 2
         why = (
             f"هبوط {drop:.0f}% خلال شهر مع هامش ربح صافٍ {margin:.0f}%"
             + (f" وعائد على الحقوق {roe:.0f}%" if roe is not None else "")

@@ -15,7 +15,7 @@ import sys
 from typing import Optional
 
 from .quotes import load_rows
-from .screener import COMPLIANT, load_universe
+from .screener import COMPLIANT, load_config, load_universe, universe_from_rows
 
 
 def find_candidates(
@@ -77,6 +77,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     p.add_argument("--rows", action="append", required=True)
     p.add_argument("--universe", default="data/universe_us.csv")
+    p.add_argument("--fresh-universe", action="store_true",
+                   help="احسب القائمة الشرعية من صفوف اليوم نفسها بدل ملف المستودع")
+    p.add_argument("--screening-config", default="config/screening.json")
     p.add_argument("--top", type=int, default=8)
     p.add_argument("--max-perf-1m", type=float, default=-12.0)
     p.add_argument("--max-perf-1w", type=float, default=-8.0)
@@ -88,8 +91,12 @@ def main(argv: Optional[list[str]] = None) -> int:
     rows: list[dict] = []
     for path in args.rows:
         rows.extend(load_rows(path))
+    if args.fresh_universe:
+        universe = universe_from_rows(rows, load_config(args.screening_config))
+    else:
+        universe = load_universe(args.universe)
     cands = find_candidates(
-        rows, load_universe(args.universe),
+        rows, universe,
         args.max_perf_1m, args.max_perf_1w, args.min_margin,
         args.max_debt_ratio, args.min_dollar_volume, args.top,
     )

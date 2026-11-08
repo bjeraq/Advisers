@@ -127,6 +127,15 @@ def load_universe(path: str) -> dict[str, dict]:
         return {r["ticker"]: r for r in csv.DictReader(f)}
 
 
+def universe_from_rows(rows: list[dict], cfg: dict) -> dict[str, dict]:
+    """Screen fresh scan rows in memory: {ticker: result}, no file needed.
+
+    Lets scheduled sessions work from today's data without writing to the
+    repository; the committed CSV stays as a human-reviewable snapshot.
+    """
+    return {r["ticker"]: r for r in screen_rows(rows, cfg)}
+
+
 def summarize(results: list[dict]) -> str:
     counts = {COMPLIANT: 0, NON_COMPLIANT: 0, REVIEW: 0}
     for r in results:

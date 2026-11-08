@@ -20,10 +20,11 @@ from typing import Optional
 from .movers import top_movers
 from .quotes import load_rows
 from .report import format_failure_message, format_morning_message
-from .screener import load_universe
+from .screener import load_config, load_universe, universe_from_rows
 from .telegram import send_message
 
 HOLIDAYS_FILE = "config/market_holidays_us.json"
+SCREENING_CONFIG = "config/screening.json"
 
 
 def is_trading_day(day: date, holidays_file: str = HOLIDAYS_FILE) -> bool:
@@ -43,15 +44,19 @@ def build_message(
     top: int,
     min_dollar_volume: float,
     asof: Optional[str] = None,
+    fresh_universe: bool = False,
+    screening_config: str = SCREENING_CONFIG,
 ) -> str:
     rows: list[dict] = []
     for path in row_files:
         rows.extend(load_rows(path))
     if not rows:
         raise RuntimeError("ملفات الأسعار فاضية")
-    gainers, losers = top_movers(
-        rows, load_universe(universe_path), top, min_dollar_volume
-    )
+    if fresh_universe:
+        universe = universe_from_rows(rows, load_config(screening_config))
+    else:
+        universe = load_universe(universe_path)
+    gainers, losers = top_movers(rows, universe, top, min_dollar_volume)
     if not gainers and not losers:
         raise RuntimeError("ما طلع ولا سهم متوافق في البيانات")
     return format_morning_message(gainers, losers, asof)
@@ -63,6 +68,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--fail-reason", default=None,
                    help="أرسل رسالة اعتذار بهذا السبب بدل التقرير")
     p.add_argument("--universe", default="data/universe_us.csv")
+    p.add_argument("--fresh-universe", action="store_true",
+                   help="احسب القائمة الشرعية من صفوف اليوم نفسها بدل ملف المستودع")
+    p.add_argument("--screening-config", default=SCREENING_CONFIG)
     p.add_argument("--top", type=int, default=5)
     p.add_argument("--min-dollar-volume", type=float, default=10e6)
     p.add_argument("--asof", default=None)
@@ -89,7 +97,8 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     try:
         message = build_message(
-            args.rows, args.universe, args.top, args.min_dollar_volume, args.asof
+            args.rows, args.universe, args.top, args.min_dollar_volume,
+            args.asof, args.fresh_universe, args.screening_config,
         )
     except Exception as e:
         print(f"فشل تجهيز الرسالة: {e}", file=sys.stderr)

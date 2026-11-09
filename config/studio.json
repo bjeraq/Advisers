@@ -8,6 +8,18 @@
     "reel_aspect": "9:16",
     "sheet_aspect": "16:9"
   },
+  "rules": {
+    "numbers_ar": "الأرقام المعقدة تنكتب على الشاشة ببطاقات، والكلام المنطوق يبسطها — صوت الدب كان يتقطع عند الأرقام المركبة (مراجعة 2026-11-09)",
+    "hidden_roles": "راصد الصباح والرقيب الشرعي لا يظهران كشخصيات في الفيديو أبداً: الأول تليجرام فقط، والثاني بوابة فحص قبل اختيار السهم + شارة «متوافق شرعياً» على الشاشة",
+    "falcon_no_lipsync": "نموذج تزامن الشفاه يرفض المنقار — مشاهد الصقر دائماً حركة حية بتعليق صوتي فوقها",
+    "compliance_gate": "لا تُنتج حلقة إلا عن سهم متوافق شرعياً من data/universe_us.csv"
+  },
+  "location": {
+    "name_ar": "قاعة مجلس الإدارة",
+    "job_id": "2908126b-8b32-4844-9856-88cb4997a073",
+    "identity": "prestigious ultra-modern corporate boardroom, long polished dark walnut table, twelve tall deep teal-green leather executive chairs, floor-to-ceiling windows with golden-hour city skyline, subtle Gulf-Arabic geometric ceiling and wall details, brass accents, huge blank teal-glow presentation screen at the head of the table",
+    "replaced": {"old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9", "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"}
+  },
   "cast": {
     "thawr": {
       "name_ar": "الثور",
@@ -28,7 +40,19 @@
       "name_ar": "رصّاد الأخبار",
       "job_id": "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d",
       "identity": "sleek sharp-eyed anthropomorphic peregrine falcon journalist, slate-grey and white barred feathers, piercing golden eyes, small black earpiece, khaki field press vest with many pockets over deep teal-green shirt, small tablet in hand"
+    },
+    "saboor": {
+      "name_ar": "المستثمر الصبور",
+      "job_id": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+      "identity": "dignified calm elderly Arabian camel gentleman, sandy golden-beige short fur, heavy-lidded wise patient eyes behind round gold-rimmed reading glasses, soft knowing smile, elegant tailored sand-beige three-piece suit, crisp white shirt, deep teal-green necktie with small gold hourglass lapel pin, polished brown leather shoes, small leather-bound notebook"
     }
+  },
+  "voices": {
+    "rassad": {"name": "Benji", "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"},
+    "thawr": {"name": "Holden", "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f"},
+    "dubb": {"name": "Arthur", "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346", "note": "stability 0.6 ونص مبسط بدون أرقام مركبة"},
+    "qadhi": {"name": "Grady", "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678"},
+    "saboor": {"name": "Fraser", "voice_id": "6705e465-7b52-5915-a1d8-b1222885e01d"}
   },
   "episode_template": {
     "name_ar": "مجلس اليوم",

@@ -81,6 +81,29 @@
       "cta": "2323fd6d-7f5a-4153-b722-f293e346ef12"
     }
   },
+  "episode_nvda_kuwaiti_final": {
+    "date": "2026-11-09",
+    "resolution": "1080x1920",
+    "duration_s": 83.1,
+    "final_media_id": "201d094f-40da-48d2-bfcf-a1df0318a0d8",
+    "scenes_1080": {
+      "intro_council": "86dc18e6-5934-4338-835a-104fe04883a7",
+      "thawr_solo": "0f59ec85-7969-475f-a698-b04be5b7a28f",
+      "dubb_solo": "6c9d3785-b0c4-40e1-bbba-10d2c0c3eb97",
+      "clash": "570ebcdd-edcb-48a5-9af2-580ac7c25790",
+      "qadhi": "f80b98c4-a7fb-4e6a-a454-aa50eaed4a16",
+      "saboor": "fbef45ee-b90a-4708-b257-377be4c5f421"
+    },
+    "audio_kuwaiti": {
+      "intro": "3aca1cbd-234f-4738-a60a-28c8647563b4",
+      "thawr": "d67c9fc1-5e73-4e1c-b92d-7ce5807bf6b8",
+      "dubb": "4a61a5d1-6245-421e-a78f-c1b9d1224aef",
+      "qadhi": "4f23fe0c-0d3b-42b1-aa10-705b4000be68",
+      "saboor": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
+      "cta": "1b3415f1-231e-4463-bdd4-66a69d002c94"
+    },
+    "pipeline_notes": "نموذج الشفاه بدقة 1080 يمدد الكلام ~20%: الحل المعتمد تسريع الفيديو بعامل F=كلام_التسجيل/كتلة_الشفاه (0.78–1.05) والصوت الأصلي بسرعته الطبيعية 1.0. حدود الكلام بالتفريغ الآلي لا بكاشف الصمت. ترانسكريبت كلمة-كلمة ASS بخط Plex العربي + رسومات تفاعلية على توقيت الكلمات (كاش/كسر دعم/حلقة 66%/ميزان) + رجّات عند كلمات الصدمة."
+  },
   "episode_template": {
     "name_ar": "مجلس اليوم",
     "duration_seconds": [60, 90],

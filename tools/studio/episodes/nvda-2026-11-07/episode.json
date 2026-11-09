@@ -1,0 +1,396 @@
+{
+ "_comment": "حلقة «مجلس اليوم» الأولى — إنفيديا. هذا الملف هو المصدر الوحيد للحلقة: النصوص، التسجيلات، الرسومات، البطاقات، المشاهد ومواضع اللوحات (بإحداثيات 720، الوجه ما ينغطى)، ووصفات التوليد. مسارات src/ نسبية لمجلد العمل بالساندبوكس.",
+ "slug": "nvda-2026-11-07",
+ "ticker": "NVDA",
+ "data_date": "2026-11-07",
+ "compliance": "متوافق — data/universe_us.csv (بوابة الرقيب الشرعي قبل الإنتاج)",
+ "majlis_report": "ميزان +24 • شراء 6 / انتظار 9 / بيع 0 • الخيار الأول دخول متدرج بحد 2% • ثقة 7/10",
+ "fonts": "fonts",
+ "lines": {
+  "intro": {
+   "speaker": "rassad",
+   "audio": "src/lines/intro_kw.mp3",
+   "audio_job": "3aca1cbd-234f-4738-a60a-28c8647563b4",
+   "text": "خبر عاجل يا جماعة! إنفيديا طايحة من قمتها عقب أخبار استخباراتية عن رئيسها وتحقيق مستقل... ومجلس المستشارين منعقد الحين!"
+  },
+  "thawr": {
+   "speaker": "thawr",
+   "audio": "src/lines/thawr_kw.mp3",
+   "audio_job": "d67c9fc1-5e73-4e1c-b92d-7ce5807bf6b8",
+   "text": "شوفوا عدل! هذا نزول سعر، مو نزول أعمال. الشركة قاعدة على جبل من الكاش، وأرباحها تتحول فلوس حقيقية تكبر بسرعة. وين التدهور؟ ما فيه!"
+  },
+  "dubb": {
+   "speaker": "dubb",
+   "audio": "src/lines/dubb_kw.mp3",
+   "audio_job": "4a61a5d1-6245-421e-a78f-c1b9d1224aef",
+   "text": "على مهلك يا ثور... هذي أرباح قمة، وأي تباطؤ بيضربها أول شي. والسهم كاسر دعمه الرئيسي بحجم عالي... وتحته ما فيه قاع معلوم."
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "audio": "src/lines/clash_t.mp3",
+   "audio_job": "8b517d9c-1852-4f4d-b4b6-1ca7faca1107",
+   "text": "حتى أنت تعترف إن السهم رخيص!"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "audio": "src/lines/clash_d.mp3",
+   "audio_job": "5d68a666-d040-4a15-9f3a-b80af647ee5f",
+   "text": "رخيص؟ والرخيص يقدر يصير أرخص!"
+  },
+  "saboor": {
+   "speaker": "saboor",
+   "audio": "src/lines/saboor_kw.mp3",
+   "audio_job": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
+   "text": "يا جماعة، نظرتي أبعد من الهوشة: ثلثين الأرباح يصيرون كاش حقيقي بالصندوق، وما عليها ديون تذكر. هذا سهم ينحفظ سنين... والصبر يربح."
+  },
+  "qadhi": {
+   "speaker": "qadhi",
+   "audio": "src/lines/qadhi_kw.mp3",
+   "audio_job": "4f23fe0c-0d3b-42b1-aa10-705b4000be68",
+   "text": "سمعت الجميع... ميزان المجلس اليوم: أربعة وعشرين بالموجب. ستة يقولون شراء، تسعة يقولون انتظار، ومحد قال بيع. رأيي؟ دخول متدرج صغير، ما يتعدى اثنين بالمية من المحفظة... وثقتي سبعة من عشرة."
+  },
+  "cta": {
+   "speaker": "rassad",
+   "audio": "src/lines/cta_kw.mp3",
+   "audio_job": "1b3415f1-231e-4463-bdd4-66a69d002c94",
+   "text": "ومن أقنعك إنت؟ الثور، الدب، ولا القاضي؟ خل نسمع رايك بالكومنتات تحت — ومجلس اليوم، كل يوم على سهم يديد!"
+  }
+ },
+ "graphics": {
+  "cash": {
+   "kind": "cash_bars",
+   "value": 76,
+   "label": "التدفق الحر ينمو",
+   "dur": 3.0
+  },
+  "breakdown": {
+   "kind": "support_break",
+   "label": "الدعم",
+   "dur": 4.0
+  },
+  "donut": {
+   "kind": "donut",
+   "value": 66,
+   "lines": [
+    "من الأرباح",
+    "تصير كاش",
+    "حقيقي"
+   ],
+   "dur": 2.6
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": 24,
+   "scale_max": 30,
+   "votes": [
+    [
+     "شراء",
+     6,
+     "teal"
+    ],
+    [
+     "انتظار",
+     9,
+     "gold"
+    ],
+    [
+     "بيع",
+     0,
+     "red"
+    ]
+   ],
+   "title": "ميزان المجلس",
+   "dur": 4.5
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "title": "مجلس اليوم",
+   "subtitle": "إنفيديا — NVDA",
+   "pills": [
+    [
+     "نزول 22% من القمة",
+     "red"
+    ],
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق 7 نوفمبر 2026"
+  },
+  "bull": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "صافي النقد نحو 60 مليار $",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "التدفق الحر ينمو +76%",
+     40,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "bear": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "كسر دعم 181.60$ بحجم ×1.6",
+     40,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "saboor": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "66% من الأرباح تتحول نقداً فعلياً",
+     38,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.76,
+   "lines": [
+    [
+     "ميزان المجلس: +24",
+     56,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "شراء 6 • انتظار 9 • بيع 0",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "الخيار الأول: دخول متدرج بحد 2% — الثقة 7/10",
+     30,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.7,
+   "lines": [
+    [
+     "من أقنعك؟",
+     62,
+     "bold",
+     "white"
+    ],
+    [
+     "الثور • الدب • القاضي",
+     42,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "اكتب رأيك بالتعليقات",
+     34,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • الأسعار بتاريخ 7 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "type": "vo_clip",
+   "line": "intro",
+   "delay": 0.5,
+   "duration": 11,
+   "video": {
+    "draft": "src/c1080_intro.mp4",
+    "final": "src/c1080_intro.mp4"
+   },
+   "video_job": "86dc18e6-5934-4338-835a-104fe04883a7",
+   "card": {
+    "name": "title",
+    "at": 0.7,
+    "fade": 0.6
+   },
+   "shake": "طايح"
+  },
+  {
+   "id": "bull",
+   "type": "lipsync",
+   "line": "thawr",
+   "video": {
+    "draft": "src/d480_bull.mp4",
+    "final": "src/f1080_bull.mp4"
+   },
+   "draft_job": "fc540be2-a647-4cbc-a76c-11c21f949350",
+   "graphic": {
+    "name": "cash",
+    "cue": "جبل",
+    "box": [
+     8,
+     48,
+     270
+    ]
+   },
+   "card": {
+    "name": "bull",
+    "at": "cue"
+   }
+  },
+  {
+   "id": "bear",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "src/d480_bear.mp4",
+    "final": "src/f1080_bear.mp4"
+   },
+   "draft_job": "a2dd32da-d058-4337-9126-f6cbb5f89174",
+   "graphic": {
+    "name": "breakdown",
+    "cue": "كاسر",
+    "box": [
+     215,
+     710,
+     291
+    ]
+   },
+   "card": {
+    "name": "bear",
+    "at": "cue"
+   },
+   "shake": "كاسر"
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/c1080_clash.mp4",
+    "final": "src/c1080_clash.mp4"
+   },
+   "video_job": "570ebcdd-edcb-48a5-9af2-580ac7c25790",
+   "shake": "أرخص"
+  },
+  {
+   "id": "camel",
+   "type": "lipsync",
+   "line": "saboor",
+   "video": {
+    "draft": "src/d480_camel.mp4",
+    "final": "src/f1080_camel.mp4"
+   },
+   "draft_job": "55cccabe-9ad8-415b-9ed5-afabe63ed1b9",
+   "graphic": {
+    "name": "donut",
+    "cue": "ثلثين",
+    "box": [
+     10,
+     48,
+     291
+    ]
+   },
+   "card": {
+    "name": "saboor",
+    "at": "cue"
+   }
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "qadhi",
+   "video": {
+    "draft": "src/d480_judge.mp4",
+    "final": "src/f1080_judge.mp4"
+   },
+   "draft_job": "c27173c4-1aea-4e14-9c11-ed04d88e3d5a",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     50,
+     90,
+     620
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   }
+  },
+  {
+   "id": "cta",
+   "type": "still_vo",
+   "line": "cta",
+   "delay": 0.4,
+   "duration": 11,
+   "image": "src/kf_falcon2.png",
+   "image_job": "6095b7cf-4f92-4005-9d44-e76b3ce0dd98",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   }
+  }
+ ],
+ "generation": {
+  "_comment": "وصفات إنتون المعتمدة. المسودة 480p (~45 كريدت/مشهد)؛ النهائي نفس الوصفة بالضبط مع resolution=1080p بعد «كل شي تمام» فقط، والمخرج يتنزل إلى video.final. الصورة المرجعية للموقع إطار مأهول بقاعدة الكتف — إلا الجمل: الإطار المأهول فيه جمل ثاني فيرفضه النموذج، فموقعه لوحة القاعة الفاضية والإخراج بالوصف.",
+  "bull": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
+   "location": "d71ec678-d66f-4e81-99fe-ddeab65e616d",
+   "audio": "d67c9fc1-5e73-4e1c-b92d-7ce5807bf6b8",
+   "prompt": "Medium shot matching the location image staging exactly: the caramel-brown bull adviser seated on his chair at the full boardroom table surrounded by his listening colleagues (owl with teacup beside him, blurred shoulders of two advisers across in the foreground corners, every chair occupied). He passionately makes his case — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — gesturing with sweeping confident moves, pounding a fist into his palm on key points. The colleagues react subtly: the owl sips tea, others nod. Camera close enough that his face and mouth are large and readable. Premium 3D animated feature film quality, vertical composition"
+  },
+  "bear": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
+   "location": "c80010b2-bda6-4acb-9e00-ca86e14e71ee",
+   "audio": "4a61a5d1-6245-421e-a78f-c1b9d1224aef",
+   "prompt": "Medium shot matching the location image staging exactly: the charcoal-grey bear adviser with silver glasses seated upright on his chair at the full boardroom table surrounded by his listening colleagues (fox beside him, blurred shoulders of two advisers across in the foreground corners, every chair occupied). He replies skeptically and dryly — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — adjusting his glasses, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy, never on the table. Camera close enough that his face and mouth are large and readable. Premium 3D animated feature film quality, vertical composition"
+  },
+  "judge": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "2eca681d-ff13-4e5b-aa91-de119c245559",
+   "location": "28dcf4be-8891-4c6f-a52b-c54a7dfa5841",
+   "audio": "4f23fe0c-0d3b-42b1-aa10-705b4000be68",
+   "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his full council — every chair down both sides occupied by the listening animal advisers, the nearest two only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods. Premium 3D animated feature film quality, vertical composition"
+  },
+  "camel": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "location": "7347f5d3-1220-439f-880b-94909019022d",
+   "audio": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
+   "prompt": "Over-the-shoulder boardroom scene, vertical composition: the dignified elderly Arabian camel gentleman with white ghutra headdress, round gold reading glasses and sand-beige three-piece suit with deep teal-green tie sits properly ON HIS CHAIR at the long walnut table, the clear in-focus main subject, exactly ONE camel in the scene. He calmly gives his opinion speaking across the table toward the colleagues in front of him, his mouth and muzzle opening and closing clearly with every word, gesturing gently over his leather notebook, patient wise delivery, face framed large and readable. In the near foreground bottom corners, the soft blurred backs and shoulders of two advisers seated across from him listening; behind him only the room, teal chairs and the Gulf skyline windows — no one behind his back. Premium 3D animated feature film quality"
+  }
+ }
+}

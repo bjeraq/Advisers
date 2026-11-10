@@ -78,7 +78,7 @@ def scene_track(sc, ep, wpaths, video, B, reuse):
                 import align2
                 a, b = sc['lines']
                 align2.main(video, ep['lines'][a]['audio'], wpaths[a], ep['lines'][b]['audio'], wpaths[b],
-                            trk + '.wav', trk + '_w.json', trk + '_m.json')
+                            trk + '.wav', trk + '_w.json', trk + '_m.json', manual=sc.get('align'))
         return json.load(open(trk + '_w.json')), json.load(open(trk + '_m.json')), trk + '.wav'
     d = sc.get('delay', 0.5)
     ws = [{'w': w['w'], 's': round(w['s'] + d, 3), 'e': round(w['e'] + d, 3)}

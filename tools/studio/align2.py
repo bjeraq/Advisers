@@ -10,9 +10,17 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from align1 import speech_bounds, mean_vol, run, clip_segments
 
 
-def main(clip, rec1, w1, rec2, w2, out_wav, out_words, meta_out):
-    segs, cdur = clip_segments(clip)
-    if len(segs) >= 2:
+def main(clip, rec1, w1, rec2, w2, out_wav, out_words, meta_out, manual=None):
+    # manual = {"f": عامل الفيديو, "blocks": [[بداية, نهاية], [بداية, نهاية]]} بثواني المقطع — تجاوز يدوي من scene.align
+    # لما الكاشف يغلط (تفريغ المقطع يلزق كلام الاثنين ببعض فتطلع كتلة الأول طويلة والثاني تنقطع آخر كلمته).
+    if manual:
+        segs = []
+        cdur = float(run(f"ffprobe -v error -show_entries format=duration -of csv=p=0 '{clip}'").stdout.strip())
+    else:
+        segs, cdur = clip_segments(clip)
+    if manual:
+        blocks = [tuple(x) for x in manual['blocks']]
+    elif len(segs) >= 2:
         gaps = [(segs[i + 1].start - segs[i].end, i) for i in range(len(segs) - 1)]
         _, gi = max(gaps)
         blocks = [(max(0, segs[0].start - 0.05), segs[gi].end + 0.05),
@@ -25,6 +33,8 @@ def main(clip, rec1, w1, rec2, w2, out_wav, out_words, meta_out):
         recs.append((rh, rt, rt - rh))
     lips_total = sum(b1 - b0 for b0, b1 in blocks)
     f = max(0.78, min(1.05, (recs[0][2] + recs[1][2]) / lips_total))
+    if manual and 'f' in manual:
+        f = float(manual['f'])
     out_dur = cdur * f
     fcs, allw = [], []
     for i, (rec, wj) in enumerate([(rec1, w1), (rec2, w2)]):

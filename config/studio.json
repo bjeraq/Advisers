@@ -21,7 +21,8 @@
     "audio_pipeline": "صوت الحلقات دائماً من تسجيلات إلفن لابز الأصلية: نموذج تزامن الشفاه يعيد توليد العربي بمحرك رديء فيُكتم صوته وتُركّب التسجيلات الأصلية على كتل الشفاه (تفريغ زمني يحدد الكتل + ضبط إيقاع ≤10% بدون تغيير الطبقة). حمل الكلام بأي مقطع تزامن ≤75% من سقفه (~22ث). ممنوع أي فلتر ديناميكي على الكلام (loudnorm خرّب حلقة إنفيديا الأولى) — كسب ثابت فقط. التفريغ الآلي ومطابقة النصوص بوابة إلزامية قبل كل تسليم. (دروس 2026-11-09)",
     "data_date_stamp": "كل حلقة تحمل تاريخ بياناتها: شارة «أسعار إغلاق <التاريخ>» في بطاقة العنوان + شريط الإخلاء يذكّر أن الأسعار تتغير وعلى المشاهد مراجعتها بنفسه (طلب بدر 2026-11-09)",
     "face_clear": "الوجه ما ينغطى أبداً (طلب بدر 2026-11-10): الرسومات والبطاقات والترانسكريبت بجنب المتكلم أو خلفه أو تحته — لوحة الرسمة بالزاوية العليا فوق النافذة (~270–291 بكادر 720) باللقطة المتوسطة، على الصدر تحت الذقن باللقطة القريبة، وفوق الرأس على الشاشة الخلفية باللقطة الواسعة؛ بطاقات الأرقام على الصدر/الطاولة (y ≥ 0.70). موضع كل لوحة (box) يتحدد من إطار المشهد لحظة الإشارة ويُفحص بصرياً قبل التسليم",
-    "caption_size": "الترانسكريبت خط 58 بمسودة 720 و88 بنهائي 1080 (طلب بدر 2026-11-10: «الخط صغير كبّره») — سطر واحد أسفل الشاشة: حتى 3 كلمات وبسقف 16 حرفاً للمجموعة، الكلمة المنطوقة تيل"
+    "caption_size": "الترانسكريبت خط 58 بمسودة 720 و88 بنهائي 1080 (طلب بدر 2026-11-10: «الخط صغير كبّره») — سطر واحد أسفل الشاشة: حتى 3 كلمات وبسقف 16 حرفاً للمجموعة، الكلمة المنطوقة تيل",
+    "same_table_same_cast": "نفس الطاولة ونفس الشخصيات بكل المشاهد (ملاحظة بدر 2026-11-10): كل إطارات الحلقة تتولد من لقطة المجلس الرئيسية (location.council_wide_v4) كمرجع أول + ورقة الشخصية، وكل شخصية بكرسيها نفسه وجيرانها أنفسهم. الطاولة الطويلة المستطيلة فقط — ممنوع طاولة دائرية أو جانبية. والصقر واحد بس بالكادر (لو واقف قدام الكاميرا، مكانه عند الشاشة فاضي)."
   },
   "toolkit": {
     "_comment": "خط الإنتاج محفوظ بالمستودع (الساندبوكس يُمسح بعد ~24 ساعة): انقل الأدوات للساندبوكس وطابق md5 ثم شغّل البناء من مجلد العمل. التفاصيل في .claude/skills/studio و .claude/skills/story",
@@ -39,12 +40,16 @@
       "old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9",
       "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"
     },
-    "council_wide_v2": "46efc634-f637-4f87-9e05-f3b0ae9dd07c",
-    "council_wide_v2_note": "لقطة المجلس الكامل بالطاقم المعتمد 2026-11-10 (15 شخصية، القاضي على الرأس، الصقر واقف يعرض، السلوقي والذيب متقابلين) — مرجع كل إطارات الحلقات الجاية وبداية فيديو المقدمة",
-    "empty_plate": "7347f5d3-1220-439f-880b-94909019022d"
+    "empty_plate": "7347f5d3-1220-439f-880b-94909019022d",
+    "council_wide_v4": "04e3b054-e907-4f7e-b0d2-36d5924baf54",
+    "council_wide_v4_note": "اللقطة الرئيسية المعتمدة 2026-11-10: الضب بالشماغ الأحمر يسار قبال الثعلب الرملي يمين، الجمل مقدمة يسار، البومة مقدمة يمين، الجربوع والثعلبة والقنفذ يمين، الدلفين والفلامنغو والسلحفاة والهدهد يسار، القرش والغزالة يمين خلف، القاضي على الرأس والصقر واقف عند الشاشة.",
+    "council_wide_superseded": {
+      "v2_saluki_wolf": "46efc634-f637-4f87-9e05-f3b0ae9dd07c",
+      "v3_dhub_white_ghutra_wolf": "adb39ffe-fa15-4593-b6ea-202142c7c920"
+    }
   },
   "cast": {
-    "_comment": "الطاقم المعتمد 2026-11-10 («تمام» بدر). المفتاح = الدور بالمجلس (نفس أسماء ملفات .claude/agents). الطيور (rassad, qita, congress) بدون تزامن شفاه: تعليق صوتي فقط. صورة الطاقم المجمعة: media af7e0ee3-e00c-4057-ae58-360169d95af6",
+    "_comment": "الطاقم النهائي المعتمد 2026-11-10 (15 شخصية). المفتاح = الدور بالمجلس (نفس أسماء .claude/agents). الطيور (rassad, suyula, congress) بدون تزامن شفاه: تعليق صوتي فقط. لقطة المجلس الرئيسية: location.council_wide_v4",
     "qadhi": {
       "name_ar": "القاضي",
       "job_id": "2eca681d-ff13-4e5b-aa91-de119c245559",
@@ -63,17 +68,21 @@
     },
     "thawr": {
       "name_ar": "محامي الشراء",
-      "animal": "السلوقي",
-      "job_id": "d45293b3-f6ea-4114-8248-57a5e7fe1725",
-      "identity": "elegant golden Arabian saluki gentleman, long silky golden-cream feathered ears, warm amber eyes, confident grin, tailored deep teal-green three-piece suit, white shirt, gold necktie with small gold upward-arrow lapel pin",
-      "why": "أسرع كلب صيد يطارد الفرصة — اختاره بدر بدل الثور"
+      "animal": "الضب بالشماغ الأحمر",
+      "job_id": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+      "identity": "friendly Arabian spiny-tailed lizard (dhub) gentleman, golden-sand scales, warm brown eyes, big confident grin, red-and-white checkered shemagh with black agal, tailored deep teal-green three-piece suit, white shirt, gold necktie, small gold upward-arrow lapel pin",
+      "why": "اختاره بدر بدل السلوقي، وطلب الشماغ الأحمر «كونه بالبر»",
+      "previous_sheets": [
+        "2489b61b-7633-4228-b8cb-4c17ef5feb06 (قارئ السيولة، غترة بيضا)",
+        "b362ff41-cea5-47ac-87eb-8b21eb88bef0 (هوية الشراء، غترة بيضا)"
+      ]
     },
     "dubb": {
       "name_ar": "محامي الحذر",
-      "animal": "الذيب العربي",
-      "job_id": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
-      "identity": "lean grey Arabian wolf, tall pointed ears, sharp amber eyes behind round silver-rimmed glasses, dry skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, small red downward-arrow lapel pin",
-      "why": "«الذيب ما ينخدع» — اختاره بدر بدل الدب"
+      "animal": "الثعلب الرملي",
+      "job_id": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
+      "identity": "sandy-orange Arabian desert fox gentleman, cream chest, big pointed ears, amber eyes, long bushy white-tipped tail, round silver-rimmed glasses, calm skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, dark grey trousers, small red downward-arrow lapel pin",
+      "why": "اختاره بدر من صورة المقارنة (خيار ب) بدل الذيب"
     },
     "fanni": {
       "name_ar": "الفنّي",
@@ -103,15 +112,19 @@
       "job_id": "bb839d16-5fca-4b23-81eb-8b718af41744"
     },
     "qita": {
-      "name_ar": "محللة القطاع",
-      "animal": "فلامنغو (بنت)",
-      "job_id": "a595086d-8ec0-40d3-9da9-2f19a8db005d",
-      "note": "منقار: تعليق صوتي"
+      "name_ar": "محلل القطاع",
+      "animal": "جربوع",
+      "job_id": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+      "identity": "small cute Arabian desert jerboa gentleman, round mouse-like head, huge round ears, big dark eyes, long hind legs, long tail with black-and-white tuft, navy blazer, cream shirt, teal pocket square, small tablet",
+      "why": "بدر اعتمد الشكل الثاني وحطه بدور محلل القطاع",
+      "rejected_sheet": "8d09196e (طلع شكله ثعلب)"
     },
     "suyula": {
-      "name_ar": "قارئ السيولة",
-      "animal": "ضب",
-      "job_id": "2489b61b-7633-4228-b8cb-4c17ef5feb06"
+      "name_ar": "قارئة السيولة",
+      "animal": "فلامنغو (بنت)",
+      "job_id": "a595086d-8ec0-40d3-9da9-2f19a8db005d",
+      "note": "منقار: تعليق صوتي",
+      "why": "بدر نقلها من محللة القطاع لقارئة السيولة (2026-11-10)"
     },
     "haris": {
       "name_ar": "حارس المحفظة",
@@ -139,12 +152,12 @@
     "thawr": {
       "name": "Holden",
       "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f",
-      "note": "صوت السلوقي (كان صوت الثور)"
+      "note": "صوت الضب محامي الشراء (كان صوت الثور ثم السلوقي)"
     },
     "dubb": {
       "name": "Arthur",
       "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
-      "note": "صوت الذيب (كان صوت الدب) — stability 0.6 ونص مبسط بدون أرقام مركبة"
+      "note": "صوت الثعلب محامي الحذر (كان صوت الدب ثم الذيب) — stability 0.6 ونص مبسط بدون أرقام مركبة"
     },
     "qadhi": {
       "name": "Grady",
@@ -249,19 +262,20 @@
       "session_date": "2026-11-08",
       "data_date": "2026-11-07",
       "episode_file": "tools/studio/episodes/nvda-2026-11-07/episode.json",
-      "video_media_id": "01dabafc-ba0a-45b0-b74e-caccde804e54",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/01dabafc-ba0a-45b0-b74e-caccde804e54.mp4",
+      "video_media_id": "1324446d-c7f3-4cbe-a7dc-5c61a52737e6",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/1324446d-c7f3-4cbe-a7dc-5c61a52737e6.mp4",
       "site_page": "site/ep01-nvda.html",
       "report": "reports/2026-11-08_NVDA.md",
       "resolution": "720x1280 (معتمدة نهائية)",
       "video_media_id_v1_bull_bear": "bdc92192-266f-4a83-9372-84aec412f506",
-      "duration_s": 82.2,
-      "cast": "السلوقي (شراء) • الذيب (حذر) • الجمل • القاضي • الصقر",
-      "notes": "أعيدت 2026-11-10 بالطاقم الخليجي. السلوقي تعليق صوتي فوق حركة (نموذج الشفاه رفضه 3 مرات)؛ الذيب والمواجهة والجمل والقاضي تزامن شفاه. بوابة التفريغ 7/7 (أقل تشابه 0.82 للقاضي بسبب كتابة الأرقام)."
+      "duration_s": 82.4,
+      "cast": "الضب بالشماغ الأحمر (شراء) • الثعلب الرملي (حذر) • الجمل • القاضي • الصقر",
+      "notes": "النسخة الثالثة 2026-11-10 بالطاقم النهائي. كل الإطارات من اللقطة الرئيسية council_wide_v4 (نفس الطاولة ونفس الشخصيات). الضب والثعلب والمواجهة والجمل والقاضي تزامن شفاه؛ الجمل يقول «واللي يصبر يربح». بوابة التفريغ 7/7 (أقل تشابه 0.83 للقاضي بسبب كتابة الأرقام). المقدمة مبطأة ×1.36 ليبقى المجلس ظاهراً؛ المواجهة بمحاذاة يدوية (scene.align).",
+      "video_media_id_v2_saluki_wolf": "01dabafc-ba0a-45b0-b74e-caccde804e54"
     }
   ],
   "cast_retired": {
-    "_comment": "شخصيات أُوقفت 2026-11-10 بقرار بدر (مو حيوانات خليجية) — محفوظة للمرجع فقط، لا تُستخدم.",
+    "_comment": "شخصيات أُوقفت بقرار بدر — محفوظة للمرجع فقط، لا تُستخدم: الثور والدب (مو خليجية)، السلوقي (ما عجبه)، الذيب (بدله الثعلب).",
     "bull": {
       "name_ar": "الثور",
       "job_id": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
@@ -271,6 +285,18 @@
       "name_ar": "الدب",
       "job_id": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
       "identity": "heavyset skeptical adult bear, thick charcoal-grey fur, round silver-rimmed glasses, raised skeptical eyebrow, slight unimpressed frown, tailored burgundy waistcoat over ivory shirt with rolled sleeves, dark grey trousers, small red downward-arrow lapel pin, brown leather brogues"
+    },
+    "saluki": {
+      "name_ar": "السلوقي",
+      "job_id": "d45293b3-f6ea-4114-8248-57a5e7fe1725",
+      "identity": "elegant golden Arabian saluki gentleman, long silky golden-cream feathered ears, warm amber eyes, confident grin, tailored deep teal-green three-piece suit, white shirt, gold necktie with small gold upward-arrow lapel pin",
+      "why": "كان محامي الشراء بنسخة 01dabafc — بدر ما حبه (2026-11-10)؛ ونموذج الشفاه رفضه منفرداً 3 مرات"
+    },
+    "wolf": {
+      "name_ar": "الذيب العربي",
+      "job_id": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
+      "identity": "lean grey Arabian wolf, tall pointed ears, sharp amber eyes behind round silver-rimmed glasses, dry skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, small red downward-arrow lapel pin",
+      "why": "كان محامي الحذر — بدر اختار الثعلب الرملي بداله (2026-11-10)"
     }
   }
 }

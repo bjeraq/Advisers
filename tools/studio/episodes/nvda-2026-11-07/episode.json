@@ -23,9 +23,9 @@
   },
   "dubb": {
    "speaker": "dubb",
-   "audio": "src/lines/dubb_v2.mp3",
-   "audio_job": "0b3ec408-a739-4674-8254-4e750cdf215a",
-   "text": "على مهلك يا سلوقي... هذي أرباح قمة، وأي تباطؤ بيضربها أول شي. والسهم كاسر دعمه الرئيسي بحجم عالي... وتحته ما فيه قاع معلوم."
+   "audio": "src/lines/dubb_v3.mp3",
+   "audio_job": "d3a2a073-5fa1-4c0f-ba6c-f270eba3cf0d",
+   "text": "على مهلك يا ضب... هذي أرباح قمة، وأي تباطؤ بيضربها أول شي. والسهم كاسر دعمه الرئيسي بحجم عالي... وتحته ما فيه قاع معلوم."
   },
   "clasht": {
    "speaker": "thawr",
@@ -41,9 +41,9 @@
   },
   "saboor": {
    "speaker": "saboor",
-   "audio": "src/lines/saboor_kw.mp3",
-   "audio_job": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
-   "text": "يا جماعة، نظرتي أبعد من الهوشة: ثلثين الأرباح يصيرون كاش حقيقي بالصندوق، وما عليها ديون تذكر. هذا سهم ينحفظ سنين... والصبر يربح."
+   "audio": "src/lines/saboor_v2.mp3",
+   "audio_job": "dc0d5efd-963a-4afa-baf0-28613edd488a",
+   "text": "يا جماعة، نظرتي أبعد من الهوشة: ثلثين الأرباح يصيرون كاش حقيقي بالصندوق، وما عليها ديون تذكر. هذا سهم ينحفظ سنين... واللي يصبر يربح."
   },
   "qadhi": {
    "speaker": "qadhi",
@@ -53,9 +53,9 @@
   },
   "cta": {
    "speaker": "rassad",
-   "audio": "src/lines/cta_v2.mp3",
-   "audio_job": "27ddad7a-1963-4111-a8fe-c124406679ef",
-   "text": "ومن أقنعك إنت؟ السلوقي، الذيب، ولا القاضي؟ خل نسمع رايك بالكومنتات تحت — ومجلس اليوم، كل يوم على سهم يديد!"
+   "audio": "src/lines/cta_v4.mp3",
+   "audio_job": "a987b7f5-9058-4275-82e1-359a4c767817",
+   "text": "ومن أقنعك إنت؟ الضب، الثعلب، ولا القاضي؟ خل نسمع رايك بالكومنتات تحت — ومجلس اليوم، كل يوم على سهم يديد!"
   }
  },
  "graphics": {
@@ -122,7 +122,7 @@
    ],
    "date_pill": "أسعار إغلاق 7 نوفمبر 2026"
   },
-  "saluki": {
+  "dhub": {
    "kind": "card",
    "accent": "teal",
    "lines": [
@@ -140,7 +140,7 @@
     ]
    ]
   },
-  "wolf": {
+  "fox": {
    "kind": "card",
    "accent": "red",
    "lines": [
@@ -201,7 +201,7 @@
      "white"
     ],
     [
-     "السلوقي • الذيب • القاضي",
+     "الضب • الثعلب • القاضي",
      42,
      "bold",
      "light_teal"
@@ -225,34 +225,55 @@
    "type": "vo_clip",
    "line": "intro",
    "delay": 0.5,
-   "duration": 11,
+   "duration": 10.5,
    "video": {
-    "draft": "src/s720_intro.mp4",
-    "final": "src/s720_intro.mp4"
+    "draft": "src/s720_intro_v4s.mp4",
+    "final": "src/s720_intro_v4s.mp4"
    },
-   "video_job": "a8db36b0-32cc-44d6-b01a-36499afb93a4",
+   "video_job": "c098525c-366e-48d5-a3b1-6ab74ca2ed95",
    "card": {
     "name": "title",
     "at": 0.7,
     "fade": 0.6
    },
-   "shake": "طايح"
+   "shake": "طايح",
+   "_note": "المصدر c098525c (11ث): أول 7.8ث مبطأة ×1.36 بـminterpolate إلى 10.6ث — حتى يبقى المجلس ظاهراً وما تنتهي اللقطة بالقاضي بروحه"
   },
   {
-   "id": "saluki",
-   "type": "vo_clip",
+   "id": "dhub",
+   "type": "lipsync",
    "line": "thawr",
-   "delay": 0.3,
-   "duration": 12,
    "video": {
-    "draft": "src/s720_saluki.mp4",
-    "final": "src/s720_saluki.mp4"
+    "draft": "src/d480_dhub.mp4",
+    "final": "src/f1080_dhub.mp4"
    },
-   "video_job": "8468264e-afe5-4d99-8b7c-90f62e443caa",
-   "_note": "تزامن الشفاه رفض السلوقي 3 مرات (0ef7cf78، bba6fdf7، 95ad87e9) → قرار بدر: حركة + تعليق صوتي",
+   "draft_job": "de8e699b-a150-44b5-bd46-f5c16fdc1c68",
    "graphic": {
     "name": "cash",
     "cue": "جبل",
+    "box": [
+     8,
+     48,
+     250
+    ]
+   },
+   "card": {
+    "name": "dhub",
+    "at": "cue"
+   }
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "src/d480_fox.mp4",
+    "final": "src/f1080_fox.mp4"
+   },
+   "draft_job": "f2a66fa3-561f-4069-89a8-34829223cbd4",
+   "graphic": {
+    "name": "breakdown",
+    "cue": "كاسر",
     "box": [
      8,
      48,
@@ -260,33 +281,11 @@
     ]
    },
    "card": {
-    "name": "saluki",
-    "at": "cue"
-   }
-  },
-  {
-   "id": "wolf",
-   "type": "lipsync",
-   "line": "dubb",
-   "video": {
-    "draft": "src/d480_wolf.mp4",
-    "final": "src/f1080_wolf.mp4"
-   },
-   "draft_job": "5b7b6c8d-044b-4af7-a877-76d520ad971a",
-   "graphic": {
-    "name": "breakdown",
-    "cue": "كاسر",
-    "box": [
-     215,
-     640,
-     291
-    ]
-   },
-   "card": {
-    "name": "wolf",
+    "name": "fox",
     "at": "cue"
    },
-   "shake": "كاسر"
+   "shake": "كاسر",
+   "_note": "المحاولة dadfbb35 طلعت بكرسي فاضي يمّه (القرش اختفى) فأعيدت بتشديد بقاء الجار"
   },
   {
    "id": "clash",
@@ -296,28 +295,42 @@
     "clashd"
    ],
    "video": {
-    "draft": "src/d480_clash.mp4",
+    "draft": "src/d480_clash_v4e.mp4",
     "final": "src/f1080_clash.mp4"
    },
    "shake": "أرخص",
-   "draft_job": "08401d4e-c29d-4e97-b72e-54d5136b196f"
+   "draft_job": "36b1a4c1-be65-49b0-b501-68c436216811",
+   "align": {
+    "f": 1.0,
+    "blocks": [
+     [
+      0.31,
+      3.08
+     ],
+     [
+      3.889,
+      7.359
+     ]
+    ]
+   },
+   "_note": "المصدر 36b1a4c1 (9.04ث): الكاشف الآلي غلط (جملة الضب تبطأت والثعلب انقطعت آخر كلمته). الحل: مقطع معدّل d480_clash_v4e = اللقطة الثنائية 0–4.625 ×0.75 + لقطة الثعلب 4.625–9.04 ×0.885، وكتل الشفاه يدوية (من silencedetect: الضب 0.41–4.26، الثعلب 5.10–9.05) والتسجيلان بسرعتهما الطبيعية."
   },
   {
    "id": "camel",
    "type": "lipsync",
    "line": "saboor",
    "video": {
-    "draft": "src/d480_camel.mp4",
+    "draft": "src/d480_camel_v2.mp4",
     "final": "src/f1080_camel.mp4"
    },
-   "draft_job": "55cccabe-9ad8-415b-9ed5-afabe63ed1b9",
+   "draft_job": "618f7ea5-08b9-45eb-9076-cd5507f28567",
    "graphic": {
     "name": "donut",
     "cue": "ثلثين",
     "box": [
-     10,
+     430,
      48,
-     291
+     280
     ]
    },
    "card": {
@@ -355,8 +368,8 @@
    "line": "cta",
    "delay": 0.4,
    "duration": 11,
-   "image": "src/kf_falcon3.png",
-   "image_job": "b7e87d69-95a0-4029-b114-0e9c5b05a780",
+   "image": "src/kf_falcon5.png",
+   "image_job": "9e4722f4-7622-4a01-aa9f-85a10b609872",
    "card": {
     "name": "cta",
     "at": 0.4
@@ -364,7 +377,7 @@
   }
  ],
  "generation": {
-  "_comment": "وصفات إنتون المعتمدة. المسودة 480p (~45 كريدت/مشهد)؛ النهائي نفس الوصفة بالضبط مع resolution=1080p بعد «كل شي تمام» فقط، والمخرج يتنزل إلى video.final. الصورة المرجعية للموقع إطار مأهول بقاعدة الكتف — إلا الجمل: الإطار المأهول فيه جمل ثاني فيرفضه النموذج، فموقعه لوحة القاعة الفاضية والإخراج بالوصف. — أعيدت الحلقة 2026-11-10 بالطاقم الخليجي (السلوقي والذيب بدل الثور والدب).",
+  "_comment": "وصفات التوليد المعتمدة. مسودة intone 480p (~45 كريدت/مشهد)؛ النهائي نفس الوصفة مع resolution=1080p بعد «كل شي تمام» فقط. قاعدة بدر 2026-11-10: نفس الطاولة ونفس الشخصيات — كل الإطارات تتولد من لقطة المجلس الرئيسية master (location.council_wide_v4) + ورقة الشخصية، وكل شخصية بكرسيها. الحلقة أعيدت 2026-11-10 بالطاقم الخليجي النهائي: الضب بالشماغ الأحمر (شراء) والثعلب الرملي (حذر).",
   "judge": {
    "model": "intone",
    "aspect_ratio": "9:16",
@@ -373,14 +386,7 @@
    "audio": "4f23fe0c-0d3b-42b1-aa10-705b4000be68",
    "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his full council — every chair down both sides occupied by the listening animal advisers, the nearest two only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods. Premium 3D animated feature film quality, vertical composition"
   },
-  "camel": {
-   "model": "intone",
-   "aspect_ratio": "9:16",
-   "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
-   "location": "7347f5d3-1220-439f-880b-94909019022d",
-   "audio": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
-   "prompt": "Over-the-shoulder boardroom scene, vertical composition: the dignified elderly Arabian camel gentleman with white ghutra headdress, round gold reading glasses and sand-beige three-piece suit with deep teal-green tie sits properly ON HIS CHAIR at the long walnut table, the clear in-focus main subject, exactly ONE camel in the scene. He calmly gives his opinion speaking across the table toward the colleagues in front of him, his mouth and muzzle opening and closing clearly with every word, gesturing gently over his leather notebook, patient wise delivery, face framed large and readable. In the near foreground bottom corners, the soft blurred backs and shoulders of two advisers seated across from him listening; behind him only the room, teal chairs and the Gulf skyline windows — no one behind his back. Premium 3D animated feature film quality"
-  },
+  "master": "04e3b054-e907-4f7e-b0d2-36d5924baf54",
   "intro": {
    "model": "seedance_2_5",
    "mode": "omni_reference",
@@ -388,49 +394,57 @@
    "resolution": "720p",
    "duration": 11,
    "generate_audio": false,
-   "start_image": "46efc634-f637-4f87-9e05-f3b0ae9dd07c",
-   "prompt": "Cinematic opening shot starting exactly from the start frame: a slow smooth camera push-in down the length of the grand boardroom table toward the elderly Arab judge at the head, the full council of animal advisers subtly alive — the golden saluki and the grey Arabian wolf exchanging competitive glances across the table, the owl pouring Arabic coffee from the golden dallah, the camel sipping tea, the red fox girl leaning in, the turtle slowly turning its head, papers being straightened — while the standing falcon reporter gestures with his tablet presenting the situation, the judge calmly raising one hand for order near the end, warm golden-hour light from the Gulf skyline windows, gentle dust motes in the light, premium 3D animated feature film quality, vertical composition, no camera shake"
+   "start_image": "04e3b054-e907-4f7e-b0d2-36d5924baf54",
+   "prompt": "Cinematic opening shot starting exactly from the start frame: a slow smooth camera push-in down the length of the same long boardroom table toward the elderly Arab judge at the head, the full council of animal advisers subtly alive in their own seats — the lizard in red shemagh and the sandy desert fox in silver glasses exchanging competitive glances across the table, the owl pouring Arabic coffee from the golden dallah, the camel sipping tea, the jerboa tapping his tablet, the red fox girl leaning in — while the standing falcon reporter gestures with his tablet presenting the situation, the judge calmly raising one hand for order near the end, warm golden-hour light from the Gulf skyline windows, gentle dust motes in the light, premium 3D animated feature film quality, vertical composition, no camera shake, no new characters"
   },
-  "saluki": {
-   "model": "seedance_2_5",
-   "mode": "omni_reference",
-   "aspect_ratio": "9:16",
-   "resolution": "720p",
-   "duration": 12,
-   "generate_audio": false,
-   "start_image": "f7f63e1c-12dc-4223-9a6d-3327ea5c0ace",
-   "prompt": "Starting exactly from the start frame, same camera framing held steady with a very slow gentle push-in: the golden saluki adviser in his teal-green suit, seated at the boardroom table, passionately makes his case to the council — talking animatedly, sweeping open-hand gestures, leaning forward, tapping the table firmly on a key point, then spreading both hands wide with a confident grin as if asking 'where is the decline?', his long silky golden ears swaying with each move. Beside him the dolphin adviser sips tea and nods along; the blurred colleagues in the foreground corners shift slightly. Warm golden-hour light from the Gulf skyline windows. Premium 3D animated feature film quality, vertical composition, smooth natural motion, no camera shake, no cuts, exactly one saluki"
-  },
-  "wolf": {
+  "dhub": {
    "model": "intone",
    "aspect_ratio": "9:16",
-   "character": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
-   "location": "60bb4969-7328-4a8c-9009-ee1606819ce5",
-   "audio": "0b3ec408-a739-4674-8254-4e750cdf215a",
-   "prompt": "Medium shot matching the location image staging exactly: the grey Arabian wolf adviser with round silver glasses and burgundy waistcoat seated upright on his chair at the full boardroom table surrounded by his listening colleagues (the red fox girl sipping coffee beside him, blurred shoulders of two advisers across in the foreground corners, every chair occupied). He replies skeptically and dryly — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — adjusting his glasses, raising one finger, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy, never on the table. Camera close enough that his face and mouth are large and readable. Premium 3D animated feature film quality, vertical composition"
+   "character": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+   "location": "a82c96d5-6b04-4e66-8b79-a2b4aadade02",
+   "audio": "d67c9fc1-5e73-4e1c-b92d-7ce5807bf6b8",
+   "prompt": "Medium shot matching the location image staging exactly: the friendly lizard (dhub) adviser in red-and-white shemagh, deep teal-green suit and gold tie seated on his chair at the long boardroom table surrounded by his listening colleagues (the dolphin with a tea glass beside him, blurred shoulders of two advisers across in the foreground corners, every chair occupied). He passionately makes his case — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — gesturing with sweeping confident moves, tapping the table on key points, ending with both hands open. The dolphin sips tea and nods. Camera close enough that his face and mouth are large and readable. Premium 3D animated feature film quality, vertical composition"
+  },
+  "fox": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
+   "location": "605a103a-76d8-4d8c-b7a2-a2b32add75e3",
+   "audio": "d3a2a073-5fa1-4c0f-ba6c-f270eba3cf0d",
+   "prompt": "Medium two-person shot matching the location image staging and framing exactly, same camera distance, no zoom-in: the sandy-orange desert fox adviser with round silver glasses and burgundy waistcoat seated upright on his chair at the long boardroom table, and RIGHT BESIDE HIM in the next chair the friendly grey shark adviser in an olive suit, who stays seated and visible at the left side of the frame for the entire shot, listening and nodding. Blurred shoulders of two advisers across the table in the bottom foreground corners. Every chair is occupied, no empty chairs at any moment. Only the fox speaks: he replies skeptically and dryly — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — adjusting his glasses, raising one finger, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy. Premium 3D animated feature film quality, vertical composition"
   },
   "clash": {
    "model": "intone",
    "aspect_ratio": "9:16",
    "characters": [
-    "d45293b3-f6ea-4114-8248-57a5e7fe1725",
-    "07b47be5-157c-4093-b6b6-74ffa50ee9c7"
+    "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+    "4708d2a3-50b3-4f1f-8075-ffd868ec26bd"
    ],
-   "location": "5d586aa5-2914-4a37-96ba-f218cdb46dfc",
+   "location": "c115488e-b1d8-4c4a-ae8c-4c50f6180050",
    "audio": [
     "8b517d9c-1852-4f4d-b4b6-1ca7faca1107",
     "5d68a666-d040-4a15-9f3a-b80af647ee5f"
    ],
-   "prompt": "Quick confrontation two-shot matching the location image staging exactly: the golden saluki adviser in teal suit on the left and the grey Arabian wolf adviser with silver glasses on the right sit facing each other across the table, BOTH properly on their chairs, never on the table, full correct anatomy. The saluki speaks first with one short punchy line, pointing at the wolf with a grin — his mouth clearly and visibly opens and closes on every word; the wolf immediately fires back his dry retort — his mouth clearly and visibly opens and closes on every word — leaning forward then folding his arms with a smirk. Snappy expressive cartoon acting, clear turn-taking, both faces large and readable. Premium 3D animated feature film quality, vertical composition"
+   "prompt": "Quick confrontation two-shot matching the location image staging exactly: the lizard (dhub) in red shemagh and teal suit on the left and the sandy desert fox in silver glasses and burgundy waistcoat on the right sit facing each other across the long table, BOTH properly on their chairs, never on the table, full correct anatomy. The lizard speaks first with one short punchy line, pointing at the fox with a grin — his mouth clearly and visibly opens and closes on every word; the fox immediately fires back his dry retort — his mouth clearly and visibly opens and closes on every word — leaning forward then folding his arms with a smirk. Snappy expressive cartoon acting, clear turn-taking, both faces large and readable. Premium 3D animated feature film quality, vertical composition"
+  },
+  "camel": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "location": "a8423df3-85c9-4053-aebc-e979223daad5",
+   "audio": "dc0d5efd-963a-4afa-baf0-28613edd488a",
+   "prompt": "Shot matching the location image staging and framing exactly: the dignified elderly Arabian camel gentleman with white ghutra headdress, round gold reading glasses and sand-beige three-piece suit with deep teal-green tie sits down in the empty teal leather chair at the near left of the long walnut table, properly on the chair, the clear in-focus main subject, exactly one camel in the scene. The dolphin, flamingo and turtle advisers stay seated along the table behind him, and the blurred shoulders of two advisers stay in the bottom foreground corners. He calmly gives his opinion to the colleagues across the table, his mouth and muzzle opening and closing clearly with every word, one hand resting on his leather notebook, patient wise delivery, face framed large and readable. Premium 3D animated feature film quality, vertical composition",
+   "location_note": "نسخة من إطار مقعد الجمل 4d2700c2 بدون الجمل (كرسيه فاضي) — النموذج يرفض موقعاً فيه جمل، فيقعّده هو بكرسيه بين جيرانه أنفسهم"
   },
   "cta_keyframe": {
    "model": "gpt_image_2_6",
    "aspect_ratio": "9:16",
    "refs": [
-    "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d",
-    "46efc634-f637-4f87-9e05-f3b0ae9dd07c"
+    "04e3b054-e907-4f7e-b0d2-36d5924baf54",
+    "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d"
    ],
-   "job": "b7e87d69-95a0-4029-b114-0e9c5b05a780"
+   "job": "9e4722f4-7622-4a01-aa9f-85a10b609872",
+   "note": "الصقر الوحيد بالصورة — مكانه عند الشاشة فاضي لأنه مشى لطرف الطاولة"
   }
  }
 }

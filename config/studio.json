@@ -38,19 +38,13 @@
     "replaced": {
       "old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9",
       "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"
-    }
+    },
+    "council_wide_v2": "46efc634-f637-4f87-9e05-f3b0ae9dd07c",
+    "council_wide_v2_note": "لقطة المجلس الكامل بالطاقم المعتمد 2026-11-10 (15 شخصية، القاضي على الرأس، الصقر واقف يعرض، السلوقي والذيب متقابلين) — مرجع كل إطارات الحلقات الجاية وبداية فيديو المقدمة",
+    "empty_plate": "7347f5d3-1220-439f-880b-94909019022d"
   },
   "cast": {
-    "thawr": {
-      "name_ar": "الثور",
-      "job_id": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
-      "identity": "cheerful charismatic cartoon bull, caramel-brown short fur, short polished upward-curving horns, warm amber eyes, big optimistic smile, tailored deep teal-green three-piece business suit, crisp white shirt, gold necktie with small gold upward-arrow lapel pin, dark leather oxford shoes"
-    },
-    "dubb": {
-      "name_ar": "الدب",
-      "job_id": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
-      "identity": "heavyset skeptical adult bear, thick charcoal-grey fur, round silver-rimmed glasses, raised skeptical eyebrow, slight unimpressed frown, tailored burgundy waistcoat over ivory shirt with rolled sleeves, dark grey trousers, small red downward-arrow lapel pin, brown leather brogues"
-    },
+    "_comment": "الطاقم المعتمد 2026-11-10 («تمام» بدر). المفتاح = الدور بالمجلس (نفس أسماء ملفات .claude/agents). الطيور (rassad, qita, congress) بدون تزامن شفاه: تعليق صوتي فقط. صورة الطاقم المجمعة: media af7e0ee3-e00c-4057-ae58-360169d95af6",
     "qadhi": {
       "name_ar": "القاضي",
       "job_id": "2eca681d-ff13-4e5b-aa91-de119c245559",
@@ -59,12 +53,82 @@
     "rassad": {
       "name_ar": "رصّاد الأخبار",
       "job_id": "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d",
-      "identity": "sleek sharp-eyed anthropomorphic peregrine falcon journalist, slate-grey and white barred feathers, piercing golden eyes, small black earpiece, khaki field press vest with many pockets over deep teal-green shirt, small tablet in hand"
+      "identity": "sleek sharp-eyed anthropomorphic peregrine falcon journalist, slate-grey and white barred feathers, piercing golden eyes, small black earpiece, khaki field press vest with many pockets over deep teal-green shirt, small tablet in hand",
+      "note": "منقار: still_vo أو seedance + تعليق صوتي"
     },
     "saboor": {
       "name_ar": "المستثمر الصبور",
       "job_id": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
       "identity": "dignified calm elderly Arabian camel gentleman, sandy golden-beige short fur, heavy-lidded wise patient eyes behind round gold-rimmed reading glasses, soft knowing smile, elegant tailored sand-beige three-piece suit, crisp white shirt, deep teal-green necktie with small gold hourglass lapel pin, polished brown leather shoes, small leather-bound notebook"
+    },
+    "thawr": {
+      "name_ar": "محامي الشراء",
+      "animal": "السلوقي",
+      "job_id": "d45293b3-f6ea-4114-8248-57a5e7fe1725",
+      "identity": "elegant golden Arabian saluki gentleman, long silky golden-cream feathered ears, warm amber eyes, confident grin, tailored deep teal-green three-piece suit, white shirt, gold necktie with small gold upward-arrow lapel pin",
+      "why": "أسرع كلب صيد يطارد الفرصة — اختاره بدر بدل الثور"
+    },
+    "dubb": {
+      "name_ar": "محامي الحذر",
+      "animal": "الذيب العربي",
+      "job_id": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
+      "identity": "lean grey Arabian wolf, tall pointed ears, sharp amber eyes behind round silver-rimmed glasses, dry skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, small red downward-arrow lapel pin",
+      "why": "«الذيب ما ينخدع» — اختاره بدر بدل الدب"
+    },
+    "fanni": {
+      "name_ar": "الفنّي",
+      "animal": "بومة",
+      "job_id": "bedc88db-3ea4-4b52-8b13-ac431dec9743"
+    },
+    "asasi": {
+      "name_ar": "الأساسي",
+      "animal": "سلحفاة نوخذة بدفتر الحسابات",
+      "job_id": "72ebf03e-f319-4d1e-95e5-44544cf1ef83",
+      "why": "اختارها بدر"
+    },
+    "macro": {
+      "name_ar": "الاستراتيجية الكلية",
+      "animal": "غزالة (بنت)",
+      "job_id": "d77cbde9-f674-441d-a5a5-cedfe0eae30e",
+      "why": "اختارها بدر"
+    },
+    "whales": {
+      "name_ar": "متتبع الحيتان",
+      "animal": "دلفين",
+      "job_id": "7148fdba-6e84-41c4-8da5-a115d1948f80"
+    },
+    "mudharib": {
+      "name_ar": "المضاربة السريعة",
+      "animal": "ثعلبة حمراء (بنت)",
+      "job_id": "bb839d16-5fca-4b23-81eb-8b718af41744"
+    },
+    "qita": {
+      "name_ar": "محللة القطاع",
+      "animal": "فلامنغو (بنت)",
+      "job_id": "a595086d-8ec0-40d3-9da9-2f19a8db005d",
+      "note": "منقار: تعليق صوتي"
+    },
+    "suyula": {
+      "name_ar": "قارئ السيولة",
+      "animal": "ضب",
+      "job_id": "2489b61b-7633-4228-b8cb-4c17ef5feb06"
+    },
+    "haris": {
+      "name_ar": "حارس المحفظة",
+      "animal": "قنفذ الصحراء",
+      "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3"
+    },
+    "congress": {
+      "name_ar": "متتبع السياسيين",
+      "animal": "هدهد",
+      "job_id": "a01a0870-d65a-4736-9cd9-251009824057",
+      "note": "منقار: تعليق صوتي"
+    },
+    "mazloum": {
+      "name_ar": "صائد المظلومات",
+      "animal": "قرش خليجي ودود",
+      "job_id": "128d7ae6-38d7-4e10-82b2-a4fbc6930996",
+      "why": "اختاره بدر"
     }
   },
   "voices": {
@@ -74,12 +138,13 @@
     },
     "thawr": {
       "name": "Holden",
-      "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f"
+      "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f",
+      "note": "صوت السلوقي (كان صوت الثور)"
     },
     "dubb": {
       "name": "Arthur",
       "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
-      "note": "stability 0.6 ونص مبسط بدون أرقام مركبة"
+      "note": "صوت الذيب (كان صوت الدب) — stability 0.6 ونص مبسط بدون أرقام مركبة"
     },
     "qadhi": {
       "name": "Grady",
@@ -184,83 +249,28 @@
       "session_date": "2026-11-08",
       "data_date": "2026-11-07",
       "episode_file": "tools/studio/episodes/nvda-2026-11-07/episode.json",
-      "video_media_id": "bdc92192-266f-4a83-9372-84aec412f506",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/bdc92192-266f-4a83-9372-84aec412f506.mp4",
+      "video_media_id": "01dabafc-ba0a-45b0-b74e-caccde804e54",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/01dabafc-ba0a-45b0-b74e-caccde804e54.mp4",
       "site_page": "site/ep01-nvda.html",
       "report": "reports/2026-11-08_NVDA.md",
-      "resolution": "720x1280 (معتمدة نهائية)"
+      "resolution": "720x1280 (معتمدة نهائية)",
+      "video_media_id_v1_bull_bear": "bdc92192-266f-4a83-9372-84aec412f506",
+      "duration_s": 82.2,
+      "cast": "السلوقي (شراء) • الذيب (حذر) • الجمل • القاضي • الصقر",
+      "notes": "أعيدت 2026-11-10 بالطاقم الخليجي. السلوقي تعليق صوتي فوق حركة (نموذج الشفاه رفضه 3 مرات)؛ الذيب والمواجهة والجمل والقاضي تزامن شفاه. بوابة التفريغ 7/7 (أقل تشابه 0.82 للقاضي بسبب كتابة الأرقام)."
     }
   ],
-  "cast_candidates": {
-    "_comment": "تشكيلة مقترحة 2026-11-10 بعد مراجعات بدر — بانتظار اعتماده النهائي قبل نقلها إلى cast. قراره: الثور والدب ينشالون (مو حيوانات خليجية) وتنعاد الحلقة 1 بالسلوقي والذيب. انشال كذلك: القطوة، المها (ترمز لدولة)، النمر (يلخبط الناس)، الحصان (منتشر بكل العالم)، الوعل (مو معروف)، الهامور (ما عجبه شكله؛ واختبار شفاهه نجح 9cc39673 = نموذج الشفاه يقبل فم السمكة). الرقيب الشرعي وراصد الصباح وأمين السجل بلا شخصيات. صورة المراجعة: media af7e0ee3-e00c-4057-ae58-360169d95af6",
-    "thawr": {
-      "name_ar": "محامي الشراء",
-      "animal": "السلوقي",
-      "job_id": "d45293b3-f6ea-4114-8248-57a5e7fe1725",
-      "voice": "Holden (صوت الثور)",
-      "why": "أسرع كلب صيد يطارد الفرصة — اختاره بدر بدل الثور"
+  "cast_retired": {
+    "_comment": "شخصيات أُوقفت 2026-11-10 بقرار بدر (مو حيوانات خليجية) — محفوظة للمرجع فقط، لا تُستخدم.",
+    "bull": {
+      "name_ar": "الثور",
+      "job_id": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
+      "identity": "cheerful charismatic cartoon bull, caramel-brown short fur, short polished upward-curving horns, warm amber eyes, big optimistic smile, tailored deep teal-green three-piece business suit, crisp white shirt, gold necktie with small gold upward-arrow lapel pin, dark leather oxford shoes"
     },
-    "dubb": {
-      "name_ar": "محامي الحذر",
-      "animal": "الذيب العربي",
-      "job_id": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
-      "voice": "Arthur (صوت الدب)",
-      "why": "«الذيب ما ينخدع» — اختاره بدر بدل الدب"
-    },
-    "fanni": {
-      "name_ar": "الفنّي",
-      "animal": "بومة",
-      "job_id": "bedc88db-3ea4-4b52-8b13-ac431dec9743"
-    },
-    "asasi": {
-      "name_ar": "الأساسي",
-      "animal": "سلحفاة نوخذة بدفتر الحسابات",
-      "job_id": "72ebf03e-f319-4d1e-95e5-44544cf1ef83",
-      "why": "اختارها بدر"
-    },
-    "macro": {
-      "name_ar": "الاستراتيجية الكلية",
-      "animal": "غزالة (بنت)",
-      "job_id": "d77cbde9-f674-441d-a5a5-cedfe0eae30e",
-      "why": "اختارها بدر"
-    },
-    "whales": {
-      "name_ar": "متتبع الحيتان",
-      "animal": "دلفين",
-      "job_id": "7148fdba-6e84-41c4-8da5-a115d1948f80"
-    },
-    "mudharib": {
-      "name_ar": "المضاربة السريعة",
-      "animal": "ثعلبة حمراء (بنت)",
-      "job_id": "bb839d16-5fca-4b23-81eb-8b718af41744"
-    },
-    "qita": {
-      "name_ar": "محللة القطاع",
-      "animal": "فلامنغو (بنت)",
-      "job_id": "a595086d-8ec0-40d3-9da9-2f19a8db005d",
-      "note": "منقار: تعليق صوتي"
-    },
-    "suyula": {
-      "name_ar": "قارئ السيولة",
-      "animal": "ضب",
-      "job_id": "2489b61b-7633-4228-b8cb-4c17ef5feb06"
-    },
-    "haris": {
-      "name_ar": "حارس المحفظة",
-      "animal": "قنفذ الصحراء",
-      "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3"
-    },
-    "congress": {
-      "name_ar": "متتبع السياسيين",
-      "animal": "هدهد",
-      "job_id": "a01a0870-d65a-4736-9cd9-251009824057",
-      "note": "منقار: تعليق صوتي"
-    },
-    "mazloum": {
-      "name_ar": "صائد المظلومات",
-      "animal": "قرش خليجي ودود",
-      "job_id": "128d7ae6-38d7-4e10-82b2-a4fbc6930996",
-      "why": "اختاره بدر"
+    "bear": {
+      "name_ar": "الدب",
+      "job_id": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
+      "identity": "heavyset skeptical adult bear, thick charcoal-grey fur, round silver-rimmed glasses, raised skeptical eyebrow, slight unimpressed frown, tailored burgundy waistcoat over ivory shirt with rolled sleeves, dark grey trousers, small red downward-arrow lapel pin, brown leather brogues"
     }
   }
 }

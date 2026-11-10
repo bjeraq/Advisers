@@ -35,7 +35,10 @@
     "name_ar": "قاعة مجلس الإدارة",
     "job_id": "2908126b-8b32-4844-9856-88cb4997a073",
     "identity": "prestigious ultra-modern corporate boardroom, long polished dark walnut table, twelve tall deep teal-green leather executive chairs, floor-to-ceiling windows with golden-hour city skyline, subtle Gulf-Arabic geometric ceiling and wall details, brass accents, huge blank teal-glow presentation screen at the head of the table",
-    "replaced": {"old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9", "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"}
+    "replaced": {
+      "old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9",
+      "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"
+    }
   },
   "cast": {
     "thawr": {
@@ -65,11 +68,27 @@
     }
   },
   "voices": {
-    "rassad": {"name": "Benji", "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"},
-    "thawr": {"name": "Holden", "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f"},
-    "dubb": {"name": "Arthur", "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346", "note": "stability 0.6 ونص مبسط بدون أرقام مركبة"},
-    "qadhi": {"name": "Grady", "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678"},
-    "saboor": {"name": "Fraser", "voice_id": "6705e465-7b52-5915-a1d8-b1222885e01d"}
+    "rassad": {
+      "name": "Benji",
+      "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"
+    },
+    "thawr": {
+      "name": "Holden",
+      "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f"
+    },
+    "dubb": {
+      "name": "Arthur",
+      "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+      "note": "stability 0.6 ونص مبسط بدون أرقام مركبة"
+    },
+    "qadhi": {
+      "name": "Grady",
+      "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678"
+    },
+    "saboor": {
+      "name": "Fraser",
+      "voice_id": "6705e465-7b52-5915-a1d8-b1222885e01d"
+    }
   },
   "episode_nvda_pilot": {
     "date": "2026-11-09",
@@ -140,10 +159,99 @@
   },
   "episode_template": {
     "name_ar": "مجلس اليوم",
-    "duration_seconds": [60, 90],
-    "beats": ["خبر عاجل يشد (رصّاد الأخبار فوق لقطة المجلس المتحركة)", "مرافعة الثور", "مرافعة الدب", "مواجهة قصيرة (اختياري)", "صوت ثالث مبرر بالتقرير (اختياري، مثل الصبور)", "حكم القاضي: الميزان والأصوات وخياره الأول وثقته — بدون سؤال للجمهور", "الصقر وحده يسأل: من أقنعك؟ خل نسمع رايك بالكومنتات"],
+    "duration_seconds": [
+      60,
+      90
+    ],
+    "beats": [
+      "خبر عاجل يشد (رصّاد الأخبار فوق لقطة المجلس المتحركة)",
+      "مرافعة الثور",
+      "مرافعة الدب",
+      "مواجهة قصيرة (اختياري)",
+      "صوت ثالث مبرر بالتقرير (اختياري، مثل الصبور)",
+      "حكم القاضي: الميزان والأصوات وخياره الأول وثقته — بدون سؤال للجمهور",
+      "الصقر وحده يسأل: من أقنعك؟ خل نسمع رايك بالكومنتات"
+    ],
     "writer_skill": ".claude/skills/story/SKILL.md",
     "production_skill": ".claude/skills/studio/SKILL.md",
     "disclaimer_ar": "تحليل للمعلومة وليس توصية مالية — القرار قرارك"
+  },
+  "episodes": [
+    {
+      "number": 1,
+      "title": "البداية — إنفيديا",
+      "ticker": "NVDA",
+      "session_date": "2026-11-08",
+      "data_date": "2026-11-07",
+      "episode_file": "tools/studio/episodes/nvda-2026-11-07/episode.json",
+      "video_media_id": "bdc92192-266f-4a83-9372-84aec412f506",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/bdc92192-266f-4a83-9372-84aec412f506.mp4",
+      "site_page": "site/ep01-nvda.html",
+      "report": "reports/2026-11-08_NVDA.md",
+      "resolution": "720x1280 (معتمدة نهائية)"
+    }
+  ],
+  "cast_candidates": {
+    "_comment": "أوراق مقترحة 2026-11-10 للمستشارين العشرة بلا شكل — بانتظار اعتماد بدر قبل نقلها إلى cast. الرقيب الشرعي وراصد الصباح وأمين السجل بلا شخصيات (قراره)",
+    "fanni": {
+      "name_ar": "الفنّي",
+      "animal": "بومة",
+      "job_id": "bedc88db-3ea4-4b52-8b13-ac431dec9743",
+      "why": "تشوف الأنماط بالظلام — ما تؤمن إلا بالرسم البياني (موجودة بلقطة المجلس)"
+    },
+    "asasi": {
+      "name_ar": "الأساسي",
+      "animal": "حصان عربي أصيل",
+      "job_id": "e8a07ddc-6080-4064-b306-2b5124ffcfb9",
+      "why": "الأصيل يدور على الأصول والقوائم المالية (موجود بلقطة المجلس)"
+    },
+    "macro": {
+      "name_ar": "الاستراتيجي الكلي",
+      "animal": "مها عربي",
+      "job_id": "14ad75dc-14df-46b5-8cb7-2fc7d3d8f752",
+      "why": "يطالع الأفق البعيد — الصورة الكبيرة (موجود بلقطة المجلس)"
+    },
+    "whales": {
+      "name_ar": "متتبع الحيتان",
+      "animal": "سلحفاة بحرية نوخذة بغترة ودربيل",
+      "job_id": "280d129c-1227-4dca-9119-da8721a505ec",
+      "why": "تسبح ويا الحيتان ولمسة الغوص الكويتي (السلحفاة الموجودة بلقطة المجلس)"
+    },
+    "mudharib": {
+      "name_ar": "المضاربة السريعة",
+      "animal": "ثعلبة حمراء صغيرة (بنت)",
+      "job_id": "bb839d16-5fca-4b23-81eb-8b718af41744",
+      "why": "سريعة وذكية — بدل الثعلب (طلب بدر)"
+    },
+    "qita": {
+      "name_ar": "محللة القطاع",
+      "animal": "قطوة عربي ماو (بنت)",
+      "job_id": "cb7c3c5e-48a6-43c1-a81d-37855675c05a",
+      "why": "سلالة صحراوية من جزيرة العرب — ذوّاقة تختار أحسن اسم بالقطاع"
+    },
+    "suyula": {
+      "name_ar": "قارئ السيولة",
+      "animal": "ضب",
+      "job_id": "2489b61b-7633-4228-b8cb-4c17ef5feb06",
+      "why": "يراقب منو داخل ومنو طالع من الجحر = سهولة الدخول والخروج (طلب بدر: ضب)"
+    },
+    "haris": {
+      "name_ar": "حارس المحفظة",
+      "animal": "قنفذ الصحراء",
+      "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3",
+      "why": "شوكه حماية ووقف خسارة"
+    },
+    "congress": {
+      "name_ar": "متتبع السياسيين",
+      "animal": "هدهد",
+      "job_id": "a01a0870-d65a-4736-9cd9-251009824057",
+      "why": "جاب نبأ الملوك — يتابع أخبار الساسة. منقار: مشاهده تعليق صوتي بدون تزامن شفاه مثل الصقر"
+    },
+    "mazloum": {
+      "name_ar": "صائد المظلومات",
+      "animal": "سلوقي",
+      "job_id": "588b05ab-5ef6-4063-a0f5-8cc380d6fd90",
+      "why": "كلب الصيد العربي — يصيد الأسهم المظلومة"
+    }
   }
 }

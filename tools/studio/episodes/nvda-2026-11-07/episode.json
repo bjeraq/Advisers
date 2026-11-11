@@ -51,13 +51,7 @@
    "audio_job": "b731cc85-a438-4b40-93c6-e0e7517f64d9",
    "text": "سمعت الجميع... ميزان المجلس اليوم: أربعة وعشرين بالموجب. ستة يقولون شراء، تسعة يقولون انتظار، ومحد قال بيع. رأيي؟ دخول متدرج صغير، ما يتعدى اثنين بالمية من المحفظة... وثقتي سبعة من عشرة.",
    "voice": "Gideon",
-   "alt": {
-    "voice": "Sterling",
-    "audio": "src/lines/qadhi_v2b.mp3",
-    "audio_job": "6ece9fbd-e6f9-4ac6-bde7-8e00e218591d",
-    "video": "src/d480_judge_v2b.mp4",
-    "draft_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73"
-   }
+   "_note": "بدر 2026-11-11: صوت Gideon (أ) معتمد — أوضح نطقاً وأقرب للكويتي؛ Sterling (ب) مرفوض لأنه ينطق فصحى ويقط كلمات. ممنوع تغيير النص أو الصوت بعد الحين إلا بطلبه."
   },
   "cta": {
    "speaker": "rassad",
@@ -349,10 +343,10 @@
    "type": "lipsync",
    "line": "qadhi",
    "video": {
-    "draft": "src/d480_judge_v2.mp4",
+    "draft": "src/d480_judge_v2b.mp4",
     "final": "src/f1080_judge.mp4"
    },
-   "draft_job": "068406e9-39e4-4962-907e-059e381616a5",
+   "draft_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
@@ -366,7 +360,8 @@
     "name": "verdict",
     "at": "after_graphic",
     "fade": 0.6
-   }
+   },
+   "_note": "لقطة التوليد 8b27a300 (القاضي بحجم باقي المتكلمين بدون مجلس مصغّر حوله) اختارها بدر، وفوقها تسجيل Gideon الأصلي (صوت النموذج مكتوم أصلاً). التوليد 068406e9 (القاضي كبير والمجلس صغير) مرفوض: بدر يبي كل الشخصيات بنفس الحجم."
   },
   {
    "id": "cta",
@@ -391,7 +386,7 @@
    "location": "ae781c26-a251-49f3-96bc-a832599f0f7d",
    "audio": "b731cc85-a438-4b40-93c6-e0e7517f64d9",
    "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, white ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his council — the turtle captain and the hoopoe bird on the left, the hedgehog and the gazelle lady on the right, the nearest two advisers only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He starts speaking from the very first frame and delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods and everyone stays seated. Same camera distance, no zoom-in. Premium 3D animated feature film quality, vertical composition",
-   "audio_alt": "6ece9fbd-e6f9-4ac6-bde7-8e00e218591d"
+   "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73"
   },
   "master": "844ed442-8b47-41f8-8b47-e762fa88adae",
   "intro": {

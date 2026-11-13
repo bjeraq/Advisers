@@ -1,7 +1,7 @@
 # شعار الحساب — majlis.stocks
 
 شموع ترسم علامة صح (أخضر، أحمر نازل، أخضرين صاعدين) داخل دائرة جاهزة لصورة انستغرام.
-الملفات النهائية (1080×1080): `site/brand/majlis_stocks_{dark,teal,light}.png`.
+النسخة الثانية (كتابة كبيرة على سطرين تنقرا بالتلفون + ست شموع أصغر): `site/brand/majlis_stocks_v2_{dark,teal,light}.png` من `tools/brand/ig_logo_v2.py`. النسخة الأولى: `site/brand/majlis_stocks_{dark,teal,light}.png`.
 
 إعادة التوليد (رسم متجهي يُصوَّر بكروميوم):
 

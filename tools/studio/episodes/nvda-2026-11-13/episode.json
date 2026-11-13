@@ -12,32 +12,32 @@
   "intro": {
    "speaker": "rassad",
    "audio": "src/lines/intro_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "07c68526-a04f-44d6-8908-9d5cad8f3d32",
    "text": "خبر عاجل يا جماعة! جنسن هوانغ استقال من إنفيديا بعد ثلاثة وثلاثين سنة، والسهم لمس أدنى سعر له بسنة... ومجلس المستشارين منعقد الحين!"
   },
   "thawr": {
    "speaker": "thawr",
    "audio": "src/lines/thawr_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "1a624e24-8a3a-4c15-8af1-8089ad19cb7d",
    "text": "شوفوا عدل! الرئيس طلع، بس الرقائق ما طلعت وياه. الطلب على حاله، والشركة قاعدة على جبل من الكاش... والنتايج الثلاثاء بتتكلم عن نفسها!"
   },
   "dubb": {
    "speaker": "dubb",
    "audio": "src/lines/dubb_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "07dac0c3-9c45-41a9-8e80-0b800046d486",
    "text": "على مهلك يا ضب... اللي بنى الشركة طلع فجأة، وواشنطن تبي تشد القيود على الصين، والمحللين قاعدين ينزّلون أهدافهم. والسهم كاسر دعمه... وتحته للحين ما فيه أرضية واضحة.",
    "stability": 0.6
   },
   "clasht": {
    "speaker": "thawr",
    "audio": "src/lines/clash_t_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "2f9181ba-8294-4c1d-8578-e8d80a399462",
    "text": "لمس أدناه وارتد بنفس اليوم!"
   },
   "clashd": {
    "speaker": "dubb",
    "audio": "src/lines/clash_d_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "44ef2a0a-1058-4c9c-8b01-6f78e428fd7c",
    "text": "وارتداد يوم واحد ما يبني ثقة!",
    "stability": 0.6
   },
@@ -51,7 +51,7 @@
   "cta": {
    "speaker": "rassad",
    "audio": "src/lines/cta_v5.mp3",
-   "audio_job": "TBD",
+   "audio_job": "675c9370-bc7d-40bf-a10d-ede574ad4b38",
    "text": "ومن أقنعك إنت؟ الضب، الثعلب، ولا القاضي؟ خل نسمع رايك بالكومنتات — والثلاثاء النتايج، والمجلس راجع ينعقد!"
   },
   "guest": {
@@ -231,11 +231,11 @@
    "id": "intro",
    "type": "vo_clip",
    "line": "intro",
-   "delay": 0.5,
-   "duration": 10.5,
+   "delay": 0.4,
+   "duration": 11.6,
    "video": {
-    "draft": "src/s720_intro_v5.mp4",
-    "final": "src/s720_intro_v5.mp4"
+    "draft": "src/s720_intro_v5s.mp4",
+    "final": "src/s720_intro_v5s.mp4"
    },
    "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
    "card": {
@@ -243,7 +243,8 @@
     "at": 0.7,
     "fade": 0.6
    },
-   "shake": "طايح"
+   "shake": "طايح",
+   "_note": "التسجيل 10.9ث والمقطع 11.0ث، فالمقطع مبطأ ×1.08 بـminterpolate إلى ~11.9ث حتى ما ينقص الكلام"
   },
   {
    "id": "dhub",
@@ -253,7 +254,7 @@
     "draft": "src/d480_dhub_v5.mp4",
     "final": "src/f1080_dhub.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "f968db4e-248a-4350-ada6-be71cf91c7f4",
    "graphic": {
     "name": "cash",
     "cue": "جبل",
@@ -276,7 +277,7 @@
     "draft": "src/d480_fox_v5.mp4",
     "final": "src/f1080_fox.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "04fd9e48-facd-4df9-92cd-a1f258040756",
    "graphic": {
     "name": "breakdown",
     "cue": "كاسر",
@@ -304,7 +305,7 @@
     "final": "src/f1080_clash.mp4"
    },
    "shake": "ثقة",
-   "draft_job": "TBD"
+   "draft_job": "2314474c-e2d9-41a9-9f55-5494272efdd6"
   },
   {
    "id": "guest",
@@ -366,10 +367,11 @@
    "model": "intone",
    "aspect_ratio": "9:16",
    "character": "2eca681d-ff13-4e5b-aa91-de119c245559",
-   "location": "ae781c26-a251-49f3-96bc-a832599f0f7d",
+   "location": "3c1fb86e-15ea-49ad-bf67-659096f22c7f",
    "audio": "TBD",
    "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, white ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his council — the turtle captain and the hoopoe bird on the left, the hedgehog and the gazelle lady on the right, the nearest two advisers only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He starts speaking from the very first frame and delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods and everyone stays seated. Same camera distance, no zoom-in. Premium 3D animated feature film quality, vertical composition",
-   "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73"
+   "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73",
+   "location_note": "إطار من مقطع القاضي المعتمد 8b27a300 (لقطة متوسطة بنفس حجم الباقين، الشاشة خلفه) مرفوع كصورة"
   },
   "master": "844ed442-8b47-41f8-8b47-e762fa88adae",
   "intro": {
@@ -387,7 +389,7 @@
    "aspect_ratio": "9:16",
    "character": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
    "location": "316d6510-8950-4137-8bac-0893023f9772",
-   "audio": "TBD",
+   "audio": "1a624e24-8a3a-4c15-8af1-8089ad19cb7d",
    "prompt": "Medium shot matching the location image staging exactly: the friendly lizard (dhub) adviser in red-and-white shemagh, deep teal-green suit and gold tie seated on his chair at the long boardroom table, the golden-hour skyline windows behind him, the pink flamingo lady in a cream blazer beside him, blurred shoulders of two advisers across the table in the foreground corners, every chair occupied. He is already talking in the very first frame and passionately makes his case — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — gesturing with sweeping confident moves, tapping the table on key points, ending with both hands open. The flamingo listens, nods and stays seated and visible for the entire shot. Same camera distance, no zoom-in, his face and mouth large and readable. Premium 3D animated feature film quality, vertical composition",
    "location_alt": "100cdf87-be76-4bae-9975-1d60431b5914"
   },
@@ -396,7 +398,7 @@
    "aspect_ratio": "9:16",
    "character": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
    "location": "f4dac3d1-2b64-4647-81d1-bd094c018180",
-   "audio": "TBD",
+   "audio": "07dac0c3-9c45-41a9-8e80-0b800046d486",
    "prompt": "Medium two-person shot matching the location image staging and framing exactly, same camera distance, no zoom-in: the sandy-orange desert fox adviser with round silver glasses and burgundy waistcoat seated upright on his chair at the long boardroom table, and beside him in the next chair the desert hedgehog adviser in a grey suit and teal tie, who stays seated and visible at the left side of the frame for the entire shot, listening and nodding. Behind them the walnut mashrabiya wall with glowing brass sconces, no windows. Blurred shoulders of two advisers across the table in the bottom foreground corners. Every chair is occupied. Only the fox speaks, and he is already talking in the very first frame: he replies skeptically and dryly — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — adjusting his glasses, raising one finger, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy. Premium 3D animated feature film quality, vertical composition",
    "location_alt": "3787589c-09e2-4f89-ae4c-c0b3323cd84e"
   },
@@ -408,7 +410,10 @@
     "4708d2a3-50b3-4f1f-8075-ffd868ec26bd"
    ],
    "location": "175dc808-de22-43b8-9c3b-50c2cbde4dab",
-   "audio": "TBD",
+   "audio": [
+    "2f9181ba-8294-4c1d-8578-e8d80a399462",
+    "44ef2a0a-1058-4c9c-8b01-6f78e428fd7c"
+   ],
    "prompt": "Quick confrontation two-shot matching the location image staging exactly: the lizard (dhub) in red shemagh and teal suit on the left with the skyline windows behind him, and the sandy desert fox in silver glasses and burgundy waistcoat on the right with the walnut mashrabiya wall behind him, sit facing each other across the long table, BOTH properly on their chairs, never on the table, full correct anatomy, the judge small at the far head under the teal screen. The lizard speaks first with one short punchy line, pointing at the fox with a grin — his mouth clearly and visibly opens and closes on every word; then the fox immediately fires back his dry retort — his mouth clearly and visibly opens and closes on every word — leaning forward then folding his arms with a smirk. Snappy expressive cartoon acting, clear turn-taking, both faces large and readable, same wide two-shot for the whole clip. Premium 3D animated feature film quality, vertical composition"
   },
   "cta_keyframe": {
@@ -457,6 +462,6 @@
    }
   }
  },
- "_status": "draft — awaiting council verdict and Friday close",
+ "_status": "lines recorded except guest/judge; dhub/fox/clash scenes generating; awaiting council after Friday close",
  "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)"
 }

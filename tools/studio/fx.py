@@ -8,7 +8,7 @@
   cash_bars     value, label, dur        أعمدة تتراكم + عداد نسبة يصعد
   support_break label, dur               سعر أحمر يكسر خط دعم متقطع وينزل نحو «؟»
   donut         value, lines[3], dur     حلقة تمتلئ إلى نسبة + ثلاث تسميات
-  verdict_meter score, scale_max, votes[[label, n, color]], title, dur   ميزان المجلس
+  verdict_meter score, scale_max, votes[[label, n, color]], title, dur   ميزان الاستثمار
 """
 import os, subprocess
 from PIL import Image, ImageDraw, ImageFont
@@ -137,7 +137,7 @@ def donut(P, value=66, lines=('من الأرباح', 'تصير كاش', 'حقي�
 
 
 def verdict_meter(P, score=24, scale_max=30, votes=(('شراء', 6, 'teal'), ('انتظار', 9, 'gold'), ('بيع', 0, 'red')),
-                  title='ميزان المجلس', dur=4.5):
+                  title='ميزان الاستثمار', dur=4.5):
     N = int(dur * FPS); W = BASE_W
     for i in range(N):
         t = i / (N - 1); img, p = P.frame()

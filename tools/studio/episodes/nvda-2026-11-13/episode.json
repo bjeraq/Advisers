@@ -17,9 +17,10 @@
   },
   "thawr": {
    "speaker": "thawr",
-   "audio": "src/lines/thawr_v5.mp3",
-   "audio_job": "1a624e24-8a3a-4c15-8af1-8089ad19cb7d",
-   "text": "شوفوا عدل! الرئيس طلع، بس الرقائق ما طلعت وياه. الطلب على حاله، والشركة قاعدة على جبل من الكاش... والنتايج الثلاثاء بتتكلم عن نفسها!"
+   "audio": "src/lines/thawr_v11.mp3",
+   "audio_job": "acfefdc8-84c0-4fa8-aa8f-fb9866784398",
+   "text": "شوفوا عدل! الرئيس طلع، بس الرقائق ما طلعت وياه. الطلب على حاله، والشركة قاعدة على جبل من الكاش... والنتايج الثلاثاء بتتكلم عن نفسها!",
+   "_pron": "بدر: «جبل» بفتح الجيم — التسجيل v11 مكتوب «جَبَل» (فيديو d480_dhub_v5 نفسه، النص ما تغير)"
   },
   "dubb": {
    "speaker": "dubb",
@@ -43,9 +44,9 @@
   },
   "qadhi": {
    "speaker": "qadhi",
-   "audio": "src/lines/qadhi_v10.mp3",
-   "audio_job": "0a2e41b9-38ea-41e7-915f-5cc9522d0051",
-   "text": "سمَعت الجميع... ميزان المجلس اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف نزول... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
+   "audio": "src/lines/qadhi_v11.mp3",
+   "audio_job": "0f09f079-2f1c-4ed8-a3eb-456f69f26a23",
+   "text": "سمَعت الجميع... ميزان الاستثمار اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف نزول... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
    "voice": "Gideon",
    "_pron": "بدر 14 نوفمبر: «طيحته» ظلت تنقال بشدة على الياء بكل الكتابات (طيحته، طَيْحته، طِيحته) → انشالت وانحطت بدالها «نزول»."
   },
@@ -124,7 +125,7 @@
      "red"
     ]
    ],
-   "title": "ميزان المجلس",
+   "title": "ميزان الاستثمار",
    "dur": 4.5
   },
   "donut": {
@@ -201,7 +202,7 @@
    "y": 0.76,
    "lines": [
     [
-     "ميزان المجلس: +19",
+     "ميزان الاستثمار: +19",
      56,
      "bold",
      "light_teal"
@@ -602,10 +603,10 @@
    "prompt": "Starting exactly from the start frame: the lizard in the red shemagh turns to the pink flamingo lady beside him and asks her a short question with an open hand; she turns toward the council and briskly explains, beak opening and closing as she talks, tapping numbers on her tablet and making a quick down-then-flat gesture with her wing, confident analyst. Same camera distance, nobody leaves their seat. Premium 3D animated feature film quality, vertical composition"
   }
  },
- "_status": "delivered v10 (judge: نزول instead of طيحته): e4f336af-41f8-48d7-81ff-c3729060b15c",
+ "_status": "delivered v11 (jabal fatha, ميزان الاستثمار): 5d8f85c4-8866-418f-bd09-af079c2512d4",
  "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
- "video_media_id": "e4f336af-41f8-48d7-81ff-c3729060b15c",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e4f336af-41f8-48d7-81ff-c3729060b15c.mp4",
+ "video_media_id": "5d8f85c4-8866-418f-bd09-af079c2512d4",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/5d8f85c4-8866-418f-bd09-af079c2512d4.mp4",
  "duration_s": 109.6,
  "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر.",
  "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
@@ -614,5 +615,7 @@
  "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
  "review_2026_11_14c": "بدر: كلام الفلامنغو مقطع → أعيد بدون قص؛ الرجّات كثيرة → بقت رجّة وحدة بس عند ردة الثعلب بالمواجهة («ثقة»).",
  "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
- "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb"
+ "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
+ "review_2026_11_14d": "بدر: «جَبَل» بالفتح؛ وتغيير الاسم «ميزان المجلس» → «ميزان الاستثمار» بكل مكان (كلام القاضي، الرسمة، بطاقة الحكم، الموقع، المهارات).",
+ "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c"
 }

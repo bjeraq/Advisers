@@ -31,7 +31,8 @@
   "same_size_speakers": "كل المتكلمين بنفس الحجم بالكادر (ملاحظة بدر 2026-11-11): لقطة القاضي مثل لقطات الضب والثعلب والجمل — لقطة متوسطة له بروحه والشاشة خلفه، مو لقطة واسعة يطلع فيها كبير والمجلس صغار حوله. ممنوع تغيير أي شي ما طلبه بدر (صوت، نص، شكل).",
   "shake_sparingly": "2026-11-14 (بدر): رجّة الشاشة بس للحظة الأهم بالحلقة (مثل ردة المواجهة)، ولا رجّة بالبداية.",
   "no_pause_trimming": "2026-11-14 (بدر): لا تقص الوقفات من التسجيل (silenceremove) — يخلي الكلام مقطع. لو السطر طويل اختصر النص.",
-  "tts_word_swap": "2026-11-14 (بدر): لو كلمة لهجة تنقرا غلط بالصوت بعد محاولة تشكيل وحدة، بدّلها بكلمة أوضح بدل ما نكرر المحاولات (مثال: «طيحته» → «نزول»)."
+  "tts_word_swap": "2026-11-14 (بدر): لو كلمة لهجة تنقرا غلط بالصوت بعد محاولة تشكيل وحدة، بدّلها بكلمة أوضح بدل ما نكرر المحاولات (مثال: «طيحته» → «نزول»).",
+  "meter_name": "2026-11-14 (بدر): اسم المؤشر «ميزان الاستثمار» (مو «ميزان المجلس») — بالكلام والرسومات والبطاقات والموقع."
  },
  "toolkit": {
   "_comment": "خط الإنتاج محفوظ بالمستودع (الساندبوكس يُمسح بعد ~24 ساعة): انقل الأدوات للساندبوكس وطابق md5 ثم شغّل البناء من مجلد العمل. التفاصيل في .claude/skills/studio و .claude/skills/story",
@@ -340,8 +341,8 @@
    "session_date": "2026-11-14",
    "data_date": "2026-11-13",
    "episode_file": "tools/studio/episodes/nvda-2026-11-13/episode.json",
-   "video_media_id": "e4f336af-41f8-48d7-81ff-c3729060b15c",
-   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e4f336af-41f8-48d7-81ff-c3729060b15c.mp4",
+   "video_media_id": "5d8f85c4-8866-418f-bd09-af079c2512d4",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/5d8f85c4-8866-418f-bd09-af079c2512d4.mp4",
    "site_page": "site/ep01-nvda.html",
    "report": "reports/2026-11-13_NVDA.md",
    "resolution": "720x1280 (معتمدة نهائية)",
@@ -370,7 +371,8 @@
    "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
    "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
    "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
-   "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb"
+   "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
+   "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c"
   }
  ],
  "cast_retired": {

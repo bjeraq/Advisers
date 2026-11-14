@@ -12,7 +12,7 @@
   "intro": {
    "speaker": "rassad",
    "audio": "src/lines/intro_b_v7.mp3",
-   "audio_job": "TBD",
+   "audio_job": "1620adee-7a98-45b7-921b-9e93a450071d",
    "text": "جنسن هوانغ استقال من إنفيديا بعد ثلاثة وثلاثين سنة، والسهم لَمَس أدنى سعر له بسنة... ومجلس المستشارين منعقد الحين!"
   },
   "thawr": {
@@ -24,7 +24,7 @@
   "dubb": {
    "speaker": "dubb",
    "audio": "src/lines/dubb_v7.mp3",
-   "audio_job": "TBD",
+   "audio_job": "b58e68ee-e545-463b-8b2b-11bae9734181",
    "text": "على مهلك يا ضب... اللي بنى الشركة طلع فجأة، وواشنطن تبي تشد القيود على الصين، والبنوك قاعدة تنزّل السعر اللي تتوقعه للسهم. والسهم نزل تحت المستوى اللي كان يوقف عنده... وتحته للحين ما فيه أرضية واضحة.",
    "stability": 0.6
   },
@@ -44,7 +44,7 @@
   "qadhi": {
    "speaker": "qadhi",
    "audio": "src/lines/qadhi_v7.mp3",
-   "audio_job": "TBD",
+   "audio_job": "7fc4e24d-1d26-44a1-89ca-a3378ae1466f",
    "text": "سمَعت الجميع... ميزان المجلس اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف طَيْحته... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
    "voice": "Gideon"
   },
@@ -64,7 +64,7 @@
   "intro_a": {
    "speaker": "rassad",
    "audio": "src/lines/intro_a_v7.mp3",
-   "audio_job": "TBD",
+   "audio_job": "33fe3f46-0c86-4dbd-b109-ada3f7733fb2",
    "text": "خَبَر عاجل يا جماعة!"
   },
   "flamingo": {
@@ -74,16 +74,19 @@
     {
      "speaker": "thawr",
      "voice": "Holden",
-     "text": "وإنتي يا مدام فلامينجو، شنو تقولين؟"
+     "job": "c5bc34a5-8b2b-4af1-b079-0f1760c3fec0",
+     "text": "وإنتي يا مدام فلامينجو؟"
     },
     {
      "speaker": "suyula",
      "voice": "Yara fd25dc29-6495-5df3-9332-26bb58fdd575",
-     "text": "أنا أراقب البيع والشرا: يوم الخميس التداول كان أكثر من أربع أضعاف المعتاد، بس الجمعة خف للنص، والسعر رجع نزل... يعني الشاري الكبير للحين ما بيّن!"
+     "job": "57601969-eec2-4671-9d6e-343063c00cd6",
+     "text": "أنا أراقب البيع والشرا: الخميس التداول أربع أضعاف المعتاد، بس الجمعة خف... والشاري الكبير ما بيّن!"
     }
    ],
-   "text": "وإنتي يا مدام فلامينجو، شنو تقولين؟ أنا أراقب البيع والشرا: يوم الخميس التداول كان أكثر من أربع أضعاف المعتاد، بس الجمعة خف للنص، والسعر رجع نزل... يعني الشاري الكبير للحين ما بيّن!",
-   "_data": "حجم الخميس 747.7 مليون = 4.5× متوسط 20 يوم؛ الجمعة 365.8 مليون = 1.9× وإغلاق 162.85 تحت قمة اليوم 170 (bars.json جلسة 13 نوفمبر)"
+   "text": "وإنتي يا مدام فلامينجو؟ أنا أراقب البيع والشرا: الخميس التداول أربع أضعاف المعتاد، بس الجمعة خف... والشاري الكبير ما بيّن!",
+   "_data": "حجم الخميس 747.7 مليون = 4.5× متوسط 20 يوم؛ الجمعة 365.8 مليون = 1.9× وإغلاق 162.85 تحت قمة اليوم 170 (bars.json جلسة 13 نوفمبر)",
+   "_mix": "السؤال + 0.25ث + جواب الفلامنغو بعد ضغط الوقفات (silenceremove stop_silence 0.22) = 9.8ث (طلب بدر 5–10ث)"
   }
  },
  "graphics": {
@@ -287,21 +290,21 @@
    "type": "vo_clip",
    "line": "intro_a",
    "delay": 0.2,
-   "duration": "audio+0.4",
+   "duration": 2.4,
    "video": {
-    "draft": "src/s720_falcon_open.mp4",
-    "final": "src/s720_falcon_open.mp4"
+    "draft": "src/s720_falcon_open_t.mp4",
+    "final": "src/s720_falcon_open_t.mp4"
    },
-   "video_job": "TBD",
+   "video_job": "688861ce-64f1-4cd8-b229-3cb51aa3f4fe",
    "shake": "عاجل",
-   "_note": "طلب بدر: أول لقطة الصقر قريب وهو يقول خبر عاجل، بعدها اللقطة الواسعة"
+   "_note": "seedance 5ث من kf_falcon6؛ مقصوص من 1.3ث (بعد ما الكاميرا تقرب) — الصقر قريب ومنقاره يتحرك"
   },
   {
    "id": "intro",
    "type": "vo_clip",
    "line": "intro",
-   "delay": 0.4,
-   "duration": 11.6,
+   "delay": 0.3,
+   "duration": 10.3,
    "video": {
     "draft": "src/s720_intro_v5s.mp4",
     "final": "src/s720_intro_v5s.mp4"
@@ -343,16 +346,16 @@
    "id": "flamingo",
    "type": "vo_clip",
    "line": "flamingo",
-   "delay": 0.2,
-   "duration": "audio+0.4",
+   "delay": 0.1,
+   "duration": 10.0,
    "video": {
     "draft": "src/s720_flamingo.mp4",
     "final": "src/s720_flamingo.mp4"
    },
-   "video_job": "TBD",
+   "video_job": "271a2f40-a19c-4d26-8831-117c00892a04",
    "card": {
     "name": "flamingo",
-    "at": 3.0
+    "at": 2.6
    },
    "_note": "طلب بدر: الفلامنغو تدخل 5–10 ثواني تقرا البيع والشرا بسرعة. الضب يلتفت لها ويسألها (صيغة الجار يسأل جاره). منقار → حركة + تعليق صوتي"
   },
@@ -364,7 +367,7 @@
     "draft": "src/d480_fox_v7.mp4",
     "final": "src/f1080_fox.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "2dcf7a33-77d5-4e7f-9784-05b3b1fd1231",
    "graphic": {
     "name": "breakdown",
     "cue": "المستوى",
@@ -379,7 +382,7 @@
     "at": "cue"
    },
    "shake": "فجأة",
-   "_note": "04fd9e48: القنفذ باقي يمّه، وخلفه المشربية بدون شبابيك، والفم يتحرك من أول كلمة — مفحوص"
+   "_note": "لقطة 3787589c (البديلة؛ f4dac3d1 فشلت مرتين): الثعلب بروحه والمشربية خلفه"
   },
   {
    "id": "clash",
@@ -438,10 +441,10 @@
    "type": "lipsync",
    "line": "qadhi",
    "video": {
-    "draft": "src/d480_judge_v7.mp4",
+    "draft": "src/d480_judge_v6.mp4",
     "final": "src/f1080_judge.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "0bbbc75c-6fdd-4976-b915-b91005c0831b",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
@@ -456,7 +459,7 @@
     "at": "after_graphic",
     "fade": 0.6
    },
-   "_note": "0bbbc75c (24.05ث): لقطة متوسطة ثابتة طول المشهد بدون زووم، الشاشة خلفه. لوحة الميزان [170,24,380] ما تغطي راسه."
+   "_note": "فيديو v6 (متوسط ثابت طول المشهد) مع تسجيل v7 بنفس النص (21.55ث مقابل 21.47ث). توليد v7 fb47c7b6 انقطع لقطة قريبة بالنص فما استخدم (قاعدة نفس الحجم)."
   },
   {
    "id": "cta",
@@ -508,7 +511,7 @@
    "model": "intone",
    "aspect_ratio": "9:16",
    "character": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
-   "location": "f4dac3d1-2b64-4647-81d1-bd094c018180",
+   "location": "3787589c-09e2-4f89-ae4c-c0b3323cd84e",
    "audio": "07dac0c3-9c45-41a9-8e80-0b800046d486",
    "prompt": "Medium two-person shot matching the location image staging and framing exactly, same camera distance, no zoom-in: the sandy-orange desert fox adviser with round silver glasses and burgundy waistcoat seated upright on his chair at the long boardroom table, and beside him in the next chair the desert hedgehog adviser in a grey suit and teal tie, who stays seated and visible at the left side of the frame for the entire shot, listening and nodding. Behind them the walnut mashrabiya wall with glowing brass sconces, no windows. Blurred shoulders of two advisers across the table in the bottom foreground corners. Every chair is occupied. Only the fox speaks, and he is already talking in the very first frame: he replies skeptically and dryly — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — adjusting his glasses, raising one finger, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy. Premium 3D animated feature film quality, vertical composition",
    "location_alt": "3787589c-09e2-4f89-ae4c-c0b3323cd84e"
@@ -600,12 +603,13 @@
    "prompt": "Starting exactly from the start frame: the lizard in the red shemagh turns to the pink flamingo lady beside him and asks her a short question with an open hand; she turns toward the council and briskly explains, beak opening and closing as she talks, tapping numbers on her tablet and making a quick down-then-flat gesture with her wing, confident analyst. Same camera distance, nobody leaves their seat. Premium 3D animated feature film quality, vertical composition"
   }
  },
- "_status": "v7 planned — waiting for Higgsfield recharge",
+ "_status": "delivered v7 after Bader's second review: ef71bab8-5ef0-4b05-b74e-364a43e1638e",
  "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
- "video_media_id": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e6d16e9b-b34d-4dfe-a68b-08d0c7212927.mp4",
- "duration_s": 94.2,
+ "video_media_id": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/ef71bab8-5ef0-4b05-b74e-364a43e1638e.mp4",
+ "duration_s": 109.0,
  "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر.",
  "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
- "review_2026_11_14b": "ملاحظات بدر الثانية: (1) الصقر يبين وهو يقول خبر عاجل ثم اللقطة الواسعة؛ «خَبَر» بالفتح؛ (2) سطر الثعلب بكلام أبسط بدل «ينزّلون أهدافهم» و«كاسر دعمه»؛ (3) القاضي «سمَعت» بفتح الميم و«طَيْحته» بدون شدة؛ (4) الفلامنغو تدخل 5–10 ثواني. الكل ينتظر شحن رصيد هيغزفيلد (28 كريدت باقية؛ المطلوب نحو 250)."
+ "review_2026_11_14b": "ملاحظات بدر الثانية: (1) الصقر يبين وهو يقول خبر عاجل ثم اللقطة الواسعة؛ «خَبَر» بالفتح؛ (2) سطر الثعلب بكلام أبسط بدل «ينزّلون أهدافهم» و«كاسر دعمه»؛ (3) القاضي «سمَعت» بفتح الميم و«طَيْحته» بدون شدة؛ (4) الفلامنغو تدخل 5–10 ثواني. الكل ينتظر شحن رصيد هيغزفيلد (28 كريدت باقية؛ المطلوب نحو 250).",
+ "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927"
 }

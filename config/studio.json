@@ -1,0 +1,490 @@
+{
+ "_comment": "استوديو المحتوى — طاقم شخصيات مجلس المستشارين على هيغزفيلد. job_id يُمرر كمرجع medias في التوليد للحفاظ على ثبات الشخصية عبر الحلقات.",
+ "style": {
+  "render": "stylized 3D character render in the style of a premium family animated feature film, appealing proportions, soft global illumination, three-point studio lighting, gentle rim light, high-end 3D animation studio quality",
+  "brand_accent": "deep teal-green",
+  "sheet_background": "warm ivory seamless studio background",
+  "image_model": "gpt_image_2_6",
+  "reel_aspect": "9:16",
+  "sheet_aspect": "16:9"
+ },
+ "rules": {
+  "live_background": "كل لقطة تتصور بخلفية حية: مستشارو الخلفية مشغولون بأشياء طبيعية (استكانة شاي، قهوة عربية، تلفون، غفوة) والكراسي لا تكون فاضية أبداً — ملاحظة بدر (2026-11-09). عملياً: مرر لقطة المجلس الكامل كمرجع ثانٍ عند توليد أي إطار مشهد",
+  "speaker_framing": "المتكلم لا يعطي ظهره للمجلس أبداً (ملاحظة بدر 2026-11-10): لقطة المتحدث الفردي = هو بالتركيز يتكلم، زميل يمّه على صفه مصغياً، وقدامه عبر الطاولة أكتاف زميلين من الخلف مموجة بأسفل زوايا الإطار، وخلفه القاعة والأفق فقط (over-the-shoulder). الكويتية هي لهجة كل الحوار، والصقر وحده يسأل الجمهور بالختام",
+  "no_empty_chairs": "ولا كرسي فاضي بأي لقطة (ملاحظة بدر 2026-11-10): كل إطار موقع يتولد مأهولاً بالكامل (كل الكراسي المرئية عليها مستشارون) ويُمرر هو نفسه location_image لمشهد التزامن — القاضي يواجه مجلسه الكامل والشاشة خلفه لا الكراسي",
+  "mouth_articulation": "وصف كل مشهد تزامن يشدد حرفياً: HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS + كادر قريب يكبّر الوجه — حركة فم الجمل الأولى كانت خافتة فما انقرأت كلاماً",
+  "draft_then_final": "سير العمل الاقتصادي (طلب بدر 2026-11-10): كل التجارب والمراجعات بجودة 480 (مشهد التزامن ~45 كريدت بدل ~240)، ولا يُصرف على 1080 إلا بعد اعتماده النهائي «كل شي تمام» — عندها تُعاد المشاهد المعتمدة وحدها بالدقة العالية. تحديث 2026-11-10: بدر اعتمد مسودة 720 كنسخة نهائية لحلقة إنفيديا، فالـ1080 صار اختيارياً ولا يُصرف عليه إلا إذا طلبه",
+  "numbers_ar": "الأرقام المعقدة تنكتب على الشاشة ببطاقات، والكلام المنطوق يبسطها — صوت الدب كان يتقطع عند الأرقام المركبة (مراجعة 2026-11-09)",
+  "hidden_roles": "راصد الصباح والرقيب الشرعي لا يظهران كشخصيات في الفيديو أبداً: الأول تليجرام فقط، والثاني بوابة فحص قبل اختيار السهم + شارة «متوافق شرعياً» على الشاشة",
+  "falcon_no_lipsync": "نموذج تزامن الشفاه يرفض المنقار — مشاهد الصقر دائماً حركة حية بتعليق صوتي فوقها",
+  "compliance_gate": "لا تُنتج حلقة إلا عن سهم متوافق شرعياً من data/universe_us.csv",
+  "audio_pipeline": "صوت الحلقات دائماً من تسجيلات إلفن لابز الأصلية: نموذج تزامن الشفاه يعيد توليد العربي بمحرك رديء فيُكتم صوته وتُركّب التسجيلات الأصلية على كتل الشفاه (تفريغ زمني يحدد الكتل + ضبط إيقاع ≤10% بدون تغيير الطبقة). حمل الكلام بأي مقطع تزامن ≤75% من سقفه (~22ث). ممنوع أي فلتر ديناميكي على الكلام (loudnorm خرّب حلقة إنفيديا الأولى) — كسب ثابت فقط. التفريغ الآلي ومطابقة النصوص بوابة إلزامية قبل كل تسليم. (دروس 2026-11-09)",
+  "data_date_stamp": "كل حلقة تحمل تاريخ بياناتها: شارة «أسعار إغلاق <التاريخ>» في بطاقة العنوان + شريط الإخلاء يذكّر أن الأسعار تتغير وعلى المشاهد مراجعتها بنفسه (طلب بدر 2026-11-09)",
+  "face_clear": "الوجه ما ينغطى أبداً (طلب بدر 2026-11-10): الرسومات والبطاقات والترانسكريبت بجنب المتكلم أو خلفه أو تحته — لوحة الرسمة بالزاوية العليا فوق النافذة (~270–291 بكادر 720) باللقطة المتوسطة، على الصدر تحت الذقن باللقطة القريبة، وفوق الرأس على الشاشة الخلفية باللقطة الواسعة؛ بطاقات الأرقام على الصدر/الطاولة (y ≥ 0.70). موضع كل لوحة (box) يتحدد من إطار المشهد لحظة الإشارة ويُفحص بصرياً قبل التسليم",
+  "caption_size": "الترانسكريبت خط 58 بمسودة 720 و88 بنهائي 1080 (طلب بدر 2026-11-10: «الخط صغير كبّره») — سطر واحد أسفل الشاشة: حتى 3 كلمات وبسقف 16 حرفاً للمجموعة، الكلمة المنطوقة تيل",
+  "same_table_same_cast": "نفس الطاولة ونفس الشخصيات بكل المشاهد (ملاحظة بدر 2026-11-10): كل إطارات الحلقة تتولد من لقطة المجلس الرئيسية (location.council_wide_v5) كمرجع أول + ورقة الشخصية وورقة جارها (لا من صورة المجلس وحدها — هذا كان سبب أخطاء مثل شوارب الهدهد)، وكل شخصية بكرسيها نفسه وجيرانها أنفسهم (location.geography). الطاولة الطويلة المستطيلة فقط — ممنوع طاولة دائرية أو جانبية. والصقر واحد بس بالكادر (لو واقف قدام الكاميرا، مكانه عند الشاشة فاضي).",
+  "room_geography": "الخلفية تتبع الكرسي (ملاحظة بدر 2026-11-10): الشبابيك على الجدار اليسار فقط. اللي قاعد يسار الطاولة خلفه الشبابيك، واللي قاعد يمين خلفه جدار المشربية بدون أي شباك، والقاضي خلفه الشاشة. لقطة المواجهة: الضب يسار الكادر وخلفه الشبابيك والثعلب يمين الكادر وخلفه المشربية. التفاصيل في location.geography و location.shots.",
+  "series_format": "صيغة السلسلة (اختيار بدر 2026-11-10: «ثنائي ثابت وضيف يتبدل»): ثابتين بكل حلقة — الصقر يفتتح ويختم، الضب (شراء) ضد الثعلب (حذر)، والقاضي يحكم. ومعاهم ضيف واحد يتبدل كل حلقة من باقي الطاقم (الحلقة 1: الجمل)، يُختار من تقرير المجلس: صاحب أقوى أو أغرب رأي، عشان الكل يشارك مع الوقت. ضيوف الطيور: تعليق صوتي فوق حركة.",
+  "first_word_mouth": "فحص إلزامي لكل مشهد شفاه (ملاحظة بدر 2026-11-10: «الجمل لما قال يا جماعة كان حلجه مسكر»): شريط لقطات لأول ثانية — الفم لازم يتحرك مع أول كلمة. الوصف يقول «already talking in the very first frame». لو ما تحرك: نزيح بداية الصوت أو نعيد المشهد.",
+  "script_wording": "ألفاظ طلب بدر تجنبها (2026-11-10): لا «قاع» (نقول «أرضية واضحة»)، لا «رخيص» (نقول «السعر نازل»)، لا «هوشة» — المستشارين يتناقشون ما يتهاوشون.",
+  "fast_workflow": "طريقة الشغل السريعة (طلب بدر 2026-11-10: «وايد طولت… لا تدز لي كل شوي مسجات»): الأصول (الشخصيات، الأصوات، لقطات الكراسي) تنعتمد مرة وحدة وما تتغير بين الحلقات. الشغل دفعات طويلة بدون رسائل بالنص ولا طلبات موافقة — يرجع له بالنتيجة الجاهزة فقط، وملاحظاته برسالة وحدة مرقمة. لو فيه قرار ذوقي معلّق (مثل صوت) ننتج الخيارين ونخليه يختار من النتيجة. بدون وضع التخطيط وقت الإنتاج. وصلاحيات الأدوات بقائمة السماح في .claude/settings.json.",
+  "same_size_speakers": "كل المتكلمين بنفس الحجم بالكادر (ملاحظة بدر 2026-11-11): لقطة القاضي مثل لقطات الضب والثعلب والجمل — لقطة متوسطة له بروحه والشاشة خلفه، مو لقطة واسعة يطلع فيها كبير والمجلس صغار حوله. ممنوع تغيير أي شي ما طلبه بدر (صوت، نص، شكل).",
+  "shake_sparingly": "2026-11-14 (بدر): رجّة الشاشة بس للحظة الأهم بالحلقة (مثل ردة المواجهة)، ولا رجّة بالبداية.",
+  "no_pause_trimming": "2026-11-14 (بدر): لا تقص الوقفات من التسجيل (silenceremove) — يخلي الكلام مقطع. لو السطر طويل اختصر النص.",
+  "tts_word_swap": "2026-11-14 (بدر): لو كلمة لهجة تنقرا غلط بالصوت بعد محاولة تشكيل وحدة، بدّلها بكلمة أوضح بدل ما نكرر المحاولات (مثال: «طيحته» → «نزول»).",
+  "meter_name": "2026-11-14 (بدر): اسم المؤشر «ميزان الاستثمار» (مو «ميزان المجلس») — بالكلام والرسومات والبطاقات والموقع.",
+  "role_intro": "كل شخصية تطلع لازم دورها ينفهم بطريقة غير مباشرة وذكية داخل الكلام (بدر 2026-11-14): الصقر يقدّمهم وهو يسألهم («يا هدهد، إنت اللي تراقب شنو يشترون السياسيين…») أو الشخصية تلمّح لشغلتها («إنت تشوف الفرصة وأنا أشوف الخطر»). إلزامي خاصة بالحلقات الأولى لين يتعود الجمهور على الطاقم.",
+  "cinematic_variety": "زوايا تصوير سينمائية متنوعة بكل حلقة (بدر 2026-11-14): لقطة قريبة منخفضة، لقطة جوية/درون للمكان، دفعة كاميرا بطيئة، لقطة ثنائية سريعة، سحب للخلف بالختام — مو كل المشاهد نفس الكادر المتوسط. مع الالتزام بقاعدة الوجه وما يعطي ظهره.",
+  "rotating_locations": "المكان يتغير بين الحلقات ببيئة خليجية وبالأخص كويتية (بدر 2026-11-14): يخت قدام أبراج الكويت، خيمة كشتة بالصحراء، ديوانية، مطعم، قاعة اجتماعات ثانية؛ وأحياناً سفرة: الدوحة، الرياض، دبي بخلفيات معالمها الحقيقية. نفس الطاقم والأزياء، والمكان الجديد يحتاج لقطة واسعة رئيسية + لقطات كراسي المتكلمين قبل مشاهد الشفاه.",
+  "duration_60": "هدف طول الحلقة حوالي 60 ثانية (بدر 2026-11-14)، والسكريبت يتفق عليه مع بدر قبل أي توليد.",
+  "resolution_flow": "المسودة 480 ثم النهائي 1080 مباشرة بعد اعتماد بدر (2026-11-14) — إنستغرام يفضّل 1080.",
+  "ig_safe_zones": "مناطق إنستغرام الآمنة بكادر 720×1280 (بدر 2026-11-14): أعلى 12% ترويسة، أسفل ~78% اسم الحساب والكابشن (كان شريط الإخلاء ينختفي بالجوال)، يمين x≥612 من y≥576 أزرار التفاعل. الترانسكريبت والبطاقات والإخلاء فوق ~76% ومزاحة لليسار، الرسومات تبدأ ≥15%، والعنوان الكبير بشريط 16–34% على اللقطة الواسعة. مطبقة بـ tools/studio/cards.py (SAFE) و captions.py و build.py (check_safe).",
+  "voices_locked": "2026-11-14 (بدر): الأصوات ثابتة لكل شخصية بكل الحلقات وما تتغير من حلقة لحلقة: الصقر Andre (بدون stability) • الضب Holden • الثعلب Arthur (stability 0.6) • القاضي Gideon • الفلامنغو Yara (stability 0.6) • الهدهد Raina • الجربوع Ian • القنفذ Emmett • الجمل Fraser. أي شخصية يديدة تاخذ صوتها مرة وحدة وتنسجل هني وبـ voices."
+ },
+ "toolkit": {
+  "_comment": "خط الإنتاج محفوظ بالمستودع (الساندبوكس يُمسح بعد ~24 ساعة): انقل الأدوات للساندبوكس وطابق md5 ثم شغّل البناء من مجلد العمل. التفاصيل في .claude/skills/studio و .claude/skills/story",
+  "dir": "tools/studio",
+  "build": "python3 tools/studio/build.py tools/studio/episodes/<slug>/episode.json --res 720 --stage draft",
+  "verify": "python3 tools/studio/verify.py tools/studio/episodes/<slug>/episode.json build/draft720/manifest.json",
+  "fonts": "fonts/PlexArabic-Bold.ttf + fonts/PlexArabic-Medium.ttf (IBM Plex Sans Arabic — github.com/google/fonts/raw/main/ofl/ibmplexsansarabic/)",
+  "validated": "2026-11-10: المُجمِّع العام أعاد بناء مسودة إنفيديا من episode.json — 82.3 ثانية، الرسومات مطابقة بالبايت، وتفريغ المشاهد السبعة ناجح (أقل تشابه 0.82 بالقاضي بسبب كتابة ويسبر للأرقام أرقاماً)"
+ },
+ "location": {
+  "name_ar": "قاعة مجلس الإدارة",
+  "job_id": "2908126b-8b32-4844-9856-88cb4997a073",
+  "identity": "prestigious ultra-modern corporate boardroom, long polished dark walnut table, twelve tall deep teal-green leather executive chairs, floor-to-ceiling windows with golden-hour city skyline, subtle Gulf-Arabic geometric ceiling and wall details, brass accents, huge blank teal-glow presentation screen at the head of the table",
+  "replaced": {
+   "old_studio_job_id": "fb896c6e-7a0a-48d8-9169-12a2632571e9",
+   "reason": "رفض بدر الديكور الأول وطلب قاعة تجمع كل الأعضاء (2026-11-09)"
+  },
+  "empty_plate": "7347f5d3-1220-439f-880b-94909019022d",
+  "council_wide_superseded": {
+   "v2_saluki_wolf": "46efc634-f637-4f87-9e05-f3b0ae9dd07c",
+   "v3_dhub_white_ghutra_wolf": "adb39ffe-fa15-4593-b6ea-202142c7c920",
+   "v4_with_fish_windows_both_sides": "04e3b054-e907-4f7e-b0d2-36d5924baf54"
+  },
+  "council_wide_v5": "844ed442-8b47-41f8-8b47-e762fa88adae",
+  "council_wide_v5_note": "اللقطة الرئيسية المعتمدة 2026-11-10 (الطاقم 13، بدون أسماك): الشبابيك وأفق الخليج على الجدار اليسار فقط، والجدار اليمين مشربية خشب جوز بأضواء نحاسية بدون شبابيك، والشاشة التيل خلف القاضي.",
+  "geography": {
+   "_comment": "خريطة القاعة (ملاحظة بدر 2026-11-10: «ما يصير الشباك ورا كل متكلم»). الاتجاهات من الكاميرا الواقفة عند طرف الطاولة تطالع القاضي.",
+   "left_wall": "شبابيك من الأرض للسقف + أفق الخليج وأبراج الكويت — خلفية كل من يقعد يسار الطاولة",
+   "right_wall": "جدار جوز بمشربيات محفورة وأضواء نحاسية، بدون أي شباك — خلفية كل من يقعد يمين الطاولة",
+   "head_wall": "الشاشة التيل الكبيرة — خلف القاضي",
+   "seats_left_near_to_far": [
+    "saboor",
+    "thawr",
+    "suyula",
+    "asasi",
+    "congress"
+   ],
+   "seats_right_near_to_far": [
+    "fanni",
+    "qita",
+    "mudharib",
+    "dubb",
+    "haris",
+    "macro"
+   ],
+   "head": "qadhi",
+   "standing_by_screen": "rassad"
+  },
+  "shots": {
+   "_comment": "مكتبة لقطات الكراسي — متولدة مرة وحدة من اللقطة الرئيسية v5 + ورقة الشخصية وجارها، وتنعاد استخدامها بكل الحلقات (location_image لنموذج الشفاه). ضيف جديد = لقطة كرسي جديدة أول ما يجي دوره، بنفس الوصفة وبخلفية جداره.",
+   "thawr": {
+    "job_id": "100cdf87-be76-4bae-9975-1d60431b5914",
+    "background": "left_wall",
+    "neighbour": "suyula"
+   },
+   "dubb": {
+    "job_id": "3787589c-09e2-4f89-ae4c-c0b3323cd84e",
+    "background": "right_wall",
+    "neighbour": "haris"
+   },
+   "clash_thawr_dubb": {
+    "job_id": "175dc808-de22-43b8-9c3b-50c2cbde4dab",
+    "background": "الكاميرا فوق منتصف الطاولة: الضب يسار وخلفه الشبابيك، الثعلب يمين وخلفه المشربية، القاضي بعيد بالنص"
+   },
+   "saboor": {
+    "job_id": "ab3bcb72-f8a0-41d2-b838-cc4d70e9a08c",
+    "background": "left_wall",
+    "neighbour": "thawr",
+    "empty_chair_version": "9e4ef302-2df2-4d0a-b421-ae3313ec4f81",
+    "note": "نموذج الشفاه يرفض موقعاً فيه جمل — استخدم نسخة الكرسي الفاضي"
+   },
+   "qadhi": {
+    "job_id": "ae781c26-a251-49f3-96bc-a832599f0f7d",
+    "background": "head_wall",
+    "note": "لقطة التوليد المعتمدة للقاضي 8b27a300: متوسطة بروحه (نفس حجم باقي المتكلمين). اللقطة الواسعة بالمجلس المصغّر حوله مرفوضة."
+   },
+   "rassad_closing": {
+    "job_id": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+    "background": "واقف عند طرف الطاولة والمجلس كله خلفه"
+   }
+  }
+ },
+ "cast": {
+  "_comment": "الطاقم المعتمد نهائياً من بدر 2026-11-10 بعد لوحة المراجعة (13 شخصية، كل وحدة معتمدة من 4 جهات). المفتاح = الدور بالمجلس (نفس أسماء .claude/agents). job_id = ورقة الشخصية الأصلية (تُمرر character_images لنموذج الشفاه)، turnaround = ورقة الجهات الأربع المعتمدة (تُمرر مرجعاً عند توليد إطارات الكراسي). الطيور (rassad, suyula, congress) بدون تزامن شفاه: تعليق صوتي فقط. الأسماك انشالت بطلبه؛ دوران شاغران (whales, mazloum) بانتظار اختياره من cast_candidates. اللقطة الرئيسية: location.council_wide_v5",
+  "qadhi": {
+   "name_ar": "القاضي",
+   "job_id": "2eca681d-ff13-4e5b-aa91-de119c245559",
+   "identity": "dignified wise elderly Arab Gulf judge in his late sixties, warm olive skin, neatly trimmed full white beard, kind but stern deep brown eyes, crisp white thobe, white ghutra with black agal, elegant black bisht cloak with gold trim, small golden balance scales, deep teal-green prayer beads",
+   "turnaround": "25c7f704-f5ab-4992-8bf8-8b72c64c51a4"
+  },
+  "rassad": {
+   "name_ar": "رصّاد الأخبار",
+   "job_id": "27c2e6b5-527d-42fd-9e03-c7eb92d8f70d",
+   "identity": "sleek sharp-eyed anthropomorphic peregrine falcon journalist, slate-grey and white barred feathers, piercing golden eyes, small black earpiece, khaki field press vest with many pockets over deep teal-green shirt, small tablet in hand",
+   "note": "منقار: still_vo أو seedance + تعليق صوتي",
+   "turnaround": "1b4f7293-aa7e-4f51-87cd-45ba07c3c943"
+  },
+  "saboor": {
+   "name_ar": "المستثمر الصبور",
+   "job_id": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "identity": "dignified calm elderly Arabian camel gentleman, sandy golden-beige short fur, heavy-lidded wise patient eyes behind round gold-rimmed reading glasses, soft knowing smile, elegant tailored sand-beige three-piece suit, crisp white shirt, deep teal-green necktie with small gold hourglass lapel pin, polished brown leather shoes, small leather-bound notebook",
+   "turnaround": "39d7d94a-e572-47ec-a6a8-d6670266dcd9"
+  },
+  "thawr": {
+   "name_ar": "محامي الشراء",
+   "animal": "الضب بالشماغ الأحمر",
+   "job_id": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+   "identity": "friendly Arabian spiny-tailed lizard (dhub) gentleman, golden-sand scales, warm brown eyes, big confident grin, red-and-white checkered shemagh with black agal, tailored deep teal-green three-piece suit, white shirt, gold necktie, small gold upward-arrow lapel pin",
+   "why": "اختاره بدر بدل السلوقي، وطلب الشماغ الأحمر «كونه بالبر»",
+   "previous_sheets": [
+    "2489b61b-7633-4228-b8cb-4c17ef5feb06 (قارئ السيولة، غترة بيضا)",
+    "b362ff41-cea5-47ac-87eb-8b21eb88bef0 (هوية الشراء، غترة بيضا)"
+   ],
+   "turnaround": "7d46c827-8028-429d-9d9c-8addc2aa9f24"
+  },
+  "dubb": {
+   "name_ar": "محامي الحذر",
+   "animal": "الثعلب الرملي",
+   "job_id": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
+   "identity": "sandy-orange Arabian desert fox gentleman, cream chest, big pointed ears, amber eyes, long bushy white-tipped tail, round silver-rimmed glasses, calm skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, dark grey trousers, small red downward-arrow lapel pin",
+   "why": "اختاره بدر من صورة المقارنة (خيار ب) بدل الذيب",
+   "turnaround": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd"
+  },
+  "fanni": {
+   "name_ar": "الفنّي",
+   "animal": "بومة",
+   "job_id": "bedc88db-3ea4-4b52-8b13-ac431dec9743",
+   "turnaround": "25954d98-5661-4eb9-a7c1-5fb6747e8719"
+  },
+  "asasi": {
+   "name_ar": "الأساسي",
+   "animal": "سلحفاة نوخذة بدفتر الحسابات",
+   "job_id": "72ebf03e-f319-4d1e-95e5-44544cf1ef83",
+   "why": "اختارها بدر",
+   "turnaround": "bcfcb70f-0ae8-429a-83ed-800fb148b753"
+  },
+  "macro": {
+   "name_ar": "الاستراتيجية الكلية",
+   "animal": "غزالة (بنت)",
+   "job_id": "d77cbde9-f674-441d-a5a5-cedfe0eae30e",
+   "why": "اختارها بدر",
+   "turnaround": "361ebe62-cbf8-42a1-9c56-59f31a6646d7"
+  },
+  "mudharib": {
+   "name_ar": "المضاربة السريعة",
+   "animal": "ثعلبة حمراء (بنت)",
+   "job_id": "bb839d16-5fca-4b23-81eb-8b718af41744",
+   "turnaround": "5d9f02db-d73c-4d74-9d8c-60f0096ea29c"
+  },
+  "qita": {
+   "name_ar": "محلل القطاع",
+   "animal": null,
+   "note": "بلا شخصية — الجربوع انتقل لمتتبع الحيتان (14 نوفمبر)"
+  },
+  "suyula": {
+   "name_ar": "قارئة السيولة",
+   "animal": "فلامنغو (بنت)",
+   "job_id": "a595086d-8ec0-40d3-9da9-2f19a8db005d",
+   "note": "منقار: تعليق صوتي",
+   "why": "بدر نقلها من محللة القطاع لقارئة السيولة (2026-11-10)",
+   "turnaround": "65d85815-d335-454a-9a9e-318b580551ea"
+  },
+  "haris": {
+   "name_ar": "حارس المحفظة",
+   "animal": null,
+   "note": "بلا شخصية — القنفذ انتقل لصائد المظلومات (14 نوفمبر)"
+  },
+  "congress": {
+   "name_ar": "متتبع السياسيين",
+   "animal": "هدهد",
+   "job_id": "a01a0870-d65a-4736-9cd9-251009824057",
+   "note": "منقار: تعليق صوتي. بدون شوارب — منقار وريش فقط (ملاحظة بدر 2026-11-10)",
+   "turnaround": "2acdd5c9-e4dd-4438-bbac-23bbc85c04ab"
+  },
+  "mazloum": {
+   "name_ar": "صائد المظلومات",
+   "animal": "قنفذ الصحراء",
+   "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3",
+   "turnaround": "3e6fb5ec-9dee-4176-bb81-13b92e9ff1fe",
+   "moved_from": "haris",
+   "note": "قرار بدر 14 نوفمبر: القنفذ صار صائد المظلومات (رفض النمس وغرير العسل)"
+  },
+  "whales": {
+   "name_ar": "متتبع الحيتان",
+   "animal": "جربوع",
+   "job_id": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+   "identity": "small cute Arabian desert jerboa gentleman, round mouse-like head, huge round ears, big dark eyes, long hind legs, long tail with black-and-white tuft, navy blazer, cream shirt, teal pocket square, small tablet",
+   "why": "بدر اعتمد الشكل الثاني وحطه بدور محلل القطاع",
+   "rejected_sheet": "8d09196e (طلع شكله ثعلب)",
+   "turnaround": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+   "moved_from": "qita",
+   "note": "قرار بدر 14 نوفمبر: الجربوع صار متتبع الحيتان (رفض غرير العسل)"
+  }
+ },
+ "voices": {
+  "rassad": {
+   "name": "Andre",
+   "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf",
+   "note": "اختاره بدر 14 نوفمبر (حلقة 2): Benji كان يطلع عراقي/شامي بآخر الحلقة",
+   "previous": {
+    "name": "Benji",
+    "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"
+   }
+  },
+  "thawr": {
+   "name": "Holden",
+   "voice_id": "3c9d6053-6334-592c-8997-4e325286af3f",
+   "note": "صوت الضب محامي الشراء (كان صوت الثور ثم السلوقي)"
+  },
+  "dubb": {
+   "name": "Arthur",
+   "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+   "note": "صوت الثعلب الرملي محامي الحذر — stability 0.6 ونص مبسط بدون أرقام مركبة"
+  },
+  "qadhi": {
+   "name": "Gideon",
+   "voice_id": "1ad38ba4-9cc4-4f2f-9fde-b0fefdf67ae5",
+   "note": "اعتمده بدر 2026-11-11 (كان Grady — لكنته مو كويتية). جرّب Sterling ورفضه: ينطق فصحى ويقط كلمات. ما يتغير بعد الحين إلا بطلبه.",
+   "rejected": {
+    "Grady": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "Sterling": "dc382508-c8bd-443c-8cb2-46e57b8d2e6f"
+   }
+  },
+  "saboor": {
+   "name": "Fraser",
+   "voice_id": "6705e465-7b52-5915-a1d8-b1222885e01d"
+  },
+  "suyula": {
+   "name": "Yara",
+   "voice_id": "fd25dc29-6495-5df3-9332-26bb58fdd575",
+   "note": "صوت الفلامنغو (اقتراح، أول ظهور 14 نوفمبر) — يقدر بدر يبدله"
+  },
+  "congress": {
+   "name": "Raina",
+   "voice_id": "1c3a4775-9afb-52c1-a2bf-b6543231a9a1",
+   "note": "الهدهد بنت — اختارها بدر 14 نوفمبر من 4 أصوات"
+  },
+  "whales": {
+   "name": "Ian",
+   "voice_id": "472a562a-4c33-5114-8210-d6ffa1e4e2c5",
+   "note": "الجربوع (أول ظهور حلقة 2) — Cody فشل مرتين"
+  },
+  "mazloum": {
+   "name": "Emmett",
+   "voice_id": "3c7d32be-0182-5c5e-aa6a-663409bfbb26",
+   "note": "القنفذ (أول ظهور حلقة 2)"
+  }
+ },
+ "episode_nvda_pilot": {
+  "date": "2026-11-09",
+  "resolution": "720p (نسخة تجريبية — النهائية 1080 بعد شحن الرصيد)",
+  "scenes": {
+   "council_wide_image": "0e80a300-5c94-487f-b5c2-5ea6dffbe88f",
+   "intro_video": "0ecf5212-55f0-4151-bbca-5705b97d7a0a",
+   "debate_video": "2e8079d6-36dc-4417-9ba4-e6b5f0d3958e",
+   "judge_video": "900bd085-9eca-4b23-b34d-f189b519f9e7",
+   "saboor_keyframe_live": "5b010e02-e303-4bf2-aff5-9ea2afde5592",
+   "saboor_keyframe_old_back_to_council": "52c3a903-f3d9-4483-b7f4-89d9c736c63d",
+   "falcon_cta_keyframe_live": "6095b7cf-4f92-4005-9d44-e76b3ce0dd98"
+  },
+  "audio": {
+   "intro": "3ba8efe8-676b-4812-a42a-f63be175d475",
+   "thawr": "0f4a8ee2-7912-4853-8842-68313173329b",
+   "dubb": "95e81286-8265-4f39-bb14-d74d0e57f899",
+   "clash_thawr": "8b517d9c-1852-4f4d-b4b6-1ca7faca1107",
+   "clash_dubb": "5d68a666-d040-4a15-9f3a-b80af647ee5f",
+   "qadhi": "0db9de31-7c65-42ac-8cbe-c32be91bd77a",
+   "saboor": "b86fd6bd-fc26-4e48-bc76-a2ace971ef5b",
+   "cta": "2323fd6d-7f5a-4153-b722-f293e346ef12"
+  }
+ },
+ "episode_nvda_kuwaiti_final": {
+  "date": "2026-11-09",
+  "resolution": "1080x1920",
+  "duration_s": 83.1,
+  "final_media_id": "201d094f-40da-48d2-bfcf-a1df0318a0d8",
+  "scenes_1080": {
+   "intro_council": "86dc18e6-5934-4338-835a-104fe04883a7",
+   "thawr_solo": "0f59ec85-7969-475f-a698-b04be5b7a28f",
+   "dubb_solo": "6c9d3785-b0c4-40e1-bbba-10d2c0c3eb97",
+   "clash": "570ebcdd-edcb-48a5-9af2-580ac7c25790",
+   "qadhi": "f80b98c4-a7fb-4e6a-a454-aa50eaed4a16",
+   "saboor": "fbef45ee-b90a-4708-b257-377be4c5f421"
+  },
+  "audio_kuwaiti": {
+   "intro": "3aca1cbd-234f-4738-a60a-28c8647563b4",
+   "thawr": "d67c9fc1-5e73-4e1c-b92d-7ce5807bf6b8",
+   "dubb": "4a61a5d1-6245-421e-a78f-c1b9d1224aef",
+   "qadhi": "4f23fe0c-0d3b-42b1-aa10-705b4000be68",
+   "saboor": "2b730432-ee0e-4a4e-be13-f8b3669ccf62",
+   "cta": "1b3415f1-231e-4463-bdd4-66a69d002c94"
+  },
+  "pipeline_notes": "نموذج الشفاه بدقة 1080 يمدد الكلام ~20%: الحل المعتمد تسريع الفيديو بعامل F=كلام_التسجيل/كتلة_الشفاه (0.78–1.05) والصوت الأصلي بسرعته الطبيعية 1.0. حدود الكلام بالتفريغ الآلي لا بكاشف الصمت. ترانسكريبت كلمة-كلمة ASS بخط Plex العربي + رسومات تفاعلية على توقيت الكلمات (كاش/كسر دعم/حلقة 66%/ميزان) + رجّات عند كلمات الصدمة."
+ },
+ "episode_nvda_draft_polish": {
+  "date": "2026-11-10",
+  "status": "معتمدة نهائية بدقة 720 (قرار بدر 2026-11-10: «جودة الفيديو ممتازة، ما في داعي نروح 1080») — وفّرنا ~1040 كريدت",
+  "episode_file": "tools/studio/episodes/nvda-2026-11-07/episode.json",
+  "draft_media_id": "bdc92192-266f-4a83-9372-84aec412f506",
+  "previous_draft_media_id": "1b2ae835-62e3-4a71-8e20-c22cdc197df6",
+  "changes": "لوحات الرسومات انتقلت بعيداً عن الوجوه (الثور والجمل للزاوية العليا، الدب على الصدر، القاضي فوق رأسه) + خط الترانسكريبت 46→58 بسطر واحد",
+  "draft_scenes_480": {
+   "bull": "fc540be2-a647-4cbc-a76c-11c21f949350",
+   "bear": "a2dd32da-d058-4337-9126-f6cbb5f89174",
+   "judge": "c27173c4-1aea-4e14-9c11-ed04d88e3d5a",
+   "camel": "55cccabe-9ad8-415b-9ed5-afabe63ed1b9"
+  },
+  "populated_keyframes": {
+   "bull": "d71ec678-d66f-4e81-99fe-ddeab65e616d",
+   "bear": "c80010b2-bda6-4acb-9e00-ca86e14e71ee",
+   "judge": "28dcf4be-8891-4c6f-a52b-c54a7dfa5841",
+   "camel_over_shoulder": "5b010e02-e303-4bf2-aff5-9ea2afde5592",
+   "boardroom_plate_skyline": "7347f5d3-1220-439f-880b-94909019022d"
+  }
+ },
+ "episode_template": {
+  "name_ar": "مجلس اليوم",
+  "duration_seconds": [
+   60,
+   90
+  ],
+  "beats": [
+   "خبر عاجل يشد (الصقر رصّاد الأخبار فوق لقطة المجلس المتحركة)",
+   "مرافعة الضب (شراء)",
+   "مرافعة الثعلب (حذر)",
+   "مواجهة قصيرة بين الضب والثعلب",
+   "ضيف الحلقة: مستشار واحد يتبدل كل حلقة، مبرر بتقرير المجلس",
+   "حكم القاضي: الميزان والأصوات وخياره الأول وثقته — بدون سؤال للجمهور",
+   "الصقر وحده يسأل: من أقنعك؟ خل نسمع رايك بالكومنتات"
+  ],
+  "writer_skill": ".claude/skills/story/SKILL.md",
+  "production_skill": ".claude/skills/studio/SKILL.md",
+  "disclaimer_ar": "تحليل للمعلومة وليس توصية مالية — القرار قرارك"
+ },
+ "episodes": [
+  {
+   "number": 1,
+   "title": "البداية — إنفيديا بعد خروج هوانغ",
+   "ticker": "NVDA",
+   "session_date": "2026-11-14",
+   "data_date": "2026-11-13",
+   "episode_file": "tools/studio/episodes/nvda-2026-11-13/episode.json",
+   "video_media_id": "5d8f85c4-8866-418f-bd09-af079c2512d4",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/5d8f85c4-8866-418f-bd09-af079c2512d4.mp4",
+   "site_page": "site/ep01-nvda.html",
+   "report": "reports/2026-11-13_NVDA.md",
+   "resolution": "720x1280 (معتمدة نهائية)",
+   "video_media_id_v1_bull_bear": "bdc92192-266f-4a83-9372-84aec412f506",
+   "duration_s": 109.6,
+   "cast": "الصقر • الضب بالشماغ الأحمر (شراء) • الفلامنغو (قارئة السيولة) • الثعلب الرملي (حذر) • الجمل (ضيف) • القاضي",
+   "notes": "النسخة الخامسة 2026-11-14: نفس الطاقم والقاعة ولقطات الكراسي وأصوات النسخة الرابعة، والنص والأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر بعد استقالة هوانغ (ميزان +19: 5 شراء / 10 انتظار / 0 بيع؛ القاضي: ننطر نتايج الثلاثاء ثم دفعتين، ثقة 7/10). كل المشاهد مرت بفحص التفريغ (أقل تطابق 0.90). مراجعة بدر (نفس اليوم): الضب بدون «لمس» و«رجع يصعد» بدل «ارتد» (والثعلب «وصعود يوم واحد»)، القاضي «انتظار إلى يوم الثلاثاء» وتاريخ 17 نوفمبر ببطاقة الحكم، واسم اليوم (الجمعة) بشريط الإخلاء. مراجعة بدر الثانية (v7): لقطة افتتاح قريبة للصقر «خَبَر عاجل» ثم الواسعة، سطر الثعلب بكلام أبسط، القاضي «سمَعت» و«طَيْحته»، والفلامنغو تدخل 10ث بعد الضب (صيغة الجار يسأل جاره) بصوت Yara.",
+   "video_media_id_v2_saluki_wolf": "01dabafc-ba0a-45b0-b74e-caccde804e54",
+   "video_media_id_v3_fish_windows": "1324446d-c7f3-4cbe-a7dc-5c61a52737e6",
+   "guest": "saboor",
+   "version_note_2026_11_11": "روابط الرفع الأولى (f323a871/65797f9a) انتهت صلاحية توكنها قبل الرفع (400) فأعيد الرفع على معرّفات يديدة.",
+   "rejected_uploads_2026_11_11": {
+    "A_wide_judge_gideon": "74a1e21b-e7ca-4226-bda6-5bcd46386e26",
+    "B_medium_judge_sterling": "f16376c2-76b9-4cac-9998-9e1bf9270a06"
+   },
+   "superseded_v4_nov7": {
+    "video_media_id": "bc7102a9-b754-4e25-90bb-a69c9b4f191b",
+    "episode_file": "tools/studio/episodes/nvda-2026-11-07/episode.json",
+    "report": "reports/2026-11-08_NVDA.md",
+    "session_date": "2026-11-08",
+    "data_date": "2026-11-07",
+    "duration_s": 83.6,
+    "title": "البداية — إنفيديا"
+   },
+   "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
+   "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
+   "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
+   "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
+   "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
+   "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c"
+  }
+ ],
+ "cast_retired": {
+  "_comment": "شخصيات أُوقفت بقرار بدر — محفوظة للمرجع فقط، لا تُستخدم: الثور والدب (مو خليجية)، السلوقي (ما عجبه)، الذيب (بدله الثعلب)، الدلفين والقرش (ما حب شكل الأسماك — 2026-11-10).",
+  "bull": {
+   "name_ar": "الثور",
+   "job_id": "7913e02b-24e4-41f5-adae-0955cfa23c9a",
+   "identity": "cheerful charismatic cartoon bull, caramel-brown short fur, short polished upward-curving horns, warm amber eyes, big optimistic smile, tailored deep teal-green three-piece business suit, crisp white shirt, gold necktie with small gold upward-arrow lapel pin, dark leather oxford shoes"
+  },
+  "bear": {
+   "name_ar": "الدب",
+   "job_id": "5ed426d4-b891-45d0-a5af-7475d8c1f81c",
+   "identity": "heavyset skeptical adult bear, thick charcoal-grey fur, round silver-rimmed glasses, raised skeptical eyebrow, slight unimpressed frown, tailored burgundy waistcoat over ivory shirt with rolled sleeves, dark grey trousers, small red downward-arrow lapel pin, brown leather brogues"
+  },
+  "saluki": {
+   "name_ar": "السلوقي",
+   "job_id": "d45293b3-f6ea-4114-8248-57a5e7fe1725",
+   "identity": "elegant golden Arabian saluki gentleman, long silky golden-cream feathered ears, warm amber eyes, confident grin, tailored deep teal-green three-piece suit, white shirt, gold necktie with small gold upward-arrow lapel pin",
+   "why": "كان محامي الشراء بنسخة 01dabafc — بدر ما حبه (2026-11-10)؛ ونموذج الشفاه رفضه منفرداً 3 مرات"
+  },
+  "wolf": {
+   "name_ar": "الذيب العربي",
+   "job_id": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
+   "identity": "lean grey Arabian wolf, tall pointed ears, sharp amber eyes behind round silver-rimmed glasses, dry skeptical smirk, cream shirt with rolled sleeves, burgundy waistcoat, small red downward-arrow lapel pin",
+   "why": "كان محامي الحذر — بدر اختار الثعلب الرملي بداله (2026-11-10)"
+  },
+  "dolphin": {
+   "name_ar": "متتبع الحيتان",
+   "animal": "دلفين",
+   "job_id": "7148fdba-6e84-41c4-8da5-a115d1948f80",
+   "why": "كان متتبع الحيتان — بدر: «الأسماك شكلهم ما حبيته، خل نشيلهم» (2026-11-10)"
+  },
+  "shark": {
+   "name_ar": "صائد المظلومات",
+   "animal": "قرش خليجي ودود",
+   "job_id": "128d7ae6-38d7-4e10-82b2-a4fbc6930996",
+   "why": "كان صائد المظلومات — انشال مع الأسماك (2026-11-10)"
+  }
+ },
+ "cast_candidates": {
+  "_comment": "الدوران الشاغران: متتبع الحيتان (whales) وصائد المظلومات (mazloum). الدفعة الأولى (الذيب، الخروف النعيمي، الأرنب البري، التيس العربي) رفضها بدر كلها 2026-11-10 وطلب غيرهم. الدفعة الثانية معروضة عليه بلوحة board_media وتنتظر اختياره.",
+  "rejected_2026-11-10": {
+   "wolf": "07b47be5-157c-4093-b6b6-74ffa50ee9c7",
+   "naimi_sheep": "9f5741fa-d232-4b36-8840-0bfcb97e68ac",
+   "desert_hare": "ac50a524-236b-4ba5-8587-ddda3e033c45",
+   "arabian_goat": "8131eb8d-f5e4-418c-b387-c051f1fc50de"
+  },
+  "open": {
+   "bulbul": {
+    "name_ar": "البلبل",
+    "job_id": "2572997a-54ba-4156-bfe1-d6812e7cb7d3",
+    "note": "منقار: تعليق صوتي"
+   },
+   "houbara": {
+    "name_ar": "الحبارى",
+    "job_id": "641d44a3-5a57-44fa-afe8-a7c93fb17139",
+    "note": "منقار: تعليق صوتي"
+   }
+  },
+  "board_media": "94bf112a-960b-4af0-974a-58acff5fed78",
+  "rejected_2026-11-14": {
+   "mongoose": {
+    "name_ar": "النمس",
+    "job_id": "663646a3-9c71-4174-837c-818b303fbdcc",
+    "for": "mazloum"
+   },
+   "honey_badger": {
+    "name_ar": "غرير العسل",
+    "job_id": "2881fe20-ce1a-4cdf-8ccd-d5db4ed185cb",
+    "for": "whales"
+   }
+  }
+ }
+}

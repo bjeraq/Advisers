@@ -1,0 +1,51 @@
+{
+  "_comment": "تشكيلة المجلس: عطّل عضواً بحذفه من الوضع، أو أضف عضواً جديداً بإنشاء ملفه في ‎.claude/agents/‎ وإضافته هنا.",
+  "modes": {
+    "quick": [
+      "fanni",
+      "asasi",
+      "thawr",
+      "dubb",
+      "haris",
+      "raqib"
+    ],
+    "full": [
+      "fanni",
+      "asasi",
+      "thawr",
+      "dubb",
+      "raqib",
+      "haris",
+      "rassad",
+      "macro",
+      "mudharib",
+      "saboor",
+      "suyula",
+      "qita",
+      "congress",
+      "whales",
+      "mazloum"
+    ]
+  },
+  "default_mode": "full",
+  "judge": "qadhi",
+  "agents_dir": ".claude/agents",
+  "names": {
+    "fanni": "الفنّي",
+    "asasi": "الأساسي",
+    "thawr": "الثور",
+    "dubb": "الدب",
+    "raqib": "الرقيب الشرعي",
+    "haris": "حارس المحفظة",
+    "rassad": "رصّاد الأخبار",
+    "macro": "الاستراتيجي الكلي",
+    "mudharib": "المضارب السريع",
+    "saboor": "المستثمر الصبور",
+    "suyula": "قارئ السيولة",
+    "qita": "محلل القطاع",
+    "congress": "متتبع السياسيين",
+    "whales": "متتبع الحيتان",
+    "qadhi": "القاضي",
+    "mazloum": "صائد المظلومات"
+  }
+}

@@ -1,0 +1,476 @@
+{
+ "_comment": "الحلقة 2 — AMD بعد صدمة إنفيديا. السكريبت متفق عليه مع بدر سطر سطر (script.md). المكان: ديوانية كويتية. مسودة 480 ثم نهائي 1080.",
+ "slug": "amd-2026-11-13",
+ "number": 2,
+ "title": "AMD بعد صدمة إنفيديا",
+ "ticker": "AMD",
+ "data_date": "2026-11-13",
+ "compliance": "متوافق — data/universe_us.csv",
+ "majlis_report": "reports/2026-11-13_AMD.md",
+ "fonts": "fonts",
+ "lines": {
+  "intro_a": {
+   "speaker": "rassad",
+   "audio": "amd/a2/fi_a.wav",
+   "audio_job": "14ac80de-30c5-4a53-9f05-ac6d8a9fd494",
+   "text": "خَبَر عاجل يا جماعة!"
+  },
+  "intro": {
+   "speaker": "rassad",
+   "audio": "amd/a2/fi_b.wav",
+   "audio_job": "14ac80de-30c5-4a53-9f05-ac6d8a9fd494",
+   "text": "سهم إيه إم دي ارتفع خمسة وأربعين بالمية بأسبوع واحد... وبعدها يوم الجمعة نزل تسعة بالمية! والمجلس منعقد الحين!"
+  },
+  "thawr": {
+   "speaker": "thawr",
+   "audio": "amd/a2/l2.mp3",
+   "audio_job": "5940c792-d330-42ed-a725-d27621058439",
+   "text": "أنا شغلتي ألقى سبب للشراء... وهني السبب واضح: المبيعات زادت أربعين بالمية، والأرباح صارت أكثر من الضعف! وإنفيديا بلا قائد... هذي فرصة إيه إم دي!"
+  },
+  "dubb": {
+   "speaker": "dubb",
+   "audio": "amd/a2/fx2.mp3",
+   "audio_job": "2e1e33e9-c054-45d7-9d42-0dc8e49efe99",
+   "text": "يا ضب يا صديقي، إنت تشوفها فرصة وأنا أشوفها خطر... السهم فوق الخمسمية دولار ويربح بالسنة أقل من خمسة! ولو ما كبرت أرباحه، بيطيح."
+  },
+  "mazloum": {
+   "speaker": "mazloum",
+   "audio": "amd/a2/hg2.mp3",
+   "audio_job": "ab92438a-a66c-45ac-87be-de983ba62147",
+   "text": "أنا أدوّر على السهم القوي اللي انضرب ظلم... وهذا مو مظلوم! سعره للحين منفوخ من أزمة إنفيديا."
+  },
+  "qadhi": {
+   "speaker": "qadhi",
+   "audio": "amd/a2/jt.mp3",
+   "audio_job": "ba98fae9-f27b-4978-9624-40a06e7e5499",
+   "text": "سمَعت الجميع... ميزان الاستثمار: ستة بالموجب. اثنين شراء، ثلتعش انتظار، ومحد قال بيع. الشركة قوية، بس سعرها سبق أرباحها... ننطر لين الثلاثاء. وثقتي سبعة من عشرة."
+  },
+  "cta": {
+   "speaker": "rassad",
+   "audio": "amd/a2/fc2.mp3",
+   "audio_job": "33e84bbc-c896-4ca2-926b-a281624c05d9",
+   "text": "خلاص، نجتمع مرة ثانية يوم الثلاثاء، ونحلل آخر التطورات!"
+  },
+  "ask": {
+   "speaker": "rassad",
+   "audio": "amd/a2/fq.wav",
+   "audio_job": "5cc6f74f-2b7d-4238-ab22-d1de6bb40fdf",
+   "text": "خلونا نسأل اللي يراقبون السياسيين وكبار المستثمرين... يا هدهد، يا جربوع، إنتوا شنو رايكم؟"
+  },
+  "pair": {
+   "speaker": "congress+whales",
+   "audio": "amd/a2/pa.wav",
+   "audio_parts": [
+    "d83be639-b45c-431d-807d-72715fa8c76d",
+    "57003ec5-c0d1-4e18-9738-7ca696fde023"
+   ],
+   "text": "هالمرة ما عندي بيانات! ولا أنا بعد!"
+  }
+ },
+ "graphics": {
+  "meter": {
+   "kind": "verdict_meter",
+   "score": 6,
+   "scale_max": 30,
+   "votes": [
+    [
+     "شراء",
+     2,
+     "teal"
+    ],
+    [
+     "انتظار",
+     13,
+     "gold"
+    ],
+    [
+     "بيع",
+     0,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار",
+   "dur": 4.5
+  },
+  "arrows": {
+   "kind": "move_arrows",
+   "up": "45%",
+   "down": "8.75%",
+   "up_label": "بأسبوع",
+   "down_label": "الجمعة",
+   "dur": 5.0
+  },
+  "sales": {
+   "kind": "cash_bars",
+   "value": 42,
+   "label": "المبيعات تنمو",
+   "dur": 3.0
+  },
+  "pe": {
+   "kind": "compare_bars",
+   "a_label": "السعر",
+   "a_value": "534$",
+   "b_label": "ربح السهم بالسنة",
+   "b_value": "4.60$",
+   "dur": 3.5
+  },
+  "path": {
+   "kind": "price_path",
+   "pts": [
+    [
+     "قبل الأزمة",
+     489
+    ],
+    [
+     "القاع",
+     404
+    ],
+    [
+     "القمة",
+     585
+    ],
+    [
+     "الجمعة",
+     534
+    ]
+   ],
+   "ref": 489,
+   "ref_label": "سعر قبل الأزمة",
+   "dur": 4.0
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "label": "مجلس اليوم • الحلقة 2",
+   "title": "AMD",
+   "subtitle": "بعد صدمة إنفيديا",
+   "pills": [
+    [
+     "ارتفع 45% بأسبوع",
+     "teal"
+    ],
+    [
+     "نزل 8.75% الجمعة",
+     "red"
+    ],
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق الجمعة 13 نوفمبر 2026"
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "المبيعات زادت 41.9% بالسنة",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "ربح السهم زاد 127%",
+     40,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "السعر 534$",
+     44,
+     "bold",
+     "white"
+    ],
+    [
+     "ربح السهم بالسنة 4.60$",
+     38,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "pair": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "تداولات الكونغرس: لا بيانات",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "كبار المستثمرين: لا بيانات",
+     34,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "mazloum": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "إغلاق ما قبل الأزمة 488.78$",
+     36,
+     "bold",
+     "white"
+    ],
+    [
+     "اليوم 534.06$",
+     36,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "ميزان الاستثمار: 6 بالموجب",
+     50,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "شراء 2 • انتظار 13 • بيع 0",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "انتظار إلى الثلاثاء 17 نوفمبر — الثقة 7/10",
+     28,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "نجتمع الثلاثاء 17 نوفمبر",
+     44,
+     "bold",
+     "white"
+    ],
+    [
+     "ونحلل آخر التطورات",
+     38,
+     "bold",
+     "light_teal"
+    ]
+   ],
+   "y": 0.3
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "falcon_open",
+   "type": "vo_clip",
+   "line": "intro_a",
+   "delay": 0.2,
+   "duration": 2.4,
+   "video": {
+    "draft": "amd/src/falcon_open.mp4",
+    "final": "amd/src/falcon_open.mp4"
+   },
+   "video_job": "7bcaf69e-04de-403e-ab8c-568e4c7c11ba"
+  },
+  {
+   "id": "intro",
+   "type": "vo_clip",
+   "line": "intro",
+   "delay": 0.3,
+   "duration": 9.8,
+   "video": {
+    "draft": "amd/src/wide.mp4",
+    "final": "amd/src/wide.mp4"
+   },
+   "video_job": "f647a41f-ef16-4b09-922a-11cc5bfcf19c",
+   "card": {
+    "name": "title",
+    "at": 5.6,
+    "fade": 0.5
+   },
+   "graphic": {
+    "name": "arrows",
+    "cue": "ارتفع",
+    "box": [
+     170,
+     205,
+     380
+    ]
+   }
+  },
+  {
+   "id": "dhub",
+   "type": "lipsync",
+   "line": "thawr",
+   "video": {
+    "draft": "amd/src/dhub.mp4",
+    "final": "amd/src/dhub.mp4"
+   },
+   "draft_job": "fd917bd4-3daf-458d-ae17-48a43b291fe6",
+   "card": {
+    "name": "dhub",
+    "at": "after_graphic"
+   },
+   "graphic": {
+    "name": "sales",
+    "cue": "المبيعات",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   }
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "amd/src/fox.mp4",
+    "final": "amd/src/fox.mp4"
+   },
+   "draft_job": "d8dce485-ca8e-4ae2-8a73-5f31d7773dd3",
+   "card": {
+    "name": "fox",
+    "at": "after_graphic"
+   },
+   "shake": "بيطيح",
+   "graphic": {
+    "name": "pe",
+    "cue": "الخمسمية",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   }
+  },
+  {
+   "id": "ask",
+   "type": "vo_clip",
+   "line": "ask",
+   "delay": 0.2,
+   "duration": 7.9,
+   "video": {
+    "draft": "amd/src/falcon_ask.mp4",
+    "final": "amd/src/falcon_ask.mp4"
+   },
+   "video_job": "3b39c55b-5ba1-45a5-b4fc-ddb19fdb92c2"
+  },
+  {
+   "id": "pair",
+   "type": "vo_clip",
+   "line": "pair",
+   "delay": 0.3,
+   "duration": 4.6,
+   "video": {
+    "draft": "amd/src/pair2.mp4",
+    "final": "amd/src/pair2.mp4"
+   },
+   "video_job": "2b0892a1-8c04-4084-90ec-0278bb2bac16",
+   "keyframe": "d4a3089c-9aee-483a-a2b2-610dada3a2a3",
+   "card": {
+    "name": "pair",
+    "at": "cue",
+    "cue": "هالمرة"
+   },
+   "_note": "بدر: الجربوع ذكر، وشفايفهم ما تتحرك قبل ما ينسألون → سؤال الصقر بلقطة لحاله وجوابهم بلقطة 5ث"
+  },
+  {
+   "id": "mazloum",
+   "type": "lipsync",
+   "line": "mazloum",
+   "video": {
+    "draft": "amd/src/hedge.mp4",
+    "final": "amd/src/hedge.mp4"
+   },
+   "draft_job": "c1ec7c7b-1f83-40b0-bebe-d21c94190a56",
+   "graphic": {
+    "name": "path",
+    "cue": "مظلوم",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   }
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "qadhi",
+   "video": {
+    "draft": "amd/src/judge.mp4",
+    "final": "amd/src/judge.mp4"
+   },
+   "draft_job": "a8ef9294-f616-42b1-8e2e-ff111c798622",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     140,
+     552,
+     360
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   }
+  },
+  {
+   "id": "cta",
+   "type": "vo_clip",
+   "line": "cta",
+   "delay": 0.2,
+   "duration": 6.3,
+   "video": {
+    "draft": "amd/src/cta.mp4",
+    "final": "amd/src/cta.mp4"
+   },
+   "video_job": "0a2b7ad3-0f91-477a-abbc-90861fb68beb",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   }
+  }
+ ],
+ "keyframes": {
+  "master": "6240dad8-cd04-4d2b-941e-ef2b43158505",
+  "falcon": "c67c618a-4086-470a-98c0-4f680b85938a",
+  "dhub": "e741efef-2346-4db2-9829-5dfbc32798a0",
+  "fox": "2b11f0c5-2a86-4dad-88af-cf6f4f21adf4",
+  "pair": "043b4373-4ce2-4e97-a4f5-6de6f0a53ba5",
+  "mazloum": "cf9b2026-4d6b-4aba-b1f0-cfb62291e98a",
+  "judge": "13a9c8cb-7952-45be-8d2b-e9a95798a7a8"
+ },
+ "draft_v1": {
+  "media_id": "3451f362-3e05-4485-a94f-347df720c5c0",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/3451f362-3e05-4485-a94f-347df720c5c0.mp4",
+  "duration_s": 79.3,
+  "note": "مسودة: مشاهد 480 مجمعة بإطار 720، الكابشن صور (ترتيب عربي صحيح)، verify أقل تشابه 0.74 (المقدمة: AMD/45% كأرقام)"
+ }
+}

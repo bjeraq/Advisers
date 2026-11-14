@@ -1,0 +1,621 @@
+{
+ "_comment": "الحلقة 1 المحدّثة — إنفيديا بعد خروج هوانغ. تحل محل نسخة 7 نوفمبر (ما نزلت). الأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر (reports/2026-11-13_NVDA.md).",
+ "slug": "nvda-2026-11-13",
+ "number": 1,
+ "title": "البداية — إنفيديا بعد خروج هوانغ",
+ "ticker": "NVDA",
+ "data_date": "2026-11-13",
+ "compliance": "متوافق — data/universe_us.csv (بوابة الرقيب الشرعي قبل الإنتاج)",
+ "majlis_report": "reports/2026-11-13_NVDA.md",
+ "fonts": "fonts",
+ "lines": {
+  "intro": {
+   "speaker": "rassad",
+   "audio": "src/lines/intro_b_v7.mp3",
+   "audio_job": "1620adee-7a98-45b7-921b-9e93a450071d",
+   "text": "جنسن هوانغ استقال من إنفيديا بعد ثلاثة وثلاثين سنة، والسهم لَمَس أدنى سعر له بسنة... ومجلس المستشارين منعقد الحين!"
+  },
+  "thawr": {
+   "speaker": "thawr",
+   "audio": "src/lines/thawr_v11.mp3",
+   "audio_job": "acfefdc8-84c0-4fa8-aa8f-fb9866784398",
+   "text": "شوفوا عدل! الرئيس طلع، بس الرقائق ما طلعت وياه. الطلب على حاله، والشركة قاعدة على جبل من الكاش... والنتايج الثلاثاء بتتكلم عن نفسها!",
+   "_pron": "بدر: «جبل» بفتح الجيم — التسجيل v11 مكتوب «جَبَل» (فيديو d480_dhub_v5 نفسه، النص ما تغير)"
+  },
+  "dubb": {
+   "speaker": "dubb",
+   "audio": "src/lines/dubb_v7.mp3",
+   "audio_job": "b58e68ee-e545-463b-8b2b-11bae9734181",
+   "text": "على مهلك يا ضب... اللي بنى الشركة طلع فجأة، وواشنطن تبي تشد القيود على الصين، والبنوك قاعدة تنزّل السعر اللي تتوقعه للسهم. والسهم نزل تحت المستوى اللي كان يوقف عنده... وتحته للحين ما فيه أرضية واضحة.",
+   "stability": 0.6
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "audio": "src/lines/clash_t_v6.mp3",
+   "audio_job": "c33876e2-bac0-438b-9e79-4657a7ef84e3",
+   "text": "نزل لأدنى سعر، ورجع يصعد بنفس اليوم!"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "audio": "src/lines/clash_d_v6.mp3",
+   "audio_job": "99459384-68f6-4fbd-b4ee-3ef89facf49a",
+   "text": "وصعود يوم واحد ما يبني ثقة!",
+   "stability": 0.6
+  },
+  "qadhi": {
+   "speaker": "qadhi",
+   "audio": "src/lines/qadhi_v11.mp3",
+   "audio_job": "0f09f079-2f1c-4ed8-a3eb-456f69f26a23",
+   "text": "سمَعت الجميع... ميزان الاستثمار اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف نزول... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
+   "voice": "Gideon",
+   "_pron": "بدر 14 نوفمبر: «طيحته» ظلت تنقال بشدة على الياء بكل الكتابات (طيحته، طَيْحته، طِيحته) → انشالت وانحطت بدالها «نزول»."
+  },
+  "cta": {
+   "speaker": "rassad",
+   "audio": "src/lines/cta_v5.mp3",
+   "audio_job": "675c9370-bc7d-40bf-a10d-ede574ad4b38",
+   "text": "ومن أقنعك إنت؟ الضب، الثعلب، ولا القاضي؟ خل نسمع رايك بالكومنتات — والثلاثاء النتايج، والمجلس راجع ينعقد!"
+  },
+  "guest": {
+   "speaker": "saboor",
+   "audio": "src/lines/guest_v5.mp3",
+   "audio_job": "5db203d0-0911-4980-bd13-c630fd1a4e43",
+   "text": "يا جماعة، أنا نظرتي بعيدة: المدير يتبدل، والشركة تبقى. هوامشها عالية وما عليها ديون تذكر... بس ما أشتري كله مرة وحدة: على دفعات، والثلاثاء النتايج بتبيّن... واللي يصبر يربح.",
+   "_why": "المستثمر الصبور: أعلى درجة شراء بعد الثنائي (+5) وصوته ولقطته معتمدين من الحلقة السابقة"
+  },
+  "intro_a": {
+   "speaker": "rassad",
+   "audio": "src/lines/intro_a_v7.mp3",
+   "audio_job": "33fe3f46-0c86-4dbd-b109-ada3f7733fb2",
+   "text": "خَبَر عاجل يا جماعة!"
+  },
+  "flamingo": {
+   "speaker": "suyula",
+   "audio": "src/lines/flamingo_v9.mp3",
+   "audio_parts": [
+    {
+     "speaker": "thawr",
+     "voice": "Holden",
+     "job": "c5bc34a5-8b2b-4af1-b079-0f1760c3fec0",
+     "text": "وإنتي يا مدام فلامينجو؟"
+    },
+    {
+     "speaker": "suyula",
+     "voice": "Yara fd25dc29-6495-5df3-9332-26bb58fdd575",
+     "job": "244e2d0f-0374-4798-b89a-369887c0843c",
+     "text": "أنا أراقب البيع والشرا: الخميس التداول أربع أضعاف المعتاد، بس الجمعة خف، والشاري الكبير ما بيّن!",
+     "stability": 0.6
+    }
+   ],
+   "text": "وإنتي يا مدام فلامينجو؟ أنا أراقب البيع والشرا: الخميس التداول أربع أضعاف المعتاد، بس الجمعة خف، والشاري الكبير ما بيّن!",
+   "_data": "حجم الخميس 747.7 مليون = 4.5× متوسط 20 يوم؛ الجمعة 365.8 مليون = 1.9× وإغلاق 162.85 تحت قمة اليوم 170 (bars.json جلسة 13 نوفمبر)",
+   "_mix": "بدر: كلامها كان مقطع → تسجيل جديد بثبات 0.6 بدون أي قص للوقفات (silenceremove كان يقطع أطراف الكلمات). السؤال + 0.2ث + جوابها = 10.9ث؛ مقطع الفيديو مبطأ ×1.1 إلى 11ث."
+  }
+ },
+ "graphics": {
+  "cash": {
+   "kind": "cash_bars",
+   "value": 76,
+   "label": "التدفق الحر ينمو",
+   "dur": 3.0
+  },
+  "breakdown": {
+   "kind": "support_break",
+   "label": "الأرضية",
+   "dur": 4.0
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": 19,
+   "scale_max": 30,
+   "votes": [
+    [
+     "شراء",
+     5,
+     "teal"
+    ],
+    [
+     "انتظار",
+     10,
+     "gold"
+    ],
+    [
+     "بيع",
+     0,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار",
+   "dur": 4.5
+  },
+  "donut": {
+   "kind": "donut",
+   "value": 75,
+   "lines": [
+    "هامشها",
+    "الإجمالي",
+    "من المبيعات"
+   ],
+   "dur": 2.6
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "title": "مجلس اليوم",
+   "subtitle": "إنفيديا — NVDA",
+   "pills": [
+    [
+     "نازل 33%",
+     "red"
+    ],
+    [
+     "استقالة هوانغ",
+     "gold"
+    ],
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق 13 نوفمبر 2026"
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "صافي النقد نحو 60 مليار $",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "التدفق الحر ينمو +76%",
+     40,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "بنوك تنزّل السعر المتوقع للسهم",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "أدنى سعر بسنة: 148.80$",
+     34,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.76,
+   "lines": [
+    [
+     "ميزان الاستثمار: +19",
+     56,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "شراء 5 • انتظار 10 • بيع 0",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "الأول: انتظار إلى الثلاثاء 17 نوفمبر — الثقة 7/10",
+     30,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.7,
+   "lines": [
+    [
+     "من أقنعك؟",
+     62,
+     "bold",
+     "white"
+    ],
+    [
+     "الضب • الثعلب • القاضي",
+     42,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "اكتب رأيك بالتعليقات",
+     34,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  },
+  "guest": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "هامش إجمالي نحو 75%",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "الديون 1% من القيمة السوقية",
+     34,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "flamingo": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "حجم الخميس: 748 مليون سهم",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "أكثر من 4 أضعاف المعتاد",
+     34,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "falcon_open",
+   "type": "vo_clip",
+   "line": "intro_a",
+   "delay": 0.2,
+   "duration": 2.4,
+   "video": {
+    "draft": "src/s720_falcon_open_t.mp4",
+    "final": "src/s720_falcon_open_t.mp4"
+   },
+   "video_job": "688861ce-64f1-4cd8-b229-3cb51aa3f4fe",
+   "_note": "seedance 5ث من kf_falcon6؛ مقصوص من 1.3ث (بعد ما الكاميرا تقرب) — الصقر قريب ومنقاره يتحرك"
+  },
+  {
+   "id": "intro",
+   "type": "vo_clip",
+   "line": "intro",
+   "delay": 0.3,
+   "duration": 10.3,
+   "video": {
+    "draft": "src/s720_intro_v5s.mp4",
+    "final": "src/s720_intro_v5s.mp4"
+   },
+   "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
+   "card": {
+    "name": "title",
+    "at": 0.7,
+    "fade": 0.6
+   },
+   "_note": "التسجيل 10.9ث والمقطع 11.0ث، فالمقطع مبطأ ×1.08 بـminterpolate إلى ~11.9ث حتى ما ينقص الكلام"
+  },
+  {
+   "id": "dhub",
+   "type": "lipsync",
+   "line": "thawr",
+   "video": {
+    "draft": "src/d480_dhub_v5.mp4",
+    "final": "src/f1080_dhub.mp4"
+   },
+   "draft_job": "f968db4e-248a-4350-ada6-be71cf91c7f4",
+   "graphic": {
+    "name": "cash",
+    "cue": "جبل",
+    "box": [
+     8,
+     48,
+     250
+    ]
+   },
+   "card": {
+    "name": "dhub",
+    "at": "cue"
+   },
+   "_note": "f968db4e: الفلامنغو باقية يمّه طول المشهد، والفم يتحرك من أول كلمة — مفحوص"
+  },
+  {
+   "id": "flamingo",
+   "type": "vo_clip",
+   "line": "flamingo",
+   "delay": 0.1,
+   "duration": 11.0,
+   "video": {
+    "draft": "src/s720_flamingo_s.mp4",
+    "final": "src/s720_flamingo_s.mp4"
+   },
+   "video_job": "271a2f40-a19c-4d26-8831-117c00892a04",
+   "card": {
+    "name": "flamingo",
+    "at": 2.6
+   },
+   "_note": "طلب بدر: الفلامنغو تدخل 5–10 ثواني تقرا البيع والشرا بسرعة. الضب يلتفت لها ويسألها (صيغة الجار يسأل جاره). منقار → حركة + تعليق صوتي"
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "src/d480_fox_v7.mp4",
+    "final": "src/f1080_fox.mp4"
+   },
+   "draft_job": "2dcf7a33-77d5-4e7f-9784-05b3b1fd1231",
+   "graphic": {
+    "name": "breakdown",
+    "cue": "المستوى",
+    "box": [
+     8,
+     48,
+     270
+    ]
+   },
+   "card": {
+    "name": "fox",
+    "at": "cue"
+   },
+   "_note": "لقطة 3787589c (البديلة؛ f4dac3d1 فشلت مرتين): الثعلب بروحه والمشربية خلفه"
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/d480_clash_v6.mp4",
+    "final": "src/f1080_clash.mp4"
+   },
+   "shake": "ثقة",
+   "draft_job": "43b12643-ab69-406f-a3bb-c31095261893",
+   "_note": "43b12643 (10.05ث): لقطة ثنائية (الضب يسار والشبابيك خلفه، الثعلب يمين والمشربية خلفه) ثم قريبة للثعلب. المحاذاة آلية.",
+   "align": {
+    "f": 0.9,
+    "blocks": [
+     [
+      0.0,
+      3.95
+     ],
+     [
+      5.0,
+      9.45
+     ]
+    ]
+   }
+  },
+  {
+   "id": "guest",
+   "type": "lipsync",
+   "line": "guest",
+   "video": {
+    "draft": "src/d480_guest_v5.mp4",
+    "final": "src/f1080_guest.mp4"
+   },
+   "draft_job": "705b6dda-ab02-4951-8f9f-52e8a8b85e48",
+   "card": {
+    "name": "guest",
+    "at": "cue"
+   },
+   "_note": "705b6dda: الجمل بكرسيه يسار والشبابيك خلفه، بدون جيران بالإطار، والفم يتحرك من أول كلمة — مفحوص",
+   "graphic": {
+    "name": "donut",
+    "cue": "هوامشها",
+    "box": [
+     430,
+     48,
+     280
+    ]
+   }
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "qadhi",
+   "video": {
+    "draft": "src/d480_judge_v6.mp4",
+    "final": "src/f1080_judge.mp4"
+   },
+   "draft_job": "0bbbc75c-6fdd-4976-b915-b91005c0831b",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     170,
+     24,
+     380
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   },
+   "_note": "فيديو v6 (متوسط ثابت طول المشهد) مع تسجيل v7 بنفس النص (21.55ث مقابل 21.47ث). توليد v7 fb47c7b6 انقطع لقطة قريبة بالنص فما استخدم (قاعدة نفس الحجم)."
+  },
+  {
+   "id": "cta",
+   "type": "still_vo",
+   "line": "cta",
+   "delay": 0.4,
+   "duration": 11,
+   "image": "src/kf_falcon6.png",
+   "image_job": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   }
+  }
+ ],
+ "generation": {
+  "_comment": "نفس وصفات النسخة المعتمدة bc7102a9: نفس لقطات الكراسي ونفس الوصف، والصوت بس يتغير. القاضي لازم يطلع لقطة متوسطة بروحه بنفس حجم الباقين (قرار بدر 11 نوفمبر) — الأضمن: إطار من مقطع 8b27a300 يترفع ويصير location_image.",
+  "judge": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "2eca681d-ff13-4e5b-aa91-de119c245559",
+   "location": "3c1fb86e-15ea-49ad-bf67-659096f22c7f",
+   "audio": "202d2be8-bafc-4494-97b2-c59bba3cd96c",
+   "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, white ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his council — the turtle captain and the hoopoe bird on the left, the hedgehog and the gazelle lady on the right, the nearest two advisers only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He starts speaking from the very first frame and delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods and everyone stays seated. Same camera distance, no zoom-in. Premium 3D animated feature film quality, vertical composition",
+   "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73",
+   "location_note": "إطار من مقطع القاضي المعتمد 8b27a300 (لقطة متوسطة بنفس حجم الباقين، الشاشة خلفه) مرفوع كصورة"
+  },
+  "master": "844ed442-8b47-41f8-8b47-e762fa88adae",
+  "intro": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "aspect_ratio": "9:16",
+   "resolution": "720p",
+   "duration": 11,
+   "generate_audio": false,
+   "start_image": "844ed442-8b47-41f8-8b47-e762fa88adae",
+   "prompt": "Cinematic opening shot starting exactly from the start frame: a very slow, gentle camera push-in along the same long boardroom table that travels only a short distance, so the whole council stays in frame for the entire shot and the camera never passes the first chairs. The full council of animal advisers is subtly alive in their own seats — the lizard in the red shemagh and the sandy desert fox in silver glasses exchanging competitive glances across the table, the owl pouring Arabic coffee from the golden dallah, the camel sipping tea, the jerboa tapping his tablet, the red fox girl leaning in, the flamingo and the turtle captain whispering — while the standing falcon reporter beside the screen gestures with his tablet presenting the situation, and the elderly judge at the head calmly raises one hand for order near the end. Warm golden-hour light from the Gulf skyline windows on the left wall, the walnut mashrabiya wall with brass sconces on the right, gentle dust motes in the light, premium 3D animated feature film quality, vertical composition, no camera shake, no new characters, nobody leaves their seat"
+  },
+  "dhub": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+   "location": "316d6510-8950-4137-8bac-0893023f9772",
+   "audio": "1a624e24-8a3a-4c15-8af1-8089ad19cb7d",
+   "prompt": "Medium shot matching the location image staging exactly: the friendly lizard (dhub) adviser in red-and-white shemagh, deep teal-green suit and gold tie seated on his chair at the long boardroom table, the golden-hour skyline windows behind him, the pink flamingo lady in a cream blazer beside him, blurred shoulders of two advisers across the table in the foreground corners, every chair occupied. He is already talking in the very first frame and passionately makes his case — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — gesturing with sweeping confident moves, tapping the table on key points, ending with both hands open. The flamingo listens, nods and stays seated and visible for the entire shot. Same camera distance, no zoom-in, his face and mouth large and readable. Premium 3D animated feature film quality, vertical composition",
+   "location_alt": "100cdf87-be76-4bae-9975-1d60431b5914"
+  },
+  "fox": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "character": "4708d2a3-50b3-4f1f-8075-ffd868ec26bd",
+   "location": "3787589c-09e2-4f89-ae4c-c0b3323cd84e",
+   "audio": "07dac0c3-9c45-41a9-8e80-0b800046d486",
+   "prompt": "Medium two-person shot matching the location image staging and framing exactly, same camera distance, no zoom-in: the sandy-orange desert fox adviser with round silver glasses and burgundy waistcoat seated upright on his chair at the long boardroom table, and beside him in the next chair the desert hedgehog adviser in a grey suit and teal tie, who stays seated and visible at the left side of the frame for the entire shot, listening and nodding. Behind them the walnut mashrabiya wall with glowing brass sconces, no windows. Blurred shoulders of two advisers across the table in the bottom foreground corners. Every chair is occupied. Only the fox speaks, and he is already talking in the very first frame: he replies skeptically and dryly — his mouth clearly and visibly opens and closes with strong articulate lip movements on every word — adjusting his glasses, raising one finger, counting risks on his fingers, ending with folded arms and a dry smirk. Full correct anatomy. Premium 3D animated feature film quality, vertical composition",
+   "location_alt": "3787589c-09e2-4f89-ae4c-c0b3323cd84e"
+  },
+  "clash": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "characters": [
+    "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+    "4708d2a3-50b3-4f1f-8075-ffd868ec26bd"
+   ],
+   "location": "175dc808-de22-43b8-9c3b-50c2cbde4dab",
+   "audio": [
+    "c33876e2-bac0-438b-9e79-4657a7ef84e3",
+    "99459384-68f6-4fbd-b4ee-3ef89facf49a"
+   ],
+   "prompt": "Quick confrontation two-shot matching the location image staging exactly: the lizard (dhub) in red shemagh and teal suit on the left with the skyline windows behind him, and the sandy desert fox in silver glasses and burgundy waistcoat on the right with the walnut mashrabiya wall behind him, sit facing each other across the long table, BOTH properly on their chairs, never on the table, full correct anatomy, the judge small at the far head under the teal screen. The lizard speaks first with one short punchy line, pointing at the fox with a grin — his mouth clearly and visibly opens and closes on every word; then the fox immediately fires back his dry retort — his mouth clearly and visibly opens and closes on every word — leaning forward then folding his arms with a smirk. Snappy expressive cartoon acting, clear turn-taking, both faces large and readable, same wide two-shot for the whole clip. Premium 3D animated feature film quality, vertical composition"
+  },
+  "cta_keyframe": {
+   "model": "gpt_image_2_6",
+   "aspect_ratio": "9:16",
+   "refs": [
+    "844ed442-8b47-41f8-8b47-e762fa88adae",
+    "1b4f7293-aa7e-4f51-87cd-45ba07c3c943"
+   ],
+   "job": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+   "note": "الصقر الوحيد بالصورة — مكانه عند الشاشة فاضي لأنه مشى لطرف الطاولة"
+  },
+  "guest_seat_shots": {
+   "saboor": {
+    "location": "9e4ef302-2df2-4d0a-b421-ae3313ec4f81",
+    "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+    "note": "كرسي فاضي — النموذج يرفض موقعاً فيه جمل"
+   },
+   "fanni": {
+    "location": "fcd0e18d-3ce7-4196-b9c4-6e29527deb71",
+    "note": "منقار: vo_clip"
+   },
+   "asasi": {
+    "location": "24279022-b05b-4121-a610-58603e71dc3a",
+    "note": "السلحفاة طالعة بغترة بدل قبعة القبطان — أعد اللقطة لو انختارت"
+   },
+   "macro": {
+    "location": "29bebd9f-0dc5-4eff-8913-e1f48b7c3e50"
+   },
+   "mudharib": {
+    "location": "c1e807a2-efbc-4b82-b374-3380dcdfe159"
+   },
+   "qita": {
+    "location": "7bfce025-382e-4d00-be7e-e220a70890d0"
+   },
+   "haris": {
+    "location": "76e51982-7f43-43ed-b6ce-728c04e81710"
+   },
+   "suyula": {
+    "location": "9605cc31-7ace-441c-b332-c21bea1a1392",
+    "note": "منقار: vo_clip"
+   },
+   "congress": {
+    "location": "e5f87f5a-266d-4ebf-a9af-f85b0c7dcb78",
+    "note": "منقار: vo_clip"
+   }
+  },
+  "guest": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "resolution": "480p",
+   "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "location": "9e4ef302-2df2-4d0a-b421-ae3313ec4f81",
+   "audio": "5db203d0-0911-4980-bd13-c630fd1a4e43",
+   "prompt_from": "tools/studio/episodes/nvda-2026-11-07/episode.json → generation.camel"
+  },
+  "falcon_open": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "aspect_ratio": "9:16",
+   "resolution": "720p",
+   "duration": 5,
+   "start_image": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+   "prompt": "Medium close-up of the falcon news reporter in suit standing at the end of the boardroom table, urgently announcing breaking news straight to camera, beak opening and closing as he talks, one wing raised, slight push-in, the council blurred behind him. Premium 3D animated feature film quality, vertical composition"
+  },
+  "flamingo": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "aspect_ratio": "9:16",
+   "resolution": "720p",
+   "duration": 10,
+   "start_image": "316d6510-8950-4137-8bac-0893023f9772",
+   "prompt": "Starting exactly from the start frame: the lizard in the red shemagh turns to the pink flamingo lady beside him and asks her a short question with an open hand; she turns toward the council and briskly explains, beak opening and closing as she talks, tapping numbers on her tablet and making a quick down-then-flat gesture with her wing, confident analyst. Same camera distance, nobody leaves their seat. Premium 3D animated feature film quality, vertical composition"
+  }
+ },
+ "_status": "delivered v11 (jabal fatha, ميزان الاستثمار): 5d8f85c4-8866-418f-bd09-af079c2512d4",
+ "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
+ "video_media_id": "5d8f85c4-8866-418f-bd09-af079c2512d4",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/5d8f85c4-8866-418f-bd09-af079c2512d4.mp4",
+ "duration_s": 109.6,
+ "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر.",
+ "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
+ "review_2026_11_14b": "ملاحظات بدر الثانية: (1) الصقر يبين وهو يقول خبر عاجل ثم اللقطة الواسعة؛ «خَبَر» بالفتح؛ (2) سطر الثعلب بكلام أبسط بدل «ينزّلون أهدافهم» و«كاسر دعمه»؛ (3) القاضي «سمَعت» بفتح الميم و«طَيْحته» بدون شدة؛ (4) الفلامنغو تدخل 5–10 ثواني. الكل ينتظر شحن رصيد هيغزفيلد (28 كريدت باقية؛ المطلوب نحو 250).",
+ "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
+ "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
+ "review_2026_11_14c": "بدر: كلام الفلامنغو مقطع → أعيد بدون قص؛ الرجّات كثيرة → بقت رجّة وحدة بس عند ردة الثعلب بالمواجهة («ثقة»).",
+ "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
+ "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
+ "review_2026_11_14d": "بدر: «جَبَل» بالفتح؛ وتغيير الاسم «ميزان المجلس» → «ميزان الاستثمار» بكل مكان (كلام القاضي، الرسمة، بطاقة الحكم، الموقع، المهارات).",
+ "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c"
+}

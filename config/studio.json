@@ -265,6 +265,21 @@
    "name": "Yara",
    "voice_id": "fd25dc29-6495-5df3-9332-26bb58fdd575",
    "note": "صوت الفلامنغو (اقتراح، أول ظهور 14 نوفمبر) — يقدر بدر يبدله"
+  },
+  "congress": {
+   "name": "Raina",
+   "voice_id": "1c3a4775-9afb-52c1-a2bf-b6543231a9a1",
+   "note": "الهدهد بنت — اختارها بدر 14 نوفمبر من 4 أصوات"
+  },
+  "whales": {
+   "name": "Ian",
+   "voice_id": "472a562a-4c33-5114-8210-d6ffa1e4e2c5",
+   "note": "الجربوع (أول ظهور حلقة 2) — Cody فشل مرتين"
+  },
+  "mazloum": {
+   "name": "Emmett",
+   "voice_id": "3c7d32be-0182-5c5e-aa6a-663409bfbb26",
+   "note": "القنفذ (أول ظهور حلقة 2)"
   }
  },
  "episode_nvda_pilot": {

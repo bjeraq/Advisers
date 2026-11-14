@@ -43,11 +43,11 @@
   },
   "qadhi": {
    "speaker": "qadhi",
-   "audio": "src/lines/qadhi_v8a.mp3",
-   "audio_job": "2a0778d9-338d-427b-bf1e-565c9eac7f65",
-   "text": "سمَعت الجميع... ميزان المجلس اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف طيحته... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
+   "audio": "src/lines/qadhi_v10.mp3",
+   "audio_job": "0a2e41b9-38ea-41e7-915f-5cc9522d0051",
+   "text": "سمَعت الجميع... ميزان المجلس اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار إلى يوم الثلاثاء، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف نزول... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
    "voice": "Gideon",
-   "_pron": "بدر: «طيحته» بدون شدة. التشكيل بالسكون (طَيْحته) ما نفع؛ التسجيل v8a مكتوب «طِيحته» (كسرة على الطاء تخلي الياء مد مو حرف مشدد). مدة الكلمة بالتفريغ 0.58ث مقابل 0.68ث للمشدد."
+   "_pron": "بدر 14 نوفمبر: «طيحته» ظلت تنقال بشدة على الياء بكل الكتابات (طيحته، طَيْحته، طِيحته) → انشالت وانحطت بدالها «نزول»."
   },
   "cta": {
    "speaker": "rassad",
@@ -602,16 +602,17 @@
    "prompt": "Starting exactly from the start frame: the lizard in the red shemagh turns to the pink flamingo lady beside him and asks her a short question with an open hand; she turns toward the council and briskly explains, beak opening and closing as she talks, tapping numbers on her tablet and making a quick down-then-flat gesture with her wing, confident analyst. Same camera distance, nobody leaves their seat. Premium 3D animated feature film quality, vertical composition"
   }
  },
- "_status": "delivered v9 (flamingo clear, one shake): cff203d3-bac5-4823-930d-a2ab4e5b27cb",
+ "_status": "delivered v10 (judge: نزول instead of طيحته): e4f336af-41f8-48d7-81ff-c3729060b15c",
  "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
- "video_media_id": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/cff203d3-bac5-4823-930d-a2ab4e5b27cb.mp4",
- "duration_s": 109.7,
+ "video_media_id": "e4f336af-41f8-48d7-81ff-c3729060b15c",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e4f336af-41f8-48d7-81ff-c3729060b15c.mp4",
+ "duration_s": 109.6,
  "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر.",
  "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
  "review_2026_11_14b": "ملاحظات بدر الثانية: (1) الصقر يبين وهو يقول خبر عاجل ثم اللقطة الواسعة؛ «خَبَر» بالفتح؛ (2) سطر الثعلب بكلام أبسط بدل «ينزّلون أهدافهم» و«كاسر دعمه»؛ (3) القاضي «سمَعت» بفتح الميم و«طَيْحته» بدون شدة؛ (4) الفلامنغو تدخل 5–10 ثواني. الكل ينتظر شحن رصيد هيغزفيلد (28 كريدت باقية؛ المطلوب نحو 250).",
  "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
  "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
  "review_2026_11_14c": "بدر: كلام الفلامنغو مقطع → أعيد بدون قص؛ الرجّات كثيرة → بقت رجّة وحدة بس عند ردة الثعلب بالمواجهة («ثقة»).",
- "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72"
+ "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
+ "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb"
 }

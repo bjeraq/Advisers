@@ -218,7 +218,7 @@
   },
   "disc": {
    "kind": "disclaimer",
-   "text": "تحليل لا توصية • الأسعار بتاريخ الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+   "text": "تحليل لا توصية • أسعار الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
   },
   "guest": {
    "kind": "card",
@@ -316,25 +316,25 @@
     "clashd"
    ],
    "video": {
-    "draft": "src/d480_clash_v5b.mp4",
+    "draft": "src/d480_clash_v6.mp4",
     "final": "src/f1080_clash.mp4"
    },
    "shake": "ثقة",
-   "draft_job": "2314474c-e2d9-41a9-9f55-5494272efdd6",
+   "draft_job": "43b12643-ab69-406f-a3bb-c31095261893",
+   "_note": "43b12643 (10.05ث): لقطة ثنائية (الضب يسار والشبابيك خلفه، الثعلب يمين والمشربية خلفه) ثم قريبة للثعلب. المحاذاة آلية.",
    "align": {
-    "f": 1.0,
+    "f": 0.9,
     "blocks": [
      [
       0.0,
-      3.09
+      3.95
      ],
      [
-      3.44,
-      6.67
+      5.0,
+      9.45
      ]
     ]
-   },
-   "_note": "المصدر 2314474c (9.05ث): لقطة ثنائية ثم قريبة للثعلب. المقطع المعدل d480_clash_v5b = 0–4.3ث ×0.75 + 5.6–9.05ث كما هي (قص الوقفة الطويلة بين المتكلمين). كتل الشفاه من silencedetect: الضب 0–4.12 → 0–3.09، الثعلب 5.82–9.05 → 3.44–6.67."
+   }
   },
   {
    "id": "guest",
@@ -365,10 +365,10 @@
    "type": "lipsync",
    "line": "qadhi",
    "video": {
-    "draft": "src/d480_judge_v5.mp4",
+    "draft": "src/d480_judge_v6.mp4",
     "final": "src/f1080_judge.mp4"
    },
-   "draft_job": "1ca2571f-0366-4a86-9a76-b75356504530",
+   "draft_job": "0bbbc75c-6fdd-4976-b915-b91005c0831b",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
@@ -383,7 +383,7 @@
     "at": "after_graphic",
     "fade": 0.6
    },
-   "_note": "لقطة التوليد 8b27a300 (القاضي بحجم باقي المتكلمين بدون مجلس مصغّر حوله) اختارها بدر، وفوقها تسجيل Gideon الأصلي (صوت النموذج مكتوم أصلاً). التوليد 068406e9 (القاضي كبير والمجلس صغير) مرفوض: بدر يبي كل الشخصيات بنفس الحجم. — 1ca2571f: لوحة الميزان صغرت وارتفعت [170,24,380] حتى ما تغطي راس القاضي."
+   "_note": "0bbbc75c (24.05ث): لقطة متوسطة ثابتة طول المشهد بدون زووم، الشاشة خلفه. لوحة الميزان [170,24,380] ما تغطي راسه."
   },
   {
    "id": "cta",
@@ -406,7 +406,7 @@
    "aspect_ratio": "9:16",
    "character": "2eca681d-ff13-4e5b-aa91-de119c245559",
    "location": "3c1fb86e-15ea-49ad-bf67-659096f22c7f",
-   "audio": "66ffb6da-6b0d-412b-b6cd-88885159d7b2",
+   "audio": "202d2be8-bafc-4494-97b2-c59bba3cd96c",
    "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, white ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his council — the turtle captain and the hoopoe bird on the left, the hedgehog and the gazelle lady on the right, the nearest two advisers only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He starts speaking from the very first frame and delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods and everyone stays seated. Same camera distance, no zoom-in. Premium 3D animated feature film quality, vertical composition",
    "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73",
    "location_note": "إطار من مقطع القاضي المعتمد 8b27a300 (لقطة متوسطة بنفس حجم الباقين، الشاشة خلفه) مرفوع كصورة"
@@ -449,8 +449,8 @@
    ],
    "location": "175dc808-de22-43b8-9c3b-50c2cbde4dab",
    "audio": [
-    "2f9181ba-8294-4c1d-8578-e8d80a399462",
-    "44ef2a0a-1058-4c9c-8b01-6f78e428fd7c"
+    "c33876e2-bac0-438b-9e79-4657a7ef84e3",
+    "99459384-68f6-4fbd-b4ee-3ef89facf49a"
    ],
    "prompt": "Quick confrontation two-shot matching the location image staging exactly: the lizard (dhub) in red shemagh and teal suit on the left with the skyline windows behind him, and the sandy desert fox in silver glasses and burgundy waistcoat on the right with the walnut mashrabiya wall behind him, sit facing each other across the long table, BOTH properly on their chairs, never on the table, full correct anatomy, the judge small at the far head under the teal screen. The lizard speaks first with one short punchy line, pointing at the fox with a grin — his mouth clearly and visibly opens and closes on every word; then the fox immediately fires back his dry retort — his mouth clearly and visibly opens and closes on every word — leaning forward then folding his arms with a smirk. Snappy expressive cartoon acting, clear turn-taking, both faces large and readable, same wide two-shot for the whole clip. Premium 3D animated feature film quality, vertical composition"
   },
@@ -509,10 +509,11 @@
    "prompt_from": "tools/studio/episodes/nvda-2026-11-07/episode.json → generation.camel"
   }
  },
- "_status": "delivered: draft720 uploaded ac40826b-d033-4e5c-97f0-8d99632d3cf5",
+ "_status": "delivered v6 after Bader's review: e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
  "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
- "video_media_id": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/ac40826b-d033-4e5c-97f0-8d99632d3cf5.mp4",
- "duration_s": 92.1,
- "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر."
+ "video_media_id": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e6d16e9b-b34d-4dfe-a68b-08d0c7212927.mp4",
+ "duration_s": 94.2,
+ "review_2026_11_14": "ملاحظات بدر: (1) الضب نطق «لِمس» بكسرة → السطر بدون «لمس»؛ (2) «ارتد» → «رجع يصعد» (ورد الثعلب «وصعود يوم واحد» بدل «وارتداد»)؛ (3) القاضي يقول «انتظار إلى يوم الثلاثاء» والتاريخ 17 نوفمبر ببطاقة الحكم؛ (4) شريط الإخلاء فيه اسم اليوم: الجمعة 13 نوفمبر.",
+ "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5"
 }

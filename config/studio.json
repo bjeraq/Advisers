@@ -235,8 +235,13 @@
  },
  "voices": {
   "rassad": {
-   "name": "Benji",
-   "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"
+   "name": "Andre",
+   "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf",
+   "note": "اختاره بدر 14 نوفمبر (حلقة 2): Benji كان يطلع عراقي/شامي بآخر الحلقة",
+   "previous": {
+    "name": "Benji",
+    "voice_id": "e6f9b893-51b1-51d3-afe9-9e0482cb7ac1"
+   }
   },
   "thawr": {
    "name": "Holden",

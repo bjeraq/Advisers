@@ -1,12 +1,12 @@
 {
- "_comment": "الحلقة 1 المحدّثة — إنفيديا بعد خروج هوانغ. تحل محل نسخة 7 نوفمبر (ما نزلت) لأن الأحداث سبقتها. المسودة جاهزة ما عدا سطري الضيف والقاضي وأرقام الحكم: تنكتب من جلسة المجلس بعد إغلاق الجمعة 13 نوفمبر (كل قيمة فيها TBD_COUNCIL أو TBD_CLOSE لازم تنستبدل قبل التوليد).",
+ "_comment": "الحلقة 1 المحدّثة — إنفيديا بعد خروج هوانغ. تحل محل نسخة 7 نوفمبر (ما نزلت). الأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر (reports/2026-11-13_NVDA.md).",
  "slug": "nvda-2026-11-13",
  "number": 1,
  "title": "البداية — إنفيديا بعد خروج هوانغ",
  "ticker": "NVDA",
  "data_date": "2026-11-13",
  "compliance": "متوافق — data/universe_us.csv (بوابة الرقيب الشرعي قبل الإنتاج)",
- "majlis_report": "TBD_COUNCIL — reports/2026-11-13_NVDA.md",
+ "majlis_report": "reports/2026-11-13_NVDA.md",
  "fonts": "fonts",
  "lines": {
   "intro": {
@@ -44,8 +44,8 @@
   "qadhi": {
    "speaker": "qadhi",
    "audio": "src/lines/qadhi_v5.mp3",
-   "audio_job": "TBD",
-   "text": "سمعت الجميع... ميزان المجلس اليوم: TBD_COUNCIL. رأيي؟ TBD_COUNCIL... وثقتي TBD_COUNCIL من عشرة.",
+   "audio_job": "66ffb6da-6b0d-412b-b6cd-88885159d7b2",
+   "text": "سمعت الجميع... ميزان المجلس اليوم: تسعطعش بالموجب. خمسة يقولون شراء، عشرة يقولون انتظار، ومحد قال بيع. رأيي؟ الشركة ذهب، بس السهم للحين ما وقف طيحته... ننطر نتايج الثلاثاء قبل لا نحط فلوس. وثقتي سبعة من عشرة.",
    "voice": "Gideon"
   },
   "cta": {
@@ -55,14 +55,11 @@
    "text": "ومن أقنعك إنت؟ الضب، الثعلب، ولا القاضي؟ خل نسمع رايك بالكومنتات — والثلاثاء النتايج، والمجلس راجع ينعقد!"
   },
   "guest": {
-   "speaker": "TBD_COUNCIL",
+   "speaker": "saboor",
    "audio": "src/lines/guest_v5.mp3",
-   "audio_job": "TBD",
-   "text": "TBD_COUNCIL",
-   "_drafts": {
-    "saboor": "يا جماعة، أنا نظرتي بعيدة: المدير يتبدل والشركة تبقى. ثلثين أرباحها فلوس حقيقية بإيدها، والثلاثاء النتايج بتبيّن... واللي يصبر يربح.",
-    "haris": "يا جماعة، بأيام مثل هذي حجم المركز أهم من الرأي: لا تدخل بأكثر من اللي تتحمل خسارته، وحط لنفسك خط واضح تحت أدنى سعر بسنة."
-   }
+   "audio_job": "5db203d0-0911-4980-bd13-c630fd1a4e43",
+   "text": "يا جماعة، أنا نظرتي بعيدة: المدير يتبدل، والشركة تبقى. هوامشها عالية وما عليها ديون تذكر... بس ما أشتري كله مرة وحدة: على دفعات، والثلاثاء النتايج بتبيّن... واللي يصبر يربح.",
+   "_why": "المستثمر الصبور: أعلى درجة شراء بعد الثنائي (+5) وصوته ولقطته معتمدين من الحلقة السابقة"
   }
  },
  "graphics": {
@@ -79,27 +76,37 @@
   },
   "meter": {
    "kind": "verdict_meter",
-   "score": "TBD_COUNCIL",
+   "score": 19,
    "scale_max": 30,
    "votes": [
     [
      "شراء",
-     "TBD",
+     5,
      "teal"
     ],
     [
      "انتظار",
-     "TBD",
+     10,
      "gold"
     ],
     [
      "بيع",
-     "TBD",
+     0,
      "red"
     ]
    ],
    "title": "ميزان المجلس",
    "dur": 4.5
+  },
+  "donut": {
+   "kind": "donut",
+   "value": 75,
+   "lines": [
+    "هامشها",
+    "الإجمالي",
+    "من المبيعات"
+   ],
+   "dur": 2.6
   }
  },
  "cards": {
@@ -109,11 +116,11 @@
    "subtitle": "إنفيديا — NVDA",
    "pills": [
     [
-     "نزول TBD_CLOSE% من القمة",
+     "نازل 33%",
      "red"
     ],
     [
-     "خروج الرئيس التنفيذي",
+     "استقالة هوانغ",
      "gold"
     ],
     [
@@ -165,19 +172,19 @@
    "y": 0.76,
    "lines": [
     [
-     "ميزان المجلس: TBD",
+     "ميزان المجلس: +19",
      56,
      "bold",
      "light_teal"
     ],
     [
-     "شراء TBD • انتظار TBD • بيع TBD",
+     "شراء 5 • انتظار 10 • بيع 0",
      40,
      "bold",
      "white"
     ],
     [
-     "الخيار الأول: TBD — الثقة TBD/10",
+     "الأول: بعد النتائج على دفعتين — الثقة 7/10",
      30,
      "med",
      "sub"
@@ -218,10 +225,16 @@
    "accent": "gold",
    "lines": [
     [
-     "TBD_COUNCIL",
+     "هامش إجمالي نحو 75%",
      38,
      "bold",
      "white"
+    ],
+    [
+     "الديون 1% من القيمة السوقية",
+     34,
+     "bold",
+     "light_teal"
     ]
    ]
   }
@@ -243,7 +256,7 @@
     "at": 0.7,
     "fade": 0.6
    },
-   "shake": "طايح",
+   "shake": "استقال",
    "_note": "التسجيل 10.9ث والمقطع 11.0ث، فالمقطع مبطأ ×1.08 بـminterpolate إلى ~11.9ث حتى ما ينقص الكلام"
   },
   {
@@ -331,12 +344,21 @@
     "draft": "src/d480_guest_v5.mp4",
     "final": "src/f1080_guest.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "705b6dda-ab02-4951-8f9f-52e8a8b85e48",
    "card": {
     "name": "guest",
-    "at": 1.0
+    "at": "cue"
    },
-   "_note": "الضيف يختاره تقرير المجلس (أقوى أو أغرب رأي). لقطات الكراسي جاهزة بـ config/studio.json → location.shots ومولّدة 13 نوفمبر لكل الضيوف."
+   "_note": "705b6dda: الجمل بكرسيه يسار والشبابيك خلفه، بدون جيران بالإطار، والفم يتحرك من أول كلمة — مفحوص",
+   "graphic": {
+    "name": "donut",
+    "cue": "هوامشها",
+    "box": [
+     430,
+     48,
+     280
+    ]
+   }
   },
   {
    "id": "judge",
@@ -346,14 +368,14 @@
     "draft": "src/d480_judge_v5.mp4",
     "final": "src/f1080_judge.mp4"
    },
-   "draft_job": "TBD",
+   "draft_job": "1ca2571f-0366-4a86-9a76-b75356504530",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
     "box": [
-     144,
-     40,
-     432
+     170,
+     24,
+     380
     ]
    },
    "card": {
@@ -361,7 +383,7 @@
     "at": "after_graphic",
     "fade": 0.6
    },
-   "_note": "لقطة التوليد 8b27a300 (القاضي بحجم باقي المتكلمين بدون مجلس مصغّر حوله) اختارها بدر، وفوقها تسجيل Gideon الأصلي (صوت النموذج مكتوم أصلاً). التوليد 068406e9 (القاضي كبير والمجلس صغير) مرفوض: بدر يبي كل الشخصيات بنفس الحجم."
+   "_note": "لقطة التوليد 8b27a300 (القاضي بحجم باقي المتكلمين بدون مجلس مصغّر حوله) اختارها بدر، وفوقها تسجيل Gideon الأصلي (صوت النموذج مكتوم أصلاً). التوليد 068406e9 (القاضي كبير والمجلس صغير) مرفوض: بدر يبي كل الشخصيات بنفس الحجم. — 1ca2571f: لوحة الميزان صغرت وارتفعت [170,24,380] حتى ما تغطي راس القاضي."
   },
   {
    "id": "cta",
@@ -384,7 +406,7 @@
    "aspect_ratio": "9:16",
    "character": "2eca681d-ff13-4e5b-aa91-de119c245559",
    "location": "3c1fb86e-15ea-49ad-bf67-659096f22c7f",
-   "audio": "TBD",
+   "audio": "66ffb6da-6b0d-412b-b6cd-88885159d7b2",
    "prompt": "Shot matching the location image staging exactly: the dignified elderly Arab judge in white thobe, white ghutra and black gold-trimmed bisht seated at the HEAD of the table FACING his council — the turtle captain and the hoopoe bird on the left, the hedgehog and the gazelle lady on the right, the nearest two advisers only as blurred shoulders in the bottom corners, the teal presentation screen behind him and NO ONE behind his back. He starts speaking from the very first frame and delivers his calm commanding verdict — HIS MOUTH CLEARLY AND VISIBLY OPENS AND CLOSES WITH STRONG ARTICULATE LIP MOVEMENTS on every word — counting points on his fingers, raising his small golden balance scales at the verdict, prayer beads in the other hand. The council listens attentively with subtle nods and everyone stays seated. Same camera distance, no zoom-in. Premium 3D animated feature film quality, vertical composition",
    "chosen_job": "8b27a300-e6cb-4c41-8f76-35ceff11ee73",
    "location_note": "إطار من مقطع القاضي المعتمد 8b27a300 (لقطة متوسطة بنفس حجم الباقين، الشاشة خلفه) مرفوع كصورة"
@@ -476,8 +498,20 @@
     "location": "e5f87f5a-266d-4ebf-a9af-f85b0c7dcb78",
     "note": "منقار: vo_clip"
    }
+  },
+  "guest": {
+   "model": "intone",
+   "aspect_ratio": "9:16",
+   "resolution": "480p",
+   "character": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "location": "9e4ef302-2df2-4d0a-b421-ae3313ec4f81",
+   "audio": "5db203d0-0911-4980-bd13-c630fd1a4e43",
+   "prompt_from": "tools/studio/episodes/nvda-2026-11-07/episode.json → generation.camel"
   }
  },
- "_status": "lines recorded except guest/judge; dhub/fox/clash scenes generating; awaiting council after Friday close",
- "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)"
+ "_status": "delivered: draft720 uploaded ac40826b-d033-4e5c-97f0-8d99632d3cf5",
+ "supersedes": "tools/studio/episodes/nvda-2026-11-07/episode.json (bc7102a9 — ما نزلت)",
+ "video_media_id": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/ac40826b-d033-4e5c-97f0-8d99632d3cf5.mp4",
+ "duration_s": 92.1
 }

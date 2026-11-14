@@ -1,0 +1,464 @@
+{
+ "_comment": "الحلقة 3 — تسلا بعد صدمة إنفيديا ومفاوضات سبيس إكس. الأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر (reports/2026-11-13_TSLA.md). نفس القاعة ولقطات الكراسي والأصوات (الصقر Andre).",
+ "slug": "tsla-2026-11-13",
+ "number": 3,
+ "title": "الملاذ الآمن؟ — تسلا",
+ "ticker": "TSLA",
+ "data_date": "2026-11-13",
+ "compliance": "متوافق — data/universe_us.csv (ديون 1%)",
+ "majlis_report": "reports/2026-11-13_TSLA.md",
+ "fonts": "fonts",
+ "lines": {
+  "intro_a": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/intro_a.mp3",
+   "audio_job": "d6166890-c44c-4e25-bbea-2fd339385f1f",
+   "text": "خَبَر عاجل يا جماعة!"
+  },
+  "intro": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/intro.mp3",
+   "audio_job": "2ec8c147-5842-4bdf-87a5-750335105781",
+   "text": "بعد أزمة إنفيديا، المستثمرين هربوا لتسلا... صعدت تسعة بالمية بأسبوع، والكل يتكلم عن دمجها مع سبيس إكس! بس أرباحها نازلة... والمجلس منعقد الحين!"
+  },
+  "thawr": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/lines/thawr.mp3",
+   "audio_job": "6b220f7a-91c3-431d-bf2d-ed8f0926c03c",
+   "text": "أنا شغلتي ألقى سبب للشراء... وهني السبب واضح: تسلا يمكن تندمج مع سبيس إكس، والإعلان ممكن بديسمبر! وسيارة الأجرة اللي بدون سوّاق بدت تنباع... والسهم سوّى أحسن أسبوع له من سنة!"
+  },
+  "flamingo": {
+   "speaker": "suyula",
+   "audio": "src/lines/flamingo.mp3",
+   "text": "صح ولا لا يا مدام فلامينجو؟ أنا أراقب البيع والشرا: الصعود حلو، بس الشرا كان خفيف... ويوم النزول، البيع كان ضعف المعتاد!",
+   "audio_parts": [
+    {
+     "speaker": "thawr",
+     "voice": "Holden",
+     "job": "eb63ae46-45cf-474a-b3ef-5f6a1d1b1506",
+     "text": "صح ولا لا يا مدام فلامينجو؟"
+    },
+    {
+     "speaker": "suyula",
+     "voice": "Yara",
+     "job": "43e3d8a2-2269-440f-850f-04a8abcecdd3",
+     "stability": 0.6,
+     "text": "أنا أراقب البيع والشرا: الصعود حلو، بس الشرا كان خفيف... ويوم النزول، البيع كان ضعف المعتاد!"
+    }
+   ],
+   "_data": "5 نوفمبر 79.7 مليون سهم ≈ 2× متوسط 20 يوم (39.4م)؛ آخر جلسة 32.4م = ×0.8 (ملف الحقائق)",
+   "_mix": "السؤال + 0.2ث + الجواب = 11.3ث، بدون قص وقفات"
+  },
+  "dubb": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/lines/dubb.mp3",
+   "audio_job": "a88cf1c4-1fb0-4a2b-8843-2ddfd835c487",
+   "stability": 0.6,
+   "text": "على مهلك يا ضب... إنت تشوف الفرصة، وأنا أشوف الخطر. أرباح الشركة نزلت تقريباً أربعين بالمية، وسايبرتراك بيوقفونه، ومبيعات الصين أقل شي من أربع سنين. والسهم سعره أكثر من أربعمية مرة أرباحه!"
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/lines/clasht.mp3",
+   "audio_job": "dd807bea-67f8-430d-ac19-68f71e765cba",
+   "text": "الدمج بيغيّر كل شي!"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/lines/clashd.mp3",
+   "audio_job": "b34528ac-8e24-492d-9eb0-25cf7cc8f7f2",
+   "stability": 0.6,
+   "text": "والدمج للحين ما انعلن!"
+  },
+  "guest": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/lines/whales.mp3",
+   "audio_job": "871b3513-8f58-40fe-8226-366e486c6674",
+   "text": "يا جماعة، أنا أراقب شنو يسوّون كبار المستثمرين... صندوق تقاعد كبير بكندا، خفّف من تسلا وزاد بسبيس إكس! يعني راهن على الدمج... بس من الطرف الثاني.",
+   "_why": "متتبع الحيتان: أغرب وأقوى معلومة بالجلسة — تسعة مستشارين ردوا بها على الثور، والقاضي ناقشها بالحكم (رويترز 13 نوفمبر: صندوق تقاعد أونتاريو للرعاية الصحية)"
+  },
+  "qadhi": {
+   "speaker": "qadhi",
+   "voice": "Gideon",
+   "audio": "src/lines/qadhi.mp3",
+   "audio_job": "4774f0d2-e275-4260-9c2c-35e8d168f3e7",
+   "text": "سمَعت الجميع... ميزان الاستثمار: سبعتعش بالسالب. اثنين شراء، احدعش انتظار، واثنين بيع. القصة حلوة، بس الأرقام للحين ما تسندها... ننطر إعلان الدمج بديسمبر، وبعدها نقرر. وثقتي ستة من عشرة."
+  },
+  "cta": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/cta.mp3",
+   "audio_job": "3cf87639-974e-4c62-8a3a-3afab6e4c83b",
+   "text": "يعني القاضي يقول: ننطر إعلان الدمج بديسمبر! وإنت؟ مع الضب ولا الثعلب؟ خل نسمع رايك بالكومنتات!"
+  }
+ },
+ "graphics": {
+  "rally": {
+   "kind": "cash_bars",
+   "value": 13.5,
+   "label": "صعود من 5 نوفمبر",
+   "dur": 3.0
+  },
+  "eps": {
+   "kind": "donut",
+   "value": 39,
+   "lines": [
+    "الأرباح",
+    "نزلت",
+    "39%"
+   ],
+   "dur": 2.6
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": -17,
+   "scale_max": 30,
+   "votes": [
+    [
+     "شراء",
+     2,
+     "teal"
+    ],
+    [
+     "انتظار",
+     11,
+     "gold"
+    ],
+    [
+     "بيع",
+     2,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار",
+   "dur": 4.5
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "title": "مجلس اليوم",
+   "subtitle": "تسلا — TSLA",
+   "pills": [
+    [
+     "+8.9% بأسبوع",
+     "teal"
+    ],
+    [
+     "دمج سبيس إكس؟",
+     "gold"
+    ],
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق 13 نوفمبر 2026"
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "إعلان الدمج المتوقع: ديسمبر 2026",
+     36,
+     "bold",
+     "white"
+    ],
+    [
+     "+13.5% من إغلاق 5 نوفمبر",
+     36,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "flamingo": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "يوم النزول: 79.7 مليون سهم (ضعف المعتاد)",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "آخر جلسة: 32.4 مليون (×0.8)",
+     34,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "مكرر الربحية: 429",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "ربح السهم −39% • التدفق الحر −52%",
+     32,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "guest": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "صندوق تقاعد أونتاريو للرعاية الصحية",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "خفّض تسلا ↓ • رفع سبيس إكس ↑",
+     34,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.76,
+   "lines": [
+    [
+     "ميزان الاستثمار: −17",
+     56,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "شراء 2 • انتظار 11 • بيع 2",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "الأول: انتظار إعلان الدمج (ديسمبر 2026) — الثقة 6/10",
+     28,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.7,
+   "lines": [
+    [
+     "من أقنعك؟",
+     62,
+     "bold",
+     "white"
+    ],
+    [
+     "الضب • الثعلب • القاضي",
+     42,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "اكتب رأيك بالتعليقات",
+     34,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "falcon_open",
+   "type": "vo_clip",
+   "line": "intro_a",
+   "delay": 0.2,
+   "duration": 2.4,
+   "video": {
+    "draft": "src/s720_falcon_open_t.mp4",
+    "final": "src/s720_falcon_open_t.mp4"
+   },
+   "video_job": "688861ce-64f1-4cd8-b229-3cb51aa3f4fe"
+  },
+  {
+   "id": "intro",
+   "type": "vo_clip",
+   "line": "intro",
+   "delay": 0.3,
+   "duration": 12.8,
+   "video": {
+    "draft": "src/s720_intro_slow.mp4",
+    "final": "src/s720_intro_slow.mp4"
+   },
+   "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
+   "card": {
+    "name": "title",
+    "at": 0.7,
+    "fade": 0.6
+   },
+   "_note": "التسجيل 12.28ث والمقطع 11.87ث → مبطأ ×1.1 (setpts) إلى 13ث"
+  },
+  {
+   "id": "dhub",
+   "type": "lipsync",
+   "line": "thawr",
+   "video": {
+    "draft": "src/d480_dhub.mp4",
+    "final": "src/f1080_dhub.mp4"
+   },
+   "draft_job": "c96b5d69-8597-4758-abff-bc027de4c411",
+   "graphic": {
+    "name": "rally",
+    "cue": "أسبوع",
+    "box": [
+     8,
+     200,
+     250
+    ]
+   },
+   "card": {
+    "name": "dhub",
+    "at": "cue"
+   }
+  },
+  {
+   "id": "flamingo",
+   "type": "vo_clip",
+   "line": "flamingo",
+   "delay": 0.1,
+   "duration": 11.6,
+   "video": {
+    "draft": "src/s720_flamingo.mp4",
+    "final": "src/s720_flamingo.mp4"
+   },
+   "video_job": "c810bc5f-3a67-4ba1-a451-a98df2004942",
+   "card": {
+    "name": "flamingo",
+    "at": 3.0
+   }
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "src/d480_fox.mp4",
+    "final": "src/f1080_fox.mp4"
+   },
+   "draft_job": "b4772236-e343-40bd-a863-6f969e95a580",
+   "graphic": {
+    "name": "eps",
+    "cue": "أرباح",
+    "box": [
+     8,
+     200,
+     270
+    ]
+   },
+   "card": {
+    "name": "fox",
+    "at": "cue"
+   }
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/d480_clash.mp4",
+    "final": "src/f1080_clash.mp4"
+   },
+   "shake": "انعلن",
+   "draft_job": "98962b74-8f42-4e66-b893-32cd8d50da25"
+  },
+  {
+   "id": "guest",
+   "type": "lipsync",
+   "line": "guest",
+   "video": {
+    "draft": "src/d480_guest.mp4",
+    "final": "src/f1080_guest.mp4"
+   },
+   "draft_job": "4c409071-bd3d-4765-b513-6c69a7c645c4",
+   "card": {
+    "name": "guest",
+    "at": 3.5
+   }
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "qadhi",
+   "video": {
+    "draft": "src/d480_judge.mp4",
+    "final": "src/f1080_judge.mp4"
+   },
+   "draft_job": "56f9e14f-ef6f-4956-85f2-8cfc3bab5bb9",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     170,
+     200,
+     380
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   }
+  },
+  {
+   "id": "cta",
+   "type": "still_vo",
+   "line": "cta",
+   "delay": 0.4,
+   "duration": 10,
+   "image": "src/kf_falcon6.png",
+   "image_job": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   }
+  }
+ ],
+ "generation": {
+  "_comment": "نفس وصفات حلقة إنفيديا (episodes/nvda-2026-11-13 → generation) ونفس لقطات الكراسي؛ الضيف الجربوع بلقطة كرسيه 7bfce025.",
+  "guest": {
+   "model": "intone",
+   "character": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+   "location": "7bfce025-382e-4d00-be7e-e220a70890d0",
+   "audio": "871b3513-8f58-40fe-8226-366e486c6674"
+  },
+  "flamingo": {
+   "model": "seedance_2_5",
+   "duration": 10,
+   "start_image": "316d6510-8950-4137-8bac-0893023f9772"
+  }
+ }
+}

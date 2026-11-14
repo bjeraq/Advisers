@@ -55,10 +55,10 @@
   "dubb": {
    "speaker": "dubb",
    "voice": "Arthur",
-   "audio": "src/lines/dubb.mp3",
-   "audio_job": "a88cf1c4-1fb0-4a2b-8843-2ddfd835c487",
+   "audio": "src/lines/dubb2.mp3",
+   "audio_job": "6b134266-669b-45b5-a7e0-c3d48cfb5c75",
    "stability": 0.6,
-   "text": "على مهلك يا ضب... إنت تشوف الفرصة، وأنا أشوف الخطر. أرباح الشركة نزلت تقريباً أربعين بالمية، وسايبرتراك بيوقفونه، ومبيعات الصين أقل شي من أربع سنين. والسهم سعره أكثر من أربعمية مرة أرباحه!"
+   "text": "يا ضب يا صديقي، إنت تشوفها فرصة وأنا أشوفها خطر... السهم سعره قريب أربعمية دولار، ويربح بالسنة أقل من دولار واحد! وأرباحه نازلة أربعين بالمية، ومبيعات الصين أقل شي من أربع سنين."
   },
   "clasht": {
    "speaker": "thawr",
@@ -78,9 +78,9 @@
   "guest": {
    "speaker": "whales",
    "voice": "Ian",
-   "audio": "src/lines/whales.mp3",
-   "audio_job": "871b3513-8f58-40fe-8226-366e486c6674",
-   "text": "يا جماعة، أنا أراقب شنو يسوّون كبار المستثمرين... صندوق تقاعد كبير بكندا، خفّف من تسلا وزاد بسبيس إكس! يعني راهن على الدمج... بس من الطرف الثاني.",
+   "audio": "src/lines/whales2.mp3",
+   "audio_job": "aa8cb8e3-32c8-49f7-80f7-e1d3603cf08e",
+   "text": "صندوق تقاعد كبير بكندا، خفّف من تسلا وزاد بسبيس إكس! يعني راهن على الدمج... بس من الطرف الثاني.",
    "_why": "متتبع الحيتان: أغرب وأقوى معلومة بالجلسة — تسعة مستشارين ردوا بها على الثور، والقاضي ناقشها بالحكم (رويترز 13 نوفمبر: صندوق تقاعد أونتاريو للرعاية الصحية)"
   },
   "qadhi": {
@@ -93,27 +93,40 @@
   "cta": {
    "speaker": "rassad",
    "voice": "Andre",
-   "audio": "src/lines/cta.mp3",
-   "audio_job": "3cf87639-974e-4c62-8a3a-3afab6e4c83b",
-   "text": "يعني القاضي يقول: ننطر إعلان الدمج بديسمبر! وإنت؟ مع الضب ولا الثعلب؟ خل نسمع رايك بالكومنتات!"
+   "audio": "src/lines/cta2.mp3",
+   "audio_job": "a59ee1b0-89a5-49e3-8252-d2c812fab95f",
+   "text": "خلاص، نجتمع مرة ثانية أول ما ينعلن الدمج، ونحلل آخر التطورات!"
+  },
+  "ask": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/ask.mp3",
+   "audio_job": "6c6c7eb4-98a0-494f-bdd2-dd9a5f150ab0",
+   "text": "خلونا نسأل اللي يراقب كبار المستثمرين... يا جربوع، شنو شفت؟"
   }
  },
  "graphics": {
+  "arrows": {
+   "kind": "move_arrows",
+   "up": "8.9%",
+   "down": "10.8%",
+   "up_label": "بأسبوع",
+   "down_label": "5 نوفمبر",
+   "dur": 5.0
+  },
   "rally": {
    "kind": "cash_bars",
    "value": 13.5,
-   "label": "صعود من 5 نوفمبر",
+   "label": "صعد من 5 نوفمبر",
    "dur": 3.0
   },
-  "eps": {
-   "kind": "donut",
-   "value": 39,
-   "lines": [
-    "الأرباح",
-    "نزلت",
-    "39%"
-   ],
-   "dur": 2.6
+  "pe": {
+   "kind": "compare_bars",
+   "a_label": "السعر",
+   "a_value": "390$",
+   "b_label": "ربح السهم بالسنة",
+   "b_value": "0.91$",
+   "dur": 3.5
   },
   "meter": {
    "kind": "verdict_meter",
@@ -143,11 +156,12 @@
  "cards": {
   "title": {
    "kind": "title",
-   "title": "مجلس اليوم",
-   "subtitle": "تسلا — TSLA",
+   "label": "مجلس اليوم • الحلقة 3",
+   "title": "TSLA",
+   "subtitle": "تسلا بعد صدمة إنفيديا",
    "pills": [
     [
-     "+8.9% بأسبوع",
+     "صعد 8.9% بأسبوع",
      "teal"
     ],
     [
@@ -159,7 +173,7 @@
      "teal"
     ]
    ],
-   "date_pill": "أسعار إغلاق 13 نوفمبر 2026"
+   "date_pill": "أسعار إغلاق الجمعة 13 نوفمبر 2026"
   },
   "dhub": {
    "kind": "card",
@@ -172,7 +186,7 @@
      "white"
     ],
     [
-     "+13.5% من إغلاق 5 نوفمبر",
+     "صعد 13.5% من إغلاق 5 نوفمبر",
      36,
      "bold",
      "light_teal"
@@ -184,13 +198,13 @@
    "accent": "gold",
    "lines": [
     [
-     "يوم النزول: 79.7 مليون سهم (ضعف المعتاد)",
-     30,
+     "يوم النزول: 79.7 مليون سهم",
+     36,
      "bold",
      "white"
     ],
     [
-     "آخر جلسة: 32.4 مليون (×0.8)",
+     "آخر جلسة: 32.4 مليون سهم",
      34,
      "bold",
      "light_teal"
@@ -202,14 +216,14 @@
    "accent": "red",
    "lines": [
     [
-     "مكرر الربحية: 429",
+     "ربح السهم نزل 39%",
      40,
      "bold",
      "white"
     ],
     [
-     "ربح السهم −39% • التدفق الحر −52%",
-     32,
+     "مبيعات الصين الأدنى من 2022",
+     34,
      "bold",
      "white"
     ]
@@ -221,13 +235,13 @@
    "lines": [
     [
      "صندوق تقاعد أونتاريو للرعاية الصحية",
-     32,
+     30,
      "bold",
      "white"
     ],
     [
-     "خفّض تسلا ↓ • رفع سبيس إكس ↑",
-     34,
+     "خفّض تسلا • رفع سبيس إكس",
+     36,
      "bold",
      "light_teal"
     ]
@@ -236,22 +250,21 @@
   "verdict": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.76,
    "lines": [
     [
-     "ميزان الاستثمار: −17",
-     56,
+     "ميزان الاستثمار: 17 بالسالب",
+     48,
      "bold",
      "light_teal"
     ],
     [
      "شراء 2 • انتظار 11 • بيع 2",
-     40,
+     38,
      "bold",
      "white"
     ],
     [
-     "الأول: انتظار إعلان الدمج (ديسمبر 2026) — الثقة 6/10",
+     "انتظار إعلان الدمج (ديسمبر 2026) — الثقة 6/10",
      28,
      "med",
      "sub"
@@ -261,25 +274,19 @@
   "cta": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.7,
+   "y": 0.3,
    "lines": [
     [
-     "من أقنعك؟",
-     62,
+     "نجتمع عند إعلان الدمج",
+     44,
      "bold",
      "white"
     ],
     [
-     "الضب • الثعلب • القاضي",
-     42,
+     "ونحلل آخر التطورات",
+     38,
      "bold",
      "light_teal"
-    ],
-    [
-     "اكتب رأيك بالتعليقات",
-     34,
-     "med",
-     "sub"
     ]
    ]
   },
@@ -296,10 +303,10 @@
    "delay": 0.2,
    "duration": 2.4,
    "video": {
-    "draft": "src/s720_falcon_open_t.mp4",
-    "final": "src/s720_falcon_open_t.mp4"
+    "draft": "src/s720_falcon_open3.mp4",
+    "final": "src/s720_falcon_open3.mp4"
    },
-   "video_job": "688861ce-64f1-4cd8-b229-3cb51aa3f4fe"
+   "video_job": "122439b1-08a2-4a21-bc87-f84a12f723e7"
   },
   {
    "id": "intro",
@@ -308,38 +315,46 @@
    "delay": 0.3,
    "duration": 12.8,
    "video": {
-    "draft": "src/s720_intro_slow.mp4",
-    "final": "src/s720_intro_slow.mp4"
+    "draft": "src/s720_intro3.mp4",
+    "final": "src/s720_intro3.mp4"
    },
-   "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
+   "video_job": "e308f014-8693-4193-b3f5-8dba50f4949c",
    "card": {
     "name": "title",
-    "at": 0.7,
-    "fade": 0.6
+    "at": 5.6,
+    "fade": 0.5
    },
-   "_note": "التسجيل 12.28ث والمقطع 11.87ث → مبطأ ×1.1 (setpts) إلى 13ث"
+   "graphic": {
+    "name": "arrows",
+    "cue": "صعدت",
+    "box": [
+     170,
+     205,
+     380
+    ]
+   }
   },
   {
    "id": "dhub",
    "type": "lipsync",
    "line": "thawr",
    "video": {
-    "draft": "src/d480_dhub.mp4",
+    "draft": "src/d480_dhub3.mp4",
     "final": "src/f1080_dhub.mp4"
    },
-   "draft_job": "c96b5d69-8597-4758-abff-bc027de4c411",
+   "draft_job": "0d2768ec-b247-40ed-91d7-36797aba4631",
    "graphic": {
     "name": "rally",
     "cue": "أسبوع",
     "box": [
-     8,
-     200,
-     250
+     60,
+     560,
+     360
     ]
    },
    "card": {
     "name": "dhub",
-    "at": "cue"
+    "at": "after_graphic"
    }
   },
   {
@@ -349,10 +364,10 @@
    "delay": 0.1,
    "duration": 11.6,
    "video": {
-    "draft": "src/s720_flamingo.mp4",
-    "final": "src/s720_flamingo.mp4"
+    "draft": "src/s720_flamingo3.mp4",
+    "final": "src/s720_flamingo3.mp4"
    },
-   "video_job": "c810bc5f-3a67-4ba1-a451-a98df2004942",
+   "video_job": "e0c64787-9652-40e2-8132-e9fbb2cc16c2",
    "card": {
     "name": "flamingo",
     "at": 3.0
@@ -363,22 +378,22 @@
    "type": "lipsync",
    "line": "dubb",
    "video": {
-    "draft": "src/d480_fox.mp4",
+    "draft": "src/d480_fox3.mp4",
     "final": "src/f1080_fox.mp4"
    },
-   "draft_job": "b4772236-e343-40bd-a863-6f969e95a580",
+   "draft_job": "1ad3fdc0-f4fa-4fb7-8f12-a399d082624a",
    "graphic": {
-    "name": "eps",
-    "cue": "أرباح",
+    "name": "pe",
+    "cue": "أربعمية",
     "box": [
-     8,
-     200,
-     270
+     60,
+     560,
+     360
     ]
    },
    "card": {
     "name": "fox",
-    "at": "cue"
+    "at": "after_graphic"
    }
   },
   {
@@ -389,21 +404,30 @@
     "clashd"
    ],
    "video": {
-    "draft": "src/d480_clash.mp4",
+    "draft": "src/d480_clash3.mp4",
     "final": "src/f1080_clash.mp4"
    },
    "shake": "انعلن",
-   "draft_job": "98962b74-8f42-4e66-b893-32cd8d50da25"
+   "draft_job": "fa4ac727-c2b6-44c3-8ab6-62b47f4338b0"
+  },
+  {
+   "id": "ask",
+   "type": "still_vo",
+   "line": "ask",
+   "delay": 0.2,
+   "duration": 5.6,
+   "image": "src/kf_falcon3.png",
+   "image_job": "2f7d3063-cc8a-4a29-915f-f89208c435d4"
   },
   {
    "id": "guest",
    "type": "vo_clip",
    "line": "guest",
    "delay": 0.2,
-   "duration": 12.6,
+   "duration": 9.8,
    "video": {
-    "draft": "src/s720_guest.mp4",
-    "final": "src/s720_guest.mp4"
+    "draft": "src/s720_guest_raw.mp4",
+    "final": "src/s720_guest_raw.mp4"
    },
    "video_job": "d4a04b19-064e-454c-a5ba-db1fb479bda4",
    "card": {
@@ -425,9 +449,9 @@
     "name": "meter",
     "cue": "ميزان",
     "box": [
-     170,
-     200,
-     380
+     140,
+     552,
+     360
     ]
    },
    "card": {
@@ -441,9 +465,9 @@
    "type": "still_vo",
    "line": "cta",
    "delay": 0.4,
-   "duration": 10,
-   "image": "src/kf_falcon6.png",
-   "image_job": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+   "duration": 6.5,
+   "image": "src/kf_falcon3.png",
+   "image_job": "2f7d3063-cc8a-4a29-915f-f89208c435d4",
    "card": {
     "name": "cta",
     "at": 0.4
@@ -466,6 +490,14 @@
    "model": "seedance_2_5",
    "duration": 10,
    "start_image": "316d6510-8950-4137-8bac-0893023f9772"
+  },
+  "skyline_dubai": {
+   "master": "075480d9-972a-45b5-9694-c21b984febe6",
+   "dhub_seat": "f5b655b1-a0ef-4050-b137-44d775e22f2a",
+   "clash": "ce7c16cb-dee2-494c-a24a-56c4a7bb5e57",
+   "falcon": "2f7d3063-cc8a-4a29-915f-f89208c435d4",
+   "note": "gpt_image_2_6 تعديل على لقطات القاعة الأصلية (844ed442, 316d6510, 175dc808, 7b8e5e2c): تغيير الأفق فقط"
   }
- }
+ },
+ "location": "نفس قاعة المجلس، والأفق خلف الشبابيك صار دبي (برج خليفة) — طلب بدر 14 نوفمبر: نفس المكان مع تغيير العمارات"
 }

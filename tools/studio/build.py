@@ -167,7 +167,11 @@ def render_scene(sc, ep, wpaths, a, B, geo):
     c = sc.get('card')
     if c:
         at = c.get('at', 'cue')
-        st = cue if at == 'cue' else (cue + gdur if at == 'after_graphic' else float(at))
+        if at == 'cue' and c.get('cue'):
+            st = find_cue(ws, c['cue'], sid)          # كلمة إشارة خاصة بالبطاقة
+        else:
+            st = None
+        st = st if st is not None else cue if at == 'cue' else (cue + gdur if at == 'after_graphic' else float(at))
         ic = add(f"-loop 1 -i {B}/ov/{c['name']}.png")
         chain.append(f"[{ic}:v]format=rgba,fade=t=in:st={st:.2f}:d={c.get('fade', 0.5)}:alpha=1[c]")
         n += 1

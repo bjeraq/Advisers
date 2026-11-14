@@ -66,6 +66,7 @@ h2{font-size:23px;margin:34px 0 10px}
 .op{font-weight:600}
 .op-buy{color:var(--teal)}
 .op-wait{color:var(--muted)}
+.op-sell{color:var(--neg)}
 .scorecell{width:34%}
 .sbar{position:relative;height:14px;direction:ltr}
 .sbar::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--mid)}

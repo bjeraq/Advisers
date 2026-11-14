@@ -33,16 +33,6 @@
    "audio_job": "2e1e33e9-c054-45d7-9d42-0dc8e49efe99",
    "text": "يا ضب يا صديقي، إنت تشوفها فرصة وأنا أشوفها خطر... السهم فوق الخمسمية دولار ويربح بالسنة أقل من خمسة! ولو ما كبرت أرباحه، بيطيح."
   },
-  "pair": {
-   "speaker": "rassad+congress+whales",
-   "audio": "amd/a2/pair.wav",
-   "audio_parts": [
-    "5cc6f74f-2b7d-4238-ab22-d1de6bb40fdf",
-    "d83be639-b45c-431d-807d-72715fa8c76d",
-    "57003ec5-c0d1-4e18-9738-7ca696fde023"
-   ],
-   "text": "خلونا نسأل اللي يراقبون السياسيين وكبار المستثمرين... يا هدهد، يا جربوع، إنتوا شنو رايكم؟ هالمرة ما عندي بيانات! ولا أنا بعد!"
-  },
   "mazloum": {
    "speaker": "mazloum",
    "audio": "amd/a2/hg2.mp3",
@@ -57,9 +47,24 @@
   },
   "cta": {
    "speaker": "rassad",
-   "audio": "amd/a2/fc.mp3",
-   "audio_job": "0cb21441-29ed-44fb-8c07-31a48802574d",
-   "text": "يعني القاضي يقول: ننطر لين الثلاثاء سبعتعش نوفمبر، ونشوف شلون بتصير!"
+   "audio": "amd/a2/fc2.mp3",
+   "audio_job": "33e84bbc-c896-4ca2-926b-a281624c05d9",
+   "text": "خلاص، نجتمع مرة ثانية يوم الثلاثاء، ونحلل آخر التطورات!"
+  },
+  "ask": {
+   "speaker": "rassad",
+   "audio": "amd/a2/fq.wav",
+   "audio_job": "5cc6f74f-2b7d-4238-ab22-d1de6bb40fdf",
+   "text": "خلونا نسأل اللي يراقبون السياسيين وكبار المستثمرين... يا هدهد، يا جربوع، إنتوا شنو رايكم؟"
+  },
+  "pair": {
+   "speaker": "congress+whales",
+   "audio": "amd/a2/pa.wav",
+   "audio_parts": [
+    "d83be639-b45c-431d-807d-72715fa8c76d",
+    "57003ec5-c0d1-4e18-9738-7ca696fde023"
+   ],
+   "text": "هالمرة ما عندي بيانات! ولا أنا بعد!"
   }
  },
  "graphics": {
@@ -86,6 +91,52 @@
    ],
    "title": "ميزان الاستثمار",
    "dur": 4.5
+  },
+  "arrows": {
+   "kind": "move_arrows",
+   "up": "45%",
+   "down": "8.75%",
+   "up_label": "بأسبوع",
+   "down_label": "الجمعة",
+   "dur": 5.0
+  },
+  "sales": {
+   "kind": "cash_bars",
+   "value": 42,
+   "label": "المبيعات تنمو",
+   "dur": 3.0
+  },
+  "pe": {
+   "kind": "compare_bars",
+   "a_label": "السعر",
+   "a_value": "534$",
+   "b_label": "ربح السهم بالسنة",
+   "b_value": "4.60$",
+   "dur": 3.5
+  },
+  "path": {
+   "kind": "price_path",
+   "pts": [
+    [
+     "قبل الأزمة",
+     489
+    ],
+    [
+     "القاع",
+     404
+    ],
+    [
+     "القمة",
+     585
+    ],
+    [
+     "الجمعة",
+     534
+    ]
+   ],
+   "ref": 489,
+   "ref_label": "سعر قبل الأزمة",
+   "dur": 4.0
   }
  },
  "cards": {
@@ -211,13 +262,13 @@
    "accent": "teal",
    "lines": [
     [
-     "ننطر الثلاثاء 17 نوفمبر",
-     46,
+     "نجتمع الثلاثاء 17 نوفمبر",
+     44,
      "bold",
      "white"
     ],
     [
-     "ونشوف شنو يصير",
+     "ونحلل آخر التطورات",
      38,
      "bold",
      "light_teal"
@@ -256,8 +307,17 @@
    "video_job": "f647a41f-ef16-4b09-922a-11cc5bfcf19c",
    "card": {
     "name": "title",
-    "at": 0.4,
-    "fade": 0.6
+    "at": 5.6,
+    "fade": 0.5
+   },
+   "graphic": {
+    "name": "arrows",
+    "cue": "ارتفع",
+    "box": [
+     170,
+     205,
+     380
+    ]
    }
   },
   {
@@ -271,8 +331,16 @@
    "draft_job": "fd917bd4-3daf-458d-ae17-48a43b291fe6",
    "card": {
     "name": "dhub",
-    "at": "cue",
-    "cue": "المبيعات"
+    "at": "after_graphic"
+   },
+   "graphic": {
+    "name": "sales",
+    "cue": "المبيعات",
+    "box": [
+     60,
+     560,
+     360
+    ]
    }
   },
   {
@@ -286,27 +354,49 @@
    "draft_job": "d8dce485-ca8e-4ae2-8a73-5f31d7773dd3",
    "card": {
     "name": "fox",
-    "at": "cue",
-    "cue": "الخمسمية"
+    "at": "after_graphic"
    },
-   "shake": "بيطيح"
+   "shake": "بيطيح",
+   "graphic": {
+    "name": "pe",
+    "cue": "الخمسمية",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   }
+  },
+  {
+   "id": "ask",
+   "type": "vo_clip",
+   "line": "ask",
+   "delay": 0.2,
+   "duration": 7.9,
+   "video": {
+    "draft": "amd/src/falcon_ask.mp4",
+    "final": "amd/src/falcon_ask.mp4"
+   },
+   "video_job": "3b39c55b-5ba1-45a5-b4fc-ddb19fdb92c2"
   },
   {
    "id": "pair",
    "type": "vo_clip",
    "line": "pair",
-   "delay": 0.1,
-   "duration": 11.6,
+   "delay": 0.3,
+   "duration": 4.6,
    "video": {
-    "draft": "amd/src/pair.mp4",
-    "final": "amd/src/pair.mp4"
+    "draft": "amd/src/pair2.mp4",
+    "final": "amd/src/pair2.mp4"
    },
-   "video_job": "06beda71-2a35-40a5-afad-7ae7b3d78d38",
+   "video_job": "2b0892a1-8c04-4084-90ec-0278bb2bac16",
+   "keyframe": "d4a3089c-9aee-483a-a2b2-610dada3a2a3",
    "card": {
     "name": "pair",
     "at": "cue",
     "cue": "هالمرة"
-   }
+   },
+   "_note": "بدر: الجربوع ذكر، وشفايفهم ما تتحرك قبل ما ينسألون → سؤال الصقر بلقطة لحاله وجوابهم بلقطة 5ث"
   },
   {
    "id": "mazloum",
@@ -317,10 +407,14 @@
     "final": "amd/src/hedge.mp4"
    },
    "draft_job": "c1ec7c7b-1f83-40b0-bebe-d21c94190a56",
-   "card": {
-    "name": "mazloum",
-    "at": "cue",
-    "cue": "منفوخ"
+   "graphic": {
+    "name": "path",
+    "cue": "مظلوم",
+    "box": [
+     60,
+     560,
+     360
+    ]
    }
   },
   {
@@ -352,7 +446,7 @@
    "type": "vo_clip",
    "line": "cta",
    "delay": 0.2,
-   "duration": 6.2,
+   "duration": 6.3,
    "video": {
     "draft": "amd/src/cta.mp4",
     "final": "amd/src/cta.mp4"

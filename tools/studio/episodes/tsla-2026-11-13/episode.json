@@ -397,17 +397,20 @@
   },
   {
    "id": "guest",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "guest",
+   "delay": 0.2,
+   "duration": 12.6,
    "video": {
-    "draft": "src/d480_guest.mp4",
-    "final": "src/f1080_guest.mp4"
+    "draft": "src/s720_guest.mp4",
+    "final": "src/s720_guest.mp4"
    },
-   "draft_job": "4c409071-bd3d-4765-b513-6c69a7c645c4",
+   "video_job": "d4a04b19-064e-454c-a5ba-db1fb479bda4",
    "card": {
     "name": "guest",
     "at": 3.5
-   }
+   },
+   "_note": "intone رفض الجربوع 3 مرات (7bfce025 مرتين + اللوحة الفاضية 7347f5d3) → حركة seedance 10ث مبطأة ×1.3 + تعليق صوتي (12.04ث)"
   },
   {
    "id": "judge",
@@ -417,7 +420,7 @@
     "draft": "src/d480_judge.mp4",
     "final": "src/f1080_judge.mp4"
    },
-   "draft_job": "56f9e14f-ef6f-4956-85f2-8cfc3bab5bb9",
+   "draft_job": "2ba3af1d-ffb4-4225-80c7-de2c809c8e0c",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
@@ -450,10 +453,14 @@
  "generation": {
   "_comment": "نفس وصفات حلقة إنفيديا (episodes/nvda-2026-11-13 → generation) ونفس لقطات الكراسي؛ الضيف الجربوع بلقطة كرسيه 7bfce025.",
   "guest": {
-   "model": "intone",
-   "character": "68f65514-c6cc-47d2-85db-af36de1b93a4",
-   "location": "7bfce025-382e-4d00-be7e-e220a70890d0",
-   "audio": "871b3513-8f58-40fe-8226-366e486c6674"
+   "model": "seedance_2_5",
+   "duration": 10,
+   "start_image": "7bfce025-382e-4d00-be7e-e220a70890d0",
+   "rejected_intone": [
+    "4c409071-bd3d-4765-b513-6c69a7c645c4",
+    "9e0f3126-e6e8-42ea-b361-274e4800c7ca",
+    "e5d5c39c-b16f-416e-86cf-225c97067814"
+   ]
   },
   "flamingo": {
    "model": "seedance_2_5",

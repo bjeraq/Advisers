@@ -337,13 +337,13 @@
    "session_date": "2026-11-14",
    "data_date": "2026-11-13",
    "episode_file": "tools/studio/episodes/nvda-2026-11-13/episode.json",
-   "video_media_id": "ef71bab8-5ef0-4b05-b74e-364a43e1638e",
-   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/ef71bab8-5ef0-4b05-b74e-364a43e1638e.mp4",
+   "video_media_id": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/b7aabc18-8600-45d4-a9ff-2d86c73fdd72.mp4",
    "site_page": "site/ep01-nvda.html",
    "report": "reports/2026-11-13_NVDA.md",
    "resolution": "720x1280 (معتمدة نهائية)",
    "video_media_id_v1_bull_bear": "bdc92192-266f-4a83-9372-84aec412f506",
-   "duration_s": 109.0,
+   "duration_s": 108.4,
    "cast": "الصقر • الضب بالشماغ الأحمر (شراء) • الفلامنغو (قارئة السيولة) • الثعلب الرملي (حذر) • الجمل (ضيف) • القاضي",
    "notes": "النسخة الخامسة 2026-11-14: نفس الطاقم والقاعة ولقطات الكراسي وأصوات النسخة الرابعة، والنص والأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر بعد استقالة هوانغ (ميزان +19: 5 شراء / 10 انتظار / 0 بيع؛ القاضي: ننطر نتايج الثلاثاء ثم دفعتين، ثقة 7/10). كل المشاهد مرت بفحص التفريغ (أقل تطابق 0.90). مراجعة بدر (نفس اليوم): الضب بدون «لمس» و«رجع يصعد» بدل «ارتد» (والثعلب «وصعود يوم واحد»)، القاضي «انتظار إلى يوم الثلاثاء» وتاريخ 17 نوفمبر ببطاقة الحكم، واسم اليوم (الجمعة) بشريط الإخلاء. مراجعة بدر الثانية (v7): لقطة افتتاح قريبة للصقر «خَبَر عاجل» ثم الواسعة، سطر الثعلب بكلام أبسط، القاضي «سمَعت» و«طَيْحته»، والفلامنغو تدخل 10ث بعد الضب (صيغة الجار يسأل جاره) بصوت Yara.",
    "video_media_id_v2_saluki_wolf": "01dabafc-ba0a-45b0-b74e-caccde804e54",
@@ -364,7 +364,8 @@
     "title": "البداية — إنفيديا"
    },
    "video_media_id_v5_before_review": "ac40826b-d033-4e5c-97f0-8d99632d3cf5",
-   "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927"
+   "video_media_id_v6": "e6d16e9b-b34d-4dfe-a68b-08d0c7212927",
+   "video_media_id_v7": "ef71bab8-5ef0-4b05-b74e-364a43e1638e"
   }
  ],
  "cast_retired": {

@@ -184,12 +184,8 @@
   },
   "qita": {
    "name_ar": "محلل القطاع",
-   "animal": "جربوع",
-   "job_id": "68f65514-c6cc-47d2-85db-af36de1b93a4",
-   "identity": "small cute Arabian desert jerboa gentleman, round mouse-like head, huge round ears, big dark eyes, long hind legs, long tail with black-and-white tuft, navy blazer, cream shirt, teal pocket square, small tablet",
-   "why": "بدر اعتمد الشكل الثاني وحطه بدور محلل القطاع",
-   "rejected_sheet": "8d09196e (طلع شكله ثعلب)",
-   "turnaround": "68f65514-c6cc-47d2-85db-af36de1b93a4"
+   "animal": null,
+   "note": "بلا شخصية — الجربوع انتقل لمتتبع الحيتان (14 نوفمبر)"
   },
   "suyula": {
    "name_ar": "قارئة السيولة",
@@ -201,9 +197,8 @@
   },
   "haris": {
    "name_ar": "حارس المحفظة",
-   "animal": "قنفذ الصحراء",
-   "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3",
-   "turnaround": "3e6fb5ec-9dee-4176-bb81-13b92e9ff1fe"
+   "animal": null,
+   "note": "بلا شخصية — القنفذ انتقل لصائد المظلومات (14 نوفمبر)"
   },
   "congress": {
    "name_ar": "متتبع السياسيين",
@@ -211,6 +206,25 @@
    "job_id": "a01a0870-d65a-4736-9cd9-251009824057",
    "note": "منقار: تعليق صوتي. بدون شوارب — منقار وريش فقط (ملاحظة بدر 2026-11-10)",
    "turnaround": "2acdd5c9-e4dd-4438-bbac-23bbc85c04ab"
+  },
+  "mazloum": {
+   "name_ar": "صائد المظلومات",
+   "animal": "قنفذ الصحراء",
+   "job_id": "38d5a5c2-4530-453b-b4ee-da077acee8a3",
+   "turnaround": "3e6fb5ec-9dee-4176-bb81-13b92e9ff1fe",
+   "moved_from": "haris",
+   "note": "قرار بدر 14 نوفمبر: القنفذ صار صائد المظلومات (رفض النمس وغرير العسل)"
+  },
+  "whales": {
+   "name_ar": "متتبع الحيتان",
+   "animal": "جربوع",
+   "job_id": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+   "identity": "small cute Arabian desert jerboa gentleman, round mouse-like head, huge round ears, big dark eyes, long hind legs, long tail with black-and-white tuft, navy blazer, cream shirt, teal pocket square, small tablet",
+   "why": "بدر اعتمد الشكل الثاني وحطه بدور محلل القطاع",
+   "rejected_sheet": "8d09196e (طلع شكله ثعلب)",
+   "turnaround": "68f65514-c6cc-47d2-85db-af36de1b93a4",
+   "moved_from": "qita",
+   "note": "قرار بدر 14 نوفمبر: الجربوع صار متتبع الحيتان (رفض غرير العسل)"
   }
  },
  "voices": {
@@ -421,16 +435,6 @@
    "arabian_goat": "8131eb8d-f5e4-418c-b387-c051f1fc50de"
   },
   "open": {
-   "mongoose": {
-    "name_ar": "النمس",
-    "job_id": "663646a3-9c71-4174-837c-818b303fbdcc",
-    "for": "mazloum"
-   },
-   "honey_badger": {
-    "name_ar": "غرير العسل",
-    "job_id": "2881fe20-ce1a-4cdf-8ccd-d5db4ed185cb",
-    "for": "whales"
-   },
    "bulbul": {
     "name_ar": "البلبل",
     "job_id": "2572997a-54ba-4156-bfe1-d6812e7cb7d3",
@@ -442,6 +446,18 @@
     "note": "منقار: تعليق صوتي"
    }
   },
-  "board_media": "94bf112a-960b-4af0-974a-58acff5fed78"
+  "board_media": "94bf112a-960b-4af0-974a-58acff5fed78",
+  "rejected_2026-11-14": {
+   "mongoose": {
+    "name_ar": "النمس",
+    "job_id": "663646a3-9c71-4174-837c-818b303fbdcc",
+    "for": "mazloum"
+   },
+   "honey_badger": {
+    "name_ar": "غرير العسل",
+    "job_id": "2881fe20-ce1a-4cdf-8ccd-d5db4ed185cb",
+    "for": "whales"
+   }
+  }
  }
 }

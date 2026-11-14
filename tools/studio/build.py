@@ -113,7 +113,8 @@ def render_scene(sc, ep, wpaths, a, B, geo):
             raise SystemExit(f"[{sid}] ملف الفيديو ناقص: {video}")
     ws, meta, wav = scene_track(sc, ep, wpaths, video, B, a.reuse)
     ass = f'{B}/trk/{sid}.ass'
-    captions.write(ass, [(ws, 0.0)], a.res)
+    captions.write(ass, [(ws, 0.0)], a.res)          # للمرجع فقط (verify) — الحرق من الصور
+    capmov = captions.render_track(f'{B}/trk/{sid}_cap.mov', [(ws, 0.0)], a.res, dur=meta['dur'])
 
     inputs, chain = [], []
 
@@ -177,8 +178,13 @@ def render_scene(sc, ep, wpaths, a, B, geo):
     n += 1
     chain.append(f"[{cur}][d]overlay=0:0[v{n}]")
     cur = f'v{n}'
+    icap = add(f"-i {capmov}")
+    chain.append(f"[{icap}:v]format=rgba[cap]")
+    n += 1
+    chain.append(f"[{cur}][cap]overlay=0:0[v{n}]")
+    cur = f'v{n}'
     pre = shake(find_cue(ws, sc['shake'], sid), W, H, S) + ',' if sc.get('shake') else ''
-    chain.append(f"[{cur}]{pre}subtitles={ass}:fontsdir={fonts},format=yuv420p[v]")
+    chain.append(f"[{cur}]{pre}format=yuv420p[v]")
 
     out = f'{B}/scenes/{sid}.mp4'
     sh(f"ffmpeg -v error -y {' '.join(inputs)} -filter_complex \"{';'.join(chain)}\" "

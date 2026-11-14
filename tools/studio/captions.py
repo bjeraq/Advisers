@@ -9,7 +9,7 @@
 
     python3 captions.py <out.ass> <words.json>:<offset> [--res 720|1080]
 """
-import sys, json
+import sys, json, os, subprocess
 
 STYLE = {  # fontsize, outline, shadow, margin_l, margin_r, margin_v
     720: (58, 3, 1, 24, 136, 372),
@@ -73,6 +73,86 @@ def write(out, specs, res=720):
     for words, off in specs:
         lines += events(words, off)
     open(out, 'w').write('\n'.join(lines) + '\n')
+
+
+# ---------------------------------------------------------------------------
+# الترانسكريبت كصور (render_track): libass يقلب ترتيب الكلمات العربية لما كل كلمة
+# لها لون (ملاحظة د. رامي عن الحلقة 1: «ما طلعت وياه» طلعت «وياه طلعت ما.»).
+# الحل: نرسم كل حالة بـ Pillow + raqm (نفس محرك البطاقات): الكلمات تنحط من اليمين لليسار
+# كل وحدة بروحها، فالترتيب والتشكيل والنقاط صحيحة دائماً، ثم نطلعها مقطع شفاف يتركب فوق المشهد.
+
+def _font(res):
+    from PIL import ImageFont
+    here = os.path.dirname(os.path.abspath(__file__))
+    for base in ('fonts', os.path.join(here, '..', '..', 'fonts')):
+        p = os.path.join(base, 'PlexArabic-Bold.ttf')
+        if os.path.exists(p):
+            return ImageFont.truetype(p, STYLE[res][0] * 2)
+    raise SystemExit('خط PlexArabic-Bold.ttf ناقص في fonts/')
+
+
+def _frame(words, k, res, font):
+    from PIL import Image, ImageDraw
+    fs, ol, sh, ml, mr, mv = STYLE[res]
+    W, H = (720, 1280) if res == 720 else (1080, 1920)
+    SS = 2
+    img = Image.new('RGBA', (W * SS, H * SS), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    space = font.getlength(' ')
+    sizes = []
+    for w in words:
+        bb = d.textbbox((0, 0), w, font=font, direction='rtl')
+        sizes.append((bb[2] - bb[0], bb))
+    total = sum(s[0] for s in sizes) + space * (len(words) - 1)
+    cx = (ml + (W - mr)) / 2 * SS
+    base = (H - mv) * SS                      # أسفل السطر
+    asc, desc = font.getmetrics()
+    top = base - (asc + desc)
+    x = cx + total / 2                        # نبدي من اليمين (أول كلمة منطوقة)
+    for i, (w, (tw, bb)) in enumerate(zip(words, sizes)):
+        x -= tw
+        fill = (45, 212, 187, 255) if i == k else (255, 255, 255, 255)
+        if sh:
+            d.text((x - bb[0] + sh * SS, top + sh * SS), w, font=font, fill=(20, 18, 8, 150),
+                   direction='rtl', stroke_width=ol * SS, stroke_fill=(20, 18, 8, 150))
+        d.text((x - bb[0], top), w, font=font, fill=fill, direction='rtl',
+               stroke_width=ol * SS, stroke_fill=(8, 18, 20, 255))
+        x -= space
+    return img.resize((W, H), Image.LANCZOS)
+
+
+def render_track(out_mov, specs, res=720, dur=None, fps=30):
+    """specs مثل write(). يطلع مقطع شفاف (qtrle) بنفس توقيت ASS بالضبط."""
+    from PIL import Image
+    font = _font(res)
+    W, H = (720, 1280) if res == 720 else (1080, 1920)
+    ev = []
+    for words, off in specs:
+        gs = groups(words)
+        for gi, g in enumerate(gs):
+            nxt = gs[gi + 1][0]['s'] - 0.02 if gi + 1 < len(gs) else g[-1]['e'] + 0.25
+            for k in range(len(g)):
+                s = g[k]['s'] + off
+                e = (g[k + 1]['s'] if k + 1 < len(g) else min(g[-1]['e'] + 0.25, nxt)) + off
+                ev.append((max(0, s), e, [w['w'] for w in g], k))
+    ev.sort()
+    tmp = out_mov + '.d'
+    os.makedirs(tmp, exist_ok=True)
+    Image.new('RGBA', (W, H), (0, 0, 0, 0)).save(f'{tmp}/blank.png')
+    lines, t = [], 0.0
+    for i, (s, e, ws, k) in enumerate(ev):
+        if s > t + 1e-3:
+            lines += [f"file 'blank.png'", f'duration {s - t:.3f}']
+        e = max(e, s + 1 / fps)
+        _frame(ws, k, res, font).save(f'{tmp}/e{i:04d}.png')
+        lines += [f"file 'e{i:04d}.png'", f'duration {e - s:.3f}']
+        t = e
+    end = max(dur or 0, t + 0.5)
+    lines += [f"file 'blank.png'", f'duration {end - t:.3f}', "file 'blank.png'"]
+    open(f'{tmp}/list.txt', 'w').write('\n'.join(lines) + '\n')
+    subprocess.run(f"ffmpeg -v error -y -f concat -safe 0 -i {tmp}/list.txt -vf fps={fps} -c:v qtrle {out_mov}",
+                   shell=True, check=True)
+    return out_mov
 
 
 if __name__ == '__main__':

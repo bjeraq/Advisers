@@ -2,23 +2,25 @@
 
 حدث مستقل لكل حالة كلمة بدل كاريوكي \\k — يتفادى مشاكل الاتجاه من اليمين لليسار.
 خط 58 بمسودة 720 و88 بنهائي 1080 (طلب بدر 10 نوفمبر: «الخط صغير كبّره»).
-التجميع ديناميكي: حتى 3 كلمات وبسقف 16 حرفاً → سطر واحد قصير أسفل الشاشة دائماً،
-ما يصعد نحو الصدر والوجه (قاعدة «الوجه ما ينغطى»).
+التجميع ديناميكي: حتى 3 كلمات وبسقف 16 حرفاً → سطر واحد قصير، ما يصعد نحو الوجه.
+مناطق إنستغرام الآمنة (قاعدة ig_safe_zones، 14 نوفمبر): أسفل ~78% يغطيه اسم الحساب والكابشن،
+وأزرار اللايك/الكومنت على يمين الشاشة (x ≥ 85%) من نص الارتفاع وتحت → السطر قاعدته عند ~71%
+من الارتفاع (MarginV ≈ 29%) ومزاح لليسار بهامش يمين أكبر.
 
     python3 captions.py <out.ass> <words.json>:<offset> [--res 720|1080]
 """
 import sys, json
 
-STYLE = {  # fontsize, outline, shadow, margin_lr, margin_v
-    720: (58, 3, 1, 24, 135),
-    1080: (88, 4, 2, 36, 200),
+STYLE = {  # fontsize, outline, shadow, margin_l, margin_r, margin_v
+    720: (58, 3, 1, 24, 136, 372),
+    1080: (88, 4, 2, 36, 204, 558),
 }
 TEAL = r'{\c&HBBD42D&}'
 WHITE = r'{\c&HFFFFFF&}'
 
 
 def head(res):
-    fs, ol, sh, ml, mv = STYLE[res]
+    fs, ol, sh, ml, mr, mv = STYLE[res]
     w, h = (720, 1280) if res == 720 else (1080, 1920)
     return f"""[Script Info]
 PlayResX: {w}
@@ -27,7 +29,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: W, IBM Plex Sans Arabic, {fs}, &H00FFFFFF, &H00141208, &H96141208, 1, {ol}, {sh}, 2, {ml}, {ml}, {mv}, 1
+Style: W, IBM Plex Sans Arabic, {fs}, &H00FFFFFF, &H00141208, &H96141208, 1, {ol}, {sh}, 2, {ml}, {mr}, {mv}, 1
 
 [Events]
 Format: Layer, Start, End, Style, Text

@@ -51,6 +51,22 @@ def shake(t0, W, H, S):
             f":y='{oy}+{ay}*sin(53*t)*{win}'")
 
 
+def check_safe(sid, x, y, bw, bh):
+    """قاعدة ig_safe_zones (بدر 14 نوفمبر): لوحة الرسمة (بإحداثيات 720) لازم تكون تحت ترويسة إنستغرام
+    (y ≥ 192)، فوق منطقة الكابشن (أسفلها ≤ 812 حتى ما تركب على الترانسكريبت)، وما تدخل منطقة
+    أزرار التفاعل (x+w ≤ 596 لو أسفلها تحت y=576)."""
+    S_ = cards.SAFE
+    bad = []
+    if y < S_['top']:
+        bad.append(f"y={y} فوق 15% (ترويسة إنستغرام)")
+    if y + bh > S_['card_bottom']:
+        bad.append(f"أسفل اللوحة {y + bh} تحت {S_['card_bottom']} (الترانسكريبت/الكابشن)")
+    if y + bh > S_['right_from_y'] and x + bw > S_['right_x']:
+        bad.append(f"حافتها اليمنى {x + bw} بمنطقة أزرار إنستغرام")
+    if bad:
+        raise SystemExit(f"[{sid}] graphic.box خارج المنطقة الآمنة: " + '؛ '.join(bad))
+
+
 def ensure_words(ep):
     import words as wordmod
     os.makedirs('build/words', exist_ok=True)
@@ -140,6 +156,7 @@ def render_scene(sc, ep, wpaths, a, B, geo):
         gdur = ep['graphics'][g['name']]['dur']
         x, y, bw = g['box']                       # بإحداثيات 720 — الوجه ما ينغطى
         bh = round(bw * fx.BASE_H / fx.BASE_W)
+        check_safe(sid, x, y, bw, bh)
         X, Y, BW, BH = round(x * S), round(y * S), round(bw * S), round(bh * S)
         ig = add(f"-i {B}/fx/{g['name']}.mov")
         chain.append(f"[{ig}:v]setpts=PTS+{cue:.2f}/TB,format=rgba,scale={BW}:{BH}[g]")

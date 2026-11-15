@@ -414,6 +414,33 @@
    "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
    "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
    "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c"
+  },
+  {
+   "number": 2,
+   "title": "AMD بعد صدمة إنفيديا",
+   "ticker": "AMD",
+   "session_date": "2026-11-14",
+   "data_date": "2026-11-13",
+   "episode_file": "tools/studio/episodes/amd-2026-11-13/episode.json",
+   "script": "tools/studio/episodes/amd-2026-11-13/script.md",
+   "video_media_id": "d0c4f83c-f3ba-4863-bdfb-fcccc3292fd3",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/d0c4f83c-f3ba-4863-bdfb-fcccc3292fd3.mp4",
+   "site_page": "site/ep02-amd.html",
+   "report": "reports/2026-11-13_AMD.md",
+   "resolution": "1080x1920",
+   "duration_s": 80.6,
+   "location": "ديوانية كويتية (سدو + أبراج الكويت)",
+   "cast": [
+    "falcon",
+    "dhub",
+    "fox",
+    "hoopoe",
+    "jerboa",
+    "hedgehog",
+    "qadhi"
+   ],
+   "verdict": "ميزان الاستثمار +6: 2 شراء / 13 انتظار / 0 بيع — انتظار لين الثلاثاء 17 نوفمبر، الثقة 7/10",
+   "notes": "تحليل لا توصية. القنفذ 720 (1080 فشل مرتين)، لقطات الحركة 720، لقطة الهدهد والجربوع من مسودة 480 لتوقيت الكلام."
   }
  ],
  "cast_retired": {

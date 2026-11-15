@@ -486,17 +486,19 @@
       "data_date": "2026-11-13",
       "episode_file": "tools/studio/episodes/mrna-2026-11-13/episode.json",
       "script": "tools/studio/episodes/mrna-2026-11-13/script.md",
-      "video_media_id": "2a3f5a87-0a0c-40fc-9fa6-a3b56d925446",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/2a3f5a87-0a0c-40fc-9fa6-a3b56d925446.mp4",
+      "video_media_id": "a97493cd-aaa4-40d4-b1c6-c3e7b20f1b8e",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/a97493cd-aaa4-40d4-b1c6-c3e7b20f1b8e.mp4",
       "site_page": "site/ep04-mrna.html",
       "report": "reports/2026-11-13_MRNA.md",
       "resolution": "720x1280 (مشاهد 480 مجمعة بإطار 720)",
-      "duration_s": 114.5,
+      "duration_s": 118.3,
       "guest": "asasi",
       "cast": "السلحفاة الشايب (الأساسي، ضيف ويفتتح) • الضب (شراء) • الثعلب (حذر) • الصقر • القاضي",
       "location": "يخت قدام أبراج الكويت وسوق شرق — الصالة بمستوى البحر (D)",
       "verdict": "ميزان الاستثمار −17: 1 شراء / 12 انتظار / 2 بيع — لمن ما دخل: ننطر لين ينزل لـ200$ ونشوف إذا ثبت فوقها؛ لمن ربحان: بيع جزء يرجّع راس المال؛ الثقة 6/10",
-      "notes": "بوابتين مع بدر: السكريبت (دخلة السلحفاة بدل «خبر عاجل»، «يختبر» انشالت) ثم الصور الثابتة (يخت D، السلحفاة شايب بنظارة وصوت Alistair مكبّر العمر). verify أقل تشابه 0.80 (أرقام القاضي)."
+      "notes": "بوابتين مع بدر: السكريبت (دخلة السلحفاة بدل «خبر عاجل»، «يختبر» انشالت) ثم الصور الثابتة (يخت D، السلحفاة شايب بنظارة وصوت Alistair مكبّر العمر). verify أقل تشابه 0.80 (أرقام القاضي).",
+      "video_media_id_v1": "2a3f5a87-0a0c-40fc-9fa6-a3b56d925446",
+      "notes_v2": "v2 بعد مراجعة بدر الصوتية: سبعتعش بالتاء، خِسَرت، ثلاثين بالمية، ميتين (200)، سلحفاة بمفاجأة أكبر، ختام «وإنتوا، اكتبوا لنا رايكم بالتعليقات». مشهد الثعلب الرئيسي انعاد استخدامه بالصوت الجديد (intone فشل مرتين)."
     }
   ],
   "cast_retired": {

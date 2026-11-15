@@ -339,7 +339,7 @@ def s_profiles(img, d, sl, meta):
     if sl.get('sub'):
         y = para(d, W - PAD, y, sl['sub'], font('med', 32), C['muted'], W - 2 * PAD) + 20 * S
     items = sl['items']
-    ch = (H - y - 150 * S) / len(items)
+    ch = min(330 * S, (H - y - 150 * S) / len(items))
     for it in items:
         d.rounded_rectangle((PAD, y, W - PAD, y + ch - 22 * S), radius=30 * S, fill=C['card'])
         size = 160 * S

@@ -13,7 +13,7 @@ export HF_HUB_DISABLE_XET=1   # نموذج التفريغ ينزل من us.aws.c
 command -v ffmpeg >/dev/null && command -v montage >/dev/null || { echo "ffmpeg/ImageMagick ناقصين"; exit 1; }
 if [ ! -x "$VENV/bin/python" ]; then
   python3 -m venv "$VENV"
-  "$VENV/bin/pip" install -q "Pillow>=10.4" faster-whisper
+  "$VENV/bin/pip" install -q "Pillow>=10.4" faster-whisper "av<16"   # av 19 كسر faster-whisper (metadata_errors)
 fi
 "$VENV/bin/python" - <<'EOF'
 from PIL import features

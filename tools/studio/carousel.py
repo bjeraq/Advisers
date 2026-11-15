@@ -301,23 +301,37 @@ def s_voices(img, d, sl, meta):
         y += ch
 
 
+def lean(vote, score):
+    """شرح الدرجة بالكلام (بدر: «انتظار +2» و«انتظار -3» مو مفهومة)."""
+    if vote == 'انتظار':
+        return 'محايد' if not score else f"يميل للشراء {sc(score)}" if score > 0 else f"يميل للبيع {sc(score)}"
+    return f"الدرجة {sc(score)}"
+
+
 def s_board(img, d, sl, meta):
+    """لوحة الأصوات كقائمة بعمودين: وجه + اسم + الرأي وميله بالكلام."""
     y = title(d, sl['title'])
+    if sl.get('sub'):
+        y = para(d, W - PAD, y - 6 * S, sl['sub'], font('med', 28), C['muted'], W - 2 * PAD) + 22 * S
     items = sl['items']
-    cols, size = 3, 132 * S
-    cw = (W - 2 * PAD) / cols
+    cols = 2
     rows = (len(items) + cols - 1) // cols
-    rh = min(196 * S, (H - y - 260 * S) / rows)
+    gap = 20 * S
+    cw = (W - 2 * PAD - gap) / cols
+    rh = min(124 * S, (H - y - 230 * S) / rows)
+    av = rh - 26 * S
     for i, it in enumerate(items):
-        r, c = divmod(i, cols)
-        cx = W - PAD - cw * c - cw / 2
-        cy = y + r * rh + size / 2
+        c, r = divmod(i, rows)                     # العمود اليمين أول (من اليمين لليسار)
+        x1 = W - PAD - c * (cw + gap)
+        y0 = y + r * rh
         col = C[VOTE.get(it['vote'], 'mid')]
-        ring(img, it['id'], cx, cy, size * (rh / (196 * S)) * 0.82, col)
-        ctext(d, cx, cy + size * 0.42, it['name'], font('med', 25), C['ink'])
-        ctext(d, cx, cy + size * 0.42 + 34 * S, f"{it['vote']} {sc(it['score'])}", font('bold', 25), col)
+        d.rounded_rectangle((x1 - cw, y0, x1, y0 + rh - 10 * S), radius=22 * S, fill=C['card'])
+        ring(img, it['id'], x1 - 16 * S - av / 2, y0 + (rh - 10 * S) / 2, av - 8 * S, col)
+        xr = x1 - 34 * S - av
+        rtext(d, xr, y0 + 10 * S, it['name'], font('bold', 26), C['ink'])
+        rtext(d, xr, y0 + 52 * S, f"{it['vote']} • {lean(it['vote'], it['score'])}", font('med', 22), col)
     if sl.get('total'):
-        ctext(d, W / 2, H - 175 * S, sl['total'], font('bold', 40), C['gold'])
+        ctext(d, W / 2, H - 168 * S, sl['total'], font('bold', 40), C['gold'])
 
 
 def s_profiles(img, d, sl, meta):

@@ -349,17 +349,14 @@
    "_trim": "أول 1.2ث من مقطع seedance انقصت (السلحفاة يرفع راسه ويصيح عند ~2ث)"
   },
   {
-   "id": "open_clash",
-   "type": "clash",
-   "lines": [
-    "open_dhub",
-    "open_fox"
-   ],
+   "id": "open_dhub",
+   "type": "lipsync",
+   "line": "open_dhub",
    "video": {
-    "draft": "src/mrna/d480_open_clash.mp4",
-    "final": "src/mrna/d480_open_clash.mp4"
+    "draft": "src/mrna/d480_open_dhub.mp4",
+    "final": "src/mrna/d480_open_dhub.mp4"
    },
-   "draft_job": "a1b88727-0ed3-4ef3-93d1-005a05d641de",
+   "draft_job": "b144aeb1-aa51-45b9-9dd6-2be40204e851",
    "graphic": {
     "name": "money",
     "cue": "صارت",
@@ -368,7 +365,17 @@
      560,
      360
     ]
+   }
+  },
+  {
+   "id": "open_fox",
+   "type": "lipsync",
+   "line": "open_fox",
+   "video": {
+    "draft": "src/mrna/d480_open_fox.mp4",
+    "final": "src/mrna/d480_open_fox.mp4"
    },
+   "draft_job": "49680348-565b-4f03-be85-bc0d638a85f2",
    "card": {
     "name": "fox_open",
     "at": "cue",
@@ -525,6 +532,7 @@
   "_comment": "لقطات اليخت (gpt_image_2_6): الخارجي 78e0cb95، الصالة D المعتمدة cd6edc37 والمصلحة d30f48ab، السلحفاة 4d9d5f87، الضب cdfa1d9e، الثعلب 2f44d919، المواجهة 355e13e3، القاضي 0519f422، الصقر 0221e152 (المصلح 746d6859). صورة السلحفاة الشايب 953f1d70. الشفاه intone 480p بنفس أسلوب الحلقات السابقة.",
   "master": "d30f48ab-50dc-48fa-a87f-4ef100dd03a3",
   "exterior": "78e0cb95-0c76-4b28-9c12-da1abde3923c",
-  "turtle_elder": "953f1d70-fe2c-4fdb-a989-095c828747f3"
+  "turtle_elder": "953f1d70-fe2c-4fdb-a989-095c828747f3",
+  "open_clash_rejected": "a1b88727-0ed3-4ef3-93d1-005a05d641de (لقطة ثنائية: كتلة شفاه الثعلب أقصر من تسجيله بـ30% → انقسمت لقطتين قريبتين)"
  }
 }

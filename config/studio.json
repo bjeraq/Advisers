@@ -473,6 +473,26 @@
    "notes": "ميزان −17 (2 شراء / 11 انتظار / 2 بيع)؛ القاضي: ننطر إعلان الدمج بديسمبر، ثقة 6/10. السكريبت v2 اعتمده بدر 14 نوفمبر.",
    "video_media_id_v1": "fd482547-01b0-4a55-a9f5-843565dea895",
    "video_media_id_v2": "729eb980-813c-4218-b269-3257f49502cf"
+  },
+  {
+   "number": 4,
+   "title": "سبع أضعاف؟! — موديرنا",
+   "ticker": "MRNA",
+   "session_date": "2026-11-15",
+   "data_date": "2026-11-13",
+   "episode_file": "tools/studio/episodes/mrna-2026-11-13/episode.json",
+   "script": "tools/studio/episodes/mrna-2026-11-13/script.md",
+   "video_media_id": "2a3f5a87-0a0c-40fc-9fa6-a3b56d925446",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/2a3f5a87-0a0c-40fc-9fa6-a3b56d925446.mp4",
+   "site_page": "site/ep04-mrna.html",
+   "report": "reports/2026-11-13_MRNA.md",
+   "resolution": "720x1280 (مشاهد 480 مجمعة بإطار 720)",
+   "duration_s": 114.5,
+   "guest": "asasi",
+   "cast": "السلحفاة الشايب (الأساسي، ضيف ويفتتح) • الضب (شراء) • الثعلب (حذر) • الصقر • القاضي",
+   "location": "يخت قدام أبراج الكويت وسوق شرق — الصالة بمستوى البحر (D)",
+   "verdict": "ميزان الاستثمار −17: 1 شراء / 12 انتظار / 2 بيع — لمن ما دخل: ننطر لين ينزل لـ200$ ونشوف إذا ثبت فوقها؛ لمن ربحان: بيع جزء يرجّع راس المال؛ الثقة 6/10",
+   "notes": "بوابتين مع بدر: السكريبت (دخلة السلحفاة بدل «خبر عاجل»، «يختبر» انشالت) ثم الصور الثابتة (يخت D، السلحفاة شايب بنظارة وصوت Alistair مكبّر العمر). verify أقل تشابه 0.80 (أرقام القاضي)."
   }
  ],
  "cast_retired": {

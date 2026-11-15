@@ -83,7 +83,7 @@
    "audio": "src/lines/guest.mp3",
    "text": "يا جماعة، أنا أقرا الدفاتر... نص مبيعات السنة كلها جت بثلاث شهور بس! والسنة كاملة للحين خسرانة. يعني الربح موسم، مو عادة.",
    "audio_job": "f6512ff4-0957-4029-a259-debc5a55eebc",
-   "media": "5d2ed3a7-4b1b-42b0-85e6-8d729067955d",
+   "media": "6803c58b-e2ab-4beb-8215-8189220c07b0",
    "_why": "الأساسي: أقوى حجة ضد السهم بحكم القاضي (الموسمية) ومحد رد عليها"
   },
   "qadhi_a": {
@@ -193,7 +193,8 @@
      "bold",
      "light_teal"
     ]
-   ]
+   ],
+   "y": 0.25
   },
   "dhub": {
    "kind": "card",
@@ -217,7 +218,8 @@
      "med",
      "sub"
     ]
-   ]
+   ],
+   "y": 0.69
   },
   "fox": {
    "kind": "card",
@@ -241,7 +243,8 @@
      "med",
      "sub"
     ]
-   ]
+   ],
+   "y": 0.69
   },
   "guest": {
    "kind": "card",
@@ -259,7 +262,8 @@
      "bold",
      "light_teal"
     ]
-   ]
+   ],
+   "y": 0.69
   },
   "verdict": {
    "kind": "card",
@@ -277,7 +281,8 @@
      "bold",
      "white"
     ]
-   ]
+   ],
+   "y": 0.69
   },
   "verdict2": {
    "kind": "card",
@@ -307,7 +312,8 @@
      "med",
      "sub"
     ]
-   ]
+   ],
+   "y": 0.69
   },
   "cta": {
    "kind": "card",
@@ -453,15 +459,13 @@
   },
   {
    "id": "guest",
-   "type": "vo_clip",
+   "type": "lipsync",
    "line": "guest",
-   "delay": 0.3,
-   "duration": 12.4,
    "video": {
-    "draft": "src/mrna/s720_guest.mp4",
-    "final": "src/mrna/s720_guest.mp4"
+    "draft": "src/mrna/d480_guest.mp4",
+    "final": "src/mrna/d480_guest.mp4"
    },
-   "video_job": "53a73944-b2c9-4685-9320-0c3bb1031964",
+   "draft_job": "fb58d3b9-41ca-4741-896f-8b6a2e7788bd",
    "graphic": {
     "name": "donut",
     "cue": "نص",
@@ -475,7 +479,7 @@
     "name": "guest",
     "at": "after_graphic"
    },
-   "_note": "intone رفض السلحفاة مرتين (e38be8b2، 8122f3c6) → حركة seedance 12ث + تعليق صوتي"
+   "_note": "أول محاولتين انرفضت لأن ملف الصوت المعالج طلع صامت؛ بعد الإصلاح نجح intone. احتياطي seedance: s720_guest.mp4 (53a73944)"
   },
   {
    "id": "judge_a",

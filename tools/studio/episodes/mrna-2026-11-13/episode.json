@@ -15,8 +15,8 @@
    "voice": "Alistair+old_fx",
    "audio": "src/lines/t_open.mp3",
    "text": "سبع أضعاف؟!",
-   "audio_job": "16e67193-ccbd-47f9-9b10-0774f6a82e23",
-   "media": "130382c6-2e6a-4fa1-beb9-262d76731d2f"
+   "audio_job": "2762a8fd-d6f6-4808-b3f3-b1a29a2873c2",
+   "_v": "بدر: 4A (جولة 2، مفاجأة أكبر)"
   },
   "open_dhub": {
    "speaker": "thawr",
@@ -29,9 +29,10 @@
    "speaker": "dubb",
    "voice": "Arthur",
    "audio": "src/lines/open_fox.mp3",
-   "text": "ولو دخلت يوم القمة قبل أربع أيام... خسرت سبعتعش بالمية!",
-   "audio_job": "10a2e7e4-f377-4c05-8c83-83d03cc50a6c",
-   "stability": 0.6
+   "text": "ولو دخلت يوم القمة قبل أربع أيام... خِسَرت سَبَعْتَعَش بالمِيّة!",
+   "audio_job": "24ce6bd9-b713-4592-bc57-07d07bba3002",
+   "stability": 0.6,
+   "_v": "جولة بدر 2: 1A"
   },
   "intro": {
    "speaker": "rassad",
@@ -51,9 +52,10 @@
    "speaker": "dubb",
    "voice": "Arthur",
    "audio": "src/lines/dubb.mp3",
-   "text": "يا عزيزي الضب، إنت تشوفها فرصة وأنا أشوفها خطر... السهم نزل سبعتعش بالمية بأربع أيام! والمحللين، بالمتوسط، يشوفونه أقل من سعره الحين بثلاثين بالمية!",
-   "audio_job": "73ac58f6-7be5-4134-afd0-1dc9407bca4d",
-   "stability": 0.6
+   "text": "يا عزيزي الضب، إنت تشوفها فرصة وأنا أشوفها خطر... السهم نزل سَبَعْتَعَش بالمِيّة بأربع أيام! والمحللين، بالمتوسط، يشوفونه أقل من سعره الحين... ثَلاثِين بالمِيّة!",
+   "audio_job": "ae2da14f-00d6-4c41-be43-28e382c7fb78",
+   "stability": 0.6,
+   "_v": "بدر: 2A"
   },
   "clasht": {
    "speaker": "thawr",
@@ -90,25 +92,25 @@
    "speaker": "qadhi",
    "voice": "Gideon",
    "audio": "src/lines/qadhi_a.mp3",
-   "text": "سمَعت الجميع... ميزان الاستثمار: سبعتعش بالسالب. واحد شراء، اثنعش انتظار، واثنين بيع.",
-   "audio_job": "f92bf344-9ad2-49c6-8668-93cbddd1fdd1",
-   "media": "712f60e0-b2d0-4d33-862e-0e2ed3f6cdd7",
-   "_split": "أول 9.08ث من التسجيل الكامل (25.7ث فوق حد الشفاه)"
+   "text": "سمَعت الجميع... ميزان الاستثمار: سَبَعْتَعَش بالسالب. واحد شراء، اثنعش انتظار، واثنين بيع.",
+   "audio_job": "9e695906-fcfa-4a25-a512-88a88f14cfd1",
+   "_v": "بدر: 3A"
   },
   "qadhi_b": {
    "speaker": "qadhi",
    "voice": "Gideon",
    "audio": "src/lines/qadhi_b.mp3",
-   "text": "اللي ما دخل: لا يلحق السعر، ينطر لين ينزل للميتين، ونشوف: إذا ثبت فوقها، وقتها يدخل. واللي ربحان، أقرب خيار: يبيع جزء يرجّع فيه راس ماله، ويخلي الباقي. وثقتي ستة من عشرة.",
-   "audio_job": "f92bf344-9ad2-49c6-8668-93cbddd1fdd1",
-   "media": "d2f82e20-67f4-4f53-a577-35beef021e8d"
+   "text": "اللي ما دخل: لا يلحق السعر، ينطر لين ينزل لميتين دولار، ونشوف: إذا ثبت فوقها، وقتها يدخل. واللي ربحان، أقرب خيار: يبيع جزء يرجّع فيه راس ماله، ويخلي الباقي. وثقتي ستة من عشرة.",
+   "audio_job": "ed78305b-121f-4d8f-850e-bcdc2ef0a654",
+   "_v": "بدر: 6B"
   },
   "cta": {
    "speaker": "rassad",
    "voice": "Andre",
    "audio": "src/lines/cta.mp3",
-   "text": "يعني رأي المجلس: ننطر الميتين دولار... وبعدها إنت خذ القرار اللي تشوفه مناسب لك. وخلونا نسمع رايكم بالتعليقات!",
-   "audio_job": "0a34719a-0777-4960-ba07-a1ce76ab1097"
+   "text": "يعني رأي المجلس: ننطر ميتين دولار... وبعدها إنت خذ القرار اللي تشوفه مناسب لك. وإنتوا، اكتبوا لنا رايكم بالتعليقات!",
+   "audio_job": "5f34d817-b2ee-45c5-a831-8814b328ad43",
+   "_v": "بدر: 5A (جولة 2)"
   }
  },
  "graphics": {
@@ -345,7 +347,7 @@
    "type": "vo_clip",
    "line": "t_open",
    "delay": 0.7,
-   "duration": 3.2,
+   "duration": 3.4,
    "video": {
     "draft": "src/mrna/s720_turtle_open_c.mp4",
     "final": "src/mrna/s720_turtle_open_c.mp4"
@@ -381,7 +383,7 @@
     "draft": "src/mrna/d480_open_fox.mp4",
     "final": "src/mrna/d480_open_fox.mp4"
    },
-   "draft_job": "49680348-565b-4f03-be85-bc0d638a85f2",
+   "draft_job": "bf4e9185-9c11-4c0d-866d-931fdffca0f5",
    "card": {
     "name": "fox_open",
     "at": "cue",
@@ -428,7 +430,7 @@
     "draft": "src/mrna/d480_fox.mp4",
     "final": "src/mrna/d480_fox.mp4"
    },
-   "draft_job": "c817c5f2-6120-4f3d-a748-9c22cf7969e7",
+   "draft_job": "1f861c8d-e906-4bec-8768-c3f4fb3f2417",
    "card": {
     "name": "fox",
     "at": "cue",
@@ -489,7 +491,7 @@
     "draft": "src/mrna/d480_judge_a.mp4",
     "final": "src/mrna/d480_judge_a.mp4"
    },
-   "draft_job": "fd23c0c3-a01b-43e1-8c43-429277206ed0",
+   "draft_job": "71c2eacd-916a-4eff-b78a-ae6e980313af",
    "graphic": {
     "name": "meter",
     "cue": "ميزان",
@@ -513,7 +515,7 @@
     "draft": "src/mrna/d480_judge_b.mp4",
     "final": "src/mrna/d480_judge_b.mp4"
    },
-   "draft_job": "dcf18598-06b0-40e7-93e8-752015d90799",
+   "draft_job": "cc2c15a9-96ad-4bdd-8792-fb95275474e5",
    "card": {
     "name": "verdict2",
     "at": 0.6
@@ -524,7 +526,7 @@
    "type": "still_vo",
    "line": "cta",
    "delay": 0.4,
-   "duration": 10.0,
+   "duration": 10.4,
    "image": "src/mrna/master.png",
    "card": {
     "name": "cta",
@@ -538,5 +540,6 @@
   "exterior": "78e0cb95-0c76-4b28-9c12-da1abde3923c",
   "turtle_elder": "953f1d70-fe2c-4fdb-a989-095c828747f3",
   "open_clash_rejected": "a1b88727-0ed3-4ef3-93d1-005a05d641de (لقطة ثنائية: كتلة شفاه الثعلب أقصر من تسجيله بـ30% → انقسمت لقطتين قريبتين)"
- }
+ },
+ "review_2026_11_15": "مراجعة بدر الصوتية: سبعتعش بالتاء (لا طاء)، خِسَرت، ثلاثين بالمية، ميتين (200 مو الميّتين)، سلحفاة بمفاجأة أكبر، الختام «وإنتوا، اكتبوا لنا رايكم بالتعليقات». اختياراته: 1A 2A 3A 4A 5A 6B."
 }

@@ -290,9 +290,10 @@
    "duration": 2.4,
    "video": {
     "draft": "amd/src/falcon_open.mp4",
-    "final": "amd/src/falcon_open.mp4"
+    "final": "amd/fin/falcon_open.mp4"
    },
-   "video_job": "7bcaf69e-04de-403e-ab8c-568e4c7c11ba"
+   "video_job": "7bcaf69e-04de-403e-ab8c-568e4c7c11ba",
+   "final_job": "75a32956-cc8e-4cf5-a225-b8944eb0f049"
   },
   {
    "id": "intro",
@@ -302,7 +303,7 @@
    "duration": 9.8,
    "video": {
     "draft": "amd/src/wide.mp4",
-    "final": "amd/src/wide.mp4"
+    "final": "amd/fin/wide.mp4"
    },
    "video_job": "f647a41f-ef16-4b09-922a-11cc5bfcf19c",
    "card": {
@@ -318,7 +319,8 @@
      205,
      380
     ]
-   }
+   },
+   "final_job": "bfa59f84-a4e8-4663-9acf-94c22e04f3e6"
   },
   {
    "id": "dhub",
@@ -326,7 +328,7 @@
    "line": "thawr",
    "video": {
     "draft": "amd/src/dhub.mp4",
-    "final": "amd/src/dhub.mp4"
+    "final": "amd/fin/dhub.mp4"
    },
    "draft_job": "fd917bd4-3daf-458d-ae17-48a43b291fe6",
    "card": {
@@ -341,7 +343,8 @@
      560,
      360
     ]
-   }
+   },
+   "final_job": "2aa85ccf-7e1e-4ead-8e20-813a2a429b42"
   },
   {
    "id": "fox",
@@ -349,7 +352,7 @@
    "line": "dubb",
    "video": {
     "draft": "amd/src/fox.mp4",
-    "final": "amd/src/fox.mp4"
+    "final": "amd/fin/fox.mp4"
    },
    "draft_job": "d8dce485-ca8e-4ae2-8a73-5f31d7773dd3",
    "card": {
@@ -365,7 +368,8 @@
      560,
      360
     ]
-   }
+   },
+   "final_job": "f102197c-6e90-4f75-a0ed-06739f294271"
   },
   {
    "id": "ask",
@@ -375,9 +379,10 @@
    "duration": 7.9,
    "video": {
     "draft": "amd/src/falcon_ask.mp4",
-    "final": "amd/src/falcon_ask.mp4"
+    "final": "amd/fin/falcon_ask.mp4"
    },
-   "video_job": "3b39c55b-5ba1-45a5-b4fc-ddb19fdb92c2"
+   "video_job": "3b39c55b-5ba1-45a5-b4fc-ddb19fdb92c2",
+   "final_job": "95c535f5-5e55-4f91-824b-42afcfd1684f"
   },
   {
    "id": "pair",
@@ -396,7 +401,8 @@
     "at": "cue",
     "cue": "هالمرة"
    },
-   "_note": "بدر: الجربوع ذكر، وشفايفهم ما تتحرك قبل ما ينسألون → سؤال الصقر بلقطة لحاله وجوابهم بلقطة 5ث"
+   "_note": "بدر: الجربوع ذكر، وشفايفهم ما تتحرك قبل ما ينسألون → سؤال الصقر بلقطة لحاله وجوابهم بلقطة 5ث",
+   "final_job": "2b0892a1-8c04-4084-90ec-0278bb2bac16"
   },
   {
    "id": "mazloum",
@@ -404,7 +410,7 @@
    "line": "mazloum",
    "video": {
     "draft": "amd/src/hedge.mp4",
-    "final": "amd/src/hedge.mp4"
+    "final": "amd/fin/hedge.mp4"
    },
    "draft_job": "c1ec7c7b-1f83-40b0-bebe-d21c94190a56",
    "graphic": {
@@ -415,7 +421,8 @@
      560,
      360
     ]
-   }
+   },
+   "final_job": "3964d369-3a71-4aae-b15f-e8bf98bb520c"
   },
   {
    "id": "judge",
@@ -423,7 +430,7 @@
    "line": "qadhi",
    "video": {
     "draft": "amd/src/judge.mp4",
-    "final": "amd/src/judge.mp4"
+    "final": "amd/fin/judge.mp4"
    },
    "draft_job": "a8ef9294-f616-42b1-8e2e-ff111c798622",
    "graphic": {
@@ -439,7 +446,8 @@
     "name": "verdict",
     "at": "after_graphic",
     "fade": 0.6
-   }
+   },
+   "final_job": "d4da7d62-aa94-4121-aa7a-f97220a6740a"
   },
   {
    "id": "cta",
@@ -449,13 +457,14 @@
    "duration": 6.3,
    "video": {
     "draft": "amd/src/cta.mp4",
-    "final": "amd/src/cta.mp4"
+    "final": "amd/fin/cta.mp4"
    },
    "video_job": "0a2b7ad3-0f91-477a-abbc-90861fb68beb",
    "card": {
     "name": "cta",
     "at": 0.4
-   }
+   },
+   "final_job": "94aa1a95-35e0-46f4-9cd4-6dffd727f014"
   }
  ],
  "keyframes": {
@@ -472,5 +481,11 @@
   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/3451f362-3e05-4485-a94f-347df720c5c0.mp4",
   "duration_s": 79.3,
   "note": "مسودة: مشاهد 480 مجمعة بإطار 720، الكابشن صور (ترتيب عربي صحيح)، verify أقل تشابه 0.74 (المقدمة: AMD/45% كأرقام)"
- }
+ },
+ "draft_v2": {
+  "media_id": "b2241869-110b-4fcf-8ac1-e90e7af9c314",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/b2241869-110b-4fcf-8ac1-e90e7af9c314.mp4",
+  "note": "الجربوع ذكر، سؤال الصقر بلقطة مستقلة، ختام «نجتمع الثلاثاء»، رسومات متحركة"
+ },
+ "final_notes": "مشاهد الشفاه 1080 (الضب، الثعلب، القاضي)؛ القنفذ 720 بعد فشل 1080 مرتين؛ مشاهد الحركة seedance 720؛ لقطة الهدهد والجربوع من مسودة 480 لأن توقيت الكلام فيها أصح (الجربوع يتكلم بعد الهدهد) — 793271e1 بـ720 الجربوع فتح فمه بدري."
 }

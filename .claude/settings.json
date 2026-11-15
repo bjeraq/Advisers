@@ -114,7 +114,22 @@
       "mcp__e3636971-fef6-4939-ad07-e4a8642d7c8b__generate_video",
       "mcp__e3636971-fef6-4939-ad07-e4a8642d7c8b__generate_video_batch",
       "mcp__e3636971-fef6-4939-ad07-e4a8642d7c8b__show_generation_by_ids",
-      "mcp__Higgsfield__voice_change"
+      "mcp__Higgsfield__voice_change",
+      "mcp__e3636971-fef6-4939-ad07-e4a8642d7c8b__generate_image",
+      "mcp__e3636971-fef6-4939-ad07-e4a8642d7c8b__models_explore",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-ohlcv",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-financials",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-news",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-news-story",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-search-symbols",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-symbol-data",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-symbol-data-batch",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-technicals-rating",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-forecasts",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-earnings-calendar",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-financial-history",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-run-screener",
+      "mcp__36a2613b-a6c2-4202-9ceb-c6539a5c7b31__mcp-tv-get-screener-columns"
     ],
     "ask": [
       "Bash(git push --force *)",

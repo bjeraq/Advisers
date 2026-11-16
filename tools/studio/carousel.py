@@ -287,7 +287,10 @@ def s_hook(img, d, sl, meta):
     k = sl.get('kicker', '')
     if k:
         badge(d, W - PAD - tw(d, k, f) - 36 * S, 130 * S, k, C['gold'], f)
-    y = para(d, W - PAD, 230 * S, sl['headline'], font('bold', 88), C['ink'], W - 2 * PAD, gap=1.25)
+    hs = 88                                     # عنوان طويل: نصغّر الخط لين يصير 3 أسطر بالكثير
+    while hs > 64 and len(wrap(d, sl['headline'], font('bold', hs), W - 2 * PAD)) > 3:
+        hs -= 4
+    y = para(d, W - PAD, 230 * S, sl['headline'], font('bold', hs), C['ink'], W - 2 * PAD, gap=1.25)
     y += 30 * S
     if sl.get('big'):
         fb = font('bold', 170)
@@ -303,6 +306,11 @@ def s_hook(img, d, sl, meta):
         total = n * size + (n - 1) * gapx
         x = W / 2 + total / 2 - size / 2
         cy = max(y + size / 2 + 20 * S, H - 380 * S)
+        if sl.get('swipe'):                     # لا تغطي الوجوه سطر «اسحب»
+            size = min(size, (H - 175 * S - 20 * S - y) * 0.95)
+            cy = min(cy, H - 175 * S - size / 2 - 14 * S)
+            total = n * size + (n - 1) * gapx
+            x = W / 2 + total / 2 - size / 2
         for key in faces:
             ring(img, key, x, cy, size, C['teal'])
             x -= size + gapx

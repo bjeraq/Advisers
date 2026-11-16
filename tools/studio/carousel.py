@@ -41,7 +41,7 @@ ROLE = {
     'macro': 'الاستراتيجية الكلية', 'mudharib': 'المضاربة السريعة', 'suyula': 'قارئة السيولة',
     'congress': 'متتبع السياسيين', 'whales': 'متتبع الحيتان', 'rassad': 'رصّاد الأخبار',
     'mazloum': 'صائد المظلومات', 'saboor': 'المستثمر الصبور', 'qita': 'محلل القطاع',
-    'haris': 'حارس المحفظة', 'qadhi': 'القاضي', 'raqib': 'الرقيب الشرعي',
+    'haris': 'مدير المخاطر', 'qadhi': 'القاضي', 'raqib': 'الرقيب الشرعي',
 }
 VOTE = {'شراء': 'pos', 'انتظار': 'mid', 'بيع': 'neg'}
 
@@ -177,7 +177,7 @@ def avatar(key, size):
         im = Image.open(p).convert('RGB')
         x0 = max(0, min(im.width - s, cx - s // 2)); y0 = max(0, min(im.height - s, cy - s // 2))
         face = im.crop((x0, y0, x0 + s, y0 + s)).resize((size, size), Image.LANCZOS)
-    else:   # مستشار بلا شخصية (محلل القطاع، حارس المحفظة): دائرة بلون الهوية
+    else:   # مستشار بلا شخصية (محلل القطاع، مدير المخاطر): دائرة بلون الهوية
         face = Image.new('RGB', (size, size), C['line'])
     out = Image.new('RGBA', (size, size), (0, 0, 0, 0))
     out.paste(face, (0, 0), mask)

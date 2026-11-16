@@ -8,6 +8,9 @@
 
 المحتوى يكتبه كاتب الحلقة بملف carousel.json (نصوص قصيرة كويتية بسيطة)، والأداة ترسم بس.
 أنواع الشرائح (type):
+  cover    name, ticker, date, sub                                 — الشريحة الأولى دايماً: اسم السهم والتاريخ
+           (قاعدة بدر 2026-11-16: عشان اللي يتصفح يلقى سهمه على طول). لو ما انكتبت، الأداة تبنيها
+           تلقائياً من meta.brand و episode.json (ticker/data_date) اللي جنب carousel.json.
   hook     kicker, headline, big, big_sub, faces[ids], swipe      — الغلاف اللي يشد
   facts    title, rows[[label, value, tone]], note                 — الأرقام اللي كانت قدام القاضي
   duel     title, left{id,name,vote,score,points[]}, right{...}    — الضب ضد الثعلب (أو أي اثنين)
@@ -234,6 +237,56 @@ def title(d, t, y=120):
     return para(d, W - PAD, y * S, t, f, C['ink'], W - 2 * PAD) + 18 * S
 
 
+AR_MONTHS = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر',
+             'أكتوبر', 'نوفمبر', 'ديسمبر']
+AR_DAYS = ['الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت', 'الأحد']
+
+
+def auto_cover(spec_path, meta):
+    """يبني شريحة الغلاف (اسم السهم + التاريخ) من meta و episode.json اللي جنب الملف."""
+    import datetime
+    ep = {}
+    ep_path = os.path.join(os.path.dirname(os.path.abspath(spec_path)), 'episode.json')
+    if os.path.exists(ep_path):
+        ep = json.load(open(ep_path, encoding='utf-8'))
+    name = meta.get('name') or meta.get('brand', '').split('•')[-1].strip()
+    ticker = meta.get('ticker') or ep.get('ticker', '')
+    date = meta.get('date', '')
+    if not date and ep.get('data_date'):
+        dt = datetime.date.fromisoformat(ep['data_date'])
+        date = f'{AR_DAYS[dt.weekday()]} {dt.day} {AR_MONTHS[dt.month - 1]} {dt.year}'
+    return {'type': 'cover', 'name': name, 'ticker': ticker, 'date': date}
+
+
+def s_cover(img, d, sl, meta):
+    cx = W / 2
+    name, ticker = sl.get('name', ''), sl.get('ticker', '')
+    fs = 170
+    while fs > 90 and tw(d, name, font('bold', fs)) > W - 2 * PAD:
+        fs -= 10
+    y = 380 * S
+    if name:
+        ctext(d, cx, y, name, font('bold', fs), C['ink'])
+        y += fs * 1.55 * S
+    if ticker and ticker.upper() != name.upper():
+        f = font('bold', 96)
+        w = tw(d, ticker, f) + 80 * S
+        h = 150 * S
+        d.rounded_rectangle((cx - w / 2, y, cx + w / 2, y + h), radius=28 * S, outline=C['teal'], width=5 * S)
+        ctext(d, cx, y + 8 * S, ticker, f, C['teal'])
+        y += h + 70 * S
+    else:
+        y += 20 * S
+    d.line((cx - 160 * S, y, cx + 160 * S, y), fill=C['gold'], width=4 * S)
+    y += 50 * S
+    if sl.get('date'):
+        ctext(d, cx, y, sl['date'], font('bold', 56), C['gold'])
+        y += 100 * S
+    if sl.get('sub'):
+        para(d, W - PAD, y, sl['sub'], font('med', 40), C['muted'], W - 2 * PAD, center=cx)
+    ctext(d, cx, H - 200 * S, sl.get('swipe', 'اسحب ←'), font('bold', 38), C['muted'])
+
+
 def s_hook(img, d, sl, meta):
     f = font('med', 30)
     k = sl.get('kicker', '')
@@ -429,7 +482,7 @@ def s_decide(img, d, sl, meta):
         para(d, W - PAD, H - 200 * S, sl['disclaimer'], font('med', 26), C['muted'], W - 2 * PAD, center=W / 2)
 
 
-RENDER = {'hook': s_hook, 'facts': s_facts, 'duel': s_duel, 'voices': s_voices, 'board': s_board,
+RENDER = {'cover': s_cover, 'hook': s_hook, 'facts': s_facts, 'duel': s_duel, 'voices': s_voices, 'board': s_board,
           'profiles': s_profiles, 'verdict': s_verdict, 'decide': s_decide}
 
 
@@ -440,6 +493,8 @@ def main(argv=None):
     spec = json.load(open(a.spec, encoding='utf-8'))
     os.makedirs(a.out, exist_ok=True)
     slides = spec['slides']; meta = spec.get('meta', {})
+    if not slides or slides[0].get('type') != 'cover':
+        slides = [auto_cover(a.spec, meta)] + slides
     paths = []
     for i, sl in enumerate(slides, 1):
         img, d = base(i, len(slides), meta)

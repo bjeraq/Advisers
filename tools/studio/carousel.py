@@ -32,6 +32,14 @@ C = {
     'ink': (233, 239, 237), 'muted': (159, 176, 173), 'teal': (60, 194, 176), 'gold': (216, 178, 94),
     'pos': (26, 166, 150), 'neg': (224, 106, 69), 'mid': (216, 178, 94),
 }
+# دور كل مستشار (يطلع جنب اسم الحيوان بلوحة الأصوات)
+ROLE = {
+    'thawr': 'محامي الشراء', 'dubb': 'محامي الحذر', 'asasi': 'محلل الأساسيات', 'fanni': 'المحلل الفني',
+    'macro': 'الاستراتيجية الكلية', 'mudharib': 'المضاربة السريعة', 'suyula': 'قارئة السيولة',
+    'congress': 'متتبع السياسيين', 'whales': 'متتبع الحيتان', 'rassad': 'رصّاد الأخبار',
+    'mazloum': 'صائد المظلومات', 'saboor': 'المستثمر الصبور', 'qita': 'محلل القطاع',
+    'haris': 'حارس المحفظة', 'qadhi': 'القاضي', 'raqib': 'الرقيب الشرعي',
+}
 VOTE = {'شراء': 'pos', 'انتظار': 'mid', 'بيع': 'neg'}
 
 # أوراق الشخصيات المعتمدة (turnaround) وقص الوجه المربع (cx, cy, side) على ورقة 1344×752
@@ -344,7 +352,16 @@ def s_board(img, d, sl, meta):
         d.rounded_rectangle((x1 - cw, y0, x1, y0 + rh - 10 * S), radius=22 * S, fill=C['card'])
         ring(img, it['id'], x1 - 16 * S - av / 2, y0 + (rh - 10 * S) / 2, av - 8 * S, col)
         xr = x1 - 34 * S - av
-        rtext(d, xr, y0 + 10 * S, it['name'], font('bold', 26), C['ink'])
+        fn = font('bold', 26)
+        rtext(d, xr, y0 + 10 * S, it['name'], fn, C['ink'])
+        role = it.get('role', ROLE.get(it['id']))
+        if role and role != it['name']:                 # الحيوان أول، وبعده دوره بالمجلس
+            xr2 = xr - tw(d, it['name'], fn) - 12 * S
+            room = xr2 - (x1 - cw) - 18 * S
+            sz = 21
+            while sz > 15 and tw(d, '• ' + role, font('med', sz)) > room:
+                sz -= 1
+            rtext(d, xr2, y0 + 16 * S, '• ' + role, font('med', sz), C['muted'])
         rtext(d, xr, y0 + 52 * S, f"{it['vote']} • {lean(it['vote'], it['score'])}", font('med', 22), col)
     if sl.get('total'):
         ctext(d, W / 2, H - 168 * S, sl['total'], font('bold', 40), C['gold'])

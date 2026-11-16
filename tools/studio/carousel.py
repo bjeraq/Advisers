@@ -67,7 +67,7 @@ CACHE = os.path.expanduser('~/.cache/majlis_avatars')
 PORTRAITS = {
     'asasi': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261115_064326_953f1d70-fe2c-4fdb-a989-095c828747f3.png', (525, 310, 560)),
     'qita':  ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_062146_93f79712-b73b-417f-b66e-f5f0c7946202.png', (530, 330, 540)),   # المها (مقترح)
-    'haris': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_062147_895e4b4f-9c15-45c7-8e3a-5e5a086123ec.png', (555, 300, 560)),   # السلوقي (مقترح)
+    'haris': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_063245_e12e4588-1b38-4053-a5ba-eb1ec8393f80.png', (525, 300, 600)),   # الحصان بالشماغ الأحمر (اختيار بدر)
 }
 
 

@@ -67,6 +67,7 @@ CACHE = os.path.expanduser('~/.cache/majlis_avatars')
 PORTRAITS = {
     'asasi': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261115_064326_953f1d70-fe2c-4fdb-a989-095c828747f3.png', (525, 310, 560)),
     'haris': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_063623_39bd67df-05cd-4cd1-b5e4-8e630b8eb200.png', (515, 290, 600)),   # الحصان القوي بالشماغ الأحمر (اختيار بدر)
+    'raqib': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_075902_e8a128c0-5afc-4dfa-9f2f-363e1c5adbd1.png', (490, 330, 560)),   # إنسان بغترة بلا عقال ولحية سودة (اختيار بدر 2026-11-16): مو حيوان، ومختلف عن القاضي
     'qita':  ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_062146_93f79712-b73b-417f-b66e-f5f0c7946202.png', (530, 330, 540)),   # المها (مقترح)
 }
 
@@ -183,7 +184,7 @@ def avatar(key, size):
     return out
 
 
-NO_FACE = {'qita': 'ق', 'haris': 'ح', 'raqib': 'ر'}   # أدوار بلا شخصية: حرف بدل الوجه
+NO_FACE = {'qita': 'ق', 'haris': 'ح'}   # أدوار بلا شخصية: حرف بدل الوجه
 
 
 def ring(img, key, cx, cy, size, color):
@@ -192,13 +193,7 @@ def ring(img, key, cx, cy, size, color):
     d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=color)
     a = avatar(key, size)
     img.alpha_composite(a, (int(cx - size / 2), int(cy - size / 2)))
-    if key == 'raqib':   # دور مخفي: لا يظهر كشخصية — شارة ✓ «متوافق» بدل الوجه
-        r2 = size / 2
-        d.ellipse((cx - r2, cy - r2, cx + r2, cy + r2), fill=C['pos'])
-        w = max(3, int(size * 0.07))
-        d.line([(cx - r2 * 0.42, cy + r2 * 0.02), (cx - r2 * 0.1, cy + r2 * 0.34), (cx + r2 * 0.46, cy - r2 * 0.3)],
-               fill=C['ink'], width=w, joint='curve')
-    elif key not in CAST and key not in PORTRAITS:
+    if key not in CAST and key not in PORTRAITS:
         f = font('bold', max(20, int(size / S * 0.42)))
         ctext(d, cx, cy - f.size * 0.62, NO_FACE.get(key, '•'), f, C['muted'])
 

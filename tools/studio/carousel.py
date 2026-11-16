@@ -52,6 +52,12 @@ CAST = {
     'whales':   ('hf_20261110_120717_68f65514-c6cc-47d2-85db-af36de1b93a4.png', (1120, 180, 340)),
 }
 CACHE = os.path.expanduser('~/.cache/majlis_avatars')
+# بورتريه مربع 1024 بدل الورقة (cx, cy, side): يغلب CAST — السلحفاة الشايب + وجوه الأدوار الجديدة
+PORTRAITS = {
+    'asasi': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261115_064326_953f1d70-fe2c-4fdb-a989-095c828747f3.png', (525, 310, 560)),
+    'qita':  ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_062146_93f79712-b73b-417f-b66e-f5f0c7946202.png', (530, 330, 540)),   # المها (مقترح)
+    'haris': ('https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/hf_20261116_062147_895e4b4f-9c15-45c7-8e3a-5e5a086123ec.png', (555, 300, 560)),   # السلوقي (مقترح)
+}
 
 
 def font(weight, size):
@@ -147,11 +153,15 @@ def avatar(key, size):
     mask = Image.new('L', (size * 4, size * 4), 0)
     ImageDraw.Draw(mask).ellipse((0, 0, size * 4 - 1, size * 4 - 1), fill=255)
     mask = mask.resize((size, size), Image.LANCZOS)
-    if key in CAST:
-        name, (cx, cy, s) = CAST[key]
-        p = os.path.join(CACHE, name)
+    if key in PORTRAITS or key in CAST:
+        if key in PORTRAITS:
+            url, (cx, cy, s) = PORTRAITS[key]
+        else:
+            name, (cx, cy, s) = CAST[key]
+            url = SHEETS + name
+        p = os.path.join(CACHE, url.rsplit('/', 1)[1])
         if not os.path.exists(p):
-            urllib.request.urlretrieve(SHEETS + name, p)
+            urllib.request.urlretrieve(url, p)
         im = Image.open(p).convert('RGB')
         x0 = max(0, min(im.width - s, cx - s // 2)); y0 = max(0, min(im.height - s, cy - s // 2))
         face = im.crop((x0, y0, x0 + s, y0 + s)).resize((size, size), Image.LANCZOS)
@@ -171,7 +181,13 @@ def ring(img, key, cx, cy, size, color):
     d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=color)
     a = avatar(key, size)
     img.alpha_composite(a, (int(cx - size / 2), int(cy - size / 2)))
-    if key not in CAST:
+    if key == 'raqib':   # دور مخفي: لا يظهر كشخصية — شارة ✓ «متوافق» بدل الوجه
+        r2 = size / 2
+        d.ellipse((cx - r2, cy - r2, cx + r2, cy + r2), fill=C['pos'])
+        w = max(3, int(size * 0.07))
+        d.line([(cx - r2 * 0.42, cy + r2 * 0.02), (cx - r2 * 0.1, cy + r2 * 0.34), (cx + r2 * 0.46, cy - r2 * 0.3)],
+               fill=C['ink'], width=w, joint='curve')
+    elif key not in CAST and key not in PORTRAITS:
         f = font('bold', max(20, int(size / S * 0.42)))
         ctext(d, cx, cy - f.size * 0.62, NO_FACE.get(key, '•'), f, C['muted'])
 

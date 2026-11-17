@@ -306,6 +306,11 @@
       "voice_id": "d9d5c263-f84e-4752-97b5-3750fcc6fd2f",
       "post_fx": "aresample=44100,lowpass=f=7500,rubberband=pitch=0.88:tempo=0.94:formant=preserved,vibrato=f=5.5:d=0.06",
       "note": "السلحفاة الشايب (الأساسي) — اختاره بدر 15 نوفمبر (حلقة 4، خيار 1): Alistair مع معالجة محلية تكبّر العمر (60–70 سنة). أي سطر يديد يمر بنفس post_fx. تنبيه: lowpass لازم قبل vibrato — بالعكس يطلع الملف صامت (صار بالحلقة 4 وخلى intone يرفض السلحفاة)."
+    },
+    "macro": {
+      "name": "Hana",
+      "voice_id": "c25f78a0-714e-42af-8da3-a399cef94968",
+      "note": "الغزالة — اختارها بدر 17 نوفمبر (حلقة 5) من صوتين (Hana / Nora)"
     }
   },
   "episode_nvda_pilot": {

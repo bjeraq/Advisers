@@ -10,5 +10,28 @@
   "8_gazelle_B": "a48fa0a9-80ee-4b00-86bd-92d5e7800e17",
   "9_fox_B": "fd34eefc-cb66-48ac-b9a9-204902c5c969",
   "10_clash_B": "21775f58-4c5e-4930-89dd-ec2a1f9e6144",
-  "voice_test": {"A_Hana": "a533e2c9-b44e-4049-b01d-41394b8f9fbe", "B_Nora": "166e24ec-d2ff-426e-840d-365cb2a0e5ea"}
+  "voice_test": {
+    "A_Hana": "a533e2c9-b44e-4049-b01d-41394b8f9fbe",
+    "B_Nora": "166e24ec-d2ff-426e-840d-365cb2a0e5ea"
+  },
+  "7_falcon_close_v2": {
+    "A_on_table": "a084afbd-6ede-48c1-af90-9493ae7e96bc",
+    "B_on_chair": "8e931a7e-2be4-4277-8c3d-fe22bf1e213f",
+    "why": "بدر 17 نوفمبر: الصقر بالإطار 7 مقصوص للنص"
+  },
+  "approved_2026_11_17": {
+    "frames": "1–6 (الأول بكل خانة)",
+    "gazelle_voice": "A Hana (c25f78a0-714e-42af-8da3-a399cef94968)",
+    "final_resolution": "720"
+  },
+  "audio_jobs": {
+    "1_open": "4e68a366-1789-4870-b3a1-206cb950af06",
+    "2_gazelle": "a533e2c9-b44e-4049-b01d-41394b8f9fbe",
+    "3_dhub": "d39cd9e0-ff60-43a7-a2a5-2fb02abd2044",
+    "4_fox": "1e2cfa98-a5f6-44c5-8544-83d0653fcc5c",
+    "5a_clash_dhub": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf",
+    "5b_clash_fox": "83c63ac5-a37e-4fc4-a843-b4c409c37683",
+    "6_judge": "b9842873-399d-4fe1-8c72-da0f0f471cdc",
+    "7_close": "7af78d44-1b03-4b62-8450-cd7ad1a80481"
+  }
 }

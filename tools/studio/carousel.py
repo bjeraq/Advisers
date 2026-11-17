@@ -12,6 +12,8 @@
            (قاعدة بدر 2026-11-16: عشان اللي يتصفح يلقى سهمه على طول). لو ما انكتبت، الأداة تبنيها
            تلقائياً من meta.brand و episode.json (ticker/data_date) اللي جنب carousel.json.
   hook     kicker, headline, big, big_sub, faces[ids], swipe      — الغلاف اللي يشد
+  bold     lines[], tag, bg, focus_y, faces, footer, date         — نفس شكل غلاف الريل (tools/studio/cover.py):
+           عنوان عريض بسطور قصيرة ورقم ملوّن وسؤال. ينفع مكان hook (بعد شريحة الاسم والتاريخ) أو بوست سريع.
   facts    title, rows[[label, value, tone]], note                 — الأرقام اللي كانت قدام القاضي
   duel     title, left{id,name,vote,score,points[]}, right{...}    — الضب ضد الثعلب (أو أي اثنين)
   voices   title, items[{id,name,vote,score,line}] (≤4)            — مستشارين بسطر لكل واحد
@@ -486,7 +488,14 @@ def s_decide(img, d, sl, meta):
         para(d, W - PAD, H - 200 * S, sl['disclaimer'], font('med', 26), C['muted'], W - 2 * PAD, center=W / 2)
 
 
-RENDER = {'cover': s_cover, 'hook': s_hook, 'facts': s_facts, 'duel': s_duel, 'voices': s_voices, 'board': s_board,
+def s_bold(img, d, sl, meta):
+    from cover import render                 # نفس رسام غلاف الريل
+    spec = dict(sl)
+    spec.setdefault('tag', meta.get('brand'))
+    img.alpha_composite(render(spec, W // S, H // S, meta.get('_base', '.'), safe=(110, H // S - 110), final=False))
+
+
+RENDER = {'cover': s_cover, 'hook': s_hook, 'bold': s_bold, 'facts': s_facts, 'duel': s_duel, 'voices': s_voices, 'board': s_board,
           'profiles': s_profiles, 'verdict': s_verdict, 'decide': s_decide}
 
 
@@ -497,6 +506,7 @@ def main(argv=None):
     spec = json.load(open(a.spec, encoding='utf-8'))
     os.makedirs(a.out, exist_ok=True)
     slides = spec['slides']; meta = spec.get('meta', {})
+    meta['_base'] = os.path.dirname(os.path.abspath(a.spec))
     if not slides or slides[0].get('type') != 'cover':
         slides = [auto_cover(a.spec, meta)] + slides
     paths = []

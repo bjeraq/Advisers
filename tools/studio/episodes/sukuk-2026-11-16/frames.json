@@ -22,7 +22,9 @@
   "approved_2026_11_17": {
     "frames": "1–6 (الأول بكل خانة)",
     "gazelle_voice": "A Hana (c25f78a0-714e-42af-8da3-a399cef94968)",
-    "final_resolution": "720"
+    "final_resolution": "720",
+    "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8 (بالمخالب، على الأرض)",
+    "script": "v4"
   },
   "audio_jobs": {
     "1_open": "4e68a366-1789-4870-b3a1-206cb950af06",
@@ -38,5 +40,15 @@
     "A_talons": "eadf7373-1349-47bf-9969-6895aa3ec2e8",
     "B_boots": "a906ff3f-6499-4e0e-b6ba-8f42f7a442c5",
     "why": "بدر: لا فوق الطاولة ولا على الكرسي — واقف على الأرض"
+  },
+  "audio_jobs_v4": {
+    "1_open": "733f8172-8d00-4b0a-ba85-eaabd687874c",
+    "2_gazelle": "e9d45d5c-7260-404d-861a-0d639d2c64ff",
+    "3_dhub": "d4e9c583-f6ff-4460-a170-21d5bab31d0f",
+    "4_fox": "82ecc3a3-18a0-4ca4-834a-1631f40a8981",
+    "5a_clash_dhub": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf",
+    "5b_clash_fox": "83c63ac5-a37e-4fc4-a843-b4c409c37683",
+    "6_judge": "f2c3483f-db01-4d3c-a3d7-a870ec717ee7",
+    "7_close": "87c49e5d-87ef-4094-ae89-2e04baee1cce"
   }
 }

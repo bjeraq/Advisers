@@ -10,39 +10,372 @@
   "fonts": "fonts",
   "location": "قاعة المجلس المعتمدة (council_wide_v5)",
   "lines": {
-    "open": {"speaker": "rassad", "voice": "Andre", "audio": "src/sukuk/lines/1_open.mp3", "text": "أول مرة ببورصة الكويت... صكوك تنباع مثل الأسهم! بيت التمويل طرح ميتين مليون دينار. يا غزالة، شنو هالصكوك؟", "audio_job": "733f8172-8d00-4b0a-ba85-eaabd687874c"},
-    "gazelle": {"speaker": "macro", "voice": "Hana", "audio": "src/sukuk/lines/2_gazelle.mp3", "text": "الصك حصة بمشروع حقيقي، مو قرض بفايدة. وصكوك بيتك نوعها مضاربة: الصك بألف دينار، وربحه خمسة ونص بالمية، ينصرف كل ست شهور... بس ما لها تاريخ تخلص فيه.", "audio_job": "e9d45d5c-7260-404d-861a-0d639d2c64ff"},
-    "dhub": {"speaker": "thawr", "voice": "Holden", "audio": "src/sukuk/lines/3_dhub.mp3", "text": "أنا شغلتي ألقى سبب للشراء... كل ألف دينار تعطيك خمسة وخمسين بالسنة، والوديعة تقريباً سبعة وثلاثين. والبنك كبير، وأرباحه تغطي توزيعات الصكوك وزيادة!", "audio_job": "d4e9c583-f6ff-4460-a170-21d5bab31d0f"},
-    "fox": {"speaker": "dubb", "voice": "Arthur", "stability": 0.6, "audio": "src/sukuk/lines/4_fox.mp3", "text": "صح، فيها مميزات، بس ترى فيها مخاطر: البنك هو اللي يقرر متى يرجّع فلوسك، وأول فرصة بعد ست سنين. والربح ممكن ما ينصرف... وبأزمة كبيرة، ممكن تروح فلوسك.", "audio_job": "82ecc3a3-18a0-4ca4-834a-1631f40a8981"},
-    "clasht": {"speaker": "thawr", "voice": "Holden", "audio": "src/sukuk/lines/5a_clash_dhub.mp3", "text": "البنك ربحان!", "audio_job": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf"},
-    "clashd": {"speaker": "dubb", "voice": "Arthur", "stability": 0.6, "audio": "src/sukuk/lines/5b_clash_fox.mp3", "text": "وفلوسك محبوسة لين ألفين واثنين وثلاثين!", "audio_job": "83c63ac5-a37e-4fc4-a843-b4c409c37683"},
-    "judge": {"speaker": "qadhi", "voice": "Gideon", "audio": "src/sukuk/lines/6_judge.mp3", "text": "ميزان الاستثمار: اثنين وعشرين بالموجب. صكوك بيتك مو وديعة. اللي يبي دخل ثابت: ينطر توزيع عشرين نوفمبر، ويشتري بألف أو أقل، بجزء من فلوسه. وثقتي سبعة من عشرة.", "audio_job": "f2c3483f-db01-4d3c-a3d7-a870ec717ee7"},
-    "cta": {"speaker": "rassad", "voice": "Andre", "audio": "src/sukuk/lines/7_close.mp3", "text": "والقرار قراركم... رايكم بالتعليقات! وباجر، موضوعنا عن الذهب: تبيعه ولا تخليه؟", "audio_job": "fc9b2477-63a9-4f2b-aed7-916de6288c50", "_v": "بدر: 7C"}
+    "open": {
+      "speaker": "rassad",
+      "voice": "Andre",
+      "audio": "src/sukuk/lines/1_open.mp3",
+      "text": "أول مرة ببورصة الكويت... صكوك تنباع مثل الأسهم! بيت التمويل طرح ميتين مليون دينار. يا غزالة، شنو هالصكوك؟",
+      "audio_job": "733f8172-8d00-4b0a-ba85-eaabd687874c"
+    },
+    "gazelle": {
+      "speaker": "macro",
+      "voice": "Hana",
+      "audio": "src/sukuk/lines/2_gazelle.mp3",
+      "text": "الصك حصة بمشروع حقيقي، مو قرض بفايدة. وصكوك بيتك نوعها مضاربة: الصك بألف دينار، وربحه خمسة ونص بالمية، ينصرف كل ست شهور... بس ما لها تاريخ تخلص فيه.",
+      "audio_job": "e9d45d5c-7260-404d-861a-0d639d2c64ff"
+    },
+    "dhub": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "audio": "src/sukuk/lines/3_dhub.mp3",
+      "text": "أنا شغلتي ألقى سبب للشراء... كل ألف دينار تعطيك خمسة وخمسين بالسنة، والوديعة تقريباً سبعة وثلاثين. والبنك كبير، وأرباحه تغطي توزيعات الصكوك وزيادة!",
+      "audio_job": "d4e9c583-f6ff-4460-a170-21d5bab31d0f"
+    },
+    "fox": {
+      "speaker": "dubb",
+      "voice": "Arthur",
+      "stability": 0.6,
+      "audio": "src/sukuk/lines/4_fox.mp3",
+      "text": "صح، فيها مميزات، بس ترى فيها مخاطر: البنك هو اللي يقرر متى يرجّع فلوسك، وأول فرصة بعد ست سنين. والربح ممكن ما ينصرف... وبأزمة كبيرة، ممكن تروح فلوسك.",
+      "audio_job": "82ecc3a3-18a0-4ca4-834a-1631f40a8981"
+    },
+    "clasht": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "audio": "src/sukuk/lines/5a_clash_dhub.mp3",
+      "text": "البنك ربحان!",
+      "audio_job": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf"
+    },
+    "clashd": {
+      "speaker": "dubb",
+      "voice": "Arthur",
+      "stability": 0.6,
+      "audio": "src/sukuk/lines/5b_clash_fox.mp3",
+      "text": "وفلوسك محبوسة لين ألفين واثنين وثلاثين!",
+      "audio_job": "83c63ac5-a37e-4fc4-a843-b4c409c37683"
+    },
+    "judge": {
+      "speaker": "qadhi",
+      "voice": "Gideon",
+      "audio": "src/sukuk/lines/6_judge.mp3",
+      "text": "ميزان الاستثمار: اثنين وعشرين بالموجب. صكوك بيتك مو وديعة. اللي يبي دخل ثابت: ينطر توزيع عشرين نوفمبر، ويشتري بألف أو أقل، بجزء من فلوسه. وثقتي سبعة من عشرة.",
+      "audio_job": "f2c3483f-db01-4d3c-a3d7-a870ec717ee7"
+    },
+    "cta": {
+      "speaker": "rassad",
+      "voice": "Andre",
+      "audio": "src/sukuk/lines/7_close.mp3",
+      "text": "والقرار قراركم... رايكم بالتعليقات! وباجر، موضوعنا عن الذهب: تبيعه ولا تخليه؟",
+      "audio_job": "fc9b2477-63a9-4f2b-aed7-916de6288c50",
+      "_v": "بدر: 7C"
+    }
   },
   "graphics": {
-    "income": {"kind": "compare_bars", "a_label": "الصك", "a_value": "55 د.ك", "b_label": "الوديعة", "b_value": "37 د.ك", "dur": 3.5},
-    "meter": {"kind": "verdict_meter", "score": 22, "scale_max": 30, "votes": [["شراء", 4, "teal"], ["انتظار", 11, "gold"], ["بيع", 0, "red"]], "title": "ميزان الاستثمار", "dur": 4.5}
+    "income": {
+      "kind": "compare_bars",
+      "a_label": "الصك",
+      "a_value": "55 د.ك",
+      "b_label": "الوديعة",
+      "b_value": "37 د.ك",
+      "dur": 3.5
+    },
+    "meter": {
+      "kind": "verdict_meter",
+      "score": 22,
+      "scale_max": 30,
+      "votes": [
+        [
+          "شراء",
+          4,
+          "teal"
+        ],
+        [
+          "انتظار",
+          11,
+          "gold"
+        ],
+        [
+          "بيع",
+          0,
+          "red"
+        ]
+      ],
+      "title": "ميزان الاستثمار",
+      "dur": 4.5
+    }
   },
   "cards": {
-    "title": {"kind": "title", "label": "مجلس اليوم • الثلاثاء 17 نوفمبر 2026", "title": "صكوك بيتك", "subtitle": "أول صكوك ببورصة الكويت — مو وديعة!", "pills": [["أول صكوك ببورصة الكويت", "teal"], ["صكوك مضاربة (حسب المُصدِر)", "gold"]], "date_pill": "بيانات الثلاثاء 17 نوفمبر 2026"},
-    "terms": {"kind": "card", "accent": "gold", "lines": [["صكوك بيتك: 200 مليون د.ك • مضاربة", 32, "bold", "white"], ["الصك 1,000 د.ك • ربح 5.5% (55 د.ك)", 34, "bold", "light_teal"], ["كل 6 شهور (أوله 20 نوفمبر) • بدون تاريخ استحقاق", 24, "med", "sub"]], "y": 0.69},
-    "dhub": {"kind": "card", "accent": "teal", "lines": [["ربح بيتك بـ3 شهور: 160.3 مليون د.ك", 32, "bold", "white"], ["توزيعات الصكوك: 11 مليون د.ك بالسنة", 32, "bold", "light_teal"]], "y": 0.69},
-    "fox": {"kind": "card", "accent": "red", "lines": [["صكوك «الشريحة الأولى» لرأسمال البنك", 30, "bold", "white"], ["الاسترداد بيد البنك (أول فرصة ~2032)", 32, "bold", "light_teal"], ["الربح يجوز ما ينصرف • بأزمة شديدة ممكن تنشطب", 24, "med", "sub"]], "y": 0.69},
-    "verdict": {"kind": "card", "accent": "teal", "lines": [["متحفظ ← وديعة ~3.70%", 32, "bold", "white"], ["يبي دخل ثابت ← بعد 20 نوفمبر، بـ1,000 أو أقل", 28, "bold", "light_teal"], ["مغامر ← ينطر سعر 990 أو أقل • الثقة 7/10", 24, "med", "sub"]], "y": 0.69},
-    "cta": {"kind": "card", "accent": "teal", "y": 0.3, "lines": [["مو وديعة • اقرا الشروط • القرار قراركم", 34, "bold", "white"], ["باجر: الذهب — تبيعه ولا تخليه؟", 36, "bold", "light_teal"]]},
-    "disc": {"kind": "disclaimer", "text": "تحليل لا توصية • البيانات بتاريخ الثلاثاء 17 نوفمبر 2026 وتتغير — راجع الشروط والسعر قبل قرارك"}
+    "title": {
+      "kind": "title",
+      "label": "مجلس اليوم • الثلاثاء 17 نوفمبر 2026",
+      "title": "صكوك بيتك",
+      "subtitle": "أول صكوك ببورصة الكويت — مو وديعة!",
+      "pills": [
+        [
+          "صكوك مضاربة (حسب المُصدِر)",
+          "gold"
+        ],
+        [
+          "الربح 5.5% مو مضمون",
+          "teal"
+        ]
+      ],
+      "date_pill": "بيانات الثلاثاء 17 نوفمبر 2026"
+    },
+    "terms": {
+      "kind": "card",
+      "accent": "gold",
+      "lines": [
+        [
+          "صكوك بيتك: 200 مليون د.ك • مضاربة",
+          32,
+          "bold",
+          "white"
+        ],
+        [
+          "الصك 1,000 د.ك • ربح 5.5% (55 د.ك)",
+          34,
+          "bold",
+          "light_teal"
+        ],
+        [
+          "كل 6 شهور (أوله 20 نوفمبر) • بدون تاريخ استحقاق",
+          24,
+          "med",
+          "sub"
+        ]
+      ],
+      "y": 0.69
+    },
+    "dhub": {
+      "kind": "card",
+      "accent": "teal",
+      "lines": [
+        [
+          "ربح بيتك بـ3 شهور: 160.3 مليون د.ك",
+          32,
+          "bold",
+          "white"
+        ],
+        [
+          "توزيعات الصكوك: 11 مليون د.ك بالسنة",
+          32,
+          "bold",
+          "light_teal"
+        ]
+      ],
+      "y": 0.69
+    },
+    "fox": {
+      "kind": "card",
+      "accent": "red",
+      "lines": [
+        [
+          "صكوك «الشريحة الأولى» لرأسمال البنك",
+          30,
+          "bold",
+          "white"
+        ],
+        [
+          "الاسترداد بيد البنك (أول فرصة ~2032)",
+          32,
+          "bold",
+          "light_teal"
+        ],
+        [
+          "الربح يجوز ما ينصرف • بأزمة شديدة ممكن تنشطب",
+          24,
+          "med",
+          "sub"
+        ]
+      ],
+      "y": 0.69
+    },
+    "verdict": {
+      "kind": "card",
+      "accent": "teal",
+      "lines": [
+        [
+          "متحفظ ← وديعة ~3.70%",
+          32,
+          "bold",
+          "white"
+        ],
+        [
+          "يبي دخل ثابت ← بعد 20 نوفمبر، بـ1,000 أو أقل",
+          28,
+          "bold",
+          "light_teal"
+        ],
+        [
+          "مغامر ← ينطر سعر 990 أو أقل • الثقة 7/10",
+          24,
+          "med",
+          "sub"
+        ]
+      ],
+      "y": 0.69
+    },
+    "cta": {
+      "kind": "card",
+      "accent": "teal",
+      "y": 0.3,
+      "lines": [
+        [
+          "مو وديعة • اقرا الشروط • القرار قراركم",
+          34,
+          "bold",
+          "white"
+        ],
+        [
+          "باجر: الذهب — تبيعه ولا تخليه؟",
+          36,
+          "bold",
+          "light_teal"
+        ]
+      ]
+    },
+    "disc": {
+      "kind": "disclaimer",
+      "text": "تحليل لا توصية • البيانات بتاريخ الثلاثاء 17 نوفمبر 2026 وتتغير — راجع الشروط والسعر قبل قرارك"
+    }
   },
   "scenes": [
-    {"id": "open", "type": "vo_clip", "line": "open", "delay": 0.2, "duration": 11.0, "video": {"draft": "src/sukuk/s720_intro.mp4", "final": "src/sukuk/s720_intro.mp4"}, "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e", "card": {"name": "title", "at": 0.6, "fade": 0.5}},
-    {"id": "gazelle", "type": "lipsync", "line": "gazelle", "video": {"draft": "src/sukuk/d480_gazelle.mp4", "final": "src/sukuk/d480_gazelle.mp4"}, "draft_job": "ed306406-79da-4625-97b4-283d27ec2245", "card": {"name": "terms", "at": "cue", "cue": "وصكوك"}},
-    {"id": "dhub", "type": "lipsync", "line": "dhub", "video": {"draft": "src/sukuk/d480_dhub.mp4", "final": "src/sukuk/d480_dhub.mp4"}, "draft_job": "42dd0e5a-d732-4879-85c4-31b02620445b", "graphic": {"name": "income", "cue": "خمسة", "box": [60, 560, 360]}, "card": {"name": "dhub", "at": "after_graphic"}},
-    {"id": "fox", "type": "lipsync", "line": "fox", "video": {"draft": "src/sukuk/d480_fox.mp4", "final": "src/sukuk/d480_fox.mp4"}, "draft_job": "7e828930-21fe-47be-a738-82a1a3aacf48", "_note": "المحاولة الأولى 20dc115e رفضت: الإطار فيه شخصيتين — character صار قص الثعلب لحاله 89797d46", "card": {"name": "fox", "at": "cue", "cue": "مخاطر"}},
-    {"id": "clash", "type": "clash", "lines": ["clasht", "clashd"], "video": {"draft": "src/sukuk/d480_clash.mp4", "final": "src/sukuk/d480_clash.mp4"}, "draft_job": "906cbc38-929e-41fa-83f6-261e3bc180c7", "shake": "محبوسة"},
-    {"id": "judge", "type": "lipsync", "line": "judge", "video": {"draft": "src/sukuk/d480_judge.mp4", "final": "src/sukuk/d480_judge.mp4"}, "draft_job": "d6628eac-b43d-4054-b0cf-c65dc6474e52", "graphic": {"name": "meter", "cue": "ميزان", "box": [140, 552, 360]}, "card": {"name": "verdict", "at": "after_graphic", "fade": 0.6}},
-    {"id": "cta", "type": "still_vo", "line": "cta", "delay": 0.3, "duration": 8.3, "image": "src/sukuk/kf_falcon_close.png", "card": {"name": "cta", "at": 0.4}}
+    {
+      "id": "open",
+      "type": "vo_clip",
+      "line": "open",
+      "delay": 0.2,
+      "duration": 11.0,
+      "video": {
+        "draft": "src/sukuk/s720_intro.mp4",
+        "final": "src/sukuk/s720_intro.mp4"
+      },
+      "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
+      "card": {
+        "name": "title",
+        "at": 0.6,
+        "fade": 0.5
+      }
+    },
+    {
+      "id": "gazelle",
+      "type": "lipsync",
+      "line": "gazelle",
+      "video": {
+        "draft": "src/sukuk/d480_gazelle.mp4",
+        "final": "src/sukuk/d480_gazelle.mp4"
+      },
+      "draft_job": "ed306406-79da-4625-97b4-283d27ec2245",
+      "card": {
+        "name": "terms",
+        "at": "cue",
+        "cue": "وصكوك"
+      }
+    },
+    {
+      "id": "dhub",
+      "type": "lipsync",
+      "line": "dhub",
+      "video": {
+        "draft": "src/sukuk/d480_dhub.mp4",
+        "final": "src/sukuk/d480_dhub.mp4"
+      },
+      "draft_job": "42dd0e5a-d732-4879-85c4-31b02620445b",
+      "graphic": {
+        "name": "income",
+        "cue": "خمسة",
+        "box": [
+          40,
+          600,
+          300
+        ]
+      },
+      "card": {
+        "name": "dhub",
+        "at": "after_graphic"
+      }
+    },
+    {
+      "id": "fox",
+      "type": "lipsync",
+      "line": "fox",
+      "video": {
+        "draft": "src/sukuk/d480_fox.mp4",
+        "final": "src/sukuk/d480_fox.mp4"
+      },
+      "draft_job": "fc6b203a-af7a-4248-bbb4-e8f118772187",
+      "_note": "20dc115e و7e828930 رفضتهم intone (صورة الشخصية لازم وحدة وعيونها مفتوحة) — character صار بورتريه الثعلب الرملي 692b293c",
+      "card": {
+        "name": "fox",
+        "at": "cue",
+        "cue": "مخاطر"
+      }
+    },
+    {
+      "id": "clash",
+      "type": "clash",
+      "lines": [
+        "clasht",
+        "clashd"
+      ],
+      "video": {
+        "draft": "src/sukuk/d480_clash.mp4",
+        "final": "src/sukuk/d480_clash.mp4"
+      },
+      "draft_job": "906cbc38-929e-41fa-83f6-261e3bc180c7",
+      "shake": "محبوسة"
+    },
+    {
+      "id": "judge",
+      "type": "lipsync",
+      "line": "judge",
+      "video": {
+        "draft": "src/sukuk/d480_judge.mp4",
+        "final": "src/sukuk/d480_judge.mp4"
+      },
+      "draft_job": "d6628eac-b43d-4054-b0cf-c65dc6474e52",
+      "graphic": {
+        "name": "meter",
+        "cue": "ميزان",
+        "box": [
+          140,
+          552,
+          360
+        ]
+      },
+      "card": {
+        "name": "verdict",
+        "at": "after_graphic",
+        "fade": 0.6
+      }
+    },
+    {
+      "id": "cta",
+      "type": "still_vo",
+      "line": "cta",
+      "delay": 0.3,
+      "duration": 8.3,
+      "image": "src/sukuk/kf_falcon_close.png",
+      "card": {
+        "name": "cta",
+        "at": 0.4
+      }
+    }
   ],
   "generation": {
     "_comment": "intone 480p بنفس وصفات الحلقات السابقة. الثعلب: character = إطار الثعلب الرملي الجديد 0808e107 (ورقته القديمة 4708d2a3 شكلها ذيب). الغزالة: ورقة d77cbde9 + إطار 64c9000a. الصقر بالختام واقف على الأرض eadf7373.",
-    "frames": {"wide": "844ed442-8b47-41f8-8b47-e762fa88adae", "gazelle": "64c9000a-ae94-4ce8-ac40-c0d7eca378c5", "dhub": "100cdf87-be76-4bae-9975-1d60431b5914", "fox": "0808e107-31c6-43ab-b41d-47e660d92dda", "clash": "46efdf5f-d2b0-4acc-a4a4-285b1e20e8ad", "judge": "ae781c26-a251-49f3-96bc-a832599f0f7d", "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8"}
-  }
+    "frames": {
+      "wide": "844ed442-8b47-41f8-8b47-e762fa88adae",
+      "gazelle": "64c9000a-ae94-4ce8-ac40-c0d7eca378c5",
+      "dhub": "100cdf87-be76-4bae-9975-1d60431b5914",
+      "fox": "0808e107-31c6-43ab-b41d-47e660d92dda",
+      "clash": "46efdf5f-d2b0-4acc-a4a4-285b1e20e8ad",
+      "judge": "ae781c26-a251-49f3-96bc-a832599f0f7d",
+      "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8"
+    }
+  },
+  "video_media_id": "0ef8de58-ace8-4e47-8c7c-a94498f13b0f",
+  "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/0ef8de58-ace8-4e47-8c7c-a94498f13b0f.mp4",
+  "verify": "كل المشاهد ✅ — أقل تشابه 0.89 (القاضي: الأرقام تنكتب بالتفريغ أرقام)"
 }

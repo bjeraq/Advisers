@@ -16,9 +16,9 @@
   "open": {
    "speaker": "rassad",
    "voice": "Andre",
-   "audio": "src/ep7/lines/1_open_v2.mp3",
-   "text": "قبل أربع أيام قال المجلس: انطروا النتايج. والليلة طلعت: مبيعات إنفيديا مية وستعش مليار دولار بثلاث شهور! بس السهم للحين نازل. شنو تغيّر؟ ومنو صدق؟",
-   "audio_job": "db570e65-d5ca-4981-b555-92891ba46743"
+   "audio": "src/ep7/lines/1_open_v3.mp3",
+   "text": "قبل أربع أيام قال المجلس: انطروا النتايج. والليلة طلعت: مبيعات إنفيديا مية وستعش مليار دولار بثلاث شهور! بس السهم للحين نازل. شنو تغيّر؟",
+   "audio_job": "37ac8b09-d961-4cb0-a3e6-17e4883809b1"
   },
   "dhub": {
    "speaker": "thawr",
@@ -67,9 +67,9 @@
   "cta": {
    "speaker": "rassad",
    "voice": "Andre",
-   "audio": "src/ep7/lines/7_close.mp3",
-   "text": "المجلس قال انطروا... وصدق. والقرار قراركم: شنو ودكم تسوون مع إنفيديا وAMD؟ اكتبوها بالكومنتات!",
-   "audio_job": "84225d78-97a5-4616-8f6f-2b67b059c542"
+   "audio": "src/ep7/lines/7_close_v3.mp3",
+   "text": "والقرار قراركم: شنو ودكم تسوون مع إنفيديا وAMD؟ اكتبوها بالكومنتات!",
+   "audio_job": "cf3bccfb-fabc-4269-a235-45e26438bfe9"
   }
  },
  "graphics": {
@@ -228,7 +228,7 @@
    "y": 0.3,
    "lines": [
     [
-     "منو صدق؟ «انطروا» — اللي انتظر ما خسر شي",
+     "اللي انتظر النتايج ما خسر شي",
      32,
      "bold",
      "white"
@@ -252,7 +252,7 @@
    "type": "vo_clip",
    "line": "open",
    "delay": 0.2,
-   "duration": 14.4,
+   "duration": 13.6,
    "video": {
     "draft": "src/ep7/intro_slow.mp4",
     "final": "src/ep7/intro_slow.mp4"
@@ -364,12 +364,13 @@
    "type": "still_vo",
    "line": "cta",
    "delay": 0.3,
-   "duration": 8.0,
+   "duration": 8.4,
    "image": "src/ep7/kf_falcon_close.png",
    "card": {
     "name": "cta",
     "at": 0.4
-   }
+   },
+   "_note": "بدر v3: الصقر كان ينقطع قبل آخر كلمة — المدة = التأخير + طول التسجيل + ~1.7ث"
   }
  ],
  "generation": {
@@ -391,8 +392,9 @@
    "judge": "2eca681d-ff13-4e5b-aa91-de119c245559"
   }
  },
- "video_media_id": "2d20cec2-8736-4ef8-9694-920ea00d38fc",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/2d20cec2-8736-4ef8-9694-920ea00d38fc.mp4",
- "verify": "v2: كل المشاهد ✅ — أقل تشابه 0.83",
- "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18"
+ "video_media_id": "790cbcac-df72-4deb-b3f2-63e6f06298bf",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/790cbcac-df72-4deb-b3f2-63e6f06298bf.mp4",
+ "verify": "v3: كل المشاهد ✅",
+ "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
+ "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc"
 }

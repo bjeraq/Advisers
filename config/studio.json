@@ -542,22 +542,23 @@
       "script": "tools/studio/episodes/nvda-amd-2026-11-18/script.md",
       "carousel": "tools/studio/episodes/nvda-amd-2026-11-18/carousel.json",
       "cover": "tools/studio/episodes/nvda-amd-2026-11-18/cover/cover_reel.png",
-      "video_media_id": "790cbcac-df72-4deb-b3f2-63e6f06298bf",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/790cbcac-df72-4deb-b3f2-63e6f06298bf.mp4",
+      "video_media_id": "8d494601-3f42-417a-8d7d-d6b037eb5cdc",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/8d494601-3f42-417a-8d7d-d6b037eb5cdc.mp4",
       "site_page": "site/ep07-nvda-amd.html",
       "report": [
         "reports/2026-11-18_NVDA.md",
         "reports/2026-11-18_AMD.md"
       ],
       "resolution": "720x1280 (مشاهد 480 مجمعة بإطار 720)",
-      "duration_s": 84.5,
+      "duration_s": 85.1,
       "guest": "saboor",
       "cast": "الصقر • الضب (شراء) • الثعلب (حذر) • الجمل (ضيف، المستثمر الصبور) • القاضي",
       "location": "قاعة المجلس المعتمدة (council_wide_v5)",
       "verdict": "إنفيديا +54 (4 شراء / 11 انتظار / 0 بيع): الدفعة الأولى إذا صعد وخلص يوم التداول فوق 167$، ثقة 7/10 • AMD −5 (1/14/0): انتظار لين يخلص فوق 556$، ثقة 6/10",
-      "notes": "متابعة للحلقتين 1 و2 («شنو تغيّر؟ ومنو صدق؟»). السكريبت v1 بدون رد بدر خلال 45 دقيقة (طلبه للنشر الصبح). الضب: intone رفض صورته 4 مرات، فاستُخدم مقطعه المتحرك المعتمد من الحلقة 5 بصوته اليديد. الكلفة ~170 كريدت. • v2 (18 نوفمبر الصبح، ملاحظات بدر): أرقام المبيعات بالصوت، موعد التقرير ببطاقة، شرح «يبي كمال» ببطاقة، 167$ بصوت القاضي، معنى الثقة. ~68 كريدت. • v3: بدون «منو صدق» و«وصدق»، وختام الصقر كامل.",
+      "notes": "متابعة للحلقتين 1 و2 («شنو تغيّر؟ ومنو صدق؟»). السكريبت v1 بدون رد بدر خلال 45 دقيقة (طلبه للنشر الصبح). الضب: intone رفض صورته 4 مرات، فاستُخدم مقطعه المتحرك المعتمد من الحلقة 5 بصوته اليديد. الكلفة ~170 كريدت. • v2 (18 نوفمبر الصبح، ملاحظات بدر): أرقام المبيعات بالصوت، موعد التقرير ببطاقة، شرح «يبي كمال» ببطاقة، 167$ بصوت القاضي، معنى الثقة. ~68 كريدت. • v3: بدون «منو صدق» و«وصدق»، وختام الصقر كامل. • v4: الجمل «سعرها غالي وايد على أرباحها» بدل «يبي كمال».",
       "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
-      "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc"
+      "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc",
+      "video_media_id_v3": "790cbcac-df72-4deb-b3f2-63e6f06298bf"
     }
   ],
   "cast_retired": {

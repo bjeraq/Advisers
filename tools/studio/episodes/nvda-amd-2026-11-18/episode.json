@@ -53,9 +53,9 @@
   "camel": {
    "speaker": "saboor",
    "voice": "Fraser",
-   "audio": "src/ep7/lines/5_camel.mp3",
-   "text": "يا جماعة، أنا نظرتي بعيدة. إنفيديا شركة قوية، واللي شراها قبل أربع أيام للحين ما خسر شي. بس AMD؟ سعرها يبي كمال... وكبار المستثمرين طلعوا منها.",
-   "audio_job": "b02ad5a1-33cf-4bd4-87e0-c7a3421ecbe5"
+   "audio": "src/ep7/lines/5_camel_v2.mp3",
+   "text": "يا جماعة، أنا نظرتي بعيدة. إنفيديا شركة قوية، واللي شراها قبل أربع أيام للحين ما خسر شي. بس AMD؟ سعرها غالي وايد على أرباحها... وكبار المستثمرين طلعوا منها.",
+   "audio_job": "6d477309-617c-4184-a5a9-378450b485c7"
   },
   "judge": {
    "speaker": "qadhi",
@@ -178,14 +178,14 @@
    "y": 0.69,
    "lines": [
     [
-     "«سعرها يبي كمال» = AMD سعرها 116 مرة أرباحها",
+     "غالي على أرباحه: AMD سعرها 116 مرة أرباحها",
      28,
      "bold",
      "white"
     ],
     [
-     "(إنفيديا ~20) — أي غلطة بالنتايج تنزّلها وايد",
-     28,
+     "وإنفيديا تقريباً 20 مرة بس",
+     30,
      "bold",
      "light_teal"
     ],
@@ -325,15 +325,15 @@
    "type": "lipsync",
    "line": "camel",
    "video": {
-    "draft": "src/ep7/d480_camel.mp4",
-    "final": "src/ep7/d480_camel.mp4"
+    "draft": "src/ep7/d480_camel_v2.mp4",
+    "final": "src/ep7/d480_camel_v2.mp4"
    },
    "card": {
     "name": "camel",
     "at": "cue",
     "cue": "AMD"
    },
-   "draft_job": "a6304f47-eed4-4f14-8040-12422a7f1aaf"
+   "draft_job": "b38c5efd-1796-4e58-9868-8046ec17c301"
   },
   {
    "id": "judge",

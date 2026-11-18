@@ -6,7 +6,7 @@
   {
    "id": "open",
    "file": "build/draft720/scenes/open.mp4",
-   "dur": 11.0,
+   "dur": 14.4,
    "lines": [
     "open"
    ]
@@ -47,7 +47,7 @@
   {
    "id": "judge",
    "file": "build/draft720/scenes/judge.mp4",
-   "dur": 15.333,
+   "dur": 17.733,
    "lines": [
     "judge"
    ]

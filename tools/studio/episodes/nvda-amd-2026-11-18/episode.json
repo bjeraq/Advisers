@@ -266,11 +266,11 @@
   },
   {
    "id": "dhub",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "dhub",
    "video": {
-    "draft": "src/ep7/d480_dhub.mp4",
-    "final": "src/ep7/d480_dhub.mp4"
+    "draft": "src/ep7/dhub_ep5.mp4",
+    "final": "src/ep7/dhub_ep5.mp4"
    },
    "graphic": {
     "name": "growth",
@@ -285,7 +285,10 @@
     "name": "dhub",
     "at": "after_graphic"
    },
-   "draft_job": "6835604b-4cb9-4de2-82f0-72357dc3d076"
+   "delay": 0.2,
+   "duration": 13.2,
+   "video_job": "42dd0e5a-d732-4879-85c4-31b02620445b",
+   "_note": "intone رفض الضب 4 مرات (6835604b، 5f833e18، aaf5c720، 5cdb72d6: «صورة الشخصية لازم وجه واحد مواجه»). البديل المجاني: مقطعه المتحرك المعتمد من الحلقة 5 (42dd0e5a) بصوته اليديد فوقه."
   },
   {
    "id": "fox",
@@ -386,5 +389,8 @@
    "camel": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
    "judge": "2eca681d-ff13-4e5b-aa91-de119c245559"
   }
- }
+ },
+ "video_media_id": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/4ce5dd5b-adaf-4bda-ba2d-550b180ebd18.mp4",
+ "verify": "كل المشاهد ✅ — أقل تشابه 0.78 (الختام: التفريغ كتب «NVIDIA» بالإنجليزي وقطع آخر كلمة)"
 }

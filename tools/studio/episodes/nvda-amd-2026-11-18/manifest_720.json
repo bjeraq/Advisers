@@ -1,0 +1,64 @@
+{
+ "output": "build/draft720/nvda-amd-2026-11-18_draft720.mp4",
+ "res": 720,
+ "stage": "draft",
+ "scenes": [
+  {
+   "id": "open",
+   "file": "build/draft720/scenes/open.mp4",
+   "dur": 11.0,
+   "lines": [
+    "open"
+   ]
+  },
+  {
+   "id": "dhub",
+   "file": "build/draft720/scenes/dhub.mp4",
+   "dur": 13.2,
+   "lines": [
+    "dhub"
+   ]
+  },
+  {
+   "id": "fox",
+   "file": "build/draft720/scenes/fox.mp4",
+   "dur": 11.9,
+   "lines": [
+    "fox"
+   ]
+  },
+  {
+   "id": "clash",
+   "file": "build/draft720/scenes/clash.mp4",
+   "dur": 7.4,
+   "lines": [
+    "clasht",
+    "clashd"
+   ]
+  },
+  {
+   "id": "camel",
+   "file": "build/draft720/scenes/camel.mp4",
+   "dur": 12.2,
+   "lines": [
+    "camel"
+   ]
+  },
+  {
+   "id": "judge",
+   "file": "build/draft720/scenes/judge.mp4",
+   "dur": 15.333,
+   "lines": [
+    "judge"
+   ]
+  },
+  {
+   "id": "cta",
+   "file": "build/draft720/scenes/cta.mp4",
+   "dur": 8.0,
+   "lines": [
+    "cta"
+   ]
+  }
+ ]
+}

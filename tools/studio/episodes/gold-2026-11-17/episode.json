@@ -1,0 +1,60 @@
+{
+  "_comment": "Episode 6 — gold, focus on buyers during the war who lost. Script v2.2 approved by Bader 19 Nov (numbers refreshed to 19 Nov). Guests: hedgehog (mazloum, frame 5A) and Arabian horse (haris, frame 5D, first appearance, voice A Barrett / B Harrison). intone 480p drafts assembled at 720 = final (sukuk workflow). Opening reuses the approved push-in 6850991a, slowed to fit the line.",
+  "slug": "gold-2026-11-17",
+  "number": 6,
+  "title": "شريت ذهب وقت الحرب؟ — الذهب",
+  "ticker": "GOLD",
+  "data_date": "2026-11-19",
+  "compliance": "Physical gold only; hand-to-hand (taqabud) condition; paper gold out of scope. Raqib: no veto.",
+  "majlis_report": "reports/2026-11-17_GOLD.md",
+  "fonts": "fonts",
+  "location": "council hall (council_wide_v5)",
+  "lines": {
+    "open": {"speaker": "rassad", "voice": "Andre", "audio": "src/gold/lines/1_open.mp3", "audio_job": "764627d0-b04f-4a26-88f3-fd7f71a6215f",
+      "text": "اللي شرى ذهب وقت كورونا... ربحان، الله يهنيه. بس اللي شرى وقت الحرب، والأسعار فوق... كل ألف دينار صارت تقريباً سبع مية! يبيع ولا يصبر؟ يا ضب، شنو تقول؟"},
+    "dhub": {"speaker": "thawr", "voice": "Holden", "audio": "src/gold/lines/2_dhub.mp3", "audio_job": "b40a9494-6fda-474a-8133-4c7834489189",
+      "text": "أنا شغلتي ألقى سبب تخليه... لو بعت الحين، الخسارة تصير نهائية، والمحل يخصم عليك، والمصنعية ما ترجع. والبنوك المركزية للحين تشتري ذهب!"},
+    "fox": {"speaker": "dubb", "voice": "Arthur", "stability": 0.6, "audio": "src/gold/lines/3_fox.mp3", "audio_job": "2d8863a0-3b36-4bd8-abf6-095381d74c42",
+      "text": "صح، بس عشان يرجع للسعر اللي شريت فيه، لازم الذهب يرتفع أكثر من الثلث... وهذا ممكن ياخذ سنين. والذهب طول هالمدة ما يعطيك ولا فلس، والوديعة تعطيك كل سنة."},
+    "clasht": {"speaker": "thawr", "voice": "Holden", "audio": "src/gold/lines/4a_clash_dhub.mp3", "audio_job": "da6ca31c-7e63-4cb8-a621-5446e6829cfa", "text": "اصبر!"},
+    "clashd": {"speaker": "dubb", "voice": "Arthur", "stability": 0.6, "audio": "src/gold/lines/4b_clash_fox.mp3", "audio_job": "03344894-84b7-4f5e-a3d5-eef46fc31b01", "text": "لين متى؟"},
+    "hedge": {"speaker": "mazloum", "voice": "Emmett", "audio": "src/gold/lines/5_hedge.mp3", "audio_job": "bdc417c7-78de-4192-b6b0-d7da07696c4b",
+      "text": "وأنا شغلتي ألقى اللي انظلم... والذهب الحين مو مظلوم، نزوله له سبب. بس لا تبيع وإنت خايف."},
+    "horse": {"speaker": "haris", "voice": "Barrett", "audio": "src/gold/lines/6_horse_A.mp3", "audio_job": "d44011e9-64a7-4ef1-a489-c20db8e42e53",
+      "alt_B": {"voice": "Harrison", "audio": "src/gold/lines/6_horse_B.mp3", "audio_job": "bf6b9815-ed53-44ec-96ae-ade31bb7e61b"},
+      "text": "يا جماعة، أنا شغلتي أحمي المحفظة. إذا محتاج فلوس، بيع على قد حاجتك بس... وابدأ بالسبائك والليرات، وخل المشغولات. ولا تشتري زيادة الحين عشان تنزّل متوسط سعرك."},
+    "judge": {"speaker": "qadhi", "voice": "Gideon", "audio": "src/gold/lines/7_judge.mp3", "audio_job": "16110f7f-87d2-4961-a545-7c784b9f9432",
+      "text": "سمعت المستشارين: ثمانية قالوا اصبر، وسبعة قالوا بيع جزء صغير، ولا واحد قال بيع الكل. حكمي: لا تبيع الكل، ولا تشتري زيادة. ذهبك أقل من خمسة وثمانين غرام؟ خله، ما عليه زكاة. وتبي دخل؟ بيع ربع السبائك بس. وثقتي سبعة من عشرة."},
+    "cta": {"speaker": "rassad", "voice": "Andre", "audio": "src/gold/lines/8_cta.mp3", "audio_job": "cbca5db6-e83a-4e1a-88f6-7c21665b5d3a",
+      "text": "وإنت... شنو ودك تسوي مع ذهبك؟"}
+  },
+  "graphics": {
+    "income": {"kind": "compare_bars", "a_label": "الوديعة", "a_value": "37 د.ك", "b_label": "الذهب", "b_value": "0", "title": "لكل 1,000 د.ك بالسنة", "dur": 3.5}
+  },
+  "cards": {
+    "title": {"kind": "title", "label": "مجلس اليوم • الخميس 19 نوفمبر 2026", "title": "شريت ذهب وقت الحرب؟", "subtitle": "تبيعه ولا تخليه؟",
+      "pills": [["وقت الحرب: فوق 53 د.ك للغرام", "red"], ["اليوم: 37.1 د.ك (خام)", "teal"]], "date_pill": "بيانات الخميس 19 نوفمبر 2026"},
+    "open2": {"kind": "card", "accent": "red", "y": 0.69, "lines": [["كل 1,000 د.ك اندفعت وقت الحرب", 30, "bold", "white"], ["صارت ~700–750 د.ك (−25% إلى −30%)", 32, "bold", "light_teal"], ["وقت كورونا: 15.7 ← اليوم 37.1 د.ك للغرام (+136%)", 24, "med", "sub"]]},
+    "dhub": {"kind": "card", "accent": "teal", "y": 0.69, "lines": [["عند البيع: المحل يخصم ~0.5–4.1 د.ك للغرام", 28, "bold", "white"], ["البنوك المركزية: 321 طن بثلاث شهور (+42%)", 30, "bold", "light_teal"], ["والمصنعية ما ترجع", 24, "med", "sub"]]},
+    "fox": {"kind": "card", "accent": "red", "y": 0.69, "lines": [["عشان يرجع للسعر اللي شريت فيه", 30, "bold", "white"], ["لازم يرتفع +33% إلى +43%", 34, "bold", "light_teal"], ["وديعة ~3.70% • صكوك ~5.5% متوقع ومو مضمون", 24, "med", "sub"]]},
+    "hedge": {"kind": "card", "accent": "gold", "y": 0.69, "lines": [["سبب النزول: الفايدة الأمريكية مرتفعة", 30, "bold", "white"], ["والدولار قوي • ومتوقع رفع فايدة بديسمبر", 28, "bold", "light_teal"]]},
+    "horse": {"kind": "card", "accent": "teal", "y": 0.69, "lines": [["إذا بعت: السبائك والليرات أول (خصمها أقل)", 28, "bold", "white"], ["المشغولات أخيراً (مصنعيتها ما ترجع)", 30, "bold", "light_teal"], ["لا تشتري زيادة الحين", 26, "med", "sub"]]},
+    "verdict": {"kind": "card", "accent": "gold", "y": 0.66, "lines": [["اصبر 8 • بيع جزء صغير 7 • بيع الكل 0", 32, "bold", "white"], ["محتاج فلوس ← بيع قد حاجتك من السبائك", 26, "bold", "light_teal"], ["أقل من 85 غرام صافي ← خله (ما عليه زكاة)", 26, "bold", "light_teal"], ["مشغولات ← خلها • تبي دخل ← ربع السبائك بس", 26, "bold", "light_teal"], ["الزكاة (بيت الزكاة): 2.5% إذا وصل 85 غرام • الثقة 7/10", 22, "med", "sub"]]},
+    "cta": {"kind": "card", "accent": "teal", "y": 0.3, "lines": [["اكتب لنا بالكومنتات:", 34, "bold", "white"], ["شنو ودك تسوي مع ذهبك؟", 38, "bold", "light_teal"], ["القرار قرارك • الذهب الورقي فيه خلاف ومو موضوعنا", 22, "med", "sub"]]},
+    "disc": {"kind": "disclaimer", "text": "تحليل لا توصية • الأسعار بتاريخ الخميس 19 نوفمبر 2026 وتتغير (سعر الغرام خام بدون مصنعية) — راجع السعر وبيت الزكاة لحالتك قبل قرارك"}
+  },
+  "scenes": [
+    {"id": "open", "type": "vo_clip", "line": "open", "delay": 0.2, "duration": 14.0, "video": {"draft": "src/gold/s720_intro_slow.mp4", "final": "src/gold/s720_intro_slow.mp4"}, "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e", "card": {"name": "title", "at": 0.6, "fade": 0.5}},
+    {"id": "dhub", "type": "lipsync", "line": "dhub", "video": {"draft": "src/gold/d480_dhub.mp4", "final": "src/gold/d480_dhub.mp4"}, "draft_job": "28417d36-aa49-46d2-820f-b977b64c4d5c", "card": {"name": "dhub", "at": "cue", "cue": "المحل"}},
+    {"id": "fox", "type": "lipsync", "line": "fox", "video": {"draft": "src/gold/d480_fox.mp4", "final": "src/gold/d480_fox.mp4"}, "draft_job": "8e52db32-4f6a-4bfe-a37f-d227b390c217", "graphic": {"name": "income", "cue": "الوديعة", "box": [40, 600, 300]}, "card": {"name": "fox", "at": "cue", "cue": "الثلث"}},
+    {"id": "clash", "type": "clash", "lines": ["clasht", "clashd"], "video": {"draft": "src/gold/d480_clash.mp4", "final": "src/gold/d480_clash.mp4"}, "draft_job": "35481c72-5f91-40c0-a653-16db5e442bcf", "shake": "متى"},
+    {"id": "hedge", "type": "lipsync", "line": "hedge", "video": {"draft": "src/gold/d480_hedge.mp4", "final": "src/gold/d480_hedge.mp4"}, "draft_job": "19d809d4-f083-4b96-a837-876d79b58651", "_note": "cd631801 rejected (character sheet not a single face) — character = crop of frame 5A uploaded as 52f5ae66", "card": {"name": "hedge", "at": "cue", "cue": "سبب"}},
+    {"id": "horse", "type": "lipsync", "line": "horse", "video": {"draft": "src/gold/d480_horse_A.mp4", "final": "src/gold/d480_horse_A.mp4"}, "draft_job": "c078791d-3acb-48c0-bfef-c4e9b55a84d4", "alt_B_job": "6bd0c614-5f5b-419b-92a8-9430673cabb9", "card": {"name": "horse", "at": "cue", "cue": "وابدأ"}},
+    {"id": "judge", "type": "lipsync", "line": "judge", "video": {"draft": "src/gold/d480_judge.mp4", "final": "src/gold/d480_judge.mp4"}, "draft_job": "04305ce6-087a-4fbb-8dc0-08b70f0a7d64", "card": {"name": "verdict", "at": "cue", "cue": "حكمي", "fade": 0.6}},
+    {"id": "cta", "type": "still_vo", "line": "cta", "delay": 0.3, "duration": 5.5, "image": "src/gold/kf_falcon_close.png", "card": {"name": "cta", "at": 0.4}}
+  ],
+  "generation": {
+    "_comment": "intone 480p, same recipes as episode 5. Fox character = sand fox portrait 692b293c-1210-4d24-8a25-eb9a162001a8. Hedgehog character 38d5a5c2 on frame 5A cb888ae0. Horse character = portrait 39bd67df on frame 5D 40b76b8a. Judge character 2eca681d on medium frame 3c1fb86e. Falcon close still eadf7373.",
+    "frames": {"wide": "844ed442-8b47-41f8-8b47-e762fa88adae", "dhub": "100cdf87-be76-4bae-9975-1d60431b5914", "fox": "0808e107-31c6-43ab-b41d-47e660d92dda", "clash": "46efdf5f-d2b0-4acc-a4a4-285b1e20e8ad", "hedge": "cb888ae0-ca1f-4892-865d-f9969c99e313", "horse": "40b76b8a-b947-4f9e-a92f-cfa0409ba961", "judge": "3c1fb86e-15ea-49ad-bf67-659096f22c7f", "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8"}
+  }
+}

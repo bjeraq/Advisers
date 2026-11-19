@@ -45,7 +45,8 @@ ROLE = {
     'mazloum': 'صائد المظلومات', 'saboor': 'المستثمر الصبور', 'qita': 'محلل القطاع',
     'haris': 'مدير المخاطر', 'qadhi': 'القاضي', 'raqib': 'الرقيب الشرعي',
 }
-VOTE = {'شراء': 'pos', 'انتظار': 'mid', 'بيع': 'neg'}
+VOTE = {'شراء': 'pos', 'انتظار': 'mid', 'بيع': 'neg',
+        'اصبر': 'pos', 'خلّه': 'pos', 'بيع جزء': 'mid', 'بيع الكل': 'neg'}  # حلقة الذهب: احتفاظ/بيع جزئي/بيع كامل
 
 # أوراق الشخصيات المعتمدة (turnaround) وقص الوجه المربع (cx, cy, side) على ورقة 1344×752
 SHEETS = 'https://d8j0ntlcm91z4.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/'
@@ -348,7 +349,7 @@ def _side(img, d, x0, x1, y, side):
     ctext(d, cx, y, side['name'], font('bold', 40), C['ink'])
     y += 64 * S
     fv = font('bold', 32)
-    lbl = f"{side['vote']}  {sc(side['score'])}"
+    lbl = f"{side['vote']}  {sc(side['score'])}" if 'score' in side else side['vote']
     bw = tw(d, lbl, fv) + 36 * S
     badge(d, cx - bw / 2, y, lbl, col, fv)
     y += 84 * S
@@ -386,6 +387,8 @@ def s_voices(img, d, sl, meta):
 
 def lean(vote, score):
     """شرح الدرجة بالكلام (بدر: «انتظار +2» و«انتظار -3» مو مفهومة)."""
+    if vote not in VOTE or vote not in ('شراء', 'انتظار', 'بيع'):
+        return ''                                 # أصوات بكلام الناس (اصبر/بيع جزء) بدون درجات
     if vote == 'انتظار':
         return 'محايد' if not score else f"يميل للشراء {sc(score)}" if score > 0 else f"يميل للبيع {sc(score)}"
     return f"الدرجة {sc(score)}"
@@ -421,7 +424,8 @@ def s_board(img, d, sl, meta):
             while sz > 15 and tw(d, '• ' + role, font('med', sz)) > room:
                 sz -= 1
             rtext(d, xr2, y0 + 16 * S, '• ' + role, font('med', sz), C['muted'])
-        rtext(d, xr, y0 + 52 * S, f"{it['vote']} • {lean(it['vote'], it['score'])}", font('med', 22), col)
+        ln = lean(it['vote'], it.get('score', 0))
+        rtext(d, xr, y0 + 52 * S, f"{it['vote']} • {ln}" if ln else it['vote'], font('med', 22), col)
     if sl.get('total'):
         ctext(d, W / 2, H - 168 * S, sl['total'], font('bold', 40), C['gold'])
 
@@ -446,15 +450,19 @@ def s_verdict(img, d, sl, meta):
     y = title(d, sl.get('title', 'حكم القاضي'))
     size = 210 * S
     ring(img, 'qadhi', W - PAD - size / 2, y + size / 2 + 10 * S, size, C['gold'])
-    m = sl['meter']
-    col = C['pos'] if m > 0 else C['neg'] if m < 0 else C['mid']
-    rtext(d, W - PAD - size - 50 * S, y + 6 * S, 'ميزان الاستثمار', font('med', 34), C['muted'])
-    rtext(d, W - PAD - size - 50 * S, y + 50 * S, sc(m), font('bold', 120), col)
+    m = sl.get('meter')                          # اختياري: بدر شال الميزان من حلقة الذهب
+    if m is not None:
+        col = C['pos'] if m > 0 else C['neg'] if m < 0 else C['mid']
+        rtext(d, W - PAD - size - 50 * S, y + 6 * S, 'ميزان الاستثمار', font('med', 34), C['muted'])
+        rtext(d, W - PAD - size - 50 * S, y + 50 * S, sc(m), font('bold', 120), col)
+    elif sl.get('headline'):
+        para(d, W - PAD - size - 50 * S, y + 30 * S, sl['headline'], font('bold', 44), C['gold'], W - 2 * PAD - size - 50 * S, gap=1.25)
     y += size + 50 * S
     v = sl['votes']; tot = v['buy'] + v['wait'] + v['sell']
+    lb = sl.get('vote_labels', ['شراء', 'انتظار', 'بيع'])
     bx0, bx1, bh = PAD, W - PAD, 46 * S
     x = bx1
-    for key, n, label in (('pos', v['buy'], 'شراء'), ('mid', v['wait'], 'انتظار'), ('neg', v['sell'], 'بيع')):
+    for key, n, label in (('pos', v['buy'], lb[0]), ('mid', v['wait'], lb[1]), ('neg', v['sell'], lb[2])):
         if not n:
             continue
         w = (bx1 - bx0) * n / tot

@@ -56,22 +56,18 @@
     },
     "horse": {
       "speaker": "haris",
-      "voice": "Barrett",
-      "audio": "src/gold/lines/6_horse_A.mp3",
-      "audio_job": "d44011e9-64a7-4ef1-a489-c20db8e42e53",
-      "alt_B": {
-        "voice": "Harrison",
-        "audio": "src/gold/lines/6_horse_B.mp3",
-        "audio_job": "bf6b9815-ed53-44ec-96ae-ade31bb7e61b"
-      },
+      "voice": "Horse Deep 2 (element 7a33d3c2)",
+      "audio": "src/gold/lines/6_horse_v2.mp3",
+      "audio_job": "0fdc12f0-1efa-450d-a1d2-060b34643c2a",
       "text": "يا جماعة، أنا شغلتي أحمي المحفظة. إذا محتاج فلوس، بيع على قد حاجتك بس... وابدأ بالسبائك والليرات، وخل المشغولات. ولا تشتري زيادة الحين عشان تنزّل متوسط سعرك."
     },
     "judge": {
       "speaker": "qadhi",
       "voice": "Gideon",
-      "audio": "src/gold/lines/7_judge.mp3",
-      "audio_job": "16110f7f-87d2-4961-a545-7c784b9f9432",
-      "text": "سمعت المستشارين: ثمانية قالوا اصبر، وسبعة قالوا بيع جزء صغير، ولا واحد قال بيع الكل. حكمي: لا تبيع الكل، ولا تشتري زيادة. ذهبك أقل من خمسة وثمانين غرام؟ خله، ما عليه زكاة. وتبي دخل؟ بيع ربع السبائك بس. وثقتي سبعة من عشرة."
+      "audio": "src/gold/lines/7_judge_v2.mp3",
+      "audio_job": "e0663da6-bb4e-4244-9e3e-5a0ba7a80916",
+      "text": "سمعت المستشارين: ثمانية قالوا اصبر، وسبعة قالوا بيع جزء صغير، ولا واحد قال بيع الكل. حكمي: لا تبيع الكل، ولا تشتري زيادة. ذهبك أقل من خمسة وثمانين غرام؟ خله، ما عليه زكاة. وتبي دخل؟ بيع ربع السبائك بس. وثقتي سبعة من عشرة.",
+      "tts_text_note": "spoken with tashkeel: بَيْع ×3, ذَهَبِك, رُبْع (Bader 19 Nov, take A)"
     },
     "cta": {
       "speaker": "rassad",
@@ -365,7 +361,8 @@
         "final": "src/gold/d480_clash.mp4"
       },
       "draft_job": "35481c72-5f91-40c0-a653-16db5e442bcf",
-      "shake": "متى"
+      "shake": "متى",
+      "_note": "source clip 35481c72 trimmed 1.75–4.25s to remove the long pause before the fox reply (Bader 19 Nov)"
     },
     {
       "id": "hedge",
@@ -388,11 +385,10 @@
       "type": "lipsync",
       "line": "horse",
       "video": {
-        "draft": "src/gold/d480_horse_A.mp4",
-        "final": "src/gold/d480_horse_A.mp4"
+        "draft": "src/gold/d480_horse_v2.mp4",
+        "final": "src/gold/d480_horse_v2.mp4"
       },
-      "draft_job": "c078791d-3acb-48c0-bfef-c4e9b55a84d4",
-      "alt_B_job": "6bd0c614-5f5b-419b-92a8-9430673cabb9",
+      "draft_job": "3b3cdee7-1993-4b60-839f-58cbcb3ca3af",
       "card": {
         "name": "horse",
         "at": "cue",
@@ -404,10 +400,10 @@
       "type": "lipsync",
       "line": "judge",
       "video": {
-        "draft": "src/gold/d480_judge.mp4",
-        "final": "src/gold/d480_judge.mp4"
+        "draft": "src/gold/d480_judge_v2.mp4",
+        "final": "src/gold/d480_judge_v2.mp4"
       },
-      "draft_job": "04305ce6-087a-4fbb-8dc0-08b70f0a7d64",
+      "draft_job": "ed257076-4d43-443a-961e-50b7c783ae1b",
       "card": {
         "name": "verdict",
         "at": "cue",

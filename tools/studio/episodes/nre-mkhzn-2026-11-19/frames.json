@@ -1,0 +1,11 @@
+{
+  "_comment": "Gate 2 (19 Nov): episode 8 moves to a desert camp (kashta) at Bader's request. New master + 5 seat shots, each built from the approved hall shot + new master (0.25 credits each, 7 images = 1.75 credits).",
+  "location": "kashta tent — master b70e35a3 (alt 9f3a5287 not used)",
+  "1_open_wide": "b70e35a3-27a5-4929-bcdb-34c21414fc86",
+  "2_flamingo_and_3_dhab": "c77d85f5-da84-45ab-bdaa-e101bb9acd16",
+  "4_fox": "2e4eee42-2b9c-4588-b635-be9ce651f29b",
+  "5_clash": "6edf099e-91bc-4c34-ab25-303d6759ee67",
+  "6_judge": "bd0ba98e-6911-4ccf-b59c-16ce9d2afad0",
+  "7_falcon_close": "1b7f9ee0-5210-4c12-961a-7073fc20fbbc",
+  "audio_approved": {"1": "1B", "2": "2B", "3": "3", "4": "4", "5a": "5a", "5b": "5b", "6": "6C", "7": "7B", "total_s": 87.4}
+}

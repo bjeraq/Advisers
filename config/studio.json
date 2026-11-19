@@ -314,6 +314,12 @@
       "name": "Hana",
       "voice_id": "c25f78a0-714e-42af-8da3-a399cef94968",
       "note": "الغزالة — اختارها بدر 17 نوفمبر (حلقة 5) من صوتين (Hana / Nora)"
+    },
+    "haris": {
+      "name": "Barrett (A) / Harrison (B) — pending Bader's pick",
+      "voice_id_A": "d603a8cd-3fe1-55e0-9245-617a2589131e",
+      "voice_id_B": "573e5163-59b3-4926-aab1-951ef2985f81",
+      "note": "الحصان (أول ظهور حلقة 6)"
     }
   },
   "episode_nvda_pilot": {
@@ -560,6 +566,25 @@
       "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
       "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc",
       "video_media_id_v3": "790cbcac-df72-4deb-b3f2-63e6f06298bf"
+    },
+    {
+      "number": 6,
+      "title": "شريت ذهب وقت الحرب؟ — الذهب",
+      "ticker": "GOLD",
+      "session_date": "2026-11-17",
+      "data_date": "2026-11-19",
+      "episode_file": "tools/studio/episodes/gold-2026-11-17/episode.json",
+      "script": "tools/studio/episodes/gold-2026-11-17/script.md",
+      "video_media_id": "5b97edd2-5927-4bc0-b914-52c8d0a4936b",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/5b97edd2-5927-4bc0-b914-52c8d0a4936b.mp4",
+      "video_media_id_B_horse_Harrison": "8df5ad61-ae7b-4799-a1c8-a397a7ef2b90",
+      "site_page": "site/ep06-gold.html",
+      "report": "reports/2026-11-17_GOLD.md",
+      "resolution": "720x1280 (480p intone drafts assembled at 720)",
+      "duration_s": 96.3,
+      "guest": "mazloum + haris",
+      "cast": "الصقر • الضب (اصبر) • الثعلب (بيع جزء) • القنفذ (صائد المظلومات، ضيف) • الحصان (مدير المخاطر، ضيف — أول ظهور) • القاضي",
+      "notes": "Focus changed by Bader 19 Nov to war-time buyers who lost; extra council round (keep 8 / partial 7 / sell all 0). No investment-meter number in this episode (Bader). Version A = horse voice Barrett, B = Harrison; site uses A until Bader picks. Cover + 8-slide carousel delivered with the video."
     }
   ],
   "cast_retired": {

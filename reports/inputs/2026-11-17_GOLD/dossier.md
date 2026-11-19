@@ -128,6 +128,21 @@
 - الزكاة 2.5% سنوياً على ذهب ما يعطي دخل = تكلفة حقيقية تنخصم من الأصل نفسه؛ بينما الصك/السهم/الوديعة دخلها يغطي زكاتها وزيادة.
 - إخلاء: تحليل معلوماتي وليس نصيحة مالية؛ الأسعار تتغير — راجعها بنفسك.
 
+## ١١) ملحق 19 نوفمبر — اللي شرى وقت الحرب والأسعار فوق (طلب بدر: تركيز الحلقة على الخسرانين)
+
+| البند | القيمة | التأكد | المصدر |
+|---|---|---|---|
+| بداية الحرب | 28 فبراير 2026 (ضربات أمريكية–إسرائيلية على إيران)؛ السبائك بكل الأحجام «اختفت تقريباً» من السوق الكويتي، وإغلاق المطار وقف دخول الذهب | ⚠️ (مصدر واحد لكل بند) | freemalaysiatoday (2 مارس 2026)، Arab Times (أبريل 2026) |
+| الذهب بالكويت وقت الحرب | «فوق 53 د.ك للغرام» (12 مارس 2026) | ⚠️ | Arab Times «Mideast tensions drive gold in Kuwait above KD 53 per gram» |
+| سعر الذهب العالمي وقت الحرب | مارس 2026: أعلى 5,419$، إغلاق الشهر 4,672$؛ أبريل: بين 4,511 و4,891$، أسبوع «قرب 5,000$» (6 أبريل) | ✅ تريدنق فيو شهري + Arab Times | TVC:GOLD |
+| القمة قبل الحرب | 5,599$ (يناير 2026، بسبب توترات تجارية وجيوسياسية مو حرب) | ✅ | TVC:GOLD، Arab Times «gold tops 5,590» |
+| خسارة اللي شرى وقت الحرب (سعر خام، بدون المصنعية) | شرى بـ~5,000$ (≈49.4 د.ك/غ) → اليوم 38.5 د.ك = **−22%**؛ شرى بـ53 د.ك/غ → **−27%**؛ شرى بالقمة 5,599$ → **−31%** | ✅ حساب | — |
+| بالدينار | كل 1,000 د.ك اندفعت وقت الحرب صارت تقريباً **730–780 د.ك** (وأقل لو انحسبت المصنعية وهامش المحل اللي ارتفع وقت شح السبائك) | ✅ حساب / ⚠️ للهامش | — |
+| وإذا باع الحين | يخسر فوق النزول خصم المحل ~0.5–4.1 د.ك/غ، والمصنعية اللي دفعها ما ترجع | ⚠️ | zahabprice |
+| ليرجع لسعر شرائه | من 38.5 إلى 49.4 د.ك يحتاج الذهب **+28%**؛ إلى 53 د.ك **+38%**؛ إلى القمة **+44%** | ✅ حساب | — |
+| توقعات البنوك (للعلم لا للقرار) | غولدمان 5,400$ نهاية 2027 (= +39% من اليوم) — وتوقعاتهم لـ2026 طلعت غلط | ⚠️ | investinglive |
+| ملاحظة زكاة | الزكاة على القيمة يوم الحول بالسعر الحالي لا بسعر الشراء (قاعدة عامة: ربع العشر من القيمة السوقية) ⚠️ — لم نجد نصاً خاصاً من بيت الزكاة عن «سعر الشراء مقابل سعر اليوم»، فلا يُنسب له | ⚠️ | — |
+
 ## ١٠) مصادر
 
 - تريدنق فيو: TVC:GOLD (يومي وشهري 2020–2026)، FX_IDC:USDKWD، TVC:SILVER، KSE:KFH، TVC:DXY، TVC:US10Y — 17 نوفمبر 2026
@@ -139,3 +154,4 @@
 - بيت الزكاة الكويتي (من مقتطفات البحث؛ الموقع محجوب عن الجلسة): [زكاة النقود والحلي id=35](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=35)؛ [حلي المرأة id=801](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=801)؛ [id=15518](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=15518)؛ [زكاة الأسهم والسندات id=34](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=34)؛ [المستغلات id=11096](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=11096)؛ [id=798](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=798)؛ [id=929](https://www.zakathouse.org.kw/zakathouse_Detail.aspx?id=929)؛ [الفتاوى](https://www.zakathouse.org.kw/fatwa.aspx)؛ [حاسبة الزكاة](https://www.zakathouse.org.kw/calculate.aspx)؛ [الندوة 13](https://www.zakathouse.org.kw/pdfencyclopedia/nad20223.pdf)؛ [baitalzakat L100068](https://baitalzakat.com/files/decisions-laws/baitalzakat.com-L100068.pdf)
 - الشرعية: [فندينق سوق — الذهب بالبطاقة](https://fundingsouq.com/ae/ar/blog/is-buying-gold-with-credit-card-halal)؛ [دار الإفتاء — الذهب أونلاين](https://dar-alifta.org/ar/fatwa/details/15509/)؛ [دار الإفتاء — الذهب بالتقسيط](https://www.dar-alifta.org/ar/fatwa/details/13702/)؛ [الوطن](https://www.alwatan.com.sa/article/1075484)؛ [islamonline — أحكام التجارة في الذهب](https://fiqh.islamonline.net/أحكام-التجارة-في-بيع-الذهب/)
 - حلقة 5: `reports/inputs/2026-11-16_SUKUK/dossier.md` (الصكوك، الوديعة، سهم بيتك)
+- الحرب 2026: [freemalaysiatoday — Middle East war boosts safe-haven demand (2 مارس 2026)](https://www.freemalaysiatoday.com/category/business/2026/03/02/gold-climbs-as-middle-east-war-boosts-safe-haven-demand)؛ [Arab Times — gold in Kuwait above KD 53 per gram](https://www.arabtimesonline.com/news/mideast-tensions-drive-gold-in-kuwait-above-kd-53-per-gram)؛ [Arab Times — gold ends historic week near 5,000](https://www.arabtimesonline.com/news/gold-ends-historic-week-near-5000-an-ounce)؛ [Arab Times — gold tops 5,590](https://www.arabtimesonline.com/news/gold-tops-5590-as-demand-peaks)

@@ -589,6 +589,28 @@
       "guest": "mazloum + haris",
       "cast": "الصقر • الضب (اصبر) • الثعلب (بيع جزء) • القنفذ (صائد المظلومات، ضيف) • الحصان (مدير المخاطر، ضيف — أول ظهور) • القاضي",
       "notes": "Focus changed by Bader 19 Nov to war-time buyers who lost; extra council round (keep 8 / partial 7 / sell all 0). No investment-meter number in this episode (Bader). Version A = horse voice Barrett, B = Harrison; site uses A until Bader picks. Cover + 8-slide carousel delivered with the video."
+    },
+    {
+      "number": 8,
+      "title": "طاحت 22%! — الوطنية العقارية",
+      "ticker": "NRE (KSE) + MKHZN",
+      "session_date": "2026-11-19",
+      "data_date": "2026-11-19",
+      "episode_file": "tools/studio/episodes/nre-mkhzn-2026-11-19/episode.json",
+      "script": "tools/studio/episodes/nre-mkhzn-2026-11-19/script.md",
+      "carousel": "tools/studio/episodes/nre-mkhzn-2026-11-19/carousel.json",
+      "cover": "tools/studio/episodes/nre-mkhzn-2026-11-19/cover/cover_reel.png",
+      "video_media_id": "407f0756-14f2-42cc-9792-9b94e453c131",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/407f0756-14f2-42cc-9792-9b94e453c131.mp4",
+      "site_page": "site/ep08-nre.html",
+      "report": "reports/2026-11-19_NRE.md",
+      "resolution": "720x1280 (intone 480 + seedance 720, assembled at 720)",
+      "duration_s": 90.0,
+      "guest": "suyula",
+      "cast": "الصقر • الفلامنغو (ضيفة، قارئة السيولة) • الضب (شراء) • الثعلب (حذر) • القاضي",
+      "location": "كشتة بالبر — قعدة أرضية تحت مظلة مخططة (الشكل B)، بدون سبورة",
+      "verdict": "ميزان الاستثمار −33: شراء 1 / انتظار 14 / بيع 0 — انتظار لين إفصاح رسمي عن التوزيع وصعود فوق 156 فلس بكمية فوق المعتاد؛ الثقة 7/10",
+      "notes": "أول حلقة عن سهم كويتي بقاعدة بدر الجديدة (لا فحص شرعي لأسهم الكويت والدول الإسلامية، 20 نوفمبر). سبب الطيحة: بيع حقيقي مو استحقاق. رقم «الحقوق −28%» انشال لأنه من مصدر واحد. المكان انتقل لكشتة بطلب بدر (3 جولات صور). الكلفة: ~430 كريدت فيديو + ~20 صور وأصوات."
     }
   ],
   "cast_retired": {

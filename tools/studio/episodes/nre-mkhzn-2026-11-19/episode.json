@@ -150,11 +150,11 @@
    "subtitle": "طاحت 22% بيوم واحد — خسارة ولا خدعة أرقام؟",
    "pills": [
     [
-     "−21.97% بيوم واحد",
+     "نزلت 21.97% بيوم واحد",
      "red"
     ],
     [
-     "ومعها مخازن −14.29%",
+     "ومخازن 14.29% بنفس اليوم",
      "gold"
     ]
    ],
@@ -163,117 +163,94 @@
   "flamingo": {
    "kind": "card",
    "accent": "gold",
-   "y": 0.69,
+   "y": 0.24,
    "lines": [
     [
-     "فتح 174 فوق إغلاق أمس 173 ← مو توزيع ولا استحقاق",
-     26,
+     "مو توزيع: فتح 174 فوق أمس 173",
+     34,
      "bold",
      "white"
     ],
     [
-     "الكمية 85.5 مليون سهم (المعتاد ~48.7 مليون)",
-     28,
+     "انباع ضعف المعتاد: 85.5 مليون سهم",
+     30,
      "bold",
      "light_teal"
-    ],
-    [
-     "خلص على 135 = أقل سعر باليوم • ما في إفصاح جديد",
-     22,
-     "med",
-     "sub"
     ]
    ]
   },
   "dhub": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.69,
+   "y": 0.24,
    "lines": [
     [
-     "أرباح: أبريل–يونيو 11.7 • يوليو–سبتمبر 10.5 مليون د.ك",
-     26,
+     "آخر ربعين: ربح 11.7 و10.5 مليون د.ك",
+     32,
      "bold",
      "white"
     ],
     [
-     "بيوع 2026: أراضي أبوظبي 400 مليون درهم + حصة 74 مليون يورو",
-     24,
+     "تبيع أراضي وتنزّل دينها",
+     32,
      "bold",
      "light_teal"
-    ],
-    [
-     "من 185 إلى 135 فلس بثلاث جلسات • هدف صافي الدين < 100 مليون د.ك",
-     22,
-     "med",
-     "sub"
     ]
    ]
   },
   "fox": {
    "kind": "card",
    "accent": "red",
-   "y": 0.69,
+   "y": 0.24,
+   "x": 0.33,
    "lines": [
     [
-     "خسارة 9 شهور 2026: 31.7 مليون د.ك",
+     "خسارة 9 شهور: 31.7 مليون د.ك",
      30,
      "bold",
      "white"
     ],
     [
-     "من بداية السنة: 72 ← 135 فلس (+87%)",
-     28,
+     "طالع 87% من بداية السنة",
+     32,
      "bold",
      "light_teal"
-    ],
-    [
-     "القيمة الدفترية ~90 فلس • التوزيع «تحت الدراسة» بس",
-     22,
-     "med",
-     "sub"
     ]
    ]
   },
   "verdict": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.69,
+   "y": 0.56,
    "lines": [
     [
-     "ما عندك ← انطر إفصاح رسمي عن التوزيع + يصعد فوق 156 فلس ويخلص يوم التداول فوقها بكمية فوق المعتاد",
-     22,
+     "ما عندك: انطر الإفصاح + فوق 156 فلس",
+     30,
      "bold",
      "white"
     ],
     [
-     "عندك ← لا تبيع بخوف ولا تزيد، وحجم مركزك على أسوأ رقم (~90 فلس)",
-     24,
+     "عندك: لا تبيع بخوف ولا تزيد • الثقة 7/10",
+     28,
      "bold",
      "light_teal"
-    ],
-    [
-     "الثقة 7/10 = قد إيش القاضي متأكد من خياره الأول (مو ضمان)",
-     22,
-     "med",
-     "sub"
     ]
    ]
   },
   "cta": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.3,
+   "y": 0.24,
    "lines": [
     [
-     "الإفصاح أول • استحقاق ولا لا؟ • الكمية • مين يبيع؟",
-     28,
+     "الإفصاح أول • الكمية • مين يبيع؟",
+     32,
      "bold",
      "white"
     ],
     [
-     "اكتب لنا بالكومنتات: شنو كنت بتسوي لو سهمك طاح 22%؟",
-     28,
+     "شنو كنت بتسوي لو سهمك طاح 22%؟",
+     32,
      "bold",
      "light_teal"
     ]
@@ -292,15 +269,16 @@
    "delay": 0.2,
    "duration": 11.75,
    "video": {
-    "draft": "src/ep8/s_open.mp4",
-    "final": "src/ep8/s_open.mp4"
+    "draft": "src/ep8/s_open_v2.mp4",
+    "final": "src/ep8/s_open_v2.mp4"
    },
-   "video_job": "e4590e40-14b0-4d5b-80aa-c11bf8f3ffff",
+   "video_job": "f3862ea6-7633-4dce-9fe4-61f5141c00a5",
    "card": {
     "name": "title",
     "at": 0.6,
     "fade": 0.5
-   }
+   },
+   "_note": "v2: one tea glass for the lizard, owl pours from one dallah, cars parked"
   },
   {
    "id": "flamingo",
@@ -309,10 +287,10 @@
    "delay": 0.2,
    "duration": 16.6,
    "video": {
-    "draft": "src/ep8/s_flamingo.mp4",
-    "final": "src/ep8/s_flamingo.mp4"
+    "draft": "src/ep8/s_flamingo_v3.mp4",
+    "final": "src/ep8/s_flamingo_v3.mp4"
    },
-   "video_job": "289c7fea-ef55-4e05-98f3-1537e9ec7edf",
+   "video_job": "a0d15274-d9c8-49ef-8294-66c358c2f3c4",
    "graphic": {
     "name": "day",
     "cue": "فتح",
@@ -326,7 +304,7 @@
     "name": "flamingo",
     "at": "after_graphic"
    },
-   "_note": "seedance 12s slowed locally to cover the 16.3s line"
+   "_note": "v3 (Bader 20 Nov): start frame 55bd0408 (lizard mouth closed, glass in her lap), seedance 17s with her voice as audio reference, no slow-down; lizard silent, cars parked"
   },
   {
    "id": "dhub",
@@ -411,14 +389,15 @@
    "delay": 0.3,
    "duration": 11.1,
    "video": {
-    "draft": "src/ep8/s_close.mp4",
-    "final": "src/ep8/s_close.mp4"
+    "draft": "src/ep8/s_close_v2.mp4",
+    "final": "src/ep8/s_close_v2.mp4"
    },
-   "video_job": "f5f5beb6-4889-4976-a0b7-8edac7648daf",
+   "video_job": "2f67302e-53f1-4f04-bf99-a9e8a58c05bf",
    "card": {
     "name": "cta",
     "at": 5.0
-   }
+   },
+   "_note": "v2: frame 1a5cc787 (background falcon removed), falcon talks to the end with his voice as audio reference"
   }
  ],
  "generation": {
@@ -429,12 +408,16 @@
    "fox": "81bb2718-aef7-4700-a8b3-0743f1927b93",
    "clash": "a7f2520a-c2b4-4527-a1a2-c6ccb97ecf6f",
    "judge": "bb5ee02f-5d95-4878-aad6-7d7dcb553285",
-   "falcon_close": "2837b2f6-3e47-4776-8c30-fab495ff1782"
+   "falcon_close": "1a5cc787-cccf-4856-8fd5-2d81b49d6e99",
+   "flamingo_start": "55bd0408-188f-4bc8-98fc-ed89a94c47a5"
   },
   "characters": {
    "dhub": "da1d38c2-1b29-471a-9b7b-7bc8aac6dbc3",
    "fox": "5756bcc2-1d5e-41e8-83dd-2d480c2755e8",
    "judge": "c4a1cbd3-34fd-4e2e-89d7-e6b4bdf9f752"
   }
- }
+ },
+ "video_media_id": "64ef2a19-96ea-4cbf-8d9d-9486dae31022",
+ "video_media_id_v1": "407f0756-14f2-42cc-9792-9b94e453c131",
+ "verify": "v2: all scenes ✅ — lowest similarity 0.81"
 }

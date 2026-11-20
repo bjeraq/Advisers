@@ -211,7 +211,7 @@ def compare_bars(P, a_label='السعر', a_value='534$', b_label='ربح الس
 
 
 def price_path(P, pts=(('قبل', 489), ('القاع', 404), ('القمة', 585), ('الجمعة', 534)),
-               ref=489, ref_label='قبل الأزمة', dur=4.0):
+               ref=489, ref_label='قبل الأزمة', unit='$', dur=4.0):
     N = int(dur * FPS); W = BASE_W
     lo, hi = min(v for _, v in pts) - 20, max(v for _, v in pts) + 20
     def Y(v): return 330 - (v - lo) / (hi - lo) * 250
@@ -234,7 +234,7 @@ def price_path(P, pts=(('قبل', 489), ('القاع', 404), ('القمة', 585)
             p.line([seg[k], seg[k + 1]], 8, fill=col)
         for k, (x, y) in enumerate(P2[:full + 1]):
             p.ellipse([x - 9, y - 9, x + 9, y + 9], fill=WHITE)
-            p.text((x, y - 18), f"{pts[k][1]}$", 28, fill=WHITE, anchor='mb')
+            p.text((x, y - 18), f"{pts[k][1]}{unit}", 28, fill=WHITE, anchor='mb')
             p.text((x, 385), pts[k][0], 28, fill=MUTED, anchor='mm', direction='rtl')
         yield img
 

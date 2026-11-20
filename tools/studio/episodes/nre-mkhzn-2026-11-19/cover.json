@@ -1,0 +1,13 @@
+{
+ "bg": {"image": "cover_bg.png", "_note": "kashta wide frame 4e09836e (clean, before captions)"},
+ "tag": "ميزان الاستثمار • الوطنية العقارية",
+ "lines": [
+  {"text": "الوطنية العقارية", "size": 70, "box": "red"},
+  {"text": "طاحت {{22%}}", "size": 170},
+  {"text": "بيوم واحد!", "size": 130},
+  {"text": "خسارة ولا خدعة أرقام؟", "size": 104, "box": "yellow"}
+ ],
+ "footer": "15 مستشار يتناظرون • القرار عندك",
+ "date": "أسعار إغلاق الخميس 19 نوفمبر 2026",
+ "disclaimer": "تحليل لا توصية"
+}

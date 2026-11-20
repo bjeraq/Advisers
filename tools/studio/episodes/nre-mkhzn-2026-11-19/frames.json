@@ -7,5 +7,34 @@
   "5_clash": "6edf099e-91bc-4c34-ab25-303d6759ee67",
   "6_judge": "bd0ba98e-6911-4ccf-b59c-16ce9d2afad0",
   "7_falcon_close": "1b7f9ee0-5210-4c12-961a-7073fc20fbbc",
-  "audio_approved": {"1": "1B", "2": "2B", "3": "3", "4": "4", "5a": "5a", "5b": "5b", "6": "6C", "7": "7B", "total_s": 87.4}
+  "audio_approved": {
+    "1": "1B",
+    "2": "2B",
+    "3": "3",
+    "4": "4",
+    "5a": "5a",
+    "5b": "5b",
+    "6": "6C",
+    "7": "7B",
+    "total_s": 87.4
+  },
+  "v1_rejected": "Bader 20 Nov: table+chairs and red Sadu decor rejected — wants floor seating, new colours, camp life (fire, coffee/tea). Outfits unchanged (cost).",
+  "v2_A": {
+    "look": "night, stars and crescent, cream tent, olive/mustard floor cushions, fairy lights",
+    "1": "5fb0a54b-a345-4af6-b1f1-62187aecd46f",
+    "2_3": "728c6497-228f-4104-a064-26320f820907",
+    "4": "388c70fd-e537-48ed-9d62-21ea5a80a6b2",
+    "5": "51676f3b-4f1e-4173-b023-33b83c4dcec4",
+    "6": "13a846d5-26bd-42bb-acca-94026a074c74",
+    "7": "da30b05a-c033-4e22-92c9-6014d871f436"
+  },
+  "v2_B": {
+    "look": "dusk, striped olive/beige canopy, turquoise/orange cushions, full moon, desert and 4x4 behind",
+    "1": "ac3dc37d-9be5-417e-94b9-05e8174080b0",
+    "2_3": "ff94e732-f971-4cf4-a5d5-1cfa8260d18a",
+    "4": "21a65a86-68ca-4417-969d-4194ea2782a7",
+    "5": "3f87a7df-1706-443b-acf4-40a897dd77dc",
+    "6": "26c5262b-b91f-4cc4-9fde-2bb44dcf0de7",
+    "7": "2b68e665-2266-4e15-a328-cf9bbe1dcfcc"
+  }
 }

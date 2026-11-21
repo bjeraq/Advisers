@@ -177,6 +177,16 @@ def render_scene(sc, ep, wpaths, a, B, geo):
         n += 1
         chain.append(f"[{cur}][c]overlay=0:0[v{n}]")
         cur = f'v{n}'
+    for xc in sc.get('extra_cards', []):              # بطاقات إضافية بوقت بداية ونهاية
+        st = find_cue(ws, xc['cue'], sid) if 'cue' in xc else float(xc['at'])
+        en = find_cue(ws, xc['until_cue'], sid) if 'until_cue' in xc else float(xc.get('until', 999))
+        fd = xc.get('fade', 0.4)
+        ic = add(f"-loop 1 -i {B}/ov/{xc['name']}.png")
+        chain.append(f"[{ic}:v]format=rgba,fade=t=in:st={st:.2f}:d={fd}:alpha=1,"
+                     f"fade=t=out:st={max(st, en - fd):.2f}:d={fd}:alpha=1[xc{n}]")
+        n += 1
+        chain.append(f"[{cur}][xc{n - 1}]overlay=0:0[v{n}]")
+        cur = f'v{n}'
     idc = add(f"-loop 1 -i {B}/ov/disc.png")
     chain.append(f"[{idc}:v]format=rgba[d]")
     n += 1

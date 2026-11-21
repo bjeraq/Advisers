@@ -141,6 +141,9 @@ class Cards:
         إنستغرام. لو النص أعرض من المساحة ينقسم سطرين عند أول « — » (أو «•»، أو بالنص)."""
         SS = self.SS
         img, d = self.canvas()
+        if not text:                      # بدون شريط إخلاء (قرار بدر للحلقة 9) — صورة شفافة
+            self.save(img, path)
+            return
         f = self.font('med', 19)
         avail = (SAFE['right_x'] - SAFE['left_x'] - 40) * SS
         rows = [text]

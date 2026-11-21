@@ -145,7 +145,7 @@
  "cards": {
   "title": {
    "kind": "title",
-   "label": "مجلس اليوم • الأحد 22 نوفمبر 2026",
+   "label": "مجلس اليوم • السبت 21 نوفمبر 2026",
    "title": "الوطنية العقارية",
    "subtitle": "طاحت 22% بيوم واحد — خسارة ولا خدعة أرقام؟",
    "pills": [
@@ -417,8 +417,9 @@
    "judge": "c4a1cbd3-34fd-4e2e-89d7-e6b4bdf9f752"
   }
  },
- "video_media_id": "996d99d7-e57a-4514-b5f5-a39589d35226",
+ "video_media_id": "a0f40dd4-04bf-4719-b235-a344566437a1",
+ "video_media_id_v3": "996d99d7-e57a-4514-b5f5-a39589d35226",
  "video_media_id_v2": "64ef2a19-96ea-4cbf-8d9d-9486dae31022",
  "video_media_id_v1": "407f0756-14f2-42cc-9792-9b94e453c131",
- "verify": "v3: all scenes ✅ — lowest similarity 0.81"
+ "verify": "v4: all scenes ✅ — lowest similarity 0.81"
 }

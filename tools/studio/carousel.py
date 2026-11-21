@@ -18,7 +18,9 @@
   facts    title, rows[[label, value, tone]], note                 — الأرقام اللي كانت قدام القاضي
   duel     title, left{id,name,vote,score,points[]}, right{...}    — الضب ضد الثعلب (أو أي اثنين)
   voices   title, items[{id,name,vote,score,line}] (≤4)            — مستشارين بسطر لكل واحد
-  board    title, items[{id,name,vote,score}] (≤15), total         — لوحة الأصوات كلها
+  board    title, items[{id,name,vote,score}] (≤7), total          — أهم المستشارين بس (بدر 2026-11-21: لا تحط
+           الـ15 كلهم، تقريباً النص، عشان الكلام يكبر ويبين؛ والرقيب الشرعي ما يصوّت فما يطلع هني).
+           لين 8 يطلعون بعمود واحد بخط كبير، وأكثر من 8 بعمودين بخط صغير (مو مستحب).
   profiles title, items[{who,id,line}] (3)                         — أنت أي نوع مستثمر؟
   verdict  meter, votes{buy,wait,sell}, option, confidence, why[]  — حكم القاضي وعلى أي أساس
   decide   title, questions[], cta, disclaimer                     — القرار قرارك
@@ -401,11 +403,14 @@ def s_board(img, d, sl, meta):
     if sl.get('sub'):
         y = para(d, W - PAD, y - 6 * S, sl['sub'], font('med', 28), C['muted'], W - 2 * PAD) + 22 * S
     items = sl['items']
-    cols = 2
+    big = len(items) <= 8                          # بدر 2026-11-21: أهم المستشارين بس وبخط كبير
+    if not big:
+        print(f'تنبيه: لوحة الأصوات فيها {len(items)} مستشار — القاعدة 7 بالأكثر', file=sys.stderr)
+    cols = 1 if big else 2
     rows = (len(items) + cols - 1) // cols
     gap = 20 * S
     cw = (W - 2 * PAD - gap) / cols
-    rh = min(124 * S, (H - y - 230 * S) / rows)
+    rh = min((132 if big else 124) * S, (H - y - 230 * S) / rows)
     av = rh - 26 * S
     for i, it in enumerate(items):
         c, r = divmod(i, rows)                     # العمود اليمين أول (من اليمين لليسار)
@@ -415,18 +420,18 @@ def s_board(img, d, sl, meta):
         d.rounded_rectangle((x1 - cw, y0, x1, y0 + rh - 10 * S), radius=22 * S, fill=C['card'])
         ring(img, it['id'], x1 - 16 * S - av / 2, y0 + (rh - 10 * S) / 2, av - 8 * S, col)
         xr = x1 - 34 * S - av
-        fn = font('bold', 26)
-        rtext(d, xr, y0 + 10 * S, it['name'], fn, C['ink'])
+        fn = font('bold', 36 if big else 26)
+        rtext(d, xr, y0 + (8 if big else 10) * S, it['name'], fn, C['ink'])
         role = it.get('role', ROLE.get(it['id']))
         if role and role != it['name']:                 # الحيوان أول، وبعده دوره بالمجلس
             xr2 = xr - tw(d, it['name'], fn) - 12 * S
             room = xr2 - (x1 - cw) - 18 * S
-            sz = 21
+            sz = 28 if big else 21
             while sz > 15 and tw(d, '• ' + role, font('med', sz)) > room:
                 sz -= 1
-            rtext(d, xr2, y0 + 16 * S, '• ' + role, font('med', sz), C['muted'])
+            rtext(d, xr2, y0 + (16 if big else 16) * S, '• ' + role, font('med', sz), C['muted'])
         ln = lean(it['vote'], it.get('score', 0))
-        rtext(d, xr, y0 + 52 * S, f"{it['vote']} • {ln}" if ln else it['vote'], font('med', 22), col)
+        rtext(d, xr, y0 + (62 if big else 52) * S, f"{it['vote']} • {ln}" if ln else it['vote'], font('med', 30 if big else 22), col)
     if sl.get('total'):
         ctext(d, W / 2, H - 168 * S, sl['total'], font('bold', 40), C['gold'])
 

@@ -8,12 +8,13 @@
 
 المحتوى يكتبه كاتب الحلقة بملف carousel.json (نصوص قصيرة كويتية بسيطة)، والأداة ترسم بس.
 أنواع الشرائح (type):
-  cover    name, ticker, date, sub                                 — الشريحة الأولى دايماً: اسم السهم والتاريخ
-           (قاعدة بدر 2026-11-16: عشان اللي يتصفح يلقى سهمه على طول). لو ما انكتبت، الأداة تبنيها
-           تلقائياً من meta.brand و episode.json (ticker/data_date) اللي جنب carousel.json.
+  cover    name, ticker, date, sub                                 — غلاف اسم السهم والتاريخ بدون شخصيات.
+           قاعدة بدر 2026-11-21 (تلغي قاعدة 16 نوفمبر): غلاف واحد بس، وهو اللي فيه الشخصيات (bold أو hook)
+           ويكون الشريحة الأولى وفيه اسم السهم والتاريخ. الأداة تبني غلاف الاسم والتاريخ تلقائياً (من meta.brand
+           و episode.json) بس لو الكاروسيل ما يبدأ بـ bold أو hook أو cover.
   hook     kicker, headline, big, big_sub, faces[ids], swipe      — الغلاف اللي يشد
   bold     lines[], tag, bg, focus_y, faces, footer, date         — نفس شكل غلاف الريل (tools/studio/cover.py):
-           عنوان عريض بسطور قصيرة ورقم ملوّن وسؤال. ينفع مكان hook (بعد شريحة الاسم والتاريخ) أو بوست سريع.
+           عنوان عريض بسطور قصيرة ورقم ملوّن وسؤال. الشريحة الأولى وغلاف الكاروسيل الوحيد، أو بوست سريع.
   facts    title, rows[[label, value, tone]], note                 — الأرقام اللي كانت قدام القاضي
   duel     title, left{id,name,vote,score,points[]}, right{...}    — الضب ضد الثعلب (أو أي اثنين)
   voices   title, items[{id,name,vote,score,line}] (≤4)            — مستشارين بسطر لكل واحد
@@ -515,7 +516,8 @@ def main(argv=None):
     os.makedirs(a.out, exist_ok=True)
     slides = spec['slides']; meta = spec.get('meta', {})
     meta['_base'] = os.path.dirname(os.path.abspath(a.spec))
-    if not slides or slides[0].get('type') != 'cover':
+    # بدر 2026-11-21: غلاف واحد بس، اللي فيه الشخصيات. غلاف الاسم والتاريخ ينضاف بس لو ما فيه غلاف أصلاً
+    if not slides or slides[0].get('type') not in ('cover', 'bold', 'hook'):
         slides = [auto_cover(a.spec, meta)] + slides
     paths = []
     for i, sl in enumerate(slides, 1):

@@ -1,0 +1,73 @@
+{
+  "_comment": "بوابة 2 (16 نوفمبر): الإطارات المقترحة للحلقة 5. الثعلب انرسم من يديد بملامح ثعلب رملي أوضح (بدر: «هذا ذيب مو ثعلب»).",
+  "1_wide_falcon_open": "844ed442-8b47-41f8-8b47-e762fa88adae",
+  "2_gazelle_A": "64c9000a-ae94-4ce8-ac40-c0d7eca378c5",
+  "3_dhub": "100cdf87-be76-4bae-9975-1d60431b5914",
+  "4_fox_A": "0808e107-31c6-43ab-b41d-47e660d92dda",
+  "5_clash_A": "46efdf5f-d2b0-4acc-a4a4-285b1e20e8ad",
+  "6_judge": "ae781c26-a251-49f3-96bc-a832599f0f7d",
+  "7_falcon_close": "7b8e5e2c-c7b8-4b3c-884a-de02453cbc71",
+  "8_gazelle_B": "a48fa0a9-80ee-4b00-86bd-92d5e7800e17",
+  "9_fox_B": "fd34eefc-cb66-48ac-b9a9-204902c5c969",
+  "10_clash_B": "21775f58-4c5e-4930-89dd-ec2a1f9e6144",
+  "voice_test": {
+    "A_Hana": "a533e2c9-b44e-4049-b01d-41394b8f9fbe",
+    "B_Nora": "166e24ec-d2ff-426e-840d-365cb2a0e5ea"
+  },
+  "7_falcon_close_v2": {
+    "A_on_table": "a084afbd-6ede-48c1-af90-9493ae7e96bc",
+    "B_on_chair": "8e931a7e-2be4-4277-8c3d-fe22bf1e213f",
+    "why": "بدر 17 نوفمبر: الصقر بالإطار 7 مقصوص للنص"
+  },
+  "approved_2026_11_17": {
+    "frames": "1–6 (الأول بكل خانة)",
+    "gazelle_voice": "A Hana (c25f78a0-714e-42af-8da3-a399cef94968)",
+    "final_resolution": "720",
+    "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8 (بالمخالب، على الأرض)",
+    "script": "v4"
+  },
+  "audio_jobs": {
+    "1_open": "4e68a366-1789-4870-b3a1-206cb950af06",
+    "2_gazelle": "a533e2c9-b44e-4049-b01d-41394b8f9fbe",
+    "3_dhub": "d39cd9e0-ff60-43a7-a2a5-2fb02abd2044",
+    "4_fox": "1e2cfa98-a5f6-44c5-8544-83d0653fcc5c",
+    "5a_clash_dhub": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf",
+    "5b_clash_fox": "83c63ac5-a37e-4fc4-a843-b4c409c37683",
+    "6_judge": "b9842873-399d-4fe1-8c72-da0f0f471cdc",
+    "7_close": "7af78d44-1b03-4b62-8450-cd7ad1a80481"
+  },
+  "7_falcon_close_v3_floor": {
+    "A_talons": "eadf7373-1349-47bf-9969-6895aa3ec2e8",
+    "B_boots": "a906ff3f-6499-4e0e-b6ba-8f42f7a442c5",
+    "why": "بدر: لا فوق الطاولة ولا على الكرسي — واقف على الأرض"
+  },
+  "audio_jobs_v4": {
+    "1_open": "733f8172-8d00-4b0a-ba85-eaabd687874c",
+    "2_gazelle": "e9d45d5c-7260-404d-861a-0d639d2c64ff",
+    "3_dhub": "d4e9c583-f6ff-4460-a170-21d5bab31d0f",
+    "4_fox": "82ecc3a3-18a0-4ca4-834a-1631f40a8981",
+    "5a_clash_dhub": "6285f63e-26f9-4c4e-b4ca-50d2cc287cbf",
+    "5b_clash_fox": "83c63ac5-a37e-4fc4-a843-b4c409c37683",
+    "6_judge": "f2c3483f-db01-4d3c-a3d7-a870ec717ee7",
+    "7_close": "87c49e5d-87ef-4094-ae89-2e04baee1cce",
+    "7_close_bajer": {
+      "A": "ef2a1944-fd78-4e64-ad3b-7def2a3ad01a",
+      "B_tashkeel": "d04a7385-06bc-4868-9f80-3fa120334664",
+      "why": "بدر: «باجر» بالجيم بدل «باكر»"
+    },
+    "7_close_v3": {
+      "C": "fc9b2477-63a9-4f2b-aed7-916de6288c50",
+      "D": "3f273f16-3f3b-49d9-9f8d-9ce9d6718d55",
+      "text": "والقرار قراركم... رايكم بالتعليقات! وباجر، موضوعنا عن الذهب: تبيعه ولا تخليه؟",
+      "note": "بدر: 7A حلو (نطق باجر) — وطلب «قراركم» و«موضوعنا عن الذهب»"
+    }
+  },
+  "video_jobs_480": {
+    "gazelle": "ed306406-79da-4625-97b4-283d27ec2245",
+    "dhub": "42dd0e5a-d732-4879-85c4-31b02620445b",
+    "fox": "20dc115e-845c-4cb8-90ff-7b062ed00a40",
+    "clash": "906cbc38-929e-41fa-83f6-261e3bc180c7",
+    "judge": "d6628eac-b43d-4054-b0cf-c65dc6474e52",
+    "open_reuse_nvda_intro": "6850991a-8139-465c-bbba-ecd0cfc99f7e"
+  }
+}

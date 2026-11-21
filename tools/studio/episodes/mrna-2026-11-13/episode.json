@@ -1,0 +1,545 @@
+{
+ "_comment": "الحلقة 4 — موديرنا: اللي ربح سبع أضعاف يبيع ولا يكمل؟ المكان: يخت قدام أبراج الكويت وسوق شرق (اختيار بدر 15 نوفمبر، داخل اليخت D). الأرقام من جلسة المجلس الكاملة على إغلاق الجمعة 13 نوفمبر (reports/2026-11-13_MRNA.md).",
+ "slug": "mrna-2026-11-13",
+ "number": 4,
+ "title": "سبع أضعاف؟! — موديرنا",
+ "ticker": "MRNA",
+ "data_date": "2026-11-13",
+ "compliance": "متوافق — data/universe_us.csv (ديون 1%، نقد 5%)",
+ "majlis_report": "reports/2026-11-13_MRNA.md",
+ "fonts": "fonts",
+ "location": "يخت يمشي قدام أبراج الكويت وسوق شرق — الصالة بمستوى البحر (3–4 أمتار)، كنبتين متقابلة، الجدار القدامي خشب",
+ "lines": {
+  "t_open": {
+   "speaker": "asasi",
+   "voice": "Alistair+old_fx",
+   "audio": "src/lines/t_open.mp3",
+   "text": "سبع أضعاف؟!",
+   "audio_job": "2762a8fd-d6f6-4808-b3f3-b1a29a2873c2",
+   "_v": "بدر: 4A (جولة 2، مفاجأة أكبر)"
+  },
+  "open_dhub": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/lines/open_dhub.mp3",
+   "text": "إيه! لو حطيت ألف دولار بموديرنا بداية السنة... الحين صارت سبعة آلاف!",
+   "audio_job": "5b1fe2a0-0afe-433a-b59e-4d22079e2280"
+  },
+  "open_fox": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/lines/open_fox.mp3",
+   "text": "ولو دخلت يوم القمة قبل أربع أيام... خِسَرت سَبَعْتَعَش بالمِيّة!",
+   "audio_job": "24ce6bd9-b713-4592-bc57-07d07bba3002",
+   "stability": 0.6,
+   "_v": "جولة بدر 2: 1A"
+  },
+  "intro": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/intro.mp3",
+   "text": "موديرنا، سهم لقاح كورونا... اللي ربح، يبيع ولا يكمل؟ واللي ما دخل، يدخل الحين؟ المجلس منعقد... على اليخت!",
+   "audio_job": "5a8f9b65-8840-47e5-aea9-c13b19fdde0a"
+  },
+  "thawr": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/lines/thawr.mp3",
+   "text": "أنا شغلتي ألقى سبب للشراء... وهني السبب واضح: لقاح السرطان نجح بآخر مرحلة تجارب، والإطلاق بألفين وسبعة وعشرين! والشركة ربحت هالربع، والكل كان متوقع خسارة!",
+   "audio_job": "ed2e02b8-b939-4edd-87df-1891ea726886"
+  },
+  "dubb": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/lines/dubb.mp3",
+   "text": "يا عزيزي الضب، إنت تشوفها فرصة وأنا أشوفها خطر... السهم نزل سَبَعْتَعَش بالمِيّة بأربع أيام! والمحللين، بالمتوسط، يشوفونه أقل من سعره الحين... ثَلاثِين بالمِيّة!",
+   "audio_job": "ae2da14f-00d6-4c41-be43-28e382c7fb78",
+   "stability": 0.6,
+   "_v": "بدر: 2A"
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/lines/clasht.mp3",
+   "text": "لقاح السرطان بيغيّر كل شي!",
+   "audio_job": "62a69ce5-f28d-4eba-964e-71bc5bf33b0a"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/lines/clashd.mp3",
+   "text": "والسهم صعد قبل لا يوصل اللقاح!",
+   "audio_job": "42807fa2-0bf5-4200-9e40-a1513f47f2ed",
+   "stability": 0.6
+  },
+  "ask": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/ask.mp3",
+   "text": "خلونا نسأل نوخذة الحسابات... يا نوخذة، شنو تقول الدفاتر؟",
+   "audio_job": "9f5fff00-e82b-46c8-b2fc-95c0f5aa0898"
+  },
+  "guest": {
+   "speaker": "asasi",
+   "voice": "Alistair+old_fx",
+   "audio": "src/lines/guest.mp3",
+   "text": "يا جماعة، أنا أقرا الدفاتر... نص مبيعات السنة كلها جت بثلاث شهور بس! والسنة كاملة للحين خسرانة. يعني الربح موسم، مو عادة.",
+   "audio_job": "f6512ff4-0957-4029-a259-debc5a55eebc",
+   "media": "6803c58b-e2ab-4beb-8215-8189220c07b0",
+   "_why": "الأساسي: أقوى حجة ضد السهم بحكم القاضي (الموسمية) ومحد رد عليها"
+  },
+  "qadhi_a": {
+   "speaker": "qadhi",
+   "voice": "Gideon",
+   "audio": "src/lines/qadhi_a.mp3",
+   "text": "سمَعت الجميع... ميزان الاستثمار: سَبَعْتَعَش بالسالب. واحد شراء، اثنعش انتظار، واثنين بيع.",
+   "audio_job": "9e695906-fcfa-4a25-a512-88a88f14cfd1",
+   "_v": "بدر: 3A"
+  },
+  "qadhi_b": {
+   "speaker": "qadhi",
+   "voice": "Gideon",
+   "audio": "src/lines/qadhi_b.mp3",
+   "text": "اللي ما دخل: لا يلحق السعر، ينطر لين ينزل لميتين دولار، ونشوف: إذا ثبت فوقها، وقتها يدخل. واللي ربحان، أقرب خيار: يبيع جزء يرجّع فيه راس ماله، ويخلي الباقي. وثقتي ستة من عشرة.",
+   "audio_job": "ed78305b-121f-4d8f-850e-bcdc2ef0a654",
+   "_v": "بدر: 6B"
+  },
+  "cta": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/lines/cta.mp3",
+   "text": "يعني رأي المجلس: ننطر ميتين دولار... وبعدها إنت خذ القرار اللي تشوفه مناسب لك. وإنتوا، اكتبوا لنا رايكم بالتعليقات!",
+   "audio_job": "5f34d817-b2ee-45c5-a831-8814b328ad43",
+   "_v": "بدر: 5A (جولة 2)"
+  }
+ },
+ "graphics": {
+  "money": {
+   "kind": "compare_bars",
+   "a_label": "الحين",
+   "a_value": "7,400$",
+   "b_label": "بداية السنة",
+   "b_value": "1,000$",
+   "dur": 3.5
+  },
+  "donut": {
+   "kind": "donut",
+   "value": 52,
+   "lines": [
+    "من مبيعات السنة",
+    "جت بثلاث",
+    "شهور بس"
+   ],
+   "dur": 3.0
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": -17,
+   "scale_max": 30,
+   "votes": [
+    [
+     "شراء",
+     1,
+     "teal"
+    ],
+    [
+     "انتظار",
+     12,
+     "gold"
+    ],
+    [
+     "بيع",
+     2,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار",
+   "dur": 4.5
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "label": "مجلس اليوم • الإثنين 16 نوفمبر 2026",
+   "title": "MRNA",
+   "subtitle": "موديرنا — سبع أضعاف بسنة",
+   "pills": [
+    [
+     "صار 7 أضعاف هالسنة",
+     "teal"
+    ],
+    [
+     "لقاح السرطان",
+     "gold"
+    ],
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق الجمعة 13 نوفمبر 2026"
+  },
+  "fox_open": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "لو دخلت يوم القمة (269$)",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "1,000$ ← 830$",
+     46,
+     "bold",
+     "light_teal"
+    ]
+   ],
+   "y": 0.25
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "لقاح السرطان نجح بآخر مرحلة تجارب",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "الإطلاق المستهدف: 2027",
+     36,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "الربع الثالث: ربح 0.38$ للسهم (المتوقع خسارة 1.25$)",
+     26,
+     "med",
+     "sub"
+    ]
+   ],
+   "y": 0.69
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "lines": [
+    [
+     "نزل 17% من 269$ إلى 223$ بأربع أيام",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "توقع المحللين للسعر: 156$",
+     36,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "تكاليف 2027 المتوقعة: حوالي 4 مليار$",
+     26,
+     "med",
+     "sub"
+    ]
+   ],
+   "y": 0.69
+  },
+  "guest": {
+   "kind": "card",
+   "accent": "gold",
+   "lines": [
+    [
+     "مبيعات 3 شهور: 1.31 مليار$ من 2.53",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "خسارة آخر سنة: 2.79 مليار$",
+     36,
+     "bold",
+     "light_teal"
+    ]
+   ],
+   "y": 0.69
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "ميزان الاستثمار: 17 بالسالب",
+     46,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "شراء 1 • انتظار 12 • بيع 2",
+     38,
+     "bold",
+     "white"
+    ]
+   ],
+   "y": 0.69
+  },
+  "verdict2": {
+   "kind": "card",
+   "accent": "teal",
+   "lines": [
+    [
+     "ما دخلت؟ انطر لين ينزل لـ200$",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "إذا ثبت فوقها، وقتها تدخل",
+     32,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "ربحان؟ بيع جزء يرجّع راس مالك",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "وإذا نزل تحت 200$ وما رجع: اطلع • الثقة 6/10",
+     24,
+     "med",
+     "sub"
+    ]
+   ],
+   "y": 0.69
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.3,
+   "lines": [
+    [
+     "ننطر 200$... والقرار قرارك",
+     42,
+     "bold",
+     "white"
+    ],
+    [
+     "رايك بالتعليقات",
+     38,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار الجمعة 13 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "t_open",
+   "type": "vo_clip",
+   "line": "t_open",
+   "delay": 0.7,
+   "duration": 3.4,
+   "video": {
+    "draft": "src/mrna/s720_turtle_open_c.mp4",
+    "final": "src/mrna/s720_turtle_open_c.mp4"
+   },
+   "video_job": "ecf9a86b-cb3a-4cbf-89bb-f65848a54684",
+   "_note": "intone يرفض أقل من ثانيتين صوت → حركة seedance + تعليق",
+   "_trim": "أول 1.2ث من مقطع seedance انقصت (السلحفاة يرفع راسه ويصيح عند ~2ث)"
+  },
+  {
+   "id": "open_dhub",
+   "type": "lipsync",
+   "line": "open_dhub",
+   "video": {
+    "draft": "src/mrna/d480_open_dhub.mp4",
+    "final": "src/mrna/d480_open_dhub.mp4"
+   },
+   "draft_job": "b144aeb1-aa51-45b9-9dd6-2be40204e851",
+   "graphic": {
+    "name": "money",
+    "cue": "صارت",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   }
+  },
+  {
+   "id": "open_fox",
+   "type": "lipsync",
+   "line": "open_fox",
+   "video": {
+    "draft": "src/mrna/d480_open_fox.mp4",
+    "final": "src/mrna/d480_open_fox.mp4"
+   },
+   "draft_job": "bf4e9185-9c11-4c0d-866d-931fdffca0f5",
+   "card": {
+    "name": "fox_open",
+    "at": "cue",
+    "cue": "خسرت"
+   }
+  },
+  {
+   "id": "intro",
+   "type": "vo_clip",
+   "line": "intro",
+   "delay": 0.3,
+   "duration": 10.4,
+   "video": {
+    "draft": "src/mrna/s720_exterior.mp4",
+    "final": "src/mrna/s720_exterior.mp4"
+   },
+   "video_job": "10e6d0e5-b728-41e6-b6ac-bc66550598a9",
+   "card": {
+    "name": "title",
+    "at": 0.8,
+    "fade": 0.5
+   }
+  },
+  {
+   "id": "dhub",
+   "type": "lipsync",
+   "line": "thawr",
+   "video": {
+    "draft": "src/mrna/d480_dhub.mp4",
+    "final": "src/mrna/d480_dhub.mp4"
+   },
+   "draft_job": "8b901d3a-829b-4a2d-a419-c84416af807c",
+   "card": {
+    "name": "dhub",
+    "at": "cue",
+    "cue": "السرطان"
+   }
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "dubb",
+   "video": {
+    "draft": "src/mrna/d480_fox.mp4",
+    "final": "src/mrna/d480_fox.mp4"
+   },
+   "draft_job": "1f861c8d-e906-4bec-8768-c3f4fb3f2417",
+   "card": {
+    "name": "fox",
+    "at": "cue",
+    "cue": "نزل"
+   }
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/mrna/d480_clash.mp4",
+    "final": "src/mrna/d480_clash.mp4"
+   },
+   "draft_job": "dba39f8a-723e-446c-975a-6763b1466dfd",
+   "shake": "يوصل"
+  },
+  {
+   "id": "ask",
+   "type": "still_vo",
+   "line": "ask",
+   "delay": 0.3,
+   "duration": 5.4,
+   "image": "src/mrna/kf_falcon.png"
+  },
+  {
+   "id": "guest",
+   "type": "lipsync",
+   "line": "guest",
+   "video": {
+    "draft": "src/mrna/d480_guest.mp4",
+    "final": "src/mrna/d480_guest.mp4"
+   },
+   "draft_job": "fb58d3b9-41ca-4741-896f-8b6a2e7788bd",
+   "graphic": {
+    "name": "donut",
+    "cue": "نص",
+    "box": [
+     60,
+     560,
+     360
+    ]
+   },
+   "card": {
+    "name": "guest",
+    "at": "after_graphic"
+   },
+   "_note": "أول محاولتين انرفضت لأن ملف الصوت المعالج طلع صامت؛ بعد الإصلاح نجح intone. احتياطي seedance: s720_guest.mp4 (53a73944)"
+  },
+  {
+   "id": "judge_a",
+   "type": "lipsync",
+   "line": "qadhi_a",
+   "video": {
+    "draft": "src/mrna/d480_judge_a.mp4",
+    "final": "src/mrna/d480_judge_a.mp4"
+   },
+   "draft_job": "71c2eacd-916a-4eff-b78a-ae6e980313af",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     140,
+     552,
+     360
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   }
+  },
+  {
+   "id": "judge_b",
+   "type": "lipsync",
+   "line": "qadhi_b",
+   "video": {
+    "draft": "src/mrna/d480_judge_b.mp4",
+    "final": "src/mrna/d480_judge_b.mp4"
+   },
+   "draft_job": "cc2c15a9-96ad-4bdd-8792-fb95275474e5",
+   "card": {
+    "name": "verdict2",
+    "at": 0.6
+   }
+  },
+  {
+   "id": "cta",
+   "type": "still_vo",
+   "line": "cta",
+   "delay": 0.4,
+   "duration": 10.4,
+   "image": "src/mrna/master.png",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   }
+  }
+ ],
+ "generation": {
+  "_comment": "لقطات اليخت (gpt_image_2_6): الخارجي 78e0cb95، الصالة D المعتمدة cd6edc37 والمصلحة d30f48ab، السلحفاة 4d9d5f87، الضب cdfa1d9e، الثعلب 2f44d919، المواجهة 355e13e3، القاضي 0519f422، الصقر 0221e152 (المصلح 746d6859). صورة السلحفاة الشايب 953f1d70. الشفاه intone 480p بنفس أسلوب الحلقات السابقة.",
+  "master": "d30f48ab-50dc-48fa-a87f-4ef100dd03a3",
+  "exterior": "78e0cb95-0c76-4b28-9c12-da1abde3923c",
+  "turtle_elder": "953f1d70-fe2c-4fdb-a989-095c828747f3",
+  "open_clash_rejected": "a1b88727-0ed3-4ef3-93d1-005a05d641de (لقطة ثنائية: كتلة شفاه الثعلب أقصر من تسجيله بـ30% → انقسمت لقطتين قريبتين)"
+ },
+ "review_2026_11_15": "مراجعة بدر الصوتية: سبعتعش بالتاء (لا طاء)، خِسَرت، ثلاثين بالمية، ميتين (200 مو الميّتين)، سلحفاة بمفاجأة أكبر، الختام «وإنتوا، اكتبوا لنا رايكم بالتعليقات». اختياراته: 1A 2A 3A 4A 5A 6B."
+}

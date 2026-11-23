@@ -1,0 +1,6 @@
+{"engine":"higgsfield elevenlabs_v4","dhub_voice":"Holden 3c9d6053","owl_A":"Julian 95429266 (median ~135 Hz, close to Holden)","owl_B":"Caspian ef70cc83 (median ~115 Hz, deeper)",
+"01_dhub":"84461364-1836-463d-8fa6-32fbb63c9827","02A":"88ed3b4d-3716-4ddd-aa04-399a6212e619","02B":"905b5d83-6326-4b95-a27b-1283fbe0b9c4",
+"03_dhub":"b39639e8-d2ae-4642-9e01-e6dbfc22239d","04a_dhub":"2ff2d77d-feec-47bd-8e00-8ab4e201f266","04b_dhub":"e911c970-f221-4ec6-80ad-b1bf3d375130 (diacritics on aqmar/indaha)",
+"05A":"d2366745-e44e-4095-b884-8896969ceddc","05B":"a140086d-2a93-4ac8-9384-b6107e1429ba","06_dhub":"327d7bd9-d19e-40cb-a67a-7bb1018ae1bc",
+"07A":"a4f27b04-feef-4724-a23f-4043dadb5be1","07B":"75e80dfc-291d-452b-b7ea-234d28aab879","08a_dhub":"200be45c-f453-4716-a212-1f3151a4e1eb","08b_dhub":"f0426a67-3dd7-434e-af32-bf35e42fb736 (diacritics on indah)",
+"note":"Transcript check faster-whisper medium. 04a heard aqmar as atmar -> 04b fixed. 08: whisper hears indaha in both takes (likely whisper artifact) - Bader's ear decides. Total ~62 s of speech."}

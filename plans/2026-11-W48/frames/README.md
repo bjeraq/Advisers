@@ -1,7 +1,7 @@
 # W48 location keyframes (gpt_image_2_6 medium 1k, 23 Nov 2026)
 | ep | location | job_id |
 |---|---|---|
-| 11 | car, Gulf Road night (dhub drives, fox) | 64e41574-79ff-4fa2-9bf8-cf2ef9a80fa1 |
+| 11 | car, Gulf Road night (dhub drives, owl) — v2 after Bader | 1dc5d16d-3792-4f71-b844-166ecaea3f3e (v1 with fox: 64e41574) |
 | 12 | news studio, falcon anchor + camel on guest screen | 8e97b833-7893-4f54-911b-4dc323f7d91c |
 | 13 | café (hedgehog + jerboa) | 71890324-9ba8-42f8-8f8b-c50ebed1b39f |
 | 14 | diwaniya — approved wide from ep 2 (reused) | 6240dad8-cd04-4d2b-941e-ef2b43158505 |

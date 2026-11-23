@@ -43,16 +43,16 @@
   {"id": "dtc", "type": "vo_clip", "line": "dtc", "delay": 0.2, "duration": 9.8, "video": {"draft": "src/nike/s_dtc.mp4", "final": "src/nike/s_dtc.mp4"}, "card": {"name": "dtc", "at": "cue", "cue": "قالت"}},
   {"id": "rivals", "type": "vo_clip", "line": "rivals", "delay": 0.2, "duration": 9.2, "video": {"draft": "src/nike/s_rivals.mp4", "final": "src/nike/s_rivals.mp4"}, "extra_cards": [{"name": "hoka", "cue": "هوكا", "until_cue": "وأون"}, {"name": "on", "cue": "وأون", "until_cue": "وأديداس"}, {"name": "adidas", "cue": "وأديداس"}]},
   {"id": "franch", "type": "lipsync", "line": "franch", "video": {"draft": "src/nike/d_franch.mp4", "final": "src/nike/d_franch.mp4"}, "card": {"name": "franch", "at": "cue", "cue": "الإير"}},
-  {"id": "q1", "type": "lipsync", "line": "q1", "video": {"draft": "src/nike/d_q1.mp4", "final": "src/nike/d_q1.mp4"}},
+  {"id": "q1", "type": "lipsync", "line": "q1", "video": {"draft": "src/nike/d_q1t.mp4", "final": "src/nike/d_q1t.mp4"}},
   {"id": "fix", "type": "vo_clip", "line": "fix", "delay": 0.2, "duration": 13.4, "video": {"draft": "src/nike/s_fix.mp4", "final": "src/nike/s_fix.mp4"}, "extra_cards": [{"name": "hill", "cue": "واحد", "until_cue": "ورجعوا"}, {"name": "plan", "cue": "المبيعات"}]},
   {"id": "good", "type": "lipsync", "line": "good", "video": {"draft": "src/nike/d_good.mp4", "final": "src/nike/d_good.mp4"}, "card": {"name": "good", "at": "cue", "cue": "توزيع"}},
-  {"id": "q2", "type": "lipsync", "line": "q2", "video": {"draft": "src/nike/d_q2.mp4", "final": "src/nike/d_q2.mp4"}},
+  {"id": "q2", "type": "lipsync", "line": "q2", "video": {"draft": "src/nike/d_q2t.mp4", "final": "src/nike/d_q2t.mp4"}},
   {"id": "worry", "type": "lipsync", "line": "worry", "video": {"draft": "src/nike/d_worry.mp4", "final": "src/nike/d_worry.mp4"}, "card": {"name": "worry", "at": "cue", "cue": "بالصين"}},
   {"id": "cta", "type": "lipsync", "line": "cta", "video": {"draft": "src/nike/d_cta.mp4", "final": "src/nike/d_cta.mp4"}, "card": {"name": "cta", "at": "cue", "cue": "شرايكم"}}
  ],
  "generation": {
-  "frames": {"walk": "f2b2fafe-f68c-4be7-a3ab-fe7d097e69f7", "store": "261b754a-3d02-40cc-aefd-9534564d39de", "horse_close": "209de7fc-1c25-4ed5-b629-9ef4552dc7ac", "turtle_close": "fdd25cbb-87e0-46a5-a74a-1137a3690905", "turtle_cam": "521968ba-49dd-495a-b941-346c27bc806e"},
+  "frames": {"walk": "f2b2fafe-f68c-4be7-a3ab-fe7d097e69f7", "store": "261b754a-3d02-40cc-aefd-9534564d39de", "horse_close": "209de7fc-1c25-4ed5-b629-9ef4552dc7ac", "horse_front": "546c3c87", "turtle_close": "fdd25cbb-87e0-46a5-a74a-1137a3690905", "turtle_cam": "521968ba-49dd-495a-b941-346c27bc806e"},
   "audio_media": {"afa": "028501c3-37db-4f2a-bd09-3af0b4d6d1d2", "rivals": "e0398d9f-fde5-4ca1-b3c3-500c8f6d7a2d", "franch": "84a96aef-6399-4692-911d-20585330bab0", "q1": "53abea9b-5245-486e-b5e4-3aa40b11855f", "good": "abddbbaf-59cb-4476-a882-16b9cf4afb5c", "q2": "24baa679-5fa3-48e2-83e7-e2f27d07d2fe", "worry": "07699f37-d1aa-4858-8c4a-e4243c58fa64", "cta": "f50a965d-87b6-4e28-ae34-10a7fcfa9fee"},
-  "jobs": {"afa": "ce3248bf-3a45-4552-8c48-ff3ca5b44fbc", "franch": "c955d054-7139-4fd7-b657-1e0ddf8b010a", "q1": "67edb102-73ef-4869-bf18-d6f9c296809c", "good": "0fb2ed05-2aac-46a2-a7a9-ab19e6437dfd", "q2": "ccff0ee8-26af-4c77-980c-2cc4db09eac4", "worry": "a649a6fa-839a-46aa-b56a-e5f244876430", "cta": "74d6e3b2-731e-4962-8d4d-53a87f7d332d", "hook": "c693c10b-0ea7-4b42-b5dd-7a452714e1bc"}
+  "jobs": {"afa": "ce3248bf-3a45-4552-8c48-ff3ca5b44fbc", "franch": "bded7990", "q1": "67edb102-73ef-4869-bf18-d6f9c296809c", "good": "0fb2ed05-2aac-46a2-a7a9-ab19e6437dfd", "q2": "ccff0ee8-26af-4c77-980c-2cc4db09eac4", "worry": "763f4ca8", "cta": "74d6e3b2-731e-4962-8d4d-53a87f7d332d", "hook": "c693c10b-0ea7-4b42-b5dd-7a452714e1bc", "dtc": "3f27367a-7768-4d0e-8be6-f6a02f7419f4", "rivals": "8ccf4566-0d3a-4231-ba0e-8b7fb4c19bf9", "fix": "02c22e78-3519-4143-a72b-e4d8435db4f0", "draft720_media": "3915189c-6b50-41fb-a762-b461b7c6dad7", "_note": "franch/worry rerun on frontal horse frame 546c3c87 (full IDs in Higgsfield history); d_q1t/d_q2t = intone clips trimmed to 3.7s/3.4s to cut dead air"}
  }
 }

@@ -200,7 +200,7 @@ def render(spec, w_px, h_px, base_dir='.', safe=None, final=True):
         f = font('bold', 36)
         y -= f.size * 1.55
         pill(d, cx, y, spec['footer'], f, INK_DARK, C['teal'] + (255,))
-        y -= 34 * S
+        y -= 60 * S                              # فراغ بين الشريط والعنوان (المستطيل الأصفر كان يلمس الشريط)
     faces = spec.get('faces') or []
     if faces:
         size = 190 * S

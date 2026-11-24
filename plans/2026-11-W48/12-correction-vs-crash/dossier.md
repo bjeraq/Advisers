@@ -1,4 +1,24 @@
 # Dossier — Correction vs Bear Market vs Crash (S&P 500 / Nasdaq-100, Nov 2026)
+Episode number: **18** (renumbered from 12 on 23 Nov; folder name unchanged).
+
+## UPDATE — after close Tue 24 Nov 2026 (checked 24 Nov, 21:30 UTC)
+| Fact | Value | Sources |
+|---|---|---|
+| S&P 500 Mon 23 Nov | **7,237.17, +4.73%** (big rebound) | TradingView SP:SPX; journalarta.com 2026/11/24 "S&P 500 closes 4.73% higher"; Yahoo Finance live 24 Nov |
+| S&P 500 Tue 24 Nov | **7,201.09, −0.50%** | TradingView SP:SPX; finance.yahoo.com live 24 Nov (7,201.09, −0.50%); Reuters prelim 7,202.45 (−0.48%) |
+| S&P 500 drawdown now | **−7.9%** from 7,818.93 record (6 Oct) → **back out of correction territory** (correction line ≈ 7,037) | computed from the two closes above |
+| Bounce from 20 Nov low close | S&P **+4.2%** in 2 days | computed |
+| Nasdaq Composite | Mon +6.51% (best day since Apr 2025) → 24,089.56; Tue −1.48% → 23,733.54 | journalarta.com; finance.yahoo.com; businessupturn.com |
+| Dow Tue 24 Nov | 50,018.70, +0.85% | cnbc.com 2026/11/23 live updates |
+| Cause | Mon: Nvidia-led rally; Tue: chips/AI gave back gains (Nvidia −6%), awaiting inflation data | finance.yahoo.com; virginiabusiness.com |
+
+Single source — do not say on air:
+- **Nasdaq-100**: Mon 26,746.10 (+6.86%), Tue **26,214.17 (−1.99%)** → **−16.0% from 31,224.69 record** (TradingView only). The "almost a bear market (−19.8%)" angle is gone; NDX is still in a correction.
+
+Claim check vs script: "S&P is in a correction" is ❌ **as of today** (−7.9%). True statement: "the S&P **touched** correction on 20 Nov (−11.6%), then jumped 4.7% in one day." The 20 Nov numbers below remain historically correct.
+
+---
+## Original dossier (data to close Fri 20 Nov 2026)
 Accessed: Mon 23 Nov 2026. Informational only, not advice. Latest data = close **Fri 20 Nov 2026**.
 
 ## Numbers safe to say on air (2 sources)

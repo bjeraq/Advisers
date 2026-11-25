@@ -118,45 +118,54 @@
    ]
   },
   "hoka": {
-   "kind": "card",
+   "kind": "photo",
+   "image": "src/nike/v3/p_hoka_c.png",
    "accent": "teal",
-   "y": 0.56,
+   "y": 0.255,
+   "x": 0.25,
+   "size": 200,
    "lines": [
     [
      "هوكا: نعل عالي ومريح",
-     34,
+     24,
      "bold",
      "white"
     ]
    ]
   },
   "on": {
-   "kind": "card",
+   "kind": "photo",
+   "image": "src/nike/v3/p_on_c.png",
    "accent": "teal",
-   "y": 0.56,
+   "y": 0.255,
+   "x": 0.25,
+   "size": 200,
    "lines": [
     [
-     "أون: تصميم يديد وسعر كامل",
-     34,
+     "أون: تصميم يديد",
+     24,
      "bold",
      "white"
     ]
    ]
   },
   "adidas": {
-   "kind": "card",
+   "kind": "photo",
+   "image": "src/nike/v3/p_samba2_c.png",
    "accent": "teal",
-   "y": 0.56,
+   "y": 0.255,
+   "x": 0.25,
+   "size": 200,
    "lines": [
     [
-     "أديداس: رجّعت السامبا",
-     34,
+     "أديداس: السامبا",
+     24,
      "bold",
      "white"
     ],
     [
      "موديل من الخمسينات",
-     26,
+     20,
      "med",
      "light_teal"
     ]
@@ -297,6 +306,70 @@
   "disc": {
    "kind": "disclaimer",
    "text": "تحليل لا توصية • أسعار إغلاق الجمعة 20 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  },
+  "af1": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_af1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "إير فورس 1",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "j1": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_j1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "جوردن 1",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "dunk": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_dunk_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "دنك",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "j1w": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_j1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.27,
+   "size": 200,
+   "lines": [
+    [
+     "جوردن",
+     24,
+     "bold",
+     "white"
+    ]
+   ]
   }
  },
  "scenes": [
@@ -327,13 +400,11 @@
   },
   {
    "id": "dtc",
-   "type": "vo_clip",
+   "type": "lipsync",
    "line": "dtc",
-   "delay": 0.2,
-   "duration": 9.8,
    "video": {
-    "draft": "src/nike/v2/dtc.mp4",
-    "final": "src/nike/v2/dtc.mp4"
+    "draft": "src/nike/v3/dtc.mp4",
+    "final": "src/nike/v3/dtc.mp4"
    },
    "card": {
     "name": "dtc",
@@ -371,14 +442,31 @@
    "type": "lipsync",
    "line": "franch",
    "video": {
-    "draft": "src/nike/v2/franch.mp4",
-    "final": "src/nike/v2/franch.mp4"
+    "draft": "src/nike/v2/franch_flagfix.mp4",
+    "final": "src/nike/v2/franch_flagfix.mp4"
    },
    "card": {
     "name": "franch",
     "at": "cue",
-    "cue": "الإير"
-   }
+    "cue": "لين"
+   },
+   "extra_cards": [
+    {
+     "name": "af1",
+     "cue": "الإير",
+     "until_cue": "والجوردن"
+    },
+    {
+     "name": "j1",
+     "cue": "والجوردن",
+     "until_cue": "والدنك"
+    },
+    {
+     "name": "dunk",
+     "cue": "والدنك",
+     "until_cue": "لين"
+    }
+   ]
   },
   {
    "id": "q1",
@@ -391,13 +479,11 @@
   },
   {
    "id": "fix",
-   "type": "vo_clip",
+   "type": "lipsync",
    "line": "fix",
-   "delay": 0.2,
-   "duration": 13.4,
    "video": {
-    "draft": "src/nike/v2/fix.mp4",
-    "final": "src/nike/v2/fix.mp4"
+    "draft": "src/nike/v3/fix.mp4",
+    "final": "src/nike/v3/fix.mp4"
    },
    "extra_cards": [
     {
@@ -416,8 +502,8 @@
    "type": "lipsync",
    "line": "good",
    "video": {
-    "draft": "src/nike/v2/good.mp4",
-    "final": "src/nike/v2/good.mp4"
+    "draft": "src/nike/v3/good.mp4",
+    "final": "src/nike/v3/good.mp4"
    },
    "card": {
     "name": "good",
@@ -439,14 +525,21 @@
    "type": "lipsync",
    "line": "worry",
    "video": {
-    "draft": "src/nike/v2/worry.mp4",
-    "final": "src/nike/v2/worry.mp4"
+    "draft": "src/nike/v3/worry.mp4",
+    "final": "src/nike/v3/worry.mp4"
    },
    "card": {
     "name": "worry",
     "at": "cue",
     "cue": "بالصين"
-   }
+   },
+   "extra_cards": [
+    {
+     "name": "j1w",
+     "cue": "جوردان",
+     "until_cue": "وبنوك"
+    }
+   ]
   },
   {
    "id": "cta",
@@ -524,6 +617,27 @@
    "cta": "abb48993-1eb9-4e23-827c-3514e4d5ce1f",
    "cta_v1": "f293d14e-f739-4926-b6c3-ee581228fce2"
   },
-  "_note_v2": "v2 (Bader 23-25 Nov): reshoot with seedance_2_5 omni_reference 720p, start_image + audio_references for lipsync (only the speaker moves), camera moves per shot; turtle always backed by NIKE store, horse by HOKA store opposite; logo-free shoes (horse black/orange, turtle white). cta retaken (v1 pulled back too far). Cards worry/cta moved to y 0.198 so mouths stay clear. draft720 v2 media dc6283be-ab73-4bf7-90e0-2d055e28e2f7."
+  "_note_v2": "v2 (Bader 23-25 Nov): reshoot with seedance_2_5 omni_reference 720p, start_image + audio_references for lipsync (only the speaker moves), camera moves per shot; turtle always backed by NIKE store, horse by HOKA store opposite; logo-free shoes (horse black/orange, turtle white). cta retaken (v1 pulled back too far). Cards worry/cta moved to y 0.198 so mouths stay clear. draft720 v2 media dc6283be-ab73-4bf7-90e0-2d055e28e2f7.",
+  "v3": {
+   "p_hoka": "d1abdc24-f03f-4a8d-8536-135af8b6cbab",
+   "p_on": "d948ca93-80fc-436e-ae45-37f42efd8b2b",
+   "p_samba": "d122a206-f432-4133-a82d-fa010abdc49f",
+   "p_af1": "b1b8d1ca-5c33-463e-9359-ef6a2133b6b6",
+   "p_j1": "9510cc16-39f6-4ce8-9484-aff5e66e365a",
+   "p_dunk": "479cc8a1-317a-488b-93b4-35c12fef5416",
+   "f_fix": "5d776f54-541f-4f74-b429-e8e69bb7537e",
+   "f_good": "a314b368-efc0-4292-bae1-eab1569eca95",
+   "f_worry": "5638dcce-1caa-4e61-8282-df70a8b6b727",
+   "f_dtc": "b8911df4-89a5-4b7d-8bfe-e4b6e96baca6",
+   "f_worry_flagfix_media": "fbd1a740-561e-4f9e-b990-f643c5dfb2bb",
+   "a_03H": "1364306e-4273-4411-aa26-f77d053311dd",
+   "a_07H": "c295e2e9-9b48-4520-98c4-f5668e1e6560",
+   "v_dtc": "ef738c01-8db0-4e3d-adcf-21c48537edad",
+   "v_fix": "3f951a14-8afa-4eb6-82de-cfbda1e716c2",
+   "v_good": "b0de12e5-e073-4990-b76a-4e373763b9d8",
+   "v_worry": "3c9196bd-9e49-4600-abb4-4017b65dc39f",
+   "p_samba2": "35919e2b-1176-476e-88aa-1d45075c53dc"
+  },
+  "_note_v3": "v3 (Bader 25 Nov): dtc now front walk-and-talk lipsync; fix = short escalator ground->mezzanine only (Avenues has 2 levels); good on mezzanine; worry daytime. Product photo cards (kind 'photo', images src/nike/v3/p_*_c.png, Samba redone as p_samba2). Kuwait flag must hang vertically: black on top, red left, white middle, green right — repainted with kwflag.py in worry start frame (media fbd1a740) and tracked over franch clip with fix_franch_flag.py (-> src/nike/v2/franch_flagfix.mp4). draft720 v3 media 7ebcad46-c46b-46a4-b017-259b9d72f183."
  }
 }

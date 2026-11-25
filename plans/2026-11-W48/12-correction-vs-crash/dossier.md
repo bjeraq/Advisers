@@ -1,6 +1,20 @@
 # Dossier — Correction vs Bear Market vs Crash (S&P 500 / Nasdaq-100, Nov 2026)
 Episode number: **18** (renumbered from 12 on 23 Nov; folder name unchanged).
 
+## UPDATE — after close Wed 25 Nov 2026 (last close before Thu 26 Nov publish; US shut Thu for Thanksgiving)
+| Fact | Value | Sources |
+|---|---|---|
+| S&P 500 Wed 25 Nov | **7,182.78, −0.25%** | TradingView SP:SPX; cnbc.com 2026/11/24 live (7,182.78, −0.25%); wral.com AP "How major US stock indexes fared 11/25/2026" |
+| Intraday | fell as much as **−3.2%** (low 6,970.11 = **−10.9% from record**, briefly below the correction line) then recovered | TradingView; cnbc.com ("down as much as 3.2%") |
+| S&P 500 drawdown at close | **−8.1%** from 7,818.93 → **not in correction** at the close | computed |
+| S&P since 20 Nov low close | +3.9% | computed |
+| Dow | 50,182.95, +0.33% | cnbc.com; AP |
+| Nasdaq Composite | 23,585.80, −0.62% | cnbc.com |
+| YTD (AP) | S&P +4.9%, Dow +4.4%, Nasdaq +1.5% | wral.com AP |
+| Theme | rotation out of tech/AI into old-economy names | 247wallst.com; finance.yahoo.com 25 Nov live |
+
+Single source — do not say on air: **Nasdaq-100** 26,046.90 (−0.64%) → **−16.6%** from record; intraday low 24,970.66 = −20.0% (touched bear-market line intraday) — TradingView only.
+
 ## UPDATE — after close Tue 24 Nov 2026 (checked 24 Nov, 21:30 UTC)
 | Fact | Value | Sources |
 |---|---|---|

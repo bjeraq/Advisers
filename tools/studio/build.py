@@ -89,7 +89,8 @@ def scene_track(sc, ep, wpaths, video, B, reuse):
             if t == 'lipsync':
                 import align1
                 ln = ep['lines'][sc['line']]
-                align1.main(video, ln['audio'], wpaths[sc['line']], trk + '.wav', trk + '_w.json', trk + '_m.json')
+                align1.main(video, ln['audio'], wpaths[sc['line']], trk + '.wav', trk + '_w.json', trk + '_m.json',
+                            gain=ln.get('gain_db'))
             else:
                 import align2
                 a, b = sc['lines']
@@ -138,7 +139,8 @@ def render_scene(sc, ep, wpaths, a, B, geo):
             chain.append(f"[{iv}:v]scale={2 * W}:{2 * H},zoompan=z='1.12-0.10*on/{N}':d={N}:"
                          f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},format=yuv420p[b]")
         ia = add(f"-i {audio}")
-        chain.append(f"[{ia}:a]volume={gain_db(audio):.1f}dB,aresample=44100,"
+        g_db = ep['lines'][sc['line']].get('gain_db')
+        chain.append(f"[{ia}:a]volume={g_db if g_db is not None else gain_db(audio):.1f}dB,aresample=44100,"
                      f"aformat=channel_layouts=stereo,adelay={ms}|{ms},apad[a]")
         amap = "[a]"
 

@@ -56,7 +56,7 @@ def clip_segments(clip):
     return segs, dur
 
 
-def main(clip, rec, words_json, out_wav, out_words, meta_out):
+def main(clip, rec, words_json, out_wav, out_words, meta_out, gain=None):
     segs, cdur = clip_segments(clip)
     ch = max(0.0, segs[0].start - 0.05) if segs else 0.2
     ct = min(cdur, segs[-1].end + 0.10) if segs else cdur
@@ -65,7 +65,7 @@ def main(clip, rec, words_json, out_wav, out_words, meta_out):
     recd = rt - rh
     f = max(0.78, min(1.05, recd / block))            # عامل تمطيط الفيديو
     tempo = max(0.93, min(1.07, recd / (block * f)))  # بقايا طفيفة على الصوت فقط
-    g = max(-8, min(8, -18.0 - mean_vol(rec)))
+    g = gain if gain is not None else max(-8, min(8, -18.0 - mean_vol(rec)))  # gain: كسب ثابت يدوي من lines.<id>.gain_db
     delay = ch * f
     out_dur = cdur * f
     fc = (f"[0:a]atrim={rh:.3f}:{rt:.3f},asetpts=PTS-STARTPTS,atempo={tempo:.4f},"

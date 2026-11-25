@@ -210,17 +210,19 @@
  "scenes": [
   {
    "id": "hook",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "hook",
    "video": {
-    "draft": "src/ep11/v2_hook.mp4",
-    "final": "src/ep11/v2_hook.mp4"
+    "draft": "src/ep11/v3/c1.mp4",
+    "final": "src/ep11/v3/c1.mp4"
    },
    "card": {
     "name": "hook",
     "at": 0.0,
     "fade": 0.15
-   }
+   },
+   "delay": 0.0,
+   "duration": 6.04
   },
   {
    "id": "name",
@@ -229,8 +231,8 @@
    "delay": 0.0,
    "duration": 7.04,
    "video": {
-    "draft": "src/ep11/v2_owl_name.mp4",
-    "final": "src/ep11/v2_owl_name.mp4"
+    "draft": "src/ep11/v3/c2.mp4",
+    "final": "src/ep11/v3/c2.mp4"
    },
    "card": {
     "name": "price",
@@ -240,31 +242,35 @@
   },
   {
    "id": "google",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "google",
    "video": {
-    "draft": "src/ep11/v2_google.mp4",
-    "final": "src/ep11/v2_google.mp4"
+    "draft": "src/ep11/v3/c3a.mp4",
+    "final": "src/ep11/v3/c3a.mp4"
    },
    "card": {
     "name": "google",
     "at": "cue",
     "cue": "اتفقت"
-   }
+   },
+   "delay": 0.0,
+   "duration": 13.77
   },
   {
    "id": "gulfsat",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "gulfsat",
    "video": {
-    "draft": "src/ep11/v2_gulfsat.mp4",
-    "final": "src/ep11/v2_gulfsat.mp4"
+    "draft": "src/ep11/v3/c3b.mp4",
+    "final": "src/ep11/v3/c3b.mp4"
    },
    "card": {
     "name": "gulfsat",
     "at": "cue",
     "cue": "قلف"
-   }
+   },
+   "delay": 0.0,
+   "duration": 9.27
   },
   {
    "id": "loss",
@@ -273,8 +279,8 @@
    "delay": 0.0,
    "duration": 7.04,
    "video": {
-    "draft": "src/ep11/v2_owl_loss.mp4",
-    "final": "src/ep11/v2_owl_loss.mp4"
+    "draft": "src/ep11/v3/c4.mp4",
+    "final": "src/ep11/v3/c4.mp4"
    },
    "card": {
     "name": "loss",
@@ -284,12 +290,14 @@
   },
   {
    "id": "expand",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "expand",
    "video": {
-    "draft": "src/ep11/v2_expand.mp4",
-    "final": "src/ep11/v2_expand.mp4"
-   }
+    "draft": "src/ep11/v3/c5.mp4",
+    "final": "src/ep11/v3/c5.mp4"
+   },
+   "delay": 0.0,
+   "duration": 5.04
   },
   {
    "id": "drop",
@@ -298,8 +306,8 @@
    "delay": 0.0,
    "duration": 9.04,
    "video": {
-    "draft": "src/ep11/v2_owl_drop.mp4",
-    "final": "src/ep11/v2_owl_drop.mp4"
+    "draft": "src/ep11/v3/c6.mp4",
+    "final": "src/ep11/v3/c6.mp4"
    },
    "card": {
     "name": "drop",
@@ -309,17 +317,19 @@
   },
   {
    "id": "cta",
-   "type": "lipsync",
+   "type": "vo_clip",
    "line": "cta",
    "video": {
-    "draft": "src/ep11/v2_cta.mp4",
-    "final": "src/ep11/v2_cta.mp4"
+    "draft": "src/ep11/v3/c7.mp4",
+    "final": "src/ep11/v3/c7.mp4"
    },
    "card": {
     "name": "cta",
     "at": "cue",
     "cue": "تشتري"
-   }
+   },
+   "delay": 0.0,
+   "duration": 9.04
   }
  ],
  "generation": {
@@ -394,5 +404,18 @@
    "owl_drop": "4b38b05c-538f-436b-8233-80718ec09f4d"
   }
  },
- "video_media_id_v1": "523feb6d-4137-4e70-84c9-d3d725cd9aca"
+ "video_media_id_v1": "523feb6d-4137-4e70-84c9-d3d725cd9aca",
+ "v3": {
+  "why": "Bader 25 Nov round 3: (1) CTA lizard looks at camera, (2) no visible cuts - one continuous chain of 7 seedance 480p clips, each starting from the previous clip's last frame, all scenes played whole (vo_clip, no stretch/trim), (3) price card shows price a year ago.",
+  "jobs": {
+   "c1": "01aca909-4e14-45a2-8d02-2847fc5f6946",
+   "c2": "712336ec-f540-4923-9cdc-bd31bffbee28",
+   "c3": "29543c38-9597-45e0-b5e6-09153ec0c7b7",
+   "c4": "2836376a-30c4-4852-85de-80e520cc12d8",
+   "c5": "701ab9bd-081e-4684-8de9-70e65357b836",
+   "c6": "a447ddab-8f3e-4f7e-b2d3-3362b225eb04",
+   "c7": "6f49fd0e-0e16-4f27-9f5a-516d1cc80849"
+  },
+  "audio_03_04": "5885c462-8b4b-45fc-acca-7350b112cb40 (03 + 0.6s + 04; c3 split at 13.77s)"
+ }
 }

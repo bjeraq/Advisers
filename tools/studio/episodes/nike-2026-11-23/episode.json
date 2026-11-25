@@ -286,17 +286,19 @@
   "cta": {
    "kind": "card",
    "accent": "teal",
-   "y": 0.6,
+   "y": 0.7,
+   "pad": 16,
+   "bottom": 904,
    "lines": [
     [
      "نايكي راح تنهار ولا راح ترجع؟",
-     32,
+     28,
      "bold",
      "white"
     ],
     [
      "اكتب لنا بالكومنتات",
-     28,
+     24,
      "bold",
      "light_teal"
     ]
@@ -578,7 +580,8 @@
     "at": "cue",
     "cue": "شرايكم"
    },
-   "retimed": true
+   "retimed": true,
+   "captions_until_cue": "شرايكم"
   }
  ],
  "generation": {

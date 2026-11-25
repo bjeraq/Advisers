@@ -116,7 +116,11 @@ def render_scene(sc, ep, wpaths, a, B, geo):
     ws, meta, wav = scene_track(sc, ep, wpaths, video, B, a.reuse)
     ass = f'{B}/trk/{sid}.ass'
     captions.write(ass, [(ws, 0.0)], a.res)          # للمرجع فقط (verify) — الحرق من الصور
-    capmov = captions.render_track(f'{B}/trk/{sid}_cap.mov', [(ws, 0.0)], a.res, dur=meta['dur'])
+    wcap = ws
+    if sc.get('captions_until_cue'):                  # بطاقة الختام تاخذ مكان الترانسكريبت (ما تغطي الوجه)
+        cut = find_cue(ws, sc['captions_until_cue'], sid)
+        wcap = [w for w in ws if w['s'] < cut - 0.01]
+    capmov = captions.render_track(f'{B}/trk/{sid}_cap.mov', [(wcap, 0.0)], a.res, dur=meta['dur'])
 
     inputs, chain = [], []
 

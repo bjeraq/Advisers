@@ -105,13 +105,13 @@ class Cards:
             size -= 2
         return self.font(weight, size)
 
-    def card(self, path, lines, accent='teal', y=0.56, x=None):
+    def card(self, path, lines, accent='teal', y=0.56, x=None, pad=40, bottom=None):
         """بطاقة أرقام على الصدر/الطاولة. y = مركزها، لكن حافتها السفلى ما تنزل تحت SAFE.card_bottom،
         وحافتها اليمنى ≤ SAFE.right_x (أزرار إنستغرام)، وتصغر الخطوط لو العرض ما يكفي."""
         SS = self.SS
         img, d = self.canvas()
         acc = COLORS[accent]
-        gaps, pad = 18 * SS, 40 * SS
+        gaps, pad = 18 * SS, pad * SS
         avail = (SAFE['right_x'] - SAFE['left_x']) * SS
         scale = 1.0
         while True:
@@ -123,12 +123,13 @@ class Cards:
             scale -= 0.04
         tot_h = sum(h for _, h, _ in sizes) + gaps * (len(items) - 1)
         bw, bh = max_w + 2 * pad, tot_h + 2 * pad
-        cy = min(self.H * y, SAFE['card_bottom'] * SS - bh / 2)
+        # bottom: يسمح ببطاقة أوطى من card_bottom (مكان الترانسكريبت) لما المشهد يخفي الترانسكريبت (captions_until_cue)
+        cy = min(self.H * y, min(bottom or SAFE['card_bottom'], SAFE['disc_bottom'] - 80) * SS - bh / 2)
         cy = max(cy, SAFE['top'] * SS + bh / 2)
         cx = min(self.W / 2 if x is None else self.W * x, SAFE['right_x'] * SS - bw / 2)
         cx = max(cx, SAFE['left_x'] * SS + bw / 2)
         x0, y0, x1, y1 = cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2
-        d.rounded_rectangle([x0, y0, x1, y1], radius=28 * SS, fill=BG, outline=acc, width=4)
+        d.rounded_rectangle([x0, y0, x1, y1], radius=min(28 * SS, bh / 2), fill=BG, outline=acc, width=4)
         d.rounded_rectangle([x1 - 12 * SS, y0, x1, y1], radius=6 * SS, fill=acc)
         yy = cy - tot_h / 2
         for (t, f, c), (w, h, bb) in zip(items, sizes):

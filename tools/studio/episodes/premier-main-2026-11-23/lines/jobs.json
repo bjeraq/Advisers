@@ -17,5 +17,11 @@
 "09B_hedgehog": "6e6d6d25-febf-4d7d-8cee-24b64b924b0e (diacritics on inta / shinu tfaddil / iktib)",
 "note": "Hook A (Bader has not picked; default). Whisper medium check: 08A heard ghaliban as ghanban, 09A heard 'shu ntfaddal' -> B takes transcribe clean. Whisper hears al-bursa with s in 01/06 both takes (likely whisper artifact) - Bader's ear decides. Speech total ~72 s with A takes. Cost ~13 lines x ~2-3 credits.",
 "episode_number": 12,
-"renumber_note": "Bader 23 Nov (W48 planning, commit 6b9fa05): this episode is now 12 (was 13); script = scripts.md section 12, text unchanged so these voice lines stay valid."
+"renumber_note": "Bader 23 Nov (W48 planning, commit 6b9fa05): this episode is now 12 (was 13); script = scripts.md section 12, text unchanged so these voice lines stay valid.",
+"01C_jerboa": "1da7f1e8-a109-42d7-b9a4-76850c1a00d3 (Bader 25 Nov: tadri moved to the start as a real question)",
+"01D_jerboa": "1cd6808b-d0db-449e-b3e3-4004562441aa (same + diacritics)",
+"06C_jerboa": "83a817e8-acce-47d2-96a6-ba8eb7cca3ca (Bader: stress the b then yanayir, 'بِ يَنَاير')",
+"06D_jerboa": "872b3ccd-5d61-4736-8c9d-200c663088f3 ('بِيَنَايِر' diacritics)",
+"06E_rejected": "8c346b87 (drifted to MSA: هذه السنة / في السوق) - not sent",
+"bader_picks_25nov": "line1 rewrite (tadri first); 06A base preferred but fix b-yanayir; 08B; 09B (message read 'témoigner bí. 9 بي' = 8B, 9B)"
 }

@@ -136,6 +136,36 @@ class Cards:
             yy += h + gaps
         self.save(img, path)
 
+    def photo(self, path, image, lines=(), accent='teal', y=0.56, x=None, size=300):
+        """بطاقة صورة (موديل/منتج) مع سطر أو سطرين تحتها. size = عرض الصورة بإحداثيات 720.
+        نفس قيود SAFE مثل card: الحافة السفلى ≤ card_bottom واليمنى ≤ right_x."""
+        SS = self.SS
+        img, d = self.canvas()
+        acc = COLORS[accent]
+        pad, gap = 22 * SS, 14 * SS
+        ph = Image.open(image).convert('RGBA')
+        pw = round(size * SS)
+        ph = ph.resize((pw, round(pw * ph.height / ph.width)), Image.LANCZOS)
+        mask = Image.new('L', ph.size, 0)
+        ImageDraw.Draw(mask).rounded_rectangle([0, 0, ph.width, ph.height], radius=20 * SS, fill=255)
+        items = [(t, self.font(wt, sz), COLORS[c]) for t, sz, wt, c in lines]
+        sizes = [self.measure(d, t, f) for t, f, _ in items]
+        txt_h = sum(h for _, h, _ in sizes) + gap * len(items)
+        bw = max([ph.width] + [w for w, _, _ in sizes]) + 2 * pad
+        bh = ph.height + txt_h + 2 * pad
+        cy = min(self.H * y, SAFE['card_bottom'] * SS - bh / 2)
+        cy = max(cy, SAFE['top'] * SS + bh / 2)
+        cx = min(self.W / 2 if x is None else self.W * x, SAFE['right_x'] * SS - bw / 2)
+        cx = max(cx, SAFE['left_x'] * SS + bw / 2)
+        x0, y0, x1, y1 = cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2
+        d.rounded_rectangle([x0, y0, x1, y1], radius=28 * SS, fill=BG, outline=acc, width=4)
+        img.paste(ph, (round(cx - ph.width / 2), round(y0 + pad)), mask)
+        yy = y0 + pad + ph.height + gap
+        for (t, f, c), (w, h, bb) in zip(items, sizes):
+            d.text((cx - w / 2 - bb[0], yy - bb[1]), t, font=f, fill=c, direction='rtl')
+            yy += h + gap
+        self.save(img, path)
+
     def disclaimer(self, path, text):
         """شريط الإخلاء: ينتهي فوق SAFE.disc_bottom (قبل منطقة الكابشن)، ومزاح لليسار عن أزرار
         إنستغرام. لو النص أعرض من المساحة ينقسم سطرين عند أول « — » (أو «•»، أو بالنص)."""

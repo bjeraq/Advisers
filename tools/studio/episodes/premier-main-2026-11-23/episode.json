@@ -436,6 +436,14 @@
    "07": "30bf24c3-56f9-430b-a884-d718d405cab0",
    "08B": "b7cbd0ec-365c-4186-8a77-6005611ee58f",
    "09B": "c0056ab9-abc1-46c9-8c78-05891d79c428"
+  },
+  "cta_v2": {
+   "job": "98985861-59b9-4b5c-8d7f-8da7401ab2c9",
+   "note": "hedgehog looks into camera (Bader 25 Nov); location 2272cdcc (frame from iD 21.5s), both character images; video setpts 0.85",
+   "rejected": [
+    "fcc2bf41 (single-character photo not frontal)",
+    "e01f4c04 (same)"
+   ]
   }
  }
 }

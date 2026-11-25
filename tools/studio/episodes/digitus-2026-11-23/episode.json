@@ -327,13 +327,12 @@
    "08": "49db589b-ee8e-4421-931d-b236952e2108"
   },
   "intone_A": {
-   "job": "d4981d82-20b7-4cf8-8a7e-64a3c0879b96",
-   "audio": [
-    "01",
-    "03"
-   ],
-   "resolution": "480p",
-   "cost": 66
+   "status": "intone refused the lizard face 7 times (refunded): jobs d4981d82, e2c1ac4b, bc6a8587, 93de745e, c27cb199, b610c428, 9b27370e",
+   "fallback": "sync_so job 86b0923f-d2ed-4dd3-be06-3acfad9ffa0c on scene B footage reversed (media 7179c593) + audio 01|0.6s|03 (media 36bf909f), cost 70",
+   "frontal_frames_tried": [
+    "913c121f-76af-4801-858d-dcde68ce7e25",
+    "6fb81a02-0582-424e-8e76-49d62f9ba477"
+   ]
   },
   "intone_B": {
    "job": "0a0c1e78-d457-4534-a9c8-78c259abb6a6",
@@ -350,6 +349,17 @@
    "model": "seedance_2_5 720p 5s no audio",
    "cost": 35,
    "note": "one loop reused (ping-pong) under all three owl lines to stay under ~200 credits"
+  },
+  "cuts": {
+   "d_hook": "sync_A 0-5.75",
+   "d_google": "sync_A 5.95-19.2",
+   "d_gulfsat": "intone_B 0-10.70",
+   "d_expand": "intone_B 10.75-16.45",
+   "d_cta": "intone_B 16.55-26.05",
+   "owl": "owl_loop ping-pong: name 0+6.6, loss 3.3+7.1, drop 1.2+8.5"
   }
- }
+ },
+ "video_media_id": "523feb6d-4137-4e70-84c9-d3d725cd9aca",
+ "verify": "verify.py 25 Nov: all 8 scenes ✅, min similarity 0.77 (hook: whisper hears شركة/بسنا)",
+ "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)"
 }

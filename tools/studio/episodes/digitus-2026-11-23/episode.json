@@ -361,5 +361,29 @@
  },
  "video_media_id": "523feb6d-4137-4e70-84c9-d3d725cd9aca",
  "verify": "verify.py 25 Nov: all 8 scenes ✅, min similarity 0.77 (hook: whisper hears شركة/بسنا)",
- "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)"
+ "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)",
+ "v2_plan": {
+  "why": "Bader 25 Nov: owl always holding his phone and not engaging the lizard; car drives backward then forward (from reversed footage and ping-pong owl loop). Fix: new start frames without phone, all scenes seedance_2_5 480p forward-only with each line's audio as audio_references.",
+  "frames": {
+   "lizard_talks_owl_listens": "1cd923a9-7d51-4ae4-84a8-c5a6635548b0",
+   "owl_talks": "1c010ad5-1f16-41c0-be64-fbb72d52b17e"
+  },
+  "audio_media": {
+   "A_01_gap_03": "36bf909f-d2f4-41bb-9152-3708ac3805a7",
+   "B_04_gap_06_gap_08": "2700f200-1e99-46e5-a42c-da0c2bf30bf0",
+   "02": "cb419174-cdc8-4ea8-bafd-c4596714475d",
+   "05": "01670839-0eb6-4f41-8129-9ddb4f43da12",
+   "07": "6f475c99-7e20-4e47-b479-9c07c7df04aa"
+  },
+  "submitted": {
+   "owl_name_7s": "5a8ddaa2-3f7c-4360-a103-1eff4116bc48",
+   "owl_drop_9s": "4b38b05c-538f-436b-8233-80718ec09f4d"
+  },
+  "blocked_out_of_credits": {
+   "lizard_A_20s": 60,
+   "lizard_B_24s": 72,
+   "owl_loss_7s": 21
+  },
+  "gaps": "A: 01 then 0.6s then 03 (03 starts 6.01s). B: 04, 0.6s, 06, 0.6s, 08."
+ }
 }

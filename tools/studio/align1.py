@@ -84,3 +84,31 @@ def main(clip, rec, words_json, out_wav, out_words, meta_out, gain=None):
 
 if __name__ == '__main__':
     main(*sys.argv[1:7])
+
+
+def retimed(clip, rec, words_json, out_wav, out_words, meta_out, gain=None):
+    """للمقاطع اللي مرت على retime.py: صوت المقطع = تسجيلنا بمكانه الصحيح، فلا تمطيط (F=1).
+    نلقى إزاحة التسجيل داخل المقطع بالترابط (cross-correlation) وننقل توقيت الكلمات بنفس الإزاحة."""
+    import numpy as np
+
+    def load(p):
+        b = subprocess.run(['ffmpeg', '-v', 'error', '-i', p, '-vn', '-ac', '1', '-ar', '8000', '-f', 'f32le', '-'],
+                           capture_output=True).stdout
+        return np.frombuffer(b, np.float32)
+    a, r = load(clip), load(rec)
+    n = 1 << int(np.ceil(np.log2(len(a) + len(r))))
+    xc = np.fft.irfft(np.fft.rfft(a, n) * np.conj(np.fft.rfft(r, n)), n)
+    lag = int(np.argmax(xc))
+    if lag > n // 2:
+        lag -= n
+    off = lag / 8000.0                                   # clip_t = rec_t + off
+    cdur = len(a) / 8000.0
+    g = gain if gain is not None else max(-8, min(8, -18.0 - mean_vol(rec)))
+    r_ = run(f"ffmpeg -v error -y -i '{clip}' -vn -af \"volume={g:.1f}dB,aresample=44100,"
+             f"aformat=sample_fmts=fltp:channel_layouts=stereo\" '{out_wav}'")
+    assert r_.returncode == 0, r_.stderr[-500:]
+    ws = json.load(open(words_json))
+    adj = [{'w': w['w'], 's': round(w['s'] + off, 3), 'e': round(w['e'] + off, 3)} for w in ws]
+    json.dump(adj, open(out_words, 'w'), ensure_ascii=False)
+    json.dump({'f': 1.0, 'dur': round(cdur, 2)}, open(meta_out, 'w'))
+    print(f"{os.path.basename(clip)}: retimed off={off:+.3f}s dur={cdur:.2f}s gain {g:+.1f}")

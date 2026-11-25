@@ -89,8 +89,9 @@ def scene_track(sc, ep, wpaths, video, B, reuse):
             if t == 'lipsync':
                 import align1
                 ln = ep['lines'][sc['line']]
-                align1.main(video, ln['audio'], wpaths[sc['line']], trk + '.wav', trk + '_w.json', trk + '_m.json',
-                            gain=ln.get('gain_db'))
+                fn = align1.retimed if sc.get('retimed') else align1.main   # retimed: مقطع من retime.py
+                fn(video, ln['audio'], wpaths[sc['line']], trk + '.wav', trk + '_w.json', trk + '_m.json',
+                   gain=ln.get('gain_db'))
             else:
                 import align2
                 a, b = sc['lines']

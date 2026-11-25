@@ -10,50 +10,346 @@
  "fonts": "fonts",
  "location": "car at night, Gulf Road, Kuwait Towers outside (keyframe 1dc5d16d-3792-4f71-b844-166ecaea3f3e)",
  "lines": {
-  "hook": {"speaker": "thawr", "voice": "Holden", "audio": "src/ep11/lines/01.mp3", "audio_job": "869e6df3-4e7f-4b3b-9afb-75c6f12b6297",
-   "text": "شِرْكَه كويتية صعدت مية وأربعة وستين بالمِيّة بسنة... وهي خسرانة!"},
-  "name": {"speaker": "fanni", "voice": "Caspian", "audio": "src/ep11/lines/02.mp3", "audio_job": "905b5d83-6326-4b95-a27b-1283fbe0b9c4",
-   "text": "إنت تقصد ديجتس؟ اسمها القديم حياة للاتصالات، بالبورصة من ألفين وسبعة."},
-  "google": {"speaker": "thawr", "voice": "Holden", "audio": "src/ep11/lines/03.mp3", "audio_job": "b39639e8-d2ae-4642-9e01-e6dbfc22239d",
-   "text": "إيه! سنة وحدة صعدت مية وأربعة وستين بالمِيّة. ليش؟ لأنها اتفقت ويا قوقل: سيرفرات قوقل السحابية بالكويت تشتغل عندها، بعقد يوصل لخمسين مليون دولار."},
-  "gulfsat": {"speaker": "thawr", "voice": "Holden", "audio": "src/ep11/lines/04.mp3", "audio_job": "2ff2d77d-feec-47bd-8e00-8ab4e201f266",
-   "text": "وفوقها اتفقت تشتري شركة الأقمار الصناعية قلف سات بستة ملايين دينار، وعندها عقود ويا أوريدو قطر ودو."},
-  "loss": {"speaker": "fanni", "voice": "Caspian", "audio": "src/ep11/lines/05.mp3", "audio_job": "a140086d-2a93-4ac8-9384-b6107e1429ba",
-   "text": "حلو الكلام... بس شوف الأرقام: من بداية السنة لين الربع الثالث، الشركة خسرانة."},
-  "expand": {"speaker": "thawr", "voice": "Holden", "audio": "src/ep11/lines/06.mp3", "audio_job": "56fd58e8-27e8-479d-a19d-d0832c5191d1",
-   "text": "بس هذي مصاريف توسعة! يبنون اليوم عشان يربحون باچر."},
-  "drop": {"speaker": "fanni", "voice": "Caspian", "audio": "src/ep11/lines/07.mp3", "audio_job": "75e80dfc-291d-452b-b7ea-234d28aab879",
-   "text": "يمكن. بس السعر نزل سَبَعْتَعَش بالمِيّة بآخر ثلاث شهور... السوق قاعد يسأل نفس السؤال: متى الربح؟"},
-  "cta": {"speaker": "thawr", "voice": "Holden", "audio": "src/ep11/lines/08.mp3", "audio_job": "f0426a67-3dd7-434e-af32-bf35e42fb736",
-   "text": "اللي عِنْدَه سهم ديجتس، الله يبارك له. بس إنت اللي ما شريت... تشتري الحين، ولا خلاص فات الوقت؟ اكتب لنا بالكومنتات."}
+  "hook": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/01.mp3",
+   "audio_job": "869e6df3-4e7f-4b3b-9afb-75c6f12b6297",
+   "text": "شِرْكَه كويتية صعدت مية وأربعة وستين بالمِيّة بسنة... وهي خسرانة!"
+  },
+  "name": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/02.mp3",
+   "audio_job": "905b5d83-6326-4b95-a27b-1283fbe0b9c4",
+   "text": "إنت تقصد ديجتس؟ اسمها القديم حياة للاتصالات، بالبورصة من ألفين وسبعة."
+  },
+  "google": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/03.mp3",
+   "audio_job": "b39639e8-d2ae-4642-9e01-e6dbfc22239d",
+   "text": "إيه! سنة وحدة صعدت مية وأربعة وستين بالمِيّة. ليش؟ لأنها اتفقت ويا قوقل: سيرفرات قوقل السحابية بالكويت تشتغل عندها، بعقد يوصل لخمسين مليون دولار."
+  },
+  "gulfsat": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/04.mp3",
+   "audio_job": "2ff2d77d-feec-47bd-8e00-8ab4e201f266",
+   "text": "وفوقها اتفقت تشتري شركة الأقمار الصناعية قلف سات بستة ملايين دينار، وعندها عقود ويا أوريدو قطر ودو."
+  },
+  "loss": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/05.mp3",
+   "audio_job": "a140086d-2a93-4ac8-9384-b6107e1429ba",
+   "text": "حلو الكلام... بس شوف الأرقام: من بداية السنة لين الربع الثالث، الشركة خسرانة."
+  },
+  "expand": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/06.mp3",
+   "audio_job": "56fd58e8-27e8-479d-a19d-d0832c5191d1",
+   "text": "بس هذي مصاريف توسعة! يبنون اليوم عشان يربحون باچر."
+  },
+  "drop": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/07.mp3",
+   "audio_job": "75e80dfc-291d-452b-b7ea-234d28aab879",
+   "text": "يمكن. بس السعر نزل سَبَعْتَعَش بالمِيّة بآخر ثلاث شهور... السوق قاعد يسأل نفس السؤال: متى الربح؟"
+  },
+  "cta": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/08.mp3",
+   "audio_job": "f0426a67-3dd7-434e-af32-bf35e42fb736",
+   "text": "اللي عِنْدَه سهم ديجتس، الله يبارك له. بس إنت اللي ما شريت... تشتري الحين، ولا خلاص فات الوقت؟ اكتب لنا بالكومنتات."
+  }
  },
  "graphics": {},
  "cards": {
-  "hook": {"kind": "card", "accent": "red", "y": 0.62, "lines": [["+164% بسنة… وهي خسرانة!", 42, "bold", "white"], ["مجلس اليوم • الأربعاء 25 نوفمبر 2026", 22, "med", "sub"]]},
-  "price": {"kind": "card", "accent": "gold", "y": 0.62, "lines": [["ديجتس • 1,519 فلس", 38, "bold", "white"], ["حياة للاتصالات سابقاً • إغلاق 23 نوفمبر", 22, "med", "sub"]]},
-  "google": {"kind": "card", "accent": "teal", "y": 0.62, "lines": [["عقد ديجتس ويا قوقل: لين 50 مليون $", 30, "bold", "white"], ["مشروع قوقل والحكومة: ~306 مليون د.ك على 7 سنين", 22, "med", "light_teal"]]},
-  "gulfsat": {"kind": "card", "accent": "teal", "y": 0.62, "lines": [["قلف سات: 6 مليون د.ك", 32, "bold", "white"], ["عقود: أوريدو قطر • du (إضافة لعقد قائم)", 24, "med", "light_teal"]]},
-  "loss": {"kind": "card", "accent": "red", "y": 0.62, "lines": [["يناير–سبتمبر 2026: خسارة ~1.6 مليون د.ك", 28, "bold", "white"], ["حسب الإفصاحات", 24, "med", "light_teal"]]},
-  "drop": {"kind": "card", "accent": "red", "y": 0.62, "lines": [["آخر 3 شهور: −17%", 38, "bold", "white"]]},
-  "cta": {"kind": "card", "accent": "teal", "y": 0.62, "lines": [["ما شريت ديجتس؟", 34, "bold", "white"], ["تشتري الحين ولا فات الوقت؟ 👇", 28, "bold", "light_teal"]]},
-  "disc": {"kind": "disclaimer", "text": "تحليل لا توصية • أسعار إغلاق الاثنين 23 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"}
+  "hook": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "+164% بسنة… وهي خسرانة!",
+     42,
+     "bold",
+     "white"
+    ],
+    [
+     "مجلس اليوم • الأربعاء 25 نوفمبر 2026",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "price": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "ديجتس • 1,519 فلس",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "حياة للاتصالات سابقاً • إغلاق 23 نوفمبر",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "google": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "عقد ديجتس ويا قوقل: لين 50 مليون $",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "مشروع قوقل والحكومة: ~306 مليون د.ك على 7 سنين",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "gulfsat": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "قلف سات: 6 مليون د.ك",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "عقود: أوريدو قطر • du (إضافة لعقد قائم)",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "loss": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "يناير–سبتمبر 2026: خسارة ~1.6 مليون د.ك",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "حسب الإفصاحات",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "drop": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "آخر 3 شهور: −17%",
+     38,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "ما شريت ديجتس؟",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "تشتري الحين ولا فات الوقت؟",
+     28,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار إغلاق الاثنين 23 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
  },
  "scenes": [
-  {"id": "hook", "type": "lipsync", "line": "hook", "video": {"draft": "src/ep11/d_hook.mp4", "final": "src/ep11/d_hook.mp4"}, "card": {"name": "hook", "at": 0.0, "fade": 0.15}},
-  {"id": "name", "type": "vo_clip", "line": "name", "delay": 0.15, "duration": 6.6, "video": {"draft": "src/ep11/s_owl_name.mp4", "final": "src/ep11/s_owl_name.mp4"}, "card": {"name": "price", "at": "cue", "cue": "ديجتس"}},
-  {"id": "google", "type": "lipsync", "line": "google", "video": {"draft": "src/ep11/d_google.mp4", "final": "src/ep11/d_google.mp4"}, "card": {"name": "google", "at": "cue", "cue": "اتفقت"}},
-  {"id": "gulfsat", "type": "lipsync", "line": "gulfsat", "video": {"draft": "src/ep11/d_gulfsat.mp4", "final": "src/ep11/d_gulfsat.mp4"}, "card": {"name": "gulfsat", "at": "cue", "cue": "قلف"}},
-  {"id": "loss", "type": "vo_clip", "line": "loss", "delay": 0.15, "duration": 7.1, "video": {"draft": "src/ep11/s_owl_loss.mp4", "final": "src/ep11/s_owl_loss.mp4"}, "card": {"name": "loss", "at": "cue", "cue": "خسرانة"}},
-  {"id": "expand", "type": "lipsync", "line": "expand", "video": {"draft": "src/ep11/d_expand.mp4", "final": "src/ep11/d_expand.mp4"}},
-  {"id": "drop", "type": "vo_clip", "line": "drop", "delay": 0.15, "duration": 8.5, "video": {"draft": "src/ep11/s_owl_drop.mp4", "final": "src/ep11/s_owl_drop.mp4"}, "card": {"name": "drop", "at": "cue", "cue": "نزل"}},
-  {"id": "cta", "type": "lipsync", "line": "cta", "video": {"draft": "src/ep11/d_cta.mp4", "final": "src/ep11/d_cta.mp4"}, "card": {"name": "cta", "at": "cue", "cue": "تشتري"}}
+  {
+   "id": "hook",
+   "type": "lipsync",
+   "line": "hook",
+   "video": {
+    "draft": "src/ep11/d_hook.mp4",
+    "final": "src/ep11/d_hook.mp4"
+   },
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   }
+  },
+  {
+   "id": "name",
+   "type": "vo_clip",
+   "line": "name",
+   "delay": 0.15,
+   "duration": 6.6,
+   "video": {
+    "draft": "src/ep11/s_owl_name.mp4",
+    "final": "src/ep11/s_owl_name.mp4"
+   },
+   "card": {
+    "name": "price",
+    "at": "cue",
+    "cue": "ديجتس"
+   }
+  },
+  {
+   "id": "google",
+   "type": "lipsync",
+   "line": "google",
+   "video": {
+    "draft": "src/ep11/d_google.mp4",
+    "final": "src/ep11/d_google.mp4"
+   },
+   "card": {
+    "name": "google",
+    "at": "cue",
+    "cue": "اتفقت"
+   }
+  },
+  {
+   "id": "gulfsat",
+   "type": "lipsync",
+   "line": "gulfsat",
+   "video": {
+    "draft": "src/ep11/d_gulfsat.mp4",
+    "final": "src/ep11/d_gulfsat.mp4"
+   },
+   "card": {
+    "name": "gulfsat",
+    "at": "cue",
+    "cue": "قلف"
+   }
+  },
+  {
+   "id": "loss",
+   "type": "vo_clip",
+   "line": "loss",
+   "delay": 0.15,
+   "duration": 7.1,
+   "video": {
+    "draft": "src/ep11/s_owl_loss.mp4",
+    "final": "src/ep11/s_owl_loss.mp4"
+   },
+   "card": {
+    "name": "loss",
+    "at": "cue",
+    "cue": "الأرقام"
+   }
+  },
+  {
+   "id": "expand",
+   "type": "lipsync",
+   "line": "expand",
+   "video": {
+    "draft": "src/ep11/d_expand.mp4",
+    "final": "src/ep11/d_expand.mp4"
+   }
+  },
+  {
+   "id": "drop",
+   "type": "vo_clip",
+   "line": "drop",
+   "delay": 0.15,
+   "duration": 8.5,
+   "video": {
+    "draft": "src/ep11/s_owl_drop.mp4",
+    "final": "src/ep11/s_owl_drop.mp4"
+   },
+   "card": {
+    "name": "drop",
+    "at": "cue",
+    "cue": "نزل"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "line": "cta",
+   "video": {
+    "draft": "src/ep11/d_cta.mp4",
+    "final": "src/ep11/d_cta.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "تشتري"
+   }
+  }
  ],
  "generation": {
   "location_keyframe": "1dc5d16d-3792-4f71-b844-166ecaea3f3e",
   "dhub_portrait_media": "7e8008b2-f72b-4f8b-82c3-9dedf02f6c85 (cropped from the keyframe)",
-  "audio_media": {"01": "71c767c5-3f79-4a0e-8882-fbb1e43c4852", "03": "2785ee30-2268-4288-96b0-2d4af96f5a00", "04": "a34f660a-7a96-48e3-b8c9-cf97325ea50a", "06": "9c5e407a-6e1f-4413-ab2b-6c0cb990d0eb", "08": "49db589b-ee8e-4421-931d-b236952e2108"},
-  "intone_A": {"job": "d4981d82-20b7-4cf8-8a7e-64a3c0879b96", "audio": ["01", "03"], "resolution": "480p", "cost": 66},
-  "intone_B": {"job": "0a0c1e78-d457-4534-a9c8-78c259abb6a6", "audio": ["04", "06", "08"], "resolution": "480p", "cost": 75},
-  "owl_loop": {"job": "c4cba3d9-9cec-4748-af67-4e2542b1359e", "model": "seedance_2_5 720p 5s no audio", "cost": 35, "note": "one loop reused (ping-pong) under all three owl lines to stay under ~200 credits"}
+  "audio_media": {
+   "01": "71c767c5-3f79-4a0e-8882-fbb1e43c4852",
+   "03": "2785ee30-2268-4288-96b0-2d4af96f5a00",
+   "04": "a34f660a-7a96-48e3-b8c9-cf97325ea50a",
+   "06": "9c5e407a-6e1f-4413-ab2b-6c0cb990d0eb",
+   "08": "49db589b-ee8e-4421-931d-b236952e2108"
+  },
+  "intone_A": {
+   "job": "d4981d82-20b7-4cf8-8a7e-64a3c0879b96",
+   "audio": [
+    "01",
+    "03"
+   ],
+   "resolution": "480p",
+   "cost": 66
+  },
+  "intone_B": {
+   "job": "0a0c1e78-d457-4534-a9c8-78c259abb6a6",
+   "audio": [
+    "04",
+    "06",
+    "08"
+   ],
+   "resolution": "480p",
+   "cost": 75
+  },
+  "owl_loop": {
+   "job": "c4cba3d9-9cec-4748-af67-4e2542b1359e",
+   "model": "seedance_2_5 720p 5s no audio",
+   "cost": 35,
+   "note": "one loop reused (ping-pong) under all three owl lines to stay under ~200 credits"
+  }
  }
 }

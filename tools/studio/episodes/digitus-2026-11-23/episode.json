@@ -375,7 +375,8 @@
    "owl": "owl_loop ping-pong: name 0+6.6, loss 3.3+7.1, drop 1.2+8.5"
   }
  },
- "video_media_id": "28a2d9b5-3a4a-4902-a240-0813332ded32",
+ "video_media_id": "30a7ddac-0c97-4700-9235-a809363f84e9",
+ "video_media_id_v2": "28a2d9b5-3a4a-4902-a240-0813332ded32",
  "verify": "v2 verify.py 25 Nov: all 8 scenes ✅, min 0.77",
  "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)",
  "v2_plan": {

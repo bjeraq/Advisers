@@ -207,8 +207,8 @@
    "type": "lipsync",
    "line": "hook",
    "video": {
-    "draft": "src/ep11/d_hook.mp4",
-    "final": "src/ep11/d_hook.mp4"
+    "draft": "src/ep11/v2_hook.mp4",
+    "final": "src/ep11/v2_hook.mp4"
    },
    "card": {
     "name": "hook",
@@ -220,11 +220,11 @@
    "id": "name",
    "type": "vo_clip",
    "line": "name",
-   "delay": 0.15,
-   "duration": 6.6,
+   "delay": 0.0,
+   "duration": 7.04,
    "video": {
-    "draft": "src/ep11/s_owl_name.mp4",
-    "final": "src/ep11/s_owl_name.mp4"
+    "draft": "src/ep11/v2_owl_name.mp4",
+    "final": "src/ep11/v2_owl_name.mp4"
    },
    "card": {
     "name": "price",
@@ -237,8 +237,8 @@
    "type": "lipsync",
    "line": "google",
    "video": {
-    "draft": "src/ep11/d_google.mp4",
-    "final": "src/ep11/d_google.mp4"
+    "draft": "src/ep11/v2_google.mp4",
+    "final": "src/ep11/v2_google.mp4"
    },
    "card": {
     "name": "google",
@@ -251,8 +251,8 @@
    "type": "lipsync",
    "line": "gulfsat",
    "video": {
-    "draft": "src/ep11/d_gulfsat.mp4",
-    "final": "src/ep11/d_gulfsat.mp4"
+    "draft": "src/ep11/v2_gulfsat.mp4",
+    "final": "src/ep11/v2_gulfsat.mp4"
    },
    "card": {
     "name": "gulfsat",
@@ -264,11 +264,11 @@
    "id": "loss",
    "type": "vo_clip",
    "line": "loss",
-   "delay": 0.15,
-   "duration": 7.1,
+   "delay": 0.0,
+   "duration": 7.04,
    "video": {
-    "draft": "src/ep11/s_owl_loss.mp4",
-    "final": "src/ep11/s_owl_loss.mp4"
+    "draft": "src/ep11/v2_owl_loss.mp4",
+    "final": "src/ep11/v2_owl_loss.mp4"
    },
    "card": {
     "name": "loss",
@@ -281,19 +281,19 @@
    "type": "lipsync",
    "line": "expand",
    "video": {
-    "draft": "src/ep11/d_expand.mp4",
-    "final": "src/ep11/d_expand.mp4"
+    "draft": "src/ep11/v2_expand.mp4",
+    "final": "src/ep11/v2_expand.mp4"
    }
   },
   {
    "id": "drop",
    "type": "vo_clip",
    "line": "drop",
-   "delay": 0.15,
-   "duration": 8.5,
+   "delay": 0.0,
+   "duration": 9.04,
    "video": {
-    "draft": "src/ep11/s_owl_drop.mp4",
-    "final": "src/ep11/s_owl_drop.mp4"
+    "draft": "src/ep11/v2_owl_drop.mp4",
+    "final": "src/ep11/v2_owl_drop.mp4"
    },
    "card": {
     "name": "drop",
@@ -306,8 +306,8 @@
    "type": "lipsync",
    "line": "cta",
    "video": {
-    "draft": "src/ep11/d_cta.mp4",
-    "final": "src/ep11/d_cta.mp4"
+    "draft": "src/ep11/v2_cta.mp4",
+    "final": "src/ep11/v2_cta.mp4"
    },
    "card": {
     "name": "cta",
@@ -359,8 +359,8 @@
    "owl": "owl_loop ping-pong: name 0+6.6, loss 3.3+7.1, drop 1.2+8.5"
   }
  },
- "video_media_id": "523feb6d-4137-4e70-84c9-d3d725cd9aca",
- "verify": "verify.py 25 Nov: all 8 scenes ✅, min similarity 0.77 (hook: whisper hears شركة/بسنا)",
+ "video_media_id": "28a2d9b5-3a4a-4902-a240-0813332ded32",
+ "verify": "v2 verify.py 25 Nov: all 8 scenes ✅, min 0.77",
  "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)",
  "v2_plan": {
   "why": "Bader 25 Nov: owl always holding his phone and not engaging the lizard; car drives backward then forward (from reversed footage and ping-pong owl loop). Fix: new start frames without phone, all scenes seedance_2_5 480p forward-only with each line's audio as audio_references.",
@@ -379,11 +379,14 @@
    "owl_name_7s": "5a8ddaa2-3f7c-4360-a103-1eff4116bc48",
    "owl_drop_9s": "4b38b05c-538f-436b-8233-80718ec09f4d"
   },
-  "blocked_out_of_credits": {
-   "lizard_A_20s": 60,
-   "lizard_B_24s": 72,
-   "owl_loss_7s": 21
-  },
-  "gaps": "A: 01 then 0.6s then 03 (03 starts 6.01s). B: 04, 0.6s, 06, 0.6s, 08."
- }
+  "gaps": "A: 01 then 0.6s then 03 (03 starts 6.01s). B: 04, 0.6s, 06, 0.6s, 08.",
+  "done": {
+   "lizard_A": "cf7b23e2-729d-430f-93b9-812b1beb4a64",
+   "lizard_B": "5f902785-ea5f-40ab-9121-4cfa75dbb8c0",
+   "owl_loss": "b7b636f1-c652-4456-a0c8-61685a4b539a",
+   "owl_name": "5a8ddaa2-3f7c-4360-a103-1eff4116bc48",
+   "owl_drop": "4b38b05c-538f-436b-8233-80718ec09f4d"
+  }
+ },
+ "video_media_id_v1": "523feb6d-4137-4e70-84c9-d3d725cd9aca"
 }

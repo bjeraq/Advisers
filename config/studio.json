@@ -659,6 +659,26 @@
       "video_media_id_v1": "b374fdcb-1201-4eb7-ba93-0ba88a13d21d"
     },
     {
+      "number": 10,
+      "title": "نايكي: راح تنهار ولا راح ترجع؟",
+      "ticker": "NKE",
+      "session_date": "2026-11-25",
+      "data_date": "2026-11-20",
+      "episode_file": "tools/studio/episodes/nike-2026-11-23/episode.json",
+      "script": "tools/studio/episodes/nike-2026-11-23/script_v6_short.md",
+      "dossier": "reports/inputs/2026-11-23_NKE/dossier.md",
+      "carousel": "tools/studio/episodes/nike-2026-11-23/carousel.json",
+      "cover": "tools/studio/episodes/nike-2026-11-23/cover/cover_reel.png",
+      "video_media_id": "e8a7c544-f271-4b31-83d0-e416504774d4",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/e8a7c544-f271-4b31-83d0-e416504774d4.mp4",
+      "site_page": "site/ep10-nike.html",
+      "resolution": "1080x1920 (seedance 2.5 720p clips with audio references, assembled at 1080)",
+      "duration_s": 82.2,
+      "cast": "الحصان (ElevenLabs Mohamed KJe6YIQ4MHI94EGaDZC7) • السلحفاة الشايب (ElevenLabs RAED IK7YYZcSpmlkjKrQxbSn)",
+      "location": "مول الأفنيوز (دورين: أرضي + ميزانين): محل NIKE مقابل محل HOKA، درج كهربائي للميزانين، بلكونة، كوفي، محل فاضي عليه SALE",
+      "notes": "صيغة تمشية بالمول (walk-and-talk). السلحفاة دايماً وراه نايكي والحصان وراه هوكا. جواتي بدون شعارات (الحصان أسود بنعل برتقالي). بطاقات صور الموديلات (نوع photo). العلم الكويتي معلّق صح (kwflag.py). مزامنة الشفاه بالكلمة (retime.py)، وصوت السلحفاة +1 dB فوق الحصان (gain_db). البطاقات ما تغطي الوجوه (rules.card_no_face). مسودات: v1 dc… intone → v2 سينمائي → v3 → v4 → v5 اعتمدها بدر 25 نوفمبر."
+    },
+    {
       "number": 12,
       "title": "السوق الأول والرئيسي: شنو الفرق؟",
       "ticker": "Boursa Kuwait segments (lesson, no stock call)",
@@ -804,6 +824,16 @@
     },
     "_pending": {
       "note": "البومة والبنت الثانية (الفلامنغو) وباقي الطاقم: بانتظار اختيار بدر (مرشحين: هلا 2aVe3IK7dgUBaUTdfarw، يوسف الإماراتي WcswLmU3iGeMrhxfWXKN، أو تصميم صوت كويتي يديد)"
+    },
+    "haris": {
+      "name": "محمد (Mohamed)",
+      "voice_id": "KJe6YIQ4MHI94EGaDZC7",
+      "note": "الحصان — اعتمده بدر 2026-11-23 (حلقة 10). ⚠️ نفس صوت الصقر المذيع (rassad) — لو طلعوا بنفس الحلقة نختار صوت ثاني لواحد منهم."
+    },
+    "asasi": {
+      "name": "RAED",
+      "voice_id": "IK7YYZcSpmlkjKrQxbSn",
+      "note": "السلحفاة الشايب — اعتمده بدر 2026-11-23 (حلقة 10): ريال شايب خليجي بدل Alistair (كان فيه صدى). يحتاج +3 إلى +5 dB فوق باقي الأصوات (gain_db) لأن تسجيله واطي."
     }
   }
 }

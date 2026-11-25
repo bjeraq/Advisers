@@ -669,6 +669,7 @@
    "v_fix_v4": "63cc4dc9-1361-48ff-af56-34e70ec5a0f5"
   },
   "_note_v3": "v3 (Bader 25 Nov): dtc now front walk-and-talk lipsync; fix = short escalator ground->mezzanine only (Avenues has 2 levels); good on mezzanine; worry daytime. Product photo cards (kind 'photo', images src/nike/v3/p_*_c.png, Samba redone as p_samba2). Kuwait flag must hang vertically: black on top, red left, white middle, green right — repainted with kwflag.py in worry start frame (media fbd1a740) and tracked over franch clip with fix_franch_flag.py (-> src/nike/v2/franch_flagfix.mp4). draft720 v3 media 7ebcad46-c46b-46a4-b017-259b9d72f183.",
-  "_note_v4": "v4 (Bader 25 Nov): every lipsync clip (except q1) word-retimed with tools/studio/retime.py -> src/nike/v4/<id>.mp4 and built with retimed:true (align1.retimed, F=1). Per-line gain_db: turtle ~1 dB above horse (cta capped at +10 to avoid clipping). fix regenerated (job 63cc4dc9, frame c693411f) with zipper on the jacket front, escalator up only. Cards moved off faces (rule card_no_face). draft720 v4 media 7bd60882-df21-4b0f-8e84-fab1fdbd9049."
+  "_note_v4": "v4 (Bader 25 Nov): every lipsync clip (except q1) word-retimed with tools/studio/retime.py -> src/nike/v4/<id>.mp4 and built with retimed:true (align1.retimed, F=1). Per-line gain_db: turtle ~1 dB above horse (cta capped at +10 to avoid clipping). fix regenerated (job 63cc4dc9, frame c693411f) with zipper on the jacket front, escalator up only. Cards moved off faces (rule card_no_face). draft720 v4 media 7bd60882-df21-4b0f-8e84-fab1fdbd9049.",
+  "final1080_media": "e8a7c544-f271-4b31-83d0-e416504774d4"
  }
 }

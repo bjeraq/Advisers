@@ -56,6 +56,12 @@
       "speaker": "dubb",
       "job": "ff802cc4-440a-4609-9a9a-ce48f10f2856",
       "dur": 10.11
+    },
+    "12B": {
+      "speaker": "dubb",
+      "job": "f2314e9b-0a42-48a4-a4c6-f8e511cf96ca",
+      "dur": 9.17,
+      "note": "retake: Bader said 12 sounded fusha; [strong Kuwaiti accent] tag + Kuwaiti diacritics"
     }
   },
   "stills": {
@@ -66,5 +72,14 @@
     "5": "e46df302-88e9-46b2-99f3-9d06fe10d030",
     "6": "7c53fef1-6fcd-4049-a6cb-e80cb00e4e44 (approved keyframe, dimmed for countdown)",
     "_board": "stills_board.jpg — awaiting Bader (rules.image_gate)"
+  },
+  "stills_v2": {
+    "1": "5b10607a-eef4-4e21-910d-0efb286ba236",
+    "2": "43fd43e0-b589-4433-b4f1-de71065cd9fd",
+    "3": "4a233ab1-acfd-4145-b99f-16aa24ba1a20",
+    "4": "bef7c054-a090-4463-9aa6-5e6ba2c049b2",
+    "5": "27c3bd2f-f619-4fa4-afc7-966b70033634",
+    "6": "f9116411-42dc-4cad-8680-37e8be77193c",
+    "_notes": "Bader 26 Nov: Liberation Tower instead of Kuwait Towers, correct flag, flamingo and fox face each other (like still 3). Receipt kept on counter in all shots."
   }
 }

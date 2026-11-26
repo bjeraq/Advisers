@@ -441,6 +441,27 @@
   },
   "episodes": [
     {
+      "number": 17,
+      "title": "الذهب: سبيكة ولا مشغولات؟ المصنعية تاكل ربحك",
+      "ticker": "Gold in Kuwait (lesson, no stock call)",
+      "session_date": "2026-11-26",
+      "data_date": "2026-11-26",
+      "episode_file": "tools/studio/episodes/gold-bars-2026-11-26/episode.json",
+      "script": "plans/2026-11-W48/scripts.md (section 17)",
+      "dossier": "plans/2026-11-W48/18-gold-bullion-vs-jewelry/dossier.md",
+      "carousel": "tools/studio/episodes/gold-bars-2026-11-26/carousel.json",
+      "cover": "tools/studio/episodes/gold-bars-2026-11-26/cover/cover_reel.png",
+      "video_media_id": "d93806f8-af14-4091-9c0b-3e2c193d6f9b",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/d93806f8-af14-4091-9c0b-3e2c193d6f9b.mp4",
+      "resolution": "720x1280 (intone + seedance 480p assembled at 720)",
+      "duration_s": 87.2,
+      "cast": "الفلامنغو (Yara، صوت فوق حركة seedance والمنقار يمشي مع السطر) • الثعلب (Arthur 0.6، شفاه intone)",
+      "format": "سوق المباركية عند محل ذهب (format_rotation 4)",
+      "location": "محل ذهب بالمباركية، برج التحرير ورا القوس، العلم والمثلث الأسود يمين (stills_v3)",
+      "verdict": "بدون مجلس — درس عام، شريط «معلومة عامة لا توصية • أسعار 26 نوفمبر 2026 وتتغير يومياً»، بدون زكاة وبدون شارة شرعية",
+      "notes": "الهوك ب (الفلامنغو). أسعار 26 نوفمبر: عيار 24 ~36، عيار 21 ~31 د.ك (kuwaitgoldrate + Investing). المثال: مشغولات 10غ خسارة ~22 د.ك (6.6%)، سبيكة ~4.5 (1.2%). بدر: سطر 12 كان فصحى → 12B بوسم لهجة كويتية؛ برج التحرير بدل الأبراج، العلم صح (الأسود يمين)، الشخصيتين مقابلين بعض. لغز المتابع @ak.s.fdi + عد تنازلي محلي 5 ثواني. الكلفة ~295 كريدت (بدر وافق: «كمل كل شيء»). المدة 87 ثانية (أطول من 72 لأن الحوار كامل). بطاقات الثعلب على الصدر تحت الذقن لأن آذانه تغطي فوق."
+    },
+    {
       "number": 1,
       "title": "البداية — إنفيديا بعد خروج هوانغ",
       "ticker": "NVDA",

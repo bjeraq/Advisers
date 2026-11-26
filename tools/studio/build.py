@@ -9,7 +9,7 @@
 خيارات: --reuse (يعيد استخدام المحاذاة والرسومات الموجودة) • --scenes bull,judge (يعيد بناء مشاهد محددة فقط)
 
 يشتغل من مجلد العمل اللي فيه src/ و fonts/ (مسارات ملف الحلقة نسبية له)، والمخرجات في build/<stage><res>/.
-أنواع المشاهد: lipsync (متحدث واحد) • clash (متحدثان بمقطع واحد) • vo_clip (مقطع متحرك + تعليق صوتي)
+أنواع المشاهد: precomp (مقطع جاهز بنفس الترميز، يندمج كما هو) • lipsync (متحدث واحد) • clash (متحدثان بمقطع واحد) • vo_clip (مقطع متحرك + تعليق صوتي)
 • still_vo (صورة ثابتة بزووم بطيء + تعليق صوتي — للصقر لأن نموذج الشفاه يرفض المنقار).
 """
 import os, sys, json, re, argparse, subprocess
@@ -247,6 +247,11 @@ def main():
     only = set(a.scenes.split(',')) if a.scenes else None
     files = []
     for sc in ep['scenes']:
+        if sc['type'] == 'precomp':                   # مقطع جاهز مركّب محلياً (مثل العد التنازلي) — نفس الترميز
+            out = f"{B}/scenes/{sc['id']}.mp4"
+            sh(f"cp {sc['file']} {out}")
+            files.append(out)
+            continue
         out = f"{B}/scenes/{sc['id']}.mp4"
         if only is None or sc['id'] in only:
             render_scene(sc, ep, wpaths, a, B, geo)
@@ -260,7 +265,7 @@ def main():
     sh(f"ffmpeg -v error -y -f concat -safe 0 -i {B}/scenes/list.txt -c copy {final}")
     manifest = {'output': final, 'res': a.res, 'stage': a.stage,
                 'scenes': [{'id': sc['id'], 'file': p, 'dur': round(duration(p), 3),
-                            'lines': sc.get('lines') or [sc['line']]}
+                            'lines': sc.get('lines') or ([sc['line']] if 'line' in sc else [])}
                            for sc, p in zip(ep['scenes'], files)]}
     json.dump(manifest, open(f'{B}/manifest.json', 'w'), ensure_ascii=False, indent=1)
     print(f"BUILT {final} {duration(final):.2f}s")

@@ -27,6 +27,9 @@ def main(ep_path, manifest_path, threshold=0.72):
     os.makedirs('build/probe', exist_ok=True)
     t, worst = 0.0, 1.0
     for sc in man['scenes']:
+        if not sc['lines']:                           # مشهد بدون كلام (العد التنازلي)
+            t += sc['dur']
+            continue
         wav = f"build/probe/{sc['id']}.wav"
         subprocess.run(f"ffmpeg -v error -y -ss {t} -t {sc['dur']} -i {man['output']} -vn -ac 1 -ar 16000 {wav}",
                        shell=True, check=True)

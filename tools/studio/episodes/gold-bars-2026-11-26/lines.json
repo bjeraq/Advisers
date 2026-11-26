@@ -2,16 +2,69 @@
   "_comment": "Episode 17 gold bars vs jewelry — audio gate takes (elevenlabs_v4 via Higgsfield, stability 0.6). Flamingo=Yara fd25dc29, Fox=Arthur 30fc8796. Prices refreshed 26 Nov 2026: 24k ~35.7-35.9, 21k ~31.2-31.4 KD/g (kuwaitgoldrate.com 09:20, Investing.com).",
   "data_date": "2026-11-26",
   "lines": {
-    "01": {"speaker": "suyula", "job": "e0a2fc1d-e437-4c75-a897-6cd7ed5df4ac", "dur": 4.21},
-    "02": {"speaker": "suyula", "job": "322c75b1-a3c4-4cab-bc91-5e2873e7c963", "dur": 6.03},
-    "03": {"speaker": "dubb", "job": "7bf30603-cbfb-4dcf-b69a-3b6fa0ad759c", "dur": 13.87},
-    "04": {"speaker": "suyula", "job": "b22a45a3-b754-4919-b803-7129b74530e6", "dur": 1.49},
-    "05": {"speaker": "dubb", "job": "dee681f2-b8e8-4871-a356-b3fb7478e2e4", "dur": 7.89},
-    "06": {"speaker": "dubb", "job": "e248d089-485b-46a4-a803-2680b1ed7172", "dur": 11.96},
-    "07": {"speaker": "suyula", "job": "11d727f4-f830-45e5-b5d6-d8e783c1ee1e", "dur": 2.35},
-    "08": {"speaker": "dubb", "job": "e59da4db-fb87-4893-8f69-a15c5602182f", "dur": 7.31},
-    "09": {"speaker": "suyula", "job": "c140aa3f-213a-463e-a61f-9459e766e216", "dur": 7.63},
-    "10": {"speaker": "suyula", "job": "67d6f7a7-4dcf-4b20-9c0c-360dd4e4aff8", "dur": 7.08},
-    "12": {"speaker": "dubb", "job": "ff802cc4-440a-4609-9a9a-ce48f10f2856", "dur": 10.11}
+    "01": {
+      "speaker": "suyula",
+      "job": "e0a2fc1d-e437-4c75-a897-6cd7ed5df4ac",
+      "dur": 4.21
+    },
+    "02": {
+      "speaker": "suyula",
+      "job": "322c75b1-a3c4-4cab-bc91-5e2873e7c963",
+      "dur": 6.03
+    },
+    "03": {
+      "speaker": "dubb",
+      "job": "7bf30603-cbfb-4dcf-b69a-3b6fa0ad759c",
+      "dur": 13.87
+    },
+    "04": {
+      "speaker": "suyula",
+      "job": "b22a45a3-b754-4919-b803-7129b74530e6",
+      "dur": 1.49
+    },
+    "05": {
+      "speaker": "dubb",
+      "job": "dee681f2-b8e8-4871-a356-b3fb7478e2e4",
+      "dur": 7.89
+    },
+    "06": {
+      "speaker": "dubb",
+      "job": "e248d089-485b-46a4-a803-2680b1ed7172",
+      "dur": 11.96
+    },
+    "07": {
+      "speaker": "suyula",
+      "job": "11d727f4-f830-45e5-b5d6-d8e783c1ee1e",
+      "dur": 2.35
+    },
+    "08": {
+      "speaker": "dubb",
+      "job": "e59da4db-fb87-4893-8f69-a15c5602182f",
+      "dur": 7.31
+    },
+    "09": {
+      "speaker": "suyula",
+      "job": "c140aa3f-213a-463e-a61f-9459e766e216",
+      "dur": 7.63
+    },
+    "10": {
+      "speaker": "suyula",
+      "job": "67d6f7a7-4dcf-4b20-9c0c-360dd4e4aff8",
+      "dur": 7.08
+    },
+    "12": {
+      "speaker": "dubb",
+      "job": "ff802cc4-440a-4609-9a9a-ce48f10f2856",
+      "dur": 10.11
+    }
+  },
+  "stills": {
+    "1": "15fc8f4d-372c-436b-ba2f-6bae197b9af3",
+    "2": "51ed2a94-5bfc-47e7-8d89-d13beba5f67f",
+    "3": "7ece20dd-2789-437e-a32e-774f4fa9d42b",
+    "4": "af4a1ef3-c88b-4e44-8703-f32e5c91b3f7",
+    "5": "e46df302-88e9-46b2-99f3-9d06fe10d030",
+    "6": "7c53fef1-6fcd-4049-a6cb-e80cb00e4e44 (approved keyframe, dimmed for countdown)",
+    "_board": "stills_board.jpg — awaiting Bader (rules.image_gate)"
   }
 }

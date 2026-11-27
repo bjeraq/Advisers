@@ -55,6 +55,36 @@
       "job": "c80aea6c-584f-48fa-972a-c83b6ad90802",
       "dur": 5.49,
       "audio": "lines/09.mp3"
+    },
+    "04B": {
+      "speaker": "congress",
+      "job": "107d635d-7b66-4f61-94f9-435a17507d99",
+      "audio": "lines/04B.mp3",
+      "note": "qaf fix: qalila with full fatha/kasra"
+    },
+    "04C": {
+      "speaker": "congress",
+      "job": "480ccaba-28b2-43c3-ac2e-c428a70a4604",
+      "audio": "lines/04C.mp3",
+      "note": "qaf fix: qalilah with final ha sukun"
+    },
+    "07B": {
+      "speaker": "mazloum",
+      "job": "3ddcb4f0-d8ea-4c50-964f-ed01c65e65fe",
+      "audio": "lines/07B.mp3",
+      "note": "ya'ti with fatha on ya"
+    },
+    "07C": {
+      "speaker": "mazloum",
+      "job": "5baeaca5-9edc-4013-ba09-8db8a7783526",
+      "audio": "lines/07C.mp3",
+      "note": "comma + fatha on ya, kasra on ta"
+    },
+    "09B": {
+      "speaker": "mazloum",
+      "job": "1850d4d1-bab2-4fe3-96f5-42a003d3f62d",
+      "audio": "lines/09B.mp3",
+      "note": "new text: percentage of salary, not amount"
     }
   }
 }

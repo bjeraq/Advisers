@@ -1,5 +1,5 @@
 {
- "_comment": "Episode 13 (W48): dividend dates lesson, diwaniya with Kuwaiti funnel water towers (Al-Jahra/Doha type) in the window. Tortoise elder = RAED on ElevenLabs (Bader 27 Nov: Alistair had echo/accent), dhub = Holden. Lipsync = intone 480 (3 jobs, cut per line); non-talking shots = grok_video_v15_lite 480 (1 cr/s). Timeline built box by box on the whiteboard insert (cards.timeline) and kept on screen through lines 4-5. No stock price -> pill only, no sharia badge (Kuwaiti stocks). | Bader 27 Nov (2): no empty boxes — the four days are written on the board (drawn locally on the stills, boardfx.py), the tortoise points with a CAPPED marker (grok clips from those stills), and the current day is highlighted yellow on the board as he says it (hl.py layers); T+3 note under day 1 in line 5.",
+ "_comment": "Episode 13 (W48): dividend dates lesson, diwaniya with Kuwaiti funnel water towers (Al-Jahra/Doha type) in the window. Tortoise elder = RAED on ElevenLabs (Bader 27 Nov: Alistair had echo/accent), dhub = Holden. Lipsync = intone 480 (3 jobs, cut per line); non-talking shots = grok_video_v15_lite 480 (1 cr/s). Timeline built box by box on the whiteboard insert (cards.timeline) and kept on screen through lines 4-5. No stock price -> pill only, no sharia badge (Kuwaiti stocks). | Bader 27 Nov (2): no empty boxes — the four days are written on the board (drawn locally on the stills, boardfx.py), the tortoise points with a CAPPED marker (grok clips from those stills), and the current day is highlighted yellow on the board as he says it (hl.py layers); T+3 note under day 1 in line 5. | Bader 27 Nov (3): pointer synced to his words (local animation anim.py: hand cutout 880df786 on blank-board plate 1fcbab94 with the written list, holds on each day, eases to the next at its cue, highlight under the hand); after the board he is on camera (intone 6375ba2a: 03h+05B+06B on still b6 f90dff34); NBK logo (seeklogo import) on the NBK line; all lipsync clips word-retimed (retime.py).",
  "slug": "dividends-2026-11-27",
  "number": 13,
  "title": "التوزيعات: متى تشتري عشان تاخذها؟",
@@ -108,25 +108,6 @@
     ]
    ]
   },
-  "nbk": {
-   "kind": "card",
-   "accent": "gold",
-   "y": 0.24,
-   "lines": [
-    [
-     "الوطني: 35 فلس + 5% منحة",
-     32,
-     "bold",
-     "white"
-    ],
-    [
-     "توزيعات 2025 • صُرفت أبريل 2026",
-     22,
-     "med",
-     "sub"
-    ]
-   ]
-  },
   "zain": {
    "kind": "card",
    "accent": "teal",
@@ -188,35 +169,56 @@
    "kind": "disclaimer",
    "text": "معلومة عامة مو توصية"
   },
-  "hl1": {
-   "kind": "image",
-   "file": "src/dv/ov/hl1.png"
+  "nbk": {
+   "kind": "photo",
+   "image": "src/dv/nbk_logo.png",
+   "size": 300,
+   "accent": "gold",
+   "y": 0.25,
+   "lines": [
+    [
+     "35 فلس + 5% أسهم منحة",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "عن سنة 2025 • انصرفت أبريل 2026",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
   },
-  "hl2": {
-   "kind": "image",
-   "file": "src/dv/ov/hl2.png"
-  },
-  "hl3": {
-   "kind": "image",
-   "file": "src/dv/ov/hl3.png"
-  },
-  "hl4": {
-   "kind": "image",
-   "file": "src/dv/ov/hl4.png"
-  },
-  "hlT3": {
-   "kind": "image",
-   "file": "src/dv/ov/hlT3.png"
+  "t3": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "التسوية بالكويت: 3 أيام تداول (T+3)",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "اشترِ قبل الاستحقاق بـ3 أيام تداول",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
   }
  },
  "scenes": [
   {
    "id": "hook",
    "type": "lipsync",
+   "retimed": true,
    "line": "hook",
    "video": {
-    "draft": "src/dv/d_hook.mp4",
-    "final": "src/dv/d_hook.mp4"
+    "draft": "src/dv/r_hook.mp4",
+    "final": "src/dv/r_hook.mp4"
    },
    "card": {
     "name": "hook",
@@ -227,99 +229,68 @@
   {
    "id": "why",
    "type": "lipsync",
+   "retimed": true,
    "line": "why",
    "video": {
-    "draft": "src/dv/d_why.mp4",
-    "final": "src/dv/d_why.mp4"
+    "draft": "src/dv/r_why.mp4",
+    "final": "src/dv/r_why.mp4"
    }
   },
   {
    "id": "sched_a",
-   "type": "vo_clip",
+   "type": "lipsync",
+   "retimed": true,
    "line": "sched_a",
    "video": {
-    "draft": "src/dv/w_stand720.mp4",
-    "final": "src/dv/w_stand720.mp4"
-   },
-   "duration": 3.9,
-   "delay": 0.15
+    "draft": "src/dv/r_sched_a.mp4",
+    "final": "src/dv/r_sched_a.mp4"
+   }
   },
   {
    "id": "sched_b",
    "type": "vo_clip",
    "line": "sched_b",
    "video": {
-    "draft": "src/dv/w_ins_pp.mp4",
-    "final": "src/dv/w_ins_pp.mp4"
+    "draft": "src/dv/point.mp4",
+    "final": "src/dv/point.mp4"
    },
    "duration": 25.4,
-   "delay": 0.15,
-   "extra_cards": [
-    {
-     "name": "hl1",
-     "cue": "الأول",
-     "fade": 0.3,
-     "until_cue": "الثاني"
-    },
-    {
-     "name": "hl2",
-     "cue": "الثاني",
-     "fade": 0.3,
-     "until_cue": "الثالث"
-    },
-    {
-     "name": "hl3",
-     "cue": "الثالث",
-     "fade": 0.3,
-     "until_cue": "والرابع"
-    },
-    {
-     "name": "hl4",
-     "cue": "والرابع",
-     "fade": 0.3
-    }
-   ]
+   "delay": 0.15
   },
   {
    "id": "ask",
-   "type": "vo_clip",
+   "type": "lipsync",
+   "retimed": true,
    "line": "ask",
    "video": {
-    "draft": "src/dv/w_ins_pp.mp4",
-    "final": "src/dv/w_ins_pp.mp4"
-   },
-   "duration": 3.2,
-   "delay": 0.15,
-   "extra_cards": []
+    "draft": "src/dv/r_ask.mp4",
+    "final": "src/dv/r_ask.mp4"
+   }
   },
   {
    "id": "settle",
-   "type": "vo_clip",
+   "type": "lipsync",
+   "retimed": true,
    "line": "settle",
    "video": {
-    "draft": "src/dv/w_ins_pp.mp4",
-    "final": "src/dv/w_ins_pp.mp4"
+    "draft": "src/dv/r_settle.mp4",
+    "final": "src/dv/r_settle.mp4"
    },
-   "duration": 9.3,
-   "delay": 0.15,
-   "extra_cards": [
-    {
-     "name": "hlT3",
-     "cue": "فلازم",
-     "fade": 0.35
-    }
-   ]
+   "card": {
+    "name": "t3",
+    "at": "cue",
+    "cue": "فلازم"
+   }
   },
   {
    "id": "nbk",
-   "type": "vo_clip",
+   "type": "lipsync",
+   "retimed": true,
    "line": "nbk",
    "video": {
-    "draft": "src/dv/w_wide720.mp4",
-    "final": "src/dv/w_wide720.mp4"
+    "draft": "src/dv/r_nbk.mp4",
+    "final": "src/dv/r_nbk.mp4"
    },
-   "duration": 9.4,
-   "delay": 0.15,
    "extra_cards": [
     {
      "name": "nbk",
@@ -335,19 +306,21 @@
   {
    "id": "drop",
    "type": "lipsync",
+   "retimed": true,
    "line": "drop",
    "video": {
-    "draft": "src/dv/d_drop.mp4",
-    "final": "src/dv/d_drop.mp4"
+    "draft": "src/dv/r_drop.mp4",
+    "final": "src/dv/r_drop.mp4"
    }
   },
   {
    "id": "punch",
    "type": "lipsync",
+   "retimed": true,
    "line": "punch",
    "video": {
-    "draft": "src/dv/d_punch.mp4",
-    "final": "src/dv/d_punch.mp4"
+    "draft": "src/dv/r_punch.mp4",
+    "final": "src/dv/r_punch.mp4"
    },
    "card": {
     "name": "drop",
@@ -358,10 +331,11 @@
   {
    "id": "cta",
    "type": "lipsync",
+   "retimed": true,
    "line": "cta",
    "video": {
-    "draft": "src/dv/d_cta.mp4",
-    "final": "src/dv/d_cta.mp4"
+    "draft": "src/dv/r_cta.mp4",
+    "final": "src/dv/r_cta.mp4"
    },
    "card": {
     "name": "cta",
@@ -411,7 +385,13 @@
    "stand": "dc39eeec-70cf-45d4-91de-57781a30c2ce (start b3 c2ad9352)",
    "wide": "505785e1-d8d7-4565-89e9-3c6c4bbd8fdb (start b0 e7963ecc)"
   },
-  "credits_total": 223.1,
-  "credits_note": "start 11071.45 -> 10848.33. Voices+stills ~36, intone 3 jobs ~136, grok lite ~26 + board re-shoot ~26 (Bader note: written board instead of empty boxes)."
+  "credits_total": 310.2,
+  "credits_note": "start 11071.45 -> 10848.33. Voices+stills ~36, intone 3 jobs ~136, grok lite ~26 + board re-shoot ~26 (Bader note: written board instead of empty boxes). v2 (Bader notes 3): +87 -> total 310 (intone ~75, images ~8, 03h upload).",
+  "v2": {
+   "intone_tortoise_board": "6375ba2a-56f8-4204-a199-3bf65ee10805 (03h+05B+06B, location b6 f90dff34, audio 03h 5b3d10ec)",
+   "plate": "1fcbab94-87f7-452b-a022-f137f474d640",
+   "hand": "880df786-31a8-42e9-a2f6-ebd57f8b277c",
+   "nbk_logo": "seeklogo 386229 imported as 0640c3e2-988b-41de-aea8-272a63be1888"
+  }
  }
 }

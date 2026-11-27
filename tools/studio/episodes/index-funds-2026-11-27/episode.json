@@ -1,0 +1,437 @@
+{
+  "_comment": "Episode 15 (W48): index funds for a salaried employee. Video call Kuwait (hedgehog Emmett, intone 480p, Sheikh Jaber causeway at night) - New York (hoopoe Raina, seedance 480p voice-over, clips reused/looped locally). Hook C. Data: SPIVA US mid-2026 15y 90.5%; VOO/IVV 0.03%; SPUS 0.45%, HLAL 0.50% (described as the funds describe themselves, no religious discussion). No sharia badge.",
+  "slug": "index-funds-2026-11-27",
+  "number": 15,
+  "title": "صناديق المؤشرات: أسهل طريقة للموظف",
+  "ticker": "Index funds (lesson, no stock call)",
+  "data_date": "2026-11-27",
+  "compliance": "General info; sharia-labelled funds named only as self-described, no rulings (rules.no_religious_rulings)",
+  "dossier": "plans/2026-11-W48/16-index-funds/dossier.md",
+  "fonts": "fonts",
+  "location": "split video call: hedgehog home Kuwait night (Jaber causeway) / hoopoe NY apartment midday (stills.json)",
+  "lines": {
+    "hook": {
+      "speaker": "congress",
+      "voice": "Raina",
+      "audio": "src/e15/lines/01.mp3",
+      "text": "بدل ما تختار سهم واحد… تملك خمسمية شركة بضغطة وحدة."
+    },
+    "ask": {
+      "speaker": "mazloum",
+      "voice": "Emmett",
+      "audio": "src/e15/lines/02.mp3",
+      "text": "يا هدهد، إنتي بنيويورك وتعرفين السوق هناك. أنا موظف، أبي أستثمر جزء من راتبي كل شهر… بس ما عندي وقت أقعد أختار أسهم."
+    },
+    "what": {
+      "speaker": "congress",
+      "voice": "Raina",
+      "audio": "src/e15/lines/03.mp3",
+      "text": "عشان جذي فيه صناديق المؤشرات. بدل ما تختار شركة وحدة، الصندوق يشتري لك كل شركات المؤشر. مثلاً إس آند بي خمسمية: أكبر خمسمية شركة أمريكية بسهم واحد."
+    },
+    "example": {
+      "speaker": "congress",
+      "voice": "Raina",
+      "audio": "src/e15/lines/04G.mp3",
+      "text": "خلني أعطيك مثال: واحد حط فلوسه بصندوق الخمسمية شركة وتركها، والثاني عطى فلوسه لمدير شاطر يختار له أسهم. خلال خمستعش سنة، تسعة من كل عشرة مدراء… ما قدروا يغلبون صندوق الخمسمية! وفوق هذا رسومه قليلة وايد: لو حطيت فيه ألف دولار، ياخذ منك تقريباً ثلاثين سنت بالسنة بس."
+    },
+    "halal_q": {
+      "speaker": "mazloum",
+      "voice": "Emmett",
+      "audio": "src/e15/lines/05.mp3",
+      "text": "زين، وأنا أبي شي متوافق شرعياً؟"
+    },
+    "halal": {
+      "speaker": "congress",
+      "voice": "Raina",
+      "audio": "src/e15/lines/06.mp3",
+      "text": "فيه صناديق توصف نفسها إنها متوافقة مع الشريعة، مثل إس بي يو إس، وهلال، بس مصاريفها أعلى شوي."
+    },
+    "hist_q": {
+      "speaker": "mazloum",
+      "voice": "Emmett",
+      "audio": "src/e15/lines/07C.mp3",
+      "text": "وتاريخياً كم يعطي؟"
+    },
+    "hist": {
+      "speaker": "congress",
+      "voice": "Raina",
+      "audio": "src/e15/lines/08.mp3",
+      "text": "على المدى الطويل، المؤشر عطى حوالي عشرة بالمية بالسنة بالمتوسط… بس فيه سنين ينزل فيها وايد. السر إنك تحط مبلغ ثابت كل شهر، وما تطالعه كل يوم."
+    },
+    "cta": {
+      "speaker": "mazloum",
+      "voice": "Emmett",
+      "audio": "src/e15/lines/09B.mp3",
+      "text": "إنت لو تحط جزء من راتبك كل شهر… كم النسبة اللي تقدر تحطها؟ اكتب لنا بالكومنتات."
+    }
+  },
+  "graphics": {},
+  "cards": {
+    "hook": {
+      "kind": "card",
+      "accent": "gold",
+      "y": 0.62,
+      "lines": [
+        [
+          "500 شركة بضغطة وحدة",
+          40,
+          "bold",
+          "white"
+        ],
+        [
+          "مجلس اليوم • الجمعة 27 نوفمبر 2026",
+          22,
+          "med",
+          "sub"
+        ]
+      ]
+    },
+    "what": {
+      "kind": "card",
+      "accent": "teal",
+      "y": 0.62,
+      "lines": [
+        [
+          "صندوق المؤشر",
+          30,
+          "bold",
+          "white"
+        ],
+        [
+          "سلة فيها كل شركات المؤشر",
+          24,
+          "med",
+          "light_teal"
+        ]
+      ]
+    },
+    "sp500": {
+      "kind": "card",
+      "accent": "gold",
+      "y": 0.62,
+      "lines": [
+        [
+          "إس آند بي 500",
+          30,
+          "bold",
+          "white"
+        ],
+        [
+          "أكبر 500 شركة أمريكية",
+          24,
+          "med",
+          "light_teal"
+        ]
+      ]
+    },
+    "example": {
+      "kind": "card",
+      "accent": "gold",
+      "y": 0.62,
+      "lines": [
+        [
+          "صندوق الـ500 شركة غلب",
+          28,
+          "bold",
+          "white"
+        ],
+        [
+          "9 من كل 10 مدراء",
+          30,
+          "bold",
+          "light_teal"
+        ],
+        [
+          "خلال 15 سنة • سبايفا يونيو 2026",
+          18,
+          "med",
+          "sub"
+        ]
+      ]
+    },
+    "fees": {
+      "kind": "card",
+      "accent": "teal",
+      "y": 0.62,
+      "lines": [
+        [
+          "الرسوم: 30 سنت بالسنة",
+          28,
+          "bold",
+          "white"
+        ],
+        [
+          "على كل 1000 دولار",
+          24,
+          "med",
+          "light_teal"
+        ]
+      ]
+    },
+    "halal": {
+      "kind": "card",
+      "accent": "teal",
+      "y": 0.62,
+      "lines": [
+        [
+          "صناديق توصف نفسها متوافقة",
+          26,
+          "bold",
+          "white"
+        ],
+        [
+          "SPUS 0.45% • HLAL 0.50%",
+          26,
+          "bold",
+          "light_teal"
+        ],
+        [
+          "نسبة المصاريف السنوية",
+          18,
+          "med",
+          "sub"
+        ]
+      ]
+    },
+    "avg": {
+      "kind": "card",
+      "accent": "gold",
+      "y": 0.62,
+      "lines": [
+        [
+          "متوسط تاريخي ~10% بالسنة",
+          28,
+          "bold",
+          "white"
+        ],
+        [
+          "قبل التضخم • مو مضمون",
+          22,
+          "med",
+          "light_teal"
+        ]
+      ]
+    },
+    "monthly": {
+      "kind": "card",
+      "accent": "teal",
+      "y": 0.62,
+      "lines": [
+        [
+          "مبلغ ثابت كل شهر",
+          30,
+          "bold",
+          "white"
+        ]
+      ]
+    },
+    "cta": {
+      "kind": "card",
+      "accent": "gold",
+      "y": 0.66,
+      "lines": [
+        [
+          "كم نسبة من راتبك تقدر تحطها كل شهر؟",
+          26,
+          "bold",
+          "white"
+        ],
+        [
+          "اكتب لنا بالكومنتات",
+          24,
+          "med",
+          "light_teal"
+        ]
+      ]
+    },
+    "disc": {
+      "kind": "disclaimer",
+      "text": "تحليل لا توصية • الأرقام بتاريخ نوفمبر 2026 وتتغير"
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "vo_clip",
+      "line": "hook",
+      "video": {
+        "draft": "src/e15/d_hook.mp4",
+        "final": "src/e15/d_hook.mp4"
+      },
+      "duration": 5.6,
+      "delay": 0.0,
+      "card": {
+        "name": "hook",
+        "at": 0.0,
+        "fade": 0.15
+      }
+    },
+    {
+      "id": "ask",
+      "type": "lipsync",
+      "line": "ask",
+      "video": {
+        "draft": "src/e15/d_ask.mp4",
+        "final": "src/e15/d_ask.mp4"
+      }
+    },
+    {
+      "id": "what",
+      "type": "vo_clip",
+      "line": "what",
+      "video": {
+        "draft": "src/e15/d_what.mp4",
+        "final": "src/e15/d_what.mp4"
+      },
+      "duration": 13.75,
+      "delay": 0.15,
+      "extra_cards": [
+        {
+          "name": "what",
+          "cue": "صناديق",
+          "until_cue": "مثلاً"
+        },
+        {
+          "name": "sp500",
+          "cue": "مثلاً"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "vo_clip",
+      "line": "example",
+      "video": {
+        "draft": "src/e15/d_example.mp4",
+        "final": "src/e15/d_example.mp4"
+      },
+      "duration": 23.85,
+      "delay": 0.15,
+      "extra_cards": [
+        {
+          "name": "example",
+          "cue": "تسعة",
+          "until_cue": "رسومه"
+        },
+        {
+          "name": "fees",
+          "cue": "رسومه"
+        }
+      ]
+    },
+    {
+      "id": "halal_q",
+      "type": "lipsync",
+      "line": "halal_q",
+      "video": {
+        "draft": "src/e15/d_halal_q.mp4",
+        "final": "src/e15/d_halal_q.mp4"
+      }
+    },
+    {
+      "id": "halal",
+      "type": "vo_clip",
+      "line": "halal",
+      "video": {
+        "draft": "src/e15/d_halal.mp4",
+        "final": "src/e15/d_halal.mp4"
+      },
+      "duration": 8.2,
+      "delay": 0.15,
+      "card": {
+        "name": "halal",
+        "at": "cue",
+        "cue": "صناديق"
+      }
+    },
+    {
+      "id": "hist_q",
+      "type": "lipsync",
+      "line": "hist_q",
+      "video": {
+        "draft": "src/e15/d_hist_q.mp4",
+        "final": "src/e15/d_hist_q.mp4"
+      }
+    },
+    {
+      "id": "hist",
+      "type": "vo_clip",
+      "line": "hist",
+      "video": {
+        "draft": "src/e15/d_hist.mp4",
+        "final": "src/e15/d_hist.mp4"
+      },
+      "duration": 12.0,
+      "delay": 0.15,
+      "extra_cards": [
+        {
+          "name": "avg",
+          "cue": "عشرة",
+          "until_cue": "ثابت"
+        },
+        {
+          "name": "monthly",
+          "cue": "ثابت"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "lipsync",
+      "line": "cta",
+      "video": {
+        "draft": "src/e15/d_cta.mp4",
+        "final": "src/e15/d_cta.mp4"
+      },
+      "card": {
+        "name": "cta",
+        "at": "cue",
+        "cue": "النسبة"
+      }
+    }
+  ],
+  "generation": {
+    "stills": "stills.json",
+    "audio": "lines.json",
+    "intone_A": {
+      "job": "2c1f6d6f-91fa-46ff-ac62-01f7ecd2822e",
+      "lines": [
+        "02",
+        "05"
+      ],
+      "location": "still 2",
+      "quote": 51
+    },
+    "intone_B": {
+      "job": "30de8de6-7a32-46af-8e52-ac1a094dc73b",
+      "lines": [
+        "07C",
+        "09B"
+      ],
+      "location": "still 3",
+      "character": "crop of still 3 (media eb30b47e)",
+      "quote": 36,
+      "refusals": "746654a7 (sheet+still3), 2f8abd67 (still3 as character), 01ac2555 (sheet+still2): face check, refunded"
+    },
+    "seedance_480": {
+      "A": {
+        "job": "05c8bcc0-acd8-489d-8553-88d41a1054d9",
+        "from": "still 4",
+        "dur": 10,
+        "quote": 30
+      },
+      "B": {
+        "job": "dbd75f2e-f1a0-4f00-990b-439d112a57e3",
+        "from": "still 5 v2",
+        "dur": 6,
+        "quote": 18
+      }
+    },
+    "cuts": {
+      "A": "ask 0.00-11.12, halal_q 13.26-17.05",
+      "B": "hist_q 0.18-3.26, cta 3.11-10.22"
+    },
+    "hoopoe_compose": "local ping-pong/zoom plan (src/e15/plan.json): hA sip at ~3.0-5.5s avoided",
+    "credits_video": 135
+  }
+}

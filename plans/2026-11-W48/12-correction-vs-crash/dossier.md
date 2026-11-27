@@ -1,6 +1,20 @@
 # Dossier — Correction vs Bear Market vs Crash (S&P 500 / Nasdaq-100, Nov 2026)
 Episode number: **18** (renumbered from 12 on 23 Nov; folder name unchanged).
 
+## ⭐ SPUS — the on-air instrument from 27 Nov (Bader: sharia-compliant only; no S&P 500 / Nasdaq-100 numbers on air)
+SP Funds S&P 500 Sharia Industry Exclusions ETF (NYSE Arca: SPUS). Price closes, not total return.
+| Fact | Value | Sources |
+|---|---|---|
+| Record close | **61.15 on Tue 6 Oct 2026** (intraday 61.42) | TradingView AMEX:SPUS; 52-wk high ≈61.40 (third-party range via search) |
+| 20 Nov close | **51.62**, −4.6% day → **−15.6% from record** | TradingView; heygotrade.com/en/us-stock/spus ("Nov 20 close $51.62") ; Trading212 51.53 |
+| Losing streak to 20 Nov | **7 straight down days** (57.74 → 51.62) | TradingView (computed) |
+| Mon 23 Nov | **54.78, +6.1%** | TradingView (computed) |
+| Tue 24 Nov | 54.17 (−11.4%) | TradingView |
+| Wed 25 Nov | **53.79** (−12.0%); intraday low 51.99 (−15.0%) | TradingView; bloomberg.com/quote/SPUS:US (53.79) ; Trading212 53.75 |
+| Fri 27 Nov (half day) | **54.63, +1.6%** → **−10.7% from record = still in correction** | TradingView (single source for this close) |
+Note: SPUS is more tech-heavy than the S&P 500 (no banks), so it fell more (−15.6% vs −11.6%) and is still in correction while the S&P is not.
+History lines (1987, 2020, 2022, Capital Group frequencies) are whole-US-market data — say "السوق الأمريكي", not SPUS (SPUS launched Dec 2019).
+
 ## UPDATE — after close Wed 25 Nov 2026 (last close before Thu 26 Nov publish; US shut Thu for Thanksgiving)
 | Fact | Value | Sources |
 |---|---|---|

@@ -80,7 +80,8 @@
     "kuwait_water_towers": "2026-11-27 (بدر، حلقة 13، أرسل صورة أبراج الجهراء والدوحة): أبراج الماي الكويتية مو أبراج الكويت. شكلها قمع/كأس: عمود نحيف يتوسع بانسيابية لفوق ويصير مخروط مقلوب عريض، وراسه مسطّح (مقطوع عدل)، وخطوط زرقا وبيضا طولية تنزل من حافة الراس لين الأرض. ولا كور ولا قبة ولا خطوط عرضية. تبين مجموعة أبراج متلاصقة بأطوال متقاربة.",
     "insert_shots": "2026-11-27 (بدر): مو شرط كل لقطة فيها شخصيات — لقطات قريبة بدون وجوه (السبورة والإيد تكتب، ورقة، شاشة) مسموحة ومفيدة عشان المعلومة تطلع بخط كبير وواضح فوقها.",
     "no_diacritics_on_screen": "بدر 2026-11-27: التشكيل اللي نصلح فيه النطق (ضمة/فتحة) يبقى بنص الصوت فقط. أي كلام مكتوب على الشاشة (بطاقات، ترجمة، غلاف، كاروسيل) ينكتب عادي بدون تشكيل.",
-    "pointer_sync": "2026-11-27 (بدر، حلقة 13): لما الشخصية تأشّر على سبورة/قائمة، تأشّر على النقطة اللي تتكلم عنها بالضبط وتظل ثابتة عليها، وتنتقل للنقطة اللي بعدها شوي شوي لما تبدأ تتكلم عنها (نحرّك الإيد محلياً على توقيت الكلمات — anim.py بحلقة 13). ولما تخلص الشرح وتتكلم عن شي ثاني، تتغير اللقطة عليها وهي تتكلم (شفاه)، مو تظل تأشّر. والقلم غطاه مسكّر. ولما نذكر شركة بالاسم نحط شعارها. ومزامنة الشفاه دايماً كلمة بكلمة (retime.py) مو عامل واحد."
+    "pointer_sync": "2026-11-27 (بدر، حلقة 13): لما الشخصية تأشّر على سبورة/قائمة، تأشّر على النقطة اللي تتكلم عنها بالضبط وتظل ثابتة عليها، وتنتقل للنقطة اللي بعدها شوي شوي لما تبدأ تتكلم عنها (نحرّك الإيد محلياً على توقيت الكلمات — anim.py بحلقة 13). ولما تخلص الشرح وتتكلم عن شي ثاني، تتغير اللقطة عليها وهي تتكلم (شفاه)، مو تظل تأشّر. والقلم غطاه مسكّر. ولما نذكر شركة بالاسم نحط شعارها. ومزامنة الشفاه دايماً كلمة بكلمة (retime.py) مو عامل واحد.",
+    "status_colors": "2026-11-27 (بدر): علامة حالة الحلقة بلون: 🟢 = معتمدة وجاهزة للنشر (ما نرجع لها)، 🟡 = بالإنتاج أو تنتظر ملاحظات بدر، ⚪ = ما بدت. العلامة قبل رقم الحلقة بعنوانها في scripts.md، ونفسها بحقل status في episodes."
   },
   "toolkit": {
     "_comment": "خط الإنتاج محفوظ بالمستودع (الساندبوكس يُمسح بعد ~24 ساعة): انقل الأدوات للساندبوكس وطابق md5 ثم شغّل البناء من مجلد العمل. التفاصيل في .claude/skills/studio و .claude/skills/story",
@@ -761,10 +762,16 @@
       "dossier": "plans/2026-11-W48/14-dividends-dates/dossier.md",
       "carousel": "tools/studio/episodes/dividends-2026-11-27/carousel.json",
       "cover": "tools/studio/episodes/dividends-2026-11-27/cover.json",
-      "status": "draft 720 v2 delivered 27 Nov (synced pointer, tortoise on camera after the board, NBK logo, word-retimed lipsync)",
+      "status": "🟢 approved by Bader 27 Nov 2026 — ready to publish (720)",
       "hook": "A",
-      "credits_higgsfield": 310.2,
-      "note": "Tortoise RAED (ElevenLabs), dhub Holden; funnel water towers; four days written on the board + yellow highlight; budget ~190 exceeded (223) after board re-shoot per Bader's note"
+      "credits_higgsfield": 358.7,
+      "note": "Tortoise RAED (ElevenLabs), dhub Holden; funnel water towers; four days written on the board + yellow highlight; budget ~190 exceeded (223) after board re-shoot per Bader's note",
+      "ready": true,
+      "deliverables": {
+        "video": "tools/studio/episodes/dividends-2026-11-27/deliver/dividends-2026-11-27_draft720_v3.mp4 (local only, gitignored)",
+        "cover": "tools/studio/episodes/dividends-2026-11-27/cover/cover_reel.png",
+        "carousel_zip": "tools/studio/episodes/dividends-2026-11-27/dividends_carousel.zip"
+      }
     }
   ],
   "cast_retired": {

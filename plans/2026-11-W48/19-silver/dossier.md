@@ -1,64 +1,59 @@
-# Dossier — Silver (الفضة) for beginners · researched 27 Nov 2026
-Informational only, not advice. No religious rulings / zakat in this reel.
-Price data: TradingView TVC:SILVER / TVC:GOLD (pulled 27 Nov 2026, intraday, moves fast). Say "around" on air.
+# Dossier 19 — الفضة (Silver) — researched Fri 27 Nov 2026
+Informational only, not advice. No religious rulings / zakat content. Prices move daily: re-check on recording day.
+Price snapshot: TradingView TVC:SILVER / TVC:GOLD / FX_IDC:USDKWD via MCP, pulled 27 Nov 2026 (live quote, delayed feed possible).
 
 ## Safe to say on air (2 sources)
-- Silver now ≈ **$43–44 per ounce** (TV close 43.44; Trading Economics ~43.06 via search; TradingKey 44.13 on 27 Nov) — https://www.tradingkey.com/analysis/commodities/metal/262324901-precious-metals-silver-xag-xau-usd-price-tradingkey · https://tradingeconomics.com/commodity/silver
-- It **dipped below $40 on 25 Nov 2026** — first time since Aug 2025 (TV low 38.20) — https://tass.com/economy/2224387 · https://finscans.com/news/2026/11/25/silver-price-slips-to-14-month-low-as-us-dollar-strengthens
-- **Down ~20% in the last month** (TV −20.1%; Trading Economics −20.19%) — https://tradingeconomics.com/commodity/silver
-- **All-time high ≈ $121.6 on 29 Jan 2026** (TV 121.647; Nasdaq 121.62) — https://www.nasdaq.com/articles/what-was-highest-price-silver
-- **Next day (30 Jan) it crashed ~26–30% in one day** (TV close 115.81→85.31 = −26%) — https://www.gulf-times.com/story/719747/qatari-algerian-traders-call-for-robust-ties-to-boost-trade/amp · https://www.roic.ai/news/silvers-historic-rally-crashes-as-prices-plunge-over-30-to-8049oz-01-30-2026
-- So today it is **roughly 65% below its January peak** (43.4 vs 121.6 = −64%; TASS said ~70% at the $39 low).
-- **2025 was silver's best year since ~1979: about +144–150%**, closing 2025 ≈ $71.4 — https://fortune.com/2025/12/31/gold-and-silver-stumble-at-the-end-of-best-year-since-the-1970s/ · https://finance.yahoo.com/news/silver-150-rally-gold-64-125622169.html
-- **2026 year-to-date ≈ −40%** (TV −40.0%; 43.4 ÷ 71.44 close-2025 = −39%) — sources above.
-- **Why it fell in Nov:** stronger US dollar + markets fearing a US rate *hike* (silver pays no interest) — https://finscans.com/news/2026/11/25/silver-slips-to-4010-as-us-dollar-gains-ahead-of-pce · https://www.tradingview.com/news/stocktwits:ff7827016094b:0-gold-hits-near-15-month-lows-silver-crashes-below-40-amid-fed-hike-fears-all-eyes-on-the-fed-rate-decision/
-- **Supply still short:** 2026 expected to be the **6th straight year of deficit** (demand > supply) — https://www.fxstreet.com/analysis/silver-market-still-expected-to-run-sixth-straight-supply-deficit-in-2026-202611180219 · https://miningmx.com/2026-11-13-silver-faces-sixth-annual-deficit-despite-weaker-solar-demand
-- **More than half of silver demand is industrial** (SSGA: >52% avg past decade; Motley Fool: "over half") — https://www.ssga.com/uk/en_gb/institutional/insights/silver-is-no-substitute-for-gold · https://www.fool.com/research/stocks-vs-silver/
-- **Solar-panel demand for silver is falling this year (~−20%)** as makers use less silver (pv-mag Apr: −19%; Nov update: −21%) — https://www.pv-magazine.com/2026/04/15/silver-demand-from-pv-industry-expected-to-drop-19-this-year/ · https://miningmx.com/2026-11-13-silver-faces-sixth-annual-deficit-despite-weaker-solar-demand
-- **Gold-to-silver ratio now ≈ 80+** (TV 3640/43.44 = 83.8; Meltvalue 81.4 on 17 Nov; FXStreet ~82.7 on 16 Nov). It was **~45 in late Jan 2026** — https://www.usagold.com/daily-precious-metals-market-report-november-16-2026/ · https://www.fxstreet.com/analysis/silver-leads-gold-to-new-2026-lows-what-the-ratio-says-202611161725
-- **Ratio record ≈ 125 (March 2020)**; modern "normal" ≈ 60–80 — https://www.moneymetals.com/gold-silver-ratio · https://goldsilver.com/learn/silver/gold-to-silver-ratio-explained/
-- **ETF fees: SLV 0.50%/yr, SIVR 0.30%/yr** — https://www.nasdaq.com/articles/silver-etfs-slv-bigger-fund-sivr-more-affordable · https://etfdb.com/etf/sivr
-- **Kuwait has no VAT** (not in 2026–2030 fiscal plan) — https://www.vatupdate.com/2026/07/24/kuwait-keeps-vat-off-the-table-no-adoption-in-the-2026-2030-fiscal-plan/ · https://www.pwc.com/m1/en/tax/documents/2026/gcc-indirect-tax-news-roundup-q3-2026.pdf
+- Silver now ≈ $43/oz. TV TVC:SILVER close 43.45 (27 Nov 2026); Trading Economics ≈ $43.06 on 27 Nov (via search summary, https://tradingeconomics.com/commodity/silver).
+- Down ~20% in one month. TV Perf.1M −20.1%; Trading Economics −20.19% (same URLs, 27 Nov).
+- All-time high ≈ $121–122/oz on Thu 29 Jan 2026. TV weekly high 121.647 (week of 26 Jan 2026); Trading Economics "121.64 in January 2026"; AA https://www.aa.com.tr/en/economy/silver-falls-around-35-after-historic-high/3821651.
+  → Today's price is roughly 64% below that peak (43.45/121.65; own arithmetic from TV).
+- Next day (Fri 30 Jan 2026) silver fell ~30% intraday — one of its worst days ever — after Kevin Warsh's Fed-chair nomination + profit taking.
+  Sources: https://global.morningstar.com/en-gb/markets/why-are-gold-silver-plunging ; https://www.philstar.com/business/2026/02/02/2505043/silvers-worst-day/amp/ ; https://markets.financialcontent.com/stocks/article/marketminute-2026-2-2-the-warsh-shock-silver-plummets-30-as-fed-nomination-triggers-historic-metals-liquidation
+- This week it briefly dipped below $40 (lowest since ~Aug 2025), then bounced. TV weekly low 38.204 (week of 23 Nov); Fortune $39.72 on 25 Nov 6:45am ET https://fortune.com/article/current-price-of-silver-11-25-2026/ ; CoinDCX "briefly below $40 on 25 Nov" https://coindcx.com/blog/personal-finance/silver-price-forecast
+- Mid-Nov slide: fell below $48 on 16 Nov for first time in a year; hot US inflation → markets priced a possible December Fed rate HIKE; stronger dollar/yields; tech-stock selloff spilled into metals.
+  Sources: https://www.mitrade.com/insights/news/live-news/article-3-2255990-20261116 ; https://www.mitrade.com/insights/news/live-news/article-3-2263244-20261119 ; https://stocktwits.com/news-articles/markets/equity/why-is-silver-falling-dollar-treasury-yields-fed-rate-hike/cNb7QhcR9XJ ; https://news.metal.com/newscontent/X7ZBOVZNSBXOM2QJT7GAP4A5WAWZD7RX3J4YEYY-us-feds-hawkish-stance-and-tech-stock-turmoil-drive-silver-prices-lower-smm-daily-review
+- Old peaks ≈ $50: Jan 1980 (Hunt brothers, ~$48.70–49.45 depending on series) and Apr 2011 (~$49.5 intraday, 28 Apr 2011). Silver first broke ~$50 in Oct 2025. So today's ~$43 is BELOW the 1980/2011 peaks again ("erased 45 years of gains" headline when it hit $45 on 18 Nov).
+  Sources: https://www.wikipedia.org/wiki/Junk_silver ; https://www.nasdaq.com/articles/what-was-highest-price-silver ; https://www.kitco.com/opinion/2025-11-05/silver-high-where-was-it-1980-how-did-it-develop-2011-and-bear-market-looming ; https://www.mitrade.com/insights/news/live-news/article-3-2263244-20261119
+  → Say "around $50" — do NOT quote exact 1980/2011 decimals (series disagree).
+- Gold/silver ratio now ≈ 84–87 (TV: 3640.81 / 43.45 = 83.8 on 27 Nov; USAGOLD live 86.93, commentary 24 Nov https://www.usagold.com/gold-silver-ratio/). Meaning: 1 oz gold buys ~84 oz silver.
+  Long-run: 30-yr avg ≈ 68 (https://bulliontradingllc.com/charts/gold-silver-ratio/); 10-yr avg ≈ 80.6 (https://meltvalue.com/gold-silver-ratio). Say "above the 30-yr average (~68), close to the 10-yr average (~80)".
+- Demand split 2025 (World Silver Survey 2026, Silver Institute/Metals Focus, 15 Apr 2026): total 1,130.6 Moz; industrial 657.4 Moz (−3%) → ~58% of demand is industrial; coins & bars 217.7 Moz (+14%) → ~19%.
+  Sources: https://silverinstitute.org/wp-content/uploads/2026/05/Silver_News_April2026.pdf ; https://www.cryptopolitan.com/a-46-3-million-ounce-silver-shortfall/ ; https://blockport.io/latest-news/world-silver-survey-2026-46-3m-oz-shortfall/ (shares = own arithmetic; say "more than half")
+- Solar (PV) used 186.6 Moz in 2025 (~1/6 of demand); Silver Institute expects PV silver demand −19% in 2026 (panel makers "thrifting" less silver).
+  Sources: https://www.pv-magazine.com/2026/04/15/silver-demand-from-pv-industry-expected-to-drop-19-this-year/ ; https://goldsilver.com/industry-news/article/silver-supply-deficit-solar-thrifting/
+- Deficit: 2025 = 5th straight deficit (40.3 Moz). 2026 = 6th straight; April forecast 46.3 Moz, cut to ~35 Moz in the 12 Nov 2026 interim review; total 2026 demand seen −5% to ~1.08 Boz; ETF outflows ~45 Moz.
+  Sources: https://www.kitco.com/news/article/2026-11-13/silver-market-remains-resilient-despite-price-volatility-and-weakening ; https://www.moneymetals.com/news/2026/11/17/silver-market-still-expected-to-run-sixth-straight-supply-deficit-in-2026-005382 ; https://miningmx.com/2026-11-13-silver-faces-sixth-annual-deficit-despite-weaker-solar-demand
+  → Key teaching point: "deficit" did NOT stop a −60% fall. Supply/demand stories ≠ short-term price.
+- Volatility: long-run silver ≈ 28.8% annual vol vs gold ≈ 16.2% (~1.8x); other studies "almost regularly twice gold". Say "roughly twice as jumpy as gold".
+  Sources: https://www.bullionvault.com/gold-news/opinion-analysis/gold-volatility-price-silver-stocks-140520252 ; https://freefincal.com/gold-vs-silver-returns-which-is-a-better-investment/ ; https://learn.apmex.com/learning-guide/silver-price-vs-gold-price-volatility/
+  2026 illustration (TV, own arithmetic): gold −15.7% YTD vs silver −40% YTD; gold −10% 1M vs silver −20% 1M.
+- Why more volatile: much smaller market than gold + over half of demand is industrial (economy-sensitive) + speculative futures/ETF flows.
+- ETFs: SLV (iShares Silver Trust) expense ratio 0.50%; SIVR (abrdn Physical Silver) 0.30% (= $50 vs $30/yr per $10,000). SLV far bigger/more liquid.
+  Sources: https://www.nasdaq.com/articles/silver-etfs-slv-bigger-fund-sivr-more-affordable ; https://247wallst.com/investing/etf/2026/07/11/slv-vs-sivr-same-silver-lower-fee-so-which-physical-silver-etf-should-you-actually-hold/ ; https://etf.pionline.com/fund/SIVR
+- Silver pays no dividend or interest — return only comes from price change (structural fact; rate-hike fears hurt "non-yielding metals" — mitrade 16 Nov link above).
 
-## 1. What is happening NOW (Nov 2026)
-- Story arc: 2025 mega-rally (+~144%) → frenzy peak $121.6 on 29 Jan 2026 → record one-day crash 30 Jan (trigger cited: Warsh Fed-chair nomination lifting the dollar; Chinese speculative flows) → long slide → <$40 on 25 Nov → bounce +5–6% on 27 Nov (oversold, short covering; "AI trade revives risk appetite" — Dow Jones headline).
-  - https://www.mining.com/web/chinese-speculators-set-the-stage-for-gold-and-silver-crash · https://www.home.saxo/content/articles/commodities/silver-when-a-record-rally-turns-into-a-record-rout-02022026
-- 1-year change: TV −18.6% (vs ~$53 a year ago). **Single source — do not say exact figure on air** (another outlook said −23%).
-- Deficit size: Silver Institute April forecast 46.3 Moz; Nov preliminary ~35 Moz. Figures revised — **say "deficit", not the number**. https://www.kitco.com/news/article/2026-04-15/silver-market-faces-another-deficit-2026-volatility-and-investment-demand
-- Investment demand: Silver Institute expected physical investment +18% in 2026 (highest since 2022) — **single source** https://www.silverinstitute.org/global-silver-investment-to-remain-strong-in-2026/
-- Demand drivers (general, safe qualitatively): solar panels, electronics, EVs, AI/data-centre electrical components. AI-data-centre link was a popular *narrative* ("AI's favourite commodity trade" — Benzinga headline, 25 Nov) — no hard tonnage numbers found; keep qualitative.
-- Central banks buy **gold**, not silver in any meaningful way — don't claim central-bank silver buying.
+## Single source — do not say on air (or say only as "approx." after re-check)
+- 1-week change +1.0%, YTD 2026 −40.0%, 1-year −18.6%, 52-wk low 38.204 — TV TVC:SILVER only (27 Nov). YTD fits TV weekly closes (~$72 end-2025 → $43). Good for internal framing.
+- Gold now $3,640.81, YTD −15.7%, ATH 5,598.75 — TV only.
+- Silver in KD (own arithmetic, TV USDKWD 0.309): ≈ 13.4 KD/oz ≈ 0.43 KD/gram ≈ 430 KD/kg (spot, before premium).
+  Kuwaiti price sites show older/higher figures (0.57–0.60 KD/g, ~589 KD/kg undated): https://goldpricez.com/lang-ar/kw/silver-rates/gram ; https://www.goldpricedata.com/silver-rates/kuwait/ ; https://almurakib.com/الأسعار/أسعار-الفضة/سعر-الفضة-في-الكويت/ — STALE. Re-check on recording day; say "around 400-something KD per kilo".
+- Where to buy in Kuwait: Souq Al-Dahab / Mubarakiya gold market, jewelry shops, bullion dealers (almaal.org https://almaal.org/tools/silver-price-kuwait ; weak source small-projects.org). No verified dealer list, no verified Kuwaiti bar premiums.
+- 2026 PV demand ≈ 151 Moz (GoldSilver only); jewelry 2026 ≈ 159 Moz (single secondary).
+- Coin/bar 2026 demand 215 Moz (−2%) — interim review via secondary coverage only.
+- Exact 30 Jan 2026 close ($78.53 vs ~$84 vs ~$85) — sources conflict; just say "~30% intraday".
+- BofA said silver ~30% above fair value before the crash — single mention.
 
-## 2. Gold-to-silver ratio — simple
-- Meaning: "How many ounces of silver buy one ounce of gold." Today ≈ 80+ → one gold ounce buys ~80 silver ounces.
-- Jan 2026 it was ~45 (silver very expensive vs gold); now 80+ because silver fell much harder than gold (silver YTD −40% vs gold YTD ≈ −16% [TV only]).
-- Long-run: avg ~60 since 1971 (Money Metals); 1980 low ~17; 2020 high ~125. A high ratio is often read as "silver cheap relative to gold" — **it is not a timing signal; it stayed high for years before**.
+## General points (no number, safe as concepts)
+- Physical: bars/coins (.999). Spread = dealer buys back lower than he sells; premiums on small bars/coins are a bigger % than on 1 kg bars. Storage/insurance cost & purity/weight certificate matter.
+- Jewelry/silverware: workmanship (المصنعية) is often large vs the metal value, since silver per gram is cheap (~0.4 KD/g) — you mostly pay for craft, not metal. Not an efficient investment. (Logic, not sourced stat.)
+- ETFs (SLV/SIVR) via a broker that offers US stocks: no storage hassle, but annual fee + you don't hold the metal.
+- Mining stocks: just mention — they move even more than silver (company risk on top).
 
-## 3. Silver vs gold for a beginner
-- Silver ≈ **2× as volatile as gold** (World Gold Council chart 1991–2026) — **single source for "2×"**; on air say "much more volatile" (SSGA confirms: 20 drops of 10%+ for silver vs 6 for gold over 40 yrs). https://www.gold.org/goldhub/research/gold-safe-haven-versus-silver-wildcard
-- This year proves it: silver −64% peak-to-now vs gold −35% (5598→3640, TV only).
-- Cheap per gram: silver ≈ $1.40/g vs gold ≈ $117/g (computed from TV: 43.44/31.1035; 3640/31.1035) → ~80× cheaper.
-- Demand split: >50% industrial (factories, solar, electronics) + rest jewelry/silverware + investment. Gold is mostly jewelry/investment/central banks → silver follows the economy more.
-- Bulky: same money in silver = ~80× the weight/volume of gold. 1,000 KD ≈ 2.3 kg of silver vs ~28 g of gold (computed).
-
-## 4. Ways to invest
-- **Physical bars/coins (999 fine):** today ≈ **0.43 KD/gram ≈ 430 KD/kg** (computed: $43.44/31.1035 × 0.307 KWD/USD). Web trackers showed 0.50–0.53 KD/g in late Oct/early Nov when silver was $50–54 → consistent. **Computed, not a dealer quote — say "around 430 dinars a kilo at world price, shops add a premium".** https://www.150currency.com/silver-price/kuwait/ · https://almurakib.com/
-- Bar premium / workmanship in Kuwait: **no published figure found.** Bullion directory: investment silver bars in Kuwait "limited stocks and high premiums over spot", some buy from Dubai (dated source). https://bullion.directory/all/bullion-dealers/bullion-dealers-kuwait — **single source, do not quote %**.
-- **Silver ETFs:** SLV (iShares, largest, 0.50%), SIVR (abrdn, 0.30%) — hold physical silver; buy via a broker with US-market access.
-- **Mining stocks** (e.g., big silver miners): just mention — they move even more than silver.
-- **Jewelry ≠ investment:** retail markups often 200–300% over metal value, resale ≈ melt value only; sterling is 92.5% silver. https://learn.apmex.com/selling-guide/how-to-sell-sterling-silver/ · https://www.moneymetals.com/sterling-silver-price (dealer sources — say "you lose a big part", not a %).
-
-## 5. Kuwait specifics
-- Main market: **Souq Al-Mubarakiya gold market**; jewelers there reported record silver demand (Arab Times/Zawya). https://www.arabtimesonline.com/news/silver-bullion-shines-as-the-latest-investment-trend-in-kuwait · https://zawya.com/en/business/commodities/silver-bullion-shines-as-the-latest-investment-trend-in-kuwait-mc7dngt3
-- No VAT in Kuwait (see top). Always compare shop sell price vs buy-back price (spread).
-- Not verified: specific named dealers, KD premium per bar. goldpricez.com / tradingeconomics.com were blocked from this session's network (search snippets only).
-
-## 6. Three plain-language risks
-1. **Big swings both ways:** it lost about a quarter of its value in ONE day (30 Jan) and ~65% from the peak. Only money you can leave for years.
-2. **Hidden costs:** shop premium on purchase, lower buy-back price, storage for heavy bars; ETF yearly fee (0.3–0.5%) + broker/FX fees.
-3. **No income + tied to factories:** silver pays no interest/dividend (hurts when rates rise), and over half the demand is industrial — if factories/solar slow down, price can fall.
+## "Remember" points for the reel
+1. Very jumpy: −30% in a single day (30 Jan 2026) and ~−64% from January's record.
+2. Buy/sell spread + premiums + storage eat returns — check the buy-back price before you buy.
+3. No dividends, no interest — only price movement; "deficit" headlines don't guarantee price rises.
 
 ## Uncertainties
-- Live prices move; 27 Nov had a +5% intraday bounce. Re-check before recording.
-- 1-yr change, "2× volatility", gold YTD, deficit tonnage, KD premium: single-source or revised.
-- KD/gram is our own calculation from spot, not a Kuwaiti shop quote.
+- WebFetch blocked in this session (tradingeconomics.com, beincrypto.com not resolvable); figures from search summaries + TradingView. Silver Institute PDFs not opened directly.
+- Kuwait KD prices/premiums/dealers unverified; local sites stale.

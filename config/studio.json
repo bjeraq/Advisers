@@ -507,8 +507,10 @@
       "video_media_id_v8": "b7aabc18-8600-45d4-a9ff-2d86c73fdd72",
       "video_media_id_v9": "cff203d3-bac5-4823-930d-a2ab4e5b27cb",
       "video_media_id_v10": "e4f336af-41f8-48d7-81ff-c3729060b15c",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 2,
@@ -536,8 +538,10 @@
       ],
       "verdict": "ميزان الاستثمار +6: 2 شراء / 13 انتظار / 0 بيع — انتظار لين الثلاثاء 17 نوفمبر، الثقة 7/10",
       "notes": "تحليل لا توصية. القنفذ 720 (1080 فشل مرتين)، لقطات الحركة 720، لقطة الهدهد والجربوع من مسودة 480 لتوقيت الكلام.",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 3,
@@ -558,8 +562,10 @@
       "notes": "ميزان −17 (2 شراء / 11 انتظار / 2 بيع)؛ القاضي: ننطر إعلان الدمج بديسمبر، ثقة 6/10. السكريبت v2 اعتمده بدر 14 نوفمبر.",
       "video_media_id_v1": "fd482547-01b0-4a55-a9f5-843565dea895",
       "video_media_id_v2": "729eb980-813c-4218-b269-3257f49502cf",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 4,
@@ -582,8 +588,10 @@
       "notes": "بوابتين مع بدر: السكريبت (دخلة السلحفاة بدل «خبر عاجل»، «يختبر» انشالت) ثم الصور الثابتة (يخت D، السلحفاة شايب بنظارة وصوت Alistair مكبّر العمر). verify أقل تشابه 0.80 (أرقام القاضي).",
       "video_media_id_v1": "2a3f5a87-0a0c-40fc-9fa6-a3b56d925446",
       "notes_v2": "v2 بعد مراجعة بدر الصوتية: سبعتعش بالتاء، خِسَرت، ثلاثين بالمية، ميتين (200)، سلحفاة بمفاجأة أكبر، ختام «وإنتوا، اكتبوا لنا رايكم بالتعليقات». مشهد الثعلب الرئيسي انعاد استخدامه بالصوت الجديد (intone فشل مرتين).",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 5,
@@ -605,8 +613,10 @@
       "location": "قاعة المجلس المعتمدة (council_wide_v5)",
       "verdict": "ميزان الاستثمار +22: 4 شراء / 11 انتظار / 0 بيع — لمن يبي دخل ثابت: انطر توزيع 20 نوفمبر ثم شراء جزئي بـ1,000 أو أقل؛ المتحفظ: الوديعة؛ الثقة 7/10",
       "notes": "أول حلقة بأسبوع الكويت. بوابتين مع بدر: السكريبت (v4: نبذة عامة ثم التركيز على صكوك بيتك، الثعلب متوازن، «باجر» بالجيم) ثم الصور (الثعلب انرسم ثعلب رملي واضح، الصقر بالختام واقف على الأرض بمخالبه). الافتتاح يعيد لقطة دفع الكاميرا 6850991a. تكلفة هيغزفيلد ~285 كريدت.",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 7,
@@ -635,8 +645,10 @@
       "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
       "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc",
       "video_media_id_v3": "790cbcac-df72-4deb-b3f2-63e6f06298bf",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 6,
@@ -655,8 +667,10 @@
       "guest": "mazloum + haris",
       "cast": "الصقر • الضب (اصبر) • الثعلب (بيع جزء) • القنفذ (صائد المظلومات، ضيف) • الحصان (مدير المخاطر، ضيف — أول ظهور) • القاضي",
       "notes": "Focus changed by Bader 19 Nov to war-time buyers who lost; extra council round (keep 8 / partial 7 / sell all 0). No investment-meter number in this episode (Bader). Version A = horse voice Barrett, B = Harrison; site uses A until Bader picks. Cover + 8-slide carousel delivered with the video.",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 8,
@@ -682,8 +696,10 @@
       "video_media_id_v1": "407f0756-14f2-42cc-9792-9b94e453c131",
       "video_media_id_v2": "64ef2a19-96ea-4cbf-8d9d-9486dae31022",
       "video_media_id_v3": "996d99d7-e57a-4514-b5f5-a39589d35226",
-      "status": "🟢 carousel done — finished",
-      "ready": true
+      "status": "🔵 published",
+      "ready": true,
+      "published": true,
+      "published_at": "before 2026-11-27 (Bader confirmed 27 Nov; exact date not recorded)"
     },
     {
       "number": 9,

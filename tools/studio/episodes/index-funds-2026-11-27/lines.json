@@ -103,11 +103,23 @@
       "job": "8f7e56de-5d08-47ac-905c-82de6b9db403",
       "audio": "lines/04F.mp3",
       "note": "qalila spelled with jim (jlila)"
+    },
+    "04G": {
+      "speaker": "congress",
+      "job": "afa135ec-b902-485c-bc24-2dd51aaba6de",
+      "audio": "lines/04G.mp3",
+      "note": "plain spelling, default stability"
+    },
+    "04H": {
+      "speaker": "congress",
+      "job": "601a764f-76fa-43ef-afb6-69f878d4ee84",
+      "audio": "lines/04H.mp3",
+      "note": "plain spelling, stability 0.6"
     }
   },
   "picks": {
     "07": "07C",
     "09": "09B",
-    "note": "Bader 27 Nov: 07B/07C both fine (took 07C), 09B approved; 04B/04C rejected (qaf not Kuwaiti)"
+    "note": "Bader 27 Nov: 07B/07C both fine (took 07C), 09B approved; 04B/04C rejected (qaf not Kuwaiti); 04D/E/F rejected too, Bader: plain qaf spelling -> 04G/04H"
   }
 }

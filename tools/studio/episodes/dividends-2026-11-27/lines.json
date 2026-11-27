@@ -97,7 +97,16 @@
       "dur": 12.93,
       "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
     },
-    "_dhub_abu_saqr_unused": "Abu Saqr KylrHp6ZWnFm3rme6tlU takes generated in same flow (sessions 6k8twUlogmmhC35dl0Tq, j5eGuFtL8ViiBnfj11hB, jMlz9iWFaa8c15H5UOjq, cVwQODy73QzK7Hvn1s0X) — not used: Bader only asked to change the tortoise; dhub stays Holden."
+    "_dhub_abu_saqr_unused": "Abu Saqr KylrHp6ZWnFm3rme6tlU takes generated in same flow (sessions 6k8twUlogmmhC35dl0Tq, j5eGuFtL8ViiBnfj11hB, jMlz9iWFaa8c15H5UOjq, cVwQODy73QzK7Hvn1s0X) — not used: Bader only asked to change the tortoise; dhub stays Holden.",
+    "03C": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct)",
+      "generation": "9pywsaHKO9YlyPLQIGeZ",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 28.56,
+      "text": "أوّل شي، الشّركة تِعْلن جَدْوَل فيه أربع أيّام. الأوّل: آخِر يوم شِراء… يعني آخِر يوم تِقْدر تِشْتري فيه السّهم وتاخِذ التّوزيع. الثّاني: أوّل يوم بدون توزيع… اللي يِشْتري من هاليوم وطالِع، ما ياخِذ شي. الثّالث: يوم الاستحقاق… هذا اليوم اللي الشّركة تْشَيِّك فيه منو مْسَجَّل عندها مساهِم، واللي اسْمه موجود ياخِذ التّوزيع. والرّابع: يوم التّوزيع… اللي تِنْزل فيه الفلوس بحسابك.",
+      "note": "Bader 27 Nov: 03B too slow; explain each day (what record date means); natural pace, natural ~0.5 s pauses, no padding; written 'شراء' not 'شرا'"
+    }
   },
   "stills": {
     "1": {
@@ -160,5 +169,23 @@
     "_notes": "Bader 27 Nov sent photo of Al-Jahra/Doha water towers: funnel shape, flat top, vertical blue/white stripes stem to rim (rules.kuwait_water_towers). Board v1 superseded before sending.",
     "_board": "stills_board_v2.jpg — awaiting Bader"
   },
-  "board_text_mock": "board_text_mock.jpg — shot 5 with the four boxes written large (built in post, box by box)"
+  "board_text_mock": "board_text_mock.jpg — shot 5 with the four boxes written large (built in post, box by box)",
+  "board_text": [
+    [
+      "آخر يوم شراء",
+      "تشتري فيه وتاخذ التوزيع"
+    ],
+    [
+      "أول يوم بدون توزيع",
+      "اللي يشتري من اليوم ما ياخذ"
+    ],
+    [
+      "يوم الاستحقاق",
+      "الشركة تشيّك أسماء المساهمين"
+    ],
+    [
+      "يوم التوزيع",
+      "الفلوس تنزل بحسابك"
+    ]
+  ]
 }

@@ -85,6 +85,29 @@
       "job": "1850d4d1-bab2-4fe3-96f5-42a003d3f62d",
       "audio": "lines/09B.mp3",
       "note": "new text: percentage of salary, not amount"
+    },
+    "04D": {
+      "speaker": "congress",
+      "job": "4a140f90-fae8-4a05-bcf6-601e1cf7c0cc",
+      "audio": "lines/04D.mp3",
+      "note": "qalila spelled with Persian gaf (Kuwaiti g)"
+    },
+    "04E": {
+      "speaker": "congress",
+      "job": "9a5c2f3a-a50b-408f-b7b3-367709d12c54",
+      "audio": "lines/04E.mp3",
+      "note": "qalila spelled with three-dot qaf (g)"
+    },
+    "04F": {
+      "speaker": "congress",
+      "job": "8f7e56de-5d08-47ac-905c-82de6b9db403",
+      "audio": "lines/04F.mp3",
+      "note": "qalila spelled with jim (jlila)"
     }
+  },
+  "picks": {
+    "07": "07C",
+    "09": "09B",
+    "note": "Bader 27 Nov: 07B/07C both fine (took 07C), 09B approved; 04B/04C rejected (qaf not Kuwaiti)"
   }
 }

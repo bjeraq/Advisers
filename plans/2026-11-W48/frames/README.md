@@ -10,3 +10,4 @@
 | 17 | chalet, Al-Khiran (camel + gazelle) | a29dd145-da55-4af0-9c23-28193f564ddf |
 | 18 | gold shop, Souq Al-Mubarakiya (flamingo + fox) | 7c53fef1-6fcd-4049-a6cb-e80cb00e4e44 |
 Contact sheet: W48_locations_contact.jpg
+| 13 (new order) | diwaniya with Kuwait WATER towers in window, tortoise at whiteboard + dhub (Bader 27 Nov) | d4efb78e-a492-4cba-b9e2-19c5a3944055 |

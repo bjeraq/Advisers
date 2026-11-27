@@ -48,8 +48,8 @@
   "settle": {
    "speaker": "asasi",
    "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
-   "audio": "src/dv/ep/05B.mp3",
-   "text": "لأن السهم ما يصير باسمك إلا بعد ثلاث أيام تداول من الشرا. فلازم تشتري قبل الاستحقاق بثلاث أيام تداول على الأقل.",
+   "audio": "src/dv/ep/05C.mp3",
+   "text": "لأن السهم ما يصير باسمك إلا بعد ثلاث أيام تداول من الشراء. فلازم تشتري قبل الاستحقاق بثلاث أيام تداول على الأقل.",
    "gain_db": 0
   },
   "nbk": {
@@ -76,8 +76,8 @@
   "cta": {
    "speaker": "thawr",
    "voice": "Holden 3c9d6053",
-   "audio": "src/dv/ep/09.mp3",
-   "text": "وإنت… تشتري الأسهم عشان التوزيعات، ولا عشان السعر يصعد؟ اكتب لنا بالكومنتات.",
+   "audio": "src/dv/ep/09B.mp3",
+   "text": "وإنت… برأيك شنو أفضل سهم تحب تشتريه عشان توزيعاته؟ وشنو السهم اللي تحب تشتريه لأنه يصعد بقوة؟ اكتب لنا بالكومنتات.",
    "gain_db": 0
   }
  },
@@ -149,17 +149,18 @@
   "cta": {
    "kind": "card",
    "accent": "gold",
-   "y": 0.24,
+   "y": 0.19,
+   "pad": 26,
    "lines": [
     [
-     "توزيعات ولا صعود السعر؟",
-     34,
+     "أفضل سهم للتوزيعات؟ وللصعود؟",
+     28,
      "bold",
      "white"
     ],
     [
      "اكتب لنا بالكومنتات",
-     24,
+     20,
      "med",
      "light_teal"
     ]
@@ -340,7 +341,7 @@
    "card": {
     "name": "cta",
     "at": "cue",
-    "cue": "التوزيعات"
+    "cue": "أفضل"
    }
   }
  ],
@@ -392,6 +393,11 @@
    "plate": "1fcbab94-87f7-452b-a022-f137f474d640",
    "hand": "880df786-31a8-42e9-a2f6-ebd57f8b277c",
    "nbk_logo": "seeklogo 386229 imported as 0640c3e2-988b-41de-aea8-272a63be1888"
+  },
+  "v3": {
+   "05C": "ElevenLabs tfqSso7rx7FHhkWZAoSg (الشراء), retimed onto same tortoise clip d_settle",
+   "09B": "Holden d2d2a5ab-7ea3-42af-8689-301c096ceb7b",
+   "intone_cta2": "771ac083-bc27-4f21-a2a4-61147fbea44e"
   }
  }
 }

@@ -1,0 +1,8 @@
+{
+  "_comment": "Ep14 stills board v1 (gpt_image_2_6 medium, 27 Nov 2026). Mall interior (glass roof, marble fountain, escalators, blank shop signs, no brands, no Kuwait Towers). Refs: keyframe 0ca89894, gazelle turnaround 361ebe62, horse close 209de7fc. Plan cost: walking seedance 8s 480p ~24 (reused) + 3 intone 480p x 54 = ~186 video, ~200 total with audio and stills.",
+  "1": {"job": "bc20f721-79ed-4792-b685-1a60385d260c", "shot": "walking wide, horse looks at phone, gazelle gestures", "use": "seedance walking clip (reused), VO lines 01-04"},
+  "2": {"job": "b5ee6ce0-8db0-42cc-a77f-baddbb1b7c51", "shot": "gazelle medium standing by fountain, horse shoulder in foreground", "use": "intone A: lines 05+07, intone B: lines 09+11"},
+  "3": {"job": "01e801c9-ca6b-4815-ae4d-b7b56cb350dc", "shot": "horse medium standing, phone in hand, shop fronts behind", "use": "intone C: lines 06, 08, 10 (+12 turning to camera)"},
+  "4": {"job": "e19b0fe1-d87e-4dae-9df4-6fc402f3371c", "shot": "horse close-up to camera, gazelle waving behind", "use": "closing line 12 / cover background", "replaces": "10635ade (gazelle held the scroll)"},
+  "5": {"job": "a0f50bbe-5302-4d0c-8a6b-ae861f0fcb03", "shot": "insert: horse hand with generic buy screen, no text", "use": "card for step 4 (order types)", "replaces": "f2604653 (teal cuff)"}
+}

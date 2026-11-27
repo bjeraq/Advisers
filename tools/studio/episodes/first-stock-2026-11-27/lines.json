@@ -1,0 +1,78 @@
+{
+  "_comment": "Episode 14 first stock on Boursa Kuwait - audio gate takes (elevenlabs_v4 via Higgsfield, default stability). Gazelle=Hana c25f78a0 (preset), Horse=Horse Deep 2 element 7a33d3c2. Script approved by Bader 27 Nov (hook A). Whisper medium matches the script. Total speech ~84 s.",
+  "data_date": "2026-11-27",
+  "lines": {
+    "01": {
+      "speaker": "haris",
+      "job": "03c1a014-6096-4497-b516-d1ba4a3ca41f",
+      "dur": 3.87,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "macro",
+      "job": "9080da3d-b478-4695-914e-b1b571c1ad6c",
+      "dur": 10.68,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "macro",
+      "job": "738ddea5-f06c-48a5-99f3-f208d15374f7",
+      "dur": 12.36,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "haris",
+      "job": "05ad2575-9fd9-459c-a53c-70f2aaf3c35b",
+      "dur": 0.99,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "macro",
+      "job": "a98d3e0c-881e-41d0-80f0-053cc9891780",
+      "dur": 14.52,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "haris",
+      "job": "f9549384-9cfb-4485-9b60-4780364b89b3",
+      "dur": 1.65,
+      "audio": "lines/06.mp3"
+    },
+    "07": {
+      "speaker": "macro",
+      "job": "5b9f69f0-abfd-4b26-a187-53370c606028",
+      "dur": 8.36,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "haris",
+      "job": "391acfbb-5201-479a-b37a-89ec26eab662",
+      "dur": 1.88,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "macro",
+      "job": "53dcc06b-984b-4c35-964d-e233e450e5c2",
+      "dur": 10.27,
+      "audio": "lines/09.mp3"
+    },
+    "10": {
+      "speaker": "haris",
+      "job": "53020d18-9990-466e-bd90-e548532f4c4f",
+      "dur": 2.51,
+      "audio": "lines/10.mp3"
+    },
+    "11": {
+      "speaker": "macro",
+      "job": "d8c16267-e36b-4ccf-a658-1ee6da740210",
+      "dur": 10.68,
+      "audio": "lines/11.mp3"
+    },
+    "12": {
+      "speaker": "haris",
+      "job": "8bcae445-90f1-4985-b7a6-d84ee1568c6c",
+      "dur": 5.96,
+      "audio": "lines/12.mp3"
+    }
+  }
+}

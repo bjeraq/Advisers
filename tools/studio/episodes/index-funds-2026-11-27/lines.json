@@ -1,0 +1,60 @@
+{
+  "_comment": "Episode 15 index funds - audio gate takes (elevenlabs_v4 via Higgsfield, default stability). Hoopoe=Raina 1c3a4775 (voice over motion), Hedgehog=Emmett 3c7d32be (lipsync). Bader 27 Nov: hedgehog replaces fox, hook C, line 4 rewritten as a two-person example. Total speech ~83 s.",
+  "data_date": "2026-11-27",
+  "lines": {
+    "01": {
+      "speaker": "congress",
+      "job": "1e4d456c-beda-444a-8055-3b696ea62830",
+      "dur": 5.25,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "mazloum",
+      "job": "dd56645c-d327-4a7b-8dbe-17c58dfde7de",
+      "dur": 10.37,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "congress",
+      "job": "af1a278f-6c2b-48e6-a7d7-3c70a6458ef5",
+      "dur": 13.48,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "congress",
+      "job": "1afdc667-3d30-4fca-bd8f-edccb1052a1d",
+      "dur": 23.17,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "mazloum",
+      "job": "61ef7bc0-0b26-4b6b-9c9c-d044533deb27",
+      "dur": 3.55,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "congress",
+      "job": "da4e92d6-5fb3-41ec-9641-efbe6afe5e0d",
+      "dur": 7.81,
+      "audio": "lines/06.mp3"
+    },
+    "07": {
+      "speaker": "mazloum",
+      "job": "e7888459-a1f5-4cd1-afc4-ce83172242df",
+      "dur": 2.43,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "congress",
+      "job": "deb9d3eb-1a8d-43b4-a66e-fce543354df4",
+      "dur": 11.55,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "mazloum",
+      "job": "c80aea6c-584f-48fa-972a-c83b6ad90802",
+      "dur": 5.49,
+      "audio": "lines/09.mp3"
+    }
+  }
+}

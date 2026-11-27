@@ -56,7 +56,48 @@
       "voice": "Holden",
       "job": "059a5c6a-e3ec-4549-8dff-5b668f2931ad",
       "dur": 7.16
-    }
+    },
+    "02B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "hw2NVw7Pr4mb5WVFScIO",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 4.75,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "03B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "JoaNdfwUJhfTCvJ4n6gK",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 18.99,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB; step pauses widened to 1.0 s"
+    },
+    "05B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "9nngeipMowXN8wPPpJSW",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 8.91,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "06B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "lC9gDpXm19SvJLnAlg3R",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 8.99,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "08B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "qOWNp7F1NA5J7PinXu0a",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 12.93,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "_dhub_abu_saqr_unused": "Abu Saqr KylrHp6ZWnFm3rme6tlU takes generated in same flow (sessions 6k8twUlogmmhC35dl0Tq, j5eGuFtL8ViiBnfj11hB, jMlz9iWFaa8c15H5UOjq, cVwQODy73QzK7Hvn1s0X) — not used: Bader only asked to change the tortoise; dhub stays Holden."
   },
   "stills": {
     "1": {
@@ -118,5 +159,6 @@
     "10": "51387051-3a1d-4c06-99c0-72487469e49d (unchanged, no window)",
     "_notes": "Bader 27 Nov sent photo of Al-Jahra/Doha water towers: funnel shape, flat top, vertical blue/white stripes stem to rim (rules.kuwait_water_towers). Board v1 superseded before sending.",
     "_board": "stills_board_v2.jpg — awaiting Bader"
-  }
+  },
+  "board_text_mock": "board_text_mock.jpg — shot 5 with the four boxes written large (built in post, box by box)"
 }

@@ -73,6 +73,55 @@
       "job": "8bcae445-90f1-4985-b7a6-d84ee1568c6c",
       "dur": 5.96,
       "audio": "lines/12.mp3"
+    },
+    "01B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "7oB9BO3CvIzZhf0vBT7w",
+      "dur": 3.47,
+      "audio": "lines/01B.mp3"
+    },
+    "04B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "SI4MPgC1u4Jc1kggoTj1",
+      "dur": 0.99,
+      "audio": "lines/04B.mp3"
+    },
+    "06B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "VzsLOskGufo4v4tlEivo",
+      "dur": 1.57,
+      "audio": "lines/06B.mp3"
+    },
+    "08B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "rP5OQCZNgjrru6fAb1ZR",
+      "dur": 1.65,
+      "audio": "lines/08B.mp3"
+    },
+    "10B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "w4kKrYysKEwhBqLPjI7D",
+      "dur": 2.19,
+      "audio": "lines/10B.mp3"
+    },
+    "12B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "BZuuaYHT9SyePRx3rGYb",
+      "dur": 5.96,
+      "audio": "lines/12B.mp3"
     }
-  }
+  },
+  "_review_1": "Bader 27 Nov: horse voice not nice -> use the Avenues (Nike ep10) horse voice = ElevenLabs Mohamed; line 01 'بشتري' not 'أبي أشتري'. Horse takes B replace 01/04/06/08/10/12 (Horse Deep 2)."
 }

@@ -1,0 +1,417 @@
+{
+ "_comment": "Episode 13 (W48): dividend dates lesson, diwaniya with Kuwaiti funnel water towers (Al-Jahra/Doha type) in the window. Tortoise elder = RAED on ElevenLabs (Bader 27 Nov: Alistair had echo/accent), dhub = Holden. Lipsync = intone 480 (3 jobs, cut per line); non-talking shots = grok_video_v15_lite 480 (1 cr/s). Timeline built box by box on the whiteboard insert (cards.timeline) and kept on screen through lines 4-5. No stock price -> pill only, no sharia badge (Kuwaiti stocks). | Bader 27 Nov (2): no empty boxes — the four days are written on the board (drawn locally on the stills, boardfx.py), the tortoise points with a CAPPED marker (grok clips from those stills), and the current day is highlighted yellow on the board as he says it (hl.py layers); T+3 note under day 1 in line 5.",
+ "slug": "dividends-2026-11-27",
+ "number": 13,
+ "title": "التوزيعات: متى تشتري عشان تاخذها؟",
+ "ticker": "Dividend dates in Kuwait (lesson, no stock call)",
+ "data_date": "2026-11-27",
+ "compliance": "General info, no recommendation; NBK/Zain amounts from 2 sources (dossier); no sharia badge (rules.no_sharia_badge_local)",
+ "dossier": "plans/2026-11-W48/14-dividends-dates/dossier.md",
+ "fonts": "fonts",
+ "location": "diwaniya, funnel water towers in the window (stills_v2 in lines.json)",
+ "lines": {
+  "hook": {
+   "speaker": "thawr",
+   "voice": "Holden 3c9d6053",
+   "audio": "src/dv/ep/01.mp3",
+   "text": "شريت السهم يوم الاستحقاق… وما أخذت التوزيعات!",
+   "gain_db": 0
+  },
+  "why": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/02B.mp3",
+   "text": "يا ولدي، لأنك ما تعرف الأيام الأربعة.",
+   "gain_db": 0
+  },
+  "sched_a": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/03h.mp3",
+   "text": "أول شي، الشركة تعلن جدول فيه أربع أيام.",
+   "gain_db": 3
+  },
+  "sched_b": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/03r.mp3",
+   "text": "الأول: آخر يوم شراء… يعني آخر يوم تقدر تشتري فيه السهم وتاخذ التوزيع. الثاني: أول يوم بدون توزيع… اللي يشتري من هاليوم وطالع، ما ياخذ شي. الثالث: يوم الاستحقاق… هذا اليوم اللي الشركة تشيك فيه منو مسجل عندها مساهم، واللي اسمه موجود ياخذ التوزيع. والرابع: يوم التوزيع… اللي تنزل فيه الفلوس بحسابك.",
+   "gain_db": 0
+  },
+  "ask": {
+   "speaker": "thawr",
+   "voice": "Holden 3c9d6053",
+   "audio": "src/dv/ep/04.mp3",
+   "text": "وليش ما ينفع أشتري يوم الاستحقاق؟",
+   "gain_db": 0
+  },
+  "settle": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/05B.mp3",
+   "text": "لأن السهم ما يصير باسمك إلا بعد ثلاث أيام تداول من الشرا. فلازم تشتري قبل الاستحقاق بثلاث أيام تداول على الأقل.",
+   "gain_db": 0
+  },
+  "nbk": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/06B.mp3",
+   "text": "بنك الوطني هالسنة وزع خمسة وثلاثين فلس عن كل سهم، وفوقها أسهم منحة. واللي شرا بآخر يوم، أخذ التوزيع.",
+   "gain_db": 0
+  },
+  "drop": {
+   "speaker": "thawr",
+   "voice": "Holden 3c9d6053",
+   "audio": "src/dv/ep/07.mp3",
+   "text": "زين، ليش السهم ينزل أول يوم بدون توزيع؟",
+   "gain_db": 0
+  },
+  "punch": {
+   "speaker": "asasi",
+   "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs)",
+   "audio": "src/dv/ep/08B.mp3",
+   "text": "لأن الفلوس طلعت من الشركة لجيبك. لو السهم بخمسمية فلس، ووزع عشرين، طبيعي ينزل تقريباً عشرين. يعني التوزيع مو هدية ببلاش… هو جزء من قيمة السهم انتقل لك.",
+   "gain_db": 0
+  },
+  "cta": {
+   "speaker": "thawr",
+   "voice": "Holden 3c9d6053",
+   "audio": "src/dv/ep/09.mp3",
+   "text": "وإنت… تشتري الأسهم عشان التوزيعات، ولا عشان السعر يصعد؟ اكتب لنا بالكومنتات.",
+   "gain_db": 0
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "شريت يوم الاستحقاق…",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "وما أخذت شي!",
+     34,
+     "bold",
+     "gold"
+    ],
+    [
+     "مجلس اليوم • الجمعة 27 نوفمبر 2026",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "nbk": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "الوطني: 35 فلس + 5% منحة",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "توزيعات 2025 • صُرفت أبريل 2026",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "zain": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "زين: 17 فلس (النص الأول 2026)",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "استحقاق 1 أكتوبر • توزيع 6 أكتوبر",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "drop": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.24,
+   "lines": [
+    [
+     "سهم 500 فلس − توزيع 20",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "≈ 480 فلس أول يوم بدون توزيع (تقريباً)",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "توزيعات ولا صعود السعر؟",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "اكتب لنا بالكومنتات",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "معلومة عامة مو توصية"
+  },
+  "hl1": {
+   "kind": "image",
+   "file": "src/dv/ov/hl1.png"
+  },
+  "hl2": {
+   "kind": "image",
+   "file": "src/dv/ov/hl2.png"
+  },
+  "hl3": {
+   "kind": "image",
+   "file": "src/dv/ov/hl3.png"
+  },
+  "hl4": {
+   "kind": "image",
+   "file": "src/dv/ov/hl4.png"
+  },
+  "hlT3": {
+   "kind": "image",
+   "file": "src/dv/ov/hlT3.png"
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "lipsync",
+   "line": "hook",
+   "video": {
+    "draft": "src/dv/d_hook.mp4",
+    "final": "src/dv/d_hook.mp4"
+   },
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   }
+  },
+  {
+   "id": "why",
+   "type": "lipsync",
+   "line": "why",
+   "video": {
+    "draft": "src/dv/d_why.mp4",
+    "final": "src/dv/d_why.mp4"
+   }
+  },
+  {
+   "id": "sched_a",
+   "type": "vo_clip",
+   "line": "sched_a",
+   "video": {
+    "draft": "src/dv/w_stand720.mp4",
+    "final": "src/dv/w_stand720.mp4"
+   },
+   "duration": 3.9,
+   "delay": 0.15
+  },
+  {
+   "id": "sched_b",
+   "type": "vo_clip",
+   "line": "sched_b",
+   "video": {
+    "draft": "src/dv/w_ins_pp.mp4",
+    "final": "src/dv/w_ins_pp.mp4"
+   },
+   "duration": 25.4,
+   "delay": 0.15,
+   "extra_cards": [
+    {
+     "name": "hl1",
+     "cue": "الأول",
+     "fade": 0.3,
+     "until_cue": "الثاني"
+    },
+    {
+     "name": "hl2",
+     "cue": "الثاني",
+     "fade": 0.3,
+     "until_cue": "الثالث"
+    },
+    {
+     "name": "hl3",
+     "cue": "الثالث",
+     "fade": 0.3,
+     "until_cue": "والرابع"
+    },
+    {
+     "name": "hl4",
+     "cue": "والرابع",
+     "fade": 0.3
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "type": "vo_clip",
+   "line": "ask",
+   "video": {
+    "draft": "src/dv/w_ins_pp.mp4",
+    "final": "src/dv/w_ins_pp.mp4"
+   },
+   "duration": 3.2,
+   "delay": 0.15,
+   "extra_cards": []
+  },
+  {
+   "id": "settle",
+   "type": "vo_clip",
+   "line": "settle",
+   "video": {
+    "draft": "src/dv/w_ins_pp.mp4",
+    "final": "src/dv/w_ins_pp.mp4"
+   },
+   "duration": 9.3,
+   "delay": 0.15,
+   "extra_cards": [
+    {
+     "name": "hlT3",
+     "cue": "فلازم",
+     "fade": 0.35
+    }
+   ]
+  },
+  {
+   "id": "nbk",
+   "type": "vo_clip",
+   "line": "nbk",
+   "video": {
+    "draft": "src/dv/w_wide720.mp4",
+    "final": "src/dv/w_wide720.mp4"
+   },
+   "duration": 9.4,
+   "delay": 0.15,
+   "extra_cards": [
+    {
+     "name": "nbk",
+     "cue": "الوطني",
+     "until_cue": "واللي"
+    },
+    {
+     "name": "zain",
+     "cue": "واللي"
+    }
+   ]
+  },
+  {
+   "id": "drop",
+   "type": "lipsync",
+   "line": "drop",
+   "video": {
+    "draft": "src/dv/d_drop.mp4",
+    "final": "src/dv/d_drop.mp4"
+   }
+  },
+  {
+   "id": "punch",
+   "type": "lipsync",
+   "line": "punch",
+   "video": {
+    "draft": "src/dv/d_punch.mp4",
+    "final": "src/dv/d_punch.mp4"
+   },
+   "card": {
+    "name": "drop",
+    "at": "cue",
+    "cue": "لو"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "line": "cta",
+   "video": {
+    "draft": "src/dv/d_cta.mp4",
+    "final": "src/dv/d_cta.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "التوزيعات"
+   }
+  }
+ ],
+ "generation": {
+  "intone_dhub_A": {
+   "job": "d602395d-67c6-4937-b234-b4012f60fabd",
+   "lines": [
+    "01",
+    "04",
+    "07"
+   ],
+   "location": "still 2 e950575b"
+  },
+  "intone_dhub_cta": {
+   "job": "39508d62-8d96-4742-bedd-a1df7877338d",
+   "lines": [
+    "09"
+   ],
+   "location": "still 10 51387051"
+  },
+  "intone_tortoise": {
+   "job": "95512178-93e8-45e2-bca7-091d291888fd",
+   "lines": [
+    "02B",
+    "08B"
+   ],
+   "location": "still 9 77b10354",
+   "audio_media": {
+    "02B": "c3b897df-3e4d-4ef5-99a3-f4b41351d640",
+    "08B": "452c5b2d-30fe-41d5-bb6b-46a4cdf092bc",
+    "05B": "cc86bb6b-4f88-464d-a250-90096aa292a9",
+    "06B": "19e20792-6e10-4b0c-b86b-6e43eb263f24"
+   }
+  },
+  "grok_lite_480": {
+   "insert": "d654aceb-db1f-432e-9ad8-6b989736cf16 (first 5.5 s ping-pong, box-4 area painted board colour -> ins_clean)",
+   "stand": "708b2cd7-1bfb-4cc0-9430-edfab066ec28",
+   "wide": "e58b7655-02f3-4aa4-8d3e-97e9dced4ac3"
+  },
+  "grok_lite_480_v2": {
+   "insert": "2e32e7ae-bc14-4360-9ea0-55aa539b2003 (start b4 0898ccea)",
+   "stand": "dc39eeec-70cf-45d4-91de-57781a30c2ce (start b3 c2ad9352)",
+   "wide": "505785e1-d8d7-4565-89e9-3c6c4bbd8fdb (start b0 e7963ecc)"
+  },
+  "credits_total": 223.1,
+  "credits_note": "start 11071.45 -> 10848.33. Voices+stills ~36, intone 3 jobs ~136, grok lite ~26 + board re-shoot ~26 (Bader note: written board instead of empty boxes)."
+ }
+}

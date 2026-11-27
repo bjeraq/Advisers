@@ -747,6 +747,22 @@
       "location": "سيارة بالليل على شارع الخليج، أبراج الكويت من الدريشة (1dc5d16d)",
       "notes": "بدون شارة شرعية (rules.no_sharia_badge_local). الأسعار إغلاق الاثنين 23 نوفمبر (1,519 فلس، +164% سنة، −17% 3 شهور، TradingView) — الملف كان كاتب الجمعة 20 بالغلط. intone رفض صورة الضب 7 مرات (فحص الوجه) بالمشهد A، فانعمل بـ sync_so على لقطة المشهد B معكوسة. لقطة بومة وحدة 5ث (بدل ثنتين) لتبقى الكلفة ~190. أصوات بدر: 01v3a (شِرْكَه)، 02B، 03، 04a، 05B، 06v2 (توسعة)، 07B، 08b. • v2 (بدر 25 نوفمبر): البوم بدون تلفون ويتفاعل ويا الضب، والسيارة تمشي قدام بس (شلنا اللقطة المعكوسة واللوب الرايح الراجع). كل المشاهد seedance 480p من إطارين يدد (1cd923a9، 1c010ad5) مع صوت السطر مرجع، ~205 كريدت. البوم ذكر (rules.owl_male).",
       "video_media_id_v1": "523feb6d-4137-4e70-84c9-d3d725cd9aca"
+    },
+    {
+      "number": 13,
+      "title": "التوزيعات: متى تشتري عشان تاخذها؟",
+      "ticker": "Dividend dates in Kuwait (lesson, no stock call)",
+      "session_date": "2026-11-27",
+      "data_date": "2026-11-27",
+      "episode_file": "tools/studio/episodes/dividends-2026-11-27/episode.json",
+      "script": "plans/2026-11-W48/scripts.md (section 13)",
+      "dossier": "plans/2026-11-W48/14-dividends-dates/dossier.md",
+      "carousel": "tools/studio/episodes/dividends-2026-11-27/carousel.json",
+      "cover": "tools/studio/episodes/dividends-2026-11-27/cover.json",
+      "status": "draft 720 delivered 27 Nov, awaiting Bader",
+      "hook": "A",
+      "credits_higgsfield": 223.1,
+      "note": "Tortoise RAED (ElevenLabs), dhub Holden; funnel water towers; four days written on the board + yellow highlight; budget ~190 exceeded (223) after board re-shoot per Bader's note"
     }
   ],
   "cast_retired": {

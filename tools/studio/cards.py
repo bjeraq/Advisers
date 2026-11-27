@@ -8,6 +8,9 @@
               بشريط 16%–34% من الارتفاع (فوق رؤوس اللقطة الواسعة)، والسطر الصغير label فوقه
   card        lines[[text, size, weight(bold|med), color]], accent, y (مركز البطاقة، افتراضي 0.56),
               x (اختياري: مركز أفقي كنسبة من العرض — لإبعاد البطاقة عن وجه/آذان المتكلم)
+  timeline    items[[title, sub], ...], n — جدول مربعات مرقّمة (أول n يبينون) على لوحة بيضاء
+              بين top و bottom (افتراضي 205–805) — يبني نفسه مربع مربع بعدة بطاقات تراكمية (حلقة 13)
+  image       file — طبقة PNG جاهزة بحجم الكادر (720×1280) تنعاد بمقاس الدقة (مثل إبراز سطر على السبورة، حلقة 13)
   disclaimer  text   — شريط ثابت بكل المشاهد (تاريخ البيانات + «تحليل لا توصية»)، سطرين لو طال
 قاعدة «الوجه ما ينغطى»: بطاقات card على الصدر/الطاولة تحت الوجه، والعنوان فوق الرؤوس.
 قاعدة ig_safe_zones (بدر 14 نوفمبر، كادر 720×1280): أعلى 12% تحت ترويسة إنستغرام، وأسفل ~78%
@@ -166,6 +169,46 @@ class Cards:
             d.text((cx - w / 2 - bb[0], yy - bb[1]), t, font=f, fill=c, direction='rtl')
             yy += h + gap
         self.save(img, path)
+
+    def timeline(self, path, items, n, top=205, bottom=805, left=28, right=596):
+        """لوحة بيضاء فيها مربعات مرقّمة ملوّنة متتالية بأسهم. n = كم مربع يبين (للبناء التدريجي)."""
+        SS = self.SS
+        img, d = self.canvas()
+        cols = [(230, 160, 20, 255), (200, 60, 50, 255), (30, 110, 190, 255), (30, 150, 90, 255)]
+        x0, x1, y0, y1 = left * SS, right * SS, top * SS, bottom * SS
+        d.rounded_rectangle([x0, y0, x1, y1], radius=22 * SS, fill=(250, 250, 247, 246),
+                            outline=(200, 170, 120, 255), width=5 * SS)
+        k = len(items)
+        pad, gap = 22 * SS, 30 * SS
+        bh = ((y1 - y0) - 2 * pad - gap * (k - 1)) / k
+        fb, fs, fn = self.font('bold', 38), self.font('med', 24), self.font('bold', 36)
+        for i, (t, sub) in enumerate(items[:n]):
+            c = cols[i % 4]
+            by0 = y0 + pad + i * (bh + gap)
+            bx0, bx1 = x0 + 18 * SS, x1 - 18 * SS
+            d.rounded_rectangle([bx0, by0, bx1, by0 + bh], radius=18 * SS, fill=(255, 255, 255, 255), outline=c, width=6 * SS)
+            r = 36 * SS
+            cxn, cyn = bx1 - 16 * SS - r, by0 + bh / 2
+            d.ellipse([cxn - r, cyn - r, cxn + r, cyn + r], fill=c)
+            w, h, bb = self.measure(d, str(i + 1), fn)
+            d.text((cxn - w / 2 - bb[0], cyn - h / 2 - bb[1]), str(i + 1), font=fn, fill=(255, 255, 255, 255))
+            tx = cxn - r - 20 * SS
+            maxw = tx - bx0 - 16 * SS
+            f1 = fb
+            while self.measure(d, t, f1)[0] > maxw and f1.size > 20 * SS:
+                f1 = ImageFont.truetype(self.bold, f1.size - 2 * SS)
+            w1, h1, b1 = self.measure(d, t, f1)
+            w2, h2, b2 = self.measure(d, sub, fs)
+            ty = cyn - (h1 + 10 * SS + h2) / 2
+            d.text((tx - w1 - b1[0], ty - b1[1]), t, font=f1, fill=(25, 25, 30, 255), direction='rtl')
+            d.text((tx - w2 - b2[0], ty + h1 + 10 * SS - b2[1]), sub, font=fs, fill=(90, 90, 95, 255), direction='rtl')
+            if i < k - 1:
+                ax, ay = (x0 + x1) / 2, by0 + bh + 4 * SS
+                d.polygon([(ax - 14 * SS, ay), (ax + 14 * SS, ay), (ax, ay + gap - 8 * SS)], fill=(70, 70, 70, 255))
+        self.save(img, path)
+
+    def image(self, path, file):
+        Image.open(file).convert('RGBA').resize((self.OW, self.OH), Image.LANCZOS).save(path)
 
     def disclaimer(self, path, text):
         """شريط الإخلاء: ينتهي فوق SAFE.disc_bottom (قبل منطقة الكابشن)، ومزاح لليسار عن أزرار

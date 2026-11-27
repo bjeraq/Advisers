@@ -1,0 +1,8 @@
+{
+  "_comment": "Ep15 stills board v1 (gpt_image_2_6 medium, 27 Nov 2026). Hedgehog window = Sheikh Jaber Al-Ahmad Causeway at night (no Kuwait Towers, per Bader 27 Nov).",
+  "1": {"job": "96f69d5f-8d45-429b-896c-5cefe8832baa", "shot": "split-screen call, hedgehog top (Kuwait night) / hoopoe bottom (NY midday)", "use": "opening + transitions, still zoom"},
+  "2": {"job": "023b14f8-9d09-479d-b735-3b8b08de9da7", "shot": "hedgehog medium, sofa + laptop + dallah", "use": "lipsync lines 02 + 05"},
+  "3": {"job": "45ba2e91-ce94-4698-8dab-7e7f8b6f1cf8", "shot": "hedgehog close-up to camera", "use": "lipsync lines 07 + 09 (closing)"},
+  "4": {"job": "81bd434b-5ce2-4f96-b929-86ece1e35017", "shot": "hoopoe medium close, coffee, talking", "use": "motion VO: hook 01, lines 03, 06"},
+  "5": {"job": "b039b1c5-db8f-45a1-a5a5-7e3bb4a4f9a1", "shot": "hoopoe by window pointing at skyline, tablet", "use": "motion VO: lines 04, 08"}
+}

@@ -235,14 +235,12 @@
   "scenes": [
     {
       "id": "hook",
-      "type": "vo_clip",
+      "type": "lipsync",
       "line": "hook",
       "video": {
-        "draft": "src/e15/d_hook.mp4",
-        "final": "src/e15/d_hook.mp4"
+        "draft": "src/e15/sy01.mp4",
+        "final": "src/e15/sy01.mp4"
       },
-      "duration": 5.6,
-      "delay": 0.0,
       "card": {
         "name": "hook",
         "at": 0.0,
@@ -260,14 +258,12 @@
     },
     {
       "id": "what",
-      "type": "vo_clip",
+      "type": "lipsync",
       "line": "what",
       "video": {
-        "draft": "src/e15/d_what.mp4",
-        "final": "src/e15/d_what.mp4"
+        "draft": "src/e15/sy03.mp4",
+        "final": "src/e15/sy03.mp4"
       },
-      "duration": 13.75,
-      "delay": 0.15,
       "extra_cards": [
         {
           "name": "what",
@@ -282,14 +278,12 @@
     },
     {
       "id": "example",
-      "type": "vo_clip",
+      "type": "lipsync",
       "line": "example",
       "video": {
-        "draft": "src/e15/d_example.mp4",
-        "final": "src/e15/d_example.mp4"
+        "draft": "src/e15/sy04.mp4",
+        "final": "src/e15/sy04.mp4"
       },
-      "duration": 23.85,
-      "delay": 0.15,
       "extra_cards": [
         {
           "name": "mgr1",
@@ -320,14 +314,12 @@
     },
     {
       "id": "halal",
-      "type": "vo_clip",
+      "type": "lipsync",
       "line": "halal",
       "video": {
-        "draft": "src/e15/d_halal.mp4",
-        "final": "src/e15/d_halal.mp4"
+        "draft": "src/e15/sy06.mp4",
+        "final": "src/e15/sy06.mp4"
       },
-      "duration": 8.2,
-      "delay": 0.15,
       "card": {
         "name": "halal",
         "at": "cue",
@@ -345,14 +337,12 @@
     },
     {
       "id": "hist",
-      "type": "vo_clip",
+      "type": "lipsync",
       "line": "hist",
       "video": {
-        "draft": "src/e15/d_hist.mp4",
-        "final": "src/e15/d_hist.mp4"
+        "draft": "src/e15/sy08.mp4",
+        "final": "src/e15/sy08.mp4"
       },
-      "duration": 12.0,
-      "delay": 0.15,
       "extra_cards": [
         {
           "name": "avg",

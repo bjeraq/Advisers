@@ -157,6 +157,24 @@
       "note": "[strong Kuwaiti accent, casual and quick] وكم ياخِذون عمولَه",
       "dur": 1.65,
       "audio": "lines/08F.mp3"
+    },
+    "05C": {
+      "speaker": "macro",
+      "job": "79f8d2fe-5ab1-4d22-acdb-42502b94a2a5",
+      "note": "[strong Kuwaiti accent] أمر الشراء",
+      "audio": "lines/05C.mp3"
+    },
+    "05D": {
+      "speaker": "macro",
+      "job": "65e61e49-4e2c-496c-b24c-2897bc890392",
+      "note": "[strong Kuwaiti accent] والرابعة: تشتري من التطبيق (no شرا/شراء)",
+      "audio": "lines/05D.mp3"
+    },
+    "11B": {
+      "speaker": "macro",
+      "job": "b75b0402-c8f8-41b9-b60f-8a3c7b1fe934",
+      "note": "[strong Kuwaiti accent]",
+      "audio": "lines/11B.mp3"
     }
   },
   "_review_1": "Bader 27 Nov: horse voice not nice -> use the Avenues (Nike ep10) horse voice = ElevenLabs Mohamed; line 01 'بشتري' not 'أبي أشتري'. Horse takes B replace 01/04/06/08/10/12 (Horse Deep 2).",
@@ -176,5 +194,6 @@
     "11": "11",
     "12": "12B"
   },
-  "_review_4": "Bader 28 Nov: 'أيوه كذي صح' on 08E/08F -> 08F (the quicker one) picked. Audio gate approved."
+  "_review_4": "Bader 28 Nov: 'أيوه كذي صح' on 08E/08F -> 08F (the quicker one) picked. Audio gate approved.",
+  "_review_5": "Bader 28 Nov (draft v1): lipsync not moving mid-video (gazelle clip A 61420ab9, mouth closed throughout); gazelle at the end sounded fusha; she said الشرا/الشراء -> retakes 05C/05D/11B."
 }

@@ -124,31 +124,6 @@
         ]
       ]
     },
-    "example": {
-      "kind": "card",
-      "accent": "gold",
-      "y": 0.62,
-      "lines": [
-        [
-          "صندوق الـ500 شركة غلب",
-          28,
-          "bold",
-          "white"
-        ],
-        [
-          "9 من كل 10 مدراء",
-          30,
-          "bold",
-          "light_teal"
-        ],
-        [
-          "خلال 15 سنة • سبايفا يونيو 2026",
-          18,
-          "med",
-          "sub"
-        ]
-      ]
-    },
     "fees": {
       "kind": "card",
       "accent": "teal",
@@ -247,6 +222,14 @@
     "disc": {
       "kind": "disclaimer",
       "text": "تحليل لا توصية • الأرقام بتاريخ نوفمبر 2026 وتتغير"
+    },
+    "mgr1": {
+      "kind": "image",
+      "file": "src/e15/mgr1.png"
+    },
+    "mgr2": {
+      "kind": "image",
+      "file": "src/e15/mgr2.png"
     }
   },
   "scenes": [
@@ -309,9 +292,16 @@
       "delay": 0.15,
       "extra_cards": [
         {
-          "name": "example",
+          "name": "mgr1",
+          "cue": "خلال",
+          "until_cue": "تسعة",
+          "fade": 0.25
+        },
+        {
+          "name": "mgr2",
           "cue": "تسعة",
-          "until_cue": "رسومه"
+          "until_cue": "وفوق",
+          "fade": 0.25
         },
         {
           "name": "fees",
@@ -432,6 +422,15 @@
       "B": "hist_q 0.18-3.26, cta 3.11-10.22"
     },
     "hoopoe_compose": "local ping-pong/zoom plan (src/e15/plan.json): hA sip at ~3.0-5.5s avoided",
-    "credits_video": 135
+    "credits_video": 135,
+    "seedance_synced": {
+      "note": "Bader 28 Nov: hoopoe lipsync bad -> regenerate all her lines with her own audio as reference (option: all lines ~170)",
+      "01": "f8b9a1b1-ac19-499e-9add-5addebaed7ed",
+      "03": "eefb0dd6-fc35-4a9e-af2c-b30e30d9274f",
+      "04G": "d1bd32f3-80ec-48db-b810-24174b2602bc",
+      "06": "40bec2c6-f71f-4e7b-b704-70a711ff2aa5",
+      "08": "49933599-c33e-4324-b7bd-ec54ff3705f4",
+      "quote": 192
+    }
   }
 }

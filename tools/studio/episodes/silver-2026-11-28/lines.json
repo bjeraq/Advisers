@@ -1,0 +1,114 @@
+{
+  "_comment": "Episode 19 silver - audio gate takes. Owl=Caspian (Higgsfield elevenlabs_v4), Horse=ElevenLabs Mohamed (latest horse voice, ep14 27 Nov). Script approved by Bader 28 Nov (hook C, SLV/SIVR names kept on screen only). Whisper medium matches with a Kuwaiti initial prompt; Bader's ear decides.",
+  "data_date": "2026-11-27",
+  "keyframe": {
+    "job": "98273457-224c-4007-8037-1798b1352736",
+    "model": "gpt_image_2_6 low",
+    "file": "keyframe_classroom.png",
+    "alt": "50d67df3-0943-443c-96d5-1cabe863d256"
+  },
+  "lines": {
+    "01": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "539ce4a6-9b5e-4ad5-95b7-dccf236d4fbc",
+      "dur": 4.05,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "ff001cfe-2b5c-4649-a1f5-b7f47519a568",
+      "dur": 15.07,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "haris",
+      "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "engine": "elevenlabs direct eleven_v4",
+      "flow": "wkheisMQxYgIPy0uz0Eb",
+      "generation": "l6VzJrZJ4Wg5saa9xrki",
+      "dur": 3.32,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "d1eef047-6922-463d-9391-628013e8eedf",
+      "dur": 15.39,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "haris",
+      "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "engine": "elevenlabs direct eleven_v4",
+      "flow": "wkheisMQxYgIPy0uz0Eb",
+      "generation": "usu6QnYnbT2JXBJAESkc",
+      "dur": 3.55,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "cb1846bb-9dcd-4c18-a84f-5be2d88e43c1",
+      "dur": 14.37,
+      "audio": "lines/06.mp3",
+      "note": "take 1 trimmed 0.52s: TTS said the first word twice (retake 7bb6129b did the same)"
+    },
+    "07": {
+      "speaker": "haris",
+      "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "engine": "elevenlabs direct eleven_v4",
+      "flow": "wkheisMQxYgIPy0uz0Eb",
+      "generation": "Rp8x3oMr9BRWBysyK8kN",
+      "dur": 3.4,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "d3a22ba4-3f60-417c-b2b4-cfd6f327b0c0",
+      "dur": 17.01,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "haris",
+      "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "engine": "elevenlabs direct eleven_v4",
+      "flow": "wkheisMQxYgIPy0uz0Eb",
+      "generation": "ebwcrdCLgy4TATMRFuL3",
+      "dur": 1.72,
+      "audio": "lines/09.mp3"
+    },
+    "10": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "9351a7ff-560a-459f-83e7-2d10aaa9f845",
+      "dur": 18.44,
+      "audio": "lines/10.mp3"
+    },
+    "11": {
+      "speaker": "fanni",
+      "voice": "Caspian",
+      "engine": "elevenlabs_v4 via Higgsfield",
+      "job": "a45550f2-5997-40f7-965d-8d503e35201f",
+      "dur": 12.75,
+      "audio": "lines/11.mp3"
+    },
+    "12": {
+      "speaker": "haris",
+      "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "engine": "elevenlabs direct eleven_v4",
+      "flow": "wkheisMQxYgIPy0uz0Eb",
+      "generation": "h76zb5kLEQ34u8YNKWNn",
+      "dur": 6.03,
+      "audio": "lines/12.mp3"
+    }
+  }
+}

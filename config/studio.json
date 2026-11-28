@@ -836,15 +836,16 @@
       "format": "تمشية بمول كويتي بدون أسماء محلات (format_rotation 1)",
       "lines": "tools/studio/episodes/first-stock-2026-11-27/lines.json",
       "stills": "tools/studio/episodes/first-stock-2026-11-27/stills.json",
-      "notes": "العمولة 0.15% (قرار الهيئة 85/2026، مطبقة من 4 أكتوبر 2026)، حد أدنى 500 فلس؛ التداول الأحد–الخميس 9:00–1:00، مزاد افتتاح 8:50، إغلاق 1:00–1:10؛ التسوية 3 أيام تداول. بدون شارة شرعية وبدون تسمية وسيط. ميزانية ~200 كريدت.",
-      "status": "🟡 draft v1 + cover + carousel delivered 28 Nov — waiting Bader notes (horse outfit in lipsync clip differs from walk)",
+      "notes": "العمولة 0.15% (قرار الهيئة 85/2026، مطبقة من 4 أكتوبر 2026)، حد أدنى 500 فلس؛ التداول الأحد–الخميس 9:00–1:00، مزاد افتتاح 8:50، إغلاق 1:00–1:10؛ التسوية 3 أيام تداول. بدون شارة شرعية وبدون تسمية وسيط. ميزانية ~200 كريدت. | v2 (بدر 28 نوفمبر): مشهد الغزالة الأول كان فمه مسكر → أعيد (05D «تشتري من التطبيق» بدون كلمة الشرا + 07)، وآخر سطر 11B بلهجة كويتية بمقطع يديد؛ «الشرا» انشالت من الغلاف والكاروسيل. الكلفة ~370.",
+      "status": "🟡 draft v2 + cover + carousel delivered 28 Nov — waiting Bader notes",
       "ready": false,
       "carousel": "tools/studio/episodes/first-stock-2026-11-27/carousel.json",
       "cover": "tools/studio/episodes/first-stock-2026-11-27/cover/cover_reel.png",
-      "video_media_id": "f586c081-740e-495c-9167-623b1e07796d",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/f586c081-740e-495c-9167-623b1e07796d.mp4",
+      "video_media_id": "0217e027-9129-43d6-b408-ed9c9b9942f9",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/0217e027-9129-43d6-b408-ed9c9b9942f9.mp4",
       "resolution": "720x1280 (intone + seedance 480p assembled at 720)",
-      "duration_s": 87.9
+      "duration_s": 84.9,
+      "video_media_id_v1": "f586c081-740e-495c-9167-623b1e07796d"
     },
     {
       "number": 16,

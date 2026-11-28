@@ -41,8 +41,8 @@
   "s34": {
    "speaker": "macro",
    "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
-   "audio": "src/fs/ep/05.mp3",
-   "text": "الثالثة: تحوّل فلوس لحسابك عند الوسيط. والرابعة: تحط أمر الشرا من التطبيق: إما بسعر تحدده إنت، أو بسعر السوق. وإذا ما عرفت تستخدم التطبيق، الوسيط يعلمك عليه.",
+   "audio": "src/fs/ep/05D.mp3",
+   "text": "الثالثة: تحوّل فلوس لحسابك عند الوسيط. والرابعة: تشتري من التطبيق: إما بسعر تحدده إنت، أو بسعر السوق. وإذا ما عرفت تستخدم التطبيق، الوسيط يعلمك عليه.",
    "gain_db": 0
   },
   "when": {
@@ -83,7 +83,7 @@
   "settle": {
    "speaker": "macro",
    "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
-   "audio": "src/fs/ep/11.mp3",
+   "audio": "src/fs/ep/11B.mp3",
    "text": "يتسجل باسمك بعد ثلاث أيام تداول. وأهم نصيحة: ابدأ بمبلغ صغير تتعلم فيه، وافهم الشركة قبل لا تشتريها.",
    "gain_db": 0
   },
@@ -172,7 +172,7 @@
    "y": 0.62,
    "lines": [
     [
-     "3) حول الفلوس • 4) أمر الشرا",
+     "3) حول الفلوس • 4) اشتري من التطبيق",
      28,
      "bold",
      "white"
@@ -338,11 +338,11 @@
   {
    "id": "s34",
    "type": "lipsync",
-   "retimed": false,
+   "retimed": true,
    "line": "s34",
    "video": {
-    "draft": "src/fs/c_s34.mp4",
-    "final": "src/fs/c_s34.mp4"
+    "draft": "src/fs/r_s34.mp4",
+    "final": "src/fs/r_s34.mp4"
    },
    "card": {
     "name": "s34",
@@ -363,11 +363,11 @@
   {
    "id": "hours",
    "type": "lipsync",
-   "retimed": false,
+   "retimed": true,
    "line": "hours",
    "video": {
-    "draft": "src/fs/c_hours.mp4",
-    "final": "src/fs/c_hours.mp4"
+    "draft": "src/fs/r_hours.mp4",
+    "final": "src/fs/r_hours.mp4"
    },
    "card": {
     "name": "hours",
@@ -490,6 +490,12 @@
   "cost_estimate": "walk 24 + gz_A 78 + gz_B ~72 + horse 42 = ~216 video; ~253 total with audio/stills (Bader approved 28 Nov)",
   "cuts": "gzA: s34 0-15.95, hours 16.25-25.05 (uniform align; clip audio too garbled for word retime). gzB: fee 0-11.11, settle 12.01-23.54 (retimed). horse: when 0-2.0, feeq 2.0-4.1, mine 4.05-7.0, cta 7.0-14.05 (retimed).",
   "draft720_media": "f586c081-740e-495c-9167-623b1e07796d",
-  "known_issue": "horse intone clip used character image 209de7fc (Nike horse) -> teal jacket instead of navy waistcoat + cream shirt seen in walk; fix = rerun horse clip with character still3 01e801c9 (~42 cr)"
+  "known_issue": "horse intone clip used character image 209de7fc (Nike horse) -> teal jacket instead of navy waistcoat + cream shirt seen in walk; fix = rerun horse clip with character still3 01e801c9 (~42 cr)",
+  "v2": {
+   "gz_A2": "69086023-ab37-40ec-9531-9a763dfebf64 (05D+07)",
+   "gz_settle2": "64230578-920a-4088-ab69-15f65b766a0f (11B)",
+   "cuts": "gzA2: s34 0-15.1 (05D), hours 15.1-24.05 (07), both word-retimed; gzS2 whole clip -> settle (11B) retimed. Old gzA (61420ab9) dropped: mouth closed."
+  },
+  "draft720_media_v2": "0217e027-9129-43d6-b408-ed9c9b9942f9"
  }
 }

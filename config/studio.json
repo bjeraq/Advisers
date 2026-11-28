@@ -838,6 +838,23 @@
       "notes": "العمولة 0.15% (قرار الهيئة 85/2026، مطبقة من 4 أكتوبر 2026)، حد أدنى 500 فلس؛ التداول الأحد–الخميس 9:00–1:00، مزاد افتتاح 8:50، إغلاق 1:00–1:10؛ التسوية 3 أيام تداول. بدون شارة شرعية وبدون تسمية وسيط. ميزانية ~200 كريدت.",
       "status": "🟠 in production — audio + stills waiting for Bader",
       "ready": false
+    },
+    {
+      "number": 16,
+      "title": "قاعدة 72: متى فلوسك تتضاعف؟",
+      "ticker": "Rule of 72 (lesson, no stock call)",
+      "session_date": "2026-11-28",
+      "data_date": "2026-11-28",
+      "episode_file": "tools/studio/episodes/rule-72-2026-11-28/episode.json",
+      "script": "plans/2026-11-W48/scripts.md (section 16)",
+      "dossier": "plans/2026-11-W48/17-rule-of-72/dossier.md",
+      "cast": "الجمل (Fraser، شفاه) • الغزالة (Hana، شفاه)",
+      "format": "شاليه بالخيران بالويكند (format_rotation 8)",
+      "lines": "tools/studio/episodes/rule-72-2026-11-28/lines.json",
+      "keyframe_job": "a29dd145-da55-4af0-9c23-28193f564ddf",
+      "notes": "مثال 8% توضيحي مو مضمون؛ التضخم بالكويت ~2.2% (يوليو 2026). حبة «معلومة عامة مو توصية • الأرباح مو مضمونة»، بدون شارة أسعار. ميزانية ~190 كريدت (تنبيه قبل 200).",
+      "status": "🟠 in production — audio gate waiting for Bader",
+      "ready": false
     }
   ],
   "cast_retired": {

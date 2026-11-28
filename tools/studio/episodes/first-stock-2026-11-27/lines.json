@@ -121,7 +121,26 @@
       "generation": "BZuuaYHT9SyePRx3rGYb",
       "dur": 5.96,
       "audio": "lines/12B.mp3"
+    },
+    "08C": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "6DSetvGPIr4szM9e5PIC",
+      "note": "spelling يأخذون",
+      "dur": 1.8,
+      "audio": "lines/08C.mp3"
+    },
+    "08D": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "0vpgMo69pKdJk9LLViGz",
+      "note": "diacritics يَأْخُذُون",
+      "dur": 1.88,
+      "audio": "lines/08D.mp3"
     }
   },
-  "_review_1": "Bader 27 Nov: horse voice not nice -> use the Avenues (Nike ep10) horse voice = ElevenLabs Mohamed; line 01 'بشتري' not 'أبي أشتري'. Horse takes B replace 01/04/06/08/10/12 (Horse Deep 2)."
+  "_review_1": "Bader 27 Nov: horse voice not nice -> use the Avenues (Nike ep10) horse voice = ElevenLabs Mohamed; line 01 'بشتري' not 'أبي أشتري'. Horse takes B replace 01/04/06/08/10/12 (Horse Deep 2).",
+  "_review_2": "Bader 28 Nov: 08B ياخذون sounded with long alif; wants ya + hamza (يأخذون). Takes 08C (spelling) and 08D (diacritics)."
 }

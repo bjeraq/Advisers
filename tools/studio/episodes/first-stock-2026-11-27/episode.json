@@ -15,7 +15,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/01B.mp3",
    "text": "بشتري أول سهم… بس من وين أبدأ؟!",
-   "gain_db": 0
+   "gain_db": 12.5
   },
   "s1": {
    "speaker": "macro",
@@ -36,7 +36,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/04B.mp3",
    "text": "وبعدين؟",
-   "gain_db": 0
+   "gain_db": 10
   },
   "s34": {
    "speaker": "macro",
@@ -50,7 +50,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/06B.mp3",
    "text": "ومتى أقدر أشتري؟",
-   "gain_db": 0
+   "gain_db": 12.5
   },
   "hours": {
    "speaker": "macro",
@@ -64,7 +64,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/08F.mp3",
    "text": "وكم ياخذون عمولة؟",
-   "gain_db": 0
+   "gain_db": 4.5
   },
   "fee": {
    "speaker": "macro",
@@ -78,7 +78,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/10B.mp3",
    "text": "والسهم يصير باسمي على طول؟",
-   "gain_db": 0
+   "gain_db": 11.5
   },
   "settle": {
    "speaker": "macro",
@@ -92,7 +92,7 @@
    "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
    "audio": "src/fs/ep/12B.mp3",
    "text": "وإنت… شنو أول سهم شريته؟ ولا للحين ما بديت؟ اكتب لنا بالكومنتات.",
-   "gain_db": 0
+   "gain_db": 12
   }
  },
  "graphics": {},
@@ -338,11 +338,11 @@
   {
    "id": "s34",
    "type": "lipsync",
-   "retimed": true,
+   "retimed": false,
    "line": "s34",
    "video": {
-    "draft": "src/fs/r_s34.mp4",
-    "final": "src/fs/r_s34.mp4"
+    "draft": "src/fs/c_s34.mp4",
+    "final": "src/fs/c_s34.mp4"
    },
    "card": {
     "name": "s34",
@@ -363,11 +363,11 @@
   {
    "id": "hours",
    "type": "lipsync",
-   "retimed": true,
+   "retimed": false,
    "line": "hours",
    "video": {
-    "draft": "src/fs/r_hours.mp4",
-    "final": "src/fs/r_hours.mp4"
+    "draft": "src/fs/c_hours.mp4",
+    "final": "src/fs/c_hours.mp4"
    },
    "card": {
     "name": "hours",
@@ -487,6 +487,9 @@
     "01B": "33d6a1bb-4aaa-4efa-af98-cdcfa8f3cf4a"
    }
   },
-  "cost_estimate": "walk 24 + gz_A 78 + gz_B ~72 + horse 42 = ~216 video; ~253 total with audio/stills (Bader approved 28 Nov)"
+  "cost_estimate": "walk 24 + gz_A 78 + gz_B ~72 + horse 42 = ~216 video; ~253 total with audio/stills (Bader approved 28 Nov)",
+  "cuts": "gzA: s34 0-15.95, hours 16.25-25.05 (uniform align; clip audio too garbled for word retime). gzB: fee 0-11.11, settle 12.01-23.54 (retimed). horse: when 0-2.0, feeq 2.0-4.1, mine 4.05-7.0, cta 7.0-14.05 (retimed).",
+  "draft720_media": "f586c081-740e-495c-9167-623b1e07796d",
+  "known_issue": "horse intone clip used character image 209de7fc (Nike horse) -> teal jacket instead of navy waistcoat + cream shirt seen in walk; fix = rerun horse clip with character still3 01e801c9 (~42 cr)"
  }
 }

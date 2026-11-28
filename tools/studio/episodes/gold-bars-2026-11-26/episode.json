@@ -1,0 +1,473 @@
+{
+ "_comment": "Episode 17 (W48): gold bullion vs jewelry, gold shop in Souq Al-Mubarakiya (Liberation Tower behind). Flamingo (Yara) = seedance 480p voice-over with her line as audio reference; fox (Arthur 0.6) = intone 480p cut per line. Follower riddle + local 5s countdown (precomp). Prices 26 Nov 2026 (kuwaitgoldrate.com / Investing.com: 24k ~35.7-35.9, 21k ~31.2-31.4). No zakat, no sharia badge.",
+ "slug": "gold-bars-2026-11-26",
+ "number": 17,
+ "title": "الذهب: سبيكة ولا مشغولات؟ المصنعية تاكل ربحك",
+ "ticker": "Gold in Kuwait (lesson, no stock call)",
+ "data_date": "2026-11-26",
+ "compliance": "General info, no zakat or rulings (rules.no_religious_rulings), no sharia badge",
+ "dossier": "plans/2026-11-W48/18-gold-bullion-vs-jewelry/dossier.md",
+ "fonts": "fonts",
+ "location": "gold shop, Souq Al-Mubarakiya, Liberation Tower outside (stills_v3 in lines.json)",
+ "lines": {
+  "hook": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/01.mp3",
+   "text": "ليش لما أبيع ذهبي… يعطوني أقل من اللي دفعته؟"
+  },
+  "show": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/02.mp3",
+   "text": "شوف هالإسْوارة! عشرة غرام، عيار واحد وعشرين. استثمار، صح؟"
+  },
+  "bill": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/g17/lines/03.mp3",
+   "text": "حلو… بس شوفي الفاتورة. سعر الذهب نفسه، وفوقه المَصْنَعِيّة: فلوس شغل الصّايغ. يعني فوق كل غرام تدفعين تقريباً دينار لثلاث دنانير، وبالتصاميم الفخمة أكثر."
+  },
+  "sell": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/04.mp3",
+   "text": "وإذا بِعْته؟"
+  },
+  "buyback": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/g17/lines/05.mp3",
+   "text": "المحل يشتريه منج بالوزن على سعر اليوم، وينقص شوي. والمَصْنَعِيّة؟ ما ترجع لج أبداً."
+  },
+  "example": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/g17/lines/06.mp3",
+   "text": "لو اشتريتي عشرة غرام مشغولات وبِعْتيها بنفس اليوم، ممكن تخسرين حوالي عشرين دينار. أما السبيكة، الخسارة أقل وايد، لأن المَصْنَعِيّة عليها بسيطة."
+  },
+  "nobuy": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/07.mp3",
+   "text": "يعني ما أشتري مشغولات؟"
+  },
+  "wear": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/g17/lines/08.mp3",
+   "text": "لا، اللي تحبين تلبسينه خذيه. بس إذا نِيّتج استثمار… السبيكة تحفظ قيمتها أكثر."
+  },
+  "cta": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/09.mp3",
+   "text": "وإنْتوا… تشترون ذهب للبس ولا للاستثمار؟ سبيكة ولا مشغولات؟ اكتبوا لنا بالكومنتات."
+  },
+  "riddle": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "audio": "src/g17/lines/10.mp3",
+   "text": "لغز من أحد متابعينا: منو الشخص اللي دايماً مستفيد… سواء الذهب صعد أو نزل؟"
+  },
+  "answer": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/g17/lines/12B.mp3",
+   "text": "الصّايِغ! يْصُوغ الذّهَب ويْبيعَه لِلْمَحَلّات بالجُمْلَة، ويَاخِذ الفَرِق بين الوَرْشَة والمَحَل… صِعَد الذّهَب وَلّا نِزَل."
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "ليش تبيع ذهبك بأقل؟",
+     40,
+     "bold",
+     "white"
+    ],
+    [
+     "مجلس اليوم • الخميس 26 نوفمبر 2026",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "price": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.53,
+   "lines": [
+    [
+     "عيار 21: ~31 د.ك للغرام",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "أسعار 26 نوفمبر 2026",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "making": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.53,
+   "lines": [
+    [
+     "المصنعية: ~1–3 د.ك للغرام",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "التصاميم الفخمة أكثر",
+     20,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "buyback": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.595,
+   "lines": [
+    [
+     "البيع = الوزن × سعر اليوم − خصم بسيط",
+     22,
+     "bold",
+     "white"
+    ],
+    [
+     "المصنعية ما ترجع",
+     22,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "example": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.53,
+   "lines": [
+    [
+     "مشغولات 10غ: خسارة ~22 د.ك",
+     24,
+     "bold",
+     "white"
+    ],
+    [
+     "سبيكة 10غ: خسارة ~4.5 د.ك",
+     24,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "مثال تقريبي • مصنعية 2 د.ك/غ",
+     18,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "سبيكة ولا مشغولات؟",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "اكتبوا لنا بالكومنتات",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "riddle": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "لغز من المتابع ‎@ak.s.fdi",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "منو دايماً مستفيد… صعد الذهب ولا نزل؟",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "answer": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.505,
+   "lines": [
+    [
+     "الصايغ!",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "يبيع للمحلات بالجملة وياخذ الفرق",
+     20,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "thanks": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.597,
+   "lines": [
+    [
+     "شكراً ‎@ak.s.fdi",
+     22,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "معلومة عامة لا توصية • أسعار 26 نوفمبر 2026 وتتغير يومياً"
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "vo_clip",
+   "line": "hook",
+   "video": {
+    "draft": "src/g17/d_01.mp4",
+    "final": "src/g17/d_01.mp4"
+   },
+   "duration": 4.7,
+   "delay": 0.0,
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   }
+  },
+  {
+   "id": "show",
+   "type": "vo_clip",
+   "line": "show",
+   "video": {
+    "draft": "src/g17/d_02.mp4",
+    "final": "src/g17/d_02.mp4"
+   },
+   "duration": 6.04,
+   "delay": 0.0
+  },
+  {
+   "id": "bill",
+   "type": "lipsync",
+   "line": "bill",
+   "video": {
+    "draft": "src/g17/d_03.mp4",
+    "final": "src/g17/d_03.mp4"
+   },
+   "card": {
+    "name": "price",
+    "at": "cue",
+    "cue": "سعر"
+   },
+   "extra_cards": [
+    {
+     "name": "making",
+     "cue": "فلوس"
+    }
+   ]
+  },
+  {
+   "id": "sell",
+   "type": "vo_clip",
+   "line": "sell",
+   "video": {
+    "draft": "src/g17/d_04.mp4",
+    "final": "src/g17/d_04.mp4"
+   },
+   "duration": 1.9,
+   "delay": 0.0
+  },
+  {
+   "id": "buyback",
+   "type": "lipsync",
+   "line": "buyback",
+   "video": {
+    "draft": "src/g17/d_05.mp4",
+    "final": "src/g17/d_05.mp4"
+   },
+   "card": {
+    "name": "buyback",
+    "at": "cue",
+    "cue": "المحل"
+   }
+  },
+  {
+   "id": "example",
+   "type": "lipsync",
+   "line": "example",
+   "video": {
+    "draft": "src/g17/d_06.mp4",
+    "final": "src/g17/d_06.mp4"
+   },
+   "card": {
+    "name": "example",
+    "at": "cue",
+    "cue": "عشرة"
+   }
+  },
+  {
+   "id": "nobuy",
+   "type": "vo_clip",
+   "line": "nobuy",
+   "video": {
+    "draft": "src/g17/d_07.mp4",
+    "final": "src/g17/d_07.mp4"
+   },
+   "duration": 2.6,
+   "delay": 0.04
+  },
+  {
+   "id": "wear",
+   "type": "lipsync",
+   "line": "wear",
+   "video": {
+    "draft": "src/g17/d_08.mp4",
+    "final": "src/g17/d_08.mp4"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "vo_clip",
+   "line": "cta",
+   "video": {
+    "draft": "src/g17/d_09.mp4",
+    "final": "src/g17/d_09.mp4"
+   },
+   "duration": 7.9,
+   "delay": 0.0,
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "سبيكة"
+   }
+  },
+  {
+   "id": "riddle",
+   "type": "vo_clip",
+   "line": "riddle",
+   "video": {
+    "draft": "src/g17/d_10.mp4",
+    "final": "src/g17/d_10.mp4"
+   },
+   "duration": 7.9,
+   "delay": 0.3,
+   "card": {
+    "name": "riddle",
+    "at": 0.0,
+    "fade": 0.3
+   }
+  },
+  {
+   "id": "countdown",
+   "type": "precomp",
+   "file": "src/g17/countdown.mp4"
+  },
+  {
+   "id": "answer",
+   "type": "lipsync",
+   "line": "answer",
+   "video": {
+    "draft": "src/g17/d_12.mp4",
+    "final": "src/g17/d_12.mp4"
+   },
+   "card": {
+    "name": "answer",
+    "at": "cue",
+    "cue": "الص"
+   },
+   "extra_cards": [
+    {
+     "name": "thanks",
+     "cue": "صِعَد"
+    }
+   ]
+  }
+ ],
+ "generation": {
+  "audio_media": {
+   "01": "68e53afe-7159-46e7-bf68-5ff8d5520d80",
+   "02": "51a4465b-12c5-4f40-9011-21d069404ace",
+   "04+07": "f9bf0069-f135-4ae8-8e4a-216cf4954a5f",
+   "09+10": "8c733583-6667-4fa6-9165-a51e06a4dc1a",
+   "03+05": "3be1f1de-97e0-4060-a39a-6a49ca34cd1d",
+   "06+08": "2838e042-cb52-4eb0-8b74-5a62c1503fef",
+   "12B": "aa09b663-a667-4802-a33b-541457528aa6"
+  },
+  "fox_character": "93912ca3-691e-480f-b578-af8aa9ebb7ee (crop of still 3)",
+  "intone_A": {
+   "job": "76281088-f43c-4d3b-a7a9-e8ab19c6b1e8",
+   "lines": [
+    "03",
+    "05"
+   ],
+   "location": "still 3 (4a233ab1)",
+   "cost": 75,
+   "cuts": "d_03 0-16.0, d_05 16.0-25.05",
+   "note": "flamingo dropped out of the frame (fox alone to camera)"
+  },
+  "intone_B": {
+   "job": "9688cd32-1b55-48ce-a1b4-577686217d85",
+   "lines": [
+    "06",
+    "08"
+   ],
+   "location": "still 4 (6972c74e)",
+   "cost": 70,
+   "cuts": "d_06 0-14.2, d_08 14.2-23.05"
+  },
+  "intone_C": {
+   "job": "ef58466b-693f-4c9b-b957-8b4ecee16013",
+   "lines": [
+    "12B"
+   ],
+   "location": "still 3, medium close-up",
+   "note": "3 refusals on still 4 (face check, refunded): 60187129, c392b447, 06ed4576"
+  },
+  "seedance_480": {
+   "01": "ddb73e48-27ab-46f9-988d-85890780c1d6",
+   "02": "9a482744-d865-4ac7-9a82-6dbcea0540c6",
+   "04+07": "f9c8029c-304f-4ce2-bff4-bc71dec90e20 (cut 0-1.95 / 1.95-5.04)",
+   "09+10": "f00a95de-9c80-4d0a-86cc-71fa6c4a4c60 (cut 0-7.93 / 7.93-16.04)",
+   "rate": "3 credits/s"
+  },
+  "countdown": "tools/studio/countdown.py on still 5 (local, 0 credits)",
+  "credits_total": 294.5
+ }
+}

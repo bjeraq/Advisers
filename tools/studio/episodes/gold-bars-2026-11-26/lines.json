@@ -1,0 +1,94 @@
+{
+  "_comment": "Episode 17 gold bars vs jewelry — audio gate takes (elevenlabs_v4 via Higgsfield, stability 0.6). Flamingo=Yara fd25dc29, Fox=Arthur 30fc8796. Prices refreshed 26 Nov 2026: 24k ~35.7-35.9, 21k ~31.2-31.4 KD/g (kuwaitgoldrate.com 09:20, Investing.com).",
+  "data_date": "2026-11-26",
+  "lines": {
+    "01": {
+      "speaker": "suyula",
+      "job": "e0a2fc1d-e437-4c75-a897-6cd7ed5df4ac",
+      "dur": 4.21
+    },
+    "02": {
+      "speaker": "suyula",
+      "job": "322c75b1-a3c4-4cab-bc91-5e2873e7c963",
+      "dur": 6.03
+    },
+    "03": {
+      "speaker": "dubb",
+      "job": "7bf30603-cbfb-4dcf-b69a-3b6fa0ad759c",
+      "dur": 13.87
+    },
+    "04": {
+      "speaker": "suyula",
+      "job": "b22a45a3-b754-4919-b803-7129b74530e6",
+      "dur": 1.49
+    },
+    "05": {
+      "speaker": "dubb",
+      "job": "dee681f2-b8e8-4871-a356-b3fb7478e2e4",
+      "dur": 7.89
+    },
+    "06": {
+      "speaker": "dubb",
+      "job": "e248d089-485b-46a4-a803-2680b1ed7172",
+      "dur": 11.96
+    },
+    "07": {
+      "speaker": "suyula",
+      "job": "11d727f4-f830-45e5-b5d6-d8e783c1ee1e",
+      "dur": 2.35
+    },
+    "08": {
+      "speaker": "dubb",
+      "job": "e59da4db-fb87-4893-8f69-a15c5602182f",
+      "dur": 7.31
+    },
+    "09": {
+      "speaker": "suyula",
+      "job": "c140aa3f-213a-463e-a61f-9459e766e216",
+      "dur": 7.63
+    },
+    "10": {
+      "speaker": "suyula",
+      "job": "67d6f7a7-4dcf-4b20-9c0c-360dd4e4aff8",
+      "dur": 7.08
+    },
+    "12": {
+      "speaker": "dubb",
+      "job": "ff802cc4-440a-4609-9a9a-ce48f10f2856",
+      "dur": 10.11
+    },
+    "12B": {
+      "speaker": "dubb",
+      "job": "f2314e9b-0a42-48a4-a4c6-f8e511cf96ca",
+      "dur": 9.17,
+      "note": "retake: Bader said 12 sounded fusha; [strong Kuwaiti accent] tag + Kuwaiti diacritics"
+    }
+  },
+  "stills": {
+    "1": "15fc8f4d-372c-436b-ba2f-6bae197b9af3",
+    "2": "51ed2a94-5bfc-47e7-8d89-d13beba5f67f",
+    "3": "7ece20dd-2789-437e-a32e-774f4fa9d42b",
+    "4": "af4a1ef3-c88b-4e44-8703-f32e5c91b3f7",
+    "5": "e46df302-88e9-46b2-99f3-9d06fe10d030",
+    "6": "7c53fef1-6fcd-4049-a6cb-e80cb00e4e44 (approved keyframe, dimmed for countdown)",
+    "_board": "stills_board.jpg — awaiting Bader (rules.image_gate)"
+  },
+  "stills_v2": {
+    "1": "5b10607a-eef4-4e21-910d-0efb286ba236",
+    "2": "43fd43e0-b589-4433-b4f1-de71065cd9fd",
+    "3": "4a233ab1-acfd-4145-b99f-16aa24ba1a20",
+    "4": "bef7c054-a090-4463-9aa6-5e6ba2c049b2",
+    "5": "27c3bd2f-f619-4fa4-afc7-966b70033634",
+    "6": "f9116411-42dc-4cad-8680-37e8be77193c",
+    "_notes": "Bader 26 Nov: Liberation Tower instead of Kuwait Towers, correct flag, flamingo and fox face each other (like still 3). Receipt kept on counter in all shots."
+  },
+  "stills_v3": {
+    "1": "ce5cc682-9de6-4ac1-8703-1f5002461903",
+    "2": "5c41a053-03a5-4def-8d86-34f6e53c87ca",
+    "3": "84752577-35ef-4723-82f0-b2dfeb95e78f",
+    "4": "6972c74e-7a26-4f4a-92a4-9ff2028c41cb",
+    "5": "ae1c95fc-2c02-48dc-a291-d8cae952b4cf",
+    "6": "424d8c9d-a432-4ad4-8480-f42bb07edd59",
+    "_notes": "Bader 26 Nov: flag black trapezoid on the right (rules.kuwait_flag)."
+  }
+}

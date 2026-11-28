@@ -1,0 +1,675 @@
+{
+ "_comment": "Episode 10 (Bader 23 Nov): mall walk-and-talk at an Avenues-style mall. Horse voice = ElevenLabs 'Mohamed' (Kuwaiti, KJe6YIQ4MHI94EGaDZC7), turtle = ElevenLabs 'RAED' (old Gulf, IK7YYZcSpmlkjKrQxbSn). Talking shots intone 480p; walking/store shots seedance_2_5 720p (no audio) + voice over. Built from ~/majlis_local.",
+ "slug": "nike-2026-11-23",
+ "number": 10,
+ "title": "نايكي: راح تنهار ولا راح ترجع؟",
+ "ticker": "NKE",
+ "data_date": "2026-11-20",
+ "compliance": "متوافق (data/universe_us.csv، فحص 6 نوفمبر)",
+ "dossier": "reports/inputs/2026-11-23_NKE/dossier.md",
+ "fonts": "fonts",
+ "location": "Avenues-style Kuwaiti mall: NIKE store vs HOKA store facing each other, escalator atrium, upper balcony, cafe, half-empty SALE store (v2 frames in generation.frames)",
+ "lines": {
+  "hook": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/01_H.mp3",
+   "text": "نايكي... راحت نص قيمتها بسنة وحدة!",
+   "gain_db": 8.0
+  },
+  "afa": {
+   "speaker": "asasi",
+   "voice": "RAED (ElevenLabs)",
+   "audio": "src/nike/lines6/02_T.mp3",
+   "text": "أفا... عاد أنا من أيام الدراسة ما ألبس إلا نايكي.",
+   "gain_db": 11.0
+  },
+  "dtc": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/03_H.mp3",
+   "text": "من كم سنة نايكي قالت: أبي أبيع بروحي، وقللت بضاعتها بالمحلات الرياضية. والرفوف اللي فضت... عبّاها المنافسين.",
+   "gain_db": 8.1
+  },
+  "rivals": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/04_H.mp3",
+   "text": "شوف جوتيّ، هذا هوكا: نعله عالي ومريح. وأون يابت شكل يديد، وأديداس رجّعت السامبا موضة.",
+   "gain_db": 7.6
+  },
+  "franch": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/05_H.mp3",
+   "text": "ونايكي؟ ظلت تعيد نفس الموديلات: الإير فورس، والجوردن، والدنك... لين الناس ملّت.",
+   "gain_db": 8.9
+  },
+  "q1": {
+   "speaker": "asasi",
+   "voice": "RAED (ElevenLabs)",
+   "audio": "src/nike/lines6/06_T.mp3",
+   "text": "زين، وشنو قاعدين يسوون الحين؟",
+   "gain_db": 13.8
+  },
+  "fix": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/07_H.mp3",
+   "text": "رجّعوا واحد اشتغل بنايكي ثلاثين سنة يمسك الشركة. ورجعوا للمحلات وللرياضة: ركض وكورة وسلة. بس هم قالوا: المبيعات بتنزل لين ألفين وثمانية وعشرين.",
+   "gain_db": 9.2
+  },
+  "good": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/08_H.mp3",
+   "text": "الحلو: توزيع حوالي خمسة بالمية بالسنة، وصارت شريكة الفورمولا ون، وتبي تضاعف مبيعاتها بالهند ثلاث مرات.",
+   "gain_db": 8.0
+  },
+  "q2": {
+   "speaker": "asasi",
+   "voice": "RAED (ElevenLabs)",
+   "audio": "src/nike/lines6/09_T.mp3",
+   "text": "زين، وشنو اللي مخوّف الناس؟",
+   "gain_db": 15.1
+  },
+  "worry": {
+   "speaker": "haris",
+   "voice": "Mohamed (ElevenLabs)",
+   "audio": "src/nike/lines6/10_H.mp3",
+   "text": "مبيعاتها بالصين نازلة ستة وعشرين بالمية، وماركة جوردان متوقع تنزل بعد، وبنوك كبيرة نزّلت توقعاتها للسهم.",
+   "gain_db": 7.8
+  },
+  "cta": {
+   "speaker": "asasi",
+   "voice": "RAED (ElevenLabs)",
+   "audio": "src/nike/lines6/11_T.mp3",
+   "text": "يعني المنافسين ركضوا... ونايكي قاعدة تلحقهم. وإنتوا شرايكم؟ راح ترجع الشركة... ولا راح تنهار؟ اكتبوا لنا بالكومنتات.",
+   "gain_db": 10.0
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.56,
+   "lines": [
+    [
+     "نايكي −48% في 2026",
+     44,
+     "bold",
+     "white"
+    ],
+    [
+     "مجلس اليوم • الاثنين 23 نوفمبر 2026",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "dtc": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.56,
+   "lines": [
+    [
+     "2020–2023: نايكي تبيع بروحها",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "والمحلات الرياضية تفضى",
+     30,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "hoka": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_hoka_c.png",
+   "accent": "teal",
+   "y": 0.53,
+   "x": 0.27,
+   "size": 200,
+   "lines": [
+    [
+     "هوكا: نعل عالي ومريح",
+     24,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "on": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_on_c.png",
+   "accent": "teal",
+   "y": 0.53,
+   "x": 0.27,
+   "size": 200,
+   "lines": [
+    [
+     "أون: تصميم يديد",
+     24,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "adidas": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_samba2_c.png",
+   "accent": "teal",
+   "y": 0.53,
+   "x": 0.27,
+   "size": 200,
+   "lines": [
+    [
+     "أديداس: السامبا",
+     24,
+     "bold",
+     "white"
+    ],
+    [
+     "موديل من الخمسينات",
+     20,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "franch": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "مبيعات أكبر 4 موديلات بنايكي",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "13 مليار$ (2024) ← متوقع ~6 مليار$ (2027)",
+     26,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "انتشرت وايد ونزلت بالتخفيضات",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "hill": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.56,
+   "lines": [
+    [
+     "إليوت هيل: 32 سنة بنايكي (1988–2020)",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "رجع رئيس تنفيذي أكتوبر 2024",
+     26,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "plan": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.56,
+   "lines": [
+    [
+     "خطة 2031: +5 مليار$ مبيعات",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "المبيعات تنزل لين 2028",
+     30,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "good": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "توزيع ~5% بالسنة",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "شريك الفورمولا 1 من 2027",
+     28,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "مبيعات الهند ×3 خلال 5 سنين",
+     28,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "worry": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.6,
+   "lines": [
+    [
+     "الصين −26% (يونيو–أغسطس 2026)",
+     28,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.7,
+   "pad": 16,
+   "bottom": 904,
+   "lines": [
+    [
+     "نايكي راح تنهار ولا راح ترجع؟",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "اكتب لنا بالكومنتات",
+     24,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار إغلاق الجمعة 20 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  },
+  "af1": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_af1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "إير فورس 1",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "j1": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_j1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "جوردن 1",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "dunk": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_dunk_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.25,
+   "size": 190,
+   "lines": [
+    [
+     "دنك",
+     26,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "worry2": {
+   "kind": "photo",
+   "image": "src/nike/v3/p_j1_c.png",
+   "accent": "red",
+   "y": 0.6,
+   "x": 0.21,
+   "size": 150,
+   "lines": [
+    [
+     "جوردن −14% هالسنة",
+     22,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "worry3": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.6,
+   "lines": [
+    [
+     "باركليز 45←42$ • كانتور 38←33$",
+     24,
+     "bold",
+     "white"
+    ]
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "vo_clip",
+   "line": "hook",
+   "delay": 0.1,
+   "duration": 4.0,
+   "video": {
+    "draft": "src/nike/v2/hook.mp4",
+    "final": "src/nike/v2/hook.mp4"
+   },
+   "card": {
+    "name": "hook",
+    "at": 0.05,
+    "fade": 0.2
+   }
+  },
+  {
+   "id": "afa",
+   "type": "lipsync",
+   "line": "afa",
+   "video": {
+    "draft": "src/nike/v4/afa.mp4",
+    "final": "src/nike/v4/afa.mp4"
+   },
+   "retimed": true
+  },
+  {
+   "id": "dtc",
+   "type": "lipsync",
+   "line": "dtc",
+   "video": {
+    "draft": "src/nike/v4/dtc.mp4",
+    "final": "src/nike/v4/dtc.mp4"
+   },
+   "card": {
+    "name": "dtc",
+    "at": "cue",
+    "cue": "قالت"
+   },
+   "retimed": true
+  },
+  {
+   "id": "rivals",
+   "type": "lipsync",
+   "line": "rivals",
+   "video": {
+    "draft": "src/nike/v4/rivals.mp4",
+    "final": "src/nike/v4/rivals.mp4"
+   },
+   "extra_cards": [
+    {
+     "name": "hoka",
+     "cue": "هوكا",
+     "until_cue": "وأون"
+    },
+    {
+     "name": "on",
+     "cue": "وأون",
+     "until_cue": "وأديداس"
+    },
+    {
+     "name": "adidas",
+     "cue": "وأديداس"
+    }
+   ],
+   "retimed": true
+  },
+  {
+   "id": "franch",
+   "type": "lipsync",
+   "line": "franch",
+   "video": {
+    "draft": "src/nike/v4/franch.mp4",
+    "final": "src/nike/v4/franch.mp4"
+   },
+   "card": {
+    "name": "franch",
+    "at": "cue",
+    "cue": "لين"
+   },
+   "extra_cards": [
+    {
+     "name": "af1",
+     "cue": "الإير",
+     "until_cue": "والجوردن"
+    },
+    {
+     "name": "j1",
+     "cue": "والجوردن",
+     "until_cue": "والدنك"
+    },
+    {
+     "name": "dunk",
+     "cue": "والدنك",
+     "until_cue": "لين"
+    }
+   ],
+   "retimed": true
+  },
+  {
+   "id": "q1",
+   "type": "lipsync",
+   "line": "q1",
+   "video": {
+    "draft": "src/nike/v2/q1.mp4",
+    "final": "src/nike/v2/q1.mp4"
+   }
+  },
+  {
+   "id": "fix",
+   "type": "lipsync",
+   "line": "fix",
+   "video": {
+    "draft": "src/nike/v4/fix.mp4",
+    "final": "src/nike/v4/fix.mp4"
+   },
+   "extra_cards": [
+    {
+     "name": "hill",
+     "cue": "واحد",
+     "until_cue": "ورجعوا"
+    },
+    {
+     "name": "plan",
+     "cue": "المبيعات"
+    }
+   ],
+   "retimed": true
+  },
+  {
+   "id": "good",
+   "type": "lipsync",
+   "line": "good",
+   "video": {
+    "draft": "src/nike/v4/good.mp4",
+    "final": "src/nike/v4/good.mp4"
+   },
+   "card": {
+    "name": "good",
+    "at": "cue",
+    "cue": "توزيع"
+   },
+   "retimed": true
+  },
+  {
+   "id": "q2",
+   "type": "lipsync",
+   "line": "q2",
+   "video": {
+    "draft": "src/nike/v4/q2.mp4",
+    "final": "src/nike/v4/q2.mp4"
+   },
+   "retimed": true
+  },
+  {
+   "id": "worry",
+   "type": "lipsync",
+   "line": "worry",
+   "video": {
+    "draft": "src/nike/v4/worry.mp4",
+    "final": "src/nike/v4/worry.mp4"
+   },
+   "extra_cards": [
+    {
+     "name": "worry",
+     "cue": "بالصين",
+     "until_cue": "وماركة"
+    },
+    {
+     "name": "worry2",
+     "cue": "وماركة",
+     "until_cue": "وبنوك"
+    },
+    {
+     "name": "worry3",
+     "cue": "وبنوك"
+    }
+   ],
+   "retimed": true
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "line": "cta",
+   "video": {
+    "draft": "src/nike/v4/cta.mp4",
+    "final": "src/nike/v4/cta.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "شرايكم"
+   },
+   "retimed": true,
+   "captions_until_cue": "شرايكم"
+  }
+ ],
+ "generation": {
+  "audio_media": {
+   "afa": "028501c3-37db-4f2a-bd09-3af0b4d6d1d2",
+   "rivals": "e0398d9f-fde5-4ca1-b3c3-500c8f6d7a2d",
+   "franch": "84a96aef-6399-4692-911d-20585330bab0",
+   "q1": "53abea9b-5245-486e-b5e4-3aa40b11855f",
+   "good": "abddbbaf-59cb-4476-a882-16b9cf4afb5c",
+   "q2": "24baa679-5fa3-48e2-83e7-e2f27d07d2fe",
+   "worry": "07699f37-d1aa-4858-8c4a-e4243c58fa64",
+   "cta": "f50a965d-87b6-4e28-ae34-10a7fcfa9fee"
+  },
+  "v1_jobs": {
+   "afa": "ce3248bf-3a45-4552-8c48-ff3ca5b44fbc",
+   "franch": "bded7990",
+   "q1": "67edb102-73ef-4869-bf18-d6f9c296809c",
+   "good": "0fb2ed05-2aac-46a2-a7a9-ab19e6437dfd",
+   "q2": "ccff0ee8-26af-4c77-980c-2cc4db09eac4",
+   "worry": "763f4ca8",
+   "cta": "74d6e3b2-731e-4962-8d4d-53a87f7d332d",
+   "hook": "c693c10b-0ea7-4b42-b5dd-7a452714e1bc",
+   "dtc": "3f27367a-7768-4d0e-8be6-f6a02f7419f4",
+   "rivals": "8ccf4566-0d3a-4231-ba0e-8b7fb4c19bf9",
+   "fix": "02c22e78-3519-4143-a72b-e4d8435db4f0",
+   "draft720_media": "3915189c-6b50-41fb-a762-b461b7c6dad7",
+   "_note": "franch/worry rerun on frontal horse frame 546c3c87 (full IDs in Higgsfield history); d_q1t/d_q2t = intone clips trimmed to 3.7s/3.4s to cut dead air"
+  },
+  "v1_frames": {
+   "walk": "f2b2fafe-f68c-4be7-a3ab-fe7d097e69f7",
+   "store": "261b754a-3d02-40cc-aefd-9534564d39de",
+   "horse_close": "209de7fc-1c25-4ed5-b629-9ef4552dc7ac",
+   "horse_front": "546c3c87",
+   "turtle_close": "fdd25cbb-87e0-46a5-a74a-1137a3690905",
+   "turtle_cam": "521968ba-49dd-495a-b941-346c27bc806e"
+  },
+  "frames": {
+   "hook": "1c119682-7a67-4c65-bfc4-38a9ee771c1c",
+   "afa": "10760930-55d0-4c29-876d-cbab7108b7c0",
+   "dtc": "6f575bb9-7075-4dbd-9f29-83d974416e18",
+   "rivals": "a4686691-f13e-4f04-be83-5dd0e7aeb98c",
+   "franch": "ae1c09cc-b605-4859-9bd4-88e51f3ba9a8",
+   "q1": "6048c6d8-e04a-47f8-8c41-55a90c668452",
+   "fix": "042a4651-0d53-4c37-a212-743512a993f6",
+   "good": "26a7d12e-bdf1-4d8a-8a09-aea1848c6130",
+   "q2": "f05ac559-cb74-481a-b4ed-0638248b57fd",
+   "worry": "3b334024-f53a-4d77-b77c-9fcabcd99ccc",
+   "cta": "ec69dd93-b953-439a-b73e-af5181af535b"
+  },
+  "jobs": {
+   "hook": "af52d553-badf-4dbe-aeed-f847de533d02",
+   "afa": "3ebadc10-ac1d-4fe2-824b-90e553e5ceaf",
+   "dtc": "d2f25fc3-ee3c-498a-b12b-0af8747a1bca",
+   "rivals": "ff2aac47-bb95-4d22-b227-aa8f87897e36",
+   "franch": "049b2a95-26cb-40d9-a673-bdfe2cae5d39",
+   "q1": "282dd6bb-5e5b-48d0-9b88-f35f3b7ab623",
+   "fix": "f4123669-c34e-4019-8ca6-cacb2c366842",
+   "good": "c8f7ac3d-2c47-4442-bef0-edbae121c91c",
+   "q2": "17b5f699-19b6-4390-a72e-a032a77e6d39",
+   "worry": "efccf42b-0c55-46a4-b22e-3c0ff6382b10",
+   "cta": "abb48993-1eb9-4e23-827c-3514e4d5ce1f",
+   "cta_v1": "f293d14e-f739-4926-b6c3-ee581228fce2"
+  },
+  "_note_v2": "v2 (Bader 23-25 Nov): reshoot with seedance_2_5 omni_reference 720p, start_image + audio_references for lipsync (only the speaker moves), camera moves per shot; turtle always backed by NIKE store, horse by HOKA store opposite; logo-free shoes (horse black/orange, turtle white). cta retaken (v1 pulled back too far). Cards worry/cta moved to y 0.198 so mouths stay clear. draft720 v2 media dc6283be-ab73-4bf7-90e0-2d055e28e2f7.",
+  "v3": {
+   "p_hoka": "d1abdc24-f03f-4a8d-8536-135af8b6cbab",
+   "p_on": "d948ca93-80fc-436e-ae45-37f42efd8b2b",
+   "p_samba": "d122a206-f432-4133-a82d-fa010abdc49f",
+   "p_af1": "b1b8d1ca-5c33-463e-9359-ef6a2133b6b6",
+   "p_j1": "9510cc16-39f6-4ce8-9484-aff5e66e365a",
+   "p_dunk": "479cc8a1-317a-488b-93b4-35c12fef5416",
+   "f_fix": "5d776f54-541f-4f74-b429-e8e69bb7537e",
+   "f_good": "a314b368-efc0-4292-bae1-eab1569eca95",
+   "f_worry": "5638dcce-1caa-4e61-8282-df70a8b6b727",
+   "f_dtc": "b8911df4-89a5-4b7d-8bfe-e4b6e96baca6",
+   "f_worry_flagfix_media": "fbd1a740-561e-4f9e-b990-f643c5dfb2bb",
+   "a_03H": "1364306e-4273-4411-aa26-f77d053311dd",
+   "a_07H": "c295e2e9-9b48-4520-98c4-f5668e1e6560",
+   "v_dtc": "ef738c01-8db0-4e3d-adcf-21c48537edad",
+   "v_fix": "3f951a14-8afa-4eb6-82de-cfbda1e716c2",
+   "v_good": "b0de12e5-e073-4990-b76a-4e373763b9d8",
+   "v_worry": "3c9196bd-9e49-4600-abb4-4017b65dc39f",
+   "p_samba2": "35919e2b-1176-476e-88aa-1d45075c53dc",
+   "f_fix3": "c693411f-0d3d-4c6d-8b25-ef2a481e98c6",
+   "v_fix_v4": "63cc4dc9-1361-48ff-af56-34e70ec5a0f5"
+  },
+  "_note_v3": "v3 (Bader 25 Nov): dtc now front walk-and-talk lipsync; fix = short escalator ground->mezzanine only (Avenues has 2 levels); good on mezzanine; worry daytime. Product photo cards (kind 'photo', images src/nike/v3/p_*_c.png, Samba redone as p_samba2). Kuwait flag must hang vertically: black on top, red left, white middle, green right — repainted with kwflag.py in worry start frame (media fbd1a740) and tracked over franch clip with fix_franch_flag.py (-> src/nike/v2/franch_flagfix.mp4). draft720 v3 media 7ebcad46-c46b-46a4-b017-259b9d72f183.",
+  "_note_v4": "v4 (Bader 25 Nov): every lipsync clip (except q1) word-retimed with tools/studio/retime.py -> src/nike/v4/<id>.mp4 and built with retimed:true (align1.retimed, F=1). Per-line gain_db: turtle ~1 dB above horse (cta capped at +10 to avoid clipping). fix regenerated (job 63cc4dc9, frame c693411f) with zipper on the jacket front, escalator up only. Cards moved off faces (rule card_no_face). draft720 v4 media 7bd60882-df21-4b0f-8e84-fab1fdbd9049.",
+  "final1080_media": "e8a7c544-f271-4b31-83d0-e416504774d4"
+ }
+}

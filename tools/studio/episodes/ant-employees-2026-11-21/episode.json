@@ -1,0 +1,255 @@
+{
+ "_comment": "Episode 9 (Bader 21 Nov): gazelle solo, positive framing, no council, no disclaimer bar, no price-date stamp. The cheque gag (seedance, no speech) is appended after the build: src/ant/s720_gag.mp4.",
+ "slug": "ant-employees-2026-11-21",
+ "number": 9,
+ "title": "آلاف الموظفين صاروا مليونيرية — أسهم الموظفين",
+ "ticker": "ANT (lesson, no stock call)",
+ "data_date": "2026-11-20",
+ "compliance": "Lesson/news episode — no sharia verdict on the stock; small pill «مو توصية على السهم»",
+ "fonts": "fonts",
+ "location": "solo news studio A (frame 6e2b96a5, Kuwait skyline)",
+ "lines": {
+  "news": {
+   "speaker": "macro",
+   "voice": "Hana",
+   "audio": "src/ant/lines/1_news_v3.mp3",
+   "audio_job": "746137e2-8cec-4e75-b2a6-160c95a9bb9b",
+   "text": "خبر يفرّح: آلاف الموظفين صاروا مليونيرية... بفضل أسهم شركتهم! أنثروبيك نزلت السوق الأمريكي هَلْسْبوع، وحسب التقديرات، أكثر من خمسة آلاف موظف عندهم حصتهم فوق المليون دولار. وقبلها بيونيو، سبيس إكس سوّت نفس الشّيء، وطلّعت أكثر من أربعة آلاف مليونير من موظفينها."
+  },
+  "why": {
+   "speaker": "macro",
+   "voice": "Hana",
+   "audio": "src/ant/lines/2_why.mp3",
+   "audio_job": "ec144dac-5785-4879-866d-ce7a346ce4b3",
+   "text": "ليش؟ لأن فيه أصحاب شركات، لما يربحون، يفكرون وايد بموظفينهم. يشوفونهم الأصل الحقيقي للشركة، فيتقاسمون النجاح معاهم. صح، أغلبها أسهم ما تنباع للحين، وقيمتها تطلع وتنزل... بس الفكرة تستاهل. تخيلوا لو شركاتنا تسوي جذي!"
+  },
+  "cta": {
+   "speaker": "macro",
+   "voice": "Hana",
+   "audio": "src/ant/lines/3_cta_v3.mp3",
+   "audio_job": "350bbe7d-cf08-4ff9-9211-a56dbdc76a3c",
+   "text": "تتمنّى الشّركة اللي تشتغل فيها تعطيك أسهم؟ منشنهم بالكومنت!"
+  },
+  "agent": {
+   "speaker": "macro",
+   "voice": "Hana",
+   "audio": "src/ant/lines/4_agent.mp3",
+   "audio_job": "f6d3cf00-0a90-43ea-baf0-6304e1941d62",
+   "text": "ودام إني أنا إيجنت بشركة أنثروبيك اللي كنا نتكلم عنها... أتمنى يكون لنا نصيب، إحنا الإيجنتس!"
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "title": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.6,
+   "lines": [
+    [
+     "مجلس اليوم • السبت 21 نوفمبر 2026",
+     24,
+     "med",
+     "sub"
+    ],
+    [
+     "آلاف الموظفين صاروا مليونيرية",
+     38,
+     "bold",
+     "white"
+    ],
+    [
+     "مو توصية على السهم",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "anth": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.6,
+   "lines": [
+    [
+     "أنثروبيك (نوفمبر 2026)",
+     30,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "5,100 موظف فوق المليون دولار",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "من أصل 5,300 تقريباً • تقدير Hill.com عبر CNN",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "spacex": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.6,
+   "lines": [
+    [
+     "سبيس إكس (يونيو 2026)",
+     30,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "4,400 مليونير من موظفينها",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "من أصل 22,000 تقريباً • تقدير Hill.com",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "asset": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.6,
+   "lines": [
+    [
+     "الموظف = الأصل الحقيقي",
+     38,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "lock": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.6,
+   "lines": [
+    [
+     "أغلبها محجوزة: 10% تنباع أول يوم",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "و35% بعد نتايج 2026 • قيمتها تتغير",
+     26,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.6,
+   "lines": [
+    [
+     "تتمنى شركتك تعطيك أسهم؟",
+     36,
+     "bold",
+     "white"
+    ],
+    [
+     "منشنهم بالكومنت",
+     30,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": ""
+  }
+ },
+ "scenes": [
+  {
+   "id": "news",
+   "type": "lipsync",
+   "line": "news",
+   "video": {
+    "draft": "src/ant/v2_news.mp4",
+    "final": "src/ant/v2_news.mp4"
+   },
+   "draft_job": "9b161dcb-0572-4301-903d-cb13aec4dbb5",
+   "extra_cards": [
+    {
+     "name": "title",
+     "at": 0.3,
+     "until_cue": "أنثروبيك"
+    },
+    {
+     "name": "anth",
+     "cue": "أنثروبيك",
+     "until_cue": "وقبلها"
+    },
+    {
+     "name": "spacex",
+     "cue": "سبيس"
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "type": "lipsync",
+   "line": "why",
+   "video": {
+    "draft": "src/ant/v2_why.mp4",
+    "final": "src/ant/v2_why.mp4"
+   },
+   "draft_job": "beb7c434-45ab-493a-9a4a-59d658b7daa0",
+   "extra_cards": [
+    {
+     "name": "asset",
+     "cue": "الأصل",
+     "until_cue": "أغلبها"
+    },
+    {
+     "name": "lock",
+     "cue": "أغلبها",
+     "until_cue": "تخيلوا"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "line": "cta",
+   "video": {
+    "draft": "src/ant/v2_cta.mp4",
+    "final": "src/ant/v2_cta.mp4"
+   },
+   "draft_job": "d12b4de7-5ad6-441f-90fa-ec0869a6de38",
+   "extra_cards": [
+    {
+     "name": "cta",
+     "cue": "تتمنّى"
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "type": "lipsync",
+   "line": "agent",
+   "video": {
+    "draft": "src/ant/v2_agent.mp4",
+    "final": "src/ant/v2_agent.mp4"
+   },
+   "draft_job": "57a8e4c4-e7c0-4818-975c-e3189381250c"
+  }
+ ],
+ "gag": {
+  "video": "src/ant/v2_gag.mp4",
+  "video_job": "a5358c51-ef50-412c-9501-9ee18b4a65cf",
+  "note": "news studio A; cheque (amount hidden), faints from joy onto the desk, table-thud SFX"
+ }
+}

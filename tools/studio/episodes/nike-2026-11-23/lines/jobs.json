@@ -1,0 +1,6 @@
+{"engine":"higgsfield elevenlabs_v4","horse_voice":"element 7a33d3c2 (Horse Deep 2)","turtle_voice":"preset d9d5c263 (Alistair) + studio.json post_fx",
+"01_H":"f3adaa23-d10f-47a1-8565-77e65663dad9","02_T":"9326101d-bd20-4219-8932-29ad851d9301","03_H":"02d35a37-5cfb-4473-aa93-84ee54193876",
+"04_H":"fb827205-998e-4917-876d-673da404584e (spelling جْوتي)","05_H":"822aba5d-e305-4177-84db-a5278c122e77 (الإير فورس، الجوردن ون، ...)",
+"06_T":"81909c31-181d-446d-8c61-59b39a868b49","07_H":"65611aaf-d81f-4b94-8f74-8fc31f51fb8d","08_H":"0296145d-6cc6-4dcd-bf90-8725d55f4355",
+"09_H":"96955082-e836-4b9c-a813-fc1518f26150","10a_T":"56b178eb-43da-4235-a57e-c01b06bb91b5","10b_H":"dcb6fa85-16b2-40f7-8301-8208a5d6b624","11_T":"5debc108-dee6-4d68-bf03-43115ac65f59",
+"note":"v1 voices total 158s of speech (165s with 0.7s gaps). Transcript check with faster-whisper medium; ج in جوتي/الجوردن drifted to g in some takes, fixed by spelling. Whisper hears اسمه سامبا as اسمها in every take: Bader to confirm by ear."}

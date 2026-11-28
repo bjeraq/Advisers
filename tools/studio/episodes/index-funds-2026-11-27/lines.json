@@ -1,0 +1,126 @@
+{
+  "_comment": "Episode 15 index funds - audio gate takes (elevenlabs_v4 via Higgsfield, default stability). Hoopoe=Raina 1c3a4775 (voice over motion), Hedgehog=Emmett 3c7d32be (lipsync). Bader 27 Nov: hedgehog replaces fox, hook C, line 4 rewritten as a two-person example. Total speech ~83 s.",
+  "data_date": "2026-11-27",
+  "lines": {
+    "01": {
+      "speaker": "congress",
+      "job": "1e4d456c-beda-444a-8055-3b696ea62830",
+      "dur": 5.25,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "mazloum",
+      "job": "dd56645c-d327-4a7b-8dbe-17c58dfde7de",
+      "dur": 10.37,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "congress",
+      "job": "af1a278f-6c2b-48e6-a7d7-3c70a6458ef5",
+      "dur": 13.48,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "congress",
+      "job": "1afdc667-3d30-4fca-bd8f-edccb1052a1d",
+      "dur": 23.17,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "mazloum",
+      "job": "61ef7bc0-0b26-4b6b-9c9c-d044533deb27",
+      "dur": 3.55,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "congress",
+      "job": "da4e92d6-5fb3-41ec-9641-efbe6afe5e0d",
+      "dur": 7.81,
+      "audio": "lines/06.mp3"
+    },
+    "07": {
+      "speaker": "mazloum",
+      "job": "e7888459-a1f5-4cd1-afc4-ce83172242df",
+      "dur": 2.43,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "congress",
+      "job": "deb9d3eb-1a8d-43b4-a66e-fce543354df4",
+      "dur": 11.55,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "mazloum",
+      "job": "c80aea6c-584f-48fa-972a-c83b6ad90802",
+      "dur": 5.49,
+      "audio": "lines/09.mp3"
+    },
+    "04B": {
+      "speaker": "congress",
+      "job": "107d635d-7b66-4f61-94f9-435a17507d99",
+      "audio": "lines/04B.mp3",
+      "note": "qaf fix: qalila with full fatha/kasra"
+    },
+    "04C": {
+      "speaker": "congress",
+      "job": "480ccaba-28b2-43c3-ac2e-c428a70a4604",
+      "audio": "lines/04C.mp3",
+      "note": "qaf fix: qalilah with final ha sukun"
+    },
+    "07B": {
+      "speaker": "mazloum",
+      "job": "3ddcb4f0-d8ea-4c50-964f-ed01c65e65fe",
+      "audio": "lines/07B.mp3",
+      "note": "ya'ti with fatha on ya"
+    },
+    "07C": {
+      "speaker": "mazloum",
+      "job": "5baeaca5-9edc-4013-ba09-8db8a7783526",
+      "audio": "lines/07C.mp3",
+      "note": "comma + fatha on ya, kasra on ta"
+    },
+    "09B": {
+      "speaker": "mazloum",
+      "job": "1850d4d1-bab2-4fe3-96f5-42a003d3f62d",
+      "audio": "lines/09B.mp3",
+      "note": "new text: percentage of salary, not amount"
+    },
+    "04D": {
+      "speaker": "congress",
+      "job": "4a140f90-fae8-4a05-bcf6-601e1cf7c0cc",
+      "audio": "lines/04D.mp3",
+      "note": "qalila spelled with Persian gaf (Kuwaiti g)"
+    },
+    "04E": {
+      "speaker": "congress",
+      "job": "9a5c2f3a-a50b-408f-b7b3-367709d12c54",
+      "audio": "lines/04E.mp3",
+      "note": "qalila spelled with three-dot qaf (g)"
+    },
+    "04F": {
+      "speaker": "congress",
+      "job": "8f7e56de-5d08-47ac-905c-82de6b9db403",
+      "audio": "lines/04F.mp3",
+      "note": "qalila spelled with jim (jlila)"
+    },
+    "04G": {
+      "speaker": "congress",
+      "job": "afa135ec-b902-485c-bc24-2dd51aaba6de",
+      "audio": "lines/04G.mp3",
+      "note": "plain spelling, default stability"
+    },
+    "04H": {
+      "speaker": "congress",
+      "job": "601a764f-76fa-43ef-afb6-69f878d4ee84",
+      "audio": "lines/04H.mp3",
+      "note": "plain spelling, stability 0.6"
+    }
+  },
+  "picks": {
+    "07": "07C",
+    "09": "09B",
+    "note": "Bader 27 Nov: 07B/07C both fine (took 07C), 09B approved; 04B/04C rejected (qaf not Kuwaiti); 04D/E/F rejected too, Bader: plain qaf spelling -> 04G/04H; Bader approved 04G",
+    "04": "04G"
+  }
+}

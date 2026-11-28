@@ -1,0 +1,401 @@
+{
+ "_comment": "الحلقة 7 — متابعة بعد نتائج إنفيديا. كل اللقطات معتمدة من الحلقات 1 و5 (بدون صور يديدة). سطر العنوان ليوم النشر.",
+ "slug": "nvda-amd-2026-11-18",
+ "number": 7,
+ "title": "آخر التطورات — إنفيديا وAMD بعد النتايج",
+ "ticker": "NVDA + AMD",
+ "data_date": "2026-11-17",
+ "compliance": "متوافق (data/universe_us.csv asof 2026-11-06) — الرقيب: لا فيتو للسهمين، التطهير غير محسوب",
+ "majlis_report": [
+  "reports/2026-11-18_NVDA.md",
+  "reports/2026-11-18_AMD.md"
+ ],
+ "fonts": "fonts",
+ "location": "قاعة المجلس المعتمدة (council_wide_v5)",
+ "lines": {
+  "open": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/ep7/lines/1_open_v3.mp3",
+   "text": "قبل أربع أيام قال المجلس: انطروا النتايج. والليلة طلعت: مبيعات إنفيديا مية وستعش مليار دولار بثلاث شهور! بس السهم للحين نازل. شنو تغيّر؟",
+   "audio_job": "37ac8b09-d961-4cb0-a3e6-17e4883809b1"
+  },
+  "dhub": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep7/lines/2_dhub_v2.mp3",
+   "text": "أنا شغلتي ألقى سبب للشراء... المبيعات زادت مية وثلاثة بالمية عن السنة اللي طافت، وتوقعاتها للربع الياي أعلى، وبدون الصين. والشركة بنفسها تشتري أسهمها!",
+   "audio_job": "70ccd4f5-b693-4a63-a74e-a3d33d2cd0ff"
+  },
+  "fox": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/ep7/lines/3_fox.mp3",
+   "text": "صح الأرقام حلوة... بس السهم رجع لنفس سعره قبل أربع أيام، وللحين تحت الخط اللي قلنا ننطره. والشركة أخّرت تقريرها الرسمي، وما قالت ليش!",
+   "stability": 0.6,
+   "audio_job": "015ff8bf-e5ec-4b10-9563-acf68d1777b0"
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep7/lines/4a_clash_dhub.mp3",
+   "text": "الأرقام ما تكذب!",
+   "audio_job": "42545b09-e4d9-48b5-8362-7c1f9f9086bf"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "audio": "src/ep7/lines/4b_clash_fox.mp3",
+   "text": "عيل التقرير ليش تأخّر؟!",
+   "stability": 0.6,
+   "audio_job": "df260dca-7c0d-4a42-9d86-6a3007cacc3c"
+  },
+  "camel": {
+   "speaker": "saboor",
+   "voice": "Fraser",
+   "audio": "src/ep7/lines/5_camel_v2.mp3",
+   "text": "يا جماعة، أنا نظرتي بعيدة. إنفيديا شركة قوية، واللي شراها قبل أربع أيام للحين ما خسر شي. بس AMD؟ سعرها غالي وايد على أرباحها... وكبار المستثمرين طلعوا منها.",
+   "audio_job": "6d477309-617c-4184-a5a9-378450b485c7"
+  },
+  "judge": {
+   "speaker": "qadhi",
+   "voice": "Gideon",
+   "audio": "src/ep7/lines/6_judge_v2.mp3",
+   "text": "ميزان الاستثمار لإنفيديا: أربعة وخمسين بالموجب. بس لا تشتري عند الافتتاح: انطر لين يصعد فوق مية وسبعة وستين دولار، ويخلص اليوم فوقها. وAMD: سالب خمسة، انتظار. وثقتي بخطة إنفيديا سبعة من عشرة.",
+   "audio_job": "7b333afc-e626-482c-9c77-502856538080"
+  },
+  "cta": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/ep7/lines/7_close_v3.mp3",
+   "text": "والقرار قراركم: شنو ودكم تسوون مع إنفيديا وAMD؟ اكتبوها بالكومنتات!",
+   "audio_job": "cf3bccfb-fabc-4269-a235-45e26438bfe9"
+  }
+ },
+ "graphics": {
+  "growth": {
+   "kind": "cash_bars",
+   "value": 103,
+   "label": "مبيعات إنفيديا بسنة",
+   "dur": 3.0
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": 54,
+   "scale_max": 75,
+   "votes": [
+    [
+     "شراء",
+     4,
+     "teal"
+    ],
+    [
+     "انتظار",
+     11,
+     "gold"
+    ],
+    [
+     "بيع",
+     0,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار • إنفيديا",
+   "dur": 4.5
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "label": "مجلس اليوم • الأربعاء 18 نوفمبر 2026",
+   "title": "إنفيديا وAMD",
+   "subtitle": "آخر التطورات بعد النتايج — شنو تغيّر؟",
+   "pills": [
+    [
+     "متوافق شرعياً ✓",
+     "teal"
+    ],
+    [
+     "آخر التطورات",
+     "gold"
+    ]
+   ],
+   "date_pill": "أسعار ما بعد إغلاق الثلاثاء 17 نوفمبر"
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.69,
+   "lines": [
+    [
+     "مبيعات الربع: 115.8 مليار$ (+103% عن السنة اللي طافت)",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "الربع الجاي: 130 مليار$ بدون الصين",
+     32,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "التوقعات كانت 109.3 • شراء أسهم +150 مليار$",
+     24,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.69,
+   "lines": [
+    [
+     "بعد الإغلاق 162.71$ ≈ يوم 13 نوفمبر 162.85$",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "التقرير الرسمي عادةً ينزل ويا النتايج — هالمرة تأجّل",
+     26,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "آخر موعد قانوني: 4 ديسمبر (40 يوم بعد نهاية الربع 25 أكتوبر)",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "camel": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.69,
+   "lines": [
+    [
+     "غالي على أرباحه: AMD سعرها 116 مرة أرباحها",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "وإنفيديا تقريباً 20 مرة بس",
+     30,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "دراكنميلر وتيبر طلعوا من AMD • بوري: «غالي»",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.69,
+   "lines": [
+    [
+     "إنفيديا +54 ← يصعد ويخلص اليوم فوق 167$ • ثقة 7/10",
+     26,
+     "bold",
+     "white"
+    ],
+    [
+     "AMD −5 ← انطر لين يخلص فوق 556$ • ثقة 6/10",
+     26,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "الثقة = قد إيش القاضي متأكد من خياره الأول (مو ضمان)",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.3,
+   "lines": [
+    [
+     "اللي انتظر النتايج ما خسر شي",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "اكتب لنا بالكومنتات: شنو ودك تسوي مع إنفيديا وAMD؟",
+     28,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار ما بعد إغلاق الثلاثاء 17 نوفمبر وتتغير عند افتتاح الأربعاء — راجع السعر قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "open",
+   "type": "vo_clip",
+   "line": "open",
+   "delay": 0.2,
+   "duration": 13.6,
+   "video": {
+    "draft": "src/ep7/intro_slow.mp4",
+    "final": "src/ep7/intro_slow.mp4"
+   },
+   "video_job": "6850991a-8139-465c-bbba-ecd0cfc99f7e",
+   "card": {
+    "name": "title",
+    "at": 0.6,
+    "fade": 0.5
+   },
+   "_note": "المقطع مبطّأ ×1.32 محلياً عشان يغطي سطر الصقر الأطول (v2)"
+  },
+  {
+   "id": "dhub",
+   "type": "vo_clip",
+   "line": "dhub",
+   "video": {
+    "draft": "src/ep7/dhub_ep5.mp4",
+    "final": "src/ep7/dhub_ep5.mp4"
+   },
+   "graphic": {
+    "name": "growth",
+    "cue": "زادت",
+    "box": [
+     40,
+     600,
+     300
+    ]
+   },
+   "card": {
+    "name": "dhub",
+    "at": "after_graphic"
+   },
+   "delay": 0.2,
+   "duration": 13.2,
+   "video_job": "42dd0e5a-d732-4879-85c4-31b02620445b",
+   "_note": "intone رفض الضب 4 مرات (6835604b، 5f833e18، aaf5c720، 5cdb72d6: «صورة الشخصية لازم وجه واحد مواجه»). البديل المجاني: مقطعه المتحرك المعتمد من الحلقة 5 (42dd0e5a) بصوته اليديد فوقه."
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "fox",
+   "video": {
+    "draft": "src/ep7/d480_fox.mp4",
+    "final": "src/ep7/d480_fox.mp4"
+   },
+   "card": {
+    "name": "fox",
+    "at": "cue",
+    "cue": "رجع"
+   },
+   "draft_job": "0cf26ab2-47a4-422d-a883-c34c07d06acb"
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/ep7/d480_clash.mp4",
+    "final": "src/ep7/d480_clash.mp4"
+   },
+   "shake": "تأخّر",
+   "draft_job": "515b76d5-177a-4d7a-8463-98cb5b9f81b3"
+  },
+  {
+   "id": "camel",
+   "type": "lipsync",
+   "line": "camel",
+   "video": {
+    "draft": "src/ep7/d480_camel_v2.mp4",
+    "final": "src/ep7/d480_camel_v2.mp4"
+   },
+   "card": {
+    "name": "camel",
+    "at": "cue",
+    "cue": "AMD"
+   },
+   "draft_job": "b38c5efd-1796-4e58-9868-8046ec17c301"
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "judge",
+   "video": {
+    "draft": "src/ep7/d480_judge_v2.mp4",
+    "final": "src/ep7/d480_judge_v2.mp4"
+   },
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     140,
+     552,
+     360
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   },
+   "draft_job": "0434eb3c-9745-48ae-bf85-0f42412ddd1f"
+  },
+  {
+   "id": "cta",
+   "type": "still_vo",
+   "line": "cta",
+   "delay": 0.3,
+   "duration": 8.4,
+   "image": "src/ep7/kf_falcon_close.png",
+   "card": {
+    "name": "cta",
+    "at": 0.4
+   },
+   "_note": "بدر v3: الصقر كان ينقطع قبل آخر كلمة — المدة = التأخير + طول التسجيل + ~1.7ث"
+  }
+ ],
+ "generation": {
+  "_comment": "intone 480p بنفس وصفات الحلقة 5 ولقطاتها المعتمدة. الجمل: نسخة الكرسي الفاضي 9e4ef302 + ورقته db713b4f (وصفة الحلقة 1).",
+  "frames": {
+   "wide": "844ed442-8b47-41f8-8b47-e762fa88adae",
+   "dhub": "100cdf87-be76-4bae-9975-1d60431b5914",
+   "fox": "0808e107-31c6-43ab-b41d-47e660d92dda",
+   "clash": "46efdf5f-d2b0-4acc-a4a4-285b1e20e8ad",
+   "judge": "ae781c26-a251-49f3-96bc-a832599f0f7d",
+   "camel_empty_chair": "9e4ef302-2df2-4d0a-b421-ae3313ec4f81",
+   "falcon_close": "eadf7373-1349-47bf-9969-6895aa3ec2e8",
+   "intro_video": "6850991a-8139-465c-bbba-ecd0cfc99f7e"
+  },
+  "characters": {
+   "dhub": "7d46c827-8028-429d-9d9c-8addc2aa9f24",
+   "fox": "48c7393c-5b34-4cb5-bf43-3eb45c674702 (بورتريه مقصوص من إطار الثعلب المعتمد 0808e107)",
+   "camel": "db713b4f-93ab-47fe-8ba8-35b9c02a4840",
+   "judge": "2eca681d-ff13-4e5b-aa91-de119c245559"
+  }
+ },
+ "video_media_id": "8d494601-3f42-417a-8d7d-d6b037eb5cdc",
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KJGwRtEbfJGNmiXOrf7RVSlYxf/8d494601-3f42-417a-8d7d-d6b037eb5cdc.mp4",
+ "verify": "v4: كل المشاهد ✅ — أقل تشابه 0.84",
+ "video_media_id_v1": "4ce5dd5b-adaf-4bda-ba2d-550b180ebd18",
+ "video_media_id_v2": "2d20cec2-8736-4ef8-9694-920ea00d38fc",
+ "video_media_id_v3": "790cbcac-df72-4deb-b3f2-63e6f06298bf"
+}

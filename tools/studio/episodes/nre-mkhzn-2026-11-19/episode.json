@@ -1,0 +1,425 @@
+{
+ "_comment": "Episode 8 — National Real Estate (KSE:NRE) 22% drop. Script v2 approved by Bader 19 Nov, short audio set (1B,2B,3,4,5a,5b,6C,7B) approved 20 Nov. New location: desert camp (kashta) floor majlis, look B, council removed behind the advocates and no teal board (Bader 20 Nov). intone 480p drafts assembled at 720.",
+ "slug": "nre-mkhzn-2026-11-19",
+ "number": 8,
+ "title": "طاحت 22%! — الوطنية العقارية",
+ "ticker": "NRE (KSE) + MKHZN",
+ "data_date": "2026-11-19",
+ "compliance": "Bader rule 20 Nov 2026: Kuwait and Islamic-market stocks treated as compliant, no screening and no badge",
+ "majlis_report": "reports/2026-11-19_NRE.md",
+ "fonts": "fonts",
+ "location": "kashta desert camp (frames.json → final)",
+ "lines": {
+  "open": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/ep8/lines/1_open.mp3",
+   "audio_job": "3eea58e9-0256-40b6-ac14-af39ca620244",
+   "text": "الوطنية العقارية طاحت اثنين وعشرين بالمية... بيوم واحد! خسارة حقيقية؟ ولا خدعة أرقام؟ يا فلامنغو، إنتي اللي تقرين الكميات... شنو صار؟"
+  },
+  "flamingo": {
+   "speaker": "suyula",
+   "voice": "Yara",
+   "stability": 0.6,
+   "audio": "src/ep8/lines/2_flamingo.mp3",
+   "audio_job": "111b4dbf-fa80-4fae-9dd1-cb59c4d5a0ef",
+   "text": "أول شي، افتح الإفصاح: في توزيع؟ لا. والسهم فتح فوق سعر أمس... يعني الفلوس فعلاً نقصت. وانباع ضعف الكمية، وخلص على أقل سعر باليوم: البيع حقيقي... وللحين ما خلص."
+  },
+  "dhub": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep8/lines/3_dhab.mp3",
+   "audio_job": "8654cb68-e116-4dc6-b131-766d86dec85e",
+   "text": "أنا شغلتي ألقى سبب للشراء... الشركة خسرت بأول السنة، بس آخر ربعين رابحة! وقاعدة تبيع أراضي بالملايين وتنزّل دينها. والسهم نزل سبعة وعشرين بالمية بثلاث أيام بس!"
+  },
+  "fox": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "stability": 0.6,
+   "audio": "src/ep8/lines/4_fox.mp3",
+   "audio_job": "15543078-b627-4714-bc0d-1c1b428b6928",
+   "text": "زين، بس الشركة للحين خسرانة واحد وثلاثين مليون بتسع شهور، والسهم طالع أكثر من ثمانين بالمية من بداية السنة... على توزيع ما انعلن."
+  },
+  "clasht": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep8/lines/5a_clash.mp3",
+   "audio_job": "90f9a356-7f23-4cc1-8c05-a580fefc6cfd",
+   "text": "الدين قاعد ينزل!"
+  },
+  "clashd": {
+   "speaker": "dubb",
+   "voice": "Arthur",
+   "stability": 0.6,
+   "audio": "src/ep8/lines/5b_clash.mp3",
+   "audio_job": "580523f0-5d80-4e9f-8ef0-0d12769ca230",
+   "text": "والتوزيع للحين... كلام على ورق!"
+  },
+  "judge": {
+   "speaker": "qadhi",
+   "voice": "Gideon",
+   "audio": "src/ep8/lines/6_judge.mp3",
+   "audio_job": "34b2a18f-0733-4ebe-acb5-335de1ae0495",
+   "text": "ميزان الاستثمار: سالب ثلاثة وثلاثين... أَرْبَعْتَعَش مستشار قالوا انتظر. ما عندك السهم؟ انطر إفصاح عن التوزيع، ويصعد فوق مية وستة وخمسين فلس. وعندك؟ لا تبيع بخوف ولا تزيد. وثقتي سبعة من عشرة."
+  },
+  "cta": {
+   "speaker": "rassad",
+   "voice": "Andre",
+   "audio": "src/ep8/lines/7_close.mp3",
+   "audio_job": "442f0e14-0829-4547-a167-8554f35febb2",
+   "text": "يا اللي عندك سهم الوطنية العقارية... طاح اثنين وعشرين بالمية بيوم واحد. شنو موقفك الحين؟ تبيع، تزيد، ولا تنطر؟ قول لنا بالكومنتات."
+  }
+ },
+ "graphics": {
+  "day": {
+   "kind": "price_path",
+   "pts": [
+    [
+     "إغلاق أمس",
+     173
+    ],
+    [
+     "الافتتاح",
+     174
+    ],
+    [
+     "الأعلى",
+     177
+    ],
+    [
+     "الإغلاق",
+     135
+    ]
+   ],
+   "ref": 173,
+   "ref_label": "سعر أمس",
+   "unit": "",
+   "dur": 4.0
+  },
+  "quarters": {
+   "kind": "price_path",
+   "pts": [
+    [
+     "يناير–مارس",
+     -53.8
+    ],
+    [
+     "أبريل–يونيو",
+     11.7
+    ],
+    [
+     "يوليو–سبتمبر",
+     10.5
+    ]
+   ],
+   "ref": 0,
+   "ref_label": "صفر",
+   "unit": "",
+   "dur": 3.5
+  },
+  "meter": {
+   "kind": "verdict_meter",
+   "score": -33,
+   "scale_max": 75,
+   "votes": [
+    [
+     "شراء",
+     1,
+     "teal"
+    ],
+    [
+     "انتظار",
+     14,
+     "gold"
+    ],
+    [
+     "بيع",
+     0,
+     "red"
+    ]
+   ],
+   "title": "ميزان الاستثمار • الوطنية العقارية",
+   "dur": 4.5
+  }
+ },
+ "cards": {
+  "title": {
+   "kind": "title",
+   "label": "مجلس اليوم • السبت 21 نوفمبر 2026",
+   "title": "الوطنية العقارية",
+   "subtitle": "طاحت 22% بيوم واحد — خسارة ولا خدعة أرقام؟",
+   "pills": [
+    [
+     "نزلت 21.97% بيوم واحد",
+     "red"
+    ],
+    [
+     "ومخازن 14.29% بنفس اليوم",
+     "gold"
+    ]
+   ],
+   "date_pill": "أسعار إغلاق الخميس 19 نوفمبر 2026"
+  },
+  "flamingo": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "مو توزيع: فتح 174 فوق أمس 173",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "انباع ضعف المعتاد: 85.5 مليون سهم",
+     30,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "dhub": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "آخر ربعين: ربح 11.7 و10.5 مليون د.ك",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "تبيع أراضي وتنزّل دينها",
+     32,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "fox": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.24,
+   "x": 0.33,
+   "lines": [
+    [
+     "خسارة 9 شهور: 31.7 مليون د.ك",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "طالع 87% من بداية السنة",
+     32,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "verdict": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.56,
+   "lines": [
+    [
+     "ما عندك: انطر الإفصاح + فوق 156 فلس",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "عندك: لا تبيع بخوف ولا تزيد • الثقة 7/10",
+     28,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "الإفصاح أول • الكمية • مين يبيع؟",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "شنو ودك تسوي مع سهم الوطنية؟",
+     32,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار إغلاق الخميس 19 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "open",
+   "type": "vo_clip",
+   "line": "open",
+   "delay": 0.2,
+   "duration": 11.75,
+   "video": {
+    "draft": "src/ep8/s_open_v2.mp4",
+    "final": "src/ep8/s_open_v2.mp4"
+   },
+   "video_job": "f3862ea6-7633-4dce-9fe4-61f5141c00a5",
+   "card": {
+    "name": "title",
+    "at": 0.6,
+    "fade": 0.5
+   },
+   "_note": "v2: one tea glass for the lizard, owl pours from one dallah, cars parked"
+  },
+  {
+   "id": "flamingo",
+   "type": "vo_clip",
+   "line": "flamingo",
+   "delay": 0.2,
+   "duration": 16.6,
+   "video": {
+    "draft": "src/ep8/s_flamingo_v3.mp4",
+    "final": "src/ep8/s_flamingo_v3.mp4"
+   },
+   "video_job": "a0d15274-d9c8-49ef-8294-66c358c2f3c4",
+   "graphic": {
+    "name": "day",
+    "cue": "فتح",
+    "box": [
+     60,
+     200,
+     360
+    ]
+   },
+   "card": {
+    "name": "flamingo",
+    "at": "after_graphic"
+   },
+   "_note": "v3 (Bader 20 Nov): start frame 55bd0408 (lizard mouth closed, glass in her lap), seedance 17s with her voice as audio reference, no slow-down; lizard silent, cars parked"
+  },
+  {
+   "id": "dhub",
+   "type": "lipsync",
+   "line": "dhub",
+   "video": {
+    "draft": "src/ep8/d480_dhub.mp4",
+    "final": "src/ep8/d480_dhub.mp4"
+   },
+   "draft_job": "8ad61525-ce66-4110-88e4-48c0f056cb39",
+   "graphic": {
+    "name": "quarters",
+    "cue": "خسرت",
+    "box": [
+     60,
+     200,
+     360
+    ]
+   },
+   "card": {
+    "name": "dhub",
+    "at": "after_graphic"
+   }
+  },
+  {
+   "id": "fox",
+   "type": "lipsync",
+   "line": "fox",
+   "video": {
+    "draft": "src/ep8/d480_fox.mp4",
+    "final": "src/ep8/d480_fox.mp4"
+   },
+   "draft_job": "137cbd6a-e3e3-4925-94fa-1af3b46ac239",
+   "card": {
+    "name": "fox",
+    "at": "cue",
+    "cue": "خسرانة"
+   }
+  },
+  {
+   "id": "clash",
+   "type": "clash",
+   "lines": [
+    "clasht",
+    "clashd"
+   ],
+   "video": {
+    "draft": "src/ep8/d480_clash.mp4",
+    "final": "src/ep8/d480_clash.mp4"
+   },
+   "draft_job": "17530ce7-81b2-4a7c-92ad-5e8aaafb4ec8",
+   "shake": "ورق"
+  },
+  {
+   "id": "judge",
+   "type": "lipsync",
+   "line": "judge",
+   "video": {
+    "draft": "src/ep8/d480_judge.mp4",
+    "final": "src/ep8/d480_judge.mp4"
+   },
+   "draft_job": "9b932a59-1226-41ac-90c0-4e41ee160d8a",
+   "graphic": {
+    "name": "meter",
+    "cue": "ميزان",
+    "box": [
+     140,
+     200,
+     360
+    ]
+   },
+   "card": {
+    "name": "verdict",
+    "at": "after_graphic",
+    "fade": 0.6
+   }
+  },
+  {
+   "id": "cta",
+   "type": "vo_clip",
+   "line": "cta",
+   "delay": 0.25,
+   "duration": 11.1,
+   "video": {
+    "draft": "src/ep8/s_close_v2.mp4",
+    "final": "src/ep8/s_close_v2.mp4"
+   },
+   "video_job": "2f67302e-53f1-4f04-bf99-a9e8a58c05bf",
+   "card": {
+    "name": "cta",
+    "at": 5.0
+   },
+   "_note": "v2: frame 1a5cc787 (background falcon removed), falcon talks to the end with his voice as audio reference"
+  }
+ ],
+ "generation": {
+  "_comment": "Kashta frames (frames.json → final). Characters: portraits cropped from the new frames and uploaded — dhab da1d38c2, fox 5756bcc2, judge c4a1cbd3. intone 480p; falcon and flamingo scenes are seedance_2_5 12s from the frames (no audio) + voice over.",
+  "frames": {
+   "wide": "4e09836e-23ee-4720-9335-02cf721b0baf",
+   "flamingo_dhub": "1927bd5d-1925-40e1-b1c9-38a0bdfc7343",
+   "fox": "81bb2718-aef7-4700-a8b3-0743f1927b93",
+   "clash": "a7f2520a-c2b4-4527-a1a2-c6ccb97ecf6f",
+   "judge": "bb5ee02f-5d95-4878-aad6-7d7dcb553285",
+   "falcon_close": "1a5cc787-cccf-4856-8fd5-2d81b49d6e99",
+   "flamingo_start": "55bd0408-188f-4bc8-98fc-ed89a94c47a5"
+  },
+  "characters": {
+   "dhub": "da1d38c2-1b29-471a-9b7b-7bc8aac6dbc3",
+   "fox": "5756bcc2-1d5e-41e8-83dd-2d480c2755e8",
+   "judge": "c4a1cbd3-34fd-4e2e-89d7-e6b4bdf9f752"
+  }
+ },
+ "video_media_id": "a0f40dd4-04bf-4719-b235-a344566437a1",
+ "video_media_id_v3": "996d99d7-e57a-4514-b5f5-a39589d35226",
+ "video_media_id_v2": "64ef2a19-96ea-4cbf-8d9d-9486dae31022",
+ "video_media_id_v1": "407f0756-14f2-42cc-9792-9b94e453c131",
+ "verify": "v4: all scenes ✅ — lowest similarity 0.81"
+}

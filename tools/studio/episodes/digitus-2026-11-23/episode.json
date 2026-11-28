@@ -1,0 +1,422 @@
+{
+ "_comment": "Episode 11 (Bader W48 batch): Digitus, car at night on Gulf Road (approved keyframe 1dc5d16d). Lizard (Holden) lip-sync via two intone 480p scenes cut per line; owl (Caspian, voice-over, no lip-sync) over one 5s seedance loop reused. No sharia badge (rules.no_sharia_badge_local). Prices = Boursa Kuwait close Mon 23 Nov 2026 (TradingView): 1,519 fils, 1Y +163.5%, 3M -16.6%. Built from ~/majlis_local.",
+ "slug": "digitus-2026-11-23",
+ "number": 11,
+ "title": "ديجتس: شركة كويتية تشتغل ويا قوقل",
+ "ticker": "DIGITUS (KSE)",
+ "data_date": "2026-11-23",
+ "compliance": "Bader rule 23 Nov 2026: no sharia badge for Kuwaiti/Arab/Islamic-market stocks",
+ "dossier": "plans/2026-11-W48/11-digitus/dossier.md",
+ "fonts": "fonts",
+ "location": "car at night, Gulf Road, Kuwait Towers outside (keyframe 1dc5d16d-3792-4f71-b844-166ecaea3f3e)",
+ "lines": {
+  "hook": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/01.mp3",
+   "audio_job": "869e6df3-4e7f-4b3b-9afb-75c6f12b6297",
+   "text": "شِرْكَه كويتية صعدت مية وأربعة وستين بالمِيّة بسنة... وهي خسرانة!"
+  },
+  "name": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/02.mp3",
+   "audio_job": "905b5d83-6326-4b95-a27b-1283fbe0b9c4",
+   "text": "إنت تقصد ديجتس؟ اسمها القديم حياة للاتصالات، بالبورصة من ألفين وسبعة."
+  },
+  "google": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/03.mp3",
+   "audio_job": "b39639e8-d2ae-4642-9e01-e6dbfc22239d",
+   "text": "إيه! سنة وحدة صعدت مية وأربعة وستين بالمِيّة. ليش؟ لأنها اتفقت ويا قوقل: سيرفرات قوقل السحابية بالكويت تشتغل عندها، بعقد يوصل لخمسين مليون دولار."
+  },
+  "gulfsat": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/04.mp3",
+   "audio_job": "2ff2d77d-feec-47bd-8e00-8ab4e201f266",
+   "text": "وفوقها اتفقت تشتري شركة الأقمار الصناعية قلف سات بستة ملايين دينار، وعندها عقود ويا أوريدو قطر ودو."
+  },
+  "loss": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/05.mp3",
+   "audio_job": "a140086d-2a93-4ac8-9384-b6107e1429ba",
+   "text": "حلو الكلام... بس شوف الأرقام: من بداية السنة لين الربع الثالث، الشركة خسرانة."
+  },
+  "expand": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/06.mp3",
+   "audio_job": "56fd58e8-27e8-479d-a19d-d0832c5191d1",
+   "text": "بس هذي مصاريف توسعة! يبنون اليوم عشان يربحون باچر."
+  },
+  "drop": {
+   "speaker": "fanni",
+   "voice": "Caspian",
+   "audio": "src/ep11/lines/07.mp3",
+   "audio_job": "75e80dfc-291d-452b-b7ea-234d28aab879",
+   "text": "يمكن. بس السعر نزل سَبَعْتَعَش بالمِيّة بآخر ثلاث شهور... السوق قاعد يسأل نفس السؤال: متى الربح؟"
+  },
+  "cta": {
+   "speaker": "thawr",
+   "voice": "Holden",
+   "audio": "src/ep11/lines/08.mp3",
+   "audio_job": "f0426a67-3dd7-434e-af32-bf35e42fb736",
+   "text": "اللي عِنْدَه سهم ديجتس، الله يبارك له. بس إنت اللي ما شريت... تشتري الحين، ولا خلاص فات الوقت؟ اكتب لنا بالكومنتات."
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "+164% بسنة… وهي خسرانة!",
+     42,
+     "bold",
+     "white"
+    ],
+    [
+     "مجلس اليوم • الأربعاء 25 نوفمبر 2026",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "price": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "قبل سنة ~580 فلس ← الحين 1,519 فلس",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "+164% بسنة • إغلاق 23 نوفمبر 2026",
+     24,
+     "bold",
+     "light_teal"
+    ],
+    [
+     "سعر قبل سنة معدّل (TradingView)",
+     18,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "google": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "عقد ديجتس ويا قوقل: لين 50 مليون $",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "مشروع قوقل والحكومة: ~306 مليون د.ك على 7 سنين",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "gulfsat": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "قلف سات: 6 مليون د.ك",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "عقود: أوريدو قطر • du (إضافة لعقد قائم)",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "loss": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "يناير–سبتمبر 2026: خسارة ~1.6 مليون د.ك",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "حسب الإفصاحات",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "drop": {
+   "kind": "card",
+   "accent": "red",
+   "y": 0.62,
+   "lines": [
+    [
+     "آخر 3 شهور: −17%",
+     38,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "ما شريت ديجتس؟",
+     34,
+     "bold",
+     "white"
+    ],
+    [
+     "تشتري الحين ولا فات الوقت؟",
+     28,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "تحليل لا توصية • أسعار إغلاق الاثنين 23 نوفمبر 2026 وتتغير — راجع السعر الحالي قبل قرارك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "vo_clip",
+   "line": "hook",
+   "video": {
+    "draft": "src/ep11/v3/c1.mp4",
+    "final": "src/ep11/v3/c1.mp4"
+   },
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   },
+   "delay": 0.0,
+   "duration": 6.04
+  },
+  {
+   "id": "name",
+   "type": "vo_clip",
+   "line": "name",
+   "delay": 0.0,
+   "duration": 7.04,
+   "video": {
+    "draft": "src/ep11/v3/c2.mp4",
+    "final": "src/ep11/v3/c2.mp4"
+   },
+   "card": {
+    "name": "price",
+    "at": "cue",
+    "cue": "ديجتس"
+   }
+  },
+  {
+   "id": "google",
+   "type": "vo_clip",
+   "line": "google",
+   "video": {
+    "draft": "src/ep11/v3/c3a.mp4",
+    "final": "src/ep11/v3/c3a.mp4"
+   },
+   "card": {
+    "name": "google",
+    "at": "cue",
+    "cue": "اتفقت"
+   },
+   "delay": 0.0,
+   "duration": 13.77
+  },
+  {
+   "id": "gulfsat",
+   "type": "vo_clip",
+   "line": "gulfsat",
+   "video": {
+    "draft": "src/ep11/v3/c3b.mp4",
+    "final": "src/ep11/v3/c3b.mp4"
+   },
+   "card": {
+    "name": "gulfsat",
+    "at": "cue",
+    "cue": "قلف"
+   },
+   "delay": 0.0,
+   "duration": 9.27
+  },
+  {
+   "id": "loss",
+   "type": "vo_clip",
+   "line": "loss",
+   "delay": 0.0,
+   "duration": 7.04,
+   "video": {
+    "draft": "src/ep11/v3/c4.mp4",
+    "final": "src/ep11/v3/c4.mp4"
+   },
+   "card": {
+    "name": "loss",
+    "at": "cue",
+    "cue": "الأرقام"
+   }
+  },
+  {
+   "id": "expand",
+   "type": "vo_clip",
+   "line": "expand",
+   "video": {
+    "draft": "src/ep11/v3/c5.mp4",
+    "final": "src/ep11/v3/c5.mp4"
+   },
+   "delay": 0.0,
+   "duration": 5.04
+  },
+  {
+   "id": "drop",
+   "type": "vo_clip",
+   "line": "drop",
+   "delay": 0.0,
+   "duration": 9.04,
+   "video": {
+    "draft": "src/ep11/v3/c6.mp4",
+    "final": "src/ep11/v3/c6.mp4"
+   },
+   "card": {
+    "name": "drop",
+    "at": "cue",
+    "cue": "نزل"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "vo_clip",
+   "line": "cta",
+   "video": {
+    "draft": "src/ep11/v3/c7.mp4",
+    "final": "src/ep11/v3/c7.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "تشتري"
+   },
+   "delay": 0.0,
+   "duration": 9.04
+  }
+ ],
+ "generation": {
+  "location_keyframe": "1dc5d16d-3792-4f71-b844-166ecaea3f3e",
+  "dhub_portrait_media": "7e8008b2-f72b-4f8b-82c3-9dedf02f6c85 (cropped from the keyframe)",
+  "audio_media": {
+   "01": "71c767c5-3f79-4a0e-8882-fbb1e43c4852",
+   "03": "2785ee30-2268-4288-96b0-2d4af96f5a00",
+   "04": "a34f660a-7a96-48e3-b8c9-cf97325ea50a",
+   "06": "9c5e407a-6e1f-4413-ab2b-6c0cb990d0eb",
+   "08": "49db589b-ee8e-4421-931d-b236952e2108"
+  },
+  "intone_A": {
+   "status": "intone refused the lizard face 7 times (refunded): jobs d4981d82, e2c1ac4b, bc6a8587, 93de745e, c27cb199, b610c428, 9b27370e",
+   "fallback": "sync_so job 86b0923f-d2ed-4dd3-be06-3acfad9ffa0c on scene B footage reversed (media 7179c593) + audio 01|0.6s|03 (media 36bf909f), cost 70",
+   "frontal_frames_tried": [
+    "913c121f-76af-4801-858d-dcde68ce7e25",
+    "6fb81a02-0582-424e-8e76-49d62f9ba477"
+   ]
+  },
+  "intone_B": {
+   "job": "0a0c1e78-d457-4534-a9c8-78c259abb6a6",
+   "audio": [
+    "04",
+    "06",
+    "08"
+   ],
+   "resolution": "480p",
+   "cost": 75
+  },
+  "owl_loop": {
+   "job": "c4cba3d9-9cec-4748-af67-4e2542b1359e",
+   "model": "seedance_2_5 720p 5s no audio",
+   "cost": 35,
+   "note": "one loop reused (ping-pong) under all three owl lines to stay under ~200 credits"
+  },
+  "cuts": {
+   "d_hook": "sync_A 0-5.75",
+   "d_google": "sync_A 5.95-19.2",
+   "d_gulfsat": "intone_B 0-10.70",
+   "d_expand": "intone_B 10.75-16.45",
+   "d_cta": "intone_B 16.55-26.05",
+   "owl": "owl_loop ping-pong: name 0+6.6, loss 3.3+7.1, drop 1.2+8.5"
+  }
+ },
+ "video_media_id": "30a7ddac-0c97-4700-9235-a809363f84e9",
+ "video_media_id_v2": "28a2d9b5-3a4a-4902-a240-0813332ded32",
+ "verify": "v2 verify.py 25 Nov: all 8 scenes ✅, min 0.77",
+ "cost": "~190 credits (voices ~8, intone B 75, seedance 35, images 1.5, sync_so 70)",
+ "v2_plan": {
+  "why": "Bader 25 Nov: owl always holding his phone and not engaging the lizard; car drives backward then forward (from reversed footage and ping-pong owl loop). Fix: new start frames without phone, all scenes seedance_2_5 480p forward-only with each line's audio as audio_references.",
+  "frames": {
+   "lizard_talks_owl_listens": "1cd923a9-7d51-4ae4-84a8-c5a6635548b0",
+   "owl_talks": "1c010ad5-1f16-41c0-be64-fbb72d52b17e"
+  },
+  "audio_media": {
+   "A_01_gap_03": "36bf909f-d2f4-41bb-9152-3708ac3805a7",
+   "B_04_gap_06_gap_08": "2700f200-1e99-46e5-a42c-da0c2bf30bf0",
+   "02": "cb419174-cdc8-4ea8-bafd-c4596714475d",
+   "05": "01670839-0eb6-4f41-8129-9ddb4f43da12",
+   "07": "6f475c99-7e20-4e47-b479-9c07c7df04aa"
+  },
+  "submitted": {
+   "owl_name_7s": "5a8ddaa2-3f7c-4360-a103-1eff4116bc48",
+   "owl_drop_9s": "4b38b05c-538f-436b-8233-80718ec09f4d"
+  },
+  "gaps": "A: 01 then 0.6s then 03 (03 starts 6.01s). B: 04, 0.6s, 06, 0.6s, 08.",
+  "done": {
+   "lizard_A": "cf7b23e2-729d-430f-93b9-812b1beb4a64",
+   "lizard_B": "5f902785-ea5f-40ab-9121-4cfa75dbb8c0",
+   "owl_loss": "b7b636f1-c652-4456-a0c8-61685a4b539a",
+   "owl_name": "5a8ddaa2-3f7c-4360-a103-1eff4116bc48",
+   "owl_drop": "4b38b05c-538f-436b-8233-80718ec09f4d"
+  }
+ },
+ "video_media_id_v1": "523feb6d-4137-4e70-84c9-d3d725cd9aca",
+ "v3": {
+  "why": "Bader 25 Nov round 3: (1) CTA lizard looks at camera, (2) no visible cuts - one continuous chain of 7 seedance 480p clips, each starting from the previous clip's last frame, all scenes played whole (vo_clip, no stretch/trim), (3) price card shows price a year ago.",
+  "jobs": {
+   "c1": "01aca909-4e14-45a2-8d02-2847fc5f6946",
+   "c2": "712336ec-f540-4923-9cdc-bd31bffbee28",
+   "c3": "29543c38-9597-45e0-b5e6-09153ec0c7b7",
+   "c4": "2836376a-30c4-4852-85de-80e520cc12d8",
+   "c5": "701ab9bd-081e-4684-8de9-70e65357b836",
+   "c6": "a447ddab-8f3e-4f7e-b2d3-3362b225eb04",
+   "c7": "6f49fd0e-0e16-4f27-9f5a-516d1cc80849"
+  },
+  "audio_03_04": "5885c462-8b4b-45fc-acca-7350b112cb40 (03 + 0.6s + 04; c3 split at 13.77s)"
+ }
+}

@@ -1,0 +1,449 @@
+{
+ "_comment": "Episode 12 (W48, was 13): Premier vs Main market, Boursa Kuwait. Cafe format (keyframe 71890324): jerboa (Ian) explains, hedgehog (Emmett) asks; both lip-sync via 4 intone 480p clips cut per line. No stock price: no date badge, no disclaimer bar, small pill 'معلومة عامة مو توصية'; no sharia badge. Built from ~/majlis_local.",
+ "slug": "premier-main-2026-11-23",
+ "number": 12,
+ "title": "السوق الأول والرئيسي: شنو الفرق؟",
+ "ticker": "Boursa Kuwait segments (lesson, no stock call)",
+ "data_date": "2026-11-23",
+ "compliance": "No stock price, no sharia badge (rules.no_sharia_badge_local, no_religious_rulings)",
+ "dossier": "plans/2026-11-W48/13-premier-vs-main/dossier.md",
+ "fonts": "fonts",
+ "location": "cafe, Kuwait Towers outside (keyframe 71890324-9ba8-42f8-8f8b-c50ebed1b39f)",
+ "lines": {
+  "hook": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/pm/lines/01D.mp3",
+   "audio_job": "1cd6808b-d0db-449e-b3e3-4004562441aa",
+   "text": "تِدْري؟ بالبُورْصَة الكويتية مو سوق واحد… ثلاث أسواق!"
+  },
+  "ask": {
+   "speaker": "mazloum",
+   "voice": "Emmett",
+   "audio": "src/pm/lines/02.mp3",
+   "audio_job": "01b7a312-f5a1-45ca-a9ae-3e026e429e13",
+   "text": "يا جربوع، أبي أشتري سهم، ولقيت مكتوب: السوق الأول، والسوق الرئيسي. شنو الفرق؟"
+  },
+  "premier": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/pm/lines/03.mp3",
+   "audio_job": "ca420112-11e8-44d0-99e3-0a3271127ce1",
+   "text": "البورصة مقسومة ثلاث أسواق. السوق الأول: الشركات الكبيرة اللي عليها تداول وايد، مثل البنوك الكبيرة وزين. الحين فيه تسعة وثلاثين شركة."
+  },
+  "main": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/pm/lines/04.mp3",
+   "audio_job": "ec2b96cb-8056-422e-8858-5e80f85ecc6a",
+   "text": "والسوق الرئيسي: باقي الشركات، أصغر وتداولها أقل. وسوق المزادات: للشركات اللي تداولها قليل وايد، وتتداول بطريقة المزاد."
+  },
+  "who": {
+   "speaker": "mazloum",
+   "voice": "Emmett",
+   "audio": "src/pm/lines/05.mp3",
+   "audio_job": "ed973661-7826-4817-8bd3-91d6b3551e47",
+   "text": "ومنو يقرر الشركة وين؟"
+  },
+  "review": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/pm/lines/06D.mp3",
+   "audio_job": "872b3ccd-5d61-4736-8c9d-200c663088f3",
+   "text": "البورصة تراجع كل سنة بِيَنَايِر، وتطبق بفبراير: حجم الشركة بالسوق، وكم فلوس تتداول على سهمها كل يوم. هالسنة أربع شركات طلعت من الرئيسي للأول."
+  },
+  "small": {
+   "speaker": "mazloum",
+   "voice": "Emmett",
+   "audio": "src/pm/lines/07.mp3",
+   "audio_job": "6e77d2e4-a761-4271-9e5d-b4f594097c93",
+   "text": "زين، وأنا كمستثمر صغير، شنو يفرق معاي؟"
+  },
+  "diff": {
+   "speaker": "whales",
+   "voice": "Ian",
+   "audio": "src/pm/lines/08B.mp3",
+   "audio_job": "ef0baebe-0f7c-426e-b465-a56610deaebf",
+   "text": "بالسوق الأول، غالِباً تبيع وتشتري بسهولة لأن فيه ناس وايد. بالرئيسي ممكن تلقى فرص، بس أحياناً تبي تبيع وما تلقى مشتري بسرعة. فَاعْرِف سهمك وين قبل لا تدخل."
+  },
+  "cta": {
+   "speaker": "mazloum",
+   "voice": "Emmett",
+   "audio": "src/pm/lines/09B.mp3",
+   "audio_job": "6e6d6d25-febf-4d7d-8cee-24b64b924b0e",
+   "text": "وِإنْتَ شِنُو تْفَضِّل؟ تشتري بالسوق الأول ولا الرئيسي؟ واكْتِب لنا ليش."
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "بورصة الكويت = 3 أسواق",
+     42,
+     "bold",
+     "white"
+    ],
+    [
+     "مجلس اليوم • الخميس 26 نوفمبر 2026",
+     22,
+     "med",
+     "sub"
+    ],
+    [
+     "معلومة عامة مو توصية",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "premier": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "السوق الأول: 39 شركة (2026)",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "أمثلة: الوطني • بيتك • زين",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "main": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "الرئيسي: باقي الشركات",
+     34,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "auction": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "المزادات: تداول قليل وايد",
+     32,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "review": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "مراجعة سنوية: يناير ← تطبيق فبراير",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "الشرط: قيمة سوقية ≥ 78 مليون د.ك + تداول يومي عالي",
+     20,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "moved": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.24,
+   "lines": [
+    [
+     "2026: 4 شركات انتقلت للأول",
+     32,
+     "bold",
+     "white"
+    ]
+   ]
+  },
+  "diff": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "الأول: بيع وشرا أسهل",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "الرئيسي: فرص، بس البيع أحياناً أبطأ",
+     24,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "تشتري بالسوق الأول ولا الرئيسي؟",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "وليش؟",
+     30,
+     "bold",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": ""
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "lipsync",
+   "line": "hook",
+   "video": {
+    "draft": "src/pm/d_hook.mp4",
+    "final": "src/pm/d_hook.mp4"
+   },
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   }
+  },
+  {
+   "id": "ask",
+   "type": "lipsync",
+   "line": "ask",
+   "video": {
+    "draft": "src/pm/d_ask.mp4",
+    "final": "src/pm/d_ask.mp4"
+   }
+  },
+  {
+   "id": "premier",
+   "type": "lipsync",
+   "line": "premier",
+   "video": {
+    "draft": "src/pm/d_premier.mp4",
+    "final": "src/pm/d_premier.mp4"
+   },
+   "card": {
+    "name": "premier",
+    "at": "cue",
+    "cue": "تسعة"
+   }
+  },
+  {
+   "id": "main",
+   "type": "lipsync",
+   "line": "main",
+   "video": {
+    "draft": "src/pm/d_main.mp4",
+    "final": "src/pm/d_main.mp4"
+   },
+   "extra_cards": [
+    {
+     "name": "main",
+     "at": 0.2,
+     "until_cue": "وسوق"
+    },
+    {
+     "name": "auction",
+     "cue": "وسوق"
+    }
+   ]
+  },
+  {
+   "id": "who",
+   "type": "lipsync",
+   "line": "who",
+   "video": {
+    "draft": "src/pm/d_who.mp4",
+    "final": "src/pm/d_who.mp4"
+   }
+  },
+  {
+   "id": "review",
+   "type": "lipsync",
+   "line": "review",
+   "video": {
+    "draft": "src/pm/d_review.mp4",
+    "final": "src/pm/d_review.mp4"
+   },
+   "extra_cards": [
+    {
+     "name": "review",
+     "at": 0.3,
+     "until_cue": "هالسنة"
+    },
+    {
+     "name": "moved",
+     "cue": "هالسنة"
+    }
+   ]
+  },
+  {
+   "id": "small",
+   "type": "lipsync",
+   "line": "small",
+   "video": {
+    "draft": "src/pm/d_small.mp4",
+    "final": "src/pm/d_small.mp4"
+   }
+  },
+  {
+   "id": "diff",
+   "type": "lipsync",
+   "line": "diff",
+   "video": {
+    "draft": "src/pm/d_diff.mp4",
+    "final": "src/pm/d_diff.mp4"
+   },
+   "card": {
+    "name": "diff",
+    "at": "cue",
+    "cue": "غالِباً"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "line": "cta",
+   "video": {
+    "draft": "src/pm/d_cta.mp4",
+    "final": "src/pm/d_cta.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "تشتري"
+   }
+  }
+ ],
+ "generation": {
+  "engine": "higgsfield elevenlabs_v4 (dialogue param, default stability)",
+  "jerboa_voice": "Ian 472a562a",
+  "hedgehog_voice": "Emmett 3c7d32be",
+  "01A_jerboa": "23e334e3-b5df-4e8d-a0af-cc7da900236c",
+  "01B_jerboa": "456eefa6-bd01-47a2-909f-e951fd964c30 (diacritics on al-bursa)",
+  "02_hedgehog": "01b7a312-f5a1-45ca-a9ae-3e026e429e13",
+  "03_jerboa": "ca420112-11e8-44d0-99e3-0a3271127ce1",
+  "04_jerboa": "ec2b96cb-8056-422e-8858-5e80f85ecc6a",
+  "05_hedgehog": "ed973661-7826-4817-8bd3-91d6b3551e47",
+  "06A_jerboa": "e396fdca-4741-49e4-a866-9524db06c507",
+  "06B_jerboa": "0dc8f386-102b-49a4-be55-4639e015d66e (diacritics on al-bursa)",
+  "07_hedgehog": "6e77d2e4-a761-4271-9e5d-b4f594097c93",
+  "08A_jerboa": "6ded5f2e-695e-429f-9eb6-3bdb671f0230",
+  "08B_jerboa": "ef0baebe-0f7c-426e-b465-a56610deaebf (diacritics on ghaliban, faa'rif)",
+  "09A_hedgehog": "47677efa-35c2-4829-a321-44b47e7c437e",
+  "09B_hedgehog": "6e6d6d25-febf-4d7d-8cee-24b64b924b0e (diacritics on inta / shinu tfaddil / iktib)",
+  "note": "Hook A (Bader has not picked; default). Whisper medium check: 08A heard ghaliban as ghanban, 09A heard 'shu ntfaddal' -> B takes transcribe clean. Whisper hears al-bursa with s in 01/06 both takes (likely whisper artifact) - Bader's ear decides. Speech total ~72 s with A takes. Cost ~13 lines x ~2-3 credits.",
+  "episode_number": 12,
+  "renumber_note": "Bader 23 Nov (W48 planning, commit 6b9fa05): this episode is now 12 (was 13); script = scripts.md section 12, text unchanged so these voice lines stay valid.",
+  "01C_jerboa": "1da7f1e8-a109-42d7-b9a4-76850c1a00d3 (Bader 25 Nov: tadri moved to the start as a real question)",
+  "01D_jerboa": "1cd6808b-d0db-449e-b3e3-4004562441aa (same + diacritics)",
+  "06C_jerboa": "83a817e8-acce-47d2-96a6-ba8eb7cca3ca (Bader: stress the b then yanayir, 'بِ يَنَاير')",
+  "06D_jerboa": "872b3ccd-5d61-4736-8c9d-200c663088f3 ('بِيَنَايِر' diacritics)",
+  "06E_rejected": "8c346b87 (drifted to MSA: هذه السنة / في السوق) - not sent",
+  "bader_picks_25nov": "line1 rewrite (tadri first); 06A base preferred but fix b-yanayir; 08B; 09B (message read 'témoigner bí. 9 بي' = 8B, 9B)",
+  "bader_final_picks_25nov": [
+   "01D",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06D",
+   "07",
+   "08B",
+   "09B"
+  ],
+  "scene_plan": {
+   "A": {
+    "lines": [
+     "01D",
+     "02"
+    ],
+    "shot": "wide two-shot cafe 71890324",
+    "job": "2a12a712-00e5-43d4-a067-1f9380fe83c7",
+    "cost": 45
+   },
+   "B": {
+    "lines": [
+     "03",
+     "04"
+    ],
+    "shot": "jerboa close (crop of cafe frame)",
+    "job": "40fb93fc-e4d9-4070-a25b-ba525bc3fc33",
+    "cost": 75
+   },
+   "C": {
+    "lines": [
+     "05",
+     "06D",
+     "07"
+    ],
+    "shot": "wide two-shot",
+    "status": "waiting Bader budget OK",
+    "est_cost": "~65"
+   },
+   "D": {
+    "lines": [
+     "08B",
+     "09B"
+    ],
+    "shot": "wide push-in, hedgehog to camera at end",
+    "status": "waiting Bader budget OK",
+    "est_cost": "~70"
+   }
+  },
+  "media": {
+   "cafe": "1a83309c-313d-4d32-90e3-6d978b25eecf",
+   "char_hedgehog": "c4c93e9d-42e9-4ffe-b882-4352ed953ac8",
+   "char_jerboa": "94aeecc4-c144-4ef6-9525-3ffc4823f2bf",
+   "loc_jerboa_close": "1e93d99d-2233-49e5-b528-75e462207572",
+   "01D": "f02fbb7f-391d-4e24-a7d6-651d914c404d",
+   "02": "5af5c90b-73bd-4245-bd28-1ad3ff047f90",
+   "03": "eae09c45-c45b-4942-9ab6-d2e7901c3c40",
+   "04": "4c571ec5-2019-48fa-9b0f-b9d07f22a968",
+   "05": "e15ba7e7-7a06-4412-95cd-669dcaa2a940",
+   "06D": "0e295463-ae71-40ca-b876-d988db6b4837",
+   "07": "30bf24c3-56f9-430b-a884-d718d405cab0",
+   "08B": "b7cbd0ec-365c-4186-8a77-6005611ee58f",
+   "09B": "c0056ab9-abc1-46c9-8c78-05891d79c428"
+  },
+  "cta_v2": {
+   "job": "98985861-59b9-4b5c-8d7f-8da7401ab2c9",
+   "note": "hedgehog looks into camera (Bader 25 Nov); location 2272cdcc (frame from iD 21.5s), both character images; video setpts 0.85",
+   "rejected": [
+    "fcc2bf41 (single-character photo not frontal)",
+    "e01f4c04 (same)"
+   ]
+  }
+ }
+}

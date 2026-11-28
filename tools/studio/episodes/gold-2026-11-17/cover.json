@@ -1,0 +1,14 @@
+{
+  "bg": {"image": "cover_bg.png", "_note": "frame 5D (horse + fox chair shot, 40b76b8a) — faces visible above the text"},
+  "tag": "ميزان الاستثمار • الذهب",
+  "lines": [
+    {"text": "شريت وقت الحرب؟", "size": 60, "box": "red"},
+    {"text": "ذهبك", "size": 150},
+    {"text": "نازل {{30%}}", "size": 128},
+    {"text": "كل 1,000 صارت [[700]]", "size": 104},
+    {"text": "تبيعه ولا تخليه؟", "size": 120, "box": "yellow"}
+  ],
+  "footer": "15 مستشار يتناظرون • القرار عندك",
+  "date": "أسعار الخميس 19 نوفمبر 2026",
+  "disclaimer": "تحليل لا توصية"
+}

@@ -1,0 +1,69 @@
+{
+  "_comment": "Episode 16 rule of 72 - audio gate takes v1 (elevenlabs_v4 via Higgsfield, dialogue param, default stability, [strong Kuwaiti accent] tag). Gazelle=Hana c25f78a0, Camel=Fraser 6705e465. Script v2.1 approved by Bader 28 Nov. Whisper medium matches the script (it normalises ج->ك and cannot tell ت/ط; Bader's ear decides 18 = ثمانتعش in 05 and 07). Total speech ~68 s.",
+  "data_date": "2026-11-28",
+  "lines": {
+    "01": {
+      "speaker": "macro",
+      "voice": "Hana",
+      "job": "f9d4c16b-32ef-4644-b74b-f01f9ec5ee41",
+      "dur": 4.68,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "saboor",
+      "voice": "Fraser",
+      "job": "92a1ab39-d31c-41cd-858f-0c54a72d091b",
+      "dur": 7.63,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "saboor",
+      "voice": "Fraser",
+      "job": "07026a58-4414-4537-9807-0f4fd69c118d",
+      "dur": 5.8,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "macro",
+      "voice": "Hana",
+      "job": "8896db5b-d8e3-4013-9f79-90471b1a2e8b",
+      "dur": 2.51,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "saboor",
+      "voice": "Fraser",
+      "job": "bb12dd1d-1b3d-4e60-9402-00d6c3671a05",
+      "dur": 12.36,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "macro",
+      "voice": "Hana",
+      "job": "9eadfcb6-931a-4317-9a32-a1d648a03127",
+      "dur": 3.24,
+      "audio": "lines/06.mp3"
+    },
+    "07": {
+      "speaker": "saboor",
+      "voice": "Fraser",
+      "job": "a74c04eb-8b01-40f1-ba82-649b80e1c2b5",
+      "dur": 13.09,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "saboor",
+      "voice": "Fraser",
+      "job": "db662583-d351-4ad0-a5ee-3ca1c8318bac",
+      "dur": 10.84,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "macro",
+      "voice": "Hana",
+      "job": "e46fdae9-429f-4297-a40c-ffd9b05dda7a",
+      "dur": 8.59,
+      "audio": "lines/09.mp3"
+    }
+  }
+}

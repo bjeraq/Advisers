@@ -1,0 +1,199 @@
+{
+  "_comment": "Episode 14 first stock on Boursa Kuwait - audio gate takes (elevenlabs_v4 via Higgsfield, default stability). Gazelle=Hana c25f78a0 (preset), Horse=Horse Deep 2 element 7a33d3c2. Script approved by Bader 27 Nov (hook A). Whisper medium matches the script. Total speech ~84 s.",
+  "data_date": "2026-11-27",
+  "lines": {
+    "01": {
+      "speaker": "haris",
+      "job": "03c1a014-6096-4497-b516-d1ba4a3ca41f",
+      "dur": 3.87,
+      "audio": "lines/01.mp3"
+    },
+    "02": {
+      "speaker": "macro",
+      "job": "9080da3d-b478-4695-914e-b1b571c1ad6c",
+      "dur": 10.68,
+      "audio": "lines/02.mp3"
+    },
+    "03": {
+      "speaker": "macro",
+      "job": "738ddea5-f06c-48a5-99f3-f208d15374f7",
+      "dur": 12.36,
+      "audio": "lines/03.mp3"
+    },
+    "04": {
+      "speaker": "haris",
+      "job": "05ad2575-9fd9-459c-a53c-70f2aaf3c35b",
+      "dur": 0.99,
+      "audio": "lines/04.mp3"
+    },
+    "05": {
+      "speaker": "macro",
+      "job": "a98d3e0c-881e-41d0-80f0-053cc9891780",
+      "dur": 14.52,
+      "audio": "lines/05.mp3"
+    },
+    "06": {
+      "speaker": "haris",
+      "job": "f9549384-9cfb-4485-9b60-4780364b89b3",
+      "dur": 1.65,
+      "audio": "lines/06.mp3"
+    },
+    "07": {
+      "speaker": "macro",
+      "job": "5b9f69f0-abfd-4b26-a187-53370c606028",
+      "dur": 8.36,
+      "audio": "lines/07.mp3"
+    },
+    "08": {
+      "speaker": "haris",
+      "job": "391acfbb-5201-479a-b37a-89ec26eab662",
+      "dur": 1.88,
+      "audio": "lines/08.mp3"
+    },
+    "09": {
+      "speaker": "macro",
+      "job": "53dcc06b-984b-4c35-964d-e233e450e5c2",
+      "dur": 10.27,
+      "audio": "lines/09.mp3"
+    },
+    "10": {
+      "speaker": "haris",
+      "job": "53020d18-9990-466e-bd90-e548532f4c4f",
+      "dur": 2.51,
+      "audio": "lines/10.mp3"
+    },
+    "11": {
+      "speaker": "macro",
+      "job": "d8c16267-e36b-4ccf-a658-1ee6da740210",
+      "dur": 10.68,
+      "audio": "lines/11.mp3"
+    },
+    "12": {
+      "speaker": "haris",
+      "job": "8bcae445-90f1-4985-b7a6-d84ee1568c6c",
+      "dur": 5.96,
+      "audio": "lines/12.mp3"
+    },
+    "01B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "7oB9BO3CvIzZhf0vBT7w",
+      "dur": 3.47,
+      "audio": "lines/01B.mp3"
+    },
+    "04B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "SI4MPgC1u4Jc1kggoTj1",
+      "dur": 0.99,
+      "audio": "lines/04B.mp3"
+    },
+    "06B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "VzsLOskGufo4v4tlEivo",
+      "dur": 1.57,
+      "audio": "lines/06B.mp3"
+    },
+    "08B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "rP5OQCZNgjrru6fAb1ZR",
+      "dur": 1.65,
+      "audio": "lines/08B.mp3"
+    },
+    "10B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "w4kKrYysKEwhBqLPjI7D",
+      "dur": 2.19,
+      "audio": "lines/10B.mp3"
+    },
+    "12B": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "BZuuaYHT9SyePRx3rGYb",
+      "dur": 5.96,
+      "audio": "lines/12B.mp3"
+    },
+    "08C": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "6DSetvGPIr4szM9e5PIC",
+      "note": "spelling يأخذون",
+      "dur": 1.8,
+      "audio": "lines/08C.mp3"
+    },
+    "08D": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "0vpgMo69pKdJk9LLViGz",
+      "note": "diacritics يَأْخُذُون",
+      "dur": 1.88,
+      "audio": "lines/08D.mp3"
+    },
+    "08E": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "lUSUXe3gXFXQmLLUyOpi",
+      "note": "[strong Kuwaiti accent] وكم ياخذون عموله",
+      "dur": 1.65,
+      "audio": "lines/08E.mp3"
+    },
+    "08F": {
+      "speaker": "haris",
+      "engine": "elevenlabs direct eleven_v4, voice Mohamed KJe6YIQ4MHI94EGaDZC7",
+      "flow": "za841Qr7VkSncsGuyQGA",
+      "generation": "FfnQDhsy6SDaCT01eESk",
+      "note": "[strong Kuwaiti accent, casual and quick] وكم ياخِذون عمولَه",
+      "dur": 1.65,
+      "audio": "lines/08F.mp3"
+    },
+    "05C": {
+      "speaker": "macro",
+      "job": "79f8d2fe-5ab1-4d22-acdb-42502b94a2a5",
+      "note": "[strong Kuwaiti accent] أمر الشراء",
+      "audio": "lines/05C.mp3"
+    },
+    "05D": {
+      "speaker": "macro",
+      "job": "65e61e49-4e2c-496c-b24c-2897bc890392",
+      "note": "[strong Kuwaiti accent] والرابعة: تشتري من التطبيق (no شرا/شراء)",
+      "audio": "lines/05D.mp3"
+    },
+    "11B": {
+      "speaker": "macro",
+      "job": "b75b0402-c8f8-41b9-b60f-8a3c7b1fe934",
+      "note": "[strong Kuwaiti accent]",
+      "audio": "lines/11B.mp3"
+    }
+  },
+  "_review_1": "Bader 27 Nov: horse voice not nice -> use the Avenues (Nike ep10) horse voice = ElevenLabs Mohamed; line 01 'بشتري' not 'أبي أشتري'. Horse takes B replace 01/04/06/08/10/12 (Horse Deep 2).",
+  "_review_2": "Bader 28 Nov: 08B ياخذون sounded with long alif; wants ya + hamza (يأخذون). Takes 08C (spelling) and 08D (diacritics).",
+  "_review_3": "Bader 28 Nov: B/C/D all wrong. Kuwaiti ياخذون = ya + long alif (no hamza), خذون said quickly; عمولة ends in ha (عموله) not ta. Takes 08E/08F.",
+  "picks": {
+    "01": "01B",
+    "02": "02",
+    "03": "03",
+    "04": "04B",
+    "05": "05",
+    "06": "06B",
+    "07": "07",
+    "08": "08F",
+    "09": "09",
+    "10": "10B",
+    "11": "11",
+    "12": "12B"
+  },
+  "_review_4": "Bader 28 Nov: 'أيوه كذي صح' on 08E/08F -> 08F (the quicker one) picked. Audio gate approved.",
+  "_review_5": "Bader 28 Nov (draft v1): lipsync not moving mid-video (gazelle clip A 61420ab9, mouth closed throughout); gazelle at the end sounded fusha; she said الشرا/الشراء -> retakes 05C/05D/11B."
+}

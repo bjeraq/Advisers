@@ -1,0 +1,17 @@
+{
+ "horse": "ElevenLabs eleven_v4, library voice 'Mohamed - Warm Arabic Business Narrator' KJe6YIQ4MHI94EGaDZC7 (ar-kuwaiti), chosen by Bader 23 Nov; flow lLvNzfPJe0bPN194HPxn",
+ "turtle": "ElevenLabs eleven_v4 library voice 'RAED' IK7YYZcSpmlkjKrQxbSn (old Gulf man), chosen by Bader 23 Nov; no post_fx",
+ "01_H": "25NDB8L2kRDk16yMctOV",
+ "03_H": "ae8jrLOlr1KQzyB2NI74",
+ "04_H": "5FcgHe8dIac1JFl0tuwH (جْوتيّ/هُوكا/أُون spelling)",
+ "05_H": "Cu7xMD6ZjDZ6SxvDLsHA",
+ "07_H": "u3ArsuQBp51CNij0PVWu (بس هم قالوا)",
+ "08_H": "YKRL3ilErd5duQzWMyh8 (تَبي)",
+ "10_H": "BTP15ckqOVgpXJFDZJCY (ماركة جوردان spelling keeps the j sound)",
+ "02_T": "xrTuuicNL6Uvjan3NSwN (lead silence trimmed)",
+ "06_T": "FBkFlzk9RtASqYgJxRIK",
+ "09_T": "31kV8wGp5CIeGozsKyS9",
+ "11_T": "NRuJQhJiCIcuTKR30nTo (other take said ركبوا)",
+ "total_s": 85.1,
+ "qa": "faster-whisper medium per line; rejected takes: H04a said انظر يا instead of شوف, H08b said وتريد, H10a/b said غوردن"
+}

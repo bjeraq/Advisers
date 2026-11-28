@@ -1,0 +1,61 @@
+{
+  "_note": "تصاميم أصوات كويتية يديدة من إلفن لابز (eleven_ttv_v3) — 25 نوفمبر 2026. لكل شخصية 3 نسخ (أ، ب، ج). بعد اختيار بدر: احفظ النسخة بـ creative_save_designed_voice (generated_voice_id) وحط الـ voice_id الناتج بـ config/studio.json → voices_elevenlabs.",
+  "fanni": {
+    "name": "البومة (ريال — بدر: «أبي ريال»)",
+    "a": "bXD6bxfmUXsdW57Awe6i",
+    "b": "7T3M3cvniNXvmi6KLrNY",
+    "c": "IBZFLYDbxoRhGVHx91C5",
+    "rejected_female": [
+      "zC0cQsMzJB7ZB2Dhk0nD",
+      "nrSTYXX3XgCkXGbVsOX5",
+      "DWkQlRVnbc4l04sWRGNa"
+    ]
+  },
+  "suyula": {
+    "name": "الفلامنغو (حرمة حوالي 40 — بدر رفض النسخ الأولى: «صوت بنت صغيرة»)",
+    "a": "4EbECtmLE31fF78jbfBZ",
+    "b": "d9Z5RT3Gj60bsbeeIxnJ",
+    "c": "vgp8dIpwb8laMsi2GmbY",
+    "rejected_young": [
+      "fKsx7IZHyXOJ5NyVcZje",
+      "8Gi6txUVGBdnkCy9C9HO",
+      "wRi0gpwudJ6NcoB8zbXO"
+    ]
+  },
+  "whales": {
+    "name": "الجربوع",
+    "a": "7eFCvag3tFbGngjeaMYR",
+    "b": "yTB9i6CLDRfOpxSyImxj",
+    "c": "Wlt1y6VWIoxcNikYLkSq"
+  },
+  "mazloum": {
+    "name": "القنفذ",
+    "a": "GGi1UcvGFMzBY9LwKJG3",
+    "b": "AMYEqhyS413cd79VJLkY",
+    "c": "aaD1T65Xt9kP710foVdo"
+  },
+  "asasi": {
+    "name": "السلحفاة الشايب",
+    "a": "UpHMQewCqgPbLjHCK3cy",
+    "b": "qPe1WTiLBQNsB2azJ7Hg",
+    "c": "qL48BJhK9kP8G0bQM3mp"
+  },
+  "haris": {
+    "name": "الحصان",
+    "a": "O2XSpWlE4pDPN43OHyuI",
+    "b": "wKrREBJe7OjQLz2GvbHl",
+    "c": "A5JBUWCcWQC7oQqjTySb"
+  },
+  "congress": {
+    "name": "الهدهد (بنت)",
+    "a": "SDpE33JFrAtlc5ktoTgd",
+    "b": "qOOszQBcLWIprciyK62a",
+    "c": "zlmkRcLCInzuQwjBbmIM"
+  },
+  "saboor": {
+    "name": "الجمل",
+    "a": "310Zr6vaSPp3ULukxFlf",
+    "b": "ZZquBsC6Pv1dJb9kAdOk",
+    "c": "fvYowGJ38jfClzTqNyBL"
+  }
+}

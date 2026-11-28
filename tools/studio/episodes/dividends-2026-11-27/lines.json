@@ -1,0 +1,191 @@
+{
+  "_comment": "Episode 13 dividends dates — audio-gate takes (elevenlabs_v4 via Higgsfield, default stability). Tortoise elder = Alistair d9d5c263 + voices.asasi post_fx (rendered via WAV, LAME crashed on direct mp3); dhub = Holden 3c9d6053. Line 03: TTS pauses (~0.3-0.5 s) at the four step boundaries widened to 1.0 s by inserting silence (Bader: ~1 s between steps; nothing trimmed). Hook A (default, Bader to confirm).",
+  "hook": "A",
+  "lines": {
+    "01": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "job": "23de3559-f4ca-437c-9397-ca494807cb5a",
+      "dur": 4.28
+    },
+    "02": {
+      "speaker": "asasi",
+      "voice": "Alistair+fx",
+      "job": "cd7a9e4a-82b3-42f8-b78f-99765f961f5c",
+      "dur": 4.34
+    },
+    "03": {
+      "speaker": "asasi",
+      "voice": "Alistair+fx",
+      "job": "58d3b9f4-6fe9-4331-9a1f-e1b952567896",
+      "dur": 19.8,
+      "note": "pauses widened to 1.0 s at 4 step boundaries"
+    },
+    "04": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "job": "bede26ed-fde7-468d-972a-d1cdaed76337",
+      "dur": 2.77
+    },
+    "05": {
+      "speaker": "asasi",
+      "voice": "Alistair+fx",
+      "job": "dcf01daa-58ce-43ab-8526-1570b68ba271",
+      "dur": 10.79
+    },
+    "06": {
+      "speaker": "asasi",
+      "voice": "Alistair+fx",
+      "job": "180b6f3a-1464-4763-b057-8fb3bc84a986",
+      "dur": 10.29
+    },
+    "07": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "job": "3bcbfba4-912e-4a1a-8098-69d735097674",
+      "dur": 4.21
+    },
+    "08": {
+      "speaker": "asasi",
+      "voice": "Alistair+fx",
+      "job": "24536edc-64a4-4fee-b495-e698b310da56",
+      "dur": 15.05
+    },
+    "09": {
+      "speaker": "thawr",
+      "voice": "Holden",
+      "job": "059a5c6a-e3ec-4549-8dff-5b668f2931ad",
+      "dur": 7.16
+    },
+    "02B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "hw2NVw7Pr4mb5WVFScIO",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 4.75,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "03B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "JoaNdfwUJhfTCvJ4n6gK",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 18.99,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB; step pauses widened to 1.0 s"
+    },
+    "05B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "9nngeipMowXN8wPPpJSW",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 8.91,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "06B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "lC9gDpXm19SvJLnAlg3R",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 8.99,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "08B": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct, eleven_v4, no post_fx)",
+      "generation": "qOWNp7F1NA5J7PinXu0a",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 12.93,
+      "note": "Bader 27 Nov: Alistair take had echo and non-Gulf accent; constant gain to peak -1 dB"
+    },
+    "_dhub_abu_saqr_unused": "Abu Saqr KylrHp6ZWnFm3rme6tlU takes generated in same flow (sessions 6k8twUlogmmhC35dl0Tq, j5eGuFtL8ViiBnfj11hB, jMlz9iWFaa8c15H5UOjq, cVwQODy73QzK7Hvn1s0X) — not used: Bader only asked to change the tortoise; dhub stays Holden.",
+    "03C": {
+      "speaker": "asasi",
+      "voice": "RAED IK7YYZcSpmlkjKrQxbSn (ElevenLabs direct)",
+      "generation": "9pywsaHKO9YlyPLQIGeZ",
+      "flow": "JnO3zwnfzppNWyTZcL9f",
+      "dur": 28.56,
+      "text": "أوّل شي، الشّركة تِعْلن جَدْوَل فيه أربع أيّام. الأوّل: آخِر يوم شِراء… يعني آخِر يوم تِقْدر تِشْتري فيه السّهم وتاخِذ التّوزيع. الثّاني: أوّل يوم بدون توزيع… اللي يِشْتري من هاليوم وطالِع، ما ياخِذ شي. الثّالث: يوم الاستحقاق… هذا اليوم اللي الشّركة تْشَيِّك فيه منو مْسَجَّل عندها مساهِم، واللي اسْمه موجود ياخِذ التّوزيع. والرّابع: يوم التّوزيع… اللي تِنْزل فيه الفلوس بحسابك.",
+      "note": "Bader 27 Nov: 03B too slow; explain each day (what record date means); natural pace, natural ~0.5 s pauses, no padding; written 'شراء' not 'شرا'"
+    }
+  },
+  "stills": {
+    "1": {
+      "job": "54822825-35b0-4bda-a63f-5fdb8f9d452a",
+      "shot": "wide master (approved keyframe d4efb78e with corrected mushroom water towers: rounded bowl underside, chamfered cone top, vertical blue/white stripes)"
+    },
+    "2": {
+      "job": "e950575b-1dd4-4097-9c55-1cedef444ca3",
+      "shot": "line 1 hook — dhub medium close, one tea glass"
+    },
+    "3": {
+      "job": "70eefef1-dc63-41ee-9430-80ba4a475ee7",
+      "shot": "line 2 — tortoise laughs, adjusts glasses"
+    },
+    "4": {
+      "job": "081832e6-288e-4f02-adf1-c0072d5a5e6b",
+      "shot": "line 3 start — tortoise standing at whiteboard"
+    },
+    "5": {
+      "job": "e248fd26-fc2e-44e6-a0ad-4f1ca4252dda",
+      "shot": "line 3 insert — whiteboard close-up, hand with marker, no faces; timeline boxes overlaid big in post (Bader 27 Nov)"
+    },
+    "6": {
+      "job": "23f1d967-b537-4311-be91-b52aa46a8c0b",
+      "shot": "line 4 — dhub asks"
+    },
+    "7": {
+      "job": "a90657e1-761f-4492-be5e-fc7745ae0826",
+      "shot": "lines 5-6 — tortoise at board explains (timeline stays on screen through line 5)"
+    },
+    "8": {
+      "job": "e6ebdd05-a706-490b-b41f-81ad2cb36065",
+      "shot": "line 7 — two-shot, dhub asks (question bubble removed; orig 5c221fb3)"
+    },
+    "9": {
+      "job": "2788d1b0-d8ce-4a0e-8392-29cea03d98e0",
+      "shot": "line 8 punch — tortoise close low angle (book removed; orig d5a9baed)"
+    },
+    "10": {
+      "job": "51387051-3a1d-4c06-99c0-72487469e49d",
+      "shot": "line 9 CTA — dhub to camera"
+    },
+    "_board": "stills_board.jpg — awaiting Bader (rules.image_gate)"
+  },
+  "credits": {
+    "start_balance": 11071.45,
+    "after_voices_and_stills": 11042.33
+  },
+  "stills_v2": {
+    "1": "8fc1fb28-d73f-465e-9c07-19c42a17df90",
+    "2": "e950575b-1dd4-4097-9c55-1cedef444ca3 (unchanged, no window)",
+    "3": "b5cbd145-186e-4286-be66-79f64c141672",
+    "4": "1a123999-3b6a-4bd0-a3d7-45639f9fd8c9",
+    "5": "5b89bb13-04ba-4e8e-ad81-b05353b39d66",
+    "6": "23f1d967-b537-4311-be91-b52aa46a8c0b (unchanged, no window)",
+    "7": "a189de6f-f9db-4a0f-acf5-170640ba1d13",
+    "8": "7d60461d-f01a-4023-a33b-3fb9bcd24f8e",
+    "9": "77b10354-7cd6-42b7-ab8d-6629cd30a9f0",
+    "10": "51387051-3a1d-4c06-99c0-72487469e49d (unchanged, no window)",
+    "_notes": "Bader 27 Nov sent photo of Al-Jahra/Doha water towers: funnel shape, flat top, vertical blue/white stripes stem to rim (rules.kuwait_water_towers). Board v1 superseded before sending.",
+    "_board": "stills_board_v2.jpg — awaiting Bader"
+  },
+  "board_text_mock": "board_text_mock.jpg — shot 5 with the four boxes written large (built in post, box by box)",
+  "board_text": [
+    [
+      "آخر يوم شراء",
+      "تشتري فيه وتاخذ التوزيع"
+    ],
+    [
+      "أول يوم بدون توزيع",
+      "اللي يشتري من اليوم ما ياخذ"
+    ],
+    [
+      "يوم الاستحقاق",
+      "الشركة تشيّك أسماء المساهمين"
+    ],
+    [
+      "يوم التوزيع",
+      "الفلوس تنزل بحسابك"
+    ]
+  ]
+}

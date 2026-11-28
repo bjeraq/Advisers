@@ -1,0 +1,92 @@
+{
+"engine": "higgsfield elevenlabs_v4 (dialogue param, default stability)",
+"jerboa_voice": "Ian 472a562a",
+"hedgehog_voice": "Emmett 3c7d32be",
+"01A_jerboa": "23e334e3-b5df-4e8d-a0af-cc7da900236c",
+"01B_jerboa": "456eefa6-bd01-47a2-909f-e951fd964c30 (diacritics on al-bursa)",
+"02_hedgehog": "01b7a312-f5a1-45ca-a9ae-3e026e429e13",
+"03_jerboa": "ca420112-11e8-44d0-99e3-0a3271127ce1",
+"04_jerboa": "ec2b96cb-8056-422e-8858-5e80f85ecc6a",
+"05_hedgehog": "ed973661-7826-4817-8bd3-91d6b3551e47",
+"06A_jerboa": "e396fdca-4741-49e4-a866-9524db06c507",
+"06B_jerboa": "0dc8f386-102b-49a4-be55-4639e015d66e (diacritics on al-bursa)",
+"07_hedgehog": "6e77d2e4-a761-4271-9e5d-b4f594097c93",
+"08A_jerboa": "6ded5f2e-695e-429f-9eb6-3bdb671f0230",
+"08B_jerboa": "ef0baebe-0f7c-426e-b465-a56610deaebf (diacritics on ghaliban, faa'rif)",
+"09A_hedgehog": "47677efa-35c2-4829-a321-44b47e7c437e",
+"09B_hedgehog": "6e6d6d25-febf-4d7d-8cee-24b64b924b0e (diacritics on inta / shinu tfaddil / iktib)",
+"note": "Hook A (Bader has not picked; default). Whisper medium check: 08A heard ghaliban as ghanban, 09A heard 'shu ntfaddal' -> B takes transcribe clean. Whisper hears al-bursa with s in 01/06 both takes (likely whisper artifact) - Bader's ear decides. Speech total ~72 s with A takes. Cost ~13 lines x ~2-3 credits.",
+"episode_number": 12,
+"renumber_note": "Bader 23 Nov (W48 planning, commit 6b9fa05): this episode is now 12 (was 13); script = scripts.md section 12, text unchanged so these voice lines stay valid.",
+"01C_jerboa": "1da7f1e8-a109-42d7-b9a4-76850c1a00d3 (Bader 25 Nov: tadri moved to the start as a real question)",
+"01D_jerboa": "1cd6808b-d0db-449e-b3e3-4004562441aa (same + diacritics)",
+"06C_jerboa": "83a817e8-acce-47d2-96a6-ba8eb7cca3ca (Bader: stress the b then yanayir, 'بِ يَنَاير')",
+"06D_jerboa": "872b3ccd-5d61-4736-8c9d-200c663088f3 ('بِيَنَايِر' diacritics)",
+"06E_rejected": "8c346b87 (drifted to MSA: هذه السنة / في السوق) - not sent",
+"bader_picks_25nov": "line1 rewrite (tadri first); 06A base preferred but fix b-yanayir; 08B; 09B (message read 'témoigner bí. 9 بي' = 8B, 9B)",
+"bader_final_picks_25nov": [
+"01D",
+"02",
+"03",
+"04",
+"05",
+"06D",
+"07",
+"08B",
+"09B"
+],
+"scene_plan": {
+"A": {
+"lines": [
+"01D",
+"02"
+],
+"shot": "wide two-shot cafe 71890324",
+"job": "2a12a712-00e5-43d4-a067-1f9380fe83c7",
+"cost": 45
+},
+"B": {
+"lines": [
+"03",
+"04"
+],
+"shot": "jerboa close (crop of cafe frame)",
+"job": "40fb93fc-e4d9-4070-a25b-ba525bc3fc33",
+"cost": 75
+},
+"C": {
+"lines": [
+"05",
+"06D",
+"07"
+],
+"shot": "wide two-shot",
+"status": "waiting Bader budget OK",
+"est_cost": "~65"
+},
+"D": {
+"lines": [
+"08B",
+"09B"
+],
+"shot": "wide push-in, hedgehog to camera at end",
+"status": "waiting Bader budget OK",
+"est_cost": "~70"
+}
+},
+"media": {
+"cafe": "1a83309c-313d-4d32-90e3-6d978b25eecf",
+"char_hedgehog": "c4c93e9d-42e9-4ffe-b882-4352ed953ac8",
+"char_jerboa": "94aeecc4-c144-4ef6-9525-3ffc4823f2bf",
+"loc_jerboa_close": "1e93d99d-2233-49e5-b528-75e462207572",
+"01D": "f02fbb7f-391d-4e24-a7d6-651d914c404d",
+"02": "5af5c90b-73bd-4245-bd28-1ad3ff047f90",
+"03": "eae09c45-c45b-4942-9ab6-d2e7901c3c40",
+"04": "4c571ec5-2019-48fa-9b0f-b9d07f22a968",
+"05": "e15ba7e7-7a06-4412-95cd-669dcaa2a940",
+"06D": "0e295463-ae71-40ca-b876-d988db6b4837",
+"07": "30bf24c3-56f9-430b-a884-d718d405cab0",
+"08B": "b7cbd0ec-365c-4186-8a77-6005611ee58f",
+"09B": "c0056ab9-abc1-46c9-8c78-05891d79c428"
+}
+}

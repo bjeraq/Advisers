@@ -1,0 +1,492 @@
+{
+ "_comment": "Episode 14 (W48): first stock on Boursa Kuwait - mall walk-and-talk (no brand names). Gazelle (macro) = Hana on Higgsfield elevenlabs_v4; horse (haris) = ElevenLabs Mohamed (Avenues/Nike voice, Bader 27 Nov). Walking = one seedance 480 clip reused (walk_a/b/c); line 03 over the phone insert (still 5); lipsync = intone 480 (gazelle 05+07, 09+11; horse 06/08/10/12), cut per line and word-retimed. No stock price -> pill only, no sharia badge (Kuwait). Budget approved ~253 (Bader 28 Nov).",
+ "slug": "first-stock-2026-11-27",
+ "number": 14,
+ "title": "شلون تشتري أول سهم بالبورصة الكويتية؟",
+ "ticker": "Boursa Kuwait first stock (lesson, no stock call)",
+ "data_date": "2026-11-27",
+ "compliance": "General info, no recommendation, no broker named; fee 0.15% (CMA 85/2026, live 4 Oct 2026), min 500 fils; hours since 12 Oct 2025; T+3 (dossier)",
+ "dossier": "plans/2026-11-W48/15-first-stock-kuwait/dossier.md",
+ "fonts": "fonts",
+ "location": "Kuwaiti mall atrium, glass roof, marble fountain (stills.json)",
+ "lines": {
+  "hook": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/01B.mp3",
+   "text": "بشتري أول سهم… بس من وين أبدأ؟!",
+   "gain_db": 0
+  },
+  "s1": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/02.mp3",
+   "text": "سهلة! الخطوة الأولى: رقم المستثمر. تطلعه من الشركة الكويتية للمقاصة، تروح لهم بالبطاقة المدنية، أو من موقعهم أونلاين.",
+   "gain_db": 0
+  },
+  "s2": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/03.mp3",
+   "text": "الثانية: تفتح حساب عند شركة وساطة مرخصة، وتربطه بحسابك بالبنك. وتقدر تدوّر عليهم بالإنترنت، وفيه شركات تفتح لك الحساب من التطبيق بهويتي.",
+   "gain_db": 0
+  },
+  "next": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/04B.mp3",
+   "text": "وبعدين؟",
+   "gain_db": 0
+  },
+  "s34": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/05.mp3",
+   "text": "الثالثة: تحوّل فلوس لحسابك عند الوسيط. والرابعة: تحط أمر الشرا من التطبيق: إما بسعر تحدده إنت، أو بسعر السوق. وإذا ما عرفت تستخدم التطبيق، الوسيط يعلمك عليه.",
+   "gain_db": 0
+  },
+  "when": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/06B.mp3",
+   "text": "ومتى أقدر أشتري؟",
+   "gain_db": 0
+  },
+  "hours": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/07.mp3",
+   "text": "من الأحد للخميس، من تسعة الصبح لين وحدة الظهر. وقبلها وبعدها فيه مزاد قصير للافتتاح والإغلاق.",
+   "gain_db": 0
+  },
+  "feeq": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/08F.mp3",
+   "text": "وكم ياخذون عمولة؟",
+   "gain_db": 0
+  },
+  "fee": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/09.mp3",
+   "text": "تقريباً واحد ونص بالألف: يعني لو شريت بألف دينار، العمولة حوالي دينار ونص. بس انتبه، فيه حد أدنى لكل عملية.",
+   "gain_db": 0
+  },
+  "mine": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/10B.mp3",
+   "text": "والسهم يصير باسمي على طول؟",
+   "gain_db": 0
+  },
+  "settle": {
+   "speaker": "macro",
+   "voice": "Hana c25f78a0 (Higgsfield elevenlabs_v4)",
+   "audio": "src/fs/ep/11.mp3",
+   "text": "يتسجل باسمك بعد ثلاث أيام تداول. وأهم نصيحة: ابدأ بمبلغ صغير تتعلم فيه، وافهم الشركة قبل لا تشتريها.",
+   "gain_db": 0
+  },
+  "cta": {
+   "speaker": "haris",
+   "voice": "Mohamed KJe6YIQ4MHI94EGaDZC7 (ElevenLabs)",
+   "audio": "src/fs/ep/12B.mp3",
+   "text": "وإنت… شنو أول سهم شريته؟ ولا للحين ما بديت؟ اكتب لنا بالكومنتات.",
+   "gain_db": 0
+  }
+ },
+ "graphics": {},
+ "cards": {
+  "hook": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "أول سهم:",
+     36,
+     "bold",
+     "white"
+    ],
+    [
+     "من وين أبدأ؟",
+     36,
+     "bold",
+     "gold"
+    ],
+    [
+     "مجلس اليوم • السبت 28 نوفمبر 2026",
+     20,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "s1": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "1) رقم المستثمر",
+     32,
+     "bold",
+     "white"
+    ],
+    [
+     "الشركة الكويتية للمقاصة • البطاقة المدنية",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "s2": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.24,
+   "lines": [
+    [
+     "2) حساب عند وسيط مرخص + حساب بنكي",
+     26,
+     "bold",
+     "white"
+    ],
+    [
+     "دور عليهم بالإنترنت",
+     22,
+     "med",
+     "light_teal"
+    ],
+    [
+     "بعضهم أونلاين عن طريق هويتي",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "s34": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "3) حول الفلوس • 4) أمر الشرا",
+     28,
+     "bold",
+     "white"
+    ],
+    [
+     "بسعر تحدده أو بسعر السوق",
+     22,
+     "med",
+     "light_teal"
+    ],
+    [
+     "الوسيط يعلمك على التطبيق",
+     22,
+     "med",
+     "sub"
+    ]
+   ]
+  },
+  "hours": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "الأحد – الخميس",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "التداول من 9:00 ص لين 1:00 ظ",
+     26,
+     "bold",
+     "gold"
+    ],
+    [
+     "مزاد الافتتاح 8:50 • مزاد الإغلاق لين 1:10",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "fee": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "العمولة: 0.15% من قيمة الصفقة",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "حد أدنى 500 فلس للعملية (من أكتوبر 2026)",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "settle": {
+   "kind": "card",
+   "accent": "teal",
+   "y": 0.62,
+   "lines": [
+    [
+     "التسوية: 3 أيام تداول",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "ابدأ بمبلغ صغير وافهم الشركة",
+     24,
+     "bold",
+     "gold"
+    ]
+   ]
+  },
+  "cta": {
+   "kind": "card",
+   "accent": "gold",
+   "y": 0.62,
+   "lines": [
+    [
+     "شنو أول سهم شريته؟",
+     30,
+     "bold",
+     "white"
+    ],
+    [
+     "اكتب لنا بالكومنتات",
+     22,
+     "med",
+     "light_teal"
+    ]
+   ]
+  },
+  "disc": {
+   "kind": "disclaimer",
+   "text": "معلومة عامة مو توصية • الرسوم والخطوات تتغير، تأكد من وسيطك"
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "vo_clip",
+   "line": "hook",
+   "video": {
+    "draft": "src/fs/walk_a.mp4",
+    "final": "src/fs/walk_a.mp4"
+   },
+   "duration": 4.2,
+   "delay": 0.1,
+   "card": {
+    "name": "hook",
+    "at": 0.0,
+    "fade": 0.15
+   }
+  },
+  {
+   "id": "s1",
+   "type": "vo_clip",
+   "line": "s1",
+   "video": {
+    "draft": "src/fs/walk_b.mp4",
+    "final": "src/fs/walk_b.mp4"
+   },
+   "duration": 11.3,
+   "delay": 0.2,
+   "card": {
+    "name": "s1",
+    "at": "cue",
+    "cue": "رقم"
+   }
+  },
+  {
+   "id": "s2",
+   "type": "still_vo",
+   "line": "s2",
+   "image": "src/fs/s5.png",
+   "duration": 13.0,
+   "delay": 0.2,
+   "card": {
+    "name": "s2",
+    "at": "cue",
+    "cue": "تفتح"
+   }
+  },
+  {
+   "id": "next",
+   "type": "vo_clip",
+   "line": "next",
+   "video": {
+    "draft": "src/fs/walk_c.mp4",
+    "final": "src/fs/walk_c.mp4"
+   },
+   "duration": 1.9,
+   "delay": 0.2
+  },
+  {
+   "id": "s34",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "s34",
+   "video": {
+    "draft": "src/fs/r_s34.mp4",
+    "final": "src/fs/r_s34.mp4"
+   },
+   "card": {
+    "name": "s34",
+    "at": "cue",
+    "cue": "الثالثة"
+   }
+  },
+  {
+   "id": "when",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "when",
+   "video": {
+    "draft": "src/fs/r_when.mp4",
+    "final": "src/fs/r_when.mp4"
+   }
+  },
+  {
+   "id": "hours",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "hours",
+   "video": {
+    "draft": "src/fs/r_hours.mp4",
+    "final": "src/fs/r_hours.mp4"
+   },
+   "card": {
+    "name": "hours",
+    "at": "cue",
+    "cue": "الأحد"
+   }
+  },
+  {
+   "id": "feeq",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "feeq",
+   "video": {
+    "draft": "src/fs/r_feeq.mp4",
+    "final": "src/fs/r_feeq.mp4"
+   }
+  },
+  {
+   "id": "fee",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "fee",
+   "video": {
+    "draft": "src/fs/r_fee.mp4",
+    "final": "src/fs/r_fee.mp4"
+   },
+   "card": {
+    "name": "fee",
+    "at": "cue",
+    "cue": "تقريباً"
+   }
+  },
+  {
+   "id": "mine",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "mine",
+   "video": {
+    "draft": "src/fs/r_mine.mp4",
+    "final": "src/fs/r_mine.mp4"
+   }
+  },
+  {
+   "id": "settle",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "settle",
+   "video": {
+    "draft": "src/fs/r_settle.mp4",
+    "final": "src/fs/r_settle.mp4"
+   },
+   "card": {
+    "name": "settle",
+    "at": "cue",
+    "cue": "يتسجل"
+   }
+  },
+  {
+   "id": "cta",
+   "type": "lipsync",
+   "retimed": true,
+   "line": "cta",
+   "video": {
+    "draft": "src/fs/r_cta.mp4",
+    "final": "src/fs/r_cta.mp4"
+   },
+   "card": {
+    "name": "cta",
+    "at": "cue",
+    "cue": "شنو"
+   },
+   "captions_until_cue": "شنو"
+  }
+ ],
+ "generation": {
+  "walk": {
+   "job": "449439c9-1b36-44d2-8704-cb00d911d012",
+   "model": "seedance_2_5 480p 8s omni_reference start=still1 bc20f721, no audio",
+   "post": "delogo over invented shop word at right edge; walk_a 0-4.3s, walk_b 1.42x slow blend 11.3s, walk_c 5.9-8s"
+  },
+  "gz_A": {
+   "job": "61420ab9-0301-4e66-9518-543fdc0d4006",
+   "model": "intone 480p",
+   "lines": [
+    "s34",
+    "hours"
+   ],
+   "char": "d77cbde9",
+   "loc": "still2 b5ee6ce0"
+  },
+  "gz_B": {
+   "job": "36e850a0-bbee-460d-b0ed-610654521b9f",
+   "model": "intone 480p",
+   "lines": [
+    "fee",
+    "settle"
+   ],
+   "char": "d77cbde9",
+   "loc": "still2 b5ee6ce0"
+  },
+  "horse": {
+   "job": "892a0b54-e260-4695-ac00-a66ec6485fa1",
+   "model": "intone 480p",
+   "lines": [
+    "when",
+    "feeq",
+    "mine",
+    "cta"
+   ],
+   "char": "209de7fc",
+   "loc": "still3 01e801c9",
+   "audio_media": {
+    "06B": "6d10df25-7dfe-4c66-9b07-fcce58bbe250",
+    "08F": "d8f0964b-e997-4eb1-bd6e-be4ddf395a0a",
+    "10B": "ef58e3e8-e847-4311-8695-0c2afd954ee9",
+    "12B": "213ef769-d503-4992-bf53-669f055f8934",
+    "01B": "33d6a1bb-4aaa-4efa-af98-cdcfa8f3cf4a"
+   }
+  },
+  "cost_estimate": "walk 24 + gz_A 78 + gz_B ~72 + horse 42 = ~216 video; ~253 total with audio/stills (Bader approved 28 Nov)"
+ }
+}
